@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_wDznAtV">Biomedical Signal Processing and Control</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2018-09-11">11 September 2018</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,31.92,191.11,68.63,10.85"><forename type="first">Jianfeng</forename><surname>Zhao</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Electronics and Information Engineering</orgName>
+								<orgName type="institution">Beihang University</orgName>
+								<address>
+									<postCode>100083</postCode>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">School of Information Engineering</orgName>
+								<orgName type="institution">Inner Mongolia University of Science &amp; Technology</orgName>
+								<address>
+									<postCode>014010</postCode>
+									<settlement>Baotou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,119.15,191.11,41.25,10.85"><forename type="first">Xia</forename><surname>Mao</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Electronics and Information Engineering</orgName>
+								<orgName type="institution">Beihang University</orgName>
+								<address>
+									<postCode>100083</postCode>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName coords="1,171.60,191.11,62.17,10.85"><forename type="first">Lijiang</forename><surname>Chen</surname></persName>
+							<email>chenlijiang@buaa.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Electronics and Information Engineering</orgName>
+								<orgName type="institution">Beihang University</orgName>
+								<address>
+									<postCode>100083</postCode>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">School of Electronics and Information Engineering</orgName>
+								<orgName type="institution">Beihang University</orgName>
+								<address>
+									<addrLine>Mailbox 206, 37 XueYuan Road</addrLine>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_NTGcW6Y">Biomedical Signal Processing and Control</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2018-09-11">11 September 2018</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">249EF15E53979F6915B9F23439D59EBD</idno>
+					<idno type="DOI">10.1016/j.bspc.2018.08.035</idno>
+					<note type="submission">Received 12 July 2017 Received in revised form 26 July 2018 Accepted 27 August 2018</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-07T13:55+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords xml:id="_MxQauRA">Speech emotion recognition CNN LSTM network Raw audio clips Log-mel spectrograms</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_bQ9v7tK"><p xml:id="_cc35wBr">We aimed at learning deep emotion features to recognize speech emotion. Two convolutional neural network and long short-term memory (CNN LSTM) networks, one 1D CNN LSTM network and one 2D CNN LSTM network, were constructed to learn local and global emotion-related features from speech and logmel spectrogram respectively. The two networks have the similar architecture, both consisting of four local feature learning blocks (LFLBs) and one long short-term memory (LSTM) layer. LFLB, which mainly contains one convolutional layer and one max-pooling layer, is built for learning local correlations along with extracting hierarchical correlations. LSTM layer is adopted to learn long-term dependencies from the learned local features. The designed networks, combinations of the convolutional neural network (CNN) and LSTM, can take advantage of the strengths of both networks and overcome the shortcomings of them, and are evaluated on two benchmark databases. The experimental results show that the designed networks achieve excellent performance on the task of recognizing speech emotion, especially the 2D CNN LSTM network outperforms the traditional approaches, Deep Belief Network (DBN) and CNN on the selected databases. The 2D CNN LSTM network achieves recognition accuracies of 95.33% and 95.89% on Berlin EmoDB of speaker-dependent and speaker-independent experiments respectively, which compare favourably to the accuracy of 91.6% and 92.9% obtained by traditional approaches; and also yields recognition accuracies of 89.16% and 52.14% on IEMOCAP database of speaker-dependent and speakerindependent experiments, which are much higher than the accuracy of 73.78% and 40.02% obtained by DBN and CNN.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.28" lry="793.7"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1." xml:id="_tT6KWdp">Introduction</head><p xml:id="_nRKbvva">Speech emotion recognition has attracted much attention in the last decades. Emotions are specific and intense mental activities, which can be signed outward by many expressive behaviors. Speech, facial expression, body gesture, and brain signals etc., are the cues of the whole-body emotional phenomena <ref type="bibr" coords="1,224.32,552.58,7.44,8.19" target="#b0">[1]</ref><ref type="bibr" coords="1,231.75,552.58,3.72,8.19" target="#b1">[2]</ref><ref type="bibr" coords="1,235.47,552.58,7.44,8.19" target="#b2">[3]</ref>. Speech is a fast, efficient and essential pathway of human's communication. So, recognizing speech emotion is one of the important research directions in emotion detection and recognition naturally <ref type="bibr" coords="1,252.70,583.96,9.73,8.19" target="#b3">[4,</ref><ref type="bibr" coords="1,262.43,583.96,6.48,8.19" target="#b4">5]</ref>.</p><p xml:id="_Pd9WR4N">In order to recognize the emotional state of the speaker, distinguishing paralinguistic features which do not depend on the speaker or the lexical content need to be extracted from the speech. In general, there are two types of information in speech: linguistic information, and paralinguistic information. The linguistic information always refers to the context or the meaning of the speech.</p><p xml:id="_wDBnYaX">The paralinguistic information comes to mean the implicit messages such as the emotion contained in the speech <ref type="bibr" coords="1,495.01,500.27,10.89,8.19" target="#b3">[4,</ref><ref type="bibr" coords="1,505.91,500.27,3.63,8.19" target="#b5">[6]</ref><ref type="bibr" coords="1,509.54,500.27,3.63,8.19" target="#b6">[7]</ref><ref type="bibr" coords="1,513.17,500.27,7.26,8.19" target="#b7">[8]</ref>.</p><p xml:id="_EqZbtQa">There are many distinguishing acoustic features usually used into recognizing the speech emotion: continuous features, qualitative features, and spectral features <ref type="bibr" coords="1,446.29,531.66,7.75,8.19" target="#b8">[9]</ref><ref type="bibr" coords="1,454.03,531.66,3.87,8.19" target="#b9">[10]</ref><ref type="bibr" coords="1,454.03,531.66,3.87,8.19" target="#b10">[11]</ref><ref type="bibr" coords="1,454.03,531.66,3.87,8.19" target="#b11">[12]</ref><ref type="bibr" coords="1,457.91,531.66,11.62,8.19" target="#b12">[13]</ref>. Many features have been investigated to recognize speech emotion. Some researchers weighted the pros and cons of each feature, but no one can identify which category is the best one until now <ref type="bibr" coords="1,458.04,563.04,10.63,8.19" target="#b3">[4,</ref><ref type="bibr" coords="1,468.67,563.04,7.09,8.19" target="#b5">6,</ref><ref type="bibr" coords="1,475.76,563.04,10.63,8.19" target="#b13">14,</ref><ref type="bibr" coords="1,486.39,563.04,10.63,8.19" target="#b14">15]</ref>.</p><p xml:id="_Uug2E4C">In order to learn high-level features from emotion utterances and form a hierarchical representation of the speech, many deep learning architectures have been introduced in speech emotion recognition. The classification accuracy of handcrafted features extracted from certain emotion utterances is relatively high, but the extraction of handcrafted features always consumes expensive manual labor and depend on professional knowledge <ref type="bibr" coords="1,501.65,636.26,10.74,8.19" target="#b5">[6,</ref><ref type="bibr" coords="1,512.38,636.26,10.74,8.19" target="#b15">16,</ref><ref type="bibr" coords="1,523.12,636.26,10.74,8.19" target="#b16">17]</ref>. The handcrafted features extraction normally overlooks the high-level features, which are derived from lower level features. So, hierarchical learning, also known as deep learning, is introduced to model high-level abstractions of the data.</p><p xml:id="_ybYTvXM">Speech signal processing has been revolutionized by deep learning. More and more researcher achieved excellent results  in certain applications using deep belief networks (DBNs), convolutional neural networks (CNNs) and long short-term memory (LSTM) <ref type="bibr" coords="2,72.44,254.66,11.84,8.19" target="#b17">[18]</ref><ref type="bibr" coords="2,84.28,254.66,3.95,8.19" target="#b18">[19]</ref><ref type="bibr" coords="2,88.23,254.66,11.84,8.19" target="#b19">[20]</ref><ref type="bibr" coords="2,100.07,254.66,11.84,8.19" target="#b31">32]</ref>. Deep neural networks are typical "black box" approaches, because it is extremely difficult to understand how the final output is arrived at. There are two models or methods have been introduced to study relevant problems or coincidences. Compared to the "data model" used largely by statisticians, deep networks focus on finding an algorithm to do prediction, so they are called "algorithmic model" <ref type="bibr" coords="2,166.05,317.43,14.01,8.19" target="#b54">[55]</ref>, <ref type="bibr" coords="2,186.91,317.43,14.01,8.19" target="#b55">[56]</ref>. The interpretability of how the highly abstracted features are learned by deep neural networks (DNNs) is poor <ref type="bibr" coords="2,140.71,338.35,14.01,8.19" target="#b56">[57]</ref>. But deep neural networks perform dramatically better than traditional approaches (see Fig. <ref type="figure" coords="2,255.20,348.81,3.93,8.19" target="#fig_0">1</ref>) in some experiments <ref type="bibr" coords="2,92.81,359.27,14.52,8.19" target="#b20">[21,</ref><ref type="bibr" coords="2,107.34,359.27,10.89,8.19" target="#b21">22]</ref>.</p><p xml:id="_9awCrrr">We constructed two convolutional neural network and long short-term memory (CNN LSTM) networks by stacking four designed local feature learning blocks (LFLBs) and other building layers to extract emotional features. The speech signal is a time-varying signal which needs special processing to reflect timevarying properties. Therefore, LSTM layer is introduced to extract long-term contextual dependencies. The 1D CNN LSTM network is intended to recognize speech emotion from audio clips (see Fig. <ref type="figure" coords="2,279.21,442.96,7.54,8.19" target="#fig_1">2a</ref>); the 2D CNN LSTM network mainly focuses on learning global contextual information from the handcrafted features (see Fig. <ref type="figure" coords="2,279.68,463.88,7.30,8.19" target="#fig_1">2b</ref>). Most of the traditional features extraction algorithms can reduce data dimension dramatically. The amount of extracted low-level features, such as the spectrum features <ref type="bibr" coords="2,190.96,495.26,14.52,8.19" target="#b22">[23,</ref><ref type="bibr" coords="2,205.48,495.26,10.89,8.19" target="#b23">24]</ref>, is smaller than that of the raw data. A significant advantage of the learning from a small amount of the low-level features is the decreasing of the training time. The experimental results show that the designed CNN LSTM networks can recognize the speech emotion effectively. Moreover, the designed 2D CNN LSTM network does not only achieve high emotion recognition accuracies but also has better generalization ability. High recognition rate and good generalization ability can provide a guarantee for the application of the designed networks in disease prevention, health care, medical diagnosis, social intercourse etc.</p><p xml:id="_6JmRxNs">Our original contributions of the work are as follows: 1) a local feature learning block (LFLB), which consists of one convolutional layer, one batch normalization (BN) layer, one exponential linear unit layer, and one max-pooling layer, is designed to extract local features; 2) to learn long-term dependencies from a sequence of local features, LSTM layer is introduced to build CNN LSTM networks following the LFLB; 3) it is proved experimentally that 1D CNN LSTM network can learn lots of emotional features from raw audio utterances for the first time. In our experiments, 2D CNN LSTM network achieves better results. 2D CNN LSTM network focuses on capturing both local correlations and global contextual information from log-mel spectrogram, which is a representation of how the frequency content of a signal changes with time. When log-mel spectrogram is considered as a grid or a sequence, it can be processed by LFLB or LSTM layer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2." xml:id="_NdvWy6V">Related work</head><p xml:id="_KebeGzb">Distinguishing features are essential for recognizing the speech emotion. Among many paralinguistic features, spectrum features are widely used in speech emotion recognition. AB <ref type="bibr" coords="2,513.02,134.36,28.88,8.19">Kandali</ref>  With numerous successful applications of DNNs, more and more researchers began to focus on the learning of deep emotional features. Andre Stuhlsatz and collaborators introduced a generalized discriminant analysis (GerDA) DNNs stacked by several restricted Boltzmann machines (RBMs) to recognize the speech emotion and obtained a highly significant improvement over the previously reported baselines by SVMs <ref type="bibr" coords="2,418.57,406.34,14.01,8.19" target="#b32">[33]</ref>. Erik M. Schmidt et al. employed a regression-based deep belief network which was configured with three hidden layers to learn features directly from magnitude spectra and recognize music emotion <ref type="bibr" coords="2,441.63,437.73,14.01,8.19" target="#b33">[34]</ref>. Duc Le et al. proposed and evaluated a set of hybrid classifiers based on hidden Markov models and deep belief networks and achieved state-of-the-art results on FAU Aibo <ref type="bibr" coords="2,349.86,469.11,14.01,8.19" target="#b34">[35]</ref>. Kun Han et al. proposed to utilize deep neural networks (DNNs) to recognize utterance-level emotions, and obtained 20% relative accuracy improvement compared to the traditional state-of-the-art approaches <ref type="bibr" coords="2,421.78,500.49,14.01,8.19" target="#b16">[17]</ref>. Qirong Mao et al. introduced a semi-CNN architecture with a linear SVM to recognize speech emotion and achieved a stable and robust recognition performance in complex scenes <ref type="bibr" coords="2,390.06,531.87,14.01,8.19" target="#b35">[36]</ref>. W. Q. Zheng et al. also constructed a CNN architecture to implement emotion recognition on labelled audio data, the preliminary experimental results showed that this approach outperformed the SVM-based classification <ref type="bibr" coords="2,516.42,563.25,14.01,8.19" target="#b20">[21]</ref>.</p><p xml:id="_43kZ4ZB">Our work differs from the work mentioned above. The designed 1D &amp; 2D CNN LSTM networks learn hierarchical local and global features to recognize speech emotion. Whereas most of the data models can only extract low-level features to classify emotion, and most of the previous DBN-based or CNN-based algorithmic models can only learn one type of emotion-related features to recognize emotion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3." xml:id="_PAWpWWM">Methods and materials</head><p xml:id="_TKTWQFB">Extracting more distinguishing emotion features is one of the main tasks for researchers to recognize speech emotion. According to the difference of feature extraction methods, speech features can be classified as handcrafted features and learned features. Most of the extraction of handcrafted features are carefully designed using ingenious strategies and can be explained in more detail how it works and what it does. The learned features extracted by different deep networks, such RBM based DNN <ref type="bibr" coords="3,180.39,234.14,14.52,8.19" target="#b32">[33,</ref><ref type="bibr" coords="3,194.91,234.14,10.89,8.19" target="#b52">53]</ref>, CNN <ref type="bibr" coords="3,232.02,234.14,14.01,8.19" target="#b11">[12]</ref>, perform incredibly well on prediction. Hence, learning deep features to make predictions is becoming more and more popular.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1." xml:id="_AyhjJmA">Deep feature learning</head><p xml:id="_KUAUjsu">LFLB and LSTM are combined together to learn local features and global features from raw audio clips and log-mel spectrograms respectively in this paper. Convolution layer, the core layer of LFLB, is specialized for processing a grid of values X <ref type="bibr" coords="3,206.87,330.89,11.97,8.19" target="#b38">[39]</ref><ref type="bibr" coords="3,218.83,330.89,3.99,8.19" target="#b39">[40]</ref><ref type="bibr" coords="3,218.83,330.89,3.99,8.19" target="#b40">[41]</ref><ref type="bibr" coords="3,222.82,330.89,11.97,8.19" target="#b41">[42]</ref>. It can learn a sequence feature where each member of the feature is a function of a small number of neighboring members of the input. Whereas LSTM is specialized for processing a sequence of values X <ref type="bibr" coords="3,246.60,362.27,14.01,8.19" target="#b42">[43]</ref>, each member of the learned feature is a function of the previous members of the output. The combination of the CNN and LSTM can learn the high-level features, which contain both the local information and the long-term contextual dependencies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.1." xml:id="_xB8yT6Z">Local feature learning</head><p xml:id="_bezhHsu">A local feature learning block (LFLB), a substitute of CNN, is designed to extract emotional features. Each LFLB consists of one convolutional layer, one batch normalization (BN) layer <ref type="bibr" coords="3,249.23,459.02,14.01,8.19" target="#b36">[37]</ref>, one exponential linear unit (ELU) layer <ref type="bibr" coords="3,431.54,55.91,14.01,8.19" target="#b37">[38]</ref>, and one max-pooling layer, as illustrated in Fig. <ref type="figure" coords="3,378.23,66.37,3.37,8.19" target="#fig_3">3</ref>. Convolution layer and pooling layer are the core layers of the LFLB (see Fig. <ref type="figure" coords="3,428.57,76.83,3.27,8.19" target="#fig_4">4</ref>). The most outstanding of the convolution layer is spatially local connectivity and shared weights <ref type="bibr" coords="3,301.41,97.75,11.97,8.19" target="#b38">[39]</ref><ref type="bibr" coords="3,313.38,97.75,3.99,8.19" target="#b39">[40]</ref><ref type="bibr" coords="3,313.38,97.75,3.99,8.19" target="#b40">[41]</ref><ref type="bibr" coords="3,317.37,97.75,11.97,8.19" target="#b41">[42]</ref>. These properties allow the convolution layer to perform the function of the learning kernel. BN layer normalizes the activations of the convolutional layer at each batch, and improves the performance and stability of deep networks. The transformation applied by batch normalization maintains the mean activation close to 0 and the activation standard deviation close to 1 <ref type="bibr" coords="3,498.01,150.05,14.01,8.19" target="#b36">[37]</ref>. ELU layer defines the output of the BN layer. Different to other activation functions, ELU has negative values which push the mean of the activations closer to zero, so it can speed up learning in the designed networks and lead to higher recognition accuracies <ref type="bibr" coords="3,503.95,191.90,14.01,8.19" target="#b37">[38]</ref>. Pooling layer can make the features robust against noise and distortion. Max-pooling is the most commonly used non-linear functions. It divides the input into a set of non-overlapping regions and outputs the maximum value of each such sub-region <ref type="bibr" coords="3,472.52,233.74,14.01,8.19" target="#b65">[67]</ref>.</p><p xml:id="_4Pbq9mf">The local feature learning block can be configured differently according to different tasks. The differences in LFLB configuration are mainly reflected in various parameters of the convolution and max-pooling.</p><p xml:id="_FqNVraz">The convolution layer plays the role of a local feature extractor. When the data is passed into the convolution layer, it will be convolved with the convolution kernels across the width and height of the input volume. Then a feature map is produced by computing the dot product between the entries of the kernel and the input.</p><p xml:id="_czkp3gv">If 1D convolution layer takes as input a signal x(n), the result z(n) can be obtained by convolving the signal x(n) with the convolution kernel w(n) of size l. The 1D convolution kernel w(n) is initialized randomly in our experiments.</p><formula xml:id="formula_0" coords="3,301.41,398.48,251.56,30.40">z (n) = x (n) *w (n) = l m=−l x(m) • w(n − m)<label>(1)</label></formula><p xml:id="_eVgJ5Hb">While if the input of the 2D convolution layer is x(i, j), the result z(i, j) can be obtained by convolving the signal x(i, j) with the con- volution kernel w(i, j) of size a×b. The 2D convolution kernel w(i, j) is also initialized randomly in our experiments.</p><formula xml:id="formula_1" coords="4,42.73,82.92,251.56,30.40">z(i, j) = x(i, j)*w(i, j) = a s=−a b t=−b x(s, t) • w(i − s, j − t)<label>(2)</label></formula><p xml:id="_k7KCF9u">Then the convolved features are inputted into the BN layer, which normalizes the activations of the previous layer at each batch. BN layer applies a transformation that maintains the mean of the convolved features close to zero and the variance of the convolved features close to one. When the normalized features are inputted into the ELU layer, the output features can be expressed as</p><formula xml:id="formula_2" coords="4,42.73,198.68,251.56,21.88">z l i = (BN(b l i + j z l−1 j *w l ij ))<label>(3)</label></formula><p xml:id="_mt3tjXW">Where z l i and z l−1 i represent the i-th output feature at the l-th layer and the j-th input feature at the (l-1)-th layer; w l ij denotes convolution kernel between the i-th and j-th feature.</p><p xml:id="_Y9NaAWz">The function BN( • ) normalizes the features learned by the convolution layer. The function ( • ) is the ELU activation function of the network, and can be represented as</p><formula xml:id="formula_3" coords="4,49.69,303.09,244.60,20.64">(x) = x x ≥ 0 ˛(e x − 1) x &lt; 0<label>(4)</label></formula><p xml:id="_WAacmKP">The extra alpha constant should be a positive number (˛ &gt; 0), e is the Euler's number. Then the features are passed into the max-pooling layer. The pooling layer performs the non-linear down-sampling function and reduces the resolution of the features. The features produced by max-pooling layer can be expressed as</p><formula xml:id="formula_4" coords="4,42.73,390.03,251.56,17.45">z l k = max ∀p ∈ k z l p<label>(5)</label></formula><p xml:id="_8CGb4zB">Where k represents the pooling region with index k, z l k and z l p represents the output and input feature of the l-th max-pooling layer with index k and p.</p><p xml:id="_gxgrqRk">3.1.2. Global feature learning LSTM, a recurrent neural network (RNN) architecture, is adopted to learn the long-term contextual dependencies <ref type="bibr" coords="4,240.06,480.17,14.53,8.19" target="#b42">[43,</ref><ref type="bibr" coords="4,254.59,480.17,10.89,8.19" target="#b43">44]</ref>. LSTM is explicitly designed for learning long-term dependencies from sequences. So it is stacked upon the LFLB to learn contextual dependencies from the learned local feature sequences. The LSTM can remove or add information to the block state using four components: an input gate, an output gate, a forget gate and a cell with a self-recurrent connection. The updating of an LSTM unit at every timestep t is described by Eqs. ( <ref type="formula" coords="4,163.39,553.39,3.93,8.19">6</ref>)- <ref type="bibr" coords="4,175.17,553.39,15.72,8.19" target="#b9">(10)</ref>  <ref type="bibr" coords="4,192.96,553.39,14.52,8.19" target="#b42">[43,</ref><ref type="bibr" coords="4,207.49,553.39,10.89,8.19" target="#b43">44]</ref>.</p><p xml:id="_kAtVR9A">Let z l−1 t and z l t be the input and output of an LSTM unit, the relationship between them can be expressed as</p><formula xml:id="formula_5" coords="4,42.73,589.48,251.56,31.20">f t = g (W f z l−1 t + U f z l t−1 + b f ) (6) i t = g (W i z l−1 t + U i z l t−1 + b i ) (<label>7</label></formula><formula xml:id="formula_6" coords="4,290.65,610.10,3.64,8.19">)</formula><formula xml:id="formula_7" coords="4,42.73,627.27,251.56,31.20">o t = g (W o z l−1 t + U o z l t−1 + b o ) (8) c t = f t • c t−1 + i t • c (W c z l−1 t + U c z l t−1 + b c )<label>(9)</label></formula><formula xml:id="formula_8" coords="4,42.73,665.07,251.56,11.68">z l t = o t • z c t<label>(10)</label></formula><p xml:id="_yERT9ZU">Where c t represents the LSTM unit state; W , U, and b are parameter matrices and vector; f t , i t and o t are gate vectors; g is a sigmoid function, c and z are hyperbolic tangents; the operator • represents the Hadamard product. The superscript l − 1 and l in Eqs. ( <ref type="formula" coords="4,46.66,725.40,3.93,8.19">6</ref>)-( <ref type="formula" coords="4,62.38,725.40,7.86,8.19" target="#formula_8">10</ref>) are the indices of the input and output features; the subscript i, o, f, c in Eqs. ( <ref type="formula" coords="4,135.88,735.86,3.81,8.19">6</ref>)-( <ref type="formula" coords="4,151.11,735.86,3.81,8.19">8</ref>) represent input gate, output gate, Table <ref type="table" coords="4,331.10,160.75,3.86,6.14">1</ref> The layer parameters of the 1D CNN LSTM network. The output dimension is given by length × number. L is the length of the audio clip. The kernel size K of 1F is the number of the emotions. 1C1 and 1P1 are the first convolutional layer and the max-pooling layer of 1LFLB1, and so on. forget gate and cell respectively; the subscript g in Eqs. ( <ref type="formula" coords="4,540.92,332.74,3.81,8.19">6</ref>)-( <ref type="formula" coords="4,556.15,332.74,3.81,8.19">8</ref>) represent gate.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2." xml:id="_9qKbhvm">1D CNN LSTM network</head><p xml:id="_6cV7GUY">The CNN LSTM networks are constructed by stacking four LFLBs, one LSTM layer and one fully connected layer. In order to distinguish the same building block or layer, we use the following coding to designate them: 1) the digit before the name indicates that which network this building block or layer is in; 2) the digit after the name is the index of the building block or layer in the networks. The overall architecture of the CNN LSTM networks is illustrated in Fig. <ref type="figure" coords="4,327.44,464.17,3.37,8.19" target="#fig_5">5</ref>.</p><p xml:id="_nKkHTBY">The 1D CNN LSTM network is built by linking four LFLBs (1LFLB1, 1LFLB2, 1LFLB3, 1LFLB4), one LSTM layer (1L), and one fully connected layer (1F). This network is designed to learn deep features from raw audio clips. Therefore, the convolution and pooling kernels in each LFLB are all one-dimensional. The convolution kernel in each LFLB has the same size 3, the same stride 1, and the SAME padding. The number of the convolution kernels in the first and second LFLBs (1LFLB1 and 1LFLB2) is 64, in the third and fourth LFLBs (1LFLB3 and 1LFLB4) is 128. The kernel size and the stride of the max-pooling in each LFLB are 4. The parameters of this architecture are shown in Table <ref type="table" coords="4,387.27,579.24,3.37,8.19">1</ref>. The top layer of this architecture is softmax classifier, which is utilized to recognize the emotion according to the learned features.</p><p xml:id="_YRKhv7E">When audio clip, represented by a one-dimensional vector, is passed into this 1D network, local features are learned by these LFLBs. After been reshaped, these features outputted from 1 LFLB4 are inputted into the LSTM layer (1L). Then the contextual dependencies are learned from these inputted local hierarchical features. The learning of local features and contextual dependencies is shown in Fig. <ref type="figure" coords="4,367.99,673.38,3.37,8.19" target="#fig_6">6</ref>. So, the features outputted from the LSTM layer contain local information and long-term contextual dependencies.</p><p xml:id="_C6egjzb">Then the learned features are passed to the fully connected layer (1F), which is connected to the 1L layer directly. The fully connected layer can be expressed as Table <ref type="table" coords="5,50.80,220.17,3.86,6.14">2</ref> The layer parameters of the 2D CNN LSTM network. The output dimension is represented as height × width × number. M × N is the size of the low-level features. The kernel size K of 2 F is the number of the emotions. 2C1 and 2P1 are the convolutional layer and the max-pooling layer of 2 LFLB1, and so on.</p><formula xml:id="formula_9" coords="4,312.22,733.60,251.56,9.78">z l = b l + z l−1 • w l (11)</formula><formula xml:id="formula_10" coords="5,37.90,268.55,239.60,96.81">Name Output Dim Kernel Size Stride 2 LFLB1 2C1 M × N×64 3 × 3 1 × 1 2P1 M/2 × N/2 × 64 2 × 22 × 2 2 LFLB2 2C2 M/2 × N/2 × 64 3 × 3 1 × 1 2P2 M/8 × N/8 × 64 4 × 4 4 × 4 2 LFLB3 2C3 M/8 × N/8 × 128 3 × 3 1 × 1 2P3 M/32 × N/32 × 128 4 × 4 4 × 4 2 LFLB4 2C4 M/32 × N/32 × 128 3 × 3 1 × 1 2P4 M/128 × N/128 × 128 4 × 4 4 × 4 2 L- 256 - 2 F - K -</formula><p xml:id="_FUB8B6N">Softmax is the classifier of this architecture, it makes the prediction using the inputted features. Softmax is a generalization of logistic regression to the problem of multi-class classification. The class label y takes on more than two values. Softmax function can be defined to be</p><formula xml:id="formula_11" coords="5,31.92,448.85,251.56,53.71">z i = j h j W ji (12) softmax(z) i = p i = e z i n j=1 e z i<label>(13)</label></formula><p xml:id="_w8P3tuf">Where z i is the input of softmax, h j is the activation in the penultimate layer and W ji is the weight connecting between the penultimate layer and softmax layer. Therefore, the predicted class label ŷ would be</p><formula xml:id="formula_12" coords="5,32.54,560.73,250.93,14.32">ŷ = argmax i p i<label>(14)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3." xml:id="_g5DH4s7">2D CNN LSTM network</head><p xml:id="_eX3prdN">The 2D CNN LSTM network has the same structure as the 1D CNN LSTM network. It also has four LFLBs (2LFLB1, 2LFLB2, 2LFLB3, 2LFLB4), one LSTM layer (2L), and one fully connected layer (2F) (see Fig. <ref type="figure" coords="5,46.37,641.71,3.27,8.19" target="#fig_5">5</ref>). The convolution and pooling kernels in each LFLB are all twodimensional. The convolution kernel has the same size 3 × 3, the same stride 1 × 1, and the SAME padding. The number of the convolution kernels in the first and second LFLBs (2LFLB1 and 2LFLB2) is 64, in the third and fourth LFLBs (2LFLB3 and 2LFLB4) is 128. The kernel size and the stride of the max-pooling in the first LFLB are 2 × 2, in other blocks is 4 × 4. The parameters of this network are shown in Table <ref type="table" coords="5,94.25,714.94,3.37,8.19">2</ref>. Softmax classifier of this architecture is at the top layer. The implementations of the two models were done with public python deep learning library Keras <ref type="bibr" coords="5,192.03,735.86,14.01,8.19" target="#b51">[52]</ref>. The fully connected layer (2F) is utilized to generalize from these features into the output-space, and softmax is adopted to make the prediction using the learned features which contain both the local correlations and the global contextual dependencies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4." xml:id="_HusrVwW">Hyperparameter optimization</head><p xml:id="_mzdMmFE">It is very important to choose a set of hyperparameters for a deep architecture. The goal of hyperparameter optimization is to improve the performance of the deep network on an independent data set. Grid search and random search all have been applied to some deep learning frameworks successfully, and simplify the training of the deep architecture. When Bayesian optimization is proposed, it is shown to obtain better results in fewer experiments <ref type="bibr" coords="5,301.41,478.08,11.97,8.19" target="#b45">[46]</ref><ref type="bibr" coords="5,313.38,478.08,3.99,8.19" target="#b46">[47]</ref><ref type="bibr" coords="5,313.38,478.08,3.99,8.19" target="#b47">[48]</ref><ref type="bibr" coords="5,317.37,478.08,11.97,8.19" target="#b48">[49]</ref>. In our experiments, the Bayesian optimization method is adopted to select the hyperparameters for the proposed deep networks.</p><p xml:id="_qj4cDeD">Bayesian optimization is a sequential design strategy and can minimize the objective function efficiently. Hyperopt, a Python library, is used to optimize the hyperparameters in our experiments <ref type="bibr" coords="5,301.41,540.85,14.01,8.19" target="#b48">[49]</ref>. Hyperopt defines an objective function which can be minimized, and treats it as a random function. A prior is also placed over the objective function. According to the gathered function evaluations, prior is updated to form the posterior distribution over the objective function. An acquisition function is created by using the posterior distribution. Then the hyperparameters are picked iteratively. In order to select a suitable optimization algorithm, the distribution over the choice ('adagrad', 'adam', 'sgd', 'rmsprop') is chosen. After the training with the optimized hyperparameters, the best model is returned.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5." xml:id="_VVprn9J">Databases and data pre-processing</head><p xml:id="_G8XmHr5">The two designed CNN LSTM networks were evaluated on two public emotional speech datasets, Berlin EmoDB and Interactive Emotional Dyadic Motion Capture (IEMOCAP) database. The two selected databases are all acted emotional speech databases. The invited actors expressed the pre-determined sentences with required emotions. The Berlin EmoDB recorded in 2005 contains seven emotions, and each emotion comprises nearly the same number of utterances to evaluate the classification accuracy properly. It provides labeled audio clips and some analysis results. Ten professional actors spoke these acted emotion utterances in an angry, boredom, disgust, fear, happy, neutral and sadness way. There are 535 sentences of the utterances, which come from everyday communication and can be interpretable in all applied emotions <ref type="bibr" coords="6,184.15,317.53,14.00,8.19" target="#b49">[50]</ref>.</p><p xml:id="_AWfSv4z">The IEMOCAP contains both motion capture markers and audio data from five pairs of actors (male-female). Two emotion elicitation methods, performances of theatrical scripts and improvisations of affective scenarios are used in the dialog recording. At least three evaluators labeled the emotion label of the data. There are 1150 utterances in the prototypical data (complete agreement on the affective state from evaluators) of improvisations of affective scenarios (Angry: 71, Excited: 178, Frustrated: 271, Happy: 31, Neutral: 328, Sad: 265, and Surprise: 6 utterances). We only use the utterances with labels from the following emotion: Angry, Excited, Frustrated, Happy, Neutral, and Sad <ref type="bibr" coords="6,179.84,432.60,14.01,8.19" target="#b50">[51]</ref>.</p><p xml:id="_fJjckyA">All of the audio clips of the two selected databases are adopted to recognize the emotion and extract log-mel spectrogram. The sample rate of the audio clips used is 16 kHz. The length of the raw audio clips used is 8 s long. If the audio clip is longer than 8 s, it will be segmented to 8 s long. Otherwise, it is padded to 8 s long. At 16 kHz sampling rate, the audio clip can be represented as a 128000-bit vector. So, the input of 1D CNN LSTM network is the 128000-bit vectors in our experiments.</p><p xml:id="_cHYEmuC">Log-mel spectrogram has been shown to be effective distinguishing features in emotion recognition. It is a representation of the short-term power spectrum of an audio clip. In the processing of computing log-mel spectrogram, the FFT window length is 2048 and the hop length is 512. Thus, the log-mel spectrogram with 251 frames and 128 mel frequency bins is calculated <ref type="bibr" coords="6,228.80,579.05,14.01,8.19" target="#b53">[54]</ref>. The log-mel spectrogram can be considered as a grid or a sequence (see Fig. <ref type="figure" coords="6,284.47,589.51,3.27,8.19" target="#fig_9">8</ref>). The input of the 2D CNN LSTM network is the 128 × 251 matrices in our experiments. So, 2D CNN LSTM network can learn high-level features from the 2D image-like patches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4." xml:id="_9nqd9Ew">Experimental results</head><p xml:id="_BgDURGg">Speaker-dependent and speaker-independent experiments are conducted on Berlin EmoDB and IEMOCAP database. Each experiment consists of two parts, the first one is conducted on raw audio clips, the second one is conducted on log-mel spectrograms. The 1D CNN LSTM network is utilized to learn the emotional features from raw audio clips, the 2D CNN LSTM network is adopted to learn high-level features from log-mel spectrograms.</p><p xml:id="_3kkxG8v">Deep networks are generally considered to be "black box" approaches, how the networks achieve the goals is obscure. Therefore, deep networks are always used to find an algorithm to do prediction. In our experiments, the designed CNN LSTM networks are also used for the predictive power rather than the weak explanatory power.</p><p xml:id="_8tX3yN7">Several techniques are introduced to lessen the chance of or amount of overfitting in experiments. Overfitting is one of the reasons for poor predictions for untrained sample data. When overfitting occurs, the overfitted model will memorize training data rather than learn to predict better. There are many reasons for the occurrence of overfitting. If a deep network is very complex, overfitting will occur. If a deep network is overtrained, overfitting will also arise. When model degrees of freedom adopted in network training is excessive, a condition of overfitting will exist <ref type="bibr" coords="6,532.52,390.76,14.01,8.19" target="#b64">[66]</ref>. So, regularization <ref type="bibr" coords="6,367.39,401.22,14.01,8.19" target="#b58">[59]</ref>, batch normalization <ref type="bibr" coords="6,464.51,401.22,14.01,8.19" target="#b36">[37]</ref>, cross-validation <ref type="bibr" coords="6,546.27,401.22,13.99,8.19" target="#b59">[60]</ref>, early stopping <ref type="bibr" coords="6,368.90,411.68,14.01,8.19" target="#b44">[45]</ref>, model selection <ref type="bibr" coords="6,451.02,411.68,15.57,8.19" target="#b57">[58]</ref> are adopted to overcome overfitting.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1." xml:id="_5bdW93M">Speaker-dependent experiments</head><p xml:id="_Nq4uPSh">We conducted extensive speaker-dependent experiments on all the labeled audio clips and log-mel spectrograms of the selected databases firstly. In each experiment, the experimental data was split into two sets randomly, the training set took 80% of the data, and the testing set took the remaining 20% of the data. The similar results of the experiments show that the designed 1D and 2D CNN LSTM networks are reliable to recognize the speech emotion.</p><p xml:id="_rDKQR7G">The goal of our work is to recognize speech emotion with high generalization performance and high accuracy. So only the best predictive and fitted models are recorded in experiments. The validation accuracy is a key indicator of the generalization of the trained model. When validation accuracy reaches its maximum during the training of the 1D and 2D CNN LSTM networks, the best predictive model will be there. Therefore the recorded model does not only fit the experimental data well but also have the superior predictive performance to recognize speech emotion.</p><p xml:id="_cmVbVS6">The average accuracies reported in this paper are not the highest accuracies. There will be lots of models in the training of the designed networks. In order to reduce overfitting, only the best predictive and fitted models are selected. The average accuracies and the validation accuracies reported in this paper are produced by the selected models. The experimental results performed on Berlin EmoDB are illustrated in Table <ref type="table" coords="6,428.03,694.01,3.37,8.19">3</ref>, and the experimental results conducted on IEMOCAP database are shown in Table <ref type="table" coords="6,500.28,704.48,3.37,8.19" target="#tab_2">4</ref>.</p><p xml:id="_wVVWNbg">In experiments, the best predictive and fitted models are recorded. When validation accuracy stops increasing during training, the model will have the superior predictive performance (see     performance, validation accuracy is monitored in our experiments, patience is set to eight. When validation accuracy is no longer increasing in training, the network will have superior predictive performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2." xml:id="_psJ56S2">Speaker-independent experiments</head><p xml:id="_YHaWGQM">Extensive speaker-independent experiments are conducted using the same approach as the speaker-dependent experiments. But the division of the data sets is not the same as the speakerdependent experiments. In experiments, the data are divided into two sets according to the subjects. Because the emotional utterances of the selected databases are all performed by ten speakers, the data of eight subjects are chosen as the training set, the data of other two subjects are chosen as the testing set.  The best predictive and fitted models are also recorded when validation accuracy reaches its maximum during training (see Fig. <ref type="figure" coords="8,329.93,566.80,7.29,8.19" target="#fig_13">10</ref>). The recorded model fits the experimental data well, and has better predictive performance. The confusion matrix performed on Berlin EmoDB is illustrated in Table <ref type="table" coords="8,521.60,587.72,3.37,8.19" target="#tab_4">5</ref>, and the confusion matrix conducted on IEMOCAP database is shown in Table <ref type="table" coords="8,344.43,608.64,3.37,8.19">6</ref>.</p><p xml:id="_HvKX9xC">From the Tables <ref type="table" coords="8,390.56,619.10,12.25,8.19">3-6</ref>, we can see that the emotions of Berlin EmoDB are recognized with high recognition accuracies, but most of the happy speeches of IEMOCAP database are misrecognized as neutral, excited etc. We listened to some of these misrecognized happy speeches. The emotion of many happy speeches could hardly be recognized without the help of linguistic information. This is consistent with our practical experience. But the happy emotion of Berlin EmoDB is recognized correctly by the designed networks. This is probably due to the difference of the culture, environment and education of speakers. So, the same speech emotion of different speakers from different cultures has not the same probability of being recognized or misrecognized. Note: The highest emotion predictions are indicated in boldface.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_hP3rAZs">Table 6</head><p xml:id="_gwMYGRj">The confusion matrixes of speaker-independent experiments on IEMOCAP database (Ang = Angry, Exc = Excited, Fru = Frustrated, Hap = Happy, Neu = Neutral, Sad = Sadness). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3." xml:id="_t9pZmYN">Recognition accuracy comparison</head><p xml:id="_mKqDtAR">The comparison of the experimental results of the two designed CNN LSTM networks is listed in Table <ref type="table" coords="9,181.94,620.79,3.37,8.19" target="#tab_6">7</ref>. From this table, we can see that the 1D CNN LSTM network also can learn emotional features from raw audio clips to recognize speech emotion. Moreover, when compared with the 1D CNN LSTM network, the 2D CNN LSTM network shows a certain advantage in overall performance. The average recognition accuracies and the validation accuracies achieved by learning deep features from log-mel spectrograms are higher than that from raw audio clips. From Figs. 9 and 10, we can also see that the 2D CNN LSTM network achieves the highest validation accuracies with fewer epochs than the 1D CNN LSTM network. In other words, 2D CNN LSTM network converges faster compared to 1D CNN LSTM network.  When compared with other well-established feature representations and methods on average accuracy, the designed 2D CNN LSTM network also performs satisfactorily. Table <ref type="table" coords="9,489.36,504.23,4.80,8.19" target="#tab_7">8</ref> shows that the average accuracy of the 2D CNN LSTM network conducted on the log-mel Spectrograms of Berlin EmoDB achieves the highest accuracy. Table <ref type="table" coords="9,345.05,535.61,4.80,8.19" target="#tab_8">9</ref> indicates that the 2D CNN LSTM network conducted on the log-mel Spectrograms of IEMOCAP database also performs well.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5." xml:id="_jfyWTPa">Discussion</head><p xml:id="_SyrteqV">In this work, 1D &amp; one 2D CNN LSTM networks, which consists of four LFLBs and one LSTM layer, are built to learn both the local and global emotion-related features. Speeches are time-varying signals, need more sophisticated analysis to reflect time-varying properties. The designed networks with the strength of CNN and LSTM are utilized to recognize the speaker's emotional state.</p><p xml:id="_m5SgKCZ">The experiments have accomplished the task of learning more emotional information from the experimental data, but how to deduce the causal relation between acted emotions and audio features is worth investigating deeply. The designed networks learned a lot of causal features from the data about the underlying mechanism, and recognized the emotions with high accuracies in experiments. So, the mechanism was deduced from the data to some extent, rather than an exact form of an assumed algorithm.</p><p xml:id="_K3aQvT8">The similar prediction performances of the designed networks in extensive experiments show that the designed networks are effective approaches for recognizing speech emotion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1." xml:id="_qxur9WQ">"Black Box"</head><p xml:id="_yVKetuj">Some researchers have begun to look into the "black box" problem to explain in more detail what's happening in such "black box" in recent years. In 2015, researchers at Google developed a deep-learning-based image recognition algorithm to discover which features are used by the program to recognize the objects. In the same year, a research team at the University of Wyoming found how certain images could fool a network by testing deep neural networks. An MIT research group is devoted to giving a deep learning-based breast cancer diagnosis algorithm some ability to explain its reasoning. In 2007, a computer scientist and neuroscientist from Hebrew University of Jerusalem shared his idea called the "information bottleneck" to explain how deep learning works <ref type="bibr" coords="10,42.73,249.43,14.01,8.19" target="#b60">[61]</ref>. Researchers at Columbia and Lehigh universities developed a tool, DeepXplore, to debug the neural networks by error-checking the reasoning of the thousands or millions of neurons <ref type="bibr" coords="10,244.11,270.35,14.01,8.19" target="#b61">[62]</ref>. Another tool developed at Stanford University, called ReluPlex, used the power of mathematical proofs to verify properties of deep neural networks, especially small networks <ref type="bibr" coords="10,203.63,301.74,14.01,8.19" target="#b62">[63]</ref>. These approaches have made much progress in some image-based applications, but they are not the general solutions to solve the "black box" problem <ref type="bibr" coords="10,42.73,333.12,14.52,8.19" target="#b63">[64,</ref><ref type="bibr" coords="10,57.26,333.12,10.89,8.19">65]</ref>.</p><p xml:id="_kRrM4ec">We have also done a great deal of work to better understand the designed deep networks which are used to process speech. Many architectures which were constructed by using a different number of layers and a different number of filters at each layer were tested to learn the effect of basic parameters of the designed networks on prediction performance. When the basic parameters of the architectures were experimentally determined, experiments were also conducted on different handcrafted features to detect which were efficient to recognize emotion. These efforts have helped us to reveal more details of the designed deep networks in experiments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2." xml:id="_p4Pu6Sj">Over fitting</head><p xml:id="_bejwFTq">Regularization was adopted to prevent overfitting by modifying a learning algorithm in our experiments. It always involves imposing some kind of smoothness constraint on a model, and allows to fix the number of parameters in the model or to augment the cost function. In our experiments, regularization implemented by applying penalties on layer parameters and layer activity during optimization. The loss function of the designed deep networks incorporates the penalties. The experiments show that regularization can guarantee the convergence of the designed networks and reduce overfitting.</p><p xml:id="_R9q5ABd">BN layer was adopted in the designed CNN LSTM networks to combat overfitting. When applying batch normalization, an inputted feature is always in conjunction with other features in each batch. Therefore, each normalized feature produced by BN layer is no longer a deterministic value for each inputted feature. This effect facilitates the generalization of the deep networks, speeds up the training and reduces overfitting in experiments.</p><p xml:id="_YeF933c">Different cross-validations were used to avoid an overtrained model to a particular dataset in speaker-dependent and speakerindependent experiments. The goal of cross-validation is to limit problems like overfitting, by using a dataset to "test" a model in the training phase. In speaker-dependent experiments, experimental data were randomly divided into train and test sets. In speakerindependent experiments, experimental data were divided into two sets according to the subjects. The experiments show that cross-validation is an effective way to avoid overtraining. The networks can learn to generalize better.</p><p xml:id="_xxMUu7e">Early stopping was also utilized to reduce overfitting in our experiments. The designed networks were trained with an iterative method which can make the model to better fit the training data. Early stopping tends to improve the model's performance on data outside of the training set. Different monitored quantities and patiences will affect the experimental results. A small patience will lead to an undertrained model, and a big patience will produce an overtrained model. The experiments show that early stopping can enable the networks to learn more general features, and have superior predictive performance.</p><p xml:id="_3GXSbpQ">Model selection was used to lessen the chance of overfitting by selecting a model from a set of candidate models. Extensive experiments have been conducted on the selected databases in our experiments. Only the best predictive and fitted models are selected. These models were recorded when the validation accuracy would not increase during training. So, the recognition accuracies produced by the best predictive and fitted models are not the highest accuracies. The selected models not only fit the experimental data well but also have superior predictive performance.</p><p xml:id="_6C4rfMx">Several effective methods have been used to reduce overfitting in our experiments, but overfitting has not been completely avoided. From Figs. 9 and 10, the training accuracies have always been higher than the validation accuracy. This means the networks learn some random features of the training data which have no causal relation to the target label. So the models memorize more information about the training data, rather than learning to generalize. Of course, there is another possibility that learned random features are also the emotion features which do not exist in the validation data. Hence, recording a speech emotion database with a large number of utterances is very important to promote the development of this field.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6." xml:id="_pbGWzW5">Conclusion</head><p xml:id="_jnGRNeP">This paper presents 1D and 2D CNN LSTM networks to recognize speech emotion. The method of how to learn local correlations and global contextual information from raw audio clips and log-mel spectrograms is investigated. LFLB which consists of one convolutional layer, one BN layer, one exponential linear unit layer, and one max-pooling layer is designed to learn local features. When local features learned by LFLBs are reshaped, they are inputted into an LSTM layer. The LSTM layer can learn contextual dependencies from inputted local features. So, the features learned by the designed CNN LSTM networks contain local information and long-term contextual dependencies.</p><p xml:id="_XFwJWnc">The performances of the two networks were tested on two benchmark databases. The results show that the two designed CNN LSTM networks can learn distinguishing features and model highlevel abstractions of the emotional information. The comparison of the experimental results shows that the 2D CNN LSTM network has a certain advantage over 1D CNN LSTM network in overall performance. When compared with other well-established feature representations and methods, 2D CNN LSTM network also has the edge on average accuracy.</p><p xml:id="_ShXGNV5">Though the deep networks presented in this paper have gotten better performance in speech emotion recognition, there are many aspects still need to be improved. Firstly, how the designed networks recognize the emotion cannot be explained in more detail, meaning the "black box" of these networks have not been uncovered. Some researchers mentioned in Section 5.1 have done a lot of works to open the "black box" of deep learning, but most of them focus on the deep networks applied in image processing.</p><p xml:id="_YDZEMsR">Speech is different from the image, so how to uncover the "black box" of the deep networks designed for speech processing deserves deeply study. Secondly, it is not the end to acquire higher accuracy in speech emotion recognition. Any new network architectures or new optimization algorithms which can learn more general features or can train a superior predictive model have to be worth investigating. Finally, in order to combine the advantages of different features, developing a method to merge different deep features which are learned by different deep networks is also worth delving into.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,42.73,82.88,251.55,6.55;2,42.73,91.44,151.60,6.55;2,42.73,100.01,152.48,6.55;2,42.73,108.58,183.55,6.55;2,60.01,133.63,216.72,51.84"><head>Fig. 1 .</head><label>1</label><figDesc xml:id="_fvnMa5d">Fig. 1. A general flow chart of traditional speech emotion recognition approach. The handcrafted features are extracted from raw data. (a) The deep features are extracted from raw data. (b) The deep features are learned from handcrafted features.</figDesc><graphic coords="2,60.01,133.63,216.72,51.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="2,42.73,195.81,251.55,6.55;2,42.73,204.38,32.22,6.55"><head>Fig. 2 .</head><label>2</label><figDesc xml:id="_NTbCVSh">Fig. 2. Two flow charts of the speech emotion recognition approaches adopted in this paper.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="2,544.75,134.36,19.02,8.19;2,312.22,144.82,251.54,8.19;2,312.22,155.28,251.55,8.19;2,312.22,165.75,251.54,8.19;2,312.22,176.21,251.55,8.19;2,312.22,186.67,251.55,8.19;2,312.22,197.13,251.54,8.19;2,312.22,207.59,251.55,8.19;2,312.22,218.05,251.54,8.19;2,312.22,228.51,251.55,8.19;2,312.22,238.97,251.55,8.19;2,312.22,249.43,251.55,8.19;2,312.22,259.89,251.55,8.19;2,312.22,270.35,251.54,8.19;2,312.22,280.81,251.55,8.19;2,312.22,291.27,251.55,8.19;2,312.22,301.74,251.55,8.19;2,312.22,312.20,251.55,8.19;2,312.22,322.66,251.54,8.19;2,312.22,333.12,168.33,8.19"><head></head><label></label><figDesc xml:id="_TTKRHRU">et al. presented a method based on MFCCs as features and Gaussian mixture model classifier to recognize emotion from Assamese speeches [25]. Milton, A. et al. used a 3-stage Support Vector Machine classifier to classify seven different emotions present in the Berlin Emotional Database (Berlin EmoDB) [26]. VB Waghmare et al. adopted MFCCs to analyze and recognize speech emotion from artificial emotional Marathi speech database [27]. Demircan, S. et al. used a k-NN algorithm to classify the speech emotion after extracting MFCCs from the audio clips of the Berlin EmoDB [28]. Nalini, N. J. et al. developed a speech emotion recognition system using the residual phase and MFCCs features with the autoassociative neural network (AANN) [29]. Chenchah, Farah et al. used a Hidden Markov Model (HMM) and Support Vector Machine (SVM) to classify the spectral features extracted from audio characteristics of emotional speech [30]. Nalini, N. J. et al. combined the evidence from MFCCs and residual phase (RP) features to recognize emotion in music using AANN, SVM, RBFNN, respectively [31]. Though handcrafted features are very effective to distinguish emotions in speech, most of them are low-level features.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="3,31.92,139.88,251.55,6.55;3,31.92,148.44,201.27,6.55;3,31.92,157.01,251.55,6.55;3,31.92,165.58,251.55,6.55;3,31.92,174.15,85.24,6.55;3,31.92,182.72,251.55,6.55;3,31.92,191.28,251.55,6.55;3,31.92,199.85,128.09,6.55;3,79.70,55.52,156.00,74.02"><head>Fig. 3 .</head><label>3</label><figDesc xml:id="_VM2ktcM">Fig. 3. Block diagram of the local feature learning block. For brevity, batch normalization and exponential linear unit are abbreviated as BN and ELU. (a) Diagrams of 1D convolution and pooling: the first represents the 1D convolution with a kernel of size 4 and stride 1; the second represents the 1D pooling with a kernel of size 3 and stride 3. (b) Diagrams of 2D convolution and pooling: the first represents the 2D convolution with a kernel of size 2 × 2 and stride 1 × 1; the second represents the 2D pooling with a kernel of size 2 × 2 and stride 2 × 2.</figDesc><graphic coords="3,79.70,55.52,156.00,74.02" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="3,205.24,737.50,174.41,6.55;3,136.45,483.22,312.24,243.94"><head>Fig. 4 .</head><label>4</label><figDesc xml:id="_gWbvKRZ">Fig. 4. Illustration of 1D and 2D convolution and pooling.</figDesc><graphic coords="3,136.45,483.22,312.24,243.94" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="4,312.22,119.88,251.55,6.55;4,312.22,128.44,251.55,6.55;4,312.22,137.01,37.62,6.55;4,330.00,55.54,216.00,54.00"><head>Fig. 5 .</head><label>5</label><figDesc xml:id="_JqEA5af">Fig. 5. Block diagram of the overall architecture of the designed 1D and 2D CNN LSTM networks. For brevity, audio clip and log-mel spectrogram are abbreviated as AC and LMS.</figDesc><graphic coords="4,330.00,55.54,216.00,54.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="5,31.92,188.88,521.02,6.55;5,31.92,197.44,204.95,6.55;5,76.45,55.99,432.48,122.54"><head>Fig. 6 .</head><label>6</label><figDesc xml:id="_Hp6nedQ">Fig. 6. Illustration of the learning of local features from audio clips by 1D LFLB (left figure, the colours stand for different receptive fields of the 1D LFLB), and the learning of contextual dependencies from local features by LSTM (right figure).</figDesc><graphic coords="5,76.45,55.99,432.48,122.54" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="5,313.37,220.31,239.59,8.19;5,301.41,230.77,251.54,8.19;5,301.41,241.23,251.54,8.19;5,301.41,251.69,251.54,8.19;5,301.41,262.15,251.55,8.19;5,301.41,272.61,251.54,8.19;5,301.41,283.07,251.55,8.19;5,301.41,293.53,251.54,8.19;5,301.41,303.99,251.55,8.19;5,301.41,314.46,131.89,8.19"><head></head><label></label><figDesc xml:id="_kWjmbJ7">This network is constructed to learn high-level emotional features from log-mel spectrograms. When a log-mel spectrogram in the form of a matrix is inputted into the network, local features with local correlations are learned by four LFLBs. The features outputted from 2LFLB4 are reshaped into a form of a temporal sequence and are inputted into the LSTM layer (2L). Then the contextual dependencies are learned from these local features. The learning of local features and contextual dependencies is shown in Fig.7. So, the features outputted from the LSTM layer contain local correlations and global contextual information.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="6,42.73,212.88,521.02,6.55;6,42.73,221.44,239.48,6.55;6,140.76,55.08,325.20,147.46"><head>Fig. 7 .</head><label>7</label><figDesc xml:id="_Z9XpHvs">Fig. 7. Illustration of the learning of local features from log-mel spectrogram by 2D LFLB (left figure, the colours stand for different receptive fields of the 2D LFLB), and the learning of contextual dependencies from local features by LSTM (right figure).</figDesc><graphic coords="6,140.76,55.08,325.20,147.46" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="7,31.92,658.88,521.02,6.55;7,31.92,667.44,211.07,6.55;7,112.45,55.40,360.48,593.14"><head>Fig. 8 .</head><label>8</label><figDesc xml:id="_w8jSz2h">Fig. 8. Waveforms and Log-mel spectrograms of the 03a01Wa.wav (Angry), 03a04Lc.wav (Boredom), 03b10Ec.wav (Disgust), 03a04Ad.wav (Fear), 03a01 Fa.wav (Happy), 03a01Nc.wav (Neutral), and 03a02Ta.wav (Sadness) in Berlin EmoDB.</figDesc><graphic coords="7,112.45,55.40,360.48,593.14" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10" coords="7,31.92,690.31,251.54,8.19;7,31.92,700.77,251.55,8.19;7,31.92,711.23,251.54,8.19;7,31.92,721.69,251.55,8.19;7,31.92,732.15,226.25,8.19"><head>Fig. 9 )</head><label>9</label><figDesc xml:id="_uqJhRH6">Fig.9). From the figure, we can see that when the validation accuracy reaches its maximum, the training accuracy does not reach its maximum. When the validation accuracy decreases while the training accuracy steadily increases, a situation of overfitting has occurred. So, the training will be stopped by early stopping.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11" coords="8,42.73,55.77,22.74,6.14;8,42.73,63.93,251.55,6.55;8,42.73,72.49,251.55,6.55;8,42.73,81.06,89.23,6.55"><head>Table 3</head><label>3</label><figDesc xml:id="_JXjzays">The confusion matrixes of speaker-dependent experiments on Berlin EmoDB (Ang = Anger, Bor = Boredom, Dis = Disgust, Fea = Fear, Hap = Happiness, Neu = Neutral, Sad = Sadness).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12" coords="8,312.22,241.88,251.55,6.55;8,312.22,250.44,251.55,6.55;8,312.22,259.01,251.55,6.55;8,312.22,267.58,251.55,6.55;8,312.22,276.15,106.50,6.55;8,317.50,55.57,241.20,175.97"><head>Fig. 9 .</head><label>9</label><figDesc xml:id="_F2dYB9E">Fig. 9. The 2D CNN LSTM network's training accuracy and validation accuracy on Berlin EmoDB and IEMOCAP database in speaker-dependent experiments per epoch. The annotation shown in parenthesis is the number of epochs that yields the best results and the highest accuracy on the validation set. The annotated validation accuracies are shown in Table 7(b).</figDesc><graphic coords="8,317.50,55.57,241.20,175.97" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13" coords="8,312.22,485.00,251.55,6.55;8,312.22,493.57,251.55,6.55;8,312.22,502.14,251.55,6.55;8,312.22,510.71,251.55,6.55;8,312.22,519.27,106.50,6.55;8,317.50,299.56,241.20,175.10"><head>Fig. 10 .</head><label>10</label><figDesc xml:id="_fKSGNv5">Fig. 10. The 2D CNN LSTM networks training accuracy and validation accuracy on Berlin EmoDB and IEMOCAP database in speaker-independent experiments per epoch. The annotation shown in parenthesis is the number of epochs that yields the best results and the highest accuracy on the validation set. The annotated validation accuracies are shown in Table 7(b).</figDesc><graphic coords="8,317.50,299.56,241.20,175.10" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="8,42.73,95.58,245.58,212.66"><head></head><label></label><figDesc xml:id="_hppX4cs">Confusion matrix based on audio clips (accuracy %)</figDesc><table coords="8,48.71,109.73,239.60,185.48"><row><cell></cell><cell>Ang</cell><cell>Bor</cell><cell>Dis</cell><cell>Fea</cell><cell>Hap</cell><cell>Neu</cell><cell>Sad</cell></row><row><cell>Ang</cell><cell>95.28</cell><cell>0</cell><cell>0</cell><cell>0.79</cell><cell>3.15</cell><cell>0</cell><cell>0.79</cell></row><row><cell>Bor</cell><cell>0</cell><cell>87.65</cell><cell>0</cell><cell>1.23</cell><cell>1.23</cell><cell>9.88</cell><cell>0</cell></row><row><cell>Dis</cell><cell>4.35</cell><cell>4.35</cell><cell>82.61</cell><cell>4.35</cell><cell>2.17</cell><cell>2.17</cell><cell>0</cell></row><row><cell>Fea</cell><cell>1.45</cell><cell>0</cell><cell>1.45</cell><cell>92.75</cell><cell>2.9</cell><cell>1.45</cell><cell>0</cell></row><row><cell>Hap</cell><cell>8.45</cell><cell>0</cell><cell>4.23</cell><cell>0</cell><cell>87.32</cell><cell>0</cell><cell>0</cell></row><row><cell>Neu</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>100</cell><cell>0</cell></row><row><cell>Sad</cell><cell>0</cell><cell>1.61</cell><cell>1.61</cell><cell>0</cell><cell>0</cell><cell>1.61</cell><cell>95.16</cell></row><row><cell cols="3">Average accuracy = 92.34</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="6">Confusion matrix based on log-mel spectrograms (accuracy %)</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Ang</cell><cell>Bor</cell><cell>Dis</cell><cell>Fea</cell><cell>Hap</cell><cell>Neu</cell><cell>Sad</cell></row><row><cell>Ang</cell><cell>99.21</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0.79</cell><cell>0</cell><cell>0</cell></row><row><cell>Bor</cell><cell>0</cell><cell>95.06</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>3.7</cell><cell>1.23</cell></row><row><cell>Dis</cell><cell>2.17</cell><cell>2.17</cell><cell>95.65</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell></row><row><cell>Fea</cell><cell>1.45</cell><cell>0</cell><cell>1.45</cell><cell>92.75</cell><cell>1.45</cell><cell>2.9</cell><cell>0</cell></row><row><cell>Hap</cell><cell>5.63</cell><cell>0</cell><cell>2.82</cell><cell>0</cell><cell>88.73</cell><cell>2.82</cell><cell>0</cell></row><row><cell>Neu</cell><cell>0</cell><cell>5.06</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>93.67</cell><cell>1.27</cell></row><row><cell>Sad</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>100</cell></row><row><cell cols="3">Average accuracy = 95.33</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note xml:id="_pwUAs6s">Note: The highest emotion predictions are indicated in boldface.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="8,42.73,325.05,251.55,235.34"><head>Table 4</head><label>4</label><figDesc xml:id="_5XZ8r6Y">The confusion matrixes of speaker-dependent experiments on IEMOCAP database (Ang = Angry, Exc = Excited, Fru = Frustrated, Hap = Happy, Neu = Neutral, Sad = Sadness).</figDesc><table coords="8,42.73,364.87,245.58,195.52"><row><cell cols="5">Confusion matrix based on audio clips (accuracy %)</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Ang</cell><cell>Exc</cell><cell>Fru</cell><cell>Hap</cell><cell>Neu</cell><cell>Sad</cell></row><row><cell>Ang</cell><cell>40.85</cell><cell>40.85</cell><cell>4.23</cell><cell>1.41</cell><cell>12.68</cell><cell>0</cell></row><row><cell>Exc</cell><cell>0.56</cell><cell>84.83</cell><cell>2.25</cell><cell>0</cell><cell>10.11</cell><cell>2.25</cell></row><row><cell>Fru</cell><cell>0.74</cell><cell>22.88</cell><cell>46.86</cell><cell>0</cell><cell>23.99</cell><cell>5.54</cell></row><row><cell>Hap</cell><cell>0</cell><cell>29.03</cell><cell>9.68</cell><cell>25.81</cell><cell>29.03</cell><cell>6.45</cell></row><row><cell>Neu</cell><cell>0.3</cell><cell>12.2</cell><cell>0.61</cell><cell>0</cell><cell>70.12</cell><cell>16.77</cell></row><row><cell>Sad</cell><cell>0</cell><cell>1.51</cell><cell>0.38</cell><cell>0</cell><cell>10.57</cell><cell>87.55</cell></row><row><cell cols="3">Average accuracy = 67.92</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="6">Confusion matrix based on log-mel spectrograms (accuracy %)</cell><cell></cell></row><row><cell></cell><cell>Ang</cell><cell>Exc</cell><cell>Fru</cell><cell>Hap</cell><cell>Neu</cell><cell>Sad</cell></row><row><cell>Ang</cell><cell>90.14</cell><cell>5.63</cell><cell>2.82</cell><cell>0</cell><cell>1.41</cell><cell>0</cell></row><row><cell>Exc</cell><cell>2.25</cell><cell>89.89</cell><cell>2.25</cell><cell>0</cell><cell>5.06</cell><cell>0.56</cell></row><row><cell>Fru</cell><cell>3.32</cell><cell>5.17</cell><cell>83.03</cell><cell>0</cell><cell>7.75</cell><cell>0.74</cell></row><row><cell>Hap</cell><cell>3.23</cell><cell>25.81</cell><cell>0</cell><cell>51.61</cell><cell>16.13</cell><cell>3.23</cell></row><row><cell>Neu</cell><cell>0</cell><cell>4.27</cell><cell>3.05</cell><cell>0</cell><cell>90.24</cell><cell>2.44</cell></row><row><cell>Sad</cell><cell>0</cell><cell>0</cell><cell>0.75</cell><cell>0</cell><cell>1.51</cell><cell>97.74</cell></row><row><cell cols="3">Average accuracy = 89.16</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Note</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="8,55.56,553.84,181.82,6.55"><head>:</head><label></label><figDesc xml:id="_uaSkKFu">The highest emotion predictions are indicated in boldface.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="9,31.92,55.77,251.55,239.44"><head>Table 5</head><label>5</label><figDesc xml:id="_rQCNy5z">The confusion matrixes of speaker-independent experiments on Berlin EmoDB (Ang = Anger, Bor = Boredom, Dis = Disgust, Fea = Fear, Hap = Happiness, Neu = Neutral, Sad = Sadness).</figDesc><table coords="9,37.90,95.58,239.60,199.62"><row><cell cols="5">Confusion matrix based on audio clips (accuracy %)</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Ang</cell><cell>Bor</cell><cell>Dis</cell><cell>Fea</cell><cell>Hap</cell><cell>Neu</cell><cell>Sad</cell></row><row><cell>Ang</cell><cell>92.91</cell><cell>0</cell><cell>0</cell><cell>3.94</cell><cell>3.15</cell><cell>0</cell><cell>0</cell></row><row><cell>Bor</cell><cell>0</cell><cell>98.77</cell><cell>1.23</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell></row><row><cell>Dis</cell><cell>8.7</cell><cell>0</cell><cell>76.09</cell><cell>10.87</cell><cell>2.17</cell><cell>0</cell><cell>2.17</cell></row><row><cell>Fea</cell><cell>1.45</cell><cell>0</cell><cell>1.45</cell><cell>94.2</cell><cell>0</cell><cell>2.9</cell><cell>0</cell></row><row><cell>Hap</cell><cell>19.72</cell><cell>0</cell><cell>1.41</cell><cell>8.45</cell><cell>69.01</cell><cell>1.41</cell><cell>0</cell></row><row><cell>Neu</cell><cell>0</cell><cell>15.19</cell><cell>0</cell><cell>3.8</cell><cell>1.27</cell><cell>78.48</cell><cell>1.27</cell></row><row><cell>Sad</cell><cell>0</cell><cell>9.68</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>1.61</cell><cell>88.71</cell></row><row><cell cols="3">Average accuracy = 86.73</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="6">Confusion matrix based on log-mel spectrograms (accuracy %)</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Ang</cell><cell>Bor</cell><cell>Dis</cell><cell>Fea</cell><cell>Hap</cell><cell>Neu</cell><cell>Sad</cell></row><row><cell>Ang</cell><cell>100</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell></row><row><cell>Bor</cell><cell>0</cell><cell>97.53</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>2.47</cell><cell>0</cell></row><row><cell>Dis</cell><cell>6.52</cell><cell>0</cell><cell>86.96</cell><cell>4.35</cell><cell>2.17</cell><cell>0</cell><cell>0</cell></row><row><cell>Fea</cell><cell>2.9</cell><cell>0</cell><cell>0</cell><cell>97.1</cell><cell>0</cell><cell>0</cell><cell>0</cell></row><row><cell>Hap</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>8.45</cell><cell>91.55</cell><cell>0</cell><cell>0</cell></row><row><cell>Neu</cell><cell>0</cell><cell>1.27</cell><cell>0</cell><cell>5.06</cell><cell>0</cell><cell>93.67</cell><cell>0</cell></row><row><cell>Sad</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>1.61</cell><cell>98.39</cell></row><row><cell cols="3">Average accuracy = 95.89</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="9,31.92,368.68,245.58,195.52"><head></head><label></label><figDesc xml:id="_77Sb9Rs">The highest emotion predictions are indicated in boldface.</figDesc><table coords="9,31.92,368.68,245.58,195.52"><row><cell cols="5">Confusion matrix based on audio clips (accuracy %)</cell><cell></cell><cell></cell></row><row><cell></cell><cell>Ang</cell><cell>Exc</cell><cell>Fru</cell><cell>Hap</cell><cell>Neu</cell><cell>Sad</cell></row><row><cell>Ang</cell><cell>90.14</cell><cell>2.82</cell><cell>1.41</cell><cell>2.82</cell><cell>2.82</cell><cell>0</cell></row><row><cell>Exc</cell><cell>1.69</cell><cell>83.71</cell><cell>3.37</cell><cell>0</cell><cell>9.55</cell><cell>1.69</cell></row><row><cell>Fru</cell><cell>1.11</cell><cell>6.27</cell><cell>78.6</cell><cell>0.74</cell><cell>9.23</cell><cell>4.06</cell></row><row><cell>Hap</cell><cell>3.23</cell><cell>9.68</cell><cell>12.9</cell><cell>25.81</cell><cell>41.94</cell><cell>6.45</cell></row><row><cell>Neu</cell><cell>0.3</cell><cell>6.1</cell><cell>4.57</cell><cell>0.3</cell><cell>68.29</cell><cell>20.43</cell></row><row><cell>Sad</cell><cell>0</cell><cell>0</cell><cell>1.13</cell><cell>0</cell><cell>3.02</cell><cell>95.85</cell></row><row><cell cols="3">Average accuracy = 79.72</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="6">Confusion matrix based on log-mel spectrograms (accuracy %)</cell><cell></cell></row><row><cell></cell><cell>Ang</cell><cell>Exc</cell><cell>Fru</cell><cell>Hap</cell><cell>Neu</cell><cell>Sad</cell></row><row><cell>Ang</cell><cell>84.51</cell><cell>15.49</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>0</cell></row><row><cell>Exc</cell><cell>1.12</cell><cell>88.2</cell><cell>3.93</cell><cell>0</cell><cell>6.74</cell><cell>0</cell></row><row><cell>Fru</cell><cell>1.85</cell><cell>6.27</cell><cell>75.65</cell><cell>0</cell><cell>15.5</cell><cell>0.74</cell></row><row><cell>Hap</cell><cell>3.23</cell><cell>19.35</cell><cell>16.13</cell><cell>16.13</cell><cell>41.94</cell><cell>3.23</cell></row><row><cell>Neu</cell><cell>0.61</cell><cell>5.18</cell><cell>3.35</cell><cell>0</cell><cell>89.94</cell><cell>0.91</cell></row><row><cell>Sad</cell><cell>0</cell><cell>0.38</cell><cell>0.75</cell><cell>0</cell><cell>1.89</cell><cell>96.98</cell></row><row><cell cols="3">Average accuracy = 85.58</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Note:</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" coords="9,301.41,55.77,251.55,184.18"><head>Table 7</head><label>7</label><figDesc xml:id="_8a24MQF">The comparison of average and validation accuracy of the designed 1D and 2D CNN LSTM networks. The best performances are indicated in boldface.</figDesc><table coords="9,307.19,87.02,239.80,152.93"><row><cell>(a) average accuracy</cell><cell></cell><cell></cell></row><row><cell>Datasets</cell><cell>Audio Clip</cell><cell>Log-mel Spectrogram</cell></row><row><cell>Berlin EmoDB a</cell><cell>92.34</cell><cell>95.33</cell></row><row><cell>IEMOCAP database a</cell><cell>67.92</cell><cell>89.16</cell></row><row><cell>Berlin EmoDB b</cell><cell>86.73</cell><cell>95.89</cell></row><row><cell>IEMOCAP database b</cell><cell>79.72</cell><cell>85.58</cell></row><row><cell>(b) validation accuracy</cell><cell></cell><cell></cell></row><row><cell>Datasets</cell><cell>Audio Clip</cell><cell>Log-mel Spectrogram</cell></row><row><cell>Berlin EmoDB a</cell><cell>61.68</cell><cell>76.64</cell></row><row><cell>IEMOCAP database a</cell><cell>46.12</cell><cell>62.07</cell></row><row><cell>Berlin EmoDB b</cell><cell>57.14</cell><cell>82.42</cell></row><row><cell>IEMOCAP database b</cell><cell>45.52</cell><cell>52.14</cell></row><row><cell cols="2">a Speaker-dependent experiments.</cell><cell></cell></row><row><cell cols="2">b Speaker-independent experiments.</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7" coords="9,301.41,256.03,252.51,102.36"><head>Table 8</head><label>8</label><figDesc xml:id="_3NTAAgB">The comparison of average recognition accuracy of 2D CNN LSTM network conducted on Berlin EmoDB with other well-established feature representations and methods. The best performances are indicated in boldface.</figDesc><table coords="9,307.39,295.85,246.53,62.54"><row><cell>Research work</cell><cell>Accuracy</cell><cell>Accuracy</cell></row><row><cell></cell><cell>(speaker-dep)</cell><cell>(speaker-indep)</cell></row><row><cell>Wu et al. [10]</cell><cell>91.6</cell><cell>85.8</cell></row><row><cell>Zhengwei Huang et al. [12]</cell><cell>88.3</cell><cell>85.2</cell></row><row><cell>Huang, Yongming, et al. [13]</cell><cell>75.5</cell><cell>-</cell></row><row><cell>Semiye Demircan et al. [14]</cell><cell>/</cell><cell>92.9</cell></row><row><cell>Our Work</cell><cell>95.33</cell><cell>95.89</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8" coords="9,301.41,377.84,252.51,85.22"><head>Table 9</head><label>9</label><figDesc xml:id="_g3BHHct">The comparison of recognition accuracy of 2D CNN LSTM network conducted on IEMOCAP database with other well-established feature representations and methods. The best performances are indicated in boldface.</figDesc><table coords="9,307.39,417.66,246.53,45.40"><row><cell>Research work</cell><cell>Accuracy</cell><cell>Test Accuracy</cell></row><row><cell></cell><cell>(speaker-dep)</cell><cell>(speaker-indep)</cell></row><row><cell>W. Q. Zheng et al. [21]</cell><cell>/</cell><cell>40.02</cell></row><row><cell>Yelin Kim et al. [53]</cell><cell>73.78</cell><cell>/</cell></row><row><cell>Our Work</cell><cell>89.16</cell><cell>52.14</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ybTUJg5">Acknowledgements</head><p xml:id="_5kW9qS9">Part of this work was done when the first author worked in Advanced Analytics Institute (AAI), University of Technology, Sydney as a visiting scholar. Jianfeng Zhao, Xia Mao, and Lijiang Chen's work in this paper was supported in part by the National Natural Science Foundation of China under Grant No. 61603013. This article recently received funding from the Fundamental Research Funds for the Central Universities (Grant No. YWF-18-BJ-Y-181).</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="11,47.00,296.21,236.47,6.55;11,47.00,304.18,193.49,6.55" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_qRZNXzW">Bi-modal emotion recognition from expressive face and body gestures</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Gunes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Piccardi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_qtGZQs6">J. Netw. Comput. Appl</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1334" to="1345" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,312.15,198.13,6.55;11,47.00,320.12,230.89,6.55;11,47.00,328.09,215.11,6.55;11,47.00,336.06,156.74,6.55" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_YyEAgKe">Implementation of wavelet packet transform and non linear analysis for emotion classification in stroke patient using brain signals</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">Z</forename><surname>Bong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Murugappan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">M</forename><surname>Ibrahim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Mohamad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Rajamanickam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2cvYxGX">Biomed. Signal Process. Control</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="102" to="112" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,344.03,205.86,6.55;11,47.00,352.00,235.87,6.55;11,47.00,359.97,231.27,6.55;11,47.00,367.94,120.42,6.55" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_E56f2zC">Detection of emotions in Parkinson&apos;s disease using higher order spectral features from brain&apos;s electrical activity</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Yuvaraj</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Murugappan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">M</forename><surname>Ibrahim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Sundaraj</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">I</forename><surname>Omar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Mohamad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Palaniappan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_V56nZ5a">Biomed. Signal Process. Control</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="108" to="116" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,375.91,221.69,6.55;11,47.00,383.88,216.67,6.55;11,47.00,391.85,50.33,6.55" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_xEjy9an">Survey on speech emotion recognition: features, classification schemes, and databases</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">E</forename><surname>Ayadi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Kamel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Karray</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_A57DZsU">Pattern Recognit</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="572" to="587" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,399.82,233.16,6.55;11,47.00,407.79,232.86,6.55;11,47.00,415.76,93.76,6.55" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_VrnQAvG">Recognizing emotions induced by affective sounds through heart rate variability</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Nardelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Valenza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Greco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lanata</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Scilingo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FrRZyVX">IEEE Trans. Affect. Comput</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="385" to="394" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,423.73,219.08,6.55;11,47.00,431.70,227.06,6.55;11,47.00,439.67,84.46,6.55" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_aHu5YNj">Features and classifiers for emotion recognition from speech: a survey from</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">N</forename><surname>Anagnostopoulos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Iliou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Giannoukos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JY99yFx">Artif. Intell. Rev</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="155" to="177" />
+			<date type="published" when="2000">2000 to 2011. 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,447.64,212.45,6.55;11,47.00,455.61,218.39,6.55;11,47.00,463.58,136.92,6.55" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_cTD2a7Z">Cooperative learning and its application to emotion recognition from speech</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Coutinho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Schuller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mbsmuf2">IEEE/ACM Trans. Audio Speech Lang. Process</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="115" to="126" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,471.55,234.03,6.55;11,47.00,479.52,223.34,6.55;11,47.00,487.50,200.43,6.55" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_n7Vaeep">Automatic analysis of speech F0 contour for the characterization of mood changes in bipolar patients</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Guidi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Vanello</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Bertschy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Gentili</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Landini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">P</forename><surname>Scilingo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dsejVSS">Biomed. Signal Process. Control</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="29" to="37" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,495.47,197.06,6.55;11,47.00,503.44,229.13,6.55;11,47.00,511.41,211.31,6.55" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_pTVZgp5">Study of empirical mode decomposition and spectral analysis for stress and emotion classification in natural speech</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Lech</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">C</forename><surname>Maddage</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">B</forename><surname>Allen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mHHq2NY">Biomed. Signal Process. Control</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="139" to="146" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,519.38,221.05,6.55;11,47.00,527.35,215.57,6.55" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_xvq2Bau">Automatic speech emotion recognition using modulation spectral features</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">H</forename><surname>Falk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">Y</forename><surname>Chan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gjUSdyR">Speech Commun</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="768" to="785" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,535.26,226.96,6.61;11,47.00,543.29,219.16,6.55;11,47.00,551.26,205.46,6.55" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_bs7hh7C">Villase ñor-Pineda, Acoustic feature selection and classification of emotions in speech using a 3D continuous emotion model</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Pérez-Espinosa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">A</forename><surname>Reyes-García</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ZVwtUP2">Biomed. Signal Process. Control</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="79" to="87" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,559.23,232.32,6.55;11,47.00,567.20,113.14,6.55" xml:id="b11">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhan</surname></persName>
+		</author>
+		<title level="m" xml:id="_bKDbNyU">Speech Emotion Recognition Using CNN, ACM Multimedia</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="801" to="804" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,575.17,212.69,6.55;11,47.00,583.14,232.84,6.55;11,47.00,591.11,92.23,6.55" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZYwEm63">Extraction of adaptive wavelet packet filter-bank-based acoustic feature for speech emotion recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_6kuUc7H">IET Signal Process</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="341" to="348" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,599.08,207.79,6.55;11,47.00,607.05,232.00,6.55;11,47.00,615.02,80.01,6.55" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_phMNSa9">Application of fuzzy C-means clustering algorithm to spectral features for emotion classification from speech</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Demircan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Kahramanli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xhyEwd5">Neural Comput. Appl</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="8" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,622.99,211.48,6.55;11,47.00,630.96,233.99,6.55;11,47.00,638.93,42.62,6.55" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_hT6W26j">Weighted spectral features based on local Hu moments for speech emotion recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nSFKE5f">Biomed. Signal Process. Control</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="80" to="90" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,646.90,232.96,6.55;11,47.00,654.87,208.56,6.55" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_fwnZ8RQ">Speech emotion recognition: features and classification models</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">L</forename><surname>Cheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_S6dm6Hh">Digit. Signal Process</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1154" to="1160" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,662.84,235.53,6.55;11,47.00,670.81,223.56,6.55;11,47.00,678.78,57.98,6.55" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_wjXNgkM">Text-independent phoneme segmentation combining EGG and speech data</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_qqrhBwD">IEEE/ACM Trans. Audio Speech Lang. Process</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1029" to="1037" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,686.75,219.63,6.55;11,47.00,694.72,215.45,6.55" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_6gd9KDy">Hybrid speech recognition with Deep Bidirectional LSTM</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Graves</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Jaitly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">R</forename><surname>Mohamed</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rb6hYcD">Autom. Speech Recognit. Underst</title>
+		<imprint>
+			<biblScope unit="page" from="273" to="278" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,47.00,702.69,213.63,6.55;11,47.00,710.66,229.19,6.55;11,47.00,718.63,170.04,6.55" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_H3pMVs5">Speech emotion recognition using deep neural network and extreme learning machine</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Tashev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_DU6Yb2S">Conference of the International Speech Communication Association</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="223" to="227" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,57.21,216.69,6.55;11,316.49,65.18,228.14,6.55;11,316.49,73.15,73.73,6.55" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_hH3vDxY">Unsupervised feature learning for audio classification using convolutional deep belief networks</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Pham</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cWHuEfS">Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="page" from="1096" to="1104" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,81.12,215.36,6.55;11,316.49,89.09,228.69,6.55;11,316.49,97.06,235.73,6.55;11,316.49,105.03,28.42,6.55" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_RutTaYk">An experimental study of speech emotion recognition based on deep convolutional neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">Q</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">X</forename><surname>Zou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_8axh4nC">International Conference on Affective Computing and Intelligent Interaction IEEE</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="827" to="831" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,113.00,225.98,6.55;11,316.49,120.97,234.06,6.55;11,316.49,128.94,130.28,6.55" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_nPYweSt">Hand-crafted features for pedestrian gender recognition</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Antipov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">A</forename><surname>Berrani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Ruchaud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Dugelay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_3Scv8KM">ACM International Conference on Multimedia ACM</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="1263" to="1266" />
+		</imprint>
+	</monogr>
+	<note>Learned vs</note>
+</biblStruct>
+
+<biblStruct coords="11,316.49,136.91,218.66,6.55;11,316.49,144.88,202.74,6.55" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_sFdqETW">Speech emotion recognition using fourier parameters</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>An</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">N</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Ven9Reu">IEEE Trans. Affect. Comput</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="75" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,152.85,231.44,6.55;11,316.49,160.82,210.43,6.55" xml:id="b23">
+	<monogr>
+		<title level="m" xml:id="_SMgnKyt">Speech and Audio Processing for Coding, Enhancement and Recognition</title>
+				<editor>
+			<persName><forename type="first">T</forename><surname>Ogunfunmi</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Togneri</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Narasimha</surname></persName>
+		</editor>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,168.79,215.20,6.55;11,316.49,176.76,229.12,6.55;11,316.49,184.73,142.11,6.55" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_HnFzguT">Emotion recognition from Assamese speeches using MFCC features and GMM classifier</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">B</forename><surname>Kandali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Routray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">K</forename><surname>Basu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_WRv5PEp">TENCON 2008 -2008 IEEE Region 10 Conference IEEE</title>
+				<imprint>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,192.70,223.40,6.55;11,316.49,200.67,186.86,6.55" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_jgYprnU">SVM scheme for speech emotion recognition using MFCC feature</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Milton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">S</forename><surname>Roy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">T</forename><surname>Selvi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Mbm67Jk">Int. J. Comput. Appl</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="34" to="39" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,208.64,214.84,6.55;11,316.49,216.61,214.97,6.55;11,316.49,224.58,222.39,6.55;11,316.49,232.55,97.00,6.55" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_wcBn3jN">Emotion recognition system from artificial marathi speech using MFCC and LDA techniques</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">B</forename><surname>Waghmare</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Deshmukh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">P</forename><surname>Shrishrimal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">B</forename><surname>Janvale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_4prwuQB">International Conference on Advances in Communication, Network, and Computing</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,240.52,232.14,6.55;11,316.49,248.49,164.42,6.55" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_C5hQnnN">Feature extraction from speech data for emotion recognition</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Demircan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Kahramanl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Kkpqde7">J. Adv. Comput. Netw</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="28" to="30" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,256.46,221.81,6.55;11,316.49,264.43,219.20,6.55;11,316.49,272.40,36.10,6.55" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_Bmg3yhG">Speech emotion recognition using residual phase and MFCC features</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">J</forename><surname>Nalini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Palanivel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Balasubramanian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XYdesQp">Int. J. Eng. Technol</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="4515" to="4527" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,280.37,211.13,6.55;11,316.49,288.34,225.61,6.55" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_xzbHTjp">Acoustic emotion recognition using linear and nonlinear cepstral coefficients</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Chenchah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Lachiri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5wXNBA3">Int. J. Adv. Comput. Sci. Appl</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,296.31,235.49,6.55;11,316.49,304.28,175.42,6.55" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_Eh4NBBU">Music emotion recognition: the combined evidence of MFCC and residual phase</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">J</forename><surname>Nalini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Palanivel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_SsWzZgB">Egypt. Inf. J</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,312.25,223.41,6.55;11,316.49,320.22,163.13,6.55" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_PSvcVWE">Reducing the dimensionality of data with neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FQpCynK">Science</title>
+		<imprint>
+			<biblScope unit="volume">313</biblScope>
+			<biblScope unit="issue">5786</biblScope>
+			<biblScope unit="page" from="504" to="507" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,328.19,227.05,6.55;11,316.49,336.16,231.63,6.55;11,316.49,344.13,225.96,6.55;11,316.49,352.10,65.79,6.55" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_NV6M5BQ">Deep neural networks for acoustic emotion recognition: raising the benchmarks</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Stuhlsatz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Eyben</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Zielke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Schuller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_77as3kP">IEEE International Conference on Acoustics, Speech, and Signal Processing IEEE</title>
+				<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="5688" to="5691" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,360.07,231.06,6.55;11,316.49,368.04,210.12,6.55;11,316.49,376.01,230.62,6.55" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_WXQEmpr">Feature learning in dynamic environments: modeling the acoustic structure of musical emotion</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Scott</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">E</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PasYP9M">International Symposium/Conference on Music Information Retrieval</title>
+				<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="325" to="330" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,383.98,219.35,6.55;11,316.49,391.95,220.12,6.55;11,316.49,399.92,195.97,6.55" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_y5kF5wr">Emotion recognition from spontaneous speech using hidden markov models with deep belief networks</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Provost</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_SMN2YsX">Automatic Speech Recognition and Understanding (ASRU)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="216" to="221" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,407.89,217.26,6.55;11,316.49,415.86,212.34,6.55;11,316.49,423.83,115.01,6.55" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZT5xe6b">Learning salient features for speech emotion recognition using convolutional neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eScAhdt">IEEE Trans. Multimedia</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="2203" to="2213" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,431.80,231.68,6.55;11,316.49,439.77,233.33,6.55;11,316.49,447.74,87.89,6.55" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_PZHeevp">Batch normalization: accelerating deep network training by reducing internal covariate shift</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ioffe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Szegedy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_sSh3mdU">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="448" to="456" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,455.71,221.35,6.55;11,316.49,463.68,200.21,6.55;11,316.49,471.65,56.19,6.55" xml:id="b37">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Clevert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Hochreiter</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1511.07289</idno>
+		<title level="m" xml:id="_Y4FSex3">Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="11,316.49,479.62,232.88,6.55;11,316.49,487.59,232.00,6.55;11,316.49,495.57,93.77,6.55" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_6NynrEf">Backpropagation applied to handwritten zip code recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">E</forename><surname>Boser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Denker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Henderson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">E</forename><surname>Howard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Hubbard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">D</forename><surname>Jackel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KgHx4Pq">Neural Comput</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="541" to="551" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,503.54,214.17,6.55;11,316.49,511.51,199.71,6.55;11,316.49,519.48,226.07,6.55;11,316.49,527.45,50.33,6.55" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_R7UZBHa">An analog neural network processor and its application to high-speed character recognition</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">E</forename><surname>Boser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Sackinger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bromley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lecun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_FAatf4k">Ijcnn-91-Seattle International Joint Conference on Neural Networks IEEE 1</title>
+				<imprint>
+			<date type="published" when="1991">1991</date>
+			<biblScope unit="page" from="415" to="420" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,535.42,217.40,6.55;11,316.49,543.39,229.73,6.55;11,316.49,551.36,109.74,6.55" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_6VCkxug">Discovering hierarchical speech features using convolutional non-negative matrix factorization</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Behnke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_yhu3m3X">International Joint Conference on Neural Networks IEEE</title>
+				<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="2758" to="2763" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,559.33,216.13,6.55;11,316.49,567.30,235.88,6.55;11,316.49,575.27,236.47,6.55;11,316.49,583.24,36.09,6.55" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" xml:id="_Ytek9mq">Estimating phoneme class conditional probabilities from raw speech signal using convolutional neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Palaz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Collobert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">M</forename><surname>Doss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_HPAzqxA">Conference of the International Speech Communication Association</title>
+				<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="1766" to="1770" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,591.21,236.46,6.55;11,316.49,599.18,58.00,6.55" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_mbWAUWC">Long short-term memory</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Hochreiter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Schmidhuber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zneCJXw">Neural Comput</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1735" to="1780" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,607.15,228.16,6.55;11,316.49,615.12,200.15,6.55" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_gJ5qDgV">Learning to forget: continual prediction with LSTM</title>
+		<author>
+			<persName coords=""><forename type="first">Felix</forename><forename type="middle">A</forename><surname>Gers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">A</forename><surname>Schmidhuber</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">A</forename><surname>Cummins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WBXN6FK">Neural Comput</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2451" to="2471" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,623.09,224.02,6.55;11,316.49,631.06,222.25,6.55;11,316.49,639.03,148.21,6.55" xml:id="b44">
+	<monogr>
+		<title level="m" type="main" xml:id="_Kfnh5VY">Using Early Stopping to Reduce Overfltting in Wrapper-Based Feature Weighting</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Loughrey</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Cunningham</surname></persName>
+		</author>
+		<idno>TCD-CS-2005-41</idno>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+		<respStmt>
+			<orgName>Trinity College Dublin Department of Computer Science</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,647.00,230.59,6.55;11,316.49,654.97,175.94,6.55" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_7CeNmbq">Algorithms for hyper-parameter optimization</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Bergstra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Bardenet</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Kégl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tshB2qQ">Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="page" from="2546" to="2554" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,662.94,236.47,6.55;11,316.49,670.91,202.10,6.55" xml:id="b46">
+	<analytic>
+		<title level="a" type="main" xml:id="_Ct2Uf8h">Practical Bayesian optimization of machine learning algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Snoek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Larochelle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">P</forename><surname>Adams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zKvS7GA">Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="2951" to="2959" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,678.88,224.47,6.55;11,316.49,686.85,217.77,6.55;11,316.49,694.82,127.91,6.55" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_gmpCUw8">Auto-WEKA: combined selection and hyperparameter optimization of classification algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Thornton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Hutter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">H</forename><surname>Hoos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Leytonbrown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4JjbVYK">Knowl. Discov. Data Min</title>
+		<imprint>
+			<biblScope unit="page" from="847" to="855" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,316.49,702.79,235.37,6.55;11,316.49,710.76,235.00,6.55;11,316.49,718.73,143.42,6.55" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" xml:id="_E3u33YU">Hyperopt: a python library for optimizing the hyperparameters of machine learning algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bergstra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Yamins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">D</forename><surname>Cox</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_GVkdARR">Proceedings of the 12th Python in Science Conference</title>
+				<meeting>the 12th Python in Science Conference</meeting>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="13" to="20" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.81,57.21,233.07,6.55;12,57.81,65.18,215.91,6.55;12,57.81,73.15,227.09,6.55" xml:id="b49">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Burkhardt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Paeschke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Rolfes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">F</forename><surname>Sendlmeier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Weiss</surname></persName>
+		</author>
+		<title level="m" xml:id="_E3p67Ks">A database of German emotional speech, INTERSPEECH 2005 -Eurospeech, European Conference on Speech Communication and Technology</title>
+				<imprint>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page" from="1517" to="1520" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.81,81.12,236.36,6.55;12,57.81,89.09,233.37,6.55;12,57.81,97.06,60.71,6.55" xml:id="b50">
+	<analytic>
+		<title level="a" type="main" xml:id="_Rkbe5Gp">IEMOCAP: interactive emotional dyadic motion capture database</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Busso</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Bulut</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kazemzadeh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Mower</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_G7qvW4K">Lang. Resour. Eval</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="335" to="359" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.81,105.03,188.94,6.55" xml:id="b51">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Franois</forename><surname>Chollet</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Keras</surname></persName>
+		</author>
+		<ptr target="https://github.com/fchollet/keras" />
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.81,113.00,225.61,6.55;12,57.81,120.97,223.17,6.55;12,57.81,128.94,215.48,6.55" xml:id="b52">
+	<analytic>
+		<title level="a" type="main" xml:id="_tQ42Rb2">Deep learning for robust feature generation in audiovisual emotion recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Provost</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_xDwYYZy">Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE International Conference on</title>
+				<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="3687" to="3691" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.81,136.91,222.13,6.55;12,57.81,144.88,230.06,6.55;12,57.81,152.85,159.26,6.55" xml:id="b53">
+	<analytic>
+		<title level="a" type="main" xml:id="_R3qjcW7">Librosa: audio and music signal analysis in python</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Mcfee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Raffel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">P</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Mcvicar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Battenberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Nieto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_GxNf9Dk">Proceedings of the 14th Python in Science Conference</title>
+				<meeting>the 14th Python in Science Conference</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="18" to="25" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.81,160.82,236.47,6.55;12,57.81,168.79,77.73,6.55" xml:id="b54">
+	<analytic>
+		<title level="a" type="main" xml:id="_dkwNX3h">Methods for studying coincidences</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Diaconis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Mosteller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TeqCQWq">J. Am. Stat. Assoc</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">408</biblScope>
+			<biblScope unit="page" from="853" to="861" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.81,176.76,221.09,6.55;12,57.81,184.73,173.61,6.55" xml:id="b55">
+	<analytic>
+		<title level="a" type="main" xml:id="_XavRA78">Statistical Modeling: the two Cultures (with comments and a rejoinder by the author)</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Breiman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_atQYU5q">Stat. Sci</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="199" to="231" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.81,192.70,214.70,6.55;12,57.81,200.67,56.16,6.55" xml:id="b56">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">C</forename><surname>Lipton</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1606.03490</idno>
+		<title level="m" xml:id="_3phtE7y">The Mythos of Model Interpretability</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="12,57.81,208.64,208.98,6.55;12,57.81,216.61,178.87,6.55" xml:id="b57">
+	<analytic>
+		<title level="a" type="main" xml:id="_dsN7Vu9">Model selection for ecologists: the worldviews of AIC and BIC</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Aho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Derryberry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Peterson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_uGaqARn">Ecology</title>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="631" to="636" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.81,224.58,236.47,6.55;12,57.81,232.55,147.27,6.55" xml:id="b58">
+	<analytic>
+		<title level="a" type="main" xml:id="_JkS37E6">Solving ill-conditioned and singular linear systems: a tutorial on regularization</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Neumaier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nGq26PD">Siam Rev</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="636" to="666" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,327.30,57.21,230.08,6.55;12,327.30,65.18,231.19,6.55;12,327.30,73.15,67.35,6.55" xml:id="b59">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Kohavi</surname></persName>
+		</author>
+		<title level="m" xml:id="_CUyEV6e">A study of cross-validation and bootstrap for accuracy estimation and model selection, International Joint Conference on Artificial Intelligence</title>
+				<imprint>
+			<date type="published" when="1995">1995</date>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="1137" to="1143" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,327.30,81.12,230.40,6.55;12,327.30,89.09,228.91,6.55;12,327.30,97.06,197.02,6.55" xml:id="b60">
+	<monogr>
+		<title level="m" type="main" xml:id="_2KkSQyw">New Theory Cracks Open the Black Box of Deep Learning, Quanta Magazine</title>
+		<ptr target="https://www.quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921/" />
+		<imprint>
+			<date type="published" when="2017-12-22">2017. 22 December 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,327.30,105.03,227.24,6.55;12,327.30,113.00,120.53,6.55" xml:id="b61">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Jana</surname></persName>
+		</author>
+		<title level="m" xml:id="_YJhFuTw">Deep Xplore: Automated Whitebox Testing of Deep Learning Systems</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="1" to="18" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,327.30,120.97,233.56,6.55;12,327.30,128.94,229.55,6.55;12,327.30,136.91,161.30,6.55" xml:id="b62">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Barrett</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">L</forename><surname>Dill</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Julian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Kochenderfer</surname></persName>
+		</author>
+		<title level="m" xml:id="_GN7ZacX">Reluplex: an efficient SMT solver for verifying deep neural networks, International Conference on Computer Aided VerificationSpringer</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="97" to="117" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,327.30,144.88,229.38,6.55;12,327.30,152.85,9.22,6.55" xml:id="b63">
+	<analytic>
+		<title level="a" type="main" xml:id="_3BvGsaB">Can we open the black box of AI?</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Castelvecchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_sPqeAPk">Nature</title>
+		<imprint>
+			<biblScope unit="volume">538</biblScope>
+			<biblScope unit="issue">7623</biblScope>
+			<biblScope unit="page">20</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,327.30,184.73,236.35,6.55;12,327.30,192.70,213.55,6.55" xml:id="b64">
+	<analytic>
+		<title level="a" type="main" xml:id="_P2n3gpm">Overtraining in back-propagation neural networks: a CRT color calibration example</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">H</forename><surname>Alman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Ningfang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XHE2ngS">Color Res. Appl</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="122" to="125" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,327.30,200.67,221.03,6.55;12,327.30,208.64,223.47,6.55;12,327.30,216.61,32.26,6.55" xml:id="b65">
+	<analytic>
+		<title level="a" type="main" xml:id="_7EpGyuf">Multi-column deep neural networks for image classification</title>
+		<author>
+			<persName coords=""><forename type="first">Dan</forename><surname>Ciregan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ueli</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jurgen</forename><surname>Schmidhuber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fYyzwBv">Comput. Vis. Pattern Recognit</title>
+		<imprint>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="642" to="3649" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

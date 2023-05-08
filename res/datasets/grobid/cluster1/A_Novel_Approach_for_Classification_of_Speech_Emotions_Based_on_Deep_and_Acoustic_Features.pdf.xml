@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_umPvmA8">A Novel Approach for Classification of Speech Emotions Based on Deep and Acoustic Features</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,36.17,187.62,71.33,9.83"><forename type="first">Mehmet</forename><surname>Bilal</surname></persName>
+							<email>bilal.er@harran.edu.tr</email>
+							<idno type="ORCID">0000-0002-2074-1776</idno>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Computer Engineering</orgName>
+								<orgName type="department" key="dep2">Faculty of Engineering</orgName>
+								<orgName type="institution">Harran University</orgName>
+								<address>
+									<postCode>63300</postCode>
+									<settlement>Şanlıurfa</settlement>
+									<country key="TR">Turkey</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_qDu5dd4">A Novel Approach for Classification of Speech Emotions Based on Deep and Acoustic Features</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">7C9F53C24197D98A79445055DD62EF1B</idno>
+					<idno type="DOI">10.1109/ACCESS.2020.3043201</idno>
+					<note type="submission">Received December 2, 2020, accepted December 3, 2020, date of publication December 7, 2020, date of current version December 22, 2020.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-07T13:55+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_CC9PEzA"><p xml:id="_t8uXBwH">The problem of recognition and classification of emotions in speech is one of the most prominent research topics, that has gained popularity, in human-computer interaction in the last decades. Having recognized the feelings or emotions in human conversations might have a deep impact on understanding a human's physical and psychological situation. This study proposes a novel hybrid architecture based on acoustic and deep features to increase the classification accuracy in the problem of speech emotion recognition. The proposed method consists of feature extraction, feature selection and classification stages. At first, acoustic features such as Root Mean Square energy (RMS), Mel-Frequency Cepstral Coefficients (MFCC) and Zero-crossing Rate are obtained from voice records. Subsequently, spectrogram images of the original sound signals are given as input to the pre-trained deep network architecture, which is VGG16, ResNet18, ResNet50, ResNet101, SqueezeNet and DenseNet201 and deep features are extracted. Thereafter, a hybrid feature vector is created by combining acoustic and deep features. Also, the ReliefF algorithm is used to select more efficient features from the hybrid feature vector. Finally, in order for the completion of the classification task, Support vector machine (SVM) is used. Experiments are made using three popular datasets used in the literature so as to evaluate the effect of various techniques. These datasets are Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS), Berlin (EMO-DB) and Interactive Emotional Dyadic Motion Capture (IEMOCAP). As a consequence, we reach to 79.41%, 90.21% and 85.37% accuracy rates for RAVDESS, EMO-DB, and IEMOCAP datasets, respectively. The Final results obtained in experiments, clearly, show that the proposed technique might be utilized to accomplish the task of speech emotion recognition efficiently. Moreover, when our technique is compared with those of methods used in the context, it is obvious that our method outperforms others in terms of classification accuracy rates.</p><p xml:id="_wQxx86Q">INDEX TERMS Speech emotion recognition, deep learning, hybrid features, pre-trained CNN.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="576.0" lry="782.929"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_jpJYWp2">I. INTRODUCTION</head><p xml:id="_zxeQnGW">Speaking is the basic means of human interaction which is fast and efficient. During the speech, air flows through the trachea from the lungs to the larynx, and this air flow creates speech signals by vibrating the vocal cords <ref type="bibr" coords="1,222.42,580.04,10.58,8.91" target="#b0">[1]</ref>. Research on topics about speech emotion recognition received much more attention from people in recent years. Recognition and measurement of human emotions, automatically, has been one of the up-to-date research areas in the fields ranging from Biomedical engineering and psychophysiology to computer engineering and artificial intelligence <ref type="bibr" coords="1,218.54,651.77,10.58,8.91" target="#b1">[2]</ref>. Emotions, to a large extent, along with many meaningful attitudes, are special and powerful mental activities that can be comprehended by simple observations from an outsider. All bodily</p><p xml:id="_dWgzBsM">The associate editor coordinating the review of this manuscript and approving it for publication was Massimo Cafaro . activities, like speaking, facial expressions, and body movements, constitute the basic building blocks of a human's emotional state <ref type="bibr" coords="1,359.36,556.13,10.58,8.91" target="#b2">[3]</ref>. Identity information and emotional states of the speaker are transferred via voice signals across other people <ref type="bibr" coords="1,327.60,580.04,10.58,8.91" target="#b3">[4]</ref>. Emotion recognition has been seen to be used more prevalently in human-computer interaction due to the increasing demand of people on smart systems and increasing data processing speed and performance of computers. Autonomous speech emotion recognition systems, fundamentally, simulate human emotions through the use of a computer, and then, features like accentuation, intonation, and pause employ spectrum-based features for matching them with the target emotions. At its core, a speech emotion recognition system is made up of three stages: speech data preprocessing, extraction of emotion features, and emotion classification, respectively <ref type="bibr" coords="1,423.61,711.55,10.58,8.91" target="#b4">[5]</ref>. During the course of the speech, it is known that since people might be affected by their physical conditions in their own environment and outer world conditions surrounded them, emotions inherently may exhibit diversity and variation. Therefore, a powerful categorization architecture and speech emotion features involving crucial knowledge are two of the important components of emotion recognition. Speech emotion recognition is a major challenge that attracts researchers because of several applications like voice surveillance, E-learning, clinical studies, detection of lies, entertainment, computer games and, call centers. However, to a large extent, advanced machine learning techniques are compelling tasks, as well. Despite a large number of researches done and advances taken in emotion recognition in recent years, it is still not quite known what the most appropriate method is likely to be. This situation is induced by the subjectivity of emotions. What we mean by the subjectivity is that two different people can recognize the same emotions in distinct ways, and thus, in return, this may cause uncertainty on defining a basic emotion class. Additionally, there is a great deal of ambiguity about determining the most convenient emotional features. Furthermore, there is no predefined feature set that is assigned for the recognition of emotions <ref type="bibr" coords="2,88.87,317.34,10.58,8.91" target="#b5">[6]</ref>. Besides that, the presence of background noise in sound recordings, which is caused by real-world sounds, can significantly have a huge impact on the efficiency of a machine learning model <ref type="bibr" coords="2,152.11,353.21,10.58,8.91" target="#b6">[7]</ref>. In conventional approaches to recognition of speech emotions, features representing the acoustic content of speech are extracted. Various types of machine learning techniques are employed for comprehending the relation among the extracted features of speech and predetermined emotion tags. In these studies, SVM, hidden Markov models (HMMs) and neural networks are employed. SVMs offer relatively better predictions by putting less effort, while, on the other hand, it is tedious to construct and train neural networks and hidden Markov models. It also requires high computing power and time. Now, deep learning models are used to solve recognition problems such as face recognition, voice recognition for the internet of things, and speech emotion recognition <ref type="bibr" coords="2,118.75,508.63,11.90,8.91" target="#b7">[8]</ref>- <ref type="bibr" coords="2,134.61,508.63,15.86,8.91" target="#b9">[10]</ref>. One of the main advantages of deep learning techniques is, for example, the automatic selection of important features inherent in audio files with a particular emotion in the task of recognizing speech emotions.</p><p xml:id="_fv9pYU7">The rest of this paper is organized as follows. In Section 2, the speech voice classification studies in the literature are reviewed and the differences between them are tried to be revealed. In Section 3, the material and the proposed method are introduced. In Section 4, experimental applications related to the dataset and classification of speech sounds used in research are given. In Section 5, the results of our proposed method are discussed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ccJcTtM">II. RELATED WORKS</head><p xml:id="_PWsgnAq">In order to accurately recognize the emotion in speech data, it is very significant to extract features that correctly symbolize the emotional side of the speech signals. Some considerable research is done in the context, including the analysis and synthesis of the speech, will be explained in this section.</p><p xml:id="_MemarCw">Generally, the essential feature parameters utilized in the speech emotion recognition system can be separated into two categories in terms of conventional features and deep features. Features extracted from Convolutional Neural Network (CNN) layers are generally used as deep features <ref type="bibr" coords="2,494.61,114.11,15.27,8.91" target="#b10">[11]</ref>, <ref type="bibr" coords="2,516.19,114.11,15.27,8.91" target="#b11">[12]</ref>.</p><p xml:id="_Cu2nYwT">In <ref type="bibr" coords="2,320.03,126.06,15.27,8.91" target="#b12">[13]</ref>, to recognize emotions from speech, a method that is based on MFCC features and Gaussian mixture model classifier is proposed. In <ref type="bibr" coords="2,437.96,149.97,15.27,8.91" target="#b13">[14]</ref>, Berlin (EMO-DB) dataset is selected for the classification of speech sounds. To classify seven different emotions in the dataset, 3 staged SVM classifier is used. MFCC features are extracted from all the 535 records, which exist in the dataset, and nine separate statistical evaluations are done on the features. 10fold cross-validation is performed for the training phase and for the testing phase of data. Performance analysis is done using confusion matrix and an accuracy rate of 68% is achieved. In <ref type="bibr" coords="2,359.06,257.57,15.27,8.91" target="#b14">[15]</ref>, MFCC are searched and these features are classified through Linear Discriminant Analysis (LDA). Also, in the paper, a database that belongs to artificial emotional Marathi speech is used. Data samples are collected from the actors and actresses who play in 5 Marathi films, and emotions that produce Marathi phrases, which can be used in daily intercommunication and can be paraphrased in all emotions, are simulated. Data samples are categorized into 5 basic categories as Happy, Sad, Anger, Afraid and Surprise. In <ref type="bibr" coords="2,345.49,365.17,15.27,8.91" target="#b15">[16]</ref>, the pre-processing required for recognizing emotions from the speech data is performed. MFCC features are extracted from speech signals. For the classification, K-Nearest Neighbors (K-NN) algorithm is utilized. In <ref type="bibr" coords="2,500.61,401.03,15.27,8.91" target="#b16">[17]</ref>, four emotional situations are treated to be classifying emotions in speech. For this purpose, features are extracted by utilizing Linear Frequency Cepstral Coefficients (LFCC) and (MFCC) which are the sound features of emotional speech. In addition, those features are classified by utilizing the Hidden Markov Model (HMM) and SVM. In <ref type="bibr" coords="2,423.15,472.76,15.27,8.91" target="#b17">[18]</ref>, to recognize emotions from speech, features like energy, zero-crossing rate and fundamental frequency are utilized. An average of 56.46% recognition rate is achieved over a dataset that includes seven different emotions. In <ref type="bibr" coords="2,386.83,520.58,15.27,8.91" target="#b18">[19]</ref>, a method for recognizing Multilingual speech emotion is presented. In this context, first of all, two hundred fifteen acoustic features extracted from the emotional speech. Secondly, feature selection has been made to develop a common set of standard acoustic parameters for multiple languages. Finally, emotions are categorized into essential categories by employing logistic model trees. The suggested approach is tested in Japanese, German, Chinese and English emotional speech corpus. The recognition performance is inspected through inter-speaker and inter-group evaluation. In <ref type="bibr" coords="2,356.46,640.13,15.27,8.91" target="#b19">[20]</ref>, an autonomous system has been introduced to predict the primitives of emotion. Fuzzy logic estimator and system is developed by using acoustic features like energy, speech speed and spectral features that are derived from speech. The approach is tested in two databases. The First database comprises of six hundred and eighty sentences that include three speakers that are in happy, angry, neutral and sad categories. Second database includes more than a thousand expressions recorded from a TV talk show, belongs to speakers that are more than forty-seven, which have authentic emotional expressions. Finally, a general recognition rate of up to 83.5% is achieved by using the K-NN classifier for emotion prediction. In <ref type="bibr" coords="3,169.02,114.11,15.27,8.91" target="#b20">[21]</ref>, for the determination of seven human emotions (neutral, anger, boredom, disgust, fear, happiness, sadness) by employing speech signals, multilayer perceptron neural network and generalized feed forward neural network are used. The Overall accuracy rate is found as follows: in multilayer perceptron neural network, an accuracy rate of 93% is achieved and in the generalized feed forward neural network, an accuracy rate of 99% is achieved. In <ref type="bibr" coords="3,258.30,197.79,15.27,8.91" target="#b21">[22]</ref>, they have worked to improve the performance of an emotion recognition system using MFCC and features that are related to energy as constituents of the feature vector. After identifying the frequency range that is influenced by the emotion, normalization is performed using the dynamic time warpingmulti-layer perceptron hybrid model. Fast correlation-based filter and variation analysis methods were used in this study to degrade the number of features. Recognition of emotional states is carried out by utilizing the Gaussian mixture model. In <ref type="bibr" coords="3,97.58,317.34,15.27,8.91" target="#b22">[23]</ref>, a robust emotion recognition approach is presented for the speech signals in noisy environments. Feature size is decreased to 87 from 204 by employing fast correlation-oriented filter feature selection technique. The performance of the suggested technique is measured by using LDA, K-NN, C4.5 decision tree, radial basis function neural networks and SVM classifier. In <ref type="bibr" coords="3,191.33,389.08,15.27,8.91" target="#b23">[24]</ref>, feature selection techniques are utilized to increase the emotional recognition success and to reduce the amount of work done by using fewer features. A novel statistical feature selection technique is suggested based on emotional changes on acoustic properties. The success of the suggested technique has been checked against other techniques utilized more in the literature. This check depends on feature count and emotion recognition success. With respect to the outcomes gathered, the suggested technique not only provides a major decrease in the number of features, but also increases the classification success. In <ref type="bibr" coords="3,258.30,508.63,15.27,8.91" target="#b24">[25]</ref>, a combination of spectral features has been extracted from the sound recordings and passed through the feature selection and reduced to the required feature set. It is proven that as compared to single estimators, ensemble learning has a better performance. In recent years, it has been feasible to design and implement deep neural networks with the improvement of computer hardware. An important application of deep neural networks is to extract the speech feature parameters containing deep information about the speech signal and then the classifiers can be trained with the obtained features <ref type="bibr" coords="3,237.37,628.18,15.27,8.91" target="#b25">[26]</ref>, <ref type="bibr" coords="3,258.30,628.18,15.27,8.91" target="#b26">[27]</ref>. In <ref type="bibr" coords="3,48.26,640.13,15.27,8.91" target="#b25">[26]</ref>, bottleneck features were extracted using the Deep Belief Network (DBN), and then these features were used to train the SVM model to recognize the speech emotions. In <ref type="bibr" coords="3,48.30,676.00,15.27,8.91" target="#b26">[27]</ref>, a new model is presented. The end-to-end trained model consists of a CNN with 2 layers of Long Short-Term Memory (LSTM), which takes features from the raw signal. The system has fully analyzed the context of the speech signal and outperformed other systems in terms of coefficient of consistency and recognition. In <ref type="bibr" coords="3,446.25,66.29,15.27,8.91" target="#b27">[28]</ref>, MFCC, chromagram, mel-scale spectrogram, Tonnetz representation, and spectral contrast features are extracted from the audio files and employed as inputs for 1D-CNN. In <ref type="bibr" coords="3,456.48,102.15,15.27,8.91" target="#b28">[29]</ref>, deep emotional features are investigated to recognize speech emotions. CNN and Long short-term memory (LSTM) are configured in order to learn emotional features from speech and log-mel spectrogram. These are one-dimensional CNN-LSTM network and two-dimensional CNN-LSTM network. Experimental outcomes indicate that the devised networks perform well for the task of recognizing speech emotions. Particularly 2DCNN-LSTM network, performs better than Deep Belief Network (DBN) and CNN, which are traditional approaches. In <ref type="bibr" coords="3,309.10,221.70,15.27,8.91" target="#b29">[30]</ref>, to effectively improve speech emotion recognition performance, a novel speech emotion recognition technique is presented that depends on Deep Neural Network (DNN), decision tree and SVM. It is focused on wherewith to find more prominent speech emotional features and wherewith to create an efficient recognition model. In <ref type="bibr" coords="3,480.65,281.48,15.27,8.91" target="#b30">[31]</ref>, a hybrid method, consisting of three steps, is proposed for the classification of speech emotions. The spectral features and prosodic features are combined in the feature extraction stage. This hybrid feature vector has been derived from both the speech signal and the glottal waveform. Also, first and second-order derivatives of feature vectors are used to enrich the dimension. In the next step, the feature size is reduced by quantum-based particle swarm optimization to reduce dimensionality. In the last stage, the classification process is made. In <ref type="bibr" coords="3,373.70,401.03,15.27,8.91" target="#b31">[32]</ref>, in order to increase the classification performance in the emotion recognition problem, a hybrid feature vector consisting of combining prosodic features and spectral features has been proposed. The proposed method was tested on two open access datasets, and five collective learning algorithms were used to train the data. The results obtained from the proposed method show that hybrid features are effective in speech emotion recognition problem. In <ref type="bibr" coords="3,519.20,484.72,15.27,8.91" target="#b32">[33]</ref>, a hybrid deep neural network model has been proposed for heterogeneous acoustic features that reduce classification performance in speech emotion recognition problem. The proposed architectural feature extraction module consists of a merge module and a fusion network module. A fusion network is used after the discriminants of heterogeneous features are obtained. SVM is chosen as the classifier, and the results from the experiments show that the proposed architecture improves the classification performance. Besides, bio-inspired computational models can give very effective results in sound processing studies <ref type="bibr" coords="3,440.63,616.22,15.27,8.91" target="#b33">[34]</ref>. In <ref type="bibr" coords="3,474.29,616.22,15.27,8.91" target="#b34">[35]</ref>, unlike traditional feature-based classification methods, a method that works directly on the speech signal is presented. Using the Liquide State Machine, a bio-inspired computational model, it is aimed to automatically recognize speech emotions. The method used was tested on the Emo-DB dataset and a high rate of classification performance was achieved.</p><p xml:id="_YEKD5Zq">In this study, both acoustic and deep features are used to classify speech emotions. A hybrid feature vector is created by both extracting deep features from the original sound </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Eafe34k">signal's spectrogram images and acoustic features from voice records. The purpose of combining acoustic features and deep features is to improve classification performance. The fundamental contributions of this study are as follows:</head><p xml:id="_QcFxvCT">• A novel technique is proposed for speech emotion recognition problem.</p><p xml:id="_W9hQxfP">• It is shown that the emotional content of speech can be classified by both acoustic and deep features.</p><p xml:id="_re9UgJ8">• The classification accuracy rate is increased by virtue of the hybrid feature vector.</p><p xml:id="_UsvMw45">• The impact of pre-trained deep networks in speech emotion recognition problem is demonstrated.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_HDc9dtM">III. PROPOSED METHOD</head><p xml:id="_gqVZ2kP">The method presented in this study consists of acoustic features, deep features, pre-trained CNN and SVM combined model. In many studies, acoustic and deep features are used separately <ref type="bibr" coords="4,80.04,556.45,15.27,8.91" target="#b10">[11]</ref>, <ref type="bibr" coords="4,102.60,556.45,15.27,8.91" target="#b11">[12]</ref>, <ref type="bibr" coords="4,125.17,556.45,15.27,8.91" target="#b15">[16]</ref>, <ref type="bibr" coords="4,147.75,556.45,15.27,8.91" target="#b16">[17]</ref>. In this study, acoustic and deep features are combined to improve the semantic information of the emotion features in the speech. Acoustic features alone can lose some useful information about speech emotion patterns. Specifically, the patterns of emotion present in speech signals cannot be well mined. Also, the concept of acoustic features in sound signals is based on people's subjective assumptions. Deep features from deep networks are more comprehensive than acoustic features. Both theories and experiments have shown that deep learning can extract a lot of valuable information from auditory signals <ref type="bibr" coords="4,212.13,676.00,15.27,8.91" target="#b35">[36]</ref>. In order to take advantage of deep learning, pre-trained deep networks are used as feature extractors. Pre-trained deep networks used in the study; VGG16, ResNet18, ResNet50, ResNet101, SqueezeNet and DenseNet201. The main reason for using these pre-trained CNNs is to show that the depth of CNN has or does not an effect to the performance. As a result of combining acoustic and deep features, a hybrid feature vector is obtained. Also, the ReliefF feature selection algorithm is used to select the most effective features from hybrid feature vector. The last part of the proposed model is the SVM classifier. SVM classifier is trained with the hybrid feature vector, as it is often more effective in higher dimensional domains. Details of each step of the proposed are explained in the subsections below. The proposed method is given in Figure <ref type="figure" coords="4,530.82,470.99,3.74,8.91" target="#fig_0">1</ref>. This model can be summarized as follows:</p><p xml:id="_JXbmtNH">• Acoustic features are extracted from pre-processed sound signals.</p><p xml:id="_RVmcnk7">• Spectrogram images of the signals are extracted and data augmentation is applied.</p><p xml:id="_v5yWcnY">• CNNs pre-trained on the ImageNet dataset are used to extract features from the speech spectrogram.</p><p xml:id="_Gp9UfH9">• Pre-trained CNNs used for feature extraction: VGG16, ResNet18, ResNet50, ResNet101, SqueezeNet and DenseNet201.</p><p xml:id="_APvK3n6">• Spectrogram images are given as input to pre-trained networks and deep features are extracted.</p><p xml:id="_FfqHcJU">• A hybrid feature vector is obtained by combining the obtained deep features and acoustic features.</p><p xml:id="_GNKGtRp">• ReliefF is applied for feature selection.</p><p xml:id="_BGzYPSb">• SVM classifier is trained with the hybrid feature vector.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_r6a4GDa">A. ACOUSTIC FEATURE EXTRACTION</head><p xml:id="_tQQ3dY5">The purpose of the acoustic analysis is to separate the speech signal into its components and to present parametric</p><formula xml:id="formula_0" coords="4,36.17,746.99,45.58,5.88">VOLUME 8, 2020</formula><p xml:id="_R5ExUG7">measurements of these components. Acoustic features are physical properties in terms of frequency, loudness and amplitude. Speech signals are pre-processed before acoustic features are extracted. While recording, samples of speech may contain unwanted information such as noise, depending on environmental factors. In this study, the Butterworth filter is used to remove noise in speech samples. Also, the speech signal is divided into frames of 30ms with an overlap of 15ms.</p><p xml:id="_EKjqNdf">LibROSA toolbox is used to extract acoustic sound features from different groups. LibROSA is a widely used library for music and sound analysis. Extracted acoustic features are Root Mean Square energy (RMS), MFCC, Chroma, Spectrum centroid, Spectral entropy, Skewness, Attack time and Zero crossing rate. The size of the acoustic property vector obtained is 32. RMS: It is the measure of the loudness of an audio signal. It is found by calculating the square root of the sum of the mean squares of the amplitudes of the sound samples. RMS formula is given in Equation <ref type="formula" coords="5,152.28,281.48,3.74,8.91">1</ref>.</p><formula xml:id="formula_1" coords="5,66.48,313.70,210.90,31.53">x rms = 1 n n i=1 x 2 i = x 2 1 + x 2 2 + . . . + x 2 n n (1)</formula><p xml:id="_k4g23sC">Spectrum centroid: It is usually associated with a measure of the brightness of a sound and is a measure of where the center of mass of the spectrum is. Higher centroid values indicate higher frequency values <ref type="bibr" coords="5,168.02,402.21,15.27,8.91" target="#b36">[37]</ref>.</p><p xml:id="_zRYvEwj">Spectral Entropy: The probabilities of the power spectrum components of the signal are taken into account when calculating this value. The normalized power distribution in the frequency domain of the signal is evaluated as the probability distribution <ref type="bibr" coords="5,84.41,461.99,15.27,8.91" target="#b37">[38]</ref>.</p><p xml:id="_CjZV3hQ">Skewness: Indicates the degree of asymmetry of a distribution around its mean, and it is the average skewness coefficient of the spectral distribution in the Lower frequency bands <ref type="bibr" coords="5,61.90,509.81,15.27,8.91" target="#b38">[39]</ref>.</p><p xml:id="_hbAhpvA">MFCC: It is based on human hearing perception and is one of the most used feature extraction methods in the field of sound processing. MFCC features are based on obtaining distinctive values for speakers by imitating the frequency selectivity of the human ear <ref type="bibr" coords="5,154.75,569.58,15.27,8.91" target="#b39">[40]</ref>. The steps to be taken to extract MFCC features are given in Figure <ref type="figure" coords="5,207.45,581.54,3.74,8.91" target="#fig_6">2</ref>.</p><formula xml:id="formula_2" coords="5,36.17,724.55,32.11,7.02">FIGURE 2.</formula><p xml:id="_cBB8RVe">Steps of MFCC <ref type="bibr" coords="5,121.32,724.61,11.39,6.95" target="#b40">[41]</ref>.</p><p xml:id="_mVjhjH5">Conversion between Mel scale (M) and frequency scale (Hz) can be done using equations 2 and 3 given below.</p><formula xml:id="formula_3" coords="5,363.33,98.86,174.95,39.66">m = 295log 10 1 + f 700 (2) f = 700 10 m 295 − 1<label>(3)</label></formula><p xml:id="_sgcQU4D">One way to express this perceptual structure is to use a triangular band-pass mel filter bank. Mel Frequency Kepstrum coefficients are obtained by applying discrete cosine transform after filter bank. MFCC is calculated according to equation 4.</p><formula xml:id="formula_4" coords="5,297.83,222.38,240.46,43.16">MFCC i = 20 k=1 X k .Cos i. k − 1 2 . π 20 i = 1, 2, . . . M (4)</formula><p xml:id="_6H3JpmU">Attack Time: It is the estimation of the time it takes for a signal to reach to its peak. A simple way to define and calculate this feature is to predict the time duration of the range of the phase where the signal's amplitude rises.</p><p xml:id="_Et7kCX3">Chroma: The notes relate to the energy density around them and provide important information about the harmonic content of the sound. There are 7 notes in western music, and since the two notes are divided into two equal parts, except for the E and F notes, 12 features can be obtained by taking the sounds in between.</p><p xml:id="_vMSxdfY">Zero-crossing Rate: It is the rate of the transition of a signal through the zero lines, that is, the change of the sign. The X-axis shows how many times the signal has passed, it can be used as an indication of noise as well as frequency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_f7gDwAg">B. SPECTROGRAM EXTRACTION</head><p xml:id="_VXefqmE">There may be silence at some moments during the conversation and no emotion may arise. This is a factor that makes emotion recognition difficult and the moments when no emotion is felt should be filtered. However, since the duration of the speech sound recordings in the datasets used is not very long, the entire part of the speech sound recordings was taken into account in spectrogram extraction. Since speech signals are not static signals, the signal must be processed in small frames. Speech signals are first divided into 30 ms frames in order to obtain the spectrograms. Also, each frame comes out in such a way that it overlaps a part of the previous frame. The overlap ratio of the frames is chosen as 50% of a frame. Windowing is applied after framing is applied on a signal. The aim is to prevent discontinuity that may occur at the extreme ends of each frame. The widely preferred ''Hamming window'' technique is employed in this study. Hamming Window minimizes unwanted radiation from the extreme-ends of the regions of the signal <ref type="bibr" coords="5,377.88,676.00,15.27,8.91" target="#b41">[42]</ref>. It is also the function that makes the signal convenient for the Fourier transform. The algorithm of the hamming function is as follows: The hamming window is multiplied by the framed sound signal and then the windowed signal is finally obtained. Hamming window formula is given Fourier transform is performed on the signal after the Hamming window is performed. The Fourier transform transforms the signal from the time domain to the frequency domain.</p><p xml:id="_B28uS5G">Fast Fourier Transform (FFT) is used in this study. In this step, each frame consisting of N samples is passed from the time domain to frequency domain by performing Fast Fourier transform. A set with N samples is defined as in equation 6. At the last stage, the power spectrograms of the signals which Fourier transform is applied, are extracted. An example speech audio signal and spectrogram image are given in Figure <ref type="figure" coords="6,99.15,390.34,3.74,8.91" target="#fig_1">3</ref>.</p><formula xml:id="formula_5" coords="6,44.38,406.84,39.35,31.53">X n = N −1 k=0</formula><p xml:id="_cMX9Kfe">x k e −2πjkn/N , n = 0, 1, 2, . . . . . . , N − 1 (6)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_CWhhHv5">C. DATA AUGMENTATION</head><p xml:id="_4PTmK6F">In situations where the original data size is limited, data augment is needed to surmount this issue of data shortage. Data augment is the production of extra training data samples by performing a series of deformations on the data in the training dataset. The essential basis in data enhancement is that the labels of the new data created by deformations applied to the tagged data are not changed <ref type="bibr" coords="6,146.48,540.84,15.27,8.91" target="#b42">[43]</ref>. There are many methods for data augment, such as rotating the image at different angles, horizontally rotating and vertically rotating, adding noise and color manipulation to the image. In this study, 2 different processes were applied to the signal before extracting the spectrogram and these processes are explained below:</p><p xml:id="_rnZMhDU">• Background Noise: Added random noise in the range of [0.1, 0.5] to the sound samples.</p><p xml:id="_qGjX8a4">• Time Shifting: The sound is shifted from the starting point and the original length is preserved. Each sample shifted from the starting point to 0.3 seconds. The sound is shifted from the starting point and the original length is preserved. Each sample shifted from the starting point to 0.3 seconds. The sound samples obtained as a result of increasing data augmentation were added to the original dataset as additional training examples. In Algorithm 1, the pseudo-code of the data augmentation algorithm is given.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_zmKm9zQ">D. DEEP FEATURE EXTRACTION FROM PRE-TRAINED CNN MODELS</head><p xml:id="_pDpP9Fu">Pre-trained CNNs typically have a mathematical structure consisting of three types of layers. These layers are convolution, pooling and fully connected layers <ref type="bibr" coords="6,467.22,397.11,15.27,8.91" target="#b43">[44]</ref>. Convolution and pooling layers perform feature extraction, while fully connected layers send the extracted features to the final output for classification. Filters with a certain height and width in the convolution layer are moved from left to right over the input image. Convolution formula is given in equation 7. 'M' refers to the property map given in the equation, and 'w' refers to the convolution core of (x, y) size.</p><formula xml:id="formula_6" coords="6,297.67,501.88,240.62,20.43">M (i, j) = R * w (i, j) = x y R (i − x, j − y) w (x, y) (7)</formula><p xml:id="_GdCN5Ft">The pooling layer is another building block of pre-trained CNNs and is applied after the convolution process. Its main goal is to reduce the number of parameters and computations in the network. The most common approach used in pooling is maximum pooling. After the features down-sampled by the convolution and pooling layers are created, these features are linked to the fully connected layer. The output feature maps of the final convolution or pooling layer are typically flattened, that is, converted into a one-dimensional (1D) number sequence or vector. These features are then linked to one or more fully connected layers. Here each input is linked to each output and each neuron has a learnable weight. The last fully connected layer typically has the same number of output nodes as the class number, and classification is done on this layer. Different classifiers can be used in the last layer.</p><p xml:id="_XFt2eZU">In this study, pre-trained networks on ImageNet dataset such as VGG16, ResNet18, ResNet50, ResNet101, The proposed feature extraction is given in Figure <ref type="figure" coords="7,247.02,604.27,3.74,8.91" target="#fig_3">4</ref>. Scatter plots of deep features obtained from ResNet101 are given in Figure <ref type="figure" coords="7,75.14,628.18,13.08,8.91" target="#fig_5">5-7</ref>. In order to obtain the scatter plots of the deep features given in Figures <ref type="figure" coords="7,144.55,640.13,13.08,8.91" target="#fig_5">5-7</ref>, the spectrogram images of the audio signals are given as input to ResNet101 and the fc1000 layer is used as feature extractor.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_6mn2Vpj">E. FEATURE SELECTION WITH RELIEFF</head><p xml:id="_NEvv8bt">In this study, ReliefF feature selection algorithm was used to select effective hybrid features. Feature selection is an important area of research in machine learning and data   of the Relief statistical model. The Relief method takes a sample from the dataset and performs the feature selection process by creating a model that depends on the proximity of the relevant sample with other samples in its own classes and its distance from different classes <ref type="bibr" coords="8,175.18,324.00,15.27,8.91" target="#b47">[48]</ref>. The update formula of the weight coefficient in the ReliefF algorithm is defined as follows:</p><formula xml:id="formula_7" coords="8,37.93,363.55,163.36,60.76">W [K ] = W [K 0 ] − K J =1 diff (A, x i , H ) mk + C =Class(x j) p (C) 1 − p (Class (x i ))</formula><p xml:id="_8sdD8Gv">.</p><formula xml:id="formula_8" coords="8,185.90,390.37,91.48,46.94">k j=1 diff A, x i , M j (C) mk<label>(8)</label></formula><p xml:id="_fXBabcG">In algorithm 2, the pseudo-code of the feature selection algorithm with ReliefF is given. The features obtained from VGG16's fc7, ResNet's fc1000, SqueezeNet's pool10 and DenseNet201's conv5_block16 layer were combined with the acoustic features and passed through the ReliefF feature selection algorithm. The number of features obtained randomly select an sample 4:</p><p xml:id="_FKbERYg">find k-nearest hits sj 5:</p><p xml:id="_PDJWJrS">for each class C class(zi) do 6:</p><p xml:id="_8W8TmBH">for K: = 1 to k do 7:</p><formula xml:id="formula_9" coords="8,39.76,663.47,207.29,53.37">W [K ] = W [K 0 ] − K J =1 diff (A,x i ,H ) mk + 8: C =Class(x j) p(C) 1−p(Class(x i )) . k j=1 diff (A,xi,Mj(C)) mk 9:</formula><p xml:id="_XSw6RVu">end for 10 end for before and after feature selection for the RADVESS dataset are given in Table <ref type="table" coords="8,370.59,247.95,3.74,8.91" target="#tab_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_b2H33cW">F. CLASSIFICATION</head><p xml:id="_gfXmPgw">Classification is the final stage of emotion recognition. The classifier was trained by combining the extracted acoustic and deep features. Softmax is usually employed in the classification layer of the pre-trained model. In this study, we used SVM for classification. The SVM classifier was introduced by Vapnik in 1995 <ref type="bibr" coords="8,381.02,344.96,15.27,8.91" target="#b49">[49]</ref>. SVM can solve both linear and nonlinear problems and come up with better results for many practical problems. Our main purpose is to create a separating line or hyperplane between the data of the two classes. The hyperplane separates any size of data linearly. This hyperplane can be two-dimensional, or it can have a dimension of more than two. SVM creates parallel regions by creating two parallel lines. Moreover, it separates the space in one pass to create straight and linear regions. SVM tries to find the widest range, i.e. the largest margin, between the categories, and thus, the two categories are divided with a gap between them where the gap is as wide as possible. This hyperplane is responsible for the partition. It is known that the classification process will be more successful if there is a broader gap between the two classes in SVM. Input vector {xi, i = 1, • • • , n} should belong to one of the classes, yi{−1, 1}. Additionally, a hyperplane can be defined as follows:</p><formula xml:id="formula_10" coords="8,386.40,568.38,151.89,9.88">w 0 x + b 0 = 0 (9)</formula><p xml:id="_49aUeKF">Here, w is the weight vector, x is the input vector, and b is a bias. For any given pair of w and b, data can be linearly separated when one of the following cases occurs:</p><formula xml:id="formula_11" coords="8,364.66,632.65,173.63,24.75">w.x i + b ≥ 1 if y i = 1 (10) w.x i + b ≤ 1 if y i = −1<label>(11)</label></formula><p xml:id="_qS3Rv3Y">The kernel method is used to solve a nonlinear problem with a linear classifier. The input data is converted into a highdimensional space with the function, where the kernel function K is defined as follows:</p><formula xml:id="formula_12" coords="8,362.30,723.82,175.98,8.91">k x, x ) = (x), (x )<label>(12)</label></formula><p xml:id="_P9ykeMt">-Linear</p><formula xml:id="formula_13" coords="9,36.17,85.62,241.21,51.42">k x i , x j = x i .x j (13) Polynomial k x i , x j = x i .x j + 1 d (14)</formula><p xml:id="_VQKKbQR">Here, d is the degree of the polynomial.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_3fGJjWq">IV. EXPERIMENTAL APPLICATIONS A. DATASET</head><p xml:id="_7dxhPec">In this study, three different voice datasets are utilized, which are widely used by researchers in emotion recognition. These datasets are as follows; RAVDESS, EMO-DB and IEMO-CAP. RAVDESS is selected as one of the datasets for our model due to its large availability. This dataset contains audio and visual recordings of 12 male and 12 female actors pronouncing English sentences with eight different emotional expressions. Only speech samples are used for this study. Emotion tags in the dataset are: sad, happy, angry, calm, fearful, surprised, neutral and disgust. Besides, the total number of records in the dataset is 1440 <ref type="bibr" coords="9,165.71,316.00,15.27,8.91" target="#b50">[50]</ref>. The second dataset we use in our research is EMO-DB, which is widely used by researchers in the field of speech-based emotion recognition and allows us to make more extensive comparisons with previous studies. The dataset contains 535 audio outputs divided into 7 emotion classes in German. Emotion classes in the dataset are; anger, sadness, fear/anxiety, neutral, happiness, disgust, and boredom <ref type="bibr" coords="9,127.47,399.69,15.27,8.91" target="#b51">[51]</ref>. The third dataset we use is the IEMOCAP dataset that is produced from improvised data. This dataset consists of audio, video and facial movement samples collected from five pairs of male and female actors.</p><p xml:id="_RGuSMse">The audio files of the data series are divided into ten emotion classes: angry, happy, sad, neutral, frustrated, excited, fearful, surprised, disgusted and other. We use the sound samples in the IEMOCAP dataset to measure the performance of the proposed frame on improvised data. In addition, we consider only 4 emotion classes (angry, happy, neutral, and sad) in the IEMOCAP dataset in this study. The number of audio files in four classes is 889 <ref type="bibr" coords="9,111.99,531.20,15.27,8.91" target="#b52">[52]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_qTsk9Wy">B. EXPERIMENTAL RESULTS</head><p xml:id="_NgfDdRG">The implementation of the proposed method is done on a machine that has i7  Thirteen different feature vectors are created as:</p><formula xml:id="formula_14" coords="9,307.04,349.43,211.80,140.41">• Acoustic features • DenseNet201{conv5_block16} • DenseNet201{conv5_block16}+Acoustic features • ResNet18{fc1000 • ResNet18{fc1000}+Acoustic features • ResNet50{fc1000} • ResNet50{fc1000}+Acoustic features • ResNet101{fc1000 • ResNet101{fc1000}+Acoustic features • SqueezeNet{pool10} • SqueezeNet{pool10}+Acoustic features • VGG16{fc7}</formula><p xml:id="_vQFfQeB">• VGG16{fc7}+Acoustic features Linear kernel SVM is used for classification. Using the 10-fold cross-validation technique, the data were separated for testing and training. The performance of the proposed method is evaluated based on the accuracy rates as shown in Tables <ref type="table" coords="9,334.76,556.45,13.08,8.91" target="#tab_5">2-4</ref>. The first column of Table <ref type="table" coords="9,453.85,556.45,4.98,8.91" target="#tab_2">2</ref>-4 shows the feature set used, and the second shows the classification success.</p><p xml:id="_vMD3rbV">Classification results for the RAVDESS dataset are given in Table <ref type="table" coords="9,333.38,592.31,3.74,8.91" target="#tab_2">2</ref>  dataset is given in Figure <ref type="figure" coords="10,147.84,544.49,3.74,8.91">8</ref>. Classification results for the dataset are given in Table <ref type="table" coords="10,179.43,556.45,3.74,8.91" target="#tab_4">3</ref>. The best classification result for the EMO-DB dataset was obtained with ReliefF feature selection reached to an accuracy rate of 90.21% from ResNet101{fc1000}+Acoustic features. In addition, VGG16{fc7}+Acoustic features with ReliefF reached to an accuracy rate of 90.12%, ResNet18{fc1000}+Acoustic features reached to an accuracy rate of 85.47%, ResNet50 {fc1000}+Acoustic features with ReliefF reached to an accuracy rate of 88.67%, SqueezeNet {pool10}+Acoustic features with ReliefF reached to an accuracy rate of 88.63% and DenseNet201{conv5_block16}+Acoustic features reached to an accuracy rate of 87.29%. The confusion matrix for the best classification result for the EMO_DB dataset is given in Figure <ref type="figure" coords="10,102.20,711.86,3.74,8.91" target="#fig_7">9</ref>. The classification results for the IEMO-CAP dataset are given in Table <ref type="table" coords="10,172.78,723.82,3.74,8.91" target="#tab_5">4</ref>. The best classification   <ref type="figure" coords="10,440.04,699.91,8.30,8.91" target="#fig_8">10</ref>.</p><p xml:id="_vF9JYh8">Training computational complexity of Pre-trained CNNs are shown in Table <ref type="table" coords="10,374.61,723.82,3.74,8.91" target="#tab_6">5</ref>.  Besides, experiments were carried out by the transfer learning method using only spectrogram images. The remaining parameters of the original models, except for the fully connected layers, are preserved and used as initial values. The last layer is set to be the same size as the number of classes in the new data. Hyper parameters are selected as follows:</p><formula xml:id="formula_15" coords="11,46.13,458.98,130.97,32.82">• minibatch size is 64 • maximum epoch number is 32 • learning rate is 1e-4</formula><p xml:id="_s2aQusU">The results obtained with the transfer learning method are given in Table <ref type="table" coords="11,97.16,508.63,3.74,8.91" target="#tab_7">6</ref>. According to the data in Table <ref type="table" coords="11,235.28,508.63,3.74,8.91" target="#tab_7">6</ref>, the best classification result for the RAVDESS dataset obtained from ResNet101 is reached to an accuracy rate of 72.34%, The best classification result for the EMO-DB dataset obtained from ResNet50 is reached to an accuracy rate of 85.49% and the best classification result for the IEMOCAP dataset is obtained from ResNet101, which reached to an accuracy rate of 82.76%.</p><p xml:id="_X9gpE8h">ANOVA was used for statistical analysis of the experimental results and the results are given in table <ref type="table" coords="11,213.86,616.22,3.74,8.91" target="#tab_8">7</ref>. According to the ANOVA statistical test, ''P'' &lt; 0.05 is required for a significant relationship between the results obtained by different methods. As it can be seen from the results in Table <ref type="table" coords="11,236.83,652.09,3.74,8.91" target="#tab_8">7</ref>, the ''P'' value is generally close to zero as a result of comparing different methods, and this shows us that there is a significant relationship between the results.</p><p xml:id="_CFSgaDy">In this study, the findings we obtain to better evaluate the performance of the proposed method are compared with the results obtained from other methods used in the literature.  In <ref type="bibr" coords="11,320.16,389.08,15.27,8.91" target="#b53">[53]</ref>, they classified speech samples with the SVM classifier using the RAVDESS dataset. The authors employed Continuous Wavelet Transform (CWT) for feature selection. The best classification result obtained through use of 5 fold cross-validation technique and Quadratic SVM, with an accuracy rate of 60.1% In <ref type="bibr" coords="11,390.16,448.85,15.27,8.91" target="#b54">[54]</ref>, spectrograms produced from a deep neural network (DNN) and speech sounds are used in emotion recognition. Spectrograms are given as input to Gated Residual Networks (GResNets) and an accuracy rate of 65.97% has been achieved. In <ref type="bibr" coords="11,437.28,496.67,15.27,8.91" target="#b24">[25]</ref>, an SVM Ensemble having a Gauss kernel is suggested. First of all, MFCCs are extracted with spectral centroids to represent emotional speech. Then, an accuracy rate of 75.69% has been accomplished using the wrapper-based feature selection method to obtain the best feature set. In <ref type="bibr" coords="11,415.32,556.45,15.27,8.91" target="#b55">[55]</ref>, they investigated features based on Fourier parameters (FP) for emotion recognition models. The authors used only 6 of the 7 emotion classes in the EMO-DB dataset, by removing the ''disgust'' class. FP and MFCC features extracted from the dataset and an average accuracy rate of 73.3% is reached by using the SVM classifier. In <ref type="bibr" coords="11,348.89,628.18,15.27,8.91" target="#b56">[56]</ref>, binary cascade classification is presented. Many features that are based on energy, pitch, jitter and TEO autocorrelation have been extracted and also the difference in speech patterns due to gender has been investigated. The best emotion recognition accuracy rate achieved by SVM with linear kernel equals to 87.7%. In <ref type="bibr" coords="11,495.35,687.95,15.27,8.91" target="#b57">[57]</ref>, They only applied traditional machine learning techniques to classify samples in the EMO-DB dataset. The authors proposed a new type of sound features called modulation spectral features (MSFs). Using (LDA) classifier, they achieved an accuracy rate of 85.8%. In <ref type="bibr" coords="12,148.00,469.19,15.27,8.91" target="#b58">[58]</ref>, presents a speech emotion recognition system using the recurrent neural network (RNN) model. A powerful learning method with a bidirectional long short-term memory (BLSTM) model has been adopted to extract features of emotional states. In <ref type="bibr" coords="12,205.70,517.02,15.27,8.91" target="#b28">[29]</ref>, 2D CNNL-STM is used to learn emotion related features from the Mel spectrogram.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_n3EDjJ6">V. CONCLUSION</head><p xml:id="_fevvqYE">In this paper, a new method based on deep and acoustic features is proposed to recognize human emotions. The proposed method is evaluated on RADVES, EMO-DB and IEMOCAP datasets, which are very popular in the literature. At first, acoustic features and spectrograms are extracted from speech signals. Thereafter, data augmentation process is employed to create additional training data samples for spectrogram images. Subsequently, six pre-trained popular CNNs are used to extract deep features from spectrogram images. These networks are VGG16, ResNet18, ResNet50, ResNet101, SqueezeNet and DenseNet201. Acoustic features and deep features are combined to create a hybrid feature vector. In this way, it is targeted at improving the classification success. Also, ReliefF is used for feature selection. Finally, linear SVM is used for classification. The best performance gained in ''ResNet101{fc1000}+Acoustic Features with ReliefF'' for the RADVES dataset with an accuracy rate of 79.41, the best performance gained in ''ResNet101 {fc1000}+Acoustic features with ReliefF'' for the EMO-DB dataset with an accuracy rate of 90.21%, and the best performance gained in ''VGG16{fc7}+Acoustic features with ReliefF'' for IEMOCAP dataset with an accuracy rate of 85.37%. As shown in Table <ref type="table" coords="12,450.32,564.84,3.94,8.91" target="#tab_2">2</ref>-4, according to the results obtained from the experiments, our proposed method has superior accuracy rates compared with those of previous studies done in the literature. As a consequence, in future studies, it is recommended to develop new techniques for the determination of optimum feature sets in order to improve the accuracy rates of classification.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,37.04,333.98,96.32,7.02"><head>FIGURE 1 .</head><label>1</label><figDesc xml:id="_VZhQn4J">FIGURE 1. Proposed Method.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="6,36.17,174.40,208.61,7.02;6,36.17,182.83,137.12,6.95;6,54.56,66.06,101.58,90.30"><head>FIGURE 3 .</head><label>3</label><figDesc xml:id="_8udcP59">FIGURE 3. Illustration of Speech Sound Signal and Spectrogram (a) Speech Sound Signal, (b) Spectrogram.</figDesc><graphic coords="6,54.56,66.06,101.58,90.30" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="7,36.17,66.29,241.21,8.91;7,36.17,78.24,241.21,8.91;7,36.17,90.20,241.21,8.91;7,36.17,102.15,241.21,8.91;7,36.17,114.11,241.21,8.91;7,36.17,126.06,241.21,8.91;7,36.17,138.02,241.21,8.91;7,36.17,149.97,241.21,8.91;7,36.17,161.93,241.21,8.91;7,36.17,173.88,241.21,8.91;7,36.17,185.84,241.21,8.91;7,36.17,197.79,241.21,8.91;7,36.17,209.75,241.22,8.91;7,36.17,221.70,241.21,8.91;7,36.17,233.66,241.21,8.91;7,36.17,245.61,241.21,8.91;7,36.17,257.57,241.21,8.91;7,36.17,269.52,241.21,8.91;7,36.17,281.48,241.21,8.91;7,36.17,293.43,241.21,8.91;7,36.17,305.39,241.21,8.91;7,36.17,317.34,241.21,8.91;7,36.17,329.30,241.21,8.91;7,36.17,341.25,241.21,8.91;7,36.17,353.21,241.21,8.91;7,36.17,365.17,241.21,8.91;7,36.17,377.12,241.21,8.91;7,36.17,389.08,241.22,8.91;7,36.17,401.03,241.21,8.91;7,36.17,412.99,241.21,8.91;7,36.17,424.94,241.21,8.91;7,36.17,436.90,241.21,8.91;7,36.17,448.85,241.21,8.91;7,36.17,460.81,241.21,8.91;7,36.17,472.76,241.20,8.91;7,36.17,484.72,241.21,8.91;7,36.17,496.67,241.21,8.91;7,36.17,508.63,241.21,8.91;7,36.17,520.58,241.21,8.91;7,36.17,532.54,241.21,8.91;7,36.17,544.49,241.21,8.91;7,36.17,556.45,241.21,8.91;7,36.17,568.40,241.21,8.91;7,36.17,580.36,241.21,8.91;7,36.17,592.31,121.04,8.91"><head></head><label></label><figDesc xml:id="_RYhaCCT">SqueezeNet and DenseNet201 are used as deep feature extractors. The spectrogram images of the speech signals are given as input to these networks. Deep features are the features obtained from the layers of CNN before the classification layer as a result of giving an image to the CNN [45]. The pre-trained VGG16 deep network architecture is developed by Simonyan and Zisserman in the ILSVRC 2014 contest. It is basically a deep network, consisting of thirteen convolutional layers and three fully connected layers. There are fourty-one layers in total with Maxpool, fully connected layer, ReLu layer, Dropout layer and Softmax layer. The image to be presented to the input layer has 224 × 224 × 3 pixels. The last layer is the classification layer [46]. The fc7 layer of the VGG16 architecture has 4094 neurons and this layer is chosen as the deep feature extractor layer. ResNet has many variations and some of the commonly used ones are ResNets18, ResNet50 and ResNet101. ResNet won the ILSVRC contest held in 2015 with the lowest error rate of 3.37%. In this study, pre-trained ResNet (ResNet18, ResNet50, ResNet101) models are used. These networks have 18 (72 substrates), 50 (177 substrates) and 101 (347 substrates) layers, respectively. All of these networks have fc1000 (1000 fully connected layers) and this layer is used as the deep feature extractor layer. SqueezeNet is a smaller network designed as a more compact alternative to AlexNet. It has almost 50 times less parameters than AlexNet but works 3 times faster. This architecture was introduced by Lonola et al. in 2016 [47]. SqueezeNet generally consists of an independent convolution layer (conv1), eight fire modules (fire2-9) and finally the conv10 layer. The image to be included in the input layer is 227 × 227 × 3. SqueezeNet architecture has 1000 neurons in the pool10 layer and this layer is chosen as the deep feature extraction layer. DenseNet is one of the new architectures developed for object recognition and was introduced by Huang et al. in 2017. DenseNet architecture is very similar to ResNet, with some basic differences. DenseNet201 model is used in this study. In DenseNet201 model, there are direct connections to all layers after all previous layers. The default input size for this model is 224 × 224. The DenseNet201 architecture has 1408 neurons in the conv5_block16 layer and this layer is chosen as the deep feature extraction layer. Spectrogram images size is set to 224 × 224 × 3 for the input layer of VGG16, ResNets and DenseNet201 networks, and 27 × 227 × 3 for SqueezeNet.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="7,297.08,242.31,194.79,7.02;7,304.25,263.06,226.86,184.44"><head>FIGURE 4 .</head><label>4</label><figDesc xml:id="_SJURQ7s">FIGURE 4. Deep feature extraction in pre-trained networks.</figDesc><graphic coords="7,304.25,263.06,226.86,184.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="7,297.08,670.56,193.92,7.02;7,304.24,477.34,226.68,184.14"><head>FIGURE 6 .</head><label>6</label><figDesc xml:id="_5Jge22A">FIGURE 6. 2D representation of deep features for EMO-DB.</figDesc><graphic coords="7,304.24,477.34,226.68,184.14" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="8,36.17,249.38,196.70,7.02;8,43.40,66.06,226.74,174.24"><head>FIGURE 7 .</head><label>7</label><figDesc xml:id="_JSHwdeA">FIGURE 7. 2D representation of deep features for IEMOCAP.</figDesc><graphic coords="8,43.40,66.06,226.74,174.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="8,41.15,545.17,178.09,9.06;8,39.76,558.89,169.60,9.06;8,39.76,570.84,120.37,9.06;8,39.76,582.80,47.59,8.94;8,39.76,594.90,125.93,8.91;8,39.76,606.86,7.75,8.91;8,66.60,606.71,61.74,9.06;8,39.76,618.81,7.75,8.91"><head>Algorithm 2</head><label>2</label><figDesc xml:id="_NJuBgHe">Feature Selection With ReliefF Input: f: Feature vector for train examples Output: w: Predicted features Algorithm: 1: set all weights w[K]: = 0; 2:for i := 1 to do 3:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="10,297.08,266.66,173.90,7.02;10,305.44,66.06,224.28,191.52"><head>FIGURE 9 .</head><label>9</label><figDesc xml:id="_5C89HAu">FIGURE 9. Confusion matrix for the EMO-DB dataset.</figDesc><graphic coords="10,305.44,66.06,224.28,191.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="11,36.17,239.96,181.31,7.02;11,42.61,66.06,228.12,164.82"><head>FIGURE 10 .</head><label>10</label><figDesc xml:id="_HDRQp5p">FIGURE 10. Confusion matrix for the IEMOCAP dataset.</figDesc><graphic coords="11,42.61,66.06,228.12,164.82" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="8,297.08,66.06,210.93,7.02"><head>TABLE 1 .</head><label>1</label><figDesc xml:id="_72nHJHu">Number of features before and after feature selection.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="9,297.08,66.06,170.72,7.02"><head>TABLE 2 .</head><label>2</label><figDesc xml:id="_K6yznPP">Classification results on RAVDESS dataset.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="9,297.08,592.31,241.21,140.41"><head>.</head><label></label><figDesc xml:id="_6ur3Psq">Confusion matrix for the RAVDESS dataset.</figDesc><table coords="9,297.08,592.31,241.21,140.41"><row><cell>FIGURE 8</cell></row><row><cell>. The best classification result for the RAVDESS</cell></row><row><cell>dataset was obtained from ResNet101 {fc1000}+Acoustic</cell></row><row><cell>features as 79.41% with ReliefF feature selection. Also,</cell></row><row><cell>VGG16{fc7}+Acoustic features with ReliefF reached to</cell></row><row><cell>an accuracy rate of 74.41%, ResNet18{fc1000}+Acoustic</cell></row><row><cell>features reached to an accuracy rate of 75.38%, ResNet50</cell></row><row><cell>{fc1000}+Acoustic features with ReliefF reached to an</cell></row><row><cell>accuracy rate of 78.26%, SqueezeNet{pool10}+Acoustic</cell></row><row><cell>features with ReliefF reached to an accuracy rate of 75.81%</cell></row><row><cell>and DenseNet201{conv5_block16}+Acoustic features with</cell></row><row><cell>ReliefF reached to an accuracy rate of 77.46%. The confusion</cell></row><row><cell>matrix for the best classification result for the RAVDESS</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="10,36.17,272.07,168.82,7.02"><head>TABLE 3 .</head><label>3</label><figDesc xml:id="_mFrmWZM">Classification results on EMO-DB dataset.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="10,297.08,291.86,241.21,416.95"><head>TABLE 4 .</head><label>4</label><figDesc xml:id="_QQ3ue8t">Classification results on IEMOCAP dataset.</figDesc><table coords="10,297.08,556.45,241.21,152.37"><row><cell>result for the IEMOCAP dataset was obtained with ReliefF</cell></row><row><cell>feature selection as 85.37% from VGG16{fc7}+Acoustic</cell></row><row><cell>features. In addition, ResNet18{fc1000}+Acoustic fea-</cell></row><row><cell>tures with ReliefF reached to an accuracy rate of 83.47%,</cell></row><row><cell>ResNet50{fc1000}+Acoustic features with ReliefF reached</cell></row><row><cell>to an accuracy rate of 82.74%, ResNet101{fc1000}+</cell></row><row><cell>Acoustic features with ReliefF reached to an accu-</cell></row><row><cell>racy rate of 82.36%, SqueezeNet{pool10}+Acoustic fea-</cell></row><row><cell>tures reached to an accuracy rate of 83.87% and</cell></row><row><cell>DenseNet201{conv5_block16}+Acoustic features with</cell></row><row><cell>ReliefF reached to an accuracy rate of 82.37%. The confu-</cell></row><row><cell>sion matrix for the best classification result for the IEMO-</cell></row><row><cell>CAP_DB dataset is given in Figure</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" coords="11,36.17,254.79,149.51,7.02"><head>TABLE 5 .</head><label>5</label><figDesc xml:id="_suuN7zY">Computational complexity of CNNs.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7" coords="11,297.08,66.06,150.95,7.02"><head>TABLE 6 .</head><label>6</label><figDesc xml:id="_gXgBFVt">Results of transfer learning method.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8" coords="11,297.08,184.39,96.06,7.02"><head>TABLE 7 .</head><label>7</label><figDesc xml:id="_tu2RdA5">ANOVA test results.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9" coords="11,297.08,365.16,241.21,20.86"><head>Table 8</head><label>8</label><figDesc xml:id="_da6NE2X">summarizes outstanding studies on the emotional classification of speech sounds.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10" coords="12,36.17,66.06,192.78,7.02"><head>TABLE 8 .</head><label>8</label><figDesc xml:id="_hADyD4f">Performance comparison with other approaches.</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0">VOLUME 8, 2020   </note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="221648" xml:id="foot_1">   VOLUME 8, 2020   </note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="12,314.69,689.57,223.61,6.78;12,314.69,698.53,223.61,6.78;12,314.69,707.50,223.61,6.78;12,314.69,716.47,223.60,6.78;12,314.69,725.43,26.67,6.78;12,36.17,746.99,45.58,5.88" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_3ymkAPx">Machine learning based identification of relevant parameters for functional voice disorders derived from endoscopic high-speed recordings</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Schlegel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kniesburges</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Dürr</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Schützenberger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Döllinger</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-020-66405-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Gqr8mAH">Sci. Rep</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">10517</biblScope>
+			<date type="published" when="2020-06">Jun. 2020. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,67.90,223.61,6.78;13,53.78,76.86,223.61,6.78;13,53.78,85.83,223.61,6.78;13,53.78,94.80,97.03,6.78" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_67adDW2">Recognizing emotions induced by affective sounds through heart rate variability</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Nardelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Valenza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Greco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lanata</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">P</forename><surname>Scilingo</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TAFFC.2015.2432810</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wTRKWcs">IEEE Trans. Affect. Comput</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="385" to="394" />
+			<date type="published" when="2015-10">Oct. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,104.81,223.61,6.78;13,53.78,113.78,223.60,6.78;13,53.78,122.74,183.26,6.78" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_NYG4UJH">Bi-modal emotion recognition from expressive face and body gestures</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Gunes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Piccardi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jnca.2006.09.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dXaRJJ8">J. Netw. Comput. Appl</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1334" to="1345" />
+			<date type="published" when="2007-11">Nov. 2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,132.75,223.61,6.78;13,53.78,141.72,223.61,6.78;13,53.78,150.69,30.96,6.78" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_JReb4V4">Model of identity verification support system based on voice and image samples</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Połap</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_M22fYuu">J. Univers. Comput. Sci</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="460" to="474" />
+			<date type="published" when="2018-01">Jan. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,160.70,223.61,6.78;13,53.78,169.67,223.61,6.78;13,53.78,178.63,223.61,6.78;13,53.78,187.60,137.74,6.78" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_5mJRzhe">Speech emotion recognition based on long short-term memory and convolutional neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.14132/j.cnki.1673-5439.2018.05.009</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FN2vmaY">J. Nanjing Univ. Posts Telecommun</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="63" to="69" />
+			<date type="published" when="2018-11">Nov. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,197.61,223.61,6.78;13,53.78,206.58,223.61,6.78;13,53.78,215.54,223.61,6.78;13,53.78,224.51,84.66,6.78" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_NrwVUR6">Speech based emotion recognition based on hierarchical decision tree with SVM, BLG and SVR classifiers</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Garg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Sinha</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ncc.2013.6487987</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_2jYBfq4">Proc. Nat. Conf. Commun. (NCC)</title>
+				<meeting>Nat. Conf. Commun. (NCC)</meeting>
+		<imprint>
+			<date type="published" when="2013-02">Feb. 2013</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,234.52,223.61,6.78;13,53.78,243.49,223.60,6.78;13,53.78,252.46,121.39,6.78" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_YbMkEmF">Speech emotion recognition using deep neural network and extreme learning machine,&apos;&apos; in Proc</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Tashev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ZDcSrHs">Annu. Conf. Int. Speech Commun. Assoc</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="5" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,262.47,223.61,6.78;13,53.78,271.43,223.60,6.78;13,53.78,280.40,205.62,6.78" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_pPzwZXJ">Real time multiple face recognition: A deep learning approach</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mittal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Nigam</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3299852.3299853</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PCyYEaA">Proc. Int. Conf. Digit. Med. Image Process. (DMIP)</title>
+				<meeting>Int. Conf. Digit. Med. Image ess. (DMIP)</meeting>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="70" to="76" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,290.41,223.61,6.78;13,53.78,299.38,223.60,6.78;13,53.78,308.35,212.91,6.78" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_NZ83jxs">Voice recognition based on adaptive MFCC and deep learning</title>
+		<author>
+			<persName coords=""><forename type="first">H.-S</forename><surname>Bae</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H.-J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S.-G</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iciea.2016.7603830</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_YeEBchT">Proc. IEEE 11th Conf. Ind. Electron. Appl. (ICIEA)</title>
+				<meeting>IEEE 11th Conf. Ind. Electron. Appl. (ICIEA)</meeting>
+		<imprint>
+			<date type="published" when="2016-06">Jun. 2016</date>
+			<biblScope unit="page" from="1542" to="1546" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,318.36,223.61,6.78;13,53.78,327.32,223.61,6.78;13,53.78,336.29,223.60,6.78;13,53.78,345.26,115.83,6.78" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_Fee9yTq">Image and command hybrid model for vehicle control using Internet of Vehicles</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">R</forename><surname>Malik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Khalid</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Al-Turjman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Jabbar</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/ett.3774</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UMZHqSe">Trans. Emerg. Telecommun. Technol</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">e3774</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,355.27,223.61,6.78;13,53.78,364.24,223.61,6.78;13,53.78,373.20,223.61,6.78;13,53.78,382.17,186.38,6.78" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_3NBTTQx">Deep features-based speech emotion recognition for smart affective services</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Badshah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Rahim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Ullah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Muhammad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kwon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">W</forename><surname>Baik</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11042-017-5292-7</idno>
+	</analytic>
+	<monogr>
+		<title level="s" xml:id="_gtcvFjw">Multimedia Tools Appl.</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="5571" to="5589" />
+			<date type="published" when="2019-03">Mar. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,392.18,223.61,6.78;13,53.78,401.15,223.61,6.78;13,53.78,410.11,211.02,6.78" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_8k6WrXf">Deep-net: A lightweight CNNbased speech emotion recognition system using deep frequency features</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Anvarjon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mustaqeem</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Kwon</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s20185212</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jj32pGY">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page">5212</biblScope>
+			<date type="published" when="2020-09">Sep. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,420.13,223.61,6.78;13,53.78,429.09,223.60,6.78;13,53.78,438.06,223.60,6.78;13,53.78,447.03,45.49,6.78" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_hGZtGkR">Emotion recognition from assamese speeches using MFCC features and GMM classifier</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">B</forename><surname>Kandali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Routray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">K</forename><surname>Basu</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tencon.2008.4766487</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_sDDMTpZ">Proc. IEEE Region Conf. (TENCON)</title>
+				<meeting>IEEE Region Conf. (TENCON)</meeting>
+		<imprint>
+			<date type="published" when="2008-11">Nov. 2008</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,457.04,223.61,6.78;13,53.78,466.00,223.60,6.78;13,53.78,474.97,166.80,6.78" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_CVAWEga">SVM scheme for speech emotion recognition using MFCC feature</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Milton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">Sharmy</forename><surname>Roy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">Tamil</forename><surname>Selvi</surname></persName>
+		</author>
+		<idno type="DOI">10.5120/11872-7667</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WXnXRS9">Int. J. Comput. Appl</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="34" to="39" />
+			<date type="published" when="2013-05">May 2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,484.98,223.61,6.78;13,53.78,493.95,223.61,6.78;13,53.78,502.92,223.61,6.78;13,53.78,511.88,28.43,6.78" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_DmCS8cX">Emotion recognition system from artificial Marathi speech using MFCC and LDA techniques</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">V</forename><surname>Waghmare</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Deshmukh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Shrishrimal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Janvale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_NgB7dnH">Proc. 5th Int. Conf</title>
+				<meeting>5th Int. Conf</meeting>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="1" to="10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,521.90,223.61,6.78;13,53.78,530.86,223.61,6.78;13,53.78,539.83,109.94,6.78" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_nQ2rTVD">Feature extraction from speech data for emotion recognition</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Demircan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Kahramanli</surname></persName>
+		</author>
+		<idno type="DOI">10.7763/jacn.2014.v2.76</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ME9mxKJ">J. Adv. Comput. Netw</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="28" to="30" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,549.84,223.61,6.78;13,53.78,558.81,223.60,6.78;13,53.78,567.77,173.33,6.78" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_CgcH3VB">Acoustic emotion recognition using linear and nonlinear cepstral coefficients</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Chenchah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Lachiri</surname></persName>
+		</author>
+		<idno type="DOI">10.14569/ijacsa.2015.061119</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_q3fF4j5">Int. J. Adv. Comput. Sci. Appl</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1" to="4" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,577.79,223.61,6.78;13,53.78,586.75,223.60,6.78;13,53.78,595.72,121.79,6.78" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_hDjqZcw">Small sample size speech emotion recognition based on global features and weak metric learning</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Da</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KfUANuS">Acta Acust</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="330" to="338" />
+			<date type="published" when="2012-05">May 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,605.73,223.61,6.78;13,53.78,614.70,223.60,6.78;13,53.78,623.66,199.72,6.78" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_ScCS5d8">Improving multilingual speech emotion recognition by combining acoustic features in a three-layer model</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Akagi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.specom.2019.04.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pmhHyEt">Speech Commun</title>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2019-07">Jul. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,633.68,223.61,6.78;13,53.78,642.64,223.60,6.78;13,53.78,651.61,223.61,6.78;13,53.78,660.58,95.62,6.78" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_YDqFSnC">Primitivesbased evaluation and estimation of emotions in speech</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Grimm</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Kroschel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Mower</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Narayanan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.specom.2007.01.010</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EuCcjad">Speech Commun</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="787" to="800" />
+			<date type="published" when="2007-10">Oct. 2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,670.59,223.61,6.78;13,53.78,679.55,223.60,6.78;13,53.78,688.52,98.63,6.78" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_qpD8Fu4">Emotion recognition using multilayer perceptron and generalized feed forward neural network</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Khanchandani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hussain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Rycunnj">J. Sci. Ind. Res</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page" from="367" to="371" />
+			<date type="published" when="2009-04">Apr. 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,53.78,698.53,223.61,6.78;13,53.78,707.50,223.61,6.78;13,53.78,716.47,223.60,6.78;13,53.78,725.43,186.17,6.78" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_w7dZbnF">Emotion recognition improvement using normalized formant supplementary features by hybrid of DTW-MLP-GMM model</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Gharavian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Sheikhan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Ashoftedel</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00521-012-0884-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WB8atUB">Neural Comput. Appl</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1181" to="1191" />
+			<date type="published" when="2013-05">May 2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,67.90,223.61,6.78;13,314.69,76.86,223.60,6.78;13,314.69,85.83,184.28,6.78" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_fCVx5bt">Robust emotion recognition in noisy speech via sparse representation</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Lei</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00521-013-1377-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_crHCNS3">Neural Comput. Appl</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1539" to="1553" />
+			<date type="published" when="2014-06">Jun. 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,95.37,223.61,6.78;13,314.69,104.33,223.61,6.78;13,314.69,113.30,98.98,6.78" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_Fq4hjUa">A novel feature selection method for speech emotion recognition</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Özseven</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.apacoust.2018.11.028</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_yfKdUyg">Appl. Acoust</title>
+		<imprint>
+			<biblScope unit="volume">146</biblScope>
+			<biblScope unit="page" from="320" to="326" />
+			<date type="published" when="2019-03">Mar. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,122.83,223.61,6.78;13,314.69,131.80,223.60,6.78;13,314.69,140.77,223.60,6.78;13,314.69,149.73,24.64,6.78" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_qyedgbw">Bagged support vector machines for emotion recognition from speech</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bhavan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Chauhan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Hitkul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Shah</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.knosys.2019.104886</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pVjgmAR">Knowl.-Based Syst</title>
+		<imprint>
+			<biblScope unit="volume">184</biblScope>
+			<date type="published" when="2019-11">Nov. 2019. 104886</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,159.27,223.61,6.78;13,314.69,168.24,223.60,6.78;13,314.69,177.20,112.05,6.78" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_TGzTwxb">Research on emotion recognition algorithm based on spectrogram feature extraction of bottleneck feature</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mBpMjT3">Comput. Technol. Dev</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="82" to="86" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,186.74,223.61,6.78;13,314.69,195.70,223.60,6.78;13,314.69,204.67,223.61,6.78;13,314.69,213.64,92.67,6.78" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_Naw8582">End-to-end speech emotion recognition using deep neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Tzirakis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">W</forename><surname>Schuller</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icassp.2018.8462677</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Ge8hp7E">Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)</title>
+				<meeting>IEEE Int. Conf. Acoust., Speech Signal ess. (ICASSP)</meeting>
+		<imprint>
+			<date type="published" when="2018-04">Apr. 2018</date>
+			<biblScope unit="page" from="5089" to="5093" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,223.17,223.61,6.78;13,314.69,232.14,223.60,6.78;13,314.69,241.11,223.60,6.78" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_XxJubsu">Speech emotion recognition with deep convolutional neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Issa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">Fatih</forename><surname>Demirci</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Yazici</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2020.101894</idno>
+	</analytic>
+	<monogr>
+		<title level="s" xml:id="_vd8CmaB">Signal Process. Control</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<date type="published" when="2020-05">May 2020. 101894</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,250.64,223.61,6.78;13,314.69,259.61,223.61,6.78;13,314.69,268.57,174.59,6.78" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_YWVgkat">Speech emotion recognition using deep 1D &amp; 2D CNN LSTM networks</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bspc.2018.08.035</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pZBHrEz">Biomed. Signal Process. Control</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="312" to="323" />
+			<date type="published" when="2019-01">Jan. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,278.11,223.61,6.78;13,314.69,287.08,223.60,6.78;13,314.69,296.04,178.38,6.78" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_tEPJMfn">Speech emotion recognition based on DNN-decision tree SVM model</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.specom.2019.10.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xVpPUHE">Speech Commun</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page" from="29" to="37" />
+			<date type="published" when="2019-12">Dec. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,305.58,223.61,6.78;13,314.69,314.54,223.61,6.78;13,314.69,323.51,223.61,6.78;13,314.69,332.48,223.60,6.78;13,314.69,341.44,166.38,6.78" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_MqpD2ZF">Speech emotion recognition using hybrid spectral-prosodic features of speech signal/glottal waveform, Metaheuristic-based dimensionality reduction, and Gaussian elliptical basis function network classifier</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Daneshfar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Kabudian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Neekabadi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.apacoust.2020.107360</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cMtQsGn">Appl. Acoust</title>
+		<imprint>
+			<biblScope unit="volume">166</biblScope>
+			<biblScope unit="issue">107360</biblScope>
+			<date type="published" when="2020-09">Sep. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,350.98,223.61,6.78;13,314.69,359.95,223.60,6.78;13,314.69,368.91,94.99,6.78" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_v5ruuwU">Ensemble learning of hybrid acoustic features for speech emotion recognition</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Zvarevashe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Olugbara</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/a13030070</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VdhaHFQ">Algorithms</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">70</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,378.45,223.61,6.78;13,314.69,387.41,223.61,6.78;13,314.69,396.38,210.17,6.78" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_YBNnzKM">Speech emotion recognition with heterogeneous feature unification of deep neural network</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s19122730</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_W5z5xKy">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">2730</biblScope>
+			<date type="published" when="2019-06">Jun. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,405.92,223.61,6.78;13,314.69,414.88,223.60,6.78;13,314.69,423.85,172.91,6.78" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_K6urrfv">Bioinspired voice evaluation mechanism</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Polap</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wozniak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Damaševicius</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Maskeliunas</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.asoc.2019.04.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XXd6JbW">Appl. Soft Comput</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="342" to="357" />
+			<date type="published" when="2019-07">Jul. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,433.38,223.61,6.78;13,314.69,442.35,223.60,6.78;13,314.69,451.32,82.35,6.78" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_D4ZJMJP">Biologically inspired speech emotion recognition</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Lotfidereshgi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Gournay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_j23Vcrk">Proc. IEEE Int. Conf. Acoust., Speech Signal Process</title>
+				<meeting>IEEE Int. Conf. Acoust., Speech Signal ess</meeting>
+		<imprint>
+			<date type="published" when="2017-03">Mar. 2017</date>
+			<biblScope unit="page" from="5135" to="5139" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,460.85,223.61,6.78;13,314.69,469.82,223.60,6.78;13,314.69,478.79,125.75,6.78" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_Q9wn2Kp">Automated depression analysis using convolutional neural networks from speech</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Cao</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jbi.2018.05.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_NvTmTKb">J. Biomed. Informat</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="103" to="111" />
+			<date type="published" when="2018-07">Jul. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,488.32,223.61,6.78;13,314.69,497.29,223.61,6.78;13,314.69,506.25,92.46,6.78" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_wdbyXmE">Musical genre classification of audio signals</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Tzanetakis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Cook</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tsa.2002.800560</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_m56yKsD">IEEE Trans. Speech Audio Process</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="293" to="302" />
+			<date type="published" when="2002-07">Jul. 2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,515.79,223.61,6.78;13,314.69,524.76,177.97,6.78" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" xml:id="_798xeU8">Spectral entropy as speech features for speech recognition</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Toh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Togneri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Nordholm</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_wxJEHY5">Proc. PEECS</title>
+				<meeting>PEECS</meeting>
+		<imprint>
+			<date type="published" when="2005-01">Jan. 2005</date>
+			<biblScope unit="page">92</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,534.29,223.61,6.78;13,314.69,543.26,223.60,6.78;13,314.69,552.22,75.18,6.78" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_hHgV8C6">Computing statistical spectrum descriptors for audio music similarity and retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lidy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Rauber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s" xml:id="_8vFhXa4">Proc. Music Inf. Retr. Eval</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="5" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,561.76,223.61,6.78;13,314.69,570.73,223.60,6.78;13,314.69,579.69,223.60,6.78;13,314.69,588.66,28.43,6.78" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_CCmz7Dh">Mel-frequency cepstral coefficient analysis in speech recognition</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">K</forename><surname>On</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">M</forename><surname>Pandiyan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Yaacob</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Saudi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icoci.2006.5276486</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_2tfXgFX">Proc. Int. Conf. Comput. Informat</title>
+				<meeting>Int. Conf. Comput. Informat</meeting>
+		<imprint>
+			<date type="published" when="2006-06">Jun. 2006</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,598.19,223.61,6.78;13,314.69,607.16,223.61,6.78;13,314.69,616.13,223.60,6.78;13,314.69,625.09,114.57,6.78" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_xaUY44H">Late fusion framework for acoustic scene classification using LPCC, SCMC, and log-mel band energies with deep neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Paseddula</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">V</forename><surname>Gangashetty</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.apacoust.2020.107568</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zt7nsKv">Appl. Acoust</title>
+		<imprint>
+			<biblScope unit="volume">172</biblScope>
+			<date type="published" when="2021-01">Jan. 2021. 107568</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,634.63,223.61,6.78;13,314.69,643.60,223.61,6.78;13,314.69,652.56,125.32,6.78" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" xml:id="_h6hN2wX">Feature extraction using mfcc,&apos;&apos; Signal Image Process</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Jaafar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">F Wan</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bansal</surname></persName>
+		</author>
+		<idno type="DOI">10.5121/sipij.2013.4408</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_3SqWzXV">Int. J</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="101" to="108" />
+			<date type="published" when="2013-08">Aug. 2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,662.10,223.61,6.78;13,314.69,671.06,223.60,6.78;13,314.69,680.03,223.61,6.78;13,314.69,689.00,86.36,6.78" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_emBMTAM">Deep convolutional neural networks and data augmentation for environmental sound classification</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Salamon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Bello</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/LSP.2017.2657381</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_YnKbJ97">IEEE Signal Process. Lett</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="279" to="283" />
+			<date type="published" when="2017-03">Mar. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,314.69,698.53,223.61,6.78;13,314.69,707.50,223.61,6.78;13,314.69,716.47,223.60,6.78;13,314.69,725.43,66.34,6.78" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_kfUNbTj">Flexible, high performance convolutional neural networks for image classification</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">C</forename><surname>Cireundefinedan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Masci</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">M</forename><surname>Gambardella</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Schmidhuber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_kr8DH2K">Proc. 22nd Int. Joint Conf</title>
+				<meeting>22nd Int. Joint Conf</meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="1237" to="1242" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,67.90,223.61,6.78;14,53.78,76.86,223.61,6.78;14,53.78,85.83,223.61,6.78;14,53.78,94.80,223.61,6.78;14,53.78,103.76,86.15,6.78" xml:id="b44">
+	<monogr>
+		<title level="m" type="main" xml:id="_gQGg8ab">Explaining deep features using Radiologist-Defined semantic features and traditional quantitative features</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Paul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Schabath</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Balagurunathan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Gillies</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">O</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">B</forename><surname>Goldgof</surname></persName>
+		</author>
+		<idno type="DOI">10.18383/j.tom.2018.00034</idno>
+		<imprint>
+			<date type="published" when="2019-03">Mar. 2019</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="192" to="200" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,112.73,223.61,6.78;14,53.78,121.70,223.60,6.78;14,53.78,130.66,108.07,6.78" xml:id="b45">
+	<monogr>
+		<title level="m" type="main" xml:id="_NbU6cnh">Very deep convolutional networks for large-scale image recognition</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Simonyan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zisserman</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1409.1556</idno>
+		<ptr target="http://arxiv.org/abs/1409.1556" />
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,139.63,223.61,6.78;14,53.78,148.60,223.61,6.78;14,53.78,157.01,223.60,7.58;14,53.78,166.53,114.81,6.78" xml:id="b46">
+	<monogr>
+		<title level="m" type="main" xml:id="_rCtEJnU">SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and &lt;0.5 MB model size</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Landola</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Moskewicz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ashraf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Dally</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Keutzer</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1602.07360</idno>
+		<ptr target="https://arxiv.org/abs/1602.07360" />
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="1" to="13" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,175.49,223.61,6.78" xml:id="b47">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Bolón-Canedo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Sánchez-Maroño</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Alonso-Betanzos</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,184.46,223.61,6.78;14,53.78,193.43,223.60,6.78;14,53.78,202.39,128.69,6.78" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" xml:id="_G7MnkNz">A review of microarray datasets and applied feature selection methods</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Benítez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Herrera</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ins.2014.05.042</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_6Nvq5Te">Inf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">282</biblScope>
+			<biblScope unit="page" from="111" to="135" />
+			<date type="published" when="2014-10">Oct. 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,211.36,223.61,6.78;14,53.78,220.33,223.60,6.78;14,53.78,229.29,150.45,6.78" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" xml:id="_7DFGpGE">A training algorithm for optimal margin classifiers</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">E</forename><surname>Boser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">M</forename><surname>Guyon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">N</forename><surname>Vapnik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_V7hvT5e">Proc. 5th Annu. Workshop Comput. Learn. Theory</title>
+				<meeting>5th Annu. Workshop Comput. Learn. Theory<address><addrLine>Pittsburgh, PA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+			<biblScope unit="page" from="144" to="152" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,238.26,223.61,6.78;14,53.78,247.23,223.61,6.78;14,53.78,256.19,223.60,6.78;14,53.78,265.16,223.60,6.78;14,53.78,274.12,45.07,6.78" xml:id="b50">
+	<analytic>
+		<title level="a" type="main" xml:id="_DNggMga">The ryerson audio-visual database of emotional speech and song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in north American English</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">R</forename><surname>Livingstone</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">A</forename><surname>Russo</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0196391</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gS8Bxt8">PLoS ONE</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<date type="published" when="2018-05">May 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,283.09,223.61,6.78;14,53.78,292.06,223.60,6.78;14,53.78,301.02,24.64,6.78" xml:id="b51">
+	<analytic>
+		<title level="a" type="main" xml:id="_vhmUXHx">A database of German emotional speech</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Burkhardt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Paeschke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Rolfes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_DhS2zGc">Proc. 9th Eur. Conf. SpeechCommun. Technol</title>
+				<meeting>9th Eur. Conf. SpeechCommun. Technol</meeting>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page" from="1" to="4" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,309.99,223.61,6.78;14,53.78,318.96,223.61,6.78;14,53.78,327.92,223.60,6.78;14,53.78,336.89,178.79,6.78" xml:id="b52">
+	<analytic>
+		<title level="a" type="main" xml:id="_q7xkSzA">IEMOCAP: Interactive emotional dyadic motion capture database</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Busso</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Bulut</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C.-C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kazemzadeh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Mower</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">N</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">S</forename><surname>Narayanan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10579-008-9076-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_veqC9eU">Resour. Eval</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="335" to="359" />
+			<date type="published" when="2008-12">Dec. 2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,53.78,345.86,223.61,6.78;14,53.78,354.82,223.60,6.78;14,53.78,363.79,208.30,6.78" xml:id="b53">
+	<analytic>
+		<title level="a" type="main" xml:id="_T8VN9X9">Continuous wavelet transform based speech emotion recognition</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Shegokar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Sircar</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICSPCS.2016.7843306</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_BKyeCUm">Proc. 10th Int. Conf. Signal Process</title>
+				<meeting>10th Int. Conf. Signal ess</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,314.69,67.90,223.61,6.78;14,314.69,76.86,223.61,6.78;14,314.69,85.83,137.10,6.78" xml:id="b54">
+	<analytic>
+		<title level="a" type="main" xml:id="_BUEqkWA">Spectrogram based multi-task audio classification</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Yi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11042-017-5539-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_vBFn4Hr">Multimedia Tools Appl</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="3705" to="3722" />
+			<date type="published" when="2017-12">Dec. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,314.69,94.80,223.61,6.78;14,314.69,103.76,223.60,6.78;14,314.69,112.73,196.64,6.78" xml:id="b55">
+	<analytic>
+		<title level="a" type="main" xml:id="_4sqDDa4">Speech emotion recognition using Fourier parameters</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>An</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TAFFC.2015.2392101</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_kcPzhGr">IEEE Trans. Affect. Comput</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="75" />
+			<date type="published" when="2015-01">Jan. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,314.69,121.70,223.61,6.78;14,314.69,130.66,223.61,6.78;14,314.69,139.63,223.60,6.78;14,314.69,148.59,102.14,6.78" xml:id="b56">
+	<analytic>
+		<title level="a" type="main" xml:id="_eWsAnAQ">Speaker-independent emotion recognition exploiting a psychologically-inspired binary cascade classification schema</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kotti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Paternò</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10772-012-9127-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_R2ETEna">Int. J. Speech Technol</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="131" to="150" />
+			<date type="published" when="2012-06">Jun. 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,314.69,157.56,223.61,6.78;14,314.69,166.53,223.60,6.78;14,314.69,175.49,185.75,6.78" xml:id="b57">
+	<analytic>
+		<title level="a" type="main" xml:id="_xA8VV5Y">Automatic speech emotion recognition using modulation spectral features</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">H</forename><surname>Falk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W.-Y</forename><surname>Chan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.specom.2010.08.013</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cMmV4nw">Speech Commun</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="768" to="785" />
+			<date type="published" when="2011-05">May 2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,314.69,184.46,223.61,6.78;14,314.69,193.43,223.60,6.78;14,314.69,202.39,121.39,6.78" xml:id="b58">
+	<analytic>
+		<title level="a" type="main" xml:id="_6DEd2Am">High-level feature representation using recurrent neural network for speech emotion recognition,&apos;&apos; in Proc</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Tashev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TUKvAG3">Annu. Conf. Int. Speech Commun. Assoc</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="4" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,379.16,257.36,159.12,7.95;14,379.16,267.49,159.13,7.13;14,379.16,277.05,159.13,7.13;14,379.16,286.61,159.13,7.13;14,379.16,296.18,159.13,7.13;14,379.16,305.74,159.13,7.13;14,379.16,315.31,159.13,7.13;14,379.16,324.87,159.13,7.13;14,379.16,334.43,159.13,7.13;14,379.16,344.00,159.13,7.13;14,297.08,353.56,141.22,7.13;14,36.17,746.99,45.58,5.88" xml:id="b59">
+	<analytic>
+		<title level="a" type="main" xml:id="_JqdZUrw">He is currently an Assistant Professor with the</title>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ThvVGSZ">Cyprus, in 2010, the M.Sc. degree in computer engineering from Cankaya University, Turkey, in 2013, and the Ph.D. degree in computer engineering from Maltepe University</title>
+				<meeting><address><addrLine>Turkey</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1988">1988. 2019. 2020</date>
+			<biblScope unit="volume">8</biblScope>
+		</imprint>
+		<respStmt>
+			<orgName>engineering from Eastern Mediterranean University ; School of Computer Engineering, Harran University, Turkey</orgName>
+		</respStmt>
+	</monogr>
+	<note>His research interests include sound processing and deep learning</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

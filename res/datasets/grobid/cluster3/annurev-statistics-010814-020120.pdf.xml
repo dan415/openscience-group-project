@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_BRP4jQ4">Learning Deep Generative Models</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,216.64,177.63,109.58,11.66"><forename type="first">Ruslan</forename><surname>Salakhutdinov</surname></persName>
+							<email>rsalakhu@cs.toronto.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Departments of Computer Science and Statistical Sciences</orgName>
+								<orgName type="institution">University of Toronto</orgName>
+								<address>
+									<postCode>M5S 3G4</postCode>
+									<settlement>Toronto</settlement>
+									<country key="CA">Canada</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_jF65jaD">Learning Deep Generative Models</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">C6423510CEBD0996668631159696AECA</idno>
+					<idno type="DOI">10.1146/annurev-statistics-010814-020120</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-07T13:56+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_4dG4uRW">deep learning</term>
+					<term xml:id="_mu4y36Y">deep belief networks</term>
+					<term xml:id="_GXevckv">deep Boltzmann machines</term>
+					<term xml:id="_ezCNmhE">graphical models</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_jG6BA4B"><p xml:id="_grNbxdk">Building intelligent systems that are capable of extracting high-level representations from high-dimensional sensory data lies at the core of solving many artificial intelligence-related tasks, including object recognition, speech perception, and language understanding. Theoretical and biological arguments strongly suggest that building such systems requires models with deep architectures that involve many layers of nonlinear processing. In this article, we review several popular deep learning models, including deep belief networks and deep Boltzmann machines. We show that (a) these deep generative models, which contain many layers of latent variables and millions of parameters, can be learned efficiently, and (b) the learned high-level feature representations can be successfully applied in many application domains, including visual object recognition, information retrieval, classification, and regression tasks.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+		<surface n="27" ulx="0.0" uly="0.0" lrx="531.0" lry="657.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1." xml:id="_UvhkYth">INTRODUCTION</head><p xml:id="_dRxpSwj">Extraction of meaningful representations from rich sensory input lies at the core of solving many artificial intelligence (AI)-related tasks, including visual object recognition, speech perception, and language comprehension. Theoretical and biological arguments strongly suggest that building such systems requires deep architectures-models composed of several layers of nonlinear processing.</p><p xml:id="_ckCwceX">Many existing machine learning algorithms use what are called shallow architectures, including neural networks with only one hidden layer, kernel regression, and support vector machines, among many others. Theoretical results show that the internal representations learned by such systems are necessarily simple and are incapable of extracting certain types of complex structure from rich sensory input <ref type="bibr" coords="2,207.47,162.89,84.94,8.74" target="#b2">(Bengio &amp; LeCun 2007</ref><ref type="bibr" coords="2,292.41,162.89,53.62,8.74" target="#b0">, Bengio 2009)</ref>. Training these systems also requires large amounts of labeled training data. By contrast, it appears that, for example, object recognition in the visual cortex uses many layers of nonlinear processing and requires very little labeled input <ref type="bibr" coords="2,119.99,198.75,62.06,8.74" target="#b13">(Lee et al. 1998)</ref>. Thus, development of new and efficient learning algorithms for models with deep architectures that can also make efficient use of a large supply of unlabeled sensory input is of crucial importance.</p><p xml:id="_taQw9qg">In general, models with deep architectures, including multilayer neural networks, are composed of several layers of parameterized nonlinear modules, so the associated loss functions are almost always nonconvex. The presence of many bad local optima or plateaus in the loss function makes deep models far more difficult to optimize in comparison with shallow models. Local gradient-based optimization algorithms, such as the backpropagation algorithm <ref type="bibr" coords="2,421.03,282.44,63.60,8.74;2,119.99,294.40,19.80,8.74" target="#b22">(Rumelhart et al. 1986)</ref>, require careful parameter initialization and can often get trapped in a poor local optimum, particularly when training models with more than two or three layers <ref type="bibr" coords="2,385.58,306.36,82.50,8.74" target="#b29">(Sutskever et al. 2013)</ref>. By contrast, models with shallow architectures (e.g., support vector machines) generally use convex loss functions, typically allowing one to carry out parameter optimization efficiently. The appeal of convexity has steered most machine learning research into developing learning algorithms that can be cast in terms of solving convex optimization problems.</p><p xml:id="_c5SP2WA">Recently, <ref type="bibr" coords="2,170.14,366.13,75.73,8.74">Hinton et al. (2006)</ref> introduced a moderately fast, unsupervised learning algorithm for deep generative models called deep belief networks (DBNs). DBNs are probabilistic graphical models that contain multiple layers of hidden variables. Each nonlinear layer captures progressively more complex patterns of data, which represents a promising way of solving problems associated with visual object recognition, language comprehension, and speech perception <ref type="bibr" coords="2,428.19,413.95,52.49,8.74" target="#b0">(Bengio 2009)</ref>.</p><p xml:id="_75X4VeZ">A key feature of the new learning algorithm for DBNs is its layer-by-layer training, which can be repeated several times to efficiently learn a deep, hierarchical probabilistic model. The new learning algorithm has excited many researchers in the machine learning community, primarily because of the following three crucial characteristics:</p><p xml:id="_peUGWw4">1. The greedy layer-by-layer learning algorithm can find a good set of model parameters fairly quickly, even for models that contain many layers of nonlinearities and millions of parameters. 2. The learning algorithm can make efficient use of very large sets of unlabeled data, so the model can be pretrained in a completely unsupervised fashion. The very limited labeled data can then be used to only slightly fine-tune the model for a specific task at hand using standard gradient-based optimization. 3. There is an efficient way of performing approximate inference, which makes the values of the latent variables in the deepest layer easy to infer.</p><p xml:id="_9F8WqWc">The strategy of layerwise unsupervised training followed by supervised fine-tuning allows efficient training of deep networks and gives promising results for many challenging learning problems, substantially improving upon the current state of the art <ref type="bibr" coords="3,294.25,38.79,68.64,8.74" target="#b10">(Hinton et al. 2012</ref><ref type="bibr" coords="3,362.89,38.79,48.06,8.74;3,46.28,50.75,40.16,8.74">, Krizhevsky et al. 2012)</ref>. Many variants of this model have been successfully applied not only for classification tasks <ref type="bibr" coords="3,67.95,62.70,74.34,8.74">(Hinton et al. 2006</ref><ref type="bibr" coords="3,142.29,62.70,78.14,8.74">, Bengio et al. 2007</ref><ref type="bibr" coords="3,220.43,62.70,91.01,8.74" target="#b12">, Larochelle et al. 2009</ref>), but also for regression tasks <ref type="bibr" coords="3,68.19,74.66,123.62,8.74">(Salakhutdinov &amp; Hinton 2008)</ref>, visual object recognition <ref type="bibr" coords="3,299.27,74.66,89.18,8.74">(Krizhevsky et al. 2012</ref><ref type="bibr" coords="3,388.45,74.66,22.47,8.74;3,46.28,86.61,41.38,8.74" target="#b13">, Lee et al. 2009</ref><ref type="bibr" coords="3,87.66,86.61,88.37,8.74" target="#b20">, Ranzato et al. 2008)</ref>, speech recognition <ref type="bibr" coords="3,262.29,86.61,76.61,8.74" target="#b10">(Hinton et al. 2012</ref><ref type="bibr" coords="3,338.91,86.61,72.03,8.74;3,46.28,98.56,19.80,8.74">, Mohamed et al. 2012)</ref>, dimensionality reduction <ref type="bibr" coords="3,168.97,98.56,115.67,8.74" target="#b8">(Hinton &amp; Salakhutdinov 2006</ref><ref type="bibr" coords="3,284.64,98.56,122.30,8.74">, Salakhutdinov &amp; Hinton 2007)</ref>, information retrieval <ref type="bibr" coords="3,129.55,110.52,79.38,8.74">(Torralba et al. 2008</ref><ref type="bibr" coords="3,208.93,110.52,127.58,8.74" target="#b25">, Salakhutdinov &amp; Hinton 2009c</ref><ref type="bibr" coords="3,336.50,110.52,70.43,8.74" target="#b32">, Uria et al. 2014)</ref>, natural language processing <ref type="bibr" coords="3,155.23,122.48,102.44,8.74" target="#b4">(Collobert &amp; Weston 2008</ref><ref type="bibr" coords="3,257.67,122.48,74.61,8.74">, Socher et al. 2011</ref><ref type="bibr" coords="3,332.29,122.48,74.67,8.74">, Wang et al. 2012)</ref>, extraction of optical flow information <ref type="bibr" coords="3,195.99,134.43,109.23,8.74" target="#b15">(Memisevic &amp; Hinton 2010)</ref>, prediction of quantitative structure-activity relationships (QSARs) <ref type="bibr" coords="3,201.32,146.39,64.45,8.74">(Dahl et al. 2014)</ref>, and robotics <ref type="bibr" coords="3,321.19,146.39,64.79,8.74" target="#b14">(Lenz et al. 2013)</ref>.</p><p xml:id="_Qk5nnrS">Another key advantage of these models is that they are able to capture nonlinear distributed representations. This is in sharp contrast to traditional probabilistic mixture-based latent variable models, including topic models <ref type="bibr" coords="3,169.95,182.26,59.54,8.74" target="#b11">(Hofmann 1999</ref><ref type="bibr" coords="3,229.49,182.26,46.78,8.74" target="#b3">, Blei 2014)</ref> that are often used to analyze and extract semantic topics from large text collections. Many of the existing topic models, including a popular Bayesian admixture model, latent Dirichlet allocation <ref type="bibr" coords="3,293.37,206.17,62.30,8.74">(Blei et al. 2003)</ref>, are based on the assumption that each document is represented as a mixture of topics, and each topic defines a probability distribution over words. All of these models can be viewed as graphical models in which latent topic variables have directed connections to observed variables that represent words in a document. One major drawback is that exact inference in these models is intractable, so one has to resort to slow or inaccurate approximations to compute the posterior distribution over topics. A second major drawback, which is shared by all mixture models, is that these models can never make predictions for words that are sharper than the distributions predicted by any of the individual topics. They are unable to capture the essential idea of distributed representations, namely that the distributions predicted by individual active features get multiplied together (and renormalized) to give the distribution predicted by a whole set of active features. This allows individual features to be fairly general but their intersection to be much more precise. For example, distributed representations allow the topics "government," "mafia," and "playboy" to combine to give very high probability to the word "Berlusconi," which is not predicted nearly as strongly by each topic alone. As shown by <ref type="bibr" coords="3,179.48,373.54,80.82,8.74" target="#b32">Welling et al. (2005)</ref> and <ref type="bibr" coords="3,280.46,373.54,126.53,8.74" target="#b24">Salakhutdinov &amp; Hinton (2009b)</ref>, models that use nonlinear distributed representations are able to generalize much better than latent Dirichlet allocation in terms of both the log-probability on previously unseen data vectors and the retrieval accuracy.</p><p xml:id="_nhkkNPz">In this article, we provide a general overview of many popular deep learning models, including deep belief networks (DBNs) and deep Boltzmann machines (DBMs). In Section 2, we introduce restricted Boltzmann machines (RBMs), which form component modules of DBNs and DBMs, as well as their generalizations to exponential family models. In Section 3, we discuss DBNs and provide a thorough technical review of the greedy learning algorithm for DBNs. Section 4 focuses on new learning algorithms for a different type of hierarchical probabilistic model, the DBM. Finally, Section 5 presents a multimodal DBM that can extract a unified representation by learning a joint density model over the space of multimodal inputs (e.g., images and text, or video and sound).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2." xml:id="_WjBAGDM">RESTRICTED BOLTZMANN MACHINES AND THEIR GENERALIZATIONS</head><p xml:id="_jM7pGjS">Restricted Boltzmann machines (RBMs) have been used effectively in modeling distributions over binary-valued data. Recent work on Boltzmann machines and their generalizations to exponential family distributions <ref type="bibr" coords="3,123.92,600.68,80.66,8.74" target="#b32">(Welling et al. 2005)</ref> have allowed these models to be successfully used in</p><formula xml:id="formula_0" coords="4,119.99,40.43,66.94,101.89">h v W Figure 1</formula><p xml:id="_SCyp8Qp">Restricted Boltzmann machine. The top layer represents a vector of "hidden" stochastic binary variables h, and the bottom layer represents a vector of "visible" stochastic binary variables v. many application domains. In addition to reviewing standard RBMs, this section also reviews Gaussian-Bernoulli RBMs suitable for modeling real-valued inputs for image classification and speech recognition tasks <ref type="bibr" coords="4,213.90,215.72,56.53,8.74" target="#b13">(Lee et al. 2009</ref><ref type="bibr" coords="4,270.43,215.72,71.72,8.74" target="#b31">, Taylor et al. 2010</ref><ref type="bibr" coords="4,342.15,215.72,87.55,8.74">, Mohamed et al. 2012)</ref>, as well as the replicated softmax model <ref type="bibr" coords="4,218.22,227.67,124.58,8.74" target="#b24">(Salakhutdinov &amp; Hinton 2009b)</ref>, which have been used for modeling sparse count data, such as word count vectors in a document. These models serve as our building blocks for other hierarchical models, including DBNs and DBMs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1." xml:id="_CMyPguu">Binary Restricted Boltzmann Machines</head><p xml:id="_W2x56jC">An RBM is a particular type of Markov random field that has a two-layer architecture <ref type="bibr" coords="4,440.79,309.63,43.84,8.74;4,119.99,321.58,19.80,8.74" target="#b27">(Smolensky 1986)</ref>, in which the "visible" stochastic binary variables v ∈ {0, 1} D are connected to "hidden" stochastic binary variables h ∈ {0, 1} F , as shown in Figure <ref type="figure" coords="4,341.88,333.54,3.66,8.73">1</ref>. The energy of the joint state {v, h} is defined as follows:</p><formula xml:id="formula_1" coords="4,202.30,364.89,282.32,44.88">E(v, h; θ ) = −v W h − b v − a h = − D i=1 F j =1 W i j v i h j − D i=1 b i v i − F j =1 a j h j , (1)</formula><p xml:id="_fx3aEwb">where θ = {W , b, a} are the model parameters. W ij represents the symmetric interaction term between visible variable i and hidden variable j, and b i and a j are bias terms. The joint distribution over the visible and hidden variables is defined by</p><formula xml:id="formula_2" coords="4,235.75,471.84,245.44,21.28">P(v, h; θ ) = 1 Z(θ) exp(−E(v, h; θ)), (<label>2</label></formula><formula xml:id="formula_3" coords="4,481.19,478.12,3.43,8.74">)</formula><formula xml:id="formula_4" coords="4,252.47,503.22,121.59,19.27">Z(θ) = v h exp(−E(v, h; θ)).</formula><p xml:id="_CfZ24bU">(3) Z(θ ) is known as the partition function or normalizing constant. The model then assigns the following probability to a visible vector v:</p><formula xml:id="formula_5" coords="4,233.80,574.41,247.39,25.23">P(v; θ ) = 1 Z(θ) h exp (−E(v, h; θ)). (<label>4</label></formula><formula xml:id="formula_6" coords="4,481.19,580.70,3.43,8.74">)</formula><p xml:id="_fayAkDa">Because RBMs have a special bipartite structure, the hidden variables can be explicitly marginalized out, as follows:</p><formula xml:id="formula_7" coords="5,113.65,65.85,223.25,88.45">P(v; θ) = 1 Z(θ ) h exp v W h + b v + a h = 1 Z(θ ) exp(b v) F j =1 h j ∈{0,1} exp a j h j + D i=1 W i j v i h j = 1 Z(θ ) exp(b v) F j =1 1 + exp a j + D i=1 W i j v i .</formula><p xml:id="_29zM9Bc">(5)</p><p xml:id="_kBv8Py8">The conditional distributions over hidden variables h and visible vectors v can be easily derived from Equation 2 and are given by the following logistic functions:</p><formula xml:id="formula_8" coords="5,140.82,192.16,270.09,18.82">P(h|v; θ) = j p(h j |v), P(v|h; θ) = i p(v i |h),<label>(6)</label></formula><formula xml:id="formula_9" coords="5,161.45,225.93,246.03,18.82">p(h j = 1|v) = g i W i j v i + a j , (<label>7</label></formula><formula xml:id="formula_10" coords="5,407.48,226.26,3.43,8.74">)</formula><formula xml:id="formula_11" coords="5,162.59,239.66,244.88,36.79">p(v i = 1|h) = g ⎛ ⎝ j W i j h j + b i ⎞ ⎠ , (<label>8</label></formula><formula xml:id="formula_12" coords="5,407.48,257.95,3.43,8.74">)</formula><p xml:id="_Wk5eTGM">where g(x) = 1/(1 + exp(−x)) is the logistic function.</p><p xml:id="_rkafEs6">Given a set of observations {v n } N n=1 , the derivative of the log-likelihood with respect to the model parameters W ij is obtained from Equation <ref type="formula" coords="5,233.34,306.66,3.49,8.74" target="#formula_5">4</ref>:</p><formula xml:id="formula_13" coords="5,122.98,323.90,287.94,96.05">1 N N n=1 ∂ log P(v n ; θ ) ∂ W i j = E P data [v i h j ] − E P model [v i h j ], 1 N N n=1 ∂ log P(v n ; θ ) ∂a j = E P data [h j ] − E P model [h j ], 1 N N n=1 ∂ log P(v n ; θ ) ∂b i = E P data [v i ] − E P model [v i ],<label>(9)</label></formula><p xml:id="_vW65tTK">where E P data [•] denotes an expectation with respect to the data distribution P data (h, v; θ) = P(h|v; θ )P data <ref type="bibr" coords="5,96.63,438.92,9.36,8.74">(v)</ref>, where</p><formula xml:id="formula_14" coords="5,141.17,437.44,102.35,12.63">P data (v) = 1 N n δ(v − v n )</formula><p xml:id="_HEwdDJq">represents the empirical distribution, and E P model <ref type="bibr" coords="5,70.21,450.88,8.14,8.74">[•]</ref> is an expectation with respect to the distribution defined by the model, as in Equation <ref type="formula" coords="5,403.93,450.88,3.49,8.74" target="#formula_2">2</ref>. We sometimes refer to E P data <ref type="bibr" coords="5,155.13,462.84,8.14,8.74">[•]</ref> as the data-dependent expectation and to E P model <ref type="bibr" coords="5,346.97,462.84,8.14,8.74">[•]</ref> as the model's expectation.</p><p xml:id="_mFxjDQP">Exact maximum likelihood learning in this model is intractable because exact computation of the expectation E P model <ref type="bibr" coords="5,131.26,498.70,8.14,8.74">[•]</ref> takes time that is exponential in min{D, F }, i.e., the number of visible or hidden variables. In practice, learning is done by following an approximation to the gradient of a different objective function, called the Contrastive Divergence (CD) algorithm <ref type="bibr" coords="5,380.02,522.62,30.89,8.74;5,46.28,534.57,19.80,8.74">(Hinton 2002)</ref>:</p><formula xml:id="formula_15" coords="5,169.68,549.36,237.50,10.91">W = α(E P data [vh ] − E P T [vh ]), (<label>10</label></formula><formula xml:id="formula_16" coords="5,407.17,549.70,3.74,8.74">)</formula><p xml:id="_D6wdfWH">where α is the learning rate and P T represents a distribution defined by running a Gibbs chain initialized at the data for T full steps. The special bipartite structure of RBMs allows for an efficient Gibbs sampler that alternates between sampling the states of the hidden variables independently given the states of the visible variables and vice versa (see Equation <ref type="formula" coords="6,444.27,38.79,3.27,8.74" target="#formula_8">6</ref>). Setting T = ∞ recovers maximum likelihood learning. In many application domains, however, the CD learning with T = 1 (or CD1) has been shown to work quite well <ref type="bibr" coords="6,375.17,62.70,50.29,8.74">(Hinton 2002</ref><ref type="bibr" coords="6,425.45,62.70,59.18,8.74;6,119.99,74.66,16.75,8.74" target="#b32">, Welling et al. 2005</ref><ref type="bibr" coords="6,136.73,74.66,85.93,8.74" target="#b12">, Larochelle et al. 2009</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2." xml:id="_GzTQusx">Gaussian-Bernoulli Restricted Boltzmann Machines</head><p xml:id="_KVrUk3p">When modeling real-valued vectors, such as pixel intensities of image patches, one can easily extend RBMs to the Gaussian-Bernoulli variant <ref type="bibr" coords="6,306.90,129.07,120.81,8.74" target="#b8">(Hinton &amp; Salakhutdinov 2006)</ref>. In particular, consider modeling visible real-valued variables v ∈ R D , and let h ∈ {0, 1} F be stochastic binary hidden variables. The energy of the joint state {v, h} of the Gaussian RBM is defined as follows:</p><formula xml:id="formula_17" coords="6,193.83,170.14,287.05,27.86">E(v, h; θ ) = D i=1 (v i − b i ) 2 2σ 2 i − D i=1 F j =1 W i j h j v i σ i − F j =1 a j h j , (<label>11</label></formula><formula xml:id="formula_18" coords="6,480.88,179.32,3.74,8.74">)</formula><p xml:id="_42gMzxp">where θ = {W , a, b, σ 2 } are the model parameters.</p><p xml:id="_mu9D73F">The marginal distribution over the visible vector v takes the following form:</p><formula xml:id="formula_19" coords="6,225.33,235.63,255.55,25.56">P(v; θ ) = h exp(−E(v, h; θ)) v h exp(−E(v, h; θ))d v . (<label>12</label></formula><formula xml:id="formula_20" coords="6,480.88,242.25,3.74,8.74">)</formula><p xml:id="_PDRqCAZ">From Equation <ref type="formula" coords="6,180.92,268.59,7.75,8.74" target="#formula_17">11</ref>, derivation of the following conditional distributions is straightforward:</p><formula xml:id="formula_21" coords="6,191.15,279.35,289.73,38.00">p(v i = x|h) = 1 √ 2πσ i exp ⎛ ⎜ ⎝− x − b i − σ i j h j W i j 2 2σ 2 i ⎞ ⎟ ⎠ , (<label>13</label></formula><formula xml:id="formula_22" coords="6,480.88,300.33,3.74,8.74">)</formula><formula xml:id="formula_23" coords="6,216.82,332.20,264.07,25.11">p(h j = 1|v) = g b j + i W i j v i σ i , (<label>14</label></formula><formula xml:id="formula_24" coords="6,480.88,338.83,3.74,8.74">)</formula><p xml:id="_jwFgRHh">where g(x) = 1/(1+exp(−x)) is the logistic function. Observe that conditioned on the states of the hidden variables (Equation <ref type="formula" coords="6,223.70,373.73,7.23,8.74" target="#formula_21">13</ref>), each visible unit is modeled by a Gaussian distribution, the mean of which is shifted by the weighted combination of the hidden unit activations. The derivative of the log-likelihood with respect to W takes the following form:</p><formula xml:id="formula_25" coords="6,207.40,414.07,191.02,22.28">∂ log P(v; θ ) ∂ W i j = E P data 1 σ i v i h j − E P model 1 σ i v i h j .</formula><p xml:id="_2xCDbJh">As discussed in Section 2.1, learning of the model parameters, including the variance σ 2 , can be carried out using CD. In practice, however, instead of learning σ 2 , one would typically use a fixed, predetermined value for σ 2 <ref type="bibr" coords="6,225.51,468.56,79.82,8.74" target="#b17">(Nair &amp; Hinton 2009</ref><ref type="bibr" coords="6,305.34,468.56,122.79,8.74" target="#b8">, Hinton &amp; Salakhutdinov 2006)</ref>.</p><p xml:id="_RdQgvB7">Figure <ref type="figure" coords="6,162.82,480.51,4.99,8.73">2</ref> shows a random subset of parameters W, also known as receptive fields, learned by a standard binary RBM and a Gaussian-Bernoulli RBM using Contrastive Divergence CD1. Observe that both RBMs learn highly localized receptive fields.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3." xml:id="_3KMyKtu">Replicated Softmax Model</head><p xml:id="_kFAPPQa">The replicated softmax model represents another extension of the RBM and is used for modeling sparse count data, such as word count vectors in a document <ref type="bibr" coords="6,357.54,558.84,122.80,8.74" target="#b24">(Salakhutdinov &amp; Hinton 2009b</ref><ref type="bibr" coords="6,480.34,558.84,4.29,8.74;6,119.99,570.79,19.80,8.74">, 2013)</ref>. Consider an undirected graphical model that consists of one visible layer and one hidden layer, as shown in Figure <ref type="figure" coords="6,219.97,582.75,3.66,8.73">3</ref>. This model is a type of RBM in which the visible variables that are usually binary have been replaced by softmax variables, each of which can have one of a number of different states. Specifically, let K be the dictionary size, M be the number of words appearing in a document, and h ∈ {0, 1} F be stochastic binary hidden topic features. Let V be an M × K observed binary matrix with v ik = 1 if visible unit i takes on value k (meaning the i th word in the document is the k th dictionary word). The energy of the state {V, h} can be defined as follows:</p><formula xml:id="formula_26" coords="7,111.87,275.95,299.04,27.86">E(V, h) = − M i=1 F j =1 K k=1 W i jk h j v ik − M i=1 K k=1 v ik b ik − F j =1 h j a j ,<label>(15)</label></formula><p xml:id="_6CYdfdc">where {W, a, b} are the model parameters. W ijk is a symmetric interaction term between visible variable i that takes on value k and hidden variable j, b ik is the bias of unit i that takes on value k, and a j is the bias of hidden feature j. The model assigns the following probability to a visible binary matrix V:</p><formula xml:id="formula_27" coords="7,91.30,353.89,315.88,25.22">P(V ; θ ) = 1 Z(θ ) h exp(−E(V, h; θ )), Z(θ) = V h exp(−E(V, h; θ)). (<label>16</label></formula><formula xml:id="formula_28" coords="7,407.17,360.17,3.74,8.74">)</formula><p xml:id="_ZCDpr64">Now suppose that for each document, we create a separate RBM with as many softmax units as there are words in the document. Assuming we can ignore the order of the words, all of these softmax units can share the same set of weights connecting them to binary hidden units. In this case, the energy of the state {V, h} for a document that contains M words is defined as follows:</p><formula xml:id="formula_29" coords="7,123.92,434.84,283.25,27.86">E(V, h) = − F j =1 K k=1 W jk h j vk − K k=1 vk b k − M F j =1 h j a j , (<label>17</label></formula><formula xml:id="formula_30" coords="7,162.92,444.01,304.92,93.22">) W 1 W 1 W 2 W 2 h v h v W 1 W 1 W 1 W 2 W 2 W 2 W 1 W 2</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_2Vu4my5">Latent topics Latent topics a b</head><p xml:id="_qM5bD6Q">Observed softmax visibles Multinomial visible</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Hr2C9Fr">Figure 3</head><p xml:id="_REUsy5U">The replicated softmax model. The top layer represents a vector h of stochastic binary hidden topic features, and the bottom layer consists of softmax visible variables, v. All visible variables share the same set of weights, connecting them to the binary hidden variables. (a) Two members of a replicated softmax family for documents containing two and three words. (b) A different interpretation of the replicated softmax model, in which M softmax variables with identical weights are replaced by a single multinomial variable that is sampled M times.</p><p xml:id="_KwbQtSE">where vk = M i=1 v k i denotes the count for the k th word. The bias terms of the hidden units are scaled up by the length of the document. This scaling is crucial and allows hidden units to behave sensibly when dealing with documents of different lengths.</p><p xml:id="_u4vuPhH">The corresponding conditional distributions are given by the following equations:</p><formula xml:id="formula_31" coords="8,226.23,91.76,258.39,66.96">p(h j = 1|V ) = g M a j + K k=1 vk W jk , (18) p(v ik = 1|h) = exp b k + F j =1 h j W jk K q =1 exp b q + F j =1 h j W jq . (<label>19</label></formula><formula xml:id="formula_32" coords="8,480.88,138.70,3.74,8.74">)</formula><p xml:id="_9Fz6hNB">We also note that using M softmax variables with identical weights is equivalent to having a single visible multinomial variable with support {1, . . . , K } that is sampled M times (see Figure <ref type="figure" coords="8,458.19,179.71,7.31,8.73">3b</ref>).</p><p xml:id="_WckXyQg">A pleasing property of using softmax variables is that the mathematics underlying the learning algorithm for binary RBMs remains the same. Given a collection of N documents {V n } N n=1 , the derivative of the log-likelihood with respect to parameters W takes the following form:</p><formula xml:id="formula_33" coords="8,210.67,231.12,185.08,27.86">1 N N n=1 ∂ log P(V n ) ∂ W jk = E P data [ vk h j ] − E P model [ vk h j ].</formula><p xml:id="_8McEfUN">Similar to other types of RBMs, learning can be performed using CD.</p><p xml:id="_faJzUMB">Table <ref type="table" coords="8,157.99,276.78,4.99,8.73" target="#tab_0">1</ref> shows one-step reconstructions of some bags of words to illustrate what this replicated softmax model is learning <ref type="bibr" coords="8,220.67,288.74,129.48,8.74" target="#b28">(Srivastava &amp; Salakhutdinov 2014)</ref>. The model was trained using text from the MIR-Flickr data set <ref type="bibr" coords="8,229.85,300.69,82.35,8.74" target="#b11">(Huiskes &amp; Lew 2008)</ref>. The words in the left column were presented as input to the model, after which Equation <ref type="formula" coords="8,290.52,312.65,9.31,8.74">18</ref>was used to compute a distribution over hidden units. Taking these probabilities as the states of the hidden units, Equation 19 was used to obtain a distribution over words. The right column shows the words with the highest probabilities in that distribution. Observe that the model has learned a reasonable notion of semantic similarity. For example, "chocolate, cake" generalizes to "sweets, desserts, food." Note that the model is able to capture some regularities about language, discover synonyms across multiple languages, and learn about geographical relationships.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3." xml:id="_xhRrxAC">DEEP BELIEF NETWORKS</head><p xml:id="_3TVwETm">A single layer of binary features is not the best way to capture the structure in high-dimensional input data. In this section, we describe an efficient way to learn additional layers of binary features using deep belief networks (DBNs). </p><formula xml:id="formula_34" coords="9,47.93,42.41,237.31,104.19">h v W (1) h 1 h 2 v W (1)</formula><p xml:id="_PZYGQfm">W (1)   a b</p><p xml:id="_kNANfnh">Figure <ref type="figure" coords="9,72.56,161.44,4.43,7.76">4</ref> (a) A restricted Boltzmann machine (RBM). (b) A two-hidden-layer deep belief network (DBN) with tied weights W (2) = W (1) . The joint distribution P (v, h (1) ; W (<ref type="foot" coords="9,247.40,184.06,2.29,5.83" target="#foot_2">1</ref>) ) defined by this DBN is identical to the joint distribution P (v, h (1) ; W (1) ) defined by an RBM.</p><p xml:id="_CCY9cmc">DBNs are probabilistic generative models that contain many layers of hidden variables, in which each layer captures high-order correlations between the activities of hidden features in the layer below. The top two layers of the DBN form an RBM model in which the lower layers form a directed sigmoid belief network, as shown in Figure <ref type="figure" coords="9,257.35,254.15,3.66,8.73">4</ref>. <ref type="bibr" coords="9,267.45,254.15,76.64,8.74">Hinton et al. (2006)</ref> introduced a fast unsupervised learning algorithm for these deep networks. A key feature of their algorithm is its greedy layer-by-layer training, which can be repeated several times to learn a deep hierarchical model. The learning procedure also provides an efficient way of performing approximate inference, which only requires a single bottom-up pass to infer the values of the top-level hidden variables.</p><p xml:id="_txJ2XAk">Let us first consider learning a DBN with two layers of hidden variables {h (1) , h (2) }. We also assume that the number of second-layer hidden variables is the same as the number of visible variables (see Figure <ref type="figure" coords="9,127.66,337.83,7.31,8.73">4b</ref>). The top two layers of the DBN form an undirected bipartite graph, an RBM, and the lower layers form a directed sigmoid belief network. The joint distribution over v, h (1) , and h (2) defined by this model takes the following form: 1 P(v, h (1) , h (2) ; θ ) = P(v|h (1) ; W (1) )P(h (1) , h (2) ;</p><formula xml:id="formula_35" coords="9,301.06,378.48,106.11,10.31">W (2) ), (<label>20</label></formula><formula xml:id="formula_36" coords="9,407.17,380.05,3.74,8.74">)</formula><p xml:id="_jFw8QBW">where θ = {W (1) , W (2) } are the model parameters, P(v|h (1) ; W (1) ) is the directed sigmoid belief network, and P(h (1) , h (2) ; W (2) ) is the joint distribution defined by the second-layer RBM.</p><p xml:id="_GTdmrYJ">P(v|h (1) ;</p><formula xml:id="formula_37" coords="9,114.20,420.18,292.97,36.79">W (1) ) = i p(v i |h (1) ; W (1) ), p(v i = 1|h (1) ; W (1) ) = g ⎛ ⎝ j W (1) i j h (1) j ⎞ ⎠ , (<label>21</label></formula><formula xml:id="formula_38" coords="9,407.17,438.48,3.74,8.74">)</formula><formula xml:id="formula_39" coords="9,137.94,470.40,269.23,21.39">P(h (1) , h (2) ; W (2) ) = 1 Z(W (2) ) exp(h (1) W (2) h (2) ), (<label>22</label></formula><formula xml:id="formula_40" coords="9,407.17,476.68,3.74,8.74">)</formula><p xml:id="_wkJhDuq">where g(x) = 1/(1 + exp(−x)) is the logistic function.</p><p xml:id="_448vtz5">The greedy layer-by-layer learning strategy relies on the following key observation. Consider a two-hidden-layer DBN with tied parameters W (2) = W (1) . The joint distribution of this DBN, P(v, h (1) ; θ) = h (2) P(v, h (1) , h (2) ; θ ), is identical to the joint distributionP(v, h (1) ; W (1) ) of the RBM (see Equation <ref type="formula" coords="9,121.03,543.86,3.27,8.74" target="#formula_2">2</ref>). Indeed, one can easily see from Figure <ref type="figure" coords="9,276.67,543.86,4.99,8.73">4</ref> that the marginal distribution over h (1) , P(h (1) ; W (1) ) is the same for both models. Similarly, the conditional distribution P(v|h (1) ; W (1) ) is also the same for both models. To be more precise, using Equations 20-22 and the fact that 1) , we obtain the following joint distribution over {v, h (1) } of the DBN:</p><formula xml:id="formula_41" coords="10,120.21,39.54,43.38,9.87">W (2) = W (</formula><formula xml:id="formula_42" coords="10,120.78,58.02,284.54,94.57">P(v, h (1) ; θ ) = P(v|h (1) ; W (1) ) × h (2) P(h (1) , h (2) ; W (2) ) = i p(v i |h (1) ; W (1) ) × 1 Z(W (2) ) i ⎛ ⎝ 1 + exp ⎛ ⎝ j W (2) ji h (1) j ⎞ ⎠ ⎞ ⎠ = i exp v i j W (1) i j h (1) j 1 + exp j W</formula><p xml:id="_4JSN73v">(1)</p><formula xml:id="formula_43" coords="10,164.94,114.27,316.94,110.77">i j h (1) j × 1 Z(W (2) ) i ⎛ ⎝ 1 + exp ⎛ ⎝ j W (2) ji h (1) j ⎞ ⎠ ⎞ ⎠ = 1 Z(W (1) ) i ⎛ ⎝ exp ⎛ ⎝ v i j W (1) i j h (1) j ⎞ ⎠ ⎞ ⎠ because W (2) ji = W (1) i j , Z(W (1) ) = Z(W (2) ) = 1 Z(W (1) ) exp ⎛ ⎝ i j W (1) i j v i h (1) j ⎞ ⎠ , (<label>23</label></formula><formula xml:id="formula_44" coords="10,480.77,206.54,3.74,8.74">)</formula><p xml:id="_bDTMP4j">which is identical to the joint distribution over {v, h (1) } defined by an RBM (Equation <ref type="formula" coords="10,445.13,236.00,3.27,8.74" target="#formula_2">2</ref>). The greedy learning algorithm uses a stack of RBMs (see Figure <ref type="figure" coords="10,382.47,247.95,3.91,8.73">5</ref>) and proceeds as follows. We first train the bottom RBM with parameters W (1) as described in Section 2. We then initialize the second layer weights to W (2) = W (1) , ensuring that the two-hidden-layer DBN is at least as good as our original RBM. We can now improve the fit of the DBN to the training data by untying and refitting parameters W (2) .</p><p xml:id="_BTEmMRV">For any approximating distribution variational lower bound, where the states h (2) are analytically summed out:</p><formula xml:id="formula_45" coords="10,120.78,306.60,363.83,21.82">Q(h (1) |v) [provided that Q(h (1) |v) = 0 whenever P(v, h (1) ; θ ) = 0],</formula><formula xml:id="formula_46" coords="11,62.93,56.44,275.67,120.21">log P(v; θ ) = log h (1) P(v, h (1) ; θ ) = log h (1) Q(h (1) |v) P(v, h (1) ; θ) Q(h (1) |v) ≥ h (1) Q(h (1) |v) log P(v, h (1) ; θ ) Q(h (1) |v) ( Jensen's inequality) = h (1) Q(h (1) |v) log P(v, h (1) ; θ ) + h (1) Q(h (1) |v) log 1 Q(h (1) |v) = h (1)</formula><p xml:id="_tKybjpC">Q(h (1) |v) log P(h (1) ; W (<ref type="foot" coords="11,219.50,155.24,2.29,5.83" target="#foot_3">2</ref>) ) + log P(v|h (1) ;</p><formula xml:id="formula_47" coords="11,285.47,112.09,125.44,53.47">W (1) ) + H (Q(h (1) |v)),<label>(24)</label></formula><p xml:id="_6gNTZVe">where H(•) is the entropy functional. We set Q(h (1) |v) = P(h (1) |v; W (1) ), as defined by the bottom RBM (Equation <ref type="formula" coords="11,109.43,197.29,3.27,8.74" target="#formula_8">6</ref>). Initially, when W (2) = W (1) , Q is the true factorial posterior over h (1) of the DBN, in which case the bound is tight. The strategy of the greedy learning algorithm is to fix the parameter vector W (1) and attempt to learn a better model for P(h (1) ; W (2) ) by maximizing the variational lower bound of Equation 24 with respect to W (1) . Maximizing this bound with fixed W (1) amounts to maximizing</p><formula xml:id="formula_48" coords="11,173.74,262.52,237.18,21.41">h (1) Q(h (1) |v) log P(h (1) ; W (2) ),<label>(25)</label></formula><p xml:id="_NTb99YR">which is equivalent to maximum likelihood training of the second-layer RBM with vectors h (1)  drawn from Q(h (1) |v) as data. When presented with a data set of N training input vectors, the second-layer RBM, P(h (1) ; W (2) ), will learn a better model of the aggregated posterior over h (1) , which is simply the mixture of factorial posteriors for all the training cases, 1</p><formula xml:id="formula_49" coords="11,327.03,327.36,78.24,12.26">N n P(h (1) |v n ; W (1)</formula><p xml:id="_5rCtMnK">). Note that any increase in the variational lower bound that results from changing W (2) will also result in an increase of the data likelihood of the DBN. 2   Algorithm 1 (Recursive greedy learning procedure for the deep belief network):</p><p xml:id="_ZwkxWuJ">1: Fit the parameters W (1) of the first-layer RBM to data. 2: Fix the parameter vector W (1) , and use samples h (1) from Q(h (1) |v) = P(h (1) |v, W (1) ) as the data for training the next layer of binary features with an RBM. 3: Fix the parameters W (2) that define the second layer of features, and use the samples h (2) from Q(h (2) |h (1) ) = P(h (2) |h (1) , W (2) ) as the data for training the third layer of binary features. 4: Proceed recursively for the next layers.</p><p xml:id="_9HJKZke">This idea can be extended to training the third-layer RBM on vectors h (2) drawn from the second-layer RBM. By initializing W (3) = W (2) , we are guaranteed to improve the lower bound on the log-likelihood, although changing W (3) to improve the bound can decrease the actual log-likelihood. This greedy layer-by-layer training can be repeated several times to learn a deep hierarchical model. The procedure is summarized in Algorithm 1.</p><p xml:id="_egdQSSK">... </p><formula xml:id="formula_50" coords="12,182.51,42.75,289.28,101.16">h 2 ~ P(h 2 ,h 3 ) h 1 ~ P(h 1 |h 2 ) v ~ P(v|h 1 ) h 3 ~ Q(h 3 |h 2 ) h 2 ~ Q(h 2 |h 1 ) h 1 ~ Q(h 1 |v) v h 3 ~ Q(h 3 |v) h 2 ~ Q(h 2 |v) h 1 ~ Q(h 1 |v) v Gibbs</formula><formula xml:id="formula_51" coords="12,120.55,180.18,364.06,9.66">Q(h (1) , h (2) , h (3) |v) (left) versus from fully factorized approximate posterior Q(h (1) |v) Q(h (2) |v) Q(h (3) |v) (right).</formula><p xml:id="_FYPRUtd">Algorithm 2 (Modified recursive greedy learning procedure for the deep belief network):</p><p xml:id="_mkGQgkc">1: Fit the parameters W (1) of the first-layer RBM to data. 2: Fix the parameter vector W (1) , and use samples h (1) from Q(h (1) |v) = P(h (1) |v, W (1) ) as the data for training the next layer of binary features with an RBM. 3: Fix the parameters W (2) that define the second layer of features, and use the samples h (2) from Q(h (2) |v) as the data for training the third layer of binary features. 4: Proceed recursively for the next layers.</p><p xml:id="_hxDRtkN">After training a DBN with L layers, the joint distribution of the model P and its approximate posterior distribution Q are given by: P(v, h (1) , . . . , h (L) ) = P(v|h (1) ) . . . P(h (L−2) |h (L−1) )P(h (L−1) , h (L) ),</p><formula xml:id="formula_52" coords="12,184.95,358.99,219.87,9.87">Q(h (1) , . . . , h (L) |v) = Q(h (1) |v)Q(h (2) |h (1) ) . . . Q(h (L) |h (L−1) ).</formula><p xml:id="_6fGdmMd">To generate an approximate sample from the DBN, we can run an alternating Gibbs sampler (Equation <ref type="formula" coords="12,160.67,388.37,3.74,8.74" target="#formula_8">6</ref>) to generate an approximate sample h (L−1) from P(h (L−1) , h (L) ), defined by the toplevel RBM, followed by a top-down pass through the sigmoid belief network by stochastically activating each lower layer in turn (see Figure <ref type="figure" coords="12,296.85,412.28,7.40,8.73">6a</ref>). To get a sample from the approximate posterior distribution Q, we simply perform a bottom-up pass by stochastically activating each higher layer in turn. The marginal distribution of the top-level hidden variables of our approximate posterior Q(h (L) |v) will be nonfactorial and, in general, could be multimodal. For many practical applications (e.g., information retrieval), having an explicit form for Q(h (L) |v), which allows efficient approximate inference, is of crucial importance. One possible alternative is to choose the following fully factorized approximating distribution Q:</p><formula xml:id="formula_53" coords="12,241.22,499.55,243.41,27.86">Q(h (1) , . . . , h (L) |v) = L l=1 Q(h (l) |v),<label>(26)</label></formula><p xml:id="_H44GVdj">where we define</p><formula xml:id="formula_54" coords="12,173.43,552.63,311.19,20.92">Q(h (1) |v) = j q (h (1) j |v), q (h (1) j = 1|v) = g i W (1) i j v i + a (1) j , and<label>(27)</label></formula><formula xml:id="formula_55" coords="12,174.92,591.01,305.96,20.92">Q(h (l) |v) = j q (h (l) j |v), q (h (l) j = 1|v) = g i W (l) i j q (h (l−1) i = 1|v) + a (l) j , (<label>28</label></formula><formula xml:id="formula_56" coords="12,480.88,593.45,3.74,8.74">)</formula><p xml:id="_9Wbdts5">where g(x) = 1/(1 + exp(−x)) and l = 2, . . . , L. The factorial posterior Q(h (L) |v) is obtained by simply replacing the stochastic hidden variables with real-valued probabilities and then performing a single deterministic bottom-up pass to compute q (h (L) j = 1|v). This fully factorized approximation also suggests a modified greedy learning algorithm, summarized in Algorithm 2. In this modified algorithm, the samples used for training higher-level RBMs are instead taken from a fully factorized approximate posterior Q. Note that the modified algorithm does not guarantee to improve the lower bound on the log-probability of the training data. Nonetheless, this is the actual algorithm commonly used in practice <ref type="bibr" coords="13,216.38,123.52,116.94,8.74" target="#b8">(Hinton &amp; Salakhutdinov 2006</ref><ref type="bibr" coords="13,333.32,123.52,73.42,8.74" target="#b30">, Taylor et al. 2006</ref><ref type="bibr" coords="13,406.73,123.52,4.19,8.74;13,46.28,135.48,73.36,8.74">, Torralba et al. 2008</ref><ref type="bibr" coords="13,119.64,135.48,55.32,8.74" target="#b0">, Bengio 2009)</ref>. The modified algorithm works well, particularly when a fully factorized Q is used to perform approximate inference in the final model.</p><p xml:id="_TtpF93R">DBNs can also be used for classification and regression tasks. Many of the resulting extensions exploit the following two key properties of DBNs. First, they can learned efficiently from large amounts of unlabeled data. Second, they can be discriminatively fine-tuned using the standard backpropagation algorithm. For example, a DBN can be used to extract useful feature representations that allow one to learn a good covariance kernel for a Gaussian process model <ref type="bibr" coords="13,354.13,207.21,56.80,8.74;13,46.28,219.16,59.16,8.74">(Salakhutdinov &amp; Hinton 2008)</ref>. The greedy learning algorithm can also be used to make nonlinear autoencoders work considerably better than widely used methods, such as principal component analysis (PCA) and singular value decomposition (SVD) <ref type="bibr" coords="13,207.17,243.08,122.08,8.74" target="#b8">(Hinton &amp; Salakhutdinov 2006)</ref>. Similarly, layer-bylayer pretraining followed by discriminative fine-tuning achieves good performance on phone recognition tasks, as well as on various audio classification tasks <ref type="bibr" coords="13,295.89,266.99,59.41,8.74" target="#b13">(Lee et al. 2009</ref><ref type="bibr" coords="13,355.30,266.99,55.63,8.74;13,46.28,278.94,16.75,8.74" target="#b31">, Taylor et al. 2010</ref><ref type="bibr" coords="13,63.03,278.94,88.07,8.74">, Mohamed et al. 2012)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4." xml:id="_BjM4q38">DEEP BOLTZMANN MACHINES</head><p xml:id="_qKHqSAj">In this section we present a new learning algorithm for a different type of hierarchical probabilistic model, called a deep Boltzmann machine (DBM). Unlike DBNs, a DBM is a type of Markov random field, or undirected graphical model, in which all connections between layers are undirected. DBMs are interesting for several reasons. First, similar to DBNs, DBMs have the ability to learn internal representations that capture complex statistical structure in the higher layers. As has already been demonstrated for DBNs, this is a promising way of solving object and speech recognition problems <ref type="bibr" coords="13,130.17,412.21,48.82,8.74" target="#b0">(Bengio 2009</ref><ref type="bibr" coords="13,178.99,412.21,91.59,8.74" target="#b2">, Bengio &amp; LeCun 2007</ref><ref type="bibr" coords="13,270.58,412.21,74.32,8.74">, Hinton et al. 2006</ref><ref type="bibr" coords="13,344.90,412.21,66.02,8.74;13,46.28,424.17,15.84,8.74">, Mohamed et al. 2012</ref>). High-level representations are built from a large supply of unlabeled data, and a much smaller supply of labeled data can then be used to fine-tune the model for a specific discrimination task. Second, if DBMs are learned in the right way there is a very fast way to initialize the states of the variables in all layers by a simple bottom-up pass. Third, unlike DBNs and many other models with deep architectures <ref type="bibr" coords="13,137.63,471.98,74.40,8.74" target="#b19">(Ranzato et al. 2007</ref><ref type="bibr" coords="13,212.04,471.98,77.56,8.74" target="#b32">, Vincent et al. 2008</ref><ref type="bibr" coords="13,289.60,471.98,66.68,8.74" target="#b26">, Serre et al. 2007</ref>), the approximate inference procedure, after the initial bottom-up pass, can incorporate top-down feedback, allowing DBMs to use higher-level knowledge to resolve uncertainty about intermediate-level features, thus creating better data-dependent representations, as well as better data-dependent statistics for learning.</p><p xml:id="_pK9tesg">Consider a three-hidden-layer DBM, as shown in Figure <ref type="figure" coords="13,272.12,531.76,7.86,8.73" target="#fig_3">7b</ref>, with no within-layer connections. The energy of the state {v, h (1) , h (2) , h (3) } is defined as</p><formula xml:id="formula_57" coords="13,99.22,564.65,307.96,10.31">E(v, h (1) , h (2) , h (3) ; θ ) = −v W (1) h (1) − h (1) W (2) h (2) − h (2) W (3) h (3) , (<label>29</label></formula><formula xml:id="formula_58" coords="13,407.17,566.22,3.74,8.74">)</formula><p xml:id="_CE6VDn3">where θ = {W (1) , W (2) , W (3) } are the model parameters, representing visible-to-hidden and hidden-to-hidden symmetric interaction terms. The model assigns the following probability to a</p><formula xml:id="formula_59" coords="14,175.08,64.73,262.04,119.35">h (1) h (2) h (3) v W (3) W (2) W (1) h (1) h (2) h (3) v W (3) W (2)</formula><p xml:id="_uhPn3WK">W (1)   Deep belief network a bDeep Boltzmann machine visible vector v:</p><formula xml:id="formula_60" coords="14,203.44,274.16,277.45,26.12">P(v; θ ) = 1 Z(θ ) h (1) ,h (2) ,h (3) exp(−E(v, h (1) , h (2) , h (3) ; θ)). (<label>30</label></formula><formula xml:id="formula_61" coords="14,480.88,280.45,3.74,8.74">)</formula><p xml:id="_tAUG3V4">Observe that setting both W (2) = 0 and W (3) = 0 recovers the simpler RBM model. The conditional distributions over the visible and the three sets of hidden variables are given by the following logistic functions:</p><formula xml:id="formula_62" coords="14,204.85,352.38,276.04,20.92">p(h (1) j = 1|v, h (2) ) = g i W (1) i j v i + m W (2) jm h (2) m , (<label>31</label></formula><formula xml:id="formula_63" coords="14,480.88,354.81,3.74,8.74">)</formula><formula xml:id="formula_64" coords="14,196.66,376.83,287.96,74.16">p(h (2) m = 1|h (1) , h (3) ) = g ⎛ ⎝ j W (2) jm h (1) j + l W (3) ml h (3) l ⎞ ⎠ , (32) p(h (3) l = 1|h (2) ) = g m W (3) ml h (2) m , (<label>33</label></formula><formula xml:id="formula_65" coords="14,218.38,432.72,266.24,55.83">) p(v i = 1|h (1) ) = g ⎛ ⎝ j W (1) i j h (1) j ⎞ ⎠ . (<label>34</label></formula><formula xml:id="formula_66" coords="14,480.88,470.06,3.74,8.74">)</formula><p xml:id="_AcPTVjQ">The derivative of the log-likelihood with respect to the model parameters takes the following form:</p><formula xml:id="formula_67" coords="14,217.04,529.01,267.58,21.73">∂ log P(v; θ) ∂ W (1) = E P data [vh (1) ] − E P model [vh (1) ],<label>(35)</label></formula><p xml:id="_rwNmpWU">where E P model <ref type="bibr" coords="14,170.43,552.86,8.14,8.74">[•]</ref> denotes an expectation with respect to the distribution defined by the model, and E P data [•] is an expectation with respect to the completed data distribution P data (h, v; θ) = P(h|v; θ)P data (v), where</p><formula xml:id="formula_68" coords="14,214.44,575.28,101.59,12.63">P data (v) = 1 N n δ(v − v n )</formula><p xml:id="_Mw6Dcrv">represents the empirical distribution. The derivatives with respect to parameters W (2) and W (3) take similar forms, but they involve the outer products h (1) h (2) and h (2) h (3) , respectively. Unlike RBMs, the conditional distribution over the states of the hidden variables conditioned on the data is no longer factorial. The exact computation of the data-dependent expectation takes time that is exponential in the number of hidden variables, whereas the exact computation of the model's expectation takes time that is exponential in the number of hidden and visible variables.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1." xml:id="_uN2KEhC">Approximate Maximum Likelihood Learning</head><p xml:id="_xPwedvm">The original learning algorithm for general Boltzmann machines used randomly initialized Markov chains to approximate both of the expectations needed to approximate gradients of the likelihood function <ref type="bibr" coords="15,119.13,140.39,100.43,8.74" target="#b9">(Hinton &amp; Sejnowski 1983)</ref>. This learning procedure is too slow to be practical, however, so we now consider a variational approach to alleviate this problem. In the variational approach, mean-field inference is used to estimate data-dependent expectations, and a Markov chain Monte Carlo (MCMC)-based stochastic approximation procedure is used to approximate the model's expected sufficient statistics <ref type="bibr" coords="15,200.52,188.20,59.00,8.74">(Tieleman 2008</ref><ref type="bibr" coords="15,259.52,188.20,80.35,8.74">, Salakhutdinov 2008</ref><ref type="bibr" coords="15,339.87,188.20,71.06,8.74;15,46.28,200.16,54.17,8.74" target="#b24">, Salakhutdinov &amp; Hinton 2009a)</ref>.</p><p xml:id="_3cJrts5">Consider any approximating distribution Q(h|v; μ) for the posterior P(h|v; θ). Similar to the DBN bound given in Equation <ref type="formula" coords="15,163.62,224.07,7.75,8.74" target="#formula_47">24</ref>, the DBM's variational lower bound on the log-likelihood takes the following form:</p><formula xml:id="formula_69" coords="15,135.45,253.37,271.72,19.27">log P(v; θ ) ≥ h Q(h|v; μ) log P(v, h; θ) + H(Q), (<label>36</label></formula><formula xml:id="formula_70" coords="15,407.17,253.70,3.74,8.74">)</formula><p xml:id="_KbFsfJA">where H(•) is the entropy functional. The bound becomes tight if and only if Q(h|v; μ) = P(h|v; θ).</p><p xml:id="_vx2HNYn">For simplicity and speed, we approximate the true posterior using a fully factorized distribution (i.e., the naive mean-field approximation) over the three sets of hidden variables:</p><formula xml:id="formula_71" coords="15,143.72,319.29,263.45,28.39">Q MF (h|v; μ) = F 1 j =1 F 2 k=1 F 3 m=1 q (h (1) j )q (h (2) k )q (h (3) m ), (<label>37</label></formula><formula xml:id="formula_72" coords="15,407.17,329.00,3.74,8.74">)</formula><p xml:id="_BmbNggw">where μ = {μ (1) , μ (2) , μ (3) } are the mean-field parameters with q (h l i = 1) = μ l i for l = 1,2,3. In this case, the lower bound of Equation 36 takes a particularly simple form:</p><formula xml:id="formula_73" coords="15,121.47,384.98,285.70,21.82">log P(v; θ ) ≥ v W (1) μ (1) + μ (1) W (2) μ (2) + μ (2) W (3) μ (3) − log Z(θ ) + H(Q). (<label>38</label></formula><formula xml:id="formula_74" coords="15,407.17,391.75,3.74,8.74">)</formula><p xml:id="_5u999GK">Learning proceeds as follows: For each training example, we find the value of μ that maximizes this lower bound for the current value of θ . This optimum must satisfy the following mean-field fixed-point equations:</p><formula xml:id="formula_75" coords="15,149.20,452.48,257.97,28.32">μ (1) j ← σ D i=1 W (1) i j v i + F 2 k=1 W (2) jk μ (2) k , (<label>39</label></formula><formula xml:id="formula_76" coords="15,149.01,462.12,261.90,55.99">) μ (2) k ← σ ⎛ ⎝ F 1 j =1 W (2)</formula><p xml:id="_XdfkcAH">jk μ</p><p xml:id="_HFjmy72">(1)</p><formula xml:id="formula_77" coords="15,231.63,481.13,175.54,36.98">j + F 3 m=1 W (3) km μ (3) m ⎞ ⎠ , (<label>40</label></formula><formula xml:id="formula_78" coords="15,407.17,499.43,3.74,8.74">)</formula><formula xml:id="formula_79" coords="15,149.58,528.43,257.59,28.31">μ (3) m ← σ F 2 k=1 W (3) km μ (2) k . (<label>41</label></formula><formula xml:id="formula_80" coords="15,407.17,538.06,3.74,8.74">)</formula><p xml:id="_VRK6fVR">Note the close connection between the form of the mean-field fixed-point updates and the form of the conditional distributions defined by Equations 31-33. <ref type="foot" coords="15,302.29,571.42,3.10,5.83" target="#foot_4">3</ref> To solve these fixed-point equations, we simply cycle through layers, updating the mean-field parameters within a single layer. The variational parameters μ are then used to compute the data-dependent statistics in Equation <ref type="formula" coords="16,157.35,62.70,7.75,8.74" target="#formula_67">35</ref>. For example,</p><formula xml:id="formula_81" coords="16,233.77,80.23,129.10,59.96">E P data [vh (1) ] = 1 N N n=1 v n μ (1) n E P data [h (1) h (2) ] = 1 N N n=1 μ (1) n μ (2) n ,</formula><p xml:id="_djwJq87">where the averages are taken over the training cases.</p><p xml:id="_4sKf7MA">Given the variational parameters μ, the model parameters θ are then updated to maximize the variational bound using an MCMC-based stochastic approximation <ref type="bibr" coords="16,391.45,172.00,49.97,8.74">(Younes 2000</ref><ref type="bibr" coords="16,441.41,172.00,43.21,8.74;16,119.99,183.96,16.75,8.74">, Tieleman 2008</ref><ref type="bibr" coords="16,136.74,183.96,128.14,8.74" target="#b24">, Salakhutdinov &amp; Hinton 2009a)</ref>. In particular, let θ t and x t = {v, h (1) , h (2) } be the current parameters and the state, respectively. Then x t and θ t are updated sequentially as follows: In practice, to reduce the variance of the estimator, we typically maintain a set of S Markov chains X t = {x t,1 , . . . , x t,S } and use an average over those particles.</p><formula xml:id="formula_82" coords="16,131.27,211.93,46.20,9.30">1. Given x t ,</formula><p xml:id="_w7VXDj8">Stochastic approximation provides asymptotic convergence guarantees and belongs to the general class of Robbins-Monro approximation algorithms <ref type="bibr" coords="16,331.51,312.69,92.39,8.74" target="#b21">(Robbins &amp; Monro 1951</ref><ref type="bibr" coords="16,423.90,312.69,56.76,8.74">, Younes 2000)</ref>. Sufficient conditions that ensure almost sure convergence to an asymptotically stable point are given in articles by <ref type="bibr" coords="16,193.40,336.60,50.23,8.74" target="#b33">Younes (1989</ref><ref type="bibr" coords="16,249.95,336.60,21.44,8.74">Younes ( , 2000) )</ref> and <ref type="bibr" coords="16,289.92,336.60,47.57,8.74" target="#b35">Yuille (2004)</ref>. One necessary condition requires the learning rate to decrease with time, such that ∞ t=0 α t = ∞ and ∞ t=0 α 2 t &lt; ∞. For example, this condition can be satisfied by α t = a/(b + t), for positive constants a &gt; 0, b &gt; 0. In practice, the sequence |θ t | is typically bounded, and the Markov chain, governed by the transition kernel T θ , is typically ergodic. Together with the condition on the learning rate, these conditions are sufficient to ensure almost sure convergence of the stochastic approximation algorithm to an asymptotically stable point <ref type="bibr" coords="16,166.47,408.33,49.96,8.74">(Younes 2000</ref><ref type="bibr" coords="16,216.42,408.33,47.09,8.74" target="#b35">, Yuille 2004</ref>).</p><p xml:id="_Z354kQR">The learning procedure for DBMs described above can be used by initializing model parameters at random. The model performs much better if parameters are initialized sensibly, however, so it is common to use a greedy layerwise pretraining strategy by learning a stack of RBMs (for details, see <ref type="bibr" coords="16,134.24,456.15,121.18,8.74" target="#b24">Salakhutdinov &amp; Hinton 2009a)</ref>. The pretraining procedure is quite similar to the one used for DBNs discussed in Section 3, and it allows us to perform approximate inference using a single bottom-up pass. This fast approximate inference can also be used to initialize the mean-field, which then converges much faster than does a mean-field initialized at random.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2." xml:id="_uqAa8af">Evaluating Deep Boltzmann Machines as Discriminative Models</head><p xml:id="_dR5PnpR">After learning, the stochastic activities of the binary features in each layer are replaced by deterministic, real-valued probabilities, and a DBM with two hidden layers can be used to initialize a multilayer neural network in the following way: For each input vector v, the mean-field inference is used to obtain an approximate posterior distribution Q(h (2) |v). The marginals q (h (2) j = 1|v) of this approximate posterior, together with the data, are used to create what we call an augmented input for this deep multilayer neural network, as shown in Figure <ref type="figure" coords="16,379.37,600.68,3.66,8.73">8</ref>. This augmented input is</p><formula xml:id="formula_83" coords="17,56.29,84.14,32.30,81.97">v h (1) h (2) W (1)</formula><p xml:id="_GAKbFS9">W (2)   ...</p><formula xml:id="formula_84" coords="17,111.11,83.54,287.10,82.56">v v v v 2W (1) W (1) W (2) W (2) Q(h (1) ) Q(h (2) )</formula><p xml:id="_vYVwdQP">y y</p><p xml:id="_vRp899A">Fine-tune</p><formula xml:id="formula_85" coords="17,349.14,68.07,51.73,99.47">Q(h (2) ) W (2) W (1) W (2) W (3)</formula><p xml:id="_rhdFzqx">Mean-field updates a b</p><p xml:id="_jbZGhBf">Figure <ref type="figure" coords="17,72.56,181.56,4.43,7.76">8</ref> (a) A two-hidden-layer Boltzmann machine. (b) After learning, the deep Boltzmann machine is used to initialize a multilayer neural network. The marginals of the approximate posterior q (h (2) j = 1|v) are used as additional inputs. The network is fine-tuned by backpropagation.</p><p xml:id="_xkE3jqe">important because it maintains the scale of the inputs that each hidden variable expects. For example, the conditional distribution over h (1) , as defined by the DBM model (see Equation <ref type="formula" coords="17,396.45,248.52,7.23,8.74" target="#formula_62">31</ref>), takes the following form:</p><formula xml:id="formula_86" coords="17,132.13,282.14,193.96,20.93">p(h (1) j = 1|v, h (2) ) = g i W (1) i j v i + m W (2) jm h (2) m .</formula><p xml:id="_FaM9A6g">Hence, the layer h (1) receives inputs from both v and h (2) . When this DBM is used to initialize a feed-forward network (Figure <ref type="figure" coords="17,174.27,321.73,7.31,8.73">8b</ref>), the augmented inputs Q(h (2) |v) serve as a proxy for h (2) , ensuring that when the feed-forward network is fine-tuned using standard backpropagation of error derivatives, the hidden variables in h (1) initially receive the same input as they would have received in a mean-field update during the pretraining stage.</p><p xml:id="_6AhG6X2">The unusual representation of the input is a by-product of converting a DBM into a deterministic neural network. In general, the gradient-based fine-tuning may choose to ignore Q(h (2) |v); that is, the fine-tuning may drive the first-layer connections W (2) to zero, resulting in a standard neural network. Conversely, the network may choose to ignore the input by driving the first-layer weights W (1) to zero and making its predictions on the basis of only the approximate posterior. However, the network typically makes use of the entire augmented input for making predictions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3." xml:id="_TuhbzAx">Experimental Results</head><p xml:id="_aYjgG9d">To illustrate the kinds of probabilistic models DBMs are capable of learning, we conducted experiments on two well-studied data sets: the MNIST and NORB data sets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.1." xml:id="_mYS5qdk">MNIST data set.</head><p xml:id="_NZ6rTN3">The Mixed National Institute of Standards and Technology (MNIST) database of handwritten digits contains 60,000 training images and 10,000 test images of ten handwritten digits (0 to 9), each of which is centered within a 28 × 28 pixel image. Intermediate intensities between 0 and 255 were treated as probabilities, and we sampled binary values from these probabilities independently for each pixel each time an image was used. In our first experiment, we trained two DBMs: One had two hidden layers (500 and 1,000 hidden units), and the other had three (500, 500, and 1,000 hidden units), as shown in  &amp; Murray 2008). The estimates of the variational lower bound (see Equation <ref type="formula" coords="18,414.72,272.79,8.09,8.74" target="#formula_69">36</ref>) on the average test log-probability were −84.62 and −85.10 for the two-and three-layer DBMs, respectively. Observe that even though the two DBMs contain about 0.9 and 1.15 million parameters, respectively, they do not appear to suffer much from overfitting. The difference between the estimates of the training and test log-probabilities was approximately 1 nat. Figure <ref type="figure" coords="18,444.87,320.61,9.97,8.73" target="#fig_6">10</ref> further shows samples generated from the two models by randomly initializing all binary states and running the Gibbs sampler for 100,000 steps. All samples look like the real handwritten digits.</p><p xml:id="_usdGWbc">For a simple comparison, we also trained several mixture-of-Bernoullis models. We used models with 10, 100, 500, 1000, and 2000 components. Finally, after discriminative fine-tuning, the two-hidden-layer DBM achieves an error rate of 0.95% on the full MNIST test set. <ref type="foot" coords="19,192.96,49.62,3.10,5.83" target="#foot_5">4</ref> The three-layer DBM gives a slightly worse error rate of 1.01%. These DBM error rates are compared with error rates of 1.4%, achieved by support vector machines (SVMs) <ref type="bibr" coords="19,145.29,74.66,109.98,8.86" target="#b5">(Decoste &amp; Sch ölkopf 2002)</ref>; 1.6%, achieved by a randomly initialized backpropagation algorithm; 1.2%, achieved by the DBN described in articles by <ref type="bibr" coords="19,372.78,86.61,38.14,8.74;19,46.28,98.56,81.04,8.74" target="#b8">Hinton &amp; Salakhutdinov (2006)</ref> and <ref type="bibr" coords="19,146.71,98.56,75.21,8.74">Hinton et al. (2006)</ref>; and 0.97%, obtained by using a combination of discriminative and generative fine-tuning on the same DBN <ref type="bibr" coords="19,275.75,110.52,53.01,8.74" target="#b7">(Hinton 2007)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.2." xml:id="_wDQpkf4">NORB data set.</head><p xml:id="_byhj2pZ">Results on the MNIST data set show that DBMs can significantly outperform many other models on the well-studied but relatively simple task of handwritten digit recognition. In this section we present results on the New York University Object Recognition Benchmark (NORB) data set, which is a considerably more difficult data set than the MNIST data set is. NORB <ref type="bibr" coords="19,115.97,176.52,68.79,8.74" target="#b13">(LeCun et al. 2004</ref>) contains images of 50 different three-dimensional (3D) toy objects, with 10 objects in each of 5 generic classes (cars, trucks, planes, animals, and humans). Each object is photographed from different viewpoints and under various lighting conditions. The training set contains 24,300 stereo image pairs of 25 objects, 5 per class, and the test set contains 24,300 stereo pairs of the remaining different 25 objects. The goal is to classify each previously unseen object into its generic class.</p><p xml:id="_JEMTuZN">We trained a two-hidden-layer DBM in which each layer contained 4,000 hidden variables, as shown in Figure <ref type="figure" coords="19,126.38,260.21,7.86,8.73" target="#fig_4">9b</ref>. Note that the entire model was trained in a completely unsupervised way. After the subsequent discriminative fine-tuning, the "unrolled" DBM achieves a misclassification error rate of 10.8% on the full test set. This error rate is compared with rates of 11.6%, achieved by SVMs <ref type="bibr" coords="19,119.37,296.07,91.56,8.74" target="#b2">(Bengio &amp; LeCun 2007)</ref>; 22.5%, achieved by logistic regression; and 18.4%, achieved by the k-nearest-neighbor approach <ref type="bibr" coords="19,216.07,308.03,66.46,8.74" target="#b13">(LeCun et al. 2004</ref>). To show that DBMs can benefit from additional unlabeled training data, we augmented the training data with additional unlabeled data by applying simple pixel translations, creating a total of 1,166,400 training instances. <ref type="foot" coords="19,407.31,330.81,3.10,5.83" target="#foot_6">5</ref>After learning a good generative model, the discriminative fine-tuning (using only the 24,300 labeled training examples without any translation) reduces the misclassification error to 7.2%. Figure <ref type="figure" coords="19,75.52,367.80,9.97,8.73">11</ref> shows samples generated from the model by running prolonged Gibbs sampling. Note that the model was able to capture many regularities in this high-dimensional, richly structured data, including variation in object classes, viewpoints, and lighting conditions. Surprisingly, even though the DBM contains approximately 68 million parameters, it significantly outperforms many of the competing models. Clearly, unsupervised learning helps generalization because it ensures that most of the information in the model parameters comes from modeling the input data. The very limited information in the labels is used only to slightly adjust the layers of features already discovered by the DBM.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5." xml:id="_d7HnwCx">EXTENSIONS TO LEARNING FROM MULTIMODAL DATA</head><p xml:id="_VhZVFu5">DBMs can be easily extended to modeling data that contain multiple modalities. The key idea is to learn a joint density model over the space of the multimodal inputs. For example, using a large collection of user-tagged images, we can learn a joint distribution over images and text, P(v img , v txt ; θ ) <ref type="bibr" coords="19,99.55,529.92,125.92,8.74" target="#b28">(Srivastava &amp; Salakhutdinov 2014)</ref>. By drawing samples from P(v txt |v img ; θ) and from P(v img , v txt ; θ ), we can fill in missing data, thereby doing image annotation [for P(v txt |v img ; θ)] and image retrieval [for P(v img , v txt ; θ )].</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_g7wb3pz">Training samples</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_UUYsnFX">Generated samples</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Zz2J8sc">Figure 11</head><p xml:id="_dmsRc4R">Random samples from the training set (left), and samples generated from a three-hidden-layer deep Boltzmann machine by running the Gibbs sampler for 10,000 steps (right).</p><p xml:id="_qfsrQF6">Let us construct a multimodal DBM using an image-text bimodal DBM as our running example. Let v m ∈ R D denote a real-valued image input and v t ∈ {1, . . . , K } denote an associated text input containing M words, where v t k denotes the count for the kth word. We model each data modality using a separate two-layer DBM. We use a Gaussian-Bernoulli RBM as a first-layer model for the image-specific DBM (see Figure <ref type="figure" coords="20,268.98,307.67,11.87,8.73">12a</ref>). Hence, the image-specific DBM uses a Gaussian distribution to model the distribution over real-valued image features. Similarly, a text-specific DBM uses a replicated softmax model to model the distribution over word count vectors.</p><p xml:id="_XAxHXzh">To form a multimodal DBM, we combine the two models by adding an additional layer on top of them. The resulting graphical model is shown in Figure <ref type="figure" coords="20,371.20,355.50,11.71,8.73">12c</ref>. Let h (1m) ∈ {0, 1} F m 1 and h (2m) ∈ {0, 1} F m 2 denote the two layers of hidden variables of the image-specific DBM, and let h (1t) ∈ {0, 1} F t 1 , h (2t) ∈ {0, 1} F t 2 represent the two layers of hidden variables of the text-specific DBM. Then the joint distribution over the multimodal input, where h = {h (1m) , h (2m) , h (1t) , h (2t) , h (3) } denotes all hidden variables, is written as follows:</p><formula xml:id="formula_87" coords="20,39.11,438.91,436.40,105.93">h (2m) h (1m) v m W (2m) W (1m) h (2t) h (1t) v t W (2t) W (1t) h (3) h (2m) h (1m) v m W (3m) W (2m) W (1m) h (2t) h (1t) v t W (3t) W (2t) W (1t)</formula><formula xml:id="formula_88" coords="21,54.57,42.03,343.06,122.92">P(v m , v t ; θ ) = h (2m) ,h (2t) ,h (3) P(h (2m) , h (2t) , h (3) ) ⎛ ⎝ h (1m) P(v m , h (1m) |h (2m) ) ⎞ ⎠ ⎛ ⎝ h (1t) P(v t , h (1t) |h (2t) ) ⎞ ⎠ = 1 Z(θ, M ) h exp ⎛ ⎝ − i (v m i ) 2 2σ 2 i + i j v m i σ i W (1m) i j h (1m) j + jl W (2m) jl h (1m) j h (2m) l Gaussian image pathway kj W (1t) kj v t k h (1t) j + jl W (2t) jl h (1t) j h (2t)<label>l</label></formula><p xml:id="_Gx8S7Vw">Replicated softmax text pathway</p><formula xml:id="formula_89" coords="21,188.06,128.16,205.62,53.13">+ lp W (3t) h (2t) l h (3) p + lp W (3m) h (2m) l h (3) p + p b (3) p h (3) p ⎞ ⎠ Joint third layer</formula><p xml:id="_gBFU97Z">.</p><p xml:id="_HYj27pd">(42) The normalizing constant depends on the number of words M in the corresponding document because the low-level part of the text pathway contains as many softmax variables as there are words in the document. Similar to the replicated softmax model presented in Section 2.3, the multimodal DBM can be viewed as a family of different-sized DBMs that are created for documents of different lengths that share parameters. Approximate learning and inference can proceed in the same way as discussed in Section 4.1.</p><p xml:id="_9VD8wJ7">As an example, we now consider experimental results of using the MIR-Flickr data set (Huiskes &amp; Lew 2008), which contains one million images retrieved from the social photography website Flickr, along with the user-assigned tags for these images. Bimodal data of this kind have become common in many real-world applications in which we have some image and a few words describing it. There is a need to build representations that fuse this information into a joint space such that each data point can be represented as a single vector. Such representation would be useful for classification and retrieval problems.</p><p xml:id="_S9KxrD8">Of 1 million images in the MIR-Flickr data set, 25,000 have been annotated using 38 classes including object categories such as "bird," "tree," and "people" and scene categories such as "indoor," "sky," and "night." The remaining 975,000 images were unannotated. We used 10,000 of the 25,000 annotated images for training, 5,000 for validation, and 10,000 for testing, following the experimental setup of <ref type="bibr" coords="21,144.56,398.66,84.21,8.74" target="#b11">Huiskes &amp; Lew (2008)</ref>.</p><p xml:id="_E4nb48u">In our multimodal DBM, the image pathway contained 3,857 linear visible variables<ref type="foot" coords="21,389.93,409.49,3.10,5.83" target="#foot_7">6</ref> and 1,024 h (1) and 1,024 h (2) hidden variables. The text pathway consisted of a replicated softmax model with 2,000 visible variables and 1,024 hidden variables, followed by another layer of 1,024 hidden variables. The joint layer contained 2,048 hidden variables, and all hidden variables were binary.</p><p xml:id="_jnUhVp2">Many real-world applications often have one or more modalities missing. The multimodal DBM can be used to generate such missing data modalities by clamping the observed modalities at the inputs and sampling the hidden modalities by running a standard Gibbs sampler. For example, consider the generation of text conditioned on a given image<ref type="foot" coords="21,285.84,493.18,3.10,5.83" target="#foot_8">7</ref> v m . The observed modality v m is clamped at the inputs, and all hidden variables are initialized randomly. Alternating Gibbs sampling can be used to draw samples (or words) from P(v t |v m ) by updating each hidden layer given the states of the adjacent layers.<ref type="foot" coords="21,190.43,529.05,3.10,5.83" target="#foot_9">8</ref> This process is illustrated for a test image in Figure <ref type="figure" coords="21,398.62,530.17,12.30,8.73" target="#fig_8">13,</ref> Step 50</p><p xml:id="_NhbHmdG">Step 100</p><p xml:id="_FrKMzcn">Step 150</p><p xml:id="_UthaSQB">Step 200</p><p xml:id="_VbA2Zjb">Step  which shows the text generated after every 50 Gibbs steps. Observe that the sampler generates meaningful text while showing some evidence of jumping across different modes. For example, it generates "tropical," "caribbean," and "resort" together, then moves on to "canada," "bc," "quebec lake," "ice," and then to "italia," "venizia," and "mare." Each of these groups of words represent plausible descriptions of the image. Moreover, each group is consistent within itself, suggesting that that the model has been able to associate clusters of consistent descriptions with the same image. The model can also be used to generate images conditioned on text. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6." xml:id="_xyQS884">CONCLUSIONS</head><p xml:id="_sccjJ92">This article has reviewed several deep generative models, including DBNs and DBMs. We showed that learning deep generative models that contain many layers of latent variables and millions of parameters can be carried out efficiently. Learned high-level feature representations can be</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_9NtCsh9">Input tags purple, flowers car, automobile</head><p xml:id="_UP2JNGz">Step 50</p><p xml:id="_AGPzGZP">Step 100</p><p xml:id="_K7Hamtc">Step 150</p><p xml:id="_bmMPxWT">Step 200</p><p xml:id="_9ejS4Fd">Step 250</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_qVkh3VV">Figure 14</head><p xml:id="_SfPMzJg">Images retrieved by running a Gibbs sampler conditioned on the input tags "purple," "flowers" (top row) and "car," "automobile" (bottom row). The images shown are those which are closest to the sampled image features. Samples were taken after every 50 steps.</p><p xml:id="_9weXKrJ">successfully applied in a wide spectrum of application domains, including visual object recognition, information retrieval, classification tasks, and regression tasks. Many of the ideas developed in this article are based on the following three crucial principles behind learning deep generative models: First, multiple layers of representation can be greedily learned one layer at a time. Second, greedy learning can be carried out in a completely unsupervised way. Third, a separate fine-tuning stage can be used to further improve either generative or discriminative performance of the final model. Furthermore, using stochastic gradient descent, scaling up learning to billions of data points would not be particularly difficult.</p><p xml:id="_Tyjfzb9">We also developed a new learning algorithm for DBMs. Similar to DBNs, DBMs contain many layers of latent variables. High-level representations are built from large amounts of unlabeled sensory input, and the limited labeled data can then be used to slightly adjust the model parameters for a specific task at hand. We discussed a novel combination of variational and MCMC algorithms for training these Boltzmann machines. When applied to DBMs with several hidden layers and millions of weights, this combination is a very effective way to learn good generative models. We demonstrated the performance of this algorithm using both the MNIST data set of handwritten digits and the NORB data set of stereo images of 3D objects with highly variable viewpoints and lighting.</p><p xml:id="_DtCGQEW">Finally, we discussed a DBM model for learning multimodal data representations. Large amounts of unlabeled data can be effectively utilized by the model, in which pathways for each different modality are pretrained independently and later combined together for performing joint learning. The model fuses multiple data modalities into a unified representation, capturing features that are useful for classification and retrieval. Indeed, this model was able to discover a diverse set of plausible descriptions given a test image and to achieve state-of-the-art classification results on the bimodal MIR-Flickr data set.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_7mVdawv">DISCLOSURE STATEMENT</head><p xml:id="_V6Tdznn">The author is not aware of any affiliations, memberships, funding, or financial holdings that might be perceived as affecting the objectivity of this review. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="7,46.28,161.56,30.71,7.76;7,46.28,174.11,348.74,7.77;7,46.28,183.78,363.26,8.07;7,46.28,193.74,359.42,8.07;7,46.28,204.00,250.64,7.77;7,234.30,64.30,85.10,85.10"><head></head><label></label><figDesc xml:id="_8Ajsryp">Figure 2 A random subset of the training images along with the learned receptive fields. (a) The binary restricted Boltzmann machine (RBM) trained on the Handwritten Characters data set (resolution is 28 × 28). (b) The Gaussian-Bernoulli RBM trained on the CIFAR-100 data set (resolution is 32 × 32). Each square displays the incoming weights from all of the visible variables into one hidden unit.</figDesc><graphic coords="7,234.30,64.30,85.10,85.10" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="10,119.99,576.71,30.72,7.76;10,119.99,589.26,346.40,7.77;10,119.99,599.22,364.64,7.77"><head></head><label></label><figDesc xml:id="_ezEcZfa">Figure 5 (a) Greedy learning of a stack of restricted Boltzmann machines (RBMs) in which the samples from the lower-level RBM are used as the data for training the next RBM. (b) The corresponding deep belief network.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="12,452.44,56.43,308.39,4.00"><head></head><label></label><figDesc xml:id="_CfbTSb4">Figure</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="14,119.99,200.56,30.72,7.76;14,119.99,213.11,350.52,7.77;14,119.99,223.08,349.05,7.77;14,119.99,233.03,364.67,7.77;14,119.99,242.99,86.48,7.77"><head>Figure 7 (</head><label>7</label><figDesc xml:id="_nFMX37G">Figure 7 (a) Deep belief network (DBN) in which the top two layers form an undirected graph and the remaining layers form a belief net with directed, top-down connections. (b) Deep Boltzmann machine (DBM) with visible-to-hidden and hidden-to-hidden connections, but no within-layer connections. All of the connections in a DBM are undirected.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="17,309.24,590.52,101.68,8.74;17,46.28,602.47,364.63,8.74"><head>Figure 9 .</head><label>9</label><figDesc xml:id="_pR2DGEq">To estimate the model's partition function, we used annealed importance sampling(Neal 2001, Salakhutdinov   </figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="18,119.99,211.56,30.72,7.76;18,119.99,224.11,334.70,7.77;18,119.99,234.07,339.30,7.77;18,119.99,244.04,220.94,7.77"><head></head><label></label><figDesc xml:id="_gXw2e5c">Figure 9 (a) The architectures of two deep Boltzmann machines (DBMs) used in Mixed National Institute of Standards and Technology (MNIST) experiments. (b) The architecture of a DBM used in New York University Object Recognition Benchmark (NORB) experiments.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="18,119.99,566.75,35.15,7.76;18,119.99,579.30,361.88,7.77;18,119.99,589.26,364.62,7.77;18,119.99,599.22,186.68,7.77;18,138.18,447.34,107.18,107.18"><head>Figure 10</head><label>10</label><figDesc xml:id="_t95jEy7">Figure 10Random samples from the training set, and samples generated from two deep Boltzmann machines (DBMs) by running the Gibbs sampler for 100,000 steps. The images shown are the probabilities of the binary visible variables given the binary states of the hidden variables.</figDesc><graphic coords="18,138.18,447.34,107.18,107.18" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="20,30.33,558.78,35.14,7.76;20,30.33,571.33,443.26,7.77;20,30.33,581.29,440.35,7.77;20,30.33,591.26,428.68,7.77;20,30.33,601.22,85.57,7.77"><head></head><label></label><figDesc xml:id="_5VWdpCe">Figure 12 (a) Image-specific two-layer deep Boltzmann machine (DBM) that uses a Gaussian model to model the distribution over real-valued image features. (b) Text-specific two-layer DBM that uses a replicated softmax model to model its distribution over the word count vectors. (c) A multimodal DBM that models the joint distribution over image and text inputs. All but the first (bottom) layer use standard binary variables.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="22,119.99,159.55,35.15,7.76;22,119.99,172.11,361.58,7.77;22,119.99,182.07,292.53,7.77;22,135.18,55.66,119.18,79.34"><head>Figure 13</head><label>13</label><figDesc xml:id="_aaxjrxD">Figure 13Text generated by the deep Boltzmann machine conditioned on an image by running a Gibbs sampler. The ten words with the highest probability are shown at the end of every 50 sampling steps.</figDesc><graphic coords="22,135.18,55.66,119.18,79.34" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="22,418.09,276.58,66.55,8.74;22,119.99,288.54,101.43,8.74;22,131.95,300.50,352.71,8.74;22,119.99,312.45,364.64,8.74;22,119.99,324.40,364.63,8.74;22,119.99,336.36,362.48,8.74"><head></head><label></label><figDesc xml:id="_3ChtYFp">Figure 14 shows examples of two such runs. The same DBM also achieves state-of-the-art classification results on the multimodal MIR-Flickr data set (Huiskes &amp; Lew 2008), compared with linear discriminant analysis (LDA), RBF-kernel support vector machines (SVMs) (Huiskes &amp; Lew 2008), and the multiple kernel learning approach of Guillaumin et al. (2010) (for details, see Srivastava &amp; Salakhutdinov 2014).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="8,120.99,482.18,352.83,122.21"><head>Table 1 Some examples of one-step reconstruction from the replicated softmax model Input Reconstruction chocolate</head><label>1</label><figDesc xml:id="_vzPvMyu"></figDesc><table /><note xml:id="_J4PCfyf">, cake cake, chocolate, sweets, dessert, cupcake, food, sugar, cream, birthday nyc nyc, newyork, brooklyn, queens, gothamist, manhattan, subway, streetart dog dog, puppy, perro, dogs, pet, filmshots, tongue, pets, nose, animal flower, high, flower, , high, japan, sakura, , blossom, tokyo, lily, cherry girl, rain, station, norway norway, station, rain, girl, oslo, train, umbrella, wet, railway, weather fun, life, children children, fun, life, kids, child, playing, boys, kid, play, love forest, blur forest, blur, woods, motion, trees, movement, path, trail, green, focus espa ña, agua, granada espa ña, agua, spain, granada, water, andalucía, naturaleza, galicia, nieve</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="16,131.27,211.59,353.35,59.80"><head></head><label></label><figDesc xml:id="_rJpcJrU">sample a new state x t+1 from the transition operator T θt (x t+1 ← x t ) that leaves P(•; θ t ) invariant. Sampling this new state is accomplished using Gibbs sampling (see Equations 31-33). 2. A new parameter θ t+1 is then obtained by making a gradient step, in which the intractable model's expectation E P model [•] in the gradient is replaced by a point estimate at sample x t+1 .</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0">www.annualreviews.org • Deep Learning</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1">Annu. Rev. Stat. Appl. 2015.2:361-385. Downloaded from www.annualreviews.org Access provided by 188.26.198.202 on 05/07/23. For personal use only.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_2">We omit the bias terms here for clarity of presentation.www.annualreviews.org • Deep Learning</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_3">Improving the variational bound by changing W (2) will increase the log-likelihood because the bound is initially tight. When learning deeper layers, the variational bound is not initially tight, so even the initial improvement in the bound is not guaranteed to increase the log-likelihood.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_4">Implementing the mean-field requires no extra work beyond implementing the Gibbs sampler. www.annualreviews.org • Deep Learning</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_5">In the permutation-invariant version, the pixels of every image are subjected to the same random permutation, making it hard to use prior knowledge about images.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_6">We thank Vinod Nair for sharing his code for blurring and translating NORB images.www.annualreviews.org • Deep Learning</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_7">Images were represented by 3,857-dimensional features, which were extracted by concatenating Pyramid Histogram of Words (PHOW) features, Gist, and MPEG-7 descriptors (for details, see<ref type="bibr" coords="21,264.11,569.13,97.77,6.80" target="#b28">Srivastava &amp; Salakhutdinov 2014)</ref>.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_8">Generation of image features conditioned on text can be done in a similar way.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_9">Remember that the conditional distribution P (v t |h (1t) ) defines a multinomial distribution over the text vocabulary (see Equation19). This distribution can then be used to sample words.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_2crK9rQ">ACKNOWLEDGMENTS</head><p xml:id="_Gd33pnV">This research was supported by CIFAR, Google, Samsung, and ONR Grant N00014-14-1-0232.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_A3HxQ6P">Annual Review of Statistics and Its Application</head><p xml:id="_c7WDeqx">Volume 2, 2015</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_zsfG8tZ">Contents Reproducing Statistical Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Uhw6waT">Victoria Stodden p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p 1</head><p xml:id="_aAeJv5u">How to See More in Observational Studies: Some New Quasi-Experimental Devices</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_DQFh5mp">Paul R. Rosenbaum p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p21</head><p xml:id="_zzTFCcz">Incorporating Both Randomized and Observational Data into a Single Analysis</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_uXaXDrJ">Eloise E. Kaizar p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p49</head><p xml:id="_khYYmWY">Microbiome, Metagenomics, and High-Dimensional Compositional Data Analysis</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_83xyZyC">Hongzhe Li p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p73</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_hZmQfQJ">Multiset Statistics for Gene Set Analysis Michael A. Newton and Zhishi Wang p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p95</head><p xml:id="_ZKBm9GE">Probabilistic Record Linkage in Astronomy: Directional Cross-Identification and Beyond </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_M73QXAx">Tamás Budavári and Thomas J. Loredo p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p 113 A Framework for Statistical Inference in Astrophysics Chad M. Schafer p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p 141 Modern Statistical Challenges in High-Resolution Fluorescence Microscopy Timo Aspelmeier, Alexander Egner, and Axel Munk p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p p 163 Statistics of Extremes</head></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="23,46.28,469.01,296.26,7.77" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_gEZrFJD">Learning deep architectures for AI</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_kpjzQ9D">Trends Mach. Learn</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="1" to="127" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="23,46.28,480.10,364.65,7.77;23,62.22,491.06,114.86,7.77" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_vv923Ru">Greedy layer-wise training of deep networks</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Lamblin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Popovici</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Larochelle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_HA5vmY5">Adv. Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="153" to="160" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="23,46.28,502.14,364.65,7.77;23,62.22,513.10,290.43,7.77;23,46.28,524.18,322.51,7.77" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_GVHBKfg">Scaling learning algorithms towards AI</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y ; L</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bottou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Chapelle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Decoste</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Weston</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">I</forename><surname>Jordan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_f2k62Ee">Large-Scale Kernel Machines</title>
+				<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press Blei DM</publisher>
+			<date type="published" when="2003">2007. 2003</date>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="993" to="1022" />
+		</imprint>
+	</monogr>
+	<note>Latent Dirichlet allocation</note>
+</biblStruct>
+
+<biblStruct coords="23,46.28,535.27,364.65,7.77;23,62.22,546.22,49.62,7.77" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_bTqbN2w">Build, compute, critique, repeat: data analysis with latent variable models</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Blei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_AV3V7rb">Annu. Rev. Stat. Appl</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="203" to="232" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="23,46.28,557.31,364.62,7.77;23,62.22,568.26,347.10,7.77;23,46.28,579.35,364.64,7.77;23,62.22,590.31,32.02,7.77" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_CVgYQbP">A unified architecture for natural language processing: deep neural networks with multitask learning</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Collobert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J ;</forename><surname>Weston</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Jaitly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1406.1231</idno>
+		<idno>stat.ML]</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_mY3GCgE">Multi-task neural networks for QSAR predictions</title>
+				<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Dahl GE</publisher>
+			<date type="published" when="2008-07-05">2008. Jul. 5-9. 2014</date>
+			<biblScope unit="page" from="160" to="167" />
+		</imprint>
+	</monogr>
+	<note>Proc. 25th Int. Conf. Mach. Learn. Helsinki</note>
+</biblStruct>
+
+<biblStruct coords="23,46.28,601.39,336.83,7.88" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_rdSVnu5">Training invariant support vector machines</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Decoste</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Sch Ölkopf</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_hTAWqtS">Mach. Learn</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="161" to="190" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,39.50,364.65,7.77;24,135.93,50.46,338.91,7.77;24,119.99,61.09,364.66,7.77;24,135.93,72.06,52.48,7.77" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_EsfGHvH">Training products of experts by minimizing contrastive divergence</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Guillaumin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Verbeek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Schmid</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_wwCmj8M">Proc. IEEE Conf. Comput. Vis. Pattern Recognit</title>
+				<meeting>IEEE Conf. Comput. Vis. Pattern Recognit<address><addrLine>San Francisco; Piscataway, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Hinton GE</publisher>
+			<date type="published" when="2002">2010. Jun. 13-18. 2002</date>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="1711" to="1800" />
+		</imprint>
+	</monogr>
+	<note>Multimodal semi-supervised learning for image classification</note>
+</biblStruct>
+
+<biblStruct coords="24,119.99,82.69,331.53,7.77" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_nG8Rfrz">To recognize shapes, first learn to generate images</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bJfceVS">Prog. Brain Res</title>
+		<imprint>
+			<biblScope unit="volume">165</biblScope>
+			<biblScope unit="page" from="535" to="547" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,93.34,364.66,7.77;24,135.93,104.29,56.62,7.77" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_hYd6RJg">Reducing the dimensionality of data with neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dJW8a9K">Science</title>
+		<imprint>
+			<biblScope unit="volume">313</biblScope>
+			<biblScope unit="issue">5786</biblScope>
+			<biblScope unit="page" from="504" to="507" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,114.93,364.65,7.77;24,135.93,125.89,184.98,7.77;24,119.99,136.53,364.66,7.77;24,135.93,147.49,48.34,7.77" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_7VnANg7">A fast learning algorithm for deep belief nets</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T ;</forename><surname>Sejnowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Osindero</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y-W</forename><surname>Teh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_t9c8vB7">Proc. IEEE Conf. Comput. Vis. Pattern Recognit</title>
+				<meeting>IEEE Conf. Comput. Vis. Pattern Recognit<address><addrLine>Washington, DC; Silver Spring, MD</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="1983">1983. 2006</date>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="1527" to="1554" />
+		</imprint>
+	</monogr>
+	<note>Optimal perceptual inference</note>
+</biblStruct>
+
+<biblStruct coords="24,119.99,158.13,364.66,7.77;24,135.93,169.09,342.62,7.77" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_5SRq5gK">Deep neural networks for acoustic modeling in speech recognition: the shared views of four research groups</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Dahl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohamed</forename><forename type="middle">A</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_56PzvmP">IEEE Signal Process. Mag</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="82" to="97" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,179.73,364.64,7.77;24,135.93,190.69,228.06,7.77;24,119.99,201.33,364.64,7.77;24,135.93,212.29,156.31,7.77;24,119.99,222.93,364.63,7.77;24,135.93,233.89,136.11,7.77" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_nFjwR6c">ImageNet classification with deep convolutional neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Hofmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Morgan Kaufmann Huiskes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Lew</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_rR4fC22">Proc. 15th Conf. Uncertainty in Artif. Intell., Stockholm, Swe</title>
+				<meeting>15th Conf. Uncertainty in Artif. Intell., Stockholm, Swe<address><addrLine>San Francisco; Vancouver, Can.; New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Krizhevsky A, Sutskever I, Hinton GE</publisher>
+			<date type="published" when="1999-07-30">1999. Jul. 30-Aug. 1. 2008. Oct. 30-31. 2012</date>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="1106" to="1114" />
+		</imprint>
+	</monogr>
+	<note>Probabilistic latent semantic analysis</note>
+</biblStruct>
+
+<biblStruct coords="24,119.99,244.53,364.62,7.77;24,135.93,255.48,94.02,7.77" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_qbhHmCZ">Exploring strategies for training deep neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Larochelle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Louradour</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Lamblin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mHFCeW8">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="1" to="40" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,266.13,364.62,7.77;24,135.93,277.08,348.71,7.77;24,135.93,288.05,125.02,7.77;24,119.99,298.68,364.67,7.77;24,135.93,309.65,348.72,7.77;24,135.93,320.61,70.57,7.77;24,119.99,331.25,364.66,7.77;24,135.93,342.20,75.18,7.77" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_T42yjsz">Learning methods for generic object recognition with invariance to pose and lighting</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L ;</forename><surname>Bottou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Grosse</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Ranganath</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ztWvUNg">Convolutional deep belief networks for scalable unsupervised learning of hierarchical representations. Proc. 26th Intl. Conf. Mach. Learn. Montreal</title>
+				<meeting><address><addrLine>Washington, DC; Los Alamitos, CA; New York; Mumford D, Romero R, Lamme V</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Lee TS</publisher>
+			<date type="published" when="1998">2004. Jun. 27-Jul. 2. 2009. Jun. 14-18. 1998</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="2429" to="2454" />
+		</imprint>
+	</monogr>
+	<note>The role of the primary visual cortex in higher level vision</note>
+</biblStruct>
+
+<biblStruct coords="24,119.99,352.85,364.65,7.77;24,135.93,363.80,243.34,7.77" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_GxfXW3h">Deep learning for detecting robotic grasps</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Lenz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Saxena</surname></persName>
+		</author>
+		<ptr target="http://www.roboticsproceedings.org/rss09/p12.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JJMkbnH">Proc. Robot. Sci. Syst. IX Berlin, Ger</title>
+		<imprint>
+			<biblScope unit="page" from="24" to="28" />
+			<date type="published" when="2013-06">2013. Jun</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,374.45,364.64,7.77;24,135.93,385.40,176.14,7.77" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_S2MGJrF">Learning to represent spatial transformations with factored higher-order Boltzmann machines</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Memisevic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_X4ReYkq">Neural Comput</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1473" to="1492" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,396.04,364.65,7.77;24,135.93,407.00,91.54,7.77" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_3MMrep6">Acoustic modeling using deep belief networks</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Mohamed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Dahl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WrkYP5C">IEEE Trans. Audio Speech Lang. Proc</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="14" to="22" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,417.64,364.65,7.77;24,135.93,428.60,39.17,7.77" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_6SAe5wD">Implicit mixtures of restricted Boltzmann machines</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Nair</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_E7eZuBP">Adv. Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="1145" to="1152" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,439.24,246.41,7.77" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_gQQvZCV">Annealed importance sampling</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">M</forename><surname>Neal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_De8qSxB">Stat. Comput</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="125" to="139" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,449.88,364.66,7.77;24,135.93,460.84,348.72,7.77;24,135.93,471.80,262.08,7.77" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_RDbcBNG">Unsupervised learning of invariant feature hierarchies with applications to object recognition</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Ranzato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Boureau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lecun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2007.383157</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_RPu2FtA">Proc. IEEE Conf. Comput. Vis. Pattern Recognit</title>
+				<meeting>IEEE Conf. Comput. Vis. Pattern Recognit<address><addrLine>Minneapolis, MN; Piscataway, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2007-06-18">2007. June 18-23</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,482.44,364.65,7.77;24,135.93,493.40,99.54,7.77" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_vpHWRBT">Sparse feature learning for deep belief networks</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Ranzato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y-L</forename><surname>Boureau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lecun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ffpDRgS">Adv. Neural Inform. Proc. Syst</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="1185" to="1192" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,504.04,307.46,7.77" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_HbHKrdM">A stochastic approximation method</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Robbins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Monro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UPWWFKP">Ann. Math. Stat</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="400" to="407" />
+			<date type="published" when="1951">1951</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,514.68,364.65,7.77;24,135.93,525.64,39.17,7.77" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_2jy9pTc">Learning representations by back-propagating errors</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">E</forename><surname>Rumelhart</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">J</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_3YWKnW4">Nature</title>
+		<imprint>
+			<biblScope unit="volume">323</biblScope>
+			<biblScope unit="page" from="533" to="536" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,119.99,536.27,364.66,7.77;24,135.93,547.24,132.39,7.77;24,119.99,557.87,364.64,7.77;24,135.93,568.84,348.73,7.77;24,135.93,579.79,38.08,7.77;24,119.99,590.43,364.64,7.77;24,135.93,601.39,136.11,7.77" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_5hbe4ca">Learning a nonlinear embedding by preserving class neighbourhood structure</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Toronto Salakhutdinov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<idno>UTML TR 2008-002</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_RHAhkbS">Proc. 11th Int. Conf</title>
+				<meeting>11th Int. Conf<address><addrLine>San Juan, PR; Brookline, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Microtome Salakhutdinov RR, Hinton GE</publisher>
+			<date type="published" when="2007-03-21">2008. 2007. Mar. 21-24. 2008</date>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="1249" to="1256" />
+		</imprint>
+		<respStmt>
+			<orgName>Dep. Comput. Sci., Univ. Toronto,</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Tech. Rep.</note>
+	<note>Artif. Intell. Stat.</note>
+</biblStruct>
+
+<biblStruct coords="25,46.28,39.50,364.64,7.77;25,62.22,50.46,248.56,7.77;25,46.28,61.42,364.63,7.77;25,62.22,72.38,55.84,7.77" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_2aHwweW">Replicated softmax: an undirected topic model</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_RtT8kkF">Deep Boltzmann machines. Proc. 12th Int. Conf</title>
+				<meeting><address><addrLine>Clearwater Beach, FL; Brookline, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Microtome Salakhutdinov RR, Hinton GE</publisher>
+			<date type="published" when="2009-04-16">2009a. Apr. 16-18. 2009b</date>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="1607" to="1614" />
+		</imprint>
+	</monogr>
+	<note>Artif. Intell. Stat.</note>
+</biblStruct>
+
+<biblStruct coords="25,46.28,83.33,303.05,7.77" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_HEYMuyX">Semantic hashing</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_B7nxJGU">Int. J. Approx. Reason</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="969" to="978" />
+			<date type="published" when="2009">2009c</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,46.28,94.30,364.65,7.77;25,62.22,105.26,296.34,7.77;25,46.28,116.21,364.64,7.77;25,62.22,127.17,206.77,7.77;25,46.28,138.13,364.65,7.77;25,62.22,149.09,43.30,7.77" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_hn69wr3">A feedforward architecture accounts for rapid categorization</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Serre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Oliva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">A</forename><surname>Poggio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_VcYHQPZ">Proc. 25th Int. Conf. Mach. Learn</title>
+				<meeting>25th Int. Conf. Mach. Learn<address><addrLine>Bellevue, WA; Corvallis, OR; Helsinki; New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2007-09-05">2013. Jul. 11-15. 2008. Jul. 5-9. 2007</date>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="page" from="6424" to="6429" />
+		</imprint>
+	</monogr>
+	<note>PNAS</note>
+</biblStruct>
+
+<biblStruct coords="25,46.28,160.05,364.64,7.77;25,62.22,171.00,348.74,7.77;25,62.22,181.97,17.71,7.77;25,46.28,192.93,364.64,7.77;25,62.22,203.88,260.64,7.77" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_fsYBjPm">Dynamic pooling and unfolding recursive autoencoders for paraphrase detection</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Smolensky</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>De Rumelhart</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Mcclelland</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">H</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Pennington</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">D</forename><surname>Manning</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_H7jjgF2">Parallel Distributed Processing</title>
+				<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press Socher R</publisher>
+			<date type="published" when="1986">1986. 2011</date>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="801" to="809" />
+		</imprint>
+	</monogr>
+	<note>Information processing in dynamical systems: foundations of harmony theory</note>
+</biblStruct>
+
+<biblStruct coords="25,46.28,214.84,364.65,7.77;25,62.22,225.81,53.62,7.77" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_6RWXYCB">Multimodal learning with deep Boltzmann machines</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Srivastava</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_C5sKfrw">J. Machine Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="2949" to="2980" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,46.28,236.76,364.63,7.77;25,62.22,247.72,256.13,7.77" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_QXBrPuu">On the importance of momentum and initialization in deep learning</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Martens</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Dahl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_R8x36TD">Proc. 30th Int. Conf. Mach. Learn</title>
+				<meeting>30th Int. Conf. Mach. Learn<address><addrLine>Atlanta</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2013-06">2013. Jun. 16-21</date>
+			<biblScope unit="page" from="1139" to="1147" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,46.28,258.68,364.65,7.77;25,62.22,269.64,94.65,7.77" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_y4wTDHJ">Modeling human motion using binary latent variables</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">T</forename><surname>Roweis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TMjhbAe">Adv. Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="1345" to="1352" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,46.28,280.60,364.64,7.77;25,62.22,291.56,280.45,7.77;25,46.28,302.51,364.65,7.77;25,62.21,313.48,278.08,7.77;25,46.27,324.44,364.65,7.77;25,62.21,335.39,348.71,7.77;25,62.21,346.35,102.11,7.77" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_TMae8Hd">Training restricted Boltzmann machines using approximations to the likelihood gradient</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">W</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Fergus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Bregler</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2008.4587633</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_NGpykhH">Proc. IEEE Conf. Comput. Vis. Pattern Recognit</title>
+				<meeting>IEEE Conf. Comput. Vis. Pattern Recognit<address><addrLine>Crete, Greece; Berlin; Helsinki; New York; Torralba A, Fergus R, Weiss Y; Anchorage, AK; Silver Spring, MD</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2008-07-11">2010. Sep. 5-11. 2008. Jul. 5-9. 2008. Jun. 23-28</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+	<note>Proc. 11th Eur. Conf. Comput. Vis.</note>
+</biblStruct>
+
+<biblStruct coords="25,46.27,357.32,364.64,7.77;25,62.21,368.27,225.97,7.77;25,46.27,379.23,364.62,7.77;25,62.21,390.19,348.72,7.77;25,62.21,401.15,19.04,7.77;25,46.27,412.11,364.62,7.77;25,62.21,423.07,331.51,7.77;25,46.27,434.02,364.62,7.77;25,62.21,444.99,193.96,7.77" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_UetqVGg">Exponential family harmoniums with an application to information retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Uria</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Murray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H ;</forename><surname>Larochelle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Vincent</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Larochelle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P ;</forename><surname>Manzagol</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Welling</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Rosen-Zvi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_bBx2Fnx">Proc. 21st Int. Conf. Pattern Recognit</title>
+				<meeting>21st Int. Conf. Pattern Recognit<address><addrLine>Beijing; Brookline, MA; Helsinki; New York; Wang T, Wu D, Coates A, Ng AY; Tsukuba; Piscataway, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2005">2014. Jun. 21-26. 2008. Jul. 5-9. 2012. Nov. 11-15. 2005</date>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="1481" to="1488" />
+		</imprint>
+	</monogr>
+	<note>Jpn.</note>
+</biblStruct>
+
+<biblStruct coords="25,46.27,455.95,364.65,7.77;25,62.21,466.90,35.03,7.77" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_h5BYMDY">Parameter inference for imperfectly observed Gibbsian fields</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Younes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_BfVR79f">Probab. Theory Rel. Fields</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="625" to="645" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,46.27,477.86,364.62,7.77;25,62.21,488.82,116.20,7.77" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_8U8ehMc">On the convergence of Markovian stochastic algorithms with rapidly decreasing ergodicity rates</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Younes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_RquaPvq">Stoch. Stoch. Rep</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="177" to="228" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,46.27,499.78,354.58,7.77" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_Rv2CYaR">The convergence of Contrastive Divergences</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">L</forename><surname>Yuille</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_vP7DZ75">Adv. Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="1593" to="1600" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

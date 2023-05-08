@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_EKbS5ZQ">A New Chaos-Based Image-Encryption and Compression Algorithm</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,86.64,230.95,99.98,10.63"><forename type="first">Somaya</forename><surname>Al-Maadeed</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">Qatar University</orgName>
+								<address>
+									<postBox>P.O. Box 2713</postBox>
+									<settlement>Doha</settlement>
+									<country key="QA">Qatar</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName coords="1,199.33,230.95,61.86,10.63"><forename type="first">Afnan</forename><surname>Al-Ali</surname></persName>
+							<email>alali@qu.edu.qa</email>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Department of Computer Engineering</orgName>
+								<orgName type="department" key="dep2">College of Engineering</orgName>
+								<orgName type="institution">University of Basrah</orgName>
+								<address>
+									<addrLine>B.P. 49</addrLine>
+									<settlement>Basrah</settlement>
+									<country key="IQ">Iraq</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,294.36,230.95,69.45,10.63"><forename type="first">Turki</forename><surname>Abdalla</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Department of Computer Engineering</orgName>
+								<orgName type="department" key="dep2">College of Engineering</orgName>
+								<orgName type="institution">University of Basrah</orgName>
+								<address>
+									<addrLine>B.P. 49</addrLine>
+									<settlement>Basrah</settlement>
+									<country key="IQ">Iraq</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_tyg9tTU">A New Chaos-Based Image-Encryption and Compression Algorithm</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">07808943A49693F98AB84E503DDB16C7</idno>
+					<idno type="DOI">10.1155/2012/179693</idno>
+					<note type="submission">Received 1 September 2011; Revised 20 December 2011; Accepted 17 January 2012</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-07T13:56+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_Vnu7BrB"><p xml:id="_j9aF7xj">We propose a new and efficient method to develop secure image-encryption techniques. The new algorithm combines two techniques: encryption and compression. In this technique, a wavelet transform was used to decompose the image and decorrelate its pixels into approximation and detail components. The more important component (the approximation component) is encrypted using a chaos-based encryption algorithm. This algorithm produces a cipher of the test image that has good diffusion and confusion properties. The remaining components (the detail components) are compressed using a wavelet transform. This proposed algorithm was verified to provide a high security level. A complete specification for the new algorithm is provided. Several test images are used to demonstrate the validity of the proposed algorithm. The results of several experiments show that the proposed algorithm for image cryptosystems provides an efficient and secure approach to real-time image encryption and transmission.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="600.05" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="600.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1." xml:id="_fSgrgwx">Introduction</head><p xml:id="_QYCMNhe">An increasing amount of information is being transmitted over the Internet, including not only text but also audio, image, and other multimedia files. Images are widely used in daily life, and, as a result, the security of image data is an important requirement <ref type="bibr" coords="1,148.18,562.53,10.91,8.86" target="#b0">[1]</ref>. In addition, when either communication bandwidth or storage is limited, data are often compressed. In particular, when a wireless communication network is used, low-bit-rate compression algorithms are needed as a result of bandwidth limitations. Encryption is also performed when it is necessary to protect user privacy <ref type="bibr" coords="1,50.73,630.73,10.91,8.86" target="#b1">[2]</ref>. Image-encryption algorithms are used to provide this security; for our purposes, these algorithms can be divided into two groups with respect to the approach used to construct the encryption scheme: chaos-based methods and nonchaos-based methods. Image encryption can also be divided into full encryption and partial encryption (also called selective encryption) schemes according to the percentage of the data that is encrypted. Encryption schemes can also be classified as either combined-compression methods or noncompression methods.</p><p xml:id="_7jnPvVS">Several reviews have been published on image and video encryption, including selective (or partial encryption) methods, providing a fairly complete overview of the techniques developed to date <ref type="bibr" coords="1,409.45,528.44,10.89,8.86" target="#b2">[3]</ref>. Kunkelmann <ref type="bibr" coords="1,480.18,528.44,12.17,8.86" target="#b3">[4]</ref> and Qiao and Nahrstedt <ref type="bibr" coords="1,351.68,539.80,12.15,8.86" target="#b4">[5]</ref> provide overviews, comparisons, and assessments of classical encryption schemes for visual data, with an emphasis on MPEG. Bhargava et al. <ref type="bibr" coords="1,454.93,562.54,12.15,8.86" target="#b5">[6]</ref> review four MPEGencryption algorithms published by the authors themselves from 1997 to 1999. More recent MPEG encryption surveys are provided by But <ref type="bibr" coords="1,390.64,596.65,12.16,8.86" target="#b6">[7]</ref> (in which the suitability of available MPEG-1 ciphers for streaming video is assessed). Other data formats have also been discussed with respect to selective encryption. Coding schemes based on wavelets <ref type="bibr" coords="1,490.20,630.75,10.92,8.86" target="#b7">[8]</ref>, quad trees <ref type="bibr" coords="1,308.66,642.12,10.86,8.86" target="#b8">[9,</ref><ref type="bibr" coords="1,322.61,642.12,11.73,8.86" target="#b9">10]</ref>, iterated function systems (fractal coding) <ref type="bibr" coords="1,511.40,642.12,15.47,8.86" target="#b10">[11]</ref>, and vector quantization <ref type="bibr" coords="1,391.03,653.49,16.90,8.86" target="#b11">[12]</ref> have been used to create selective encryption schemes.</p><p xml:id="_HrpRmvW">In 1997, two kinds of schemes based on higher-dimensional chaotic maps were proposed in which a discretized chaotic map of the pixels in an image is permuted by several rounds of shuffling operations <ref type="bibr" coords="1,454.35,710.32,10.92,8.86" target="#b1">[2]</ref>. Between every two adjacent rounds of permutations, a diffusion process is performed, which can significantly change the distribution of the image histogram, thereby making a statistical decryption attack impossible. Empirical testing and cryptanalysis have both demonstrated that the chaotic Baker and Cat maps are good candidates for this kind of image encryption. Similar ideas have also appeared, including a 1998 paper <ref type="bibr" coords="2,259.49,392.94,15.45,8.86" target="#b12">[13]</ref>, in which a rapid bulk-data encryption scheme was designed by combining chaotic. Kolmogorov flows with an adaptation of a very fast shift-register-based pseudorandom number generator <ref type="bibr" coords="2,77.87,438.41,15.46,8.86" target="#b13">[14]</ref>. Recently, a Feed-Back Chaotic Synchronization (FCS) for designing a real-time secure symmetric encryption scheme has been implemented in hardware <ref type="bibr" coords="2,224.43,461.15,12.70,8.86" target="#b14">[15]</ref><ref type="bibr" coords="2,237.13,461.15,4.23,8.86" target="#b15">[16]</ref><ref type="bibr" coords="2,241.36,461.15,12.70,8.86" target="#b16">[17]</ref>.</p><p xml:id="_CqYRg2w">The basic principle of encryption with chaos is based on the ability of some dynamic systems to produce sequence of numbers that are random in nature. This sequence is used to encrypt messages. For decryption, the sequence of random numbers is highly dependent on the initial condition used for generating this sequence. A very minute deviation in the initial condition will result in a totally different sequence. This sensitivity to initial condition makes chaotic systems ideal for encryption.</p><p xml:id="_GkpGpW3">In this paper, we present an approach for encrypting images, our approach is based on chaotic maps, where we suggest to use the wavelet transform for image decomposition as we will discuss later and then we propose to use one, two, or three external encryption keys to encrypt the important part using one-dimensional chaotic map. We will provide a comparison in terms of the correlation between the original image and the encrypted image for all the three cases of encryption by the multiple keys when the number of external encryption keys increases in each time.</p><p xml:id="_bbHPGqk">Next section is an overview of our proposed method of selective encryption of an image. The rest of this paper is organized as follows: Sections 3 and 4 give a brief discussion to the wavelet transform and chaos theory, respectively: Test, verification, and efficiency of the proposed new encryption algorithm are given in Section 5. Finally, Section 6 concludes this paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2." xml:id="_fKXsSkb">System Overview</head><p xml:id="_wuZJAmQ">In this paper, we propose an efficient, selective chaos-based image-encryption and compression algorithm. The block diagram of this algorithm is shown in Figure <ref type="figure" coords="2,489.85,429.52,3.59,8.86" target="#fig_0">1</ref>. The encryption and compression operations is shown in Figure <ref type="figure" coords="2,529.98,441.38,15.11,8.86" target="#fig_0">1(a)</ref>. First, we have set the chaotic map parameters (the initial values) as well as to select the external encryption keys. The chaos-based encryption algorithm is as follows: after wavelet transformation, an amount of 25% (in case of onelevel decomposition) or 6.25% (in case of two-level decomposition) of the original image, which corresponds to the important part, is transformed into one-dimensional vector with a dimension equal to the important part size, let us call it W. The chaotic map will be run for W iterations and generate a vector of ones and zeros of dimension equal to W too; it will be called a threshold vector, then the pixels of the image vector will be encrypted with one, two, or three external encryption keys according to that threshold vector.</p><p xml:id="_VCGRQSB">From Figure <ref type="figure" coords="2,379.51,607.50,3.93,8.86" target="#fig_0">1</ref>(b), the secret image of size (128 × 128) pixels is decomposed using discrete wavelet transform (DWT). In practice, this process of decomposition usually repeated n times, and it is repeated just on the LL-sub band as mentioned for octave-band decomposition. Here in this work, the decomposition will be for one-level or twolevel decomposition in order to compare different amounts of encrypted data and examine their effect on security. The image is decomposed into four subimages: the approximation component (LL) and three detail components (horizontal, vertical, and diagonal). The most important component, the LL component, is then encrypted using a chaos-based image-encryption algorithm, and the other three components are subsequently compressed using wavelet analysis. The implementation of the algorithm achieves high encryption rates, as discussed in Section 5. The steps of decryption and decompression taken to reconstruct the image are described at Figure <ref type="figure" coords="3,128.60,131.34,3.93,8.86" target="#fig_0">1</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3." xml:id="_kr33rkj">Wavelet Transform</head><p xml:id="_QwkASkT">A wavelet is a small wave with its energy concentrated in time, providing a tool for the analysis of time-varying phenomena. A wavelet not only has an oscillating characteristic but also has the ability to allow for simultaneous time and frequency analyses with a flexible mathematical foundation. The first step of a general image-compression technique is the wavelet transform, which is designed to distinguish between the visually important information and unimportant information. The transform is also intended to reduce the statistical dependence between coefficients so that the source coding will be more efficient.</p><p xml:id="_y5RcgBr">The important of wavelet as a multiresolution technique comes from its decomposition of the image into multilevel of the independent information with changing the scale-like geographical map, in which the image has nonredundant information due to the changing of the scale. In this way, every image will be transformed in each level of decomposition to a one low information image and three details image in horizontal, vertical, and diagonal axis image, also the low information image can be decomposed into another four images. These approaches of decomposition process provide us a number of unrealizable features in the original image, which appear in their levels after the application of transformation <ref type="bibr" coords="3,113.81,449.85,15.49,8.86" target="#b17">[18]</ref>.</p><p xml:id="_ph5w223">There are different types of wavelet transforms, including continuous wavelet transform (CWT) and the discrete Wavelet Transform (DWT). The CWT is used for signals that are continuous in time, and the DWT is used when a signal is being sampled, such as during digital signal processing or digital image processing <ref type="bibr" coords="3,150.67,518.06,15.47,8.86" target="#b18">[19]</ref>. In this work, discrete wavelet transform is used. In a discrete wavelet transform, an image can be analyzed by passing it through an analysis filter bank, which consists of a low-pass and high-pass filter at each decomposition stage. When a signal passes through these filters, it is split into two bands. The low-pass filter, which corresponds to averaging operation, extracts the coarse information of the signal. The high-pass filter, which corresponds to a differencing operation, extracts the detail information of the signal. The output of the filtering operations is decimated by 2. A two-dimensional transform can be accomplished by performing two separate one-dimensional transforms. First, the image is filtered along the x-dimension using low pass and high pass analysis filters and decimated by 2. Low pass filtered coefficients are stored on the left part of the matrix and high pass filtered on the right. Because of decimation, the total size of the transformed image is same as the original image. Then, it is followed by filtering the subimage along the y-dimension and decimated by 2. Finally, the image has been split into four bands denoted by LL, HL, LH, and HH, after one-level decomposition. The LL band is again subject to the same procedure. The reconstruction of the image can be carried out by reversing the above procedure, and it is repeated until the image is fully reconstructed <ref type="bibr" coords="3,494.90,262.06,15.65,8.86" target="#b17">[18,</ref><ref type="bibr" coords="3,513.11,262.06,11.74,8.86" target="#b18">19]</ref>. This procedure of wavelet splitting is shown in Figure <ref type="figure" coords="3,503.57,273.42,3.59,8.86" target="#fig_2">2</ref>.</p><formula xml:id="formula_0" coords="3,339.76,78.47,177.79,86.33">LL i L L L H H H 2 2 2 2 2 2 LL i+1 HL i+1 LH i+1 HH i+1</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4." xml:id="_mpF3cd9">Image Encoding Using 1D-Discrete Chaotic Maps</head><p xml:id="_pTftMgK">In mathematics and physics, chaos theory describes the behavior of certain nonlinear dynamical systems that, under certain conditions, exhibit dynamics that are highly sensitive to initial conditions. As a result of this sensitivity, the behavior of chaotic systems appears to be random as a result of the exponential growth of errors in the initial conditions. This apparently chaotic behavior occurs even though these systems are deterministic in the sense that their future dynamics are well defined by their initial conditions, and there are no random elements involved. A chaotic dynamical system is a deterministic system that exhibits seemingly random behavior as a result of its sensitive dependence on its initial conditions and can never be specified with infinite precision. The behavior of a chaotic system is unpredictable; therefore, it resembles noise <ref type="bibr" coords="3,391.28,495.32,15.44,8.86" target="#b17">[18]</ref>. The close relationship between chaos and cryptography makes a chaos-based cryptographic algorithm a natural candidate for secure communication and cryptography <ref type="bibr" coords="3,388.38,529.42,10.91,8.86" target="#b0">[1]</ref>. Chaotic maps and cryptographic algorithms (or, more generally, maps defined on finite sets) have similar properties, such as sensitivity to changes in the initial conditions and parameters, pseudorandom behavior, and unstable periodic orbits with long periods. In a cryptographic algorithm, repeated encryption rounds lead to the desired diffusion and confusion properties of the algorithm. Iterations of a chaotic map spread the initial region over the entire phase space. The parameters of the chaotic map may represent the key to the encryption algorithm. An important difference between chaos and cryptography is that encryption transformations are defined on finite sets, whereas chaos has meaning only for real numbers. Moreover, at present, the notion of cryptographic security and the performance of cryptographic algorithms have no counterpart in chaos theory <ref type="bibr" coords="3,452.55,699.94,15.48,8.86" target="#b19">[20]</ref>. In summary, we note that chaos-based encryption techniques are considered promising candidates for practical applications because these techniques provide an effective combination of speed, high  security, complexity, reasonable computational overhead and computational power <ref type="bibr" coords="4,140.85,477.45,10.92,8.86" target="#b0">[1]</ref>. Chaotic maps have attracted the attention of cryptographers as a result of the following fundamental properties.</p><p xml:id="_C7PZEfv">(i) Chaotic maps are deterministic, meaning that their behavior is predetermined by mathematical equations. (ii) Chaotic maps are unpredictable and nonlinear because they are sensitive to initial conditions. Even a very slight change in the starting point can lead to a significantly different outcome. (iii) Chaotic maps appear to be random and disorderly but, in fact, they are not; beneath the random behavior is an order and pattern.</p><p xml:id="_Jqx3whs">Chaotic phenomena are analogous to stochastic processes in that they appear in nonlinear dynamical systems; such processes are nonperiodic and nonconvergent and are extremely sensitive to initial conditions <ref type="bibr" coords="4,167.29,677.20,15.46,8.86" target="#b19">[20]</ref>.</p><p xml:id="_kcXgDVn">In cryptography, we focus on dynamic discrete-time system. A dynamic system is chaotic if all trajectories are bounded and nearby trajectories diverge exponentially at every point of the phase space. A chaotic system is given by an iterated function (chaotic map) f of a state space X. The iterated function transforms the current stage of the system into the next one, that is,</p><formula xml:id="formula_1" coords="4,401.96,503.65,146.90,10.56">x n+1 = f (x n ),<label>( 1 )</label></formula><p xml:id="_3USJuYF">where x n ∈ X denotes the system state at the discrete time. In chaos-based cryptography, the state space is typically a finite binary space</p><formula xml:id="formula_2" coords="4,356.08,578.64,192.79,12.11">X = P = C = {0, 1} n , n = 1, 2, . . . ,<label>( 2 )</label></formula><p xml:id="_5d95kWJ">where P = Plaintext and C = Ciphertext. The initial condition is a vector x 0 ∈ X, and it is assigned to an internal state variable before the first iteration. The vector c ∈ K = {0, 1} n contains the parameters of the dynamic system. The parameters are kept constant through all cycles (iterations) <ref type="bibr" coords="4,392.85,665.83,15.47,8.86" target="#b20">[21]</ref>.</p><p xml:id="_qKUVayp">In this work, we are concerned with image encoding with the generation and use of 1D-chaotic maps. A onedimensional dynamical system is a couple (I, φ), where I is real interval and φ is a transformation from I to I. Chaotic maps are nonlinear maps presenting the property of sensitivity to initial conditions.   The nonlinear transformation used here is defined as an iterative scalar map <ref type="bibr" coords="6,130.05,449.72,16.97,8.86" target="#b21">[22]</ref> x n+1 = F(x n , α),</p><formula xml:id="formula_3" coords="6,151.43,478.59,139.50,16.21">x n=0 = x 0 ,<label>(3)</label></formula><p xml:id="_9hFaTTZ">where α is a set of real parameters. The use of (3) for image encoding means that the image is seen as a dynamical system; the main difference is that images are presented by integer values, while they are mapped into real values under system in (3). One of the most known chaotic maps is the logistic map. It is defined by the following equation:</p><formula xml:id="formula_4" coords="6,132.85,595.06,154.03,24.91">x n+1 = αx n (1 − x n ), x n=0 = x 0 . (<label>4</label></formula><formula xml:id="formula_5" coords="6,286.88,603.76,4.05,8.86">)</formula><p xml:id="_mgc6WFb">The use of chaos for image encoding yields to three types of keys; these keys may be used together or separately, in order to enhance the privacy. They are the external or (control) parameter α, the initial state x 0 , and the number of iterations <ref type="bibr" coords="6,103.01,677.20,15.48,8.86" target="#b20">[21]</ref>. The number of iterations is fixed during all the cycles and equal to the size of the important part of the image, which should be encrypted. In this paper, one two or three external encryption keys are used, then three types of approaches are performed as following: first using one external encryption key: in this type, the chaotic map will generate a threshold vector of two values: 0 and 1. The pixels of the image vector that are corresponding to the zeros of the threshold vector will be encrypted by one external encryption key and the other pixels will be normalized in such a way to hide the details of the image vector. Second, using two external encryption keys: in order to increase the security, the second type uses two external encryption keys such that the chaotic map will also generate a threshold vector of two values: 0 and 1, and the pixels of the image vector that are corresponding to the zeros of the threshold vector will be encrypted by the first key, and other pixels that are corresponding to the ones will be encrypted by the second key. Third, using three external encryption keys: in order to increase the security further, the third type uses three external encryption keys. In this case the chaotic map will generate a threshold vector of three different values: 0, 0.5, and 1. The pixels of the image vector that are corresponding to the zeros will be encrypted using the first key; the pixels that are corresponding to 0.5 values will be encrypted by the second key, and finally the pixels that are corresponding to the ones will be encrypted by the third key. The encryption process is done for one-level decomposition and two-level decomposition; also it is repeated for two different sizes of external keys. The previous schemes will be applied for chaotic maps given in (4). The decryption process is the reverse operation to each process in the encryption procedure as shown in Figure <ref type="figure" coords="6,428.22,733.92,15.74,8.86" target="#fig_0">1(b)</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5." xml:id="_AtZeaE4">Experimental Results</head><p xml:id="_3enWCTe">In this work, a 2D grayscale image is divided into subbands and subsampled using a discrete wavelet transform. The test images and their sizes can be shown in Table <ref type="table" coords="7,260.50,597.63,3.59,8.86" target="#tab_0">1</ref>. Each coefficient represents a spatial area of approximately 2 × 2 pixels from the original image. The total number of components remaining after the vertical and horizontal decompositions is four. These components are referred to as subbands. As shown in Figure <ref type="figure" coords="7,135.22,654.46,3.59,8.86" target="#fig_4">3</ref>, the most important component of these subbands is the LL component because it is much more similar to the original image; LL is called the approximate image. To provide security for this component, the second step is to encrypt this component using a chaos-based imageencryption algorithm, as described above. The algorithm described previously will be implemented for one 2D-gray scale image and one 2D-color image, each of them has size of (128 × 128) pixels. The test images and their sizes can be shown in Table <ref type="table" coords="7,370.98,85.87,3.59,8.86" target="#tab_0">1</ref>.</p><p xml:id="_xCcTVn7">The correlation coefficients between the original image and the encrypted image for all the three cases of encryption which are explained previously, are illustrated in Tables <ref type="table" coords="7,544.08,119.97,4.78,8.86;7,308.66,131.34,23.88,8.86">2  and 3</ref>. The results obtained for one-level and two-level decomposition. Note that the initial state for which the encrypted images is computed is x 0 = 0.65440 and the number of iterations is fixed during all cycles equal to the size of the important part of the image, which should be encrypted. The chaotic map parameters are the initial values which are also used to select the external encryption keys (see Section 4). In this paper, the parameters are set as follows: the parameter α = 4, one, two, or three external encryption keys. Here, our aim is to compare the output images for different values of parameters (we have considered six cases). They are: small keys sizes (key1 = 4567, key2 = 3336, and key3 = 5892) and large keys sizes (key1 = 4567332, key2 = 3336877, and key3 = 5892117). These results are obtained by applying chaotic partial encryption to the image after the wavelet transform operation is performed. Table <ref type="table" coords="7,544.08,301.85,4.78,8.86">2</ref> shows the results for the two grayscale images, while Table <ref type="table" coords="7,544.08,313.22,4.78,8.86">3</ref> shows the results for the two color images for small key size and large key size. Figures <ref type="figure" coords="7,436.14,335.95,14.03,8.86" target="#fig_6">4, 5</ref>, and 6 show the results for SF.GIF grayscale image in one, two, and three external encryption keys, respectively.</p><p xml:id="_SfURKeJ">A good encryption procedure should be robust against all kinds of cryptanalytic, statistical, and brute-force attacks. In this section, we discuss the security analysis of our method.</p><p xml:id="_cStYeyM">From the results, we can confirm that our cipher is excellent, and this is clear from the below analysis to the results of our experiments.</p><p xml:id="_e4tswaV">For a secure image cryptosystem, the encryption key plays a very important role against the brute force attack; so for high security, the key space should be large enough to make the brute force attack infeasible but may decrease encryption/decryption speed. In this algorithm, we used a key space of 94 bit combination, then we increased the key space up to 97 bit combination and compared the results (Tables <ref type="table" coords="7,339.91,517.84,28.75,8.86">2 and 3</ref>). Out of this comparison, we found that the correlation between the cipher image and the original image decreased when we increased the key space size. Moreover using more than one external encryption keys which is a perfect way to conclude that increasing the number of keys means increasing the security because this makes the intrudsuffers when trying to attack the cipher image and find the secret keys. In addition to the external encryption keys, we should mention that our algorithm depends also on the parameters of logistic map, which is sensitive to the initial condition that can be connected with confusion and diffusion property in good cipher.</p><p xml:id="_ueQUZ68">We have performed statistical analysis by calculating the histograms and correlations of cipher and reconstructed image with the original one. The correlation between the original image and the cipher image is nearly equal to zero expressing the original image and cipher image being almost independence. The correlation between the original image and the reconstructed image is nearly equal to one that means a perfect reconstruction at the receiver and the encryption algorithm works in a very good manner to protect the image. Out of the results of our experiments, one can see that as the amount of the encrypted part is decreased (from L1 = 25% to L2 = 6.25%), the execution time is decreased too (about 0.218 sec for one external encryption key, 0.453 sec for two external encryption keys, and 0.5 sec for three external encryption keys), which indicates a high speed in performing encryption and decryption process and in getting the results, but also we should mention that decreasing the amount of encrypted part makes the correlation between the cipher image and the original image increase. All the proposed algorithms were programmed in MATLAB version 7.0. Performance was measured on a 2.0 GHz. Pentium IV with 1 GB of RAM running Windows XP Professional.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6." xml:id="_d75mFdz">Conclusion</head><p xml:id="_5fugQst">In this paper, we have proposed a method for the selective encryption of an image combined with a compression method. The technique used here results in a significant reduction in encryption and decryption time. This method consists of three steps; in each step, we used selected properties that served the goal of this paper, which were to obtain an effective cipher and high-quality image compression to achieve both security against unauthorized access during data transmission through an unsecured channel and high compression to allow for a low transmission rate. For the encryption, we used an efficient algorithm based on a chaotic map to encrypt the low subband of the image; this algorithm has very good diffusion and confusion properties, and we obtained a very good cipher of the subband, as evidenced by the low correlation between the original image and the coded image. For the compression, we used the wavelet transformation, and the results were highly satisfactory; this method allowed us to achieve a perfect reconstruction with a good PSNR. The basic idea of this work is to show the influence of using multiple keys in increasing security by increasing the number of external encryption keys in each time such that the important part of the image is encrypted with one, two, or three external encryption keys; the encryption is done by a new 1D chaotic map. We show from the results that the correlation coefficients between the original image and the encrypted image are decreased when the number of external encryption keys is increased, and this increases the security. Also, we show how the correlation coefficient changed exponentially when using different values of the control parameter in each time. In future work, we can use more than 128 bits for the external keys to increase overall security, and we can use another method for compression.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,217.13,304.19,165.32,7.97"><head>Figure 1 :</head><label>1</label><figDesc xml:id="_wBzkFz3">Figure 1: The processes of the new algorithm.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,132.54,131.34,15.73,8.86"><head></head><label></label><figDesc xml:id="_MHpZcfA">(b).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="3,308.66,179.62,240.20,7.97;3,308.66,190.09,23.49,7.97"><head>Figure 2 :</head><label>2</label><figDesc xml:id="_5cY9aMN">Figure 2: Splitting of subband into next higher Level four subbands.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="4,50.73,420.38,498.12,8.97;4,50.73,431.52,62.44,8.18;4,149.31,244.54,141.76,150.85"><head>Figure 3 :</head><label>3</label><figDesc xml:id="_YNSdXRT">Figure 3: Test image 1 (Lena.PGM) when x(1) = 0.12345, α = 4, key1 = 1234567890223344, and key2 = 0987654321001122, Thr = 30, PSNR = 28.1240.</figDesc><graphic coords="4,149.31,244.54,141.76,150.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="5,50.73,380.00,498.07,7.97;5,50.73,390.46,444.70,7.97;5,235.05,418.60,143.80,129.64"><head>Figure 4 :</head><label>4</label><figDesc xml:id="_gXqCCSf">Figure 4: Results of application of chaotic algorithm to SF.GIF. (a) and (d) original image. (b) and (e) Image resulting from encryption with L1 or L2, respectively, using only one external encryption key in the larger size. (c) and (f) Reconstructed image in each case.</figDesc><graphic coords="5,235.05,418.60,143.80,129.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="5,50.73,716.98,498.04,7.97;5,50.73,727.44,408.99,7.97;5,81.57,567.91,142.36,124.12"><head>Figure 5 :</head><label>5</label><figDesc xml:id="_uUntKJ3">Figure 5: Results of application of chaotic algorithm to SF.GIF. (a) and (d) original image. (b) Image resulting from encryption with L1 or L2, respectively, using two external encryption keys in the larger size. (c) and (f) Reconstructed image in each case.</figDesc><graphic coords="5,81.57,567.91,142.36,124.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="6,50.73,391.00,498.02,7.97;6,50.73,401.46,411.69,7.97;6,72.81,242.56,141.76,123.25"><head>Figure 6 :</head><label>6</label><figDesc xml:id="_mATpKFb">Figure 6: Results of application of chaotic algorithm to SF.GIF. (a) and (d) original image. (b) image resulting from encryption with L1 or L2, respectively, using three external encryption keys in the larger size. (c) and (f) reconstructed image in each case.</figDesc><graphic coords="6,72.81,242.56,141.76,123.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="8,236.06,616.57,7.97,22.56;8,236.06,608.04,7.97,6.45;8,236.06,580.61,7.97,25.37;8,236.06,571.30,7.97,7.25;8,236.06,529.72,7.97,39.52;8,236.06,520.40,7.97,7.25;8,236.06,487.73,7.97,30.62;8,236.06,457.23,7.97,28.42;8,236.06,444.61,7.97,10.56;8,236.06,410.40,7.97,32.15;8,236.06,384.27,7.97,24.05;8,236.06,368.67,7.97,13.53;8,236.06,314.31,7.97,52.30;8,236.06,287.55,7.97,24.70;8,236.06,266.10,7.97,19.38;8,236.06,245.01,7.97,19.03;8,236.06,229.41,7.97,13.53;8,236.06,210.05,7.97,17.30;8,236.06,192.76,7.97,15.23;8,236.06,172.41,7.97,18.28;8,257.16,716.45,7.97,22.07;8,257.16,694.46,7.97,13.34;8,257.16,679.46,7.97,12.95;8,257.16,636.58,7.97,30.25;8,257.16,626.95,7.97,7.57;8,251.93,527.73,7.97,15.34;8,251.93,513.59,7.97,12.07;8,251.93,344.77,7.97,15.12;8,251.93,327.47,7.97,15.23;8,251.93,157.19,7.97,20.97;8,251.93,139.90,7.97,15.22;8,262.39,549.84,7.97,49.30;8,272.86,554.77,7.97,39.44;8,262.39,444.03,7.97,76.26;8,272.86,462.44,7.97,39.44;8,262.39,365.18,7.97,49.30;8,272.86,370.12,7.97,39.44;8,262.39,259.38,7.97,76.26;8,272.86,277.80,7.97,39.44;8,262.39,180.54,7.97,49.30;8,272.86,185.47,7.97,39.44;8,262.39,98.97,7.97,51.43;8,262.39,75.36,7.97,21.54;8,272.86,93.15,7.97,39.44;8,289.37,734.22,7.97,4.30;8,289.37,699.41,7.97,4.27;8,289.37,692.08,7.97,7.39;8,289.37,683.61,7.97,8.47;8,284.14,650.72,7.97,9.07;8,283.65,644.12,8.43,5.11;8,284.14,634.02,7.97,8.61;8,283.71,554.05,7.97,40.87;8,283.71,461.73,7.97,40.87;8,283.71,369.41,7.97,40.87;8,283.71,277.09,7.97,40.87;8,283.71,184.77,7.97,40.87;8,283.71,92.44,7.97,40.87;8,295.03,653.94,7.97,9.07;8,294.54,647.34,8.43,5.11;8,295.03,630.79,7.97,15.06;8,294.60,554.05,7.97,40.87;8,294.60,461.73,7.97,40.87;8,294.60,369.41,7.97,40.87;8,294.60,277.09,7.97,40.87;8,294.60,186.91,7.97,36.57;8,294.60,92.44,7.97,40.87;8,311.55,734.22,7.97,4.30;8,311.55,698.78,7.97,4.76;8,311.55,691.59,7.97,7.20;8,311.55,687.49,7.97,4.09;8,311.55,683.75,7.97,3.77;8,306.32,650.72,7.97,9.07;8,305.83,644.12,8.43,5.11;8,306.32,634.02,7.97,8.61;8,305.89,554.05,7.97,40.87;8,305.89,461.73,7.97,40.87;8,305.89,369.41,7.97,40.87;8,305.89,277.09,7.97,40.87;8,305.89,184.77,7.97,40.87;8,305.89,92.44,7.97,40.87;8,317.21,655.31,7.97,9.07;8,317.00,646.67,8.05,6.40;8,317.21,629.43,7.97,15.01;8,316.78,554.05,7.97,40.87;8,316.78,461.73,7.97,40.87;8,316.78,369.41,7.97,40.87;8,316.78,277.09,7.97,40.87;8,316.78,184.77,7.97,40.87;8,316.78,92.44,7.97,40.87;8,333.72,734.22,7.97,4.30;8,333.72,699.41,7.97,4.27;8,333.72,692.08,7.97,7.39;8,333.72,683.61,7.97,8.47;8,328.49,650.72,7.97,9.07;8,328.00,644.12,8.43,5.11;8,328.49,634.02,7.97,8.61;8,328.06,554.05,7.97,40.87;8,328.06,461.73,7.97,40.87;8,328.06,369.41,7.97,40.87;8,328.06,277.09,7.97,40.87;8,328.06,184.77,7.97,40.87;8,328.06,92.44,7.97,40.87;8,339.38,653.94,7.97,9.07;8,338.89,647.34,8.43,5.11;8,339.38,630.79,7.97,15.06;8,338.95,554.05,7.97,40.87;8,338.95,461.73,7.97,40.87;8,338.95,369.41,7.97,40.87;8,338.95,277.09,7.97,40.87;8,338.95,184.77,7.97,40.87;8,338.95,92.44,7.97,40.87;8,355.90,734.22,7.97,4.30;8,355.90,698.78,7.97,4.76;8,355.90,691.59,7.97,7.20;8,355.90,687.49,7.97,4.09;8,355.90,683.75,7.97,3.77;8,350.67,650.72,7.97,9.07;8,350.18,644.12,8.43,5.11;8,350.67,634.02,7.97,8.61;8,350.24,554.05,7.97,40.87;8,350.24,461.73,7.97,40.87;8,350.24,369.41,7.97,40.87;8,350.24,277.09,7.97,40.87;8,350.24,184.77,7.97,40.87;8,350.24,92.44,7.97,40.87;8,361.56,653.94,7.97,9.07;8,361.07,647.34,8.43,5.11;8,361.56,630.79,7.97,15.06;8,361.13,554.05,7.97,40.87;8,361.13,461.73,7.97,40.87;8,361.13,369.41,7.97,40.87;8,361.13,277.09,7.97,40.87;8,361.13,184.77,7.97,40.87;8,361.13,92.44,7.97,40.87;9,236.06,616.58,7.97,22.56;9,236.06,608.05,7.97,6.45;9,236.06,580.62,7.97,25.37;9,236.06,571.31,7.97,7.25;9,236.06,529.73,7.97,39.52;9,236.06,520.41,7.97,7.25;9,236.06,487.73,7.97,30.62;9,236.06,457.24,7.97,28.42;9,236.06,444.62,7.97,10.56;9,236.06,424.13,7.97,18.43;9,236.06,393.63,7.97,28.43;9,236.06,353.90,7.97,37.66;9,236.06,338.31,7.97,13.53;9,236.06,272.71,7.97,63.54;9,236.06,245.94,7.97,24.70;9,236.06,224.49,7.97,19.38;9,236.06,191.84,7.97,30.59;9,236.06,172.41,7.97,17.36;9,257.16,716.45,7.97,22.07;9,257.16,694.72,7.97,13.34;9,257.16,679.71,7.97,12.95;9,257.16,635.04,7.97,30.25;9,257.16,625.41,7.97,7.57;9,251.93,526.57,7.97,15.34;9,251.93,512.43,7.97,12.07;9,251.93,344.12,7.97,15.12;9,251.93,326.82,7.97,15.23;9,251.93,157.06,7.97,20.97;9,251.93,139.78,7.97,15.23;9,262.39,548.54,7.97,49.30;9,272.86,553.48,7.97,39.44;9,262.39,443.00,7.97,76.26;9,272.86,461.41,7.97,39.44;9,262.39,364.41,7.97,49.30;9,272.86,369.35,7.97,39.44;9,262.39,258.87,7.97,76.26;9,272.86,277.28,7.97,39.44;9,262.39,180.28,7.97,49.30;9,272.86,185.22,7.97,39.44;9,262.39,74.73,7.97,76.26;9,272.86,93.15,7.97,39.44;9,289.37,734.22,7.97,4.30;9,289.37,699.67,7.97,4.27;9,289.37,692.34,7.97,7.39;9,289.37,683.87,7.97,8.47;9,284.14,650.21,7.97,9.07;9,283.65,643.60,8.43,5.11;9,284.14,633.50,7.97,8.61;9,283.71,552.77,7.97,40.87;9,283.71,460.71,7.97,40.87;9,283.71,368.64,7.97,40.87;9,283.71,276.57,7.97,40.87;9,283.71,184.51,7.97,40.87;9,283.71,92.44,7.97,40.87;9,295.03,653.43,7.97,9.07;9,294.54,646.83,8.43,5.11;9,295.03,630.27,7.97,15.06;9,294.60,552.77,7.97,40.87;9,294.60,460.71,7.97,40.87;9,294.60,368.64,7.97,40.87;9,294.60,276.57,7.97,40.87;9,294.60,184.51,7.97,40.87;9,294.60,92.44,7.97,40.87;9,311.55,734.22,7.97,4.30;9,311.55,699.04,7.97,4.76;9,311.55,691.84,7.97,7.20;9,311.55,687.75,7.97,4.09;9,311.55,684.00,7.97,3.77;9,306.32,650.21,7.97,9.07;9,305.83,643.60,8.43,5.11;9,306.32,633.50,7.97,8.61;9,305.89,552.77,7.97,40.87;9,305.89,460.71,7.97,40.87;9,305.89,368.64,7.97,40.87;9,305.89,276.57,7.97,40.87;9,305.89,184.51,7.97,40.87;9,305.89,92.44,7.97,40.87;9,317.21,653.43,7.97,9.07;9,316.72,646.83,8.43,5.11;9,317.21,630.27,7.97,15.06;9,316.78,552.77,7.97,40.87;9,316.78,460.71,7.97,40.87;9,316.78,368.64,7.97,40.87;9,316.78,276.57,7.97,40.87;9,316.78,184.51,7.97,40.87;9,316.78,92.44,7.97,40.87;9,333.72,734.22,7.97,4.30;9,333.72,699.67,7.97,4.27;9,333.72,692.34,7.97,7.39;9,333.72,683.87,7.97,8.47;9,328.49,650.21,7.97,9.07;9,328.00,643.60,8.43,5.11;9,328.49,633.50,7.97,8.61;9,328.06,552.77,7.97,40.87;9,328.06,460.71,7.97,40.87;9,328.06,368.64,7.97,40.87;9,328.06,276.57,7.97,40.87;9,328.06,184.51,7.97,40.87;9,328.06,92.44,7.97,40.87;9,339.38,653.43,7.97,9.07;9,338.89,646.83,8.43,5.11;9,339.38,630.27,7.97,15.06;9,338.95,552.77,7.97,40.87;9,338.95,460.71,7.97,40.87;9,338.95,368.64,7.97,40.87;9,338.95,276.57,7.97,40.87;9,338.95,184.51,7.97,40.87;9,338.95,92.44,7.97,40.87;9,355.90,734.22,7.97,4.30;9,355.90,699.04,7.97,4.76;9,355.90,691.84,7.97,7.20;9,355.90,687.75,7.97,4.09;9,355.90,684.00,7.97,3.77;9,350.67,650.21,7.97,9.07;9,350.18,643.60,8.43,5.11;9,350.67,633.50,7.97,8.61;9,350.24,552.77,7.97,40.87;9,350.24,460.71,7.97,40.87;9,350.24,368.64,7.97,40.87;9,350.24,276.57,7.97,40.87;9,350.24,184.51,7.97,40.87;9,350.24,92.44,7.97,40.87;9,361.56,653.43,7.97,9.07;9,361.07,646.83,8.43,5.11;9,361.56,630.27,7.97,15.06;9,361.13,552.77,7.97,40.87;9,361.13,460.71,7.97,40.87;9,361.13,368.64,7.97,40.87;9,361.13,276.57,7.97,40.87;9,361.13,184.51,7.97,40.87;9,361.13,92.44,7.97,40.87"><head>Table 2 :Table 3 :</head><label>23</label><figDesc xml:id="_x97P9Bm">Results of encryption of different amount for grayscale SF.GIF and ROAR512.JPG images using small and large keys sizes. Results of encryption of different amount for color GREEN ROSE.JPG and GOLDRUSH.JPG images using different keys.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="7,52.72,74.25,236.22,403.42"><head>Table 1 :</head><label>1</label><figDesc xml:id="_hRTdGQJ">Test images.</figDesc><table coords="7,52.72,93.11,236.22,384.56"><row><cell>#</cell><cell>Images</cell><cell>Names</cell></row><row><cell>1</cell><cell></cell><cell>SF.GIF</cell></row><row><cell>2</cell><cell></cell><cell>ROAR512.JPG</cell></row><row><cell>3</cell><cell></cell><cell>GREEN ROSE.JPG</cell></row><row><cell>4</cell><cell></cell><cell>GOLDRUSH.JPG</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="10,69.96,682.37,220.96,7.97;10,69.96,692.84,220.99,7.97;10,69.96,703.30,220.97,7.97;10,69.96,713.76,67.30,7.97" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_9VBkuYm">An efficient chaos-based feedback stream cipher (ECBFSC) for image encryption and decryption</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">Hossam</forename><surname>El-Din</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">M</forename><surname>Kalash</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><forename type="middle">S</forename><surname>Farag</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Allah</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_R2sY8Xp">Informatica</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="121" to="129" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,69.95,724.22,220.98,7.97;10,69.96,734.68,220.96,7.97;10,327.89,75.15,220.97,7.97;10,327.89,85.62,40.79,7.97" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_sPH5N9H">Symmetric ciphers based on two-dimensional chaotic maps</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Fridrich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fXy38BE">International Journal of Bifurcation and Chaos in Applied Sciences and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1259" to="1284" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.88,96.08,220.95,7.97;10,327.89,106.54,220.97,7.97;10,327.89,116.99,174.95,7.97" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_Z66byKv">Selective image encryption using JBIG</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Pfarrhofer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Uh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_rYyU234">Proceedings of the Communications and Multimedia Security (CMS &apos;05)</title>
+				<meeting>the Communications and Multimedia Security (CMS &apos;05)</meeting>
+		<imprint>
+			<date type="published" when="2005-09">September 2005</date>
+			<biblScope unit="page" from="98" to="107" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.88,127.46,220.94,7.97;10,327.89,137.92,220.96,7.97;10,327.89,148.38,220.94,7.97;10,327.89,158.85,19.36,7.97" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_cDM2ZBC">Applying encryption to video communication</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Kunkelmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_wGew43K">Proceedings of the Multimedia and Security Workshop at (ACM Multimedia &apos;98)</title>
+				<meeting>the Multimedia and Security Workshop at (ACM Multimedia &apos;98)<address><addrLine>England, UK</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1998-09">September 1998</date>
+			<biblScope unit="page" from="41" to="47" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.89,169.30,220.97,7.97;10,327.89,179.76,220.97,7.97;10,327.89,190.23,36.49,7.97" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_Da77YeE">Comparison of mpeg encryption algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Qiao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Nahrstedt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PpaGTrg">Computers and Graphics</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="437" to="448" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.88,200.69,220.98,7.97;10,327.89,211.15,220.96,7.97;10,327.89,221.61,58.71,7.97" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_63aAEfY">MPEG video encryption algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Bhargava</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">Y</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_j2Et2Jy">Multimedia Tools and Applications</title>
+				<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="57" to="79" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.88,232.07,220.95,7.97;10,327.89,242.53,220.99,7.97;10,327.89,253.00,120.24,7.97" xml:id="b6">
+	<monogr>
+		<title level="m" type="main" xml:id="_U6cvUNf">Limitations of existing MPEG-1 ciphers for streaming video</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>But</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004-04">April 2004</date>
+			<pubPlace>Melbourne, Australia</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Swinburne University</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Tech. Rep. CAIA 040429A</note>
+</biblStruct>
+
+<biblStruct coords="10,327.88,263.46,220.98,7.97;10,327.89,273.91,220.98,7.97;10,327.89,284.37,157.33,7.97" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_8WjBHYa">Selective encryption of waveletpacket encoded image data: efficiency and security</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Pommer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Uhl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_62sScBJ">Multimedia Systems</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="279" to="287" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.88,294.84,220.95,7.97;10,327.89,305.30,220.97,7.97;10,327.89,315.76,84.43,7.97" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_PDdYQyH">Partial encryption of compressed images and videos</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dKajuBx">IEEE Transactions on Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="2439" to="2451" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.88,326.22,220.95,7.97;10,327.89,336.68,220.97,7.97;10,327.89,347.14,126.96,7.97" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_qWd6cRS">Image compression and encryption using tree structures</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Knipe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Cheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_hEVRn6j">Pattern Recognition Letters</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">11-13</biblScope>
+			<biblScope unit="page" from="1253" to="1259" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.89,357.61,220.96,7.97;10,327.89,368.07,220.98,7.97;10,327.89,378.53,220.93,7.97;10,327.89,388.99,220.99,7.97;10,327.89,399.45,130.73,7.97" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZPHqm8d">Multi-resolution access control algorithm based on fractal coding</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roche</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J.-L</forename><surname>Dugelay</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Molva</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_JtJHvXw">Proceedings of the IEEE International Conference on Image processing (ICIP&apos;96)</title>
+				<meeting>the IEEE International Conference on Image processing (ICIP&apos;96)<address><addrLine>Switzerland</addrLine></address></meeting>
+		<imprint>
+			<publisher>Lausanne</publisher>
+			<date type="published" when="1996-09">September 1996</date>
+			<biblScope unit="page" from="235" to="238" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.88,409.91,220.99,7.97;10,327.89,420.37,220.98,7.97;10,327.89,430.84,218.12,7.97" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_hK3G38w">A virtual image cryptosystem based upon vector quantization</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">C</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Hwang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fM9gdp5">IEEE Transactions on Image Processing</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1485" to="1488" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.87,441.29,220.93,7.97;10,327.89,451.75,220.97,7.97;10,327.89,462.22,75.84,7.97" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_KRHA84G">Fast encryption of image data using chaotic Kolmogorov flows</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Scharinger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FmhKrKf">Journal of Electronic Imaging</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="318" to="325" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.88,472.68,221.00,7.97;10,327.89,483.14,220.96,7.97;10,327.89,493.60,220.98,7.97;10,327.89,504.06,176.49,7.97" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_7C2B2EM">Chaos based image encryption</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_KVAJyKY">Handbook of Computational Geometry for Pattern Recognition, Computer Vision, Neural Computing and Robotics, E. B. Corrochano</title>
+				<meeting><address><addrLine>Heidelberg, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.89,514.52,220.94,7.97;10,327.89,524.99,220.98,7.97;10,327.89,535.45,220.96,7.97;10,327.89,545.91,220.95,7.97;10,327.89,556.36,220.97,7.97;10,327.89,566.83,52.30,7.97" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_gKNraxW">An FPGA implementation of a feed-back chaotic synchronization for secure communications</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Azzaz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Tanougast</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Adoudi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bouridane</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dandache</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_cYC259g">Proceedings of the 7th International Symposium on Communication Systems, Networks and Digital Signal Processing</title>
+				<meeting>the 7th International Symposium on Communication Systems, Networks and Digital Signal Processing</meeting>
+		<imprint>
+			<date type="published" when="2010-07">July 2010</date>
+			<biblScope unit="page" from="239" to="243" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.90,577.29,220.95,7.97;10,327.89,587.75,220.92,7.97;10,327.89,598.22,220.95,7.97;10,327.89,608.67,220.97,7.97;10,327.89,619.13,63.51,7.97" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_nyHYNXY">Real-time image encryption based chaotic synchronized embedded cryptosystems</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Azzaz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Tanougast</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Sadoudi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dandache</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Monteiro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_vjWS2wV">Proceedings of the 8th IEEE International NEWCAS Conference (NEWCAS &apos;10)</title>
+				<meeting>the 8th IEEE International NEWCAS Conference (NEWCAS &apos;10)</meeting>
+		<imprint>
+			<date type="published" when="2010-06">June 2010</date>
+			<biblScope unit="page" from="61" to="64" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.90,629.60,220.95,7.97;10,327.89,640.06,220.97,7.97;10,327.89,650.52,220.97,7.97;10,327.89,660.98,220.95,7.97;10,327.89,671.44,220.95,7.97;10,327.89,681.90,19.36,7.97" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_WG8nmh5">Embedded genesio-tesi chaotic generator for ciphering communications</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Sadoudi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Tanougast</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Azzaz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dandache</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bouridane</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_eDXqke5">Proceedings of the 7th International Symposium on Communication Systems, Networks and Digital Signal Processing</title>
+				<meeting>the 7th International Symposium on Communication Systems, Networks and Digital Signal Processing</meeting>
+		<imprint>
+			<date type="published" when="2010-07">July 2010</date>
+			<biblScope unit="page" from="234" to="238" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.89,692.36,220.96,7.97;10,327.89,702.80,220.95,8.00;10,327.89,713.26,19.36,7.97" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_GtgdFwq">Wavelets: the mathematical background</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kovacevic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_GRuGReD">Proceedings of the IEEE</title>
+				<meeting>the IEEE</meeting>
+		<imprint>
+			<date type="published" when="1996">1996</date>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="514" to="522" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,327.88,723.72,220.93,7.97;10,327.89,734.19,220.98,7.97;11,69.96,75.15,220.93,7.97;11,69.96,85.62,78.85,7.97" xml:id="b18">
+	<monogr>
+		<title level="m" type="main" xml:id="_HcbWZEY">Adaptive self-tuning neuro wavelet network controllers</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Lekutai</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997-03">March 1997</date>
+			<pubPlace>Virginia, Va, USA</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Electrical Engineering Department, Virginia Polytechnic Institute and State University Blackburg</orgName>
+		</respStmt>
+	</monogr>
+	<note>Ph.D. thesis</note>
+</biblStruct>
+
+<biblStruct coords="11,69.95,96.08,220.97,7.97;11,69.96,106.54,221.00,7.97;11,69.96,116.99,75.87,7.97" xml:id="b19">
+	<monogr>
+		<title level="m" type="main" xml:id="_nMYznP2">A study of chaotic image encryption algorithm, M.S. thesis, Electrical Engineering Department</title>
+		<author>
+			<persName coords=""><forename type="first">C.-H</forename><surname>Hsu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+		<respStmt>
+			<orgName>Chung Yuan Christian University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,69.96,127.46,220.98,7.97;11,69.96,137.92,220.96,7.97;11,69.96,148.38,220.95,7.97;11,69.96,158.85,19.36,7.97" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_R6ypUhV">Binary image encoding using 1D-chaotic maps</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Belkhouche</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Qidwai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_fQpCzN3">Proceedings of the IEEE Region 5 Annual Technical Conference</title>
+				<meeting>the IEEE Region 5 Annual Technical Conference<address><addrLine>New Orleans, La, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2003-04">April 2003</date>
+			<biblScope unit="page" from="39" to="42" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,69.95,169.30,220.94,7.97;11,69.96,179.76,220.95,7.97" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_j7Fbu6u">Simple mathematical models with very complicated dynamics</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">M</forename><surname>May</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_y62qZpy">Nature</title>
+		<imprint>
+			<biblScope unit="volume">261</biblScope>
+			<biblScope unit="issue">5560</biblScope>
+			<biblScope unit="page" from="459" to="467" />
+			<date type="published" when="1976">1976</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

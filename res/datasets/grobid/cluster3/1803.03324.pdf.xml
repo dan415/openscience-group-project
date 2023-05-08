@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_fGEtAHJ">Learning Deep Generative Models of Graphs</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,135.49,143.74,34.79,8.96"><forename type="first">Yujia</forename><surname>Li</surname></persName>
+							<email>&lt;yujiali@google.com&gt;.</email>
+							<affiliation key="aff0">
+								<orgName type="department">DeepMind</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff0">
+								<orgName type="department">DeepMind</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,182.07,143.74,56.93,8.96"><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">DeepMind</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,250.79,143.74,47.21,8.96"><forename type="first">Chris</forename><surname>Dyer</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">DeepMind</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,309.79,143.74,69.82,8.96"><forename type="first">Razvan</forename><surname>Pascanu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">DeepMind</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,391.39,143.74,63.71,8.96"><forename type="first">Peter</forename><surname>Battaglia</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">DeepMind</orgName>
+								<address>
+									<settlement>London</settlement>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_DZSQNvy">Learning Deep Generative Models of Graphs</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">5F9172CFC05526BCDB120778033FAB7C</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-07T13:56+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_6Aukm2Z"><p xml:id="_UpzQzFN">Graphs are fundamental data structures which concisely capture the relational structure in many important real-world domains, such as knowledge graphs, physical and social interactions, language, and chemistry. Here we introduce a powerful new approach for learning generative models over graphs, which can capture both their structure and attributes. Our approach uses graph neural networks to express probabilistic dependencies among a graph's nodes and edges, and can, in principle, learn distributions over any arbitrary graph. In a series of experiments our results show that once trained, our models can generate good quality samples of both synthetic graphs as well as real molecular graphs, both unconditionally and conditioned on data. Compared to baselines that do not use graph-structured representations, our models often perform far better. We also explore key challenges of learning generative models of graphs, such as how to handle symmetries and ordering of elements during the graph generation process, and offer possible solutions. Our work is the first and most general approach for learning generative models over arbitrary graphs, and opens new directions for moving away from restrictions of vector-and sequence-like knowledge representations, toward more expressive and flexible relational data structures.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1." xml:id="_axmQttd">Introduction</head><p xml:id="_BcmJj7n">Graphs are natural representations of information in many problem domains. For example, relations between entities in knowledge graphs and social networks are well captured by graphs, and they are also good for modeling the physical world, e.g. molecular structure and the interactions between objects in physical systems. Thus, the ability to Proceedings of the 35 th International Conference on Machine <ref type="bibr" coords="1,55.19,699.11,174.72,7.93">Learning, Stockholm, Sweden, PMLR 80, 2018.</ref> Copyright 2018 by the author(s).</p><p xml:id="_Wn8zpTV">capture the distribution of a particular family of graphs has many applications. For instance, sampling from the graph model can lead to the discovery of new configurations that share same global properties as is, for example, required in drug discovery <ref type="bibr" coords="1,371.10,226.53,132.21,8.64" target="#b10">(Gómez-Bombarelli et al., 2016)</ref>. Obtaining graph-structured semantic representations for natural language sentences <ref type="bibr" coords="1,389.34,250.44,116.22,8.64" target="#b15">(Kuhlmann &amp; Oepen, 2016)</ref> requires the ability to model (conditional) distributions on graphs. Distributions on graphs can also provide priors for Bayesian structure learning of graphical models <ref type="bibr" coords="1,461.55,286.31,71.02,8.64" target="#b23">(Margaritis, 2003)</ref>.</p><p xml:id="_RNpquGj">Probabilistic models of graphs have been studied extensively from at least two perspectives. One approach, based on random graph models, robustly assign probabilities to large classes of graphs <ref type="bibr" coords="1,376.45,340.11,89.31,8.64" target="#b8">(Erdős &amp; Rényi, 1960;</ref><ref type="bibr" coords="1,468.26,340.11,74.42,8.64;1,306.69,352.06,21.87,8.64" target="#b1">Barabási &amp; Albert, 1999)</ref>. These make strong independence assumptions and are designed to capture only certain graph properties, such as degree distribution and diameter. While these have proven effective at modeling domains such as social networks, they struggle with more richly structured domains where small structural differences can be functionally significant, such as in chemistry or representing meaning in natural language.</p><p xml:id="_wQdshmq">A more expressive-but also more brittle-approach makes use of graph grammars, which generalize mechanisms from formal language theory to model non-sequential structures <ref type="bibr" coords="1,329.81,477.59,74.26,8.64" target="#b28">(Rozenberg, 1997)</ref>. Graph grammars are systems of rewrite rules that incrementally derive an output graph via a sequence of transformations of intermediate graphs.While symbolic graph grammars can be made stochastic or otherwise weighted using standard techniques <ref type="bibr" coords="1,471.79,525.41,70.90,8.64;1,307.44,537.37,21.19,8.64" target="#b5">(Droste &amp; Gastin, 2007)</ref>, from a learnability standpoint, two problems remain. First, inducing grammars from a set of unannotated graphs is nontrivial since reasoning about the structure building operations that might have been used to build a graph is algorithmically hard <ref type="bibr" coords="1,394.63,585.19,78.30,8.64" target="#b17">(Lautemann, 1988;</ref><ref type="bibr" coords="1,476.44,585.19,66.25,8.64;1,307.44,597.14,77.11,8.64">Aguiñaga et al., 2016, for example)</ref>. Second, as with linear output grammars, graph grammars make a hard distinction between what is in the language and what is excluded, making such models problematic for applications where it is inappropriate to assign 0 probability to certain graphs. This paper introduces a new, expressive model of graphs that makes no structural assumptions and also avoids the brittleness of grammar-based techniques. 1 Our model gen-1 An analogy to language modeling before the advent of RNN arXiv:1803.03324v1 <ref type="bibr" coords="1,18.34,317.26,10.29,61.64">[cs.</ref>LG] 8 Mar 2018 erates graphs in a manner similar to graph grammars, where during the course of a derivation, new structure (specifically, a new node or a new edge) is added to the existing graph, and the probability of that addition event depends on the history of the graph derivation. To represent the graph during each step of the derivation, we use a representation based on graph-structured neural networks (graph nets). Recently there has been a surge of interest in graph nets for learning graph representations and solving graph prediction problems <ref type="bibr" coords="2,77.23,178.13,82.02,8.64" target="#b11">(Henaff et al., 2015;</ref><ref type="bibr" coords="2,161.83,178.13,92.29,8.64" target="#b6">Duvenaud et al., 2015;</ref><ref type="bibr" coords="2,256.72,178.13,33.97,8.64;2,55.44,190.09,22.72,8.64" target="#b19">Li et al., 2016;</ref><ref type="bibr" coords="2,80.66,190.09,85.61,8.64" target="#b2">Battaglia et al., 2016;</ref><ref type="bibr" coords="2,168.78,190.09,90.08,8.64" target="#b14">Kipf &amp; Welling, 2016;</ref><ref type="bibr" coords="2,261.35,190.09,28.25,8.64;2,55.44,202.04,46.20,8.64" target="#b9">Gilmer et al., 2017)</ref>. These models are structured according to the graph being utilized, and are parameterized independent of graph sizes therefore invariant to isomorphism, providing a good match for our purposes.</p><p xml:id="_yK4R6nT">We evaluate our model on the tasks of generating random graphs with certain common topological properties (e.g., cyclicity), and generating molecule graphs in either unconditioned or conditioned manner. Our proposed model performs well across all the experiments, and achieves better results than the random graph models and LSTM baselines.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2." xml:id="_JUGd9Sy">Related Work</head><p xml:id="_DX4m54j">The earliest probabilistic model of graphs developed by <ref type="bibr" coords="2,55.44,375.51,92.22,8.64" target="#b8">Erdős &amp; Rényi (1960)</ref> assumed an independent identical probability for each possible edge. This model leads to rich mathematical theory on random graphs, but it is too simplistic to model more complicated graphs that violate this i.i.d. assumption. Most of the more recent random graph models involve some form of "preferential attachment", for example in <ref type="bibr" coords="2,100.88,447.24,102.55,8.64" target="#b1">(Barabási &amp; Albert, 1999)</ref> the more connections a node has, the more likely it will be connected to new nodes added to the graph. Another class of graph models aim to capture the small diameter and local clustering properties in graphs, like the small-world model <ref type="bibr" coords="2,213.87,495.06,76.81,8.64;2,54.69,507.02,21.87,8.64" target="#b37">(Watts &amp; Strogatz, 1998)</ref>. Such models usually just capture one property of the graphs we want to model and are not flexible enough to model a wide range of graphs. <ref type="bibr" coords="2,197.77,530.93,92.34,8.64" target="#b18">Leskovec et al. (2010)</ref> proposed the Kronecker graphs model which is capable of modeling multiple properties of graphs, but it still only has limited capacity to allow tractable mathematical analysis.</p><p xml:id="_txh6jUG">There are a significant amount of work from the natural language processing and program synthesis communities on modeling the generation of trees. <ref type="bibr" coords="2,208.73,608.64,81.38,8.64" target="#b32">Socher et al. (2011)</ref> proposed a recursive neural network model to build parse language models is helpful. On one hand, formal grammars could be quite expressive (e.g., some classes could easily capture the long range syntactic dependencies found in language), but they were brittle and hard to learn; on the other, n-gram models were robust and easy to learn, but made naïve Markov assumptions. RNN language models were an important innovation as they were both robust and expressive, and they could be learned easily.</p><p xml:id="_Ep7Pdzp">trees for natural language and visual scenes. <ref type="bibr" coords="2,490.99,70.54,51.23,8.64;2,307.13,82.49,55.41,8.64" target="#b21">Maddison &amp; Tarlow (2014)</ref> developed probabilistic models of parsed syntax trees for source code. <ref type="bibr" coords="2,411.17,94.45,86.23,8.64" target="#b36">Vinyals et al. (2015c)</ref> flattened a tree into a sequence and then modeled parse tree generation as a sequence to sequence task. <ref type="bibr" coords="2,446.81,118.36,75.67,8.64" target="#b7">Dyer et al. (2016)</ref> proposed recurrent neural network models capable of modeling any top-down transition-based parsing process for generating parse trees. <ref type="bibr" coords="2,381.88,154.22,82.71,8.64" target="#b16">Kusner et al. (2017)</ref> developed models for context-free grammars for generating SMILES string representations for molecule structures. Such tree models are very good at their task of generating trees, but they are incapable of generating more general graphs that contain more complicated loopy structures.</p><p xml:id="_eV8Gszx">Our graph generative model is based on a class of neural net models we call graph nets. Originally developed in <ref type="bibr" coords="2,307.11,255.84,89.63,8.64" target="#b29">(Scarselli et al., 2009)</ref>, a range of variants of such graph structured neural net models have been developed and applied to various graph problems more recently <ref type="bibr" coords="2,489.05,279.75,53.64,8.64;2,307.44,291.71,22.31,8.64" target="#b11">(Henaff et al., 2015;</ref><ref type="bibr" coords="2,332.24,291.71,57.52,8.64" target="#b19">Li et al., 2016;</ref><ref type="bibr" coords="2,392.26,291.71,88.55,8.64" target="#b14">Kipf &amp; Welling, 2016;</ref><ref type="bibr" coords="2,483.31,291.71,59.38,8.64;2,307.44,303.66,23.15,8.64" target="#b2">Battaglia et al., 2016;</ref><ref type="bibr" coords="2,333.28,303.66,78.51,8.64" target="#b9">Gilmer et al., 2017)</ref>. Such models learn representations of graphs, nodes and edges based on a information propagation process, and are invariant to graph isomorphism because of the graph size independent parameterization. We use these graph nets to learn representations for making various decisions in the graph generation process.</p><p xml:id="_4uC27DV">Our work share some similarity to the recent work of <ref type="bibr" coords="2,521.00,381.37,17.67,8.64;2,307.44,393.33,40.73,8.64" target="#b12">Johnson (2017)</ref>, where a graph is constructed to solve reasoning problems. The main difference between our work and (Johnson, 2017) is that our goal in this paper is to learn and represent unconditional or conditional densities on a space of graphs given a representative set of graphs, whereas <ref type="bibr" coords="2,509.43,441.15,32.00,8.64;2,307.11,453.10,27.09,8.64" target="#b12">Johnson (2017)</ref> is primarily interested in using graphs as intermediate representations in reasoning tasks. As a generative model, <ref type="bibr" coords="2,337.33,477.01,61.70,8.64" target="#b12">Johnson (2017)</ref> did make a few strong assumptions for the generation process, e.g. a fixed number of nodes for each sentence, independent probability for edges given a batch of new nodes, etc.; while our model doesn't assume any of these. On the other side, samples from our model are individual graph structures, while the graphs constructed in <ref type="bibr" coords="2,317.77,548.74,64.99,8.64" target="#b12">(Johnson, 2017)</ref> are real-valued strengths for nodes and edges, which was used for other tasks. Potentially, our graph generative model can be used in an end-to-end pipeline to solve prediction problems as well, like <ref type="bibr" coords="2,463.53,584.61,62.40,8.64" target="#b12">(Johnson, 2017)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3." xml:id="_VaDyCDh">The Sequential Graph Generation Process</head><p xml:id="_p8wEyzm">Our generative model of graphs uses a sequential process which generates one node at a time and connects each node to the existing partial graph by creating edges one by one.</p><p xml:id="_XwxqDX4">The actions by which our model generates graphs are illustrated in Figure <ref type="figure" coords="2,385.33,686.35,5.08,8.64" target="#fig_0">1</ref> (for the formal presentation, refer to Algorithm 1 in Appendix A). Briefly, in this generative pro-   There are many different ways to tweak this generation process. For example, edges can be made directional or typed by jointly modeling the node selection process with type and direction random variables (in the molecule generation experiments below, we use typed nodes and edges). Additionally, constraints on certain structural aspects of graphs can be imposed such as forbidding self-loops or multiple edges between a pair of nodes.</p><p xml:id="_yWfCSu3">The graph generation process can be seen as a sequence of decisions, i.e., (1) add a new node or not (with probabilities provided by an f addnode module), (2) add a new edge or not (probabilities provided by f addedge ), and (3) pick one node to connect to the new node (probabilities provided by f nodes ). One example graph with corresponding decision sequence is shown in Figure <ref type="figure" coords="3,129.96,500.84,4.88,8.64">8</ref> in the Appendix. Note that different ordering of the nodes and edges can lead to different decision sequences for the same graph, how to properly handle these orderings is an important issue which we discuss later.</p><p xml:id="_ZN2cKtz">Once the graph is transformed into such a sequence of structure building actions, we can use a number of different generative models to model it. One obvious choice is to treat the sequences as sentences in natural language, and use conventional LSTM language models. We propose to use graph nets to model this sequential decision process instead.</p><p xml:id="_uaVJaT8">That is, we define the modules that provide probabilities for the structure building events (f addnode , f addedge and f nodes ) in terms of graph nets. As graph nets make use of the structure of the graph to create representations of nodes and edges via an information propagation process, this parameterization will be more sensitive to the structures being constructed than might be possible in an LSTM model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4." xml:id="_fYYt3J3">Learning Graph Generative Models</head><p xml:id="_pwNGrg8">For any graph G = (V, E), we associate a node embedding vector h v ∈ R H with each node v ∈ V . These vectors can be computed initially from node inputs, e.g. node type embeddings, and then propagated on the graph to aggregate information from the local neighborhood. The propagation process is an iterative process, in each round of propagation, a "message" vector is computed on each edge, and then each node collects all incoming messages and updates its own representation, as characterized in Eq. 1 and 2, where f e (h u , h v , x u,v ) computes the message vector from u to v 2 , and f n computes the node updates, both can be neural networks, x u,v is a feature vector for the edge (u, v), e.g. edge type embedding, a v is the aggregated incoming message for node v and h v is the new representation for node v after one round of propagation. A typical choice for f e and f n is to use fully-connected neural nets for both, but f n can also be any recurrent neural network core like GRU or LSTM. In our experience LSTM and GRU cores perform similarly, we use the simpler GRUs for f n throughout our experiments.</p><formula xml:id="formula_0" coords="3,339.62,467.72,201.82,20.56">a v = u:(u,v)∈E f e (h u , h v , x u,v ) ∀v ∈ V,<label>(1)</label></formula><formula xml:id="formula_1" coords="3,339.62,495.19,201.82,10.65">h v = f n (a v , h v ) ∀v ∈ V,<label>(2)</label></formula><p xml:id="_mHwbEta">Given a set of node embeddings h V = {h 1 , . To compute a vector representation for the whole graph, we 2 Here we only described messages along the edge direction mu→v = fe(hu, hv, xu,v), but it is also possible to consider the reverse information propagation as well m v→u = f e <ref type="bibr" coords="3,315.93,694.18,51.75,7.89">(hu, hv, xu,v)</ref>, and make av = u:(u,v)∈E mu→v + u:(v,u)∈E m u→v , which is what we used in all experiments.</p><p xml:id="_6T4DVE9">T rounds of propagation first map the node representations to a higher dimensional</p><formula xml:id="formula_2" coords="4,55.44,203.87,61.54,12.19">h G v = f m (h v )</formula><p xml:id="_e3fd3Wu">, then these mapped vectors are summed together to obtain a single vector h G (Eq. 3).</p><formula xml:id="formula_3" coords="4,83.05,236.69,206.39,22.13">h G = v∈V h G v (3) h G = v∈V g G v h G v (4)</formula><p xml:id="_EdzH7Vb">The dimensionality of h G is chosen to be higher than that of h v as the graph contains more information than individual nodes. A particularly useful variant of this aggregation module is to use a separate gating network which predicts</p><formula xml:id="formula_4" coords="4,55.44,316.58,74.08,12.19">g G v = σ(g m (h v ))</formula><p xml:id="_Wg4qpsa">for each node, where σ is the logistic sigmoid function and g m is another mapping function, and computes h G as a gated sum (Eq. 4). Also the sum can be replaced with other reduce operators like mean or max. We use gated sum in all our experiments. We denote the aggregation operation across the graph without propagation as h G = R(h V , G).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1." xml:id="_Wfp78nH">Probabilities of Structure Building Decisions</head><p xml:id="_eaAn2tH">Our graph generative model defines a distribution over the sequence of graph generating decisions by defining a probability distribution over possible outcomes for each step. Each of the decision steps is modeled using one of the three modules defined according to the following equations, and illustrated in Figure <ref type="figure" coords="4,136.53,493.77,3.88,8.64" target="#fig_1">2</ref>:</p><formula xml:id="formula_5" coords="4,103.04,509.85,186.40,14.22">h (T ) V = prop (T ) (h V , G)<label>(5)</label></formula><formula xml:id="formula_6" coords="4,103.04,527.83,186.40,45.61">h G = R(h (T ) V , G) (6) f addnode (G) = softmax(f an (h G )) (7) f addedge (G, v) = σ(f ae (h G , h (T ) v ))<label>(8)</label></formula><formula xml:id="formula_7" coords="4,103.04,577.67,186.40,26.66">s u = f s (h (T ) u , h (T ) v ), ∀u ∈ V (9) f nodes (G, v) = softmax(s)<label>(10)</label></formula><p xml:id="_7AAdmYR">(a) f addnode (G) In this module, we take an existing graph G as input, together with its node representations h V , to produce the parameters necessary to make the decision whether to terminate the algorithm or add another node (this will be probabilities for each node type if nodes are typed).</p><p xml:id="_EhnYwWX">To compute these probabilities, we first run T rounds of propagation to update node vectors, after which we compute a graph representation vector and predict an output from there through a standard MLP followed by softmax or logistic sigmoid. This process is formulated in Eq. 5, 6, 7.</p><p xml:id="_54n3DBd">Here the superscript (T ) indicates the results after running the propagation T times. f an is a MLP that maps the graph representation vector h G to the action output space, here it is the probability (or a vector of probability values) of adding a new node (type) or terminating.</p><p xml:id="_ycKps2E">After the predictions are made, the new node vectors h (T ) V are carried over to the next step, and the same carry-over is applied after each and any decision step. This makes the node vectors recurrent, across both the propagation steps and the different decision steps.</p><p xml:id="_eQvvTHn">(b) f addedge <ref type="bibr" coords="4,351.58,227.24,25.20,8.74">(G, v)</ref> This module is similar to (a), we only change the output module slightly as in Eq. 8 to get the probability of adding an edge to the newly created node v through a different MLP f ae , after getting the graph representation vector h G .</p><p xml:id="_QxpFsvU">(c) f nodes (G, v) In this module, after T rounds of propagation, we compute a score for each node (Eq. 9), which is then passed through a softmax to be properly normalized (Eq. 10) into a distribution over nodes. f s maps pairs h u and h v to a score s u for connecting u to the new node v. This can be extended to handle typed edges by making s u a vector of scores same size as the number of edge types, and taking the softmax over all node and edge types.</p><p xml:id="_FPybRJv">Initializing Node States Whenever a new node is added to the graph, we need to initialize its state vector. The initialization can be based on any inputs associated with the node. We also aggregate across the graph to get a graph vector, and use it as an extra source of input for initialization. More concretely, h v for a new node v is initialized as</p><formula xml:id="formula_8" coords="4,366.72,472.29,174.72,9.68">h v = f init (R init (h V , G), x v ).<label>(11)</label></formula><p xml:id="_rGKTnwu">Here x v is any input feature associated with the node, e.g. node type embeddings, and R init (h V , G) computes a graph representation, f init is an MLP. If not using R init (h V , G) as part of the input to the initialization module, nodes with the same input features added at different stages of the generation process will have the same initialization.</p><p xml:id="_BQ8KdQt">Adding the graph vector can disambiguate them.</p><p xml:id="_BXrybj6">Conditional Generative Model The graph generative model described above can also be used to do conditional generation, where some input is used to condition the generation process. We only need to make a few minor changes to the model architecture, by making a few design decisions about where to add in the conditioning information.</p><p xml:id="_RN8ntr7">The conditioning information comes in the form of a vector, and then it can be added in one or more of the following modules: (1) the propagation process;</p><p xml:id="_hrMUkrA">(2) the output component for the three modules, i.e. in f an , f ae and f s ; (3) the node state initialization module f init . In our experiments, we use the conditioning information only in f init . Standard techniques for improving conditioning like attention can also be used, where we can use the graph representation to compute a query vector. See the Appendix for more details.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2." xml:id="_hzhrQ28">Training and Evaluation</head><p xml:id="_kf2gTbq">Our graph generative model defines a joint distribution p(G, π) over graphs G and node and edge ordering π (corresponding to the derivation in a traditional graph grammar). When generating samples, both the graph itself and an ordering are generated by the model. For both training and evaluation, we are interested in the marginal p(G) = π∈P(G) p(G, π). This marginal is, however, intractable to compute for moderately large graphs as it involves a sum over all possible permutations. To evaluate this marginal likelihood we therefore need to use either sampling or some approximation instead. One Monte-Carlo estimate is based on importance sampling, where</p><formula xml:id="formula_9" coords="5,74.77,298.21,210.52,26.35">p(G) = π p(G, π) = E q(π|G) p(G, π) q(π | G) . (<label>12</label></formula><formula xml:id="formula_10" coords="5,285.29,305.27,4.15,8.64">)</formula><p xml:id="_eFUVAKc">Here q(π|G) is any proposal distribution over permutations, and the estimate can be obtained by generating a few samples from q(π | G) and then average p(G, π)/q(π | G) for the samples. The variance of this estimate is minimized when</p><formula xml:id="formula_11" coords="5,79.61,379.67,85.75,8.74">q(π | G) = p(π | G).</formula><p xml:id="_H3sgWye">When a fixed canonical ordering is available for any arbitrary G, we can use it to train and evaluate our model by taking q(π | G) to be a delta function that puts all the probability on this canonical ordering. This choice of q, however, only gives us a lower bound on the true marginal likelihood as it does not have full support over the set of all permutations.</p><p xml:id="_HDj3xAN">In training, since direct optimization of log p(G) is intractable, we learn the joint distribution p(G, π) instead by maximizing the expected joint log-likelihood</p><formula xml:id="formula_12" coords="5,56.47,511.18,231.94,9.95">E pdata(G,π) [log p(G, π)] = E pdata(G) E pdata(π|G) [log p(G, π)].</formula><p xml:id="_U6y7fVE">(13) Given a dataset of graphs, we can get samples from p data (G) easily, and we have the freedom to choose p data (π|G) for training. Since the maximizer of Eq. 13 is p(G, π) = p data (G, π), to make the training process match the evaluation process, we can take</p><formula xml:id="formula_13" coords="5,176.70,582.91,114.48,9.64">p data (π | G) = q(π | G).</formula><p xml:id="_6CYztXg">Training with such a p data (π | G) will drive the posterior of the model distribution p(π | G) close to the proposal distribution q(π | G), therefore improving the quality of our estimate of the marginal probability.</p><p xml:id="_yNwtXq4">Ordering is an important issue for our graph model, in the experiments we always use a fixed ordering or uniform random ordering for training, and leave the potentially better solution of learning an ordering to future work. In particular, in the learning to rank literature there is an extensive body of work on learning distributions over permutations, for example the Mallows model <ref type="bibr" coords="5,410.81,82.49,64.70,8.64" target="#b22">(Mallows, 1957)</ref> and the Plackett-Luce model <ref type="bibr" coords="5,359.50,94.45,64.88,8.64" target="#b26">(Plackett, 1975;</ref><ref type="bibr" coords="5,427.55,94.45,47.90,8.64" target="#b20">Luce, 1959)</ref>, which may be used here. Interested readers can also refer to <ref type="bibr" coords="5,499.51,106.40,41.93,8.64;5,307.44,118.36,47.80,8.64" target="#b18">(Leskovec et al., 2010;</ref><ref type="bibr" coords="5,357.72,118.36,85.60,8.64" target="#b34">Vinyals et al., 2015a;</ref><ref type="bibr" coords="5,445.82,118.36,81.48,8.64" target="#b33">Stewart et al., 2016)</ref> for discussions of similar ordering issues from different angles.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5." xml:id="_8vXprq2">Experiments</head><p xml:id="_t78C4xm">There are two major distinctions between the proposed graph model and typical sequence models like LSTMs: (1) model architecture -our model is graph-structured with structured memory, while the LSTM stores information in flat vectors; (2) graph generating grammar -our model uses the generic graph generating decision sequence for generation, while the LSTM uses a linearization of the graphs, which typically encodes knowledge specific to a domain. For example, for molecules, SMILES strings provide one way to linearize the molecule graph into a string, addressing practical issues like ordering of nodes. In this section, we study the properties and performance of different graph generation models on three different tasks, and compare them along the 2 dimensions, architecture and grammar. For the graph model in particular, we also study the effect of different ordering strategies. More experiment results and detailed settings are included in Appendix C.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1." xml:id="_4mJYPZh">Generation of Synthetic Graphs with Certain Topological Properties</head><p xml:id="_aqz3D3B">In the first experiment, we train models on three sets of synthetic undirected graphs: (1) cycles, (2) trees, and (3) graphs generated by the Barabasi-Albert model <ref type="bibr" coords="5,494.96,449.19,47.25,8.64;5,307.08,461.14,51.42,8.64" target="#b1">(Barabási &amp; Albert, 1999)</ref>, which is a good model for power-law degree distribution. The goal is to examine qualitatively how well our model can learn to adapt itself to generate graphs of drastically different characteristics, which contrasts with previous works that can only model certain type of graphs.</p><p xml:id="_kftSsSm">We generate data on the fly during training, all cycles and trees have between 10 to 20 nodes, and the Barabasi-Albert model is set to generate graphs of 15 nodes and each node is connected to 2 existing nodes when added to the graph.</p><p xml:id="_eJkg6jb">We compare our model against the <ref type="bibr" coords="5,451.31,580.69,90.79,8.64" target="#b8">Erdős &amp; Rényi (1960)</ref> random graph model and a LSTM baseline trained on the graph generating sequence (see e.g. Figure <ref type="figure" coords="5,477.21,604.60,4.07,8.64">8</ref>) as no domainspecific linearization is available. We estimate the edge probability parameter p in the Erdős-Rényi model using maximum likelihood. During training, for each graph we uniformly randomly permute the orderings of the nodes and order the edges by node indices, and then present the permuted graph to the models. On all three sets, we used a graph model with node state dimensionality of 16 and set the number of propagation steps T = 2, and the LSTM  The training curves plotting − log p(G, π) with G, π sampled from the training distribution, comparing the graph model and the LSTM model, are shown in Figure <ref type="figure" coords="6,256.96,349.92,3.78,8.64" target="#fig_2">3</ref>. From these curves we can clearly see that the graph models have better asymptotic performance.</p><p xml:id="_VJwC5BA">We further evaluate the samples of these models and check how well they align with the topological properties of different datasets. We generated 10,000 samples from each model. For cycles and trees, we evaluate what percentage of samples are actually cycles or trees. For Barabasi-Albert graphs, we compute the node degree distribution of the samples and evaluate its KL to the data distribution. The results are shown in Table <ref type="table" coords="6,134.83,475.45,51.51,8.64" target="#tab_3">1 and Figure</ref>  the proposed graph model has the capability to match the training data well in all these metrics. Note that we used the same graph model on three different sets of graphs, and the model learns to adapt to the data.</p><p xml:id="_rm9W5DH">Here the success of the graph model compared to the LSTM baseline can be partly attributed to the ability to refer to specific nodes in a graph. The ability to do this inevitably requires keeping track of a varying set of objects and pointing to them, which is non-trivial for a LSTM to do. Pointer networks <ref type="bibr" coords="6,55.11,696.62,86.32,8.64" target="#b35">(Vinyals et al., 2015b</ref>) can be used to handle the pointers, but building a varying set of objects is challenging in the first place, and the graph model provides a way to do it. In the second experiment, we train graph generative models for the task of molecule generation. Recently, there has been a number of papers tackling this problem by using RNN language models on SMILES string representations of molecules <ref type="bibr" coords="6,459.59,297.27,81.84,8.64;6,307.44,309.23,46.55,8.64" target="#b10">(Gómez-Bombarelli et al., 2016;</ref><ref type="bibr" coords="6,356.48,309.23,74.04,8.64" target="#b30">Segler et al., 2017;</ref><ref type="bibr" coords="6,433.01,309.23,105.94,8.64" target="#b4">Bjerrum &amp; Threlfall, 2017)</ref>. An example molecule and its corresponding SMILES string are shown in Figure <ref type="figure" coords="6,386.02,333.14,3.66,8.64" target="#fig_4">5</ref>. <ref type="bibr" coords="6,396.29,333.14,76.86,8.64" target="#b16">Kusner et al. (2017)</ref> took one step further and used context free grammar to model the SMILES strings. However, inherently molecules are graph structured objects where it is possible to have cycles.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2." xml:id="_G584PjX">Molecule Generation</head><p xml:id="_zVZCefp">Properties of the Graph Model. We used the ChEMBL molecule database (also used in <ref type="bibr" coords="6,436.81,398.89,78.59,8.64" target="#b30">(Segler et al., 2017;</ref><ref type="bibr" coords="6,517.89,398.89,21.01,8.64;6,307.44,410.85,71.43,8.64" target="#b24">Olivecrona et al., 2017)</ref>) for this study. We restricted the dataset to molecules with at most 20 heavy atoms, and used a training / validation / test split of 130,830 / 26,166 / 104,664 examples each. The chemical toolkit <ref type="bibr" coords="6,456.03,446.71,55.56,8.64" target="#b27">RDKit (2006)</ref> is used to convert between the SMILES strings and the graph representation of the molecules. Both the nodes and the edges in molecule graphs are typed. All the model hyperparameters are tuned on the validation set, number of propagation steps T is chosen from {1, 2}.</p><p xml:id="_RVcPHrD">We compare the graph model with LSTM models along the two dimensions, architecture and grammar. More specifically we have LSTM models trained on SMILES strings, graph models trained on generic graph generating sequences, and in between these two, LSTM models on the same graph generating sequences.</p><p xml:id="_ZQAHfhq">In addition, we also study the effect of node / edge ordering for different models. RDKit can produce canonical SMILES for each molecule as well as the associated canonical edge ordering. We first trained models using these canonicalized representations and orderings. We also studied the effect of randomly permuted ordering, where for models using the graph grammar we permute the node ordering and change the edge ordering correspondingly, and for the LSTM on SMILES, we convert the SMILES into a graph, permute the Fixed Order</p><formula xml:id="formula_14" coords="7,107.20,70.35,398.70,57.83">O C C C O C C C C C C Br C O C C C C C C Br C C N C C O C C C C C C Br C C N C C C C C C C O C C C C C C Br C C N C C C C C C C</formula><p xml:id="_ZDurHf2">Step 5</p><p xml:id="_Chsg3GD">Step 15</p><p xml:id="_G6EFp5p">Step 25</p><p xml:id="_ks3VW64">Step 35 Final Sample Random Order</p><formula xml:id="formula_15" coords="7,106.66,150.01,399.27,49.63">C C C C N C C C C C N C C O C C C C C C C C N C C O C C C C Cl C O C C C C C N C C O C C C C Cl C O C O C C C C C C N C C O C C C C Cl C O C O C C C C</formula><p xml:id="_UScGBmf">Step 5</p><p xml:id="_STRzNq2">Step 15</p><p xml:id="_6DKxhJ8">Step 25</p><p xml:id="_Xs6PryB">Step 35 Final Sample   node ordering and then convert back to SMILES without canonicalization, similar to <ref type="bibr" coords="7,166.12,445.56,62.95,8.64">(Bjerrum, 2017)</ref>.</p><p xml:id="_NnzPGbU">Table <ref type="table" coords="7,80.77,463.49,5.08,8.64" target="#tab_4">2</ref> shows the comparison of different models under different training settings. We evaluated the negative loglikelihood (NLL) for all models with the canonical (fixed) ordering on the test set, i.e. − log p(G, π). Note the models trained with random ordering are not optimizing this metric. In addition, we also generated 100,000 samples from each model and evaluate the percentage of well-formatted molecule representations and the percentage of unique novel samples not already seen in the training set following <ref type="bibr" coords="7,55.11,571.09,77.21,8.64" target="#b30">(Segler et al., 2017;</ref><ref type="bibr" coords="7,134.80,571.09,91.01,8.64" target="#b24">Olivecrona et al., 2017)</ref>. The LSTM on SMILES strings has a slight edge in terms of likelihood evaluated under canonical ordering (which is domain specific), but the graph model generates significantly more valid and novel samples. It is also interesting that the LSTM model trained with random ordering improves NLL, this is probably related to overfitting. Lastly, when compared using the generic graph generation decision sequence, the Graph model outperforms LSTM in NLL as well. In Appendix C.2, we show the distribution of a few chemical metrics for the generated samples to further assess their quality.</p><p xml:id="_pkfJTpe">It is intractable to estimate the marginal likelihood p(G) = π p(G, π) for large molecules. However, for small molecules this is possible by brute force. We did the enumeration and evaluated the 6 models on small molecules with no more than 6 nodes. In the evaluation, we computed the NLL with the fixed canonical ordering and also find NLL with the best possible ordering, as well as the true marginal. The results are shown in Table <ref type="table" coords="7,429.29,322.88,3.67,8.64" target="#tab_5">3</ref>. On these small molecules, the graph model trained with random ordering has better marginal likelihood, and surprisingly for the models trained with fixed ordering, the canonical ordering they are trained on are not always the best ordering, which suggests that there are big potential for actually learning an ordering.</p><p xml:id="_uXmJ6hm">Figure <ref type="figure" coords="7,336.44,400.59,5.08,8.64" target="#fig_5">6</ref> shows a visualization of the molecule generation processes for the graph model. The model trained with canonical ordering learns to generate nodes and immediately connect it to the latest part of the generated graph, while the model trained with random ordering took a completely different approach by generating pieces first and then connect them together at the end.</p><p xml:id="_KxwhuG6">Comparison with Previous Approaches. We also trained our graph model for molecule generation on the Zinc dataset <ref type="bibr" coords="7,307.11,514.16,130.84,8.64" target="#b10">(Gómez-Bombarelli et al., 2016)</ref>, where a few benchmark results are available for comparison. For this study we used the dataset provided by <ref type="bibr" coords="7,401.72,538.07,77.25,8.64" target="#b16">Kusner et al. (2017)</ref>. After training, we again generate 100,000 samples from the model and evaluate the percentage of the valid and novel samples. We used the code and pretrained models provided by <ref type="bibr" coords="7,513.56,579.92,28.05,8.64;7,307.44,591.87,48.60,8.64" target="#b16">Kusner et al. (2017)</ref> to evaluate the performance of CVAE, a VAE-RNN model, and GrammarVAE which improves CVAE by using a decoder that takes into account the SMILES grammar. CVAE failed completely on this task, generating only 5 valid molecules out of 100k samples, GrammarVAE improves %valid to 34.9%. GraphVAE <ref type="bibr" coords="7,476.70,651.65,65.52,8.64;7,307.44,663.60,76.54,8.64" target="#b31">(Simonovsky &amp; Komodakis, 2018)</ref> provides another baseline which is a generative model of the graph adjacency matrices, which generates only 13.5% valid samples.</p><p xml:id="_MGGku5k">On the other hand, our graph model trained with canoni- cal ordering achieves a %valid of 89.2%, and 74.3% with random ordering. Among all the samples only less than 0.1% are duplicates in the training set. Figure <ref type="figure" coords="8,235.16,210.38,4.88,8.64" target="#fig_8">7</ref> shows some samples comparing our model and the GrammarVAE. More results are included in the Appendix.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3." xml:id="_PEPQ2Xg">Conditional Graph Generation</head><p xml:id="_SNjEpQ9">In For each of the conditioning scenarios, we randomly pick 10,000 conditioning vectors and use the models to generate one sample for each of them. To evaluate the performance, we measure the percentage of samples that have the number of atoms, bonds, rings, and all three that match the conditioning vector, in addition to %valid and %novel.</p><p xml:id="_GDqxamH">Table <ref type="table" coords="8,80.45,565.00,5.08,8.64" target="#tab_6">4</ref> shows the results of this study. Our graph model consistently generates more valid and novel samples than the LSTM model across all settings. While both of the two model perform similarly in terms of sample quality when c comes from the training set, our graph model does significantly better in interpolation and extrapolation settings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6." xml:id="_k9xj9P5">Discussions and Future Directions</head><p xml:id="_DHYbKbm">The proposed graph model is a powerful model capable of generating arbitrary graphs. However, there are still a number of challenges facing these models. Here we discuss a few challenges and possible solutions going forward.</p><p xml:id="_bbUBn5v">Ordering Ordering of nodes and edges is critical for both learning and evaluation. In the experiments we always used predefined distribution over orderings. However, it may be possible to learn an ordering of nodes and edges by treating the ordering π as a latent variable, this is an interesting direction to explore in the future.</p><p xml:id="_Je6s3Fv">Long Sequences The generation process used by the graph model is typically a long sequence of decisions. If other forms of graph linearization is available, e.g. SMILES, then such sequences are typically 2-3x shorter. This is a significant disadvantage for the graph model, it not only makes it harder to get the likelihood right, but also makes training more difficult. To alleviate this problem we can tweak the graph model to be more tied to the problem domain, and reduce multiple decision steps and loops to single steps.</p><p xml:id="_HVb7MyK">Scalability Scalability is a challenge to the graph generative model we proposed in this paper. The graph nets use a fixed T propagation steps to propagate information on the graph. However, large graphs require large T s to have sufficient information flow, this would limit the scalability of these models. To solve this problem, we may use models that sequentially sweep over edges, like <ref type="bibr" coords="8,451.07,333.55,87.30,8.64" target="#b25">(Parisotto et al., 2016)</ref>, or come up with ways to do coarse-to-fine generation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_fdcy3Vf">Difficulty in Training</head><p xml:id="_3hVB36n">We have found that training such graph models is more difficult than training typical LSTM models. The sequences these models are trained on are typically long, and the model structure is constantly changing, which leads to unstable training. Lowering the learning rate can solve a lot of instability problems, but more satisfying solutions may be obtained by tweaking the model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7." xml:id="_Vn4VvGc">Conclusion</head><p xml:id="_f6umJdQ">In this paper, we proposed a powerful deep generative model capable of generating arbitrary graphs through a sequential process. We studied its properties on a few graph generation problems. This model has shown great promise and has unique advantages over standard LSTM models. We hope that our results can spur further research in this direction to obtain better generative models of graphs. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_22pRTnJ">Training Set</head><p xml:id="_eypUMF3">Our Model GrammarVAE  <ref type="bibr" coords="9,466.92,190.59,75.12,7.77" target="#b16">(Kusner et al., 2017)</ref> showed better samples for GrammarVAEs in a neighborhood around a data example, while here we are showing samples from the prior.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_45nbUxn">A. Graph Generation Process</head><p xml:id="_eHjfnnU">The graph generation process is presented in Algorithm 1 for reference.</p><p xml:id="_SRuKqBE">Figure <ref type="figure" coords="11,83.91,119.80,4.98,8.64">8</ref> shows an example graph. Here the graph contains three nodes {0, 1, 2}, and three edges {(0, 1), (0, 2), (1, 2)}.</p><p xml:id="_3WZDG7V">Consider generating nodes in the order of 0, 1 and 2, and generating edge (0, 2) before (1, 2), then the corresponding decision sequence is the one shown on the left. Here the decisions are indented to clearly show the two loop levels.</p><p xml:id="_V2d3QBQ">On the right we show another possible generating sequence generating node 1 first, and then node 0 and 2. In general, for each graph there might be many different possible orderings that can generate it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_FZs4jWH">B. Model Implementation Details</head><p xml:id="_P6NHTmw">In this section we present more implementation details about our graph generative model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_XsVrRaX">B.1. The Propagation Model</head><p xml:id="_4ahuea6">The message function f e is implemented as a fully connected neural network, as the following:</p><formula xml:id="formula_16" coords="11,55.44,360.61,243.34,9.68">m u→v = f e (h u , h v , x u,v ) = MLP(concat([h u , h v , x u,v ])).</formula><p xml:id="_h7HAxpb">We can also use an additional edge function f e to compute the message in the reverse direction as</p><formula xml:id="formula_17" coords="11,55.44,408.43,246.14,10.65">m v→u = f e (h u , h v , x u,v ) = MLP (concat([h u , h v , x u,v ])).</formula><p xml:id="_bdyYTBM">When not using reverse messages, the node activation vectors are computed as</p><formula xml:id="formula_18" coords="11,126.91,457.91,91.05,20.56">a v = u:(u,v)∈E m u→v .</formula><p xml:id="_qwWgZGv">When reverse messages are used, the node activations are</p><formula xml:id="formula_19" coords="11,88.48,506.34,167.93,20.56">a v = u:(u,v)∈E m u→v + u:(v,u)∈E m u→v .</formula><p xml:id="_5rz7q9V">The node update function f n is implemented as a recurrent cell in RNNs, as the following:</p><formula xml:id="formula_20" coords="11,122.36,565.23,100.16,10.65">h v = RNNCell(h v , a v ),</formula><p xml:id="_KjHE6e2">where RNNCell can be a vanilla RNN cell, where</p><formula xml:id="formula_21" coords="11,55.44,70.54,439.46,625.73">h v = σ(Wh v + Ua v ), a GRU cell z v = σ(W z h v + U z a v ), r v = σ(W r h v + U z a v ), hv = tanh(W(r v h v ) + Ua v ), h v = (1 − z v ) h v + z v hv , or an LSTM cell i v = σ(W i h v + U i a v + V i c v ), f v = σ(W f h v + U f a v + V v c v ), cv = tanh(W c h v + U c a v ), c v = f v c v + i v cv , o v = σ(W o h v + U o a v + V o c v ), h v = o v tanh(c v ).</formula><p xml:id="_VpRmYWf">In the experiments, we used a linear layer in the message functions f e in place of the MLP, and we set the dimensionality of the outputs to be twice the dimensionality of the node state vectors h u . For the synthetic graphs and molecules, f e and f e share the same set of parameters, while for the parsing task, f e and f e have different parameters. We always use GRU cells in our model. Overall GRU cells and LSTM cells perform equally well, and both are significantly better than the vanilla RNN cells, but GRU cells are slightly faster than the LSTM cells.</p><p xml:id="_A7GsfFE">Note that each round of propagation can be thought of as a graph propagation "layer". When propagating for a fixed number of T rounds, we can have tied parameters on all layers, but we found using different parameters on all layers perform consistently better. We use untied weights in all experiments.</p><p xml:id="_wpg69R7">For aggregating across the graph to get graph representation vectors, we first map the node representations h v into a higher dimensional space</p><formula xml:id="formula_22" coords="11,423.64,412.36,60.22,12.19">h G v = f m (h v )</formula><p xml:id="_yrB3Dh9">, where f m is another MLP, and then h G = v∈V h G v is the graph representation vector. We found gated sum</p><formula xml:id="formula_23" coords="11,383.51,455.36,81.37,22.13">h G = v∈V g G v h G v</formula><p xml:id="_hx3zSAR">to be consistently better than a simple sum, where g G v = σ(g m (h v )) is a gating vector. In the experiments we always use this form of gated sum, and both f m and g m are implemented as a single linear layer, and the dimensionality of h G is set to twice the dimensionality of h v .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_2gHJ5DK">B.2. The Output Model</head><p xml:id="_4TtR5CR">(a) f addnode (G) This module takes an existing graph as input and produce a binary (non-typed nodes) or categorical output (typed nodes). More concretely, after obtaining a graph representation h G , we feed that into an MLP f an to output scores. For graphs where the nodes are not typed, we have f an (h G ) ∈ R and the probability of adding one more node is</p><formula xml:id="formula_24" coords="11,312.95,667.49,222.99,9.65">f addnode (G) = p(add one more node|G) = σ(f an (h G )).</formula><p xml:id="_6mt2jXp">For graphs where the nodes can be one of K types, we make</p><formula xml:id="formula_25" coords="11,307.44,695.80,235.25,11.23">f an output a K + 1-dimensional vector f an (h G ) ∈ R K+1 , Algorithm 1 Generative Process for Graphs 1: E 0 = φ, V 0 = φ, G 0 = (V 0 , E 0 ), t = 1 Initial graph is empty 2: p addnode t ← f addnode (G t−1 )</formula><p xml:id="_n9W4QsW">Probabilities of initial node type and STOP 3: v t ∼ Categorical(p addnode t )</p><p xml:id="_UqWJ2FM">Sample initial node type or STOP 4: while v t = STOP do 5:</p><formula xml:id="formula_26" coords="12,60.42,131.74,480.52,36.32">V t ← V t−1 ∪ {v t } Incorporate node v t 6: E t,0 ← E t−1 , i ← 1 7: p addedge t,i ← f addedge ((V t , E t,0 ), v t )</formula><p xml:id="_T83UF8s">Probability of adding an edge to v t 8:</p><formula xml:id="formula_27" coords="12,87.32,169.13,98.79,13.65">z t,i ∼ Bernoulli(p addedge t,i</formula><p xml:id="_Qv7FvJq">) Sample whether to add an edge to v t 9:</p><p xml:id="_H2AdGJQ">while z t,i = 1 do Add edges pointing to new node v t 10:</p><formula xml:id="formula_28" coords="12,55.94,194.29,485.01,36.45">p nodes t,i ← f nodes ((V t , E t,i−1 ), v t ) Probabilities of selecting each node in V t 11: v t,i ∼ Categorical(p nodes t,i ) 12: E t,i ← E t,i−1 ∪ {(v t,i , v t )} Incorporate edge v t − v t,i</formula><p xml:id="_MkxkGDn">13:</p><p xml:id="_WBB7Vsp">i ← i + 1</p><p xml:id="_TNyPbS8">14:  We add an extra type K + 1 to represent the decision of not adding any more nodes.</p><formula xml:id="formula_29" coords="12,102.27,242.28,141.75,13.65">p addedge t,i ← f addedge ((V t , E t,i−1 ), v t )</formula><p xml:id="_ncbKhFm">In the experiments, f an is always implemented as a linear layer and we found this to be sufficient.</p><p xml:id="_BQ4seyF">(b) f addedge (G, v) This module takes the current graph and a newly added node v as input and produces a probability of adding an edge. In terms of implementation it is treated as exactly the same as (a), except that we add the new node into the graph first, and use a different set of parameters both in the propagation module and in the output module where we use a separate f ae in place of f an . This module always produces Bernoulli probabilities, i.e. probability for either adding one edge or not. Typed edges are handled in (c).</p><p xml:id="_gBmq4qH">(c) f nodes <ref type="bibr" coords="12,101.00,696.30,25.20,8.74">(G, v)</ref> This module picks one of the nodes in the graph to be connected to node v. After propagation, we have node representation vectors h (T ) u for all u ∈ V , then a score s u ∈ R for each node u is computed as</p><formula xml:id="formula_30" coords="12,318.53,419.37,201.86,12.69">s u = f s (h (T ) u , h (T ) v ) = MLP(concat([h (T ) u , h (T ) v ]</formula><p xml:id="_2cZZPvw">)), The probability of a node being selected is then a softmax over these scores</p><formula xml:id="formula_31" coords="12,382.30,465.88,80.32,24.72">p u = exp(s u ) u exp(s u )</formula><p xml:id="_4cVWH3v">.</p><p xml:id="_ZTC6YKR">For graphs with J types of edges, we produce a vector s u ∈ R J for each node u, by simply changing the output size of the MLP for f s . Then the probability of a node u and edge type j being selected is a softmax over all scores across all nodes and edge types p u,j = exp(s u,j ) u ,j exp(s u ,j ) .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_QBEr9JW">B.3. Initialization and Conditioning</head><p xml:id="_Yp8MJAr">When a new node v is created, its node vector h v need to be initialized. In our model the node vector h v is initialized using inputs from a few different sources: (1) a node type embedding or any other node features that are available;</p><p xml:id="_cjYa4E7">(2) a summary of the current graph, computed as a graph representation vector after aggregation;</p><p xml:id="_Xu2hF7N">(3) any conditioning information, if available. </p><formula xml:id="formula_32" coords="13,126.86,326.58,90.67,22.03">h init G = v∈V g init v h init v</formula><p xml:id="_3Trcwnv">where g init v and h init v are the gating vectors and projected node state vectors as described in B.1, but with different set of parameters; (3) is a conditioning vector c if available. h v is then initialized as</p><formula xml:id="formula_33" coords="13,69.95,414.86,204.99,12.59">h v = f init (e, h init G , c) = MLP(concat([e, h init G , c])).</formula><p xml:id="_R7hmcPm">The conditioning vector c summarizes any conditional input information, for images this can be the output of a convolutional neural network, for text this can be the output of an LSTM encoder. In the parse tree generation task, we employed an attention mechanism similar to the one used in <ref type="bibr" coords="13,55.11,500.84,86.25,8.64" target="#b36">(Vinyals et al., 2015c)</ref>.</p><p xml:id="_Mc2fhNt">More specifically, we used an LSTM to obtain the representation of each input word h c i , for i ∈ {1, ..., L}. Whenever a node is created in the graph, we compute a query vector</p><formula xml:id="formula_34" coords="13,133.56,559.21,77.02,22.81">h q G = v∈V g q v h q v</formula><p xml:id="_5pg3TQq">which is again an aggregate over all node vectors. This query vector is used to compute a score for each input word as </p><formula xml:id="formula_35" coords="13,110.75,628.21,123.38,13.83">u c i = v tanh(Wh c i + Uh q G ),</formula><formula xml:id="formula_36" coords="13,395.97,314.52,56.94,21.98">c = i a c i h c i .</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_3KS5rMP">B.4. Learning</head><p xml:id="_VQcTbuW">For learning we have a set of training graphs, and we train our model to maximize the expected joint likelihood</p><formula xml:id="formula_37" coords="13,307.44,392.94,235.75,9.96">E pdata(G) E pdata(π|G) [log p(G, π)] as discussed in Section 4.2.</formula><p xml:id="_tFwBRnw">Given a graph G and a specified ordering π of the nodes and edges, we can obtain a particular graph generating sequence (Appendix A shows an example of this). The log-likelihood log p(G, π) can then be computed for this sequence, where the likelihood for each individual step is computed using the output modules described in B.2.</p><p xml:id="_25vbQXg">For p data (π|G) we explored two possibilities: (1) canonical ordering in the particular domain;</p><p xml:id="_3yDakhs">(2) uniform random ordering. The canonical ordering is a fixed ordering of a graph nodes and edges given a graph. For molecules, the SMILES string specified an ordering of nodes and edges which we use as the canonical ordering. In the implementation we used the default ordering provided in the chemical toolbox rdkit as the canonical ordering. For parsing we tried two canonical orderings, depth-first-traversal ordering and breadth-first-traversal ordering. For uniform random ordering we first generate a random permutation of node indices which gives us the node ordering, and then sort the edges according to the node indices to get edge ordering.</p><p xml:id="_3pkXDFK">When evaluating the marginals we take the permutations on edges into account as well.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_NGvrNbt">C. More Experiment Details and Results</head><p xml:id="_mXdGvWB">In this section we describe more detailed experiment setup and present more experiment results not included in the main paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_vWmhDzN">C.1. Synthetic Graph Generation</head><p xml:id="_gYReawT">For this experiment the hidden size of the LSTM model is set to 64 and the size of node states in the graph model is 16, number of propagation steps T = 2.</p><p xml:id="_8YgmUXn">For both models we selected the learning rates from {0.001, 0.0005, 0.0002} on each of the three sets. We used the Adam <ref type="bibr" coords="14,96.94,223.36,82.79,8.64" target="#b13">(Kingma &amp; Ba, 2014</ref>) optimizer for both.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_5mP75np">C.2. Molecule Generation</head><p xml:id="_G4ERA5j">Model Details Our graph model has a node state dimensionality of 128, the LSTM models have hidden size of 512. The two models have roughly the same number of parameters (around 2 million). Our graph model uses GRU cores as f n , we have tried LSTMs as well but they perform similarly as GRUs. We have also tried GRUs for the baselines, but LSTM models work slightly better. The node state dimensionality and learning rate are chosen according to grid search in {32, 64, 128, 256} × {0.001, 0.0005, 0.0002, 0.0001}, while for the LSTM models the hidden size and learning rate are chosen from {128, 256, 512, 1024} × {0.001, 0.0005, 0.0002}. The best learning rate for the graph model is 0.0001, while for the LSTM model the learning rate is 0.0002 or 0.0005. The LSTM model used a dropout rate of 0.5, while the graph model used a dropout rate of 0.2 which is applied to the last layer of the output modules. As discussed in the main paper, the graph model is significantly more unstable than the LSTM model, and therefore a much smaller learning rate should be used. The number of propagation steps T is chosen from {1, 2}, increasing T is in principle beneficial for the graph representations, but it is also more expensive. For this task a small T is already showing a good performance so we didn't explore much further. Overall the graph model is roughly 2-3x slower than the LSTM model with similar amount of parameters in our comparison.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_8CAHPrS">Distribution of chemical properties for samples</head><p xml:id="_QyxCR6m">Here we examine the distribution of chemical metrics for the valid samples generated from trained models. For this study we chose a range of chemical metrics available from <ref type="bibr" coords="14,257.66,630.87,33.03,8.64;14,55.44,642.82,21.02,8.64" target="#b27">(RDKit, 2006)</ref>, and computed the metrics for 100,000 samples generated from each model. For reference, we also computed the same metrics for the training set, and compare the sample metrics with the training set metrics.</p><p xml:id="_MBzbTnq">For each metric, we create a histogram to show its distribution across the samples, and compare the histogram to the histogram on the training set by computing the KL divergence between them. The results are shown in Figure <ref type="figure" coords="14,535.67,82.49,3.75,8.64" target="#fig_11">9</ref>. Note that all models are able to match the training distribution on these metrics quite well, notably the graph model and LSTM model trained on permuted node and edge sequences has a bias towards generating molecules with higher SA scores which is a measure of the ease of synthesizing the molecules. This is probably due to the fact that these models are trained to generate molecular graphs in arbitrary order (as apposed to following the canonical order that makes sense chemically), therefore more likely to generate things that are harder to synthesize. However, this can be overcome if we train with RL to optimize for this metric. The graph model trained with permuted nodes and edges also has a slight bias toward generating larger molecules with more atoms and bonds.</p><p xml:id="_eVRJ2R9">We also note that the graph and LSTM models trained on permuted nodes and edge sequences can still be improved as they are not even overfitting after 1 million training steps. This is because with node and edge permutation, these models see on the order of n! times more data than the other models. Given more training time these models can improve further.</p><p xml:id="_vnf9wTE">Changing the bias for f addnode and f addedge Since our graph generation model is very modular, it is possible to tweak the model after it has been trained. For example, we can tweak a single bias parameter in f addnode and f addedge to increase or decrease the graph size and edge density.</p><p xml:id="_Fg6B8Fw">In Figure <ref type="figure" coords="14,349.45,434.39,10.16,8.64" target="#fig_13">10</ref> (a) we show the shift in the distribution of number of atoms for the samples when changing the f addnode bias. As the bias changes, the samples change accordingly while the model is still able to generate a high percentage of valid samples.</p><p xml:id="_SWAAPPu">Figure <ref type="figure" coords="14,336.28,500.14,24.35,8.64" target="#fig_13">10 (b)</ref> shows the shift in the distribution of number of bonds for the samples when changing the f addedge bias. The number of bonds, i.e. number of edges in the molecular graph, changes as this bias changes. Note that this level of fine-grained control of edge density in sample generation is not straightforward to achieve with LSTM models trained on SMILES strings. Note that however here the increasing the f addedge slightly changed the average node degree, but negatively affected the total number of bonds. This is because the edge density also affected the molecule size, and when the bias is negative, the model tend to generate larger molecules to compensate for this change, and when this bias is positive, the model tend to generate smaller molecules. Combining f addedge bias and f addnode bias can achieve the net effect of changing edge density.</p><p xml:id="_2UEd8AN">Step-by-step molecule generation visualization Here we show a few examples for step-by-step molecule gener-  ation. Figure <ref type="figure" coords="15,113.67,492.83,10.16,8.64" target="#fig_17">11</ref> shows an example of such step-by-step generation process for a graph model trained on canonical ordering, and Figure <ref type="figure" coords="15,137.22,516.75,9.76,8.64" target="#fig_18">12</ref> shows one such example for a graph model trained on permuted random ordering.</p><p xml:id="_qzjHek7">Overfitting the Canonical Ordering When trained with canonical ordering, our model will adapt its graph generating behavior to the ordering it is being trained on, Figure <ref type="figure" coords="15,83.03,595.00,9.76,8.64" target="#fig_17">11</ref> and Figure <ref type="figure" coords="15,138.67,595.00,9.76,8.64" target="#fig_18">12</ref> show examples on how the ordering used for training can affect the graph generation behavior.</p><p xml:id="_K3mqFxW">On the other side, training with canonical ordering can result in overfitting more quickly than training with uniform random ordering. In our experiments, training with uniform random ordering rarely overfits at all, but with canonical ordering the model overfits much more quickly. Effectively, with random ordering the model will see potentially factorially many possible orderings for the same graph, which can help reduce overfitting, but this also makes learning harder as many orderings do not exploit the structure of the graphs at all.</p><p xml:id="_etyugcb">Another interesting observation we have about training with canonical ordering is that models trained with canonical ordering may not assign the highest probabilities to the canonical ordering after training. From Table <ref type="table" coords="15,490.67,558.59,5.00,8.64" target="#tab_5">3</ref> we can see that the log-likelihood results for the canonical ordering (labeled "fixed ordering") is not always the same as the best possible ordering, even though they are quite close. Figure <ref type="figure" coords="15,337.80,612.39,10.16,8.64" target="#fig_2">13</ref> shows an example histogram of negative loglikelihood log p(G, π) across all possible orderings π for a small molecule under a model trained with canonical ordering. We can see that the small negative log-likelihood values concentrate on very few orderings, and a large number of orderings have significantly larger NLL. This shows that the model can learn to concentrate probabilities to orderings close to the canonical ordering, but it still "leaks" some probability to other orderings.   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Tg2qFq5">C.3. More Details on Comparison with Previous Approaches</head><p xml:id="_nSuA3NV">The complete results for models trained and evaluated on the Zinc dataset, including %Novel is shown in Table <ref type="table" coords="16,270.48,291.91,3.74,8.64" target="#tab_11">5</ref>.  <ref type="bibr" coords="16,164.08,428.31,68.70,7.77" target="#b16">Kusner et al. (2017)</ref>, and the results for GraphVAE are from <ref type="bibr" coords="16,142.86,439.27,123.83,7.77" target="#b31">(Simonovsky &amp; Komodakis, 2018)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_vJ5U5DF">Model</head><p xml:id="_vD7sRd7">Note the 34.9% number for GrammarVAEs were obtained by using the code and the pretrained model provided by <ref type="bibr" coords="16,55.44,488.22,83.09,8.64" target="#b16">Kusner et al. (2017)</ref>, and then generating samples from the prior N (0, I). In <ref type="bibr" coords="16,147.00,500.17,86.84,8.64" target="#b16">(Kusner et al., 2017)</ref> the provided %Valid numbers for CVAE is 0.7%, and 7.2% for Grammar VAES, while in <ref type="bibr" coords="16,124.57,524.08,144.01,8.64" target="#b31">(Simonovsky &amp; Komodakis, 2018)</ref>, the GrammarVAE is reported to have 35.7% valid samples. In our study, we found that the GrammarVAE generates a lot of invalid strings, and among the 34.9% valid samples, many are empty strings which are also counted as valid. Once these empty strings are excluded the percentage drops to 2.9%. Our graph models do not have similar problems. The graph models trained in this experiment are tuned with the same hyperparameter range as the ChEMBL experiment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_VaVNzAr">C.4. More Details about the Conditional Molecule Generation Tasks</head><p xml:id="_YWXZdd5">In this experiment, the 3-D conditioning vector c is first normalized by subtracting the mean and dividing by the standard deviation, then linearly mapped to a 128 dimensional space, passed through a tanh nonlinearity to get the conditioning vector fed into the models. For the graph model this vector is used in f init concatenated with other inputs.</p><p xml:id="_7htzJJ6">For the LSTM models this vector is further linearly mapped to 2 H-dimensional vectors where H is the dimensionality of the hidden states, and these 2 vectors will be used as the hidden state and the cell state for the LSTMs. The models in this section are tuned with the same hyperparameter range as the unconditioned generation tasks.</p><p xml:id="_P3hH5yB">The training data comes from the ChEMBL dataset we used for the unconditioned generation tasks. We chose to train the models on molecules with 0, 1 or 3 aromatic rings, and then interpolate or extrapolate to molecules with 2 or 4 rings.</p><p xml:id="_NwnUSEr">For each of the 0, 1, and 3 rings settings, we randomly pick 10,000 molecules from the ChEMBL training set, and put together a 30,000 molecule set for training the conditional generation models and validation. For training the models take as input both the molecule as well as the conditioning vector computed from it. Note the other two dimensions of the conditioning vector, namely number of atoms and number of rings can still vary for a given number of rings. Among these 30,000 molecules picked, 3,000 (1,000 for each ring number) are used for validation.</p><p xml:id="_VSF2GC2">For evaluation, we randomly sample 10,000 conditioning vectors from the training set, the set of 2-ring molecules and the set of 4-ring molecules. The last 2 sets are not used in training.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ageryGF">C.5. Extra Conditional Generation Task: Parsing</head><p xml:id="_rZDXq7K">In this experiment, we look at a conditional graph generation task -generating parse trees given an input natural language sentence. We took the Wall Street Journal dataset with sequentialized parse trees used in <ref type="bibr" coords="17,185.83,182.55,83.19,8.64" target="#b36">(Vinyals et al., 2015c)</ref>, and trained LSTM sequence to sequence models with attention as the baselines on both the sequentialized trees as well as on the decision sequences used by the graph model. In the dataset the parse trees are sequentialized following a topdown depth-first traversal ordering, we therefore used this ordering to train our graph model as well. Besides this, we also conducted experiments using the breadth-first traversal ordering. We changed our graph model slightly and replaced the loop for generating edges to a single step that picks one node as the parent for each new node to adapt to the tree structure. This shortens the decision sequence for the graph model, although the flattened parse tree sequence the LSTM uses is still shorter. We also employed an attention mechanism to get better conditioning information as for the sequence to sequence model.</p><p xml:id="_z38Pb2D">Table <ref type="table" coords="17,79.60,379.81,5.00,8.64" target="#tab_12">6</ref> shows the perplexity results of different models on this task. Since the length of the decision sequences for the graph model and sequentialized trees are different, we normalized the log-likelihood of all models using the length of the flattened parse trees to make them comparable. To measure sample quality we used another metric that checks if the generated parse tree exactly matches the ground truth tree. From these results we can see that the LSTM on sequentialized trees is better on both metrics, but the graph model does better than the LSTM trained on the same and more generic graph generating decision sequences, which is compatible with what we observed in the molecule generation experiment.</p><p xml:id="_GAyBmHq">One important issue for the graph model is that it relies on the propagation process to communicate information on the graph structure, and during training we only run propagation for a fixed T steps, and in this case T = 2. Therefore after a change to the tree structure, it is not possible for other remote parts to be aware of this change in such a small number of propagation steps. Increasing T can make information flow further on the graph, however the more propagation steps we use the slower the graph model would become, and more difficult it would be to train them. For this task, a tree-structured model like R3NN <ref type="bibr" coords="17,229.34,660.75,61.34,8.64;17,55.44,672.71,18.76,8.64" target="#b25">(Parisotto et al., 2016</ref>) may be a better fit which can propagate information on the whole tree by doing one bottom-up and one top-down pass in each iteration. On the other hand, the graph model is modeling a longer sequence than the sequentialized tree sequence, and the graph structure is constantly changing therefore so as the model structure, which makes training of such graph models to be considerably harder than LSTMs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_frKSVhm">Model Details</head><p xml:id="_RZbCxdw">In this experiment we used a graph model with node state dimensionality of 64, and an LSTM encoder with hidden size 256. Attention over input is implemented using a graph aggregation operation to compute a query vector and then use it to attend to the encoder LSTM states, as described in B.3. The baseline LSTM models have hidden size 512 for both the encoder and the decoder. Dropout of 0.5 is applied to both the encoder and the decoder. For the graph model the dropout in the decoder is reduced to 0.2 and applied to various output modules and the node initialization module. The baseline models have more than 2 times more parameters than the graph model (52M vs 24M), mostly due to using a larger encoder.</p><p xml:id="_TMXW4EH">The node state dimensionality for the graph model and the hidden size of the encoder LSTM is chosen from a grid search {16, 32, 64, 128} × {128, 256, 512}. For the LSTM seq2seq model the size of the encoder and decoder are always tied and selected from {128, 256, 512}. For all models the learning rate is selected from {0.001, 0.0005, 0.0002}.</p><p xml:id="_GQsVY3y">For the LSTM encoder, the input text is always reversed, which empirically is silghtly better than the normal order.</p><p xml:id="_4NYraTt">For the graph model we experimented with T ∈ {1, 2, 3, 4, 5}. Larger T can in principle be beneficial for getting better graph representations, however this also means more computation time and more instability. T = 2 results in a reasonable balance for this task.      </p><formula xml:id="formula_38" coords="18,94.76,222.78,405.37,157.15">6) (7) (8) (9) (10) O C C C C C O C C C C C C O C C C C C C O C C C C C C Br O C C C C C C Br (11) (12) (13) (14) (15) O C C C C C C Br C O C C C C C C Br C O C C C C C C Br C C O C C C C C C Br C C O C C C C C C Br C C (16) (17) (18) (19)<label>(</label></formula><formula xml:id="formula_40" coords="18,97.41,464.33,404.35,212.64">O C C C C C C Br C C N C C O C C C C C C Br C C N C C C O C C C C C C Br C C N C C C O C C C C C C Br C C N C C C C O C C C C C C Br C C N C C C C (26) (27) (28) (29) (30) O C C C C C C Br C C N C C C C C O C C C C C C Br C C N C C C C C O C C C C C C Br C C N C C C C C C O C C C C C C Br C C N C C C C C C O C C C C C C Br C C N C C C C C C C (31) (32) (33) (34) (35) O C C C C C C Br C C N C C C C C C C O C C C C C C Br C C N C C C C C C C (36)<label>(37)</label></formula></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,175.54,182.73,245.80,7.77"><head>Figure 1 .</head><label>1</label><figDesc xml:id="_shRtNNt">Figure 1. Depiction of the steps taken during the generation process.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,54.94,150.14,234.50,7.77;4,55.44,160.81,235.49,8.06;4,55.44,171.77,105.58,8.06"><head>Figure 2 .</head><label>2</label><figDesc xml:id="_N4HZx9v">Figure 2. Illustration of the graph propagation process (left), graph level predictions using faddnode and faddedge (center), and node selection fnodes modules (right).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="6,158.41,177.48,280.06,7.77"><head>Figure 3 .</head><label>3</label><figDesc xml:id="_CgZddEP">Figure 3. Training curves for the graph model and LSTM model on three sets.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="6,176.62,583.57,112.97,7.77;6,177.12,594.53,113.81,7.77;6,177.12,605.49,112.32,7.77;6,177.12,616.45,113.81,7.77;6,177.12,627.41,112.32,7.77;6,177.12,638.37,112.32,7.77;6,176.45,649.33,62.87,7.77"><head>Figure 4 .</head><label>4</label><figDesc xml:id="_hpVbYvS">Figure 4. Degree histogram for samples generated by models trained on Barabasi-Albert Graphs. The histogram labeled "Ground Truth" shows the data distribution estimated from 10,000 examples.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="6,446.20,258.39,89.86,7.77"><head>Figure 5 .</head><label>5</label><figDesc xml:id="_dpenKq8">Figure 5. NNc1nncc(O)n1</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="7,54.94,223.95,486.50,7.77;7,55.44,234.91,200.97,7.77"><head>Figure 6 .</head><label>6</label><figDesc xml:id="_aMcHpnW">Figure 6. Visualization of the molecule generation processes for graph model trained with fixed and random ordering. Solid lines represent single bonds, and dashed lines represent double bounds.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="8,67.23,278.07,223.87,8.64;8,55.44,290.03,234.00,8.64;8,55.44,301.98,235.25,8.64;8,55.44,313.94,234.00,8.64;8,55.44,325.54,234.00,8.99;8,55.11,337.85,234.33,8.64;8,55.44,349.80,234.00,8.64;8,55.44,361.76,234.00,8.64;8,55.44,373.71,235.65,8.64;8,55.44,385.67,234.67,8.64;8,55.44,397.27,235.65,8.99;8,55.44,409.23,234.00,8.99;8,55.44,421.53,234.00,8.64;8,55.44,433.49,234.00,8.64;8,55.44,445.44,234.00,8.64;8,55.44,457.40,234.00,8.64;8,55.44,469.01,222.05,8.99"><head></head><label></label><figDesc xml:id="_fssqKfP">the last experiment we study conditional graph generation. Again we compare our graph model with LSTMs trained either on SMILES or on graph generating sequences, and focus on the task of molecule generation. We use a 3-D conditioning vector c which includes the number of atoms (nodes), the number of bonds (edges) and the number of aromatic rings in a molecule. For training, we used a subset of the ChEMBL training set used in the previous section that contains molecules of 0, 1 and 3 aromatic rings. For evaluation, we consider three different conditioning scenarios: (1) training -c comes from the training set; (2) interpolationc comes from molecules with 2 rings in ChEMBL not used in training; (3) extrapolation -same as (2) but with 4 rings instead of 2. Note the interpolation and extrapolation tasks are particularly challenging for neural nets to learn as in training the model only sees 3 possible values for the #rings dimension of c, and generalization is therefore difficult.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="9,54.94,190.59,487.11,7.77;9,55.44,201.55,487.27,7.77"><head>Figure 7 .</head><label>7</label><figDesc xml:id="_UurmYag">Figure 7. Random samples from the training set, our model and GrammarVAEs. Invalid samples are filtered out.<ref type="bibr" coords="9,466.92,190.59,75.12,7.77" target="#b16">(Kusner et al., 2017)</ref> showed better samples for GrammarVAEs in a neighborhood around a data example, while here we are showing samples from the prior.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="12,55.44,391.44,14.39,8.64;12,109.88,408.91,129.36,9.79;12,105.64,430.83,20.43,9.65;12,139.92,424.09,32.88,9.65;12,140.55,442.70,4.24,6.12;12,149.81,437.67,24.11,8.74;12,173.92,442.71,4.24,6.12;12,178.82,437.67,3.87,8.74;12,183.89,430.83,2.77,8.74;12,208.24,430.83,10.72,8.74;12,55.44,454.72,17.16,8.64;12,85.81,472.33,173.25,9.65"><head></head><label></label><figDesc xml:id="_n5KSd79">and p = [p 1 , ..., pK+1 ] = f an (h G ) p k = exp(p k ) k exp(p k ) , ∀k then p(add one more node with type k|G) = p k .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10" coords="13,55.44,649.21,164.62,8.64;13,132.53,666.79,5.57,8.77;13,138.10,664.75,3.56,6.12;13,144.92,666.82,56.73,8.74;13,201.65,664.75,3.56,6.12;13,205.71,666.82,6.64,8.74;13,55.08,684.72,34.21,8.99;13,89.29,683.18,3.56,6.12;13,98.56,684.75,20.99,8.74;13,119.55,683.18,3.56,6.12;13,119.55,689.27,3.97,6.12;13,124.02,684.75,22.42,8.74;13,146.45,683.18,3.56,6.12;13,146.45,689.54,5.47,6.12;13,152.41,684.72,38.15,8.99;13,190.56,683.18,3.56,6.12;13,199.83,684.75,21.43,8.74;13,221.26,683.18,3.56,6.12;13,221.26,689.27,3.97,6.12;13,225.73,684.75,22.86,8.74;13,248.59,683.18,3.56,6.12;13,248.59,689.54,5.47,6.12;13,254.56,684.75,34.89,8.96;13,307.44,296.97,146.90,8.99"><head></head><label></label><figDesc xml:id="_Anvzhcz">these scores are transformed into weights a c = Softmax(u c ), where a c = [a c 1 , ..., a c L ] and u c = [u c 1 , ..., u c L ] . The conditioning vector c is computed as</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11" coords="15,54.94,428.62,486.50,7.93;15,55.44,439.58,486.00,7.93;15,55.44,450.54,486.74,7.93;15,55.44,461.50,236.72,7.93"><head>Figure 9 .</head><label>9</label><figDesc xml:id="_wY6Utzu">Figure 9. Distribution of chemical properties for samples from different models and the training set. rg_lstm: LSTM trained on fixed graph generation decision sequence; rg_lstm_perm: LSTM trained on permuted graph generation decision sequence; lstm: LSTM on SMILES strings; lstm_perm: LSTM on SMILES strings with permuted nodes; graph: graph model on fixed node and edge sequence; graph_perm: graph model on permuted node and edge sequences.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13" coords="16,54.94,206.92,486.50,8.06;16,55.44,218.01,375.69,7.93"><head>Figure 10 .</head><label>10</label><figDesc xml:id="_Aeaexx8">Figure10. Changing the faddnode and faddedge biases can affect the generated samples accordingly, therefore achieving a level of fine-grained control of sample generation process. nb&lt;bias&gt; and eb&lt;bias&gt; shows the bias values added to the logits.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14" coords="16,55.44,613.75,234.00,8.64;16,55.44,625.70,234.17,8.64;16,55.44,637.66,235.75,8.64"><head>Figures 14 ,</head><label>14</label><figDesc xml:id="_QTWQDbS">Figures 14, 15 and 16 show some samples from the trained models on the Zinc dataset to examine qualitatively what our model has learned from the database of drug-like molecules.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_17" coords="18,105.65,689.60,385.59,7.77"><head>Figure 11 .</head><label>11</label><figDesc xml:id="_74ZjBzR">Figure 11. Step-by-step generation process visualization for a graph model trained with canonical ordering.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_18" coords="19,91.08,746.18,414.73,7.77"><head>Figure 12 .</head><label>12</label><figDesc xml:id="_X3RTsS6">Figure 12.Step-by-step generation process visualization for a graph model trained with permuted random ordering.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_19" coords="20,54.94,453.67,234.66,8.06;20,55.44,464.62,234.00,8.06;20,55.12,475.87,87.40,7.77;20,77.60,298.47,187.20,140.40"><head>Figure 13 .Figure 14 .Figure 15 .</head><label>131415</label><figDesc xml:id="_8xqDqRZ">Figure 13. Histogram of negative log-likelihood log p(G, π) under different orderings π for one small molecule under a model trained with canonical ordering.</figDesc><graphic coords="20,77.60,298.47,187.20,140.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_20" coords="21,54.94,683.29,487.62,7.77;21,55.12,694.25,486.64,7.77;21,55.44,705.21,487.50,7.77"><head>Figure 16 .</head><label>16</label><figDesc xml:id="_MTeJUe9">Figure16. Samples from the pretrained Grammar VAE model. Note that since the Grammar VAE model generates many invalid samples, we obtained 50 such valid ones out of 1504 total samples. Among these 1504 samples, many are empty strings (counted as valid), and only the valid and non-empty ones are shown here. Note the samples of the GrammarVAE model is qualitatively different from the training set.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="3,55.44,213.91,235.65,104.28"><head></head><label></label><figDesc xml:id="_hufcgzJ">cess, in each iteration we (1) sample whether to add a new node of a particular type or terminate; if a node type is chosen, (2) we add a node of this type to the graph and (3) check if any further edges are needed to connect the new node to the existing graph; if yes (4) we select a node in the graph and add an edge connecting the new node to the selected node. The algorithm goes back to step (3) and repeats until the model decides not to add another edge. Finally, the algorithm goes back to step (1) to add subsequent nodes.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="6,54.89,195.46,234.71,121.26"><head>Table 1 .</head><label>1</label><figDesc xml:id="_RYbsvHm">Percentage of valid samples for three models on cycles and trees datasets, and the KL-divergence between the degree distributions of samples and data for Barabasi-Albert graphs.</figDesc><table coords="6,64.52,228.43,213.36,48.09"><row><cell>Dataset</cell><cell cols="3">Graph Model LSTM E-R Model</cell></row><row><cell>Cycles</cell><cell>84.4%</cell><cell>48.5%</cell><cell>0.0%</cell></row><row><cell>Trees</cell><cell>96.6%</cell><cell>30.2%</cell><cell>0.3%</cell></row><row><cell>B-A Graphs</cell><cell>0.0013</cell><cell>0.0537</cell><cell>0.3715</cell></row></table><note xml:id="_YYEaJGB">has a hidden state size of 64. The two models have similar number of parameters (LSTM 36k, graph model 32k).</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="7,54.89,252.65,236.04,89.47"><head>Table 2 .</head><label>2</label><figDesc xml:id="_tphkt3K">Molecule generation results. N is the number of permutations for each molecule the model is trained on. Typically the number of different SMILES strings for each molecule &lt; 100.</figDesc><table coords="7,61.49,284.85,219.41,57.28"><row><cell>Arch</cell><cell>Grammar</cell><cell>Ordering</cell><cell>N</cell><cell>NLL</cell><cell>%valid</cell><cell>%novel</cell></row><row><cell>LSTM</cell><cell>SMILES</cell><cell>Fixed</cell><cell>1</cell><cell>21.48</cell><cell>93.59</cell><cell>81.27</cell></row><row><cell>LSTM</cell><cell>SMILES</cell><cell>Random</cell><cell>&lt; 100</cell><cell>19.99</cell><cell>93.48</cell><cell>83.95</cell></row><row><cell>LSTM</cell><cell>Graph</cell><cell>Fixed</cell><cell>1</cell><cell>22.06</cell><cell>85.16</cell><cell>80.14</cell></row><row><cell>LSTM</cell><cell>Graph</cell><cell>Random</cell><cell>O(n!)</cell><cell>63.25</cell><cell>91.44</cell><cell>91.26</cell></row><row><cell>Graph</cell><cell>Graph</cell><cell>Fixed</cell><cell>1</cell><cell>20.55</cell><cell>97.52</cell><cell>90.01</cell></row><row><cell>Graph</cell><cell>Graph</cell><cell>Random</cell><cell>O(n!)</cell><cell>58.36</cell><cell>95.98</cell><cell>95.54</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="7,54.89,346.07,234.54,76.38"><head>Table 3 .</head><label>3</label><figDesc xml:id="_jTa9DvX">Negative log-likelihood evaluation on small molecules with no more than 6 nodes.</figDesc><table coords="7,62.47,365.17,219.95,57.28"><row><cell>Arch</cell><cell>Grammar</cell><cell>Ordering</cell><cell>N</cell><cell>Fixed</cell><cell>Best</cell><cell>Marginal</cell></row><row><cell>LSTM</cell><cell>SMILES</cell><cell>Fixed</cell><cell>1</cell><cell>17.28</cell><cell>15.98</cell><cell>15.90</cell></row><row><cell>LSTM</cell><cell>SMILES</cell><cell>Random</cell><cell>&lt; 100</cell><cell>15.95</cell><cell>15.76</cell><cell>15.67</cell></row><row><cell>LSTM</cell><cell>Graph</cell><cell>Fixed</cell><cell>1</cell><cell>16.79</cell><cell>16.35</cell><cell>16.26</cell></row><row><cell>LSTM</cell><cell>Graph</cell><cell>Random</cell><cell>O(n!)</cell><cell>20.57</cell><cell>18.90</cell><cell>15.96</cell></row><row><cell>Graph</cell><cell>Graph</cell><cell>Fixed</cell><cell>1</cell><cell>16.19</cell><cell>15.75</cell><cell>15.64</cell></row><row><cell>Graph</cell><cell>Graph</cell><cell>Random</cell><cell>O(n!)</cell><cell>20.18</cell><cell>18.56</cell><cell>15.32</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" coords="8,59.79,72.28,225.31,91.58"><head>Table 4 .</head><label>4</label><figDesc xml:id="_h4yjnzf">Conditional generation results.</figDesc><table coords="8,59.79,82.50,225.31,81.36"><row><cell cols="9">Arch Grammar Condition Valid Novel Atom Bond Ring All</cell></row><row><cell cols="2">LSTM SMILES</cell><cell>Training</cell><cell>84.3</cell><cell>82.8</cell><cell>71.3</cell><cell cols="3">70.9 82.7 69.8</cell></row><row><cell>LSTM</cell><cell>Graph</cell><cell>Training</cell><cell>65.6</cell><cell>64.9</cell><cell>63.3</cell><cell cols="3">62.7 50.3 48.2</cell></row><row><cell>Graph</cell><cell>Graph</cell><cell>Training</cell><cell>93.1</cell><cell>92.1</cell><cell>81.7</cell><cell cols="3">79.6 76.4 66.3</cell></row><row><cell cols="2">LSTM SMILES</cell><cell>2-rings</cell><cell>64.4</cell><cell>61.2</cell><cell>7.1</cell><cell>4.2</cell><cell cols="2">43.8 0.5</cell></row><row><cell>LSTM</cell><cell>Graph</cell><cell>2-rings</cell><cell>54.9</cell><cell>54.2</cell><cell>23.5</cell><cell cols="3">21.7 23.9 9.8</cell></row><row><cell>Graph</cell><cell>Graph</cell><cell>2-rings</cell><cell>91.5</cell><cell>91.3</cell><cell>75.8</cell><cell cols="3">72.4 62.1 50.2</cell></row><row><cell cols="2">LSTM SMILES</cell><cell>4-rings</cell><cell>71.7</cell><cell>69.4</cell><cell>46.5</cell><cell>3.7</cell><cell>1.3</cell><cell>0.0</cell></row><row><cell>LSTM</cell><cell>Graph</cell><cell>4-rings</cell><cell>42.9</cell><cell>42.1</cell><cell>16.4</cell><cell>10.1</cell><cell>3.4</cell><cell>1.8</cell></row><row><cell>Graph</cell><cell>Graph</cell><cell>4-rings</cell><cell>84.8</cell><cell>84.0</cell><cell>48.7</cell><cell cols="3">40.9 17.0 13.3</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11" coords="16,54.89,310.80,234.55,125.28"><head>Table 5 .</head><label>5</label><figDesc xml:id="_8Mu9FaW">Comparing sample quality of our graph models trained with fixed and random orderings with previous results on the Zinc dataset. Results for the CVAE and GrammarVAE were obtained from the pretrained models by</figDesc><table coords="16,71.27,310.80,199.86,71.60"><row><cell></cell><cell cols="2">%Valid %Novel</cell></row><row><cell>CVAE</cell><cell>0.01</cell><cell>0.01</cell></row><row><cell>GrammarVAE</cell><cell>34.9</cell><cell>2.9</cell></row><row><cell>GraphVAE</cell><cell>13.5</cell><cell>-</cell></row><row><cell>Our Graph Model (Fixed)</cell><cell>89.2</cell><cell>89.1</cell></row><row><cell>Our Graph Model (Random)</cell><cell>74.3</cell><cell>74.3</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_12" coords="17,54.89,68.60,228.38,91.06"><head>Table 6 .</head><label>6</label><figDesc xml:id="_fqTjbgD">Parse tree generation results, evaluated on the Eval set.</figDesc><table coords="17,61.61,68.60,221.66,70.74"><row><cell cols="2">Model Gen.Seq</cell><cell>Ordering</cell><cell cols="2">Perplexity %Correct</cell></row><row><cell>LSTM</cell><cell>Tree</cell><cell>Depth-First</cell><cell>1.114</cell><cell>31.1</cell></row><row><cell>LSTM</cell><cell>Tree</cell><cell>Breadth-First</cell><cell>1.187</cell><cell>28.3</cell></row><row><cell>LSTM</cell><cell>Graph</cell><cell>Depth-First</cell><cell>1.158</cell><cell>26.2</cell></row><row><cell>LSTM</cell><cell>Graph</cell><cell>Breadth-First</cell><cell>1.399</cell><cell>0.0</cell></row><row><cell>Graph</cell><cell>Graph</cell><cell>Depth-First</cell><cell>1.124</cell><cell>28.7</cell></row><row><cell>Graph</cell><cell>Graph</cell><cell>Breadth-First</cell><cell>1.238</cell><cell>21.5</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="8,307.44,601.34,234.00,8.64;8,316.94,613.29,226.16,8.64;8,317.40,625.08,180.50,8.81" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_X498BA8">Growing graphs from hyperedge replacement graph grammars</title>
+		<author>
+			<persName coords=""><forename type="first">Salvador</forename><surname>Aguiñaga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rodrigo</forename><surname>Palacios</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Chiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tim</forename><surname>Weninger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_HdPSWzR">Proc. CIKM</title>
+				<meeting>CIKM</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,307.44,654.96,234.00,8.64;8,317.40,666.74,225.29,8.81;8,316.66,678.87,22.42,8.64" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_S5ATM36">Emergence of scaling in random networks</title>
+		<author>
+			<persName coords=""><forename type="first">Albert-László And</forename><surname>Barabási</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Réka</forename><surname>Albert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4W78Hv8">science</title>
+		<imprint>
+			<biblScope unit="volume">286</biblScope>
+			<biblScope unit="issue">5439</biblScope>
+			<biblScope unit="page" from="509" to="512" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,307.44,708.58,235.25,8.64;9,65.40,222.77,224.04,8.64;9,65.40,234.73,169.84,8.64" xml:id="b2">
+	<monogr>
+		<title level="m" type="main" xml:id="_xHyZvAt">Interaction networks for learning about objects, relations and physics</title>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Battaglia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Pascanu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Razvan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Matthew</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Danilo</forename><surname>Rezende</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Jimenez</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,255.50,235.66,8.64;9,65.40,267.28,224.04,8.81;9,65.40,279.24,134.95,8.81" xml:id="b3">
+	<monogr>
+		<title level="m" type="main" xml:id="_NnVMRbS">Smiles enumeration as data augmentation for neural network modeling of molecules</title>
+		<author>
+			<persName coords=""><forename type="first">Esben</forename><surname>Bjerrum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Jannik</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1703.07076</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,300.18,234.17,8.64;9,65.40,311.96,225.28,8.81;9,65.40,324.09,22.42,8.64" xml:id="b4">
+	<monogr>
+		<title level="m" type="main" xml:id="_AsxYFcH">Molecular generation with recurrent neural networks (rnns)</title>
+		<author>
+			<persName coords=""><forename type="first">Esben</forename><surname>Bjerrum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Jannik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Threlfall</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>CoRR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,344.86,234.00,8.64;9,65.04,356.64,225.89,8.81;9,65.40,368.77,63.37,8.64" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_eQhTth6">Weighted automata and weighted logics</title>
+		<author>
+			<persName coords=""><forename type="first">Manfred</forename><surname>Droste</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Paul</forename><surname>Gastin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8KWzJxS">Theoretical Computer Science</title>
+		<imprint>
+			<biblScope unit="volume">380</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="69" to="86" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,389.53,235.25,8.64;9,65.40,401.49,225.28,8.64;9,65.40,413.45,224.03,8.64;9,65.40,425.23,224.04,8.81;9,65.40,437.19,217.34,8.81" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_rSunXTD">Convolutional networks on graphs for learning molecular fingerprints</title>
+		<author>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">K</forename><surname>Duvenaud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Maclaurin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Dougal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jorge</forename><surname>Iparraguirre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bombarell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Rafael</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Timothy</forename><surname>Hirzel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alán</forename><surname>Aspuru-Guzik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ryan</forename><forename type="middle">P</forename><surname>Adams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_xXJEuJU">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="2224" to="2232" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,458.12,234.00,8.64;9,65.40,470.08,225.78,8.64;9,65.40,481.87,159.58,8.81" xml:id="b7">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Chris</forename><surname>Dyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Kuncoro</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Adhiguna</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Miguel</forename><surname>Ballesteros</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Noah</forename><forename type="middle">A</forename><surname>Smith</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1602.07776</idno>
+		<title level="m" xml:id="_vgdAMa7">Recurrent neural network grammars</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,502.80,234.00,8.64;9,65.40,514.59,225.28,8.81;9,64.66,526.72,22.42,8.64" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_JM6KRN6">On the evolution of random graphs</title>
+		<author>
+			<persName coords=""><forename type="first">Paul</forename><surname>Erdős</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alfréd</forename><surname>Rényi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rRwhX7j">Publ. Math. Inst. Hung. Acad. Sci</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="17" to="60" />
+			<date type="published" when="1960">1960</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,547.48,235.25,8.64;9,65.04,559.44,226.05,8.64;9,65.40,571.23,224.03,8.81;9,65.40,583.18,100.17,8.81" xml:id="b9">
+	<monogr>
+		<title level="m" type="main" xml:id="_Z74VkJG">Neural message passing for quantum chemistry</title>
+		<author>
+			<persName coords=""><forename type="first">Justin</forename><surname>Gilmer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Schoenholz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Samuel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Patrick</forename><forename type="middle">F</forename><surname>Riley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Oriol</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">George</forename><forename type="middle">E</forename><surname>Dahl</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1704.01212</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,604.12,235.65,8.64;9,65.40,616.07,225.28,8.64;9,65.09,628.03,226.09,8.64;9,65.04,639.99,226.05,8.64;9,65.40,651.77,224.03,8.81;9,65.40,663.73,100.17,8.81" xml:id="b10">
+	<monogr>
+		<title level="m" type="main" xml:id="_qq4w9Vx">Automatic chemical design using a data-driven continuous representation of molecules</title>
+		<author>
+			<persName coords=""><surname>Gómez-Bombarelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Rafael</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Duvenaud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">José</forename><surname>Hernández-Lobato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Miguel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jorge</forename><surname>Aguilera-Iparraguirre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Timothy</forename><forename type="middle">D</forename><surname>Hirzel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Adams</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alán</forename><surname>Aspuru-Guzik</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1610.02415</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,684.66,234.00,8.64;9,65.40,696.45,224.04,8.81;9,65.40,708.41,134.95,8.81" xml:id="b11">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Mikael</forename><surname>Henaff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joan</forename><surname>Bruna</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yann</forename><surname>Lecun</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1506.05163</idno>
+		<title level="m" xml:id="_estCm65">Deep convolutional networks on graph-structured data</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,222.77,235.74,8.64;9,317.40,234.56,224.04,8.81;9,316.74,246.51,55.62,8.81" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_VDbunQS">Learning graphical state transitions</title>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><forename type="middle">D</forename><surname>Johnson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_tGUVqGp">International Conference on Representation Learning (ICLR)</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,268.96,234.17,8.64;9,317.40,280.75,225.28,8.81;9,317.40,292.87,22.42,8.64" xml:id="b13">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Diederik</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jimmy</forename><surname>Ba</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.6980</idno>
+		<title level="m" xml:id="_ZNSmWwN">Adam: A method for stochastic optimization</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,315.15,235.65,8.64;9,317.40,326.94,224.04,8.81;9,317.40,338.89,134.95,8.81" xml:id="b14">
+	<monogr>
+		<title level="m" type="main" xml:id="_acAHy4X">Semi-supervised classification with graph convolutional networks</title>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><forename type="middle">N</forename><surname>Kipf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Max</forename><surname>Welling</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1609.02907</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,361.34,234.00,8.64;9,317.40,373.13,224.04,8.81;9,317.07,385.25,76.65,8.64" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_mcwhvP7">Towards a catalogue of linguistic graph banks</title>
+		<author>
+			<persName coords=""><forename type="first">Marco</forename><surname>Kuhlmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stephan</forename><surname>Oepen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_G5fJjzh">Computational Linguistics</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="819" to="827" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,407.53,235.25,8.64;9,317.21,419.31,224.23,8.81;9,317.40,431.27,134.95,8.81" xml:id="b16">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Matt</forename><forename type="middle">J</forename><surname>Kusner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Brooks</forename><surname>Paige</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">José</forename><surname>Hernández-Lobato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Miguel</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1703.01925</idno>
+		<title level="m" xml:id="_4gTZW7Q">Grammar variational autoencoder</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,453.72,234.00,8.64;9,317.40,465.50,224.03,8.81;9,317.40,477.46,225.69,8.58;9,317.40,489.41,47.32,8.81" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_MtWvEbH">Decomposition trees: Structured graph representation and efficient algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">Clemens</forename><surname>Lautemann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_8a8M7mp">Proc. of the 13th Colloquium on Trees in Algebra and Programming</title>
+				<meeting>of the 13th Colloquium on Trees in Algebra and Programming</meeting>
+		<imprint>
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,511.86,235.25,8.64;9,317.40,523.82,224.20,8.64;9,317.40,535.60,224.03,8.81;9,316.99,547.56,219.32,8.81" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_4AUj4k9">Kronecker graphs: An approach to modeling networks</title>
+		<author>
+			<persName coords=""><forename type="first">Jure</forename><surname>Leskovec</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Chakrabarti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Deepayan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jon</forename><surname>Kleinberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christos</forename><surname>Faloutsos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zoubin</forename><surname>Ghahramani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mWqtQ4y">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="985" to="1042" />
+			<date type="published" when="2010-02">Feb. 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,570.01,235.25,8.64;9,317.40,581.96,220.38,8.64" xml:id="b19">
+	<monogr>
+		<title level="m" type="main" xml:id="_mHaPGv9">Gated graph sequence neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Yujia</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Tarlow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Daniel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc</forename><surname>Brockschmidt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Zemel</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,604.07,234.00,8.81;9,317.40,616.03,89.28,8.81" xml:id="b20">
+	<monogr>
+		<title level="m" type="main" xml:id="_t7JKuab">Individual choice behavior: A theoretical analysis</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Luce</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Duncan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1959">1959</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,638.48,234.00,8.64;9,317.40,650.26,224.04,8.81;9,317.23,662.22,225.86,8.58;9,316.66,674.17,95.47,8.81" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_humFT7u">Structured generative models of natural source code</title>
+		<author>
+			<persName coords=""><forename type="first">Chris</forename><surname>Maddison</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><surname>Tarlow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_uv2Rng7">Proceedings of the 31st International Conference on Machine Learning (ICML-14)</title>
+				<meeting>the 31st International Conference on Machine Learning (ICML-14)</meeting>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="649" to="657" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,696.45,235.25,8.81;9,317.05,708.58,94.36,8.64" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_bsMspnR">Non-null ranking models. i</title>
+		<author>
+			<persName coords=""><forename type="first">Colin</forename><forename type="middle">L</forename><surname>Mallows</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_QcznAH5">Biometrika</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">1/2</biblScope>
+			<biblScope unit="page" from="114" to="130" />
+			<date type="published" when="1957">1957</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,70.37,234.00,8.81;10,65.15,82.32,225.94,8.81;10,65.15,94.45,106.76,8.64" xml:id="b23">
+	<monogr>
+		<title level="m" type="main" xml:id="_jg3ygQP">Learning Bayesian Network Model Structure from Data</title>
+		<author>
+			<persName coords=""><forename type="first">Dimitris</forename><surname>Margaritis</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="volume">5</biblScope>
+			<pubPlace>Pittsburgh</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Carnegie Mellon University</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">PhD thesis</note>
+</biblStruct>
+
+<biblStruct coords="10,55.44,115.74,234.00,8.64;10,65.40,127.69,224.04,8.64;10,65.40,139.48,225.28,8.81;10,65.40,151.60,22.42,8.64" xml:id="b24">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Marcus</forename><surname>Olivecrona</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Blaschke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ola</forename><surname>Engkvist</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hongming</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1704.07555</idno>
+		<title level="m" xml:id="_mD4pvvN">Molecular de novo design through deep reinforcement learning</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,55.44,172.89,235.25,8.64;10,65.40,184.85,225.69,8.64;10,65.40,196.63,224.03,8.81;10,65.40,208.59,100.17,8.81" xml:id="b25">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Emilio</forename><surname>Parisotto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohamed</forename><surname>Abdel-Rahman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Rishabh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Lihong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dengyong</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Kohli</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1611.01855</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Pushmeet. Neuro-symbolic program synthesis. arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,55.44,229.88,234.00,8.81;10,65.15,241.83,118.17,8.81" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_K9mQJcF">The analysis of permutations</title>
+		<author>
+			<persName coords=""><forename type="first">Robin</forename><forename type="middle">L</forename><surname>Plackett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8ZSMKjN">Applied Statistics</title>
+		<imprint>
+			<biblScope unit="page" from="193" to="202" />
+			<date type="published" when="1975">1975</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,263.29,234.49,8.64;10,65.40,276.18,122.04,7.01" xml:id="b27">
+	<monogr>
+		<title level="m" type="main" xml:id="_4Q5wDaf">Open-source cheminformatics</title>
+		<author>
+			<persName coords=""><surname>Rdkit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Rdkit</surname></persName>
+		</author>
+		<ptr target="http://www.rdkit.org" />
+		<imprint>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,296.37,234.00,8.81;10,65.07,308.32,226.02,8.58;10,65.40,320.28,47.87,8.81" xml:id="b28">
+	<monogr>
+		<title level="m" type="main" xml:id="_g4pB2EV">Handbook of Graph Grammars and Computing by Graph Transformation: Volume 1 Foundations</title>
+		<author>
+			<persName coords=""><forename type="first">Grzegorz</forename><surname>Rozenberg</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,341.74,235.65,8.64;10,65.40,353.69,224.04,8.64;10,65.40,365.48,224.04,8.81;10,65.07,377.43,119.27,8.81" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_X6MQqkD">The graph neural network model</title>
+		<author>
+			<persName coords=""><surname>Scarselli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Franco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Gori</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Marco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ah</forename><surname>Tsoi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Markus</forename><surname>Hagenbuchner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gabriele</forename><surname>Monfardini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_f7SqXEV">IEEE Transactions on Neural Networks</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="61" to="80" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,398.89,234.00,8.64;10,64.94,410.85,224.51,8.64;10,65.40,422.63,224.04,8.81;10,65.40,434.59,134.95,8.81" xml:id="b30">
+	<monogr>
+		<title level="m" type="main" xml:id="_Ns7jPmu">Generating focussed molecule libraries for drug discovery with recurrent neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Marwin</forename><forename type="middle">Hs</forename><surname>Segler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Kogej</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tyrchan</forename><surname>Thierry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christian</forename><surname>Waller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Mark</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1701.01329</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,55.44,456.05,235.39,8.64;10,65.09,468.00,224.34,8.64;10,65.40,479.96,228.22,8.64;10,65.40,492.85,122.04,7.01" xml:id="b31">
+	<monogr>
+		<title level="m" type="main" xml:id="_ZrQsb7t">Graphvae: Towards generation of small graphs using variational autoencoders</title>
+		<author>
+			<persName coords=""><forename type="first">Martin</forename><surname>Simonovsky</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nikos</forename><surname>Komodakis</surname></persName>
+		</author>
+		<ptr target="https://openreview.net/pdf?id=SJlhPMWAW" />
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,513.20,235.25,8.64;10,65.04,525.16,224.39,8.64;10,65.04,536.94,224.39,8.81;10,65.40,548.90,225.28,8.58;10,65.40,561.02,77.21,8.64" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_W3FYpVr">Parsing natural scenes and natural language with recursive neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lin</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cliff</forename><forename type="middle">C</forename><surname>Manning</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chris</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">Y</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_eHkZ6aR">Proceedings of the 28th international conference on machine learning (ICML-11)</title>
+				<meeting>the 28th international conference on machine learning (ICML-11)</meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="129" to="136" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,582.31,235.75,8.64;10,65.40,594.10,225.69,8.81;10,65.40,606.05,224.04,8.58;10,65.40,618.01,189.22,8.81" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_F53BcAw">End-to-end people detection in crowded scenes</title>
+		<author>
+			<persName coords=""><forename type="first">Russell</forename><surname>Stewart</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Andriluka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Mykhaylo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_snP9GA3">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="2325" to="2333" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,639.47,235.66,8.64;10,65.40,651.25,224.04,8.81;10,65.40,663.21,104.60,8.81" xml:id="b34">
+	<monogr>
+		<title level="m" type="main" xml:id="_syjrDRx">Order matters: Sequence to sequence for sets</title>
+		<author>
+			<persName coords=""><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Oriol</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Samy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Manjunath</forename><surname>Kudlur</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1511.06391</idno>
+		<imprint>
+			<date type="published" when="2015">2015a</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,55.44,684.66,235.74,8.64;10,65.40,696.45,224.04,8.81;10,65.09,708.41,174.99,8.81" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_xdb4uyQ">Pointer networks</title>
+		<author>
+			<persName coords=""><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Oriol</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Meire</forename><surname>Fortunato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Navdeep</forename><surname>Jaitly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PVTNy8s">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2015">2015b</date>
+			<biblScope unit="page" from="2692" to="2700" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,70.54,235.25,8.64;10,317.40,82.49,224.04,8.64;10,317.40,94.28,224.04,8.81;10,317.09,106.23,174.43,8.81" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_wyrt24v">Grammar as a foreign language</title>
+		<author>
+			<persName coords=""><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Łukasz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Koo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Terry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Petrov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Slav</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Ilya</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Geoffrey</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_yDfVNC6">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2015">2015c</date>
+			<biblScope unit="page" from="2773" to="2781" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,126.33,235.65,8.64;10,317.40,138.11,225.42,8.81;10,317.05,150.24,62.27,8.64" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" xml:id="_kw4uTsn">Collective dynamics of &apos;small-world&apos;networks</title>
+		<author>
+			<persName coords=""><forename type="first">Duncan</forename><forename type="middle">J</forename><surname>Watts</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Steven</forename><forename type="middle">H</forename><surname>Strogatz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_vQ7f7mx">nature</title>
+		<imprint>
+			<biblScope unit="volume">393</biblScope>
+			<biblScope unit="issue">6684</biblScope>
+			<biblScope unit="page" from="440" to="442" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

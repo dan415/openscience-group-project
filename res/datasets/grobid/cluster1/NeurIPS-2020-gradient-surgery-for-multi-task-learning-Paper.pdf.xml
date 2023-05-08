@@ -1,0 +1,1630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_fp84eDa">Gradient Surgery for Multi-Task Learning</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,166.48,161.94,44.02,8.96"><forename type="first">Tianhe</forename><surname>Yu</surname></persName>
+							<email>tianheyu@cs.stanford.edu</email>
+						</author>
+						<author>
+							<persName coords="1,219.95,161.94,69.88,8.96"><forename type="first">Saurabh</forename><surname>Kumar</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,299.28,161.94,70.04,8.96"><forename type="first">Abhishek</forename><surname>Gupta</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,378.77,161.94,59.80,8.96"><forename type="first">Sergey</forename><surname>Levine</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,237.13,173.32,68.18,8.96"><forename type="first">Karol</forename><surname>Hausman</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,314.77,173.32,55.63,8.96"><forename type="first">Chelsea</forename><surname>Finn</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,190.60,185.10,78.46,8.64"><forename type="first">Stanford</forename><surname>University</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,278.51,185.10,52.04,8.64"><forename type="first">U</forename><forename type="middle">C</forename><surname>Berkeley</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,340.01,185.10,76.93,8.64"><forename type="first">Robotics</forename><surname>At Google</surname></persName>
+						</author>
+						<title level="a" type="main" xml:id="_M69Ra4h">Gradient Surgery for Multi-Task Learning</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">2B9B1556E1304367F1745B4468D95765</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-07T13:55+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_UVwXxSQ"><p xml:id="_2mDwebG">While deep learning and deep reinforcement learning (RL) systems have demonstrated impressive results in domains such as image classification, game playing, and robotic control, data efficiency remains a major challenge. Multi-task learning has emerged as a promising approach for sharing structure across multiple tasks to enable more efficient learning. However, the multi-task setting presents a number of optimization challenges, making it difficult to realize large efficiency gains compared to learning tasks independently. The reasons why multi-task learning is so challenging compared to single-task learning are not fully understood. In this work, we identify a set of three conditions of the multi-task optimization landscape that cause detrimental gradient interference, and develop a simple yet general approach for avoiding such interference between task gradients. We propose a form of gradient surgery that projects a task's gradient onto the normal plane of the gradient of any other task that has a conflicting gradient. On a series of challenging multi-task supervised and multi-task RL problems, this approach leads to substantial gains in efficiency and performance. Further, it is model-agnostic and can be combined with previously-proposed multi-task architectures for enhanced performance.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" xml:id="_TCtbKT8">Introduction</head><p xml:id="_ZF3Vsrj">While deep learning and deep reinforcement learning (RL) have shown considerable promise in enabling systems to learn complex tasks, the data requirements of current methods make it difficult to learn a breadth of capabilities, particularly when all tasks are learned individually from scratch. A natural approach to such multi-task learning problems is to train a network on all tasks jointly, with the aim of discovering shared structure across the tasks in a way that achieves greater efficiency and performance than solving tasks individually. However, learning multiple tasks all at once results is a difficult optimization problem, sometimes leading to worse overall performance and data efficiency compared to learning tasks individually <ref type="bibr" coords="1,265.94,557.71,15.69,8.64" target="#b41">[42,</ref><ref type="bibr" coords="1,284.12,557.71,11.77,8.64" target="#b49">50]</ref>. These optimization challenges are so prevalent that multiple multi-task RL algorithms have considered using independent training as a subroutine of the algorithm before distilling the independent models into a multi-tasking model <ref type="bibr" coords="1,425.97,579.52,15.88,8.64" target="#b31">[32,</ref><ref type="bibr" coords="1,444.36,579.52,12.50,8.64" target="#b41">42,</ref><ref type="bibr" coords="1,459.36,579.52,12.50,8.64" target="#b49">50,</ref><ref type="bibr" coords="1,474.36,579.52,12.50,8.64" target="#b20">21,</ref><ref type="bibr" coords="1,489.36,579.52,11.92,8.64" target="#b55">56]</ref>, producing a multi-task model but losing out on the efficiency gains over independent training. If we could tackle the optimization challenges of multi-task learning effectively, we may be able to actually realize the hypothesized benefits of multi-task learning without the cost in final performance.</p><p xml:id="_gExwMFU">While there has been a significant amount of research in multi-task learning <ref type="bibr" coords="1,408.38,628.64,10.71,8.64" target="#b5">[6,</ref><ref type="bibr" coords="1,421.58,628.64,11.77,8.64" target="#b48">49]</ref>, the optimization challenges are not well understood. Prior work has described varying learning speeds of different tasks <ref type="bibr" coords="1,130.40,650.46,10.78,8.64" target="#b7">[8,</ref><ref type="bibr" coords="1,143.69,650.46,13.28,8.64" target="#b25">26]</ref> and plateaus in the optimization landscape <ref type="bibr" coords="1,330.91,650.46,16.59,8.64" target="#b51">[52]</ref> as potential causes, whereas a range of other works have focused on the model architecture <ref type="bibr" coords="1,319.18,661.37,15.86,8.64" target="#b39">[40,</ref><ref type="bibr" coords="1,337.53,661.37,11.90,8.64" target="#b32">33]</ref>. In this work, we instead hypothesize that one of the main optimization issues in multi-task learning arises from gradients from different tasks conflicting with one another in a way that is detrimental to making progress. We define two gradients to be conflicting if they point away from one another, i.e., have a negative cosine similarity. We hypothesize that such conflict is detrimental when a) conflicting gradients coincide with b) high positive curvature and c) a large difference in gradient magnitudes. As an illustrative example, consider the 2D optimization landscapes of two task objectives in Figure <ref type="figure" coords="2,195.32,97.30,16.02,8.64" target="#fig_0">1a-c</ref>. The optimization landscape of each task consists of a deep valley, a property that has been observed in neural network optimization landscapes <ref type="bibr" coords="2,208.69,140.93,15.42,8.64" target="#b21">[22]</ref>, and the bottom of each valley is characterized by high positive curvature and large differences in the task gradient magnitudes. Under such circumstances, the multi-task gradient is dominated by one task gradient, which comes at the cost of degrading the performance of the other task. Further, due to high curvature, the improvement in the dominating task may be overestimated, while the degradation in performance of the non-dominating task may be underestimated. As a result, the optimizer struggles to make progress on the optimization objective. In Figure <ref type="figure" coords="2,332.64,260.93,7.73,8.64" target="#fig_0">1d</ref>), the optimizer reaches the deep valley of task 1, but is unable to traverse the valley in a parameter setting where there are conflicting gradients, high curvature, and a large difference in gradient magnitudes (see gradients plotted in Fig. <ref type="figure" coords="2,476.49,282.75,8.00,8.64" target="#fig_0">1d</ref>). In Section 5.3, we find experimentally that this tragic triad also occurs in a higher-dimensional neural network multi-task learning problem.</p><p xml:id="_43t8tPe">The core contribution of this work is a method for mitigating gradient interference by altering the gradients directly, i.e. by performing "gradient surgery." If two gradients are conflicting, we alter the gradients by projecting each onto the normal plane of the other, preventing the interfering components of the gradient from being applied to the network. We refer to this particular form of gradient surgery as projecting conflicting gradients (PCGrad). PCGrad is model-agnostic, requiring only a single modification to the application of gradients. Hence, it is easy to apply to a range of problem settings, including multi-task supervised learning and multi-task reinforcement learning, and can also be readily combined with other multi-task learning approaches, such as those that modify the architecture. We theoretically prove the local conditions under which PCGrad improves upon standard multi-task gradient descent, and we empirically evaluate PCGrad on a variety of challenging problems, including multi-task CIFAR classification, multi-objective scene understanding, a challenging multitask RL domain, and goal-conditioned RL. Across the board, we find PCGrad leads to substantial improvements in terms of data efficiency, optimization speed, and final performance compared to prior approaches, including a more than 30% absolute improvement in multi-task reinforcement learning problems. Further, on multi-task supervised learning tasks, PCGrad can be successfully combined with prior state-of-the-art methods for multi-task learning for even greater performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" xml:id="_unmhHQP">Multi-Task Learning with PCGrad</head><p xml:id="_b894e8F">While the multi-task problem can in principle be solved by simply applying a standard single-task algorithm with a suitable task identifier provided to the model, or a simple multi-head or multi-output model, a number of prior works <ref type="bibr" coords="2,236.87,558.72,15.76,8.64" target="#b41">[42,</ref><ref type="bibr" coords="2,255.11,558.72,12.45,8.64" target="#b49">50,</ref><ref type="bibr" coords="2,270.05,558.72,13.27,8.64" target="#b52">53]</ref> have found this learning problem to be difficult. In this section, we introduce notation, identify possible causes for the difficulty of multi-task optimization, propose a simple and general approach to mitigate it, and theoretically analyze the proposed approach.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1" xml:id="_78cqXwV">Preliminaries: Problem and Notation</head><p xml:id="_W3TXNCt">The goal of multi-task learning is to find parameters θ of a model f θ that achieve high average performance across all the training tasks drawn from a distribution of tasks p(T ). More formally, we aim to solve the problem:</p><formula xml:id="formula_0" coords="2,212.95,653.59,88.57,14.66">min θ E Ti∼p(T ) [L i (θ)],</formula><p xml:id="_4YqXKzm">where L i is a loss function for the i-th task T i that we want to minimize. For a set of tasks, {T i }, we denote the multi-task loss as L(θ) = i L i (θ), and the gradients of each task as g i = ∇L i (θ) for a particular θ. (We drop the reliance on θ in the notation for brevity.) To obtain a model that solves a specific task from the task distribution p(T ), we define a task-conditioned model f θ (y|x, z i ), with input x, output y, and encoding z i for task T i , which could be provided as a one-hot vector or in any other form.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2" xml:id="_xXXgu8h">The Tragic Triad: Conflicting Gradients, Dominating Gradients, High Curvature</head><p xml:id="_KJbMaYZ">We hypothesize that a key optimization issue in multi-task learning arises from conflicting gradients, where gradients for different tasks point away from one another as measured by a negative inner product. However, conflicting gradients are not detrimental on their own. Indeed, simply averaging task gradients should provide the correct solution to descend the multi-task objective. However, there are conditions under which such conflicting gradients lead to significantly degraded performance. Consider a two-task optimization problem. If the gradient of one task is much larger in magnitude than the other, it will dominate the average gradient. If there is also high positive curvature along the directions of the task gradients, then the improvement in performance from the dominating task may be significantly overestimated, while the degradation in performance from the dominated task may be significantly underestimated. Hence, we can characterize the co-occurrence of three conditions as follows: (a) when gradients from multiple tasks are in conflict with one another (b) when the difference in gradient magnitudes is large, leading to some task gradients dominating others, and (c) when there is high curvature in the multi-task optimization landscape. We formally define the three conditions below. Definition 1. We define φ ij as the angle between two task gradients g i and g j . We define the gradients as conflicting when cos φ ij &lt; 0. Definition 2. We define the gradient magnitude similarity between two gradients g i and g j as Φ(g i , g j ) =</p><formula xml:id="formula_1" coords="3,161.54,283.51,49.02,16.69">2 gi 2 gj 2 gi 2 2 + gj 2 2 .</formula><p xml:id="_skAekDs">When the magnitude of two gradients is the same, this value is equal to 1. As the gradient magnitudes become increasingly different, this value goes to zero.</p><p xml:id="_RWT3HFv">Definition 3. We define multi-task curvature as H(L; θ, θ ) =</p><formula xml:id="formula_2" coords="3,108.00,333.17,396.00,24.29">1 0 ∇L(θ) T ∇ 2 L(θ + a(θ − θ))∇L(θ)</formula><p xml:id="_E558AeH">da, which is the averaged curvature of L between θ and θ in the direction of the multi-task gradient ∇L(θ).</p><p xml:id="_KV2F68u">When H(L; θ, θ ) &gt; C for some large positive constant C, for model parameters θ and θ at the current and next iteration, we characterize the optimization landscape as having high curvature.</p><p xml:id="_hEHxvrx">We aim to study the tragic triad and observe the presence of the three conditions through two examples. First, consider the two-dimensional optimization landscape illustrated in Fig. <ref type="figure" coords="3,410.75,417.98,7.77,8.64" target="#fig_0">1a</ref>, where the landscape for each task objective corresponds to a deep and curved valley with large curvatures (Fig. <ref type="figure" coords="3,462.13,428.88,36.16,8.64" target="#fig_0">1b and 1c</ref>). The optima of this multi-task objective correspond to where the two valleys meet. More details on the optimization landscape are in Appendix D. Particular points of this optimization landscape exhibit the three described conditions, and we observe that, the Adam <ref type="bibr" coords="3,386.33,461.61,16.55,8.64" target="#b29">[30]</ref> optimizer stalls precisely at one of these points (see Fig. <ref type="figure" coords="3,235.68,472.52,8.04,8.64" target="#fig_0">1d</ref>), preventing it from reaching an optimum. This provides some empirical evidence for our hypothesis. Our experiments in Section 5.3 further suggest that this phenomenon occurs in multi-task learning with deep networks. Motivated by these observations, we develop an algorithm that aims to alleviate the optimization challenges caused by conflicting gradients, dominating gradients, and high curvature, which we describe next.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3" xml:id="_JCrTjvF">PCGrad: Project Conflicting Gradients</head><p xml:id="_WX9NwbF">Our goal is to break one condition of the tragic triad by directly altering the gradients themselves to prevent conflict. In this section, we outline our approach for altering the gradients. In the next section, we will theoretically show that de-conflicting gradients can benefit multi-task learning when dominating gradients and high curvatures are present.</p><p xml:id="_daMgjTz">To be maximally effective and widely applicable, we aim to alter the gradients in a way that allows for positive interactions between the task gradients and does not introduce assumptions on the form of the model. Hence, when gradients do not conflict, we do not change the gradients. When gradients do conflict, the goal of PCGrad is to modify the gradients for each task so as to minimize negative conflict with other task gradients, which will in turn mitigate under-and over-estimation problems arising from high curvature.</p><p xml:id="_VVCrQJc">To deconflict gradients during optimization, PCGrad adopts a simple procedure: if the gradients between two tasks are in conflict, i.e. their cosine similarity is negative, we project the gradient of each task onto the normal plane of the gradient of the other task. This amounts to removing the conflicting component of the gradient for the task, thereby reducing the amount of destructive gradient interference between tasks. A pictorial description of this idea is shown in Fig. <ref type="figure" coords="3,498.12,713.51,3.81,8.64" target="#fig_1">2</ref>.</p><formula xml:id="formula_3" coords="4,108.38,98.59,196.38,76.18">Algorithm 1 PCGrad Update Rule Require: Model parameters θ, task minibatch B = {T k } 1: g k ← ∇ θ L k (θ) ∀k 2: g PC k ← g k ∀k 3: for Ti ∈ B do 4:</formula><p xml:id="_8hMW3XW">for Tj uniformly ∼ B \ Ti in random order do 5:</p><p xml:id="_HGkmc2a">if g PC i • gj &lt; 0 then 6:</p><p xml:id="_CQuCRNp">// Subtract the projection of g PC i onto gj 7:</p><p xml:id="_K4DHz4j">Set Suppose the gradient for task T i is g i , and the gradient for task T j is g j . PCGrad proceeds as follows:</p><formula xml:id="formula_4" coords="4,113.72,198.30,142.22,29.05">g PC i = g PC i − g PC i •g j g j 2 gj 8: return update ∆θ = g PC = i g PC i</formula><p xml:id="_xufy4WC">(1) First, it determines whether g i conflicts with g j by computing the cosine similarity between vectors g i and g j , where negative values indicate conflicting gradients. (2) If the cosine similarity is negative, we replace g i by its projection onto the normal plane of g j : g i = g i − gi•gj gj 2 g j . If the gradients are not in conflict, i.e. cosine similarity is non-negative, the original gradient g i remains unaltered. (3) PCGrad repeats this process across all of the other tasks sampled in random order from the current batch T j ∀ j = i, resulting in the gradient g PC i that is applied for task T i . We perform the same procedure for all tasks in the batch to obtain their respective gradients. The full update procedure is described in Algorithm 1 and a discussion on using a random task order is included in Appendix H. This procedure, while simple to implement, ensures that the gradients that we apply for each task per batch interfere minimally with the other tasks in the batch, mitigating the conflicting gradient problem, producing a variant on standard first-order gradient descent in the multi-objective setting. In practice, PCGrad can be combined with any gradient-based optimizer, including commonly used methods such as SGD with momentum and Adam <ref type="bibr" coords="4,304.94,403.74,15.12,8.64" target="#b29">[30]</ref>, by simply passing the computed update to the respective optimizer instead of the original gradient. Our experimental results verify the hypothesis that this procedure reduces the problem of conflicting gradients, and find that, as a result, learning progress is substantially improved.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4" xml:id="_7G3N6aP">Theoretical Analysis of PCGrad</head><p xml:id="_9xYsDps">In this section, we theoretically analyze the performance of PCGrad with two tasks: Definition 4. Consider two task loss functions L 1 : R n → R and L 2 : R n → R. We define the two-task learning objective as L(θ) = L 1 (θ) + L 2 (θ) for all θ ∈ R n , where g 1 = ∇L 1 (θ), g 2 = ∇L 2 (θ), and g = g 1 + g 2 .</p><p xml:id="_uCYszSy">We first aim to verify that the PCGrad update corresponds to a sensible optimization procedure under simplifying assumptions. We analyze convergence of PCGrad in the convex setting, under standard assumptions in Theorem 1. For additional analysis on convergence, including the non-convex setting, with more than two tasks, and with momentum-based optimizers, see Appendices A.1 and A.4 Theorem 1. Assume L 1 and L 2 are convex and differentiable. Suppose the gradient of L is L-Lipschitz with L &gt; 0. Then, the PCGrad update rule with step size t ≤ 1 L will converge to either (1) a location in the optimization landscape where cos(φ 12 ) = −1 or (2) the optimal value L(θ * ).</p><p xml:id="_PsedWGd">Proof. See Appendix A.1. Theorem 1 states that application of the PCGrad update in the two-task setting with a convex and Lipschitz multi-task loss function L leads to convergence to either the minimizer of L or a potentially sub-optimal objective value. A sub-optimal solution occurs when the cosine similarity between the gradients of the two tasks is exactly −1, i.e. the gradients directly conflict, leading to zero gradient after applying PCGrad. However, in practice, since we are using SGD, which is a noisy estimate of the true batch gradients, the cosine similarity between the gradients of two tasks in a minibatch is unlikely to be −1, thus avoiding this scenario. Note that, in theory, convergence may be slow if cos(φ 12 ) hovers near −1. However, we don't observe this in practice, as seen in the objective-wise learning curves in Appendix B. Now that we have checked the sensibility of PCGrad, we aim to understand how PCGrad relates to the three conditions in the tragic triad. In particular, we derive sufficient conditions under which PCGrad achieves lower loss after one update. Here, we still analyze the two task setting, but no longer assume convexity of the loss functions. Definition 5. We define the multi-task curvature bounding measure ξ(g 1 , g</p><formula xml:id="formula_5" coords="5,108.00,122.48,396.00,28.44">2 ) = (1 − cos 2 φ 12 ) g1−g2 2 2 g1+g2 2 2 .</formula><p xml:id="_Ay9ynpF">With the above definition, we present our next theorem: Theorem 2. Suppose L is differentiable and the gradient of L is Lipschitz continuous with constant L &gt; 0. Let θ MT and θ PCGrad be the parameters after applying one update to θ with g and PCGradmodified gradient g PC respectively, with step size t &gt; 0. Moreover, assume H(L; θ, θ MT ) ≥ g 2 2 for some constant ≤ L, i.e. the multi-task curvature is lower-bounded. Then L(θ</p><formula xml:id="formula_6" coords="5,108.00,205.95,397.17,41.90">PCGrad ) ≤ L(θ MT ) if (a) cos φ 12 ≤ −Φ(g 1 , g 2 ), (b) ≥ ξ(g 1 , g 2 )L, and (c) t ≥ 2 −ξ(g1,g2)L . Proof. See Appendix A.2.</formula><p xml:id="_NKwsGa9">Intuitively, Theorem 2 implies that PCGrad achieves lower loss value after a single gradient update compared to standard gradient descent in multi-task learning when (i) the angle between task gradients is not too small, i.e. the two tasks need to conflict sufficiently (condition (a)), (ii) the difference in magnitude needs to be sufficiently large (condition (a)), (iii) the curvature of the multi-task gradient should be large (condition (b)), (iv) and the learning rate should be big enough so that large curvature would lead to overestimation of performance improvement on the dominating task and underestimation of performance degradation on the dominated task (condition (c)). These first three points (i-iii) correspond to exactly the triad of conditions outlined in Section 2.2, while the latter condition (iv) is desirable as we hope to learn quickly. We empirically validate that the first three points, (i-iii), are frequently met in a neural network multi-task learning problem in Figure <ref type="figure" coords="5,488.93,352.17,4.92,8.64" target="#fig_3">4</ref> in Section 5.3. For additional analysis, including complete sufficient and necessary conditions for the PCGrad update to outperform the vanilla multi-task gradient, see Appendix A.3.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3" xml:id="_BNt4jqe">PCGrad in Practice</head><p xml:id="_3gs2qAz">We use PCGrad in supervised learning and reinforcement learning problems with multiple tasks or goals. Here, we discuss the practical application of PCGrad to those settings.</p><p xml:id="_a4kHrSE">In multi-task supervised learning, each task T i ∼ p(T ) has a corresponding training dataset D i consisting of labeled training examples, i.e. D i = {(x, y) n }. The objective for each task in this supervised setting is then defined as L i (θ) = E (x,y)∼Di [− log f θ (y|x, z i )], where z i is a one-hot encoding of task T i . At each training step, we randomly sample a batch of data points B from the whole dataset i D i and then group the sampled data with the same task encoding into small batches denoted as B i for each T i represented in B. We denote the set of tasks appearing in B as B T . After sampling, we precompute the gradient of each task in B T as</p><formula xml:id="formula_7" coords="5,322.23,504.70,183.52,9.96">∇ θ L i (θ) = E (x,y)∼Bi [−∇ θ log f θ (y|x, z i )] .</formula><p xml:id="_T6TuyUt">Given the set of precomputed gradients ∇ θ L i (θ), we also precompute the cosine similarity between all pairs of the gradients in the set. Using the pre-computed gradients and their similarities, we can obtain the PCGrad update by following Algorithm 1, without re-computing task gradients nor backpropagating into the network. Since the PCGrad procedure is only modifying the gradients of shared parameters in the optimization step, it is model-agnostic and can be applied to any architecture with shared parameters. We empirically validate PCGrad with multiple architectures in Section 5.</p><p xml:id="_HG2JRJM">For multi-task RL and goal-conditioned RL, PCGrad can be readily applied to policy gradient methods by directly updating the computed policy gradient of each task, following Algorithm 1, analogous to the supervised learning setting. For actor-critic algorithms, it is also straightforward to apply PCGrad: we simply replace task gradients for both the actor and the critic by their gradients computed via PCGrad. For more details on the practical implementation for RL, see Appendix C.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4" xml:id="_jPybBcH">Related Work</head><p xml:id="_Qrp2CAC">Algorithms for multi-task learning typically consider how to train a single model that can solve a variety of different tasks <ref type="bibr" coords="5,209.14,680.79,10.90,8.64" target="#b5">[6,</ref><ref type="bibr" coords="5,222.54,680.79,7.52,8.64" target="#b1">2,</ref><ref type="bibr" coords="5,232.55,680.79,11.91,8.64" target="#b48">49]</ref>. The multi-task formulation has been applied to many different settings, including supervised learning <ref type="bibr" coords="5,266.46,691.70,15.87,8.64" target="#b62">[63,</ref><ref type="bibr" coords="5,284.83,691.70,12.50,8.64" target="#b34">35,</ref><ref type="bibr" coords="5,299.83,691.70,12.50,8.64" target="#b59">60,</ref><ref type="bibr" coords="5,314.82,691.70,12.50,8.64" target="#b52">53,</ref><ref type="bibr" coords="5,329.82,691.70,13.34,8.64" target="#b61">62]</ref> and reinforcement-learning <ref type="bibr" coords="5,458.80,691.70,15.88,8.64" target="#b16">[17,</ref><ref type="bibr" coords="5,477.18,691.70,11.91,8.64" target="#b57">58]</ref>, as well as many different domains, such as vision <ref type="bibr" coords="5,303.89,702.61,10.90,8.64" target="#b2">[3,</ref><ref type="bibr" coords="5,317.80,702.61,12.50,8.64" target="#b38">39,</ref><ref type="bibr" coords="5,333.31,702.61,12.50,8.64" target="#b30">31,</ref><ref type="bibr" coords="5,348.82,702.61,12.50,8.64" target="#b32">33,</ref><ref type="bibr" coords="5,364.33,702.61,11.92,8.64" target="#b61">62]</ref>, language <ref type="bibr" coords="5,423.05,702.61,15.89,8.64" target="#b10">[11,</ref><ref type="bibr" coords="5,441.95,702.61,12.50,8.64" target="#b14">15,</ref><ref type="bibr" coords="5,457.46,702.61,12.50,8.64" target="#b37">38,</ref><ref type="bibr" coords="5,472.97,702.61,13.35,8.64" target="#b43">44]</ref> and robotics <ref type="bibr" coords="5,142.72,713.51,15.79,8.64" target="#b44">[45,</ref><ref type="bibr" coords="5,161.00,713.51,12.46,8.64" target="#b58">59,</ref><ref type="bibr" coords="5,175.95,713.51,11.85,8.64" target="#b24">25]</ref>. While multi-task learning has the promise of accelerating acquisition of large task repertoires, in practice it presents a challenging optimization problem, which has been tackled in several ways in prior work.</p><p xml:id="_39UB4CT">A number of architectural solutions have been proposed to the multi-task learning problem based on multiple modules or paths <ref type="bibr" coords="6,226.68,113.68,15.77,8.64" target="#b18">[19,</ref><ref type="bibr" coords="6,244.95,113.68,12.45,8.64" target="#b13">14,</ref><ref type="bibr" coords="6,259.88,113.68,12.45,8.64" target="#b39">40,</ref><ref type="bibr" coords="6,274.81,113.68,12.45,8.64" target="#b50">51,</ref><ref type="bibr" coords="6,289.76,113.68,12.45,8.64" target="#b45">46,</ref><ref type="bibr" coords="6,304.69,113.68,12.45,8.64" target="#b56">57,</ref><ref type="bibr" coords="6,319.63,113.68,11.83,8.64" target="#b45">46]</ref>, or using attention-based architectures <ref type="bibr" coords="6,489.48,113.68,15.77,8.64" target="#b32">[33,</ref><ref type="bibr" coords="6,108.00,124.59,11.92,8.64" target="#b36">37]</ref>. Our work is agnostic to the model architecture and can be combined with prior architectural approaches in a complementary fashion. A different set of multi-task learning approaches aim to decompose the problem into multiple local problems, often corresponding to each task, that are significantly easier to learn, akin to divide and conquer algorithms <ref type="bibr" coords="6,366.44,157.32,15.66,8.64" target="#b31">[32,</ref><ref type="bibr" coords="6,384.28,157.32,12.40,8.64" target="#b49">50,</ref><ref type="bibr" coords="6,398.88,157.32,12.40,8.64" target="#b41">42,</ref><ref type="bibr" coords="6,413.47,157.32,12.40,8.64" target="#b55">56,</ref><ref type="bibr" coords="6,428.06,157.32,12.40,8.64" target="#b20">21,</ref><ref type="bibr" coords="6,442.65,157.32,11.74,8.64" target="#b12">13]</ref>. Eventually, the local models are combined into a single, multi-task policy using different distillation techniques (outlined in <ref type="bibr" coords="6,158.37,179.14,15.88,8.64" target="#b26">[27,</ref><ref type="bibr" coords="6,177.30,179.14,11.56,8.64" target="#b12">13]</ref>). In contrast to these methods, we propose a simple and cogent scheme for multi-task learning that allows us to learn the tasks simultaneously using a single, shared model without the need for network distillation.</p><p xml:id="_hxVeZYz">Similarly to our work, a number of prior approaches have observed the difficulty of optimization in multi-task learning <ref type="bibr" coords="6,185.14,228.25,15.70,8.64" target="#b25">[26,</ref><ref type="bibr" coords="6,203.33,228.25,12.42,8.64" target="#b28">29,</ref><ref type="bibr" coords="6,218.23,228.25,12.42,8.64" target="#b51">52,</ref><ref type="bibr" coords="6,233.14,228.25,11.78,8.64" target="#b54">55]</ref>. Our work suggests that the challenge in multi-task learning may be attributed to what we describe as the tragic triad of multi-task learning (i.e., conflicting gradients, high curvature, and large gradient differences), which we address directly by introducing a simple and practical algorithm that deconflicts gradients from different tasks. Prior works combat optimization challenges by rescaling task gradients <ref type="bibr" coords="6,269.29,271.89,15.89,8.64" target="#b52">[53,</ref><ref type="bibr" coords="6,288.17,271.89,7.27,8.64" target="#b8">9]</ref>. We alter both the magnitude and direction of the gradient, which we find to be critical for good performance (see Fig. <ref type="figure" coords="6,389.43,282.80,3.67,8.64">3</ref>). Prior work has also used the cosine similarity between gradients to define when an auxiliary task might be useful <ref type="bibr" coords="6,475.81,293.71,16.73,8.64" target="#b15">[16]</ref> or when two tasks are related <ref type="bibr" coords="6,216.68,304.62,15.34,8.64" target="#b54">[55]</ref>. We similarly use cosine similarity between gradients to determine if the gradients between a pair of tasks are in conflict. Unlike Du et al. <ref type="bibr" coords="6,399.84,315.53,15.31,8.64" target="#b15">[16]</ref>, we use this measure for effective multi-task learning, instead of ignoring auxiliary objectives. Overall, we empirically compare our approach to a number of these prior approaches <ref type="bibr" coords="6,367.47,337.35,15.89,8.64" target="#b52">[53,</ref><ref type="bibr" coords="6,386.90,337.35,7.52,8.64" target="#b8">9,</ref><ref type="bibr" coords="6,397.97,337.35,11.91,8.64" target="#b54">55]</ref>, and observe superior performance with PCGrad.</p><p xml:id="_C2Ga3jq">Multiple approaches to continual learning have studied how to prevent gradient updates from adversely affecting previously-learned tasks through various forms of gradient projection <ref type="bibr" coords="6,418.97,375.55,15.66,8.64" target="#b35">[36,</ref><ref type="bibr" coords="6,437.11,375.55,7.42,8.64" target="#b6">7,</ref><ref type="bibr" coords="6,447.02,375.55,12.41,8.64" target="#b17">18,</ref><ref type="bibr" coords="6,461.91,375.55,11.75,8.64" target="#b22">23]</ref>. These methods focus on sequential learning settings, and solve for the gradient projections using quadratic programming <ref type="bibr" coords="6,165.86,397.37,15.42,8.64" target="#b35">[36]</ref>, only project onto the normal plane of the average gradient of past tasks <ref type="bibr" coords="6,478.86,397.37,10.72,8.64" target="#b6">[7]</ref>, or project the current task gradients onto the orthonormal set of previous task gradients <ref type="bibr" coords="6,439.35,408.28,15.12,8.64" target="#b17">[18]</ref>. In contrast, our work focuses on positive transfer when simultaneously learning multiple tasks, does not require solving a QP, and iteratively projects the gradients of each task instead of averaging or only projecting the current task gradient. Finally, our method is distinct from and solves a different problem than the projected gradient method <ref type="bibr" coords="6,231.78,451.92,10.70,8.64" target="#b4">[5]</ref>, which is an approach for constrained optimization that projects gradients onto the constraint manifold.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5" xml:id="_afNC9Kf">Experiments</head><p xml:id="_SajzJke">The goal of our experiments is to study the following questions: (1) Does PCGrad make the optimization problems easier for various multi-task learning problems including supervised, reinforcement, and goal-conditioned reinforcement learning settings across different task families? (2) Can PCGrad be combined with other multi-task learning approaches to further improve performance? (3) Is the tragic triad of multi-task learning a major factor in making optimization for multi-task learning challenging? To broadly evaluate PCGrad, we consider multi-task supervised learning, multi-task RL, and goal-conditioned RL problems. We include the results on goal-conditioned RL in Appendix F.</p><p xml:id="_WnhapG7">During our evaluation, we tune the parameters of the baselines independently, ensuring that all methods were fairly provided with equal model and training capacity. PCGrad inherits the hyperparameters of the respective baseline method in all experiments, and has no additional hyperparameters. For more details on the experimental set-up and model architectures, see Appendix J. The code is available online<ref type="foot" coords="6,170.91,628.81,3.49,6.05" target="#foot_1">1</ref> .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1" xml:id="_MStBTdt">Multi-Task Supervised Learning</head><p xml:id="_TnEBz6E">To answer question (1) in the supervised learning setting and question (2), we perform experiments on five standard multi-task supervised learning datasets: MultiMNIST, CityScapes, CelebA, multi-task CIFAR-100 and NYUv2. We include the results on MultiMNIST and CityScapes in Appendix E.  For CIFAR-100, we follow Rosenbaum et al. <ref type="bibr" coords="7,108.00,259.39,16.60,8.64" target="#b45">[46]</ref> to treat 20 coarse labels in the dataset as distinct tasks, creating a dataset with 20 tasks, with 2500 training instances and 500 test instances per task. We combine PCGrad with a powerful multi-task learning architecture, routing networks <ref type="bibr" coords="7,160.77,313.93,15.66,8.64" target="#b45">[46,</ref><ref type="bibr" coords="7,178.73,313.93,11.74,8.64" target="#b46">47]</ref>, by applying PCGrad only to the shared parameters. For the details of this comparison, see Appendix J.1. As shown in Table <ref type="table" coords="7,132.93,346.66,3.81,8.64" target="#tab_1">2</ref>, applying PCGrad to a single network achieves 71% classification accuracy, which outperforms most of the prior methods such as cross-stitch <ref type="bibr" coords="7,156.29,379.39,16.65,8.64" target="#b39">[40]</ref> and independent training, suggesting that sharing representations across tasks is conducive for good performance. While routing networks achieve better performance than PCGrad on its own, they are complementary: combining PCGrad with routing networks leads to a 2.8% absolute improvement in test accuracy.</p><p xml:id="_RVdPbuV">We also aim to use PCGrad to tackle a multi-label classfication problem, which is a commonly used benchmark for multi-task learning. In multi-label classification, given a set of attributes, the model needs to decide whether each attribute describes the input. Hence, it is essentially a binary classification problem for each attribute. We choose the CelebA dataset <ref type="bibr" coords="7,390.59,461.23,15.15,8.64" target="#b33">[34]</ref>, which consists of 200K face images with 40 attributes. Since for each attribution, it is a binary classfication problem and thus we convert it to a 40-way multi-task learning problem following <ref type="bibr" coords="7,365.82,483.05,15.27,8.64" target="#b52">[53]</ref>. We use the same architecture as in <ref type="bibr" coords="7,129.03,493.96,15.27,8.64" target="#b52">[53]</ref>.</p><p xml:id="_3fFYjng">We use the binary classification error averaged across all 40 tasks to evaluate the performance as in <ref type="bibr" coords="7,119.42,521.26,15.42,8.64" target="#b52">[53]</ref>. Similar to the MultiMNIST results, we compare PCGrad to Sener and Koltun <ref type="bibr" coords="7,474.07,521.26,16.60,8.64" target="#b52">[53]</ref> by rerunning the open-sourced code provided in <ref type="bibr" coords="7,288.31,532.16,15.23,8.64" target="#b52">[53]</ref>. As shown in Table <ref type="table" coords="7,386.43,532.16,3.71,8.64">3</ref>, PCGrad outperforms Sener and Koltun <ref type="bibr" coords="7,153.31,543.07,15.23,8.64" target="#b52">[53]</ref>, suggesting that PCGrad is effective in multi-label classification and can also improve multi-task supervised learning performance when the number of tasks is high. Table <ref type="table" coords="7,133.23,625.32,3.95,8.64">3</ref>: CelebA results. We show the average classification error across all 40 tasks in CelebA. PCGrad outperforms the prior method Sener and Koltun <ref type="bibr" coords="7,280.76,635.93,14.94,7.77" target="#b52">[53]</ref> in this dataset.</p><p xml:id="_Y9QqP58">Finally, we combine PCGrad with another state-of-art multi-task learning algorithm, MTAN <ref type="bibr" coords="7,485.97,658.97,15.42,8.64" target="#b32">[33]</ref>, and evaluate the performance on a more challenging indoor scene dataset, NYUv2, which contains 3 tasks: 13-class semantic segmentation, depth estimation, and surface normal prediction. We compare MTAN with PCGrad to a list of methods mentioned in Appendix J.1, where each method is trained with three different weighting schemes as in <ref type="bibr" coords="7,293.52,702.61,15.42,8.64" target="#b32">[33]</ref>, equal weighting, weight uncertainty <ref type="bibr" coords="7,466.87,702.61,15.41,8.64" target="#b27">[28]</ref>, and DWA <ref type="bibr" coords="7,132.64,713.51,15.22,8.64" target="#b32">[33]</ref>. We only run MTAN with PCGrad with weight uncertainty as we find weight uncertainty Figure <ref type="figure" coords="8,137.18,197.11,3.95,8.64">3</ref>: For the two plots on the left, we show learning curves on MT10 and MT50 respectively. PCGrad significantly outperforms the other methods in terms of both success rates and data efficiency. In the rightmost plot, we present the ablation study on only using the magnitude and the direction of gradients modified by PCGrad and a comparison to GradNorm <ref type="bibr" coords="8,253.46,227.65,9.46,7.77" target="#b7">[8]</ref>. PCGrad outperforms both ablations and GradNorm, indicating the importance of modifying both the gradient directions and magnitudes in multi-task learning.</p><p xml:id="_jyUKzhG">as the most effective scheme for training MTAN. The results comparing Cross-Stitch, MTAN and MTAN + PCGrad are presented in Table <ref type="table" coords="8,272.37,266.88,5.01,8.64" target="#tab_0">1</ref> while the full comparison can be found in Table <ref type="table" coords="8,473.98,266.88,5.01,8.64">8</ref> in the Appendix J.4. MTAN with PCGrad is able to achieve the best scores in 8 out of the 9 categories where there are 3 categories per task.</p><p xml:id="_9TnuPeK">Our multi-task supervised learning results indicate that PCGrad can be seamlessly combined with state-of-art multi-task learning architectures and further improve their results on established supervised multi-task learning benchmarks. We include more results of PCGrad combined with more multi-task learning architectures in Appendix I.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2" xml:id="_yGgPRbP">Multi-Task Reinforcement Learning</head><p xml:id="_6hAZ29t">To answer question (2) in the RL setting, we first consider the multi-task RL problem and evaluate our algorithm on the recently proposed Meta-World benchmark <ref type="bibr" coords="8,350.16,386.19,15.35,8.64" target="#b60">[61]</ref>. In particular, we test all methods on the MT10 and MT50 benchmarks in Meta-World, which contain 10 and 50 manipulation tasks respectively shown in Figure <ref type="figure" coords="8,225.23,408.01,8.30,8.64" target="#fig_0">10</ref>. in Appendix J.2.</p><p xml:id="_pRXdWZU">The results are shown in left two plots in Figure <ref type="figure" coords="8,309.12,424.40,3.81,8.64">3</ref>. PCGrad combined with SAC learns all tasks with the best data efficiency and successfully solves all of the 10 tasks in MT10 and about 70% of the 50 tasks in MT50. Training a single SAC policy and a multi-head policy is unable to acquire half of the skills in both MT10 and MT50, suggesting that eliminating gradient interference across tasks can significantly boost performance of multi-task RL. Training independent SAC agents is able to eventually solve all tasks in MT10 and 70% of the tasks in MT50, but requires about 2 millions and 15 millions more samples than PCGrad with SAC in MT10 and MT50 respectively, implying that applying PCGrad can result in leveraging shared structure among tasks that expedites multi-task learning. As noted by Yu et al. <ref type="bibr" coords="8,238.69,511.67,15.31,8.64" target="#b60">[61]</ref>, these tasks involve distinct behavior motions, which makes learning all tasks with a single policy challenging as demonstrated by poor baseline performance.</p><p xml:id="_E34gAwJ">The ability to learn these tasks together opens the door for a number of interesting extensions to meta-learning and generalization to novel task families.</p><p xml:id="_Fb7YqZp">Since the PCGrad update affects both the gradient direction and the gradient magnitude, we perform an ablation study that tests two variants of PCGrad: (1) only applying the gradient direction corrected with PCGrad while keeping the gradient magnitude unchanged and (2) only applying the gradient magnitude computed by PCGrad while keeping the gradient direction unchanged. We further run a direction comparison to GradNorm <ref type="bibr" coords="8,250.92,604.42,10.59,8.64" target="#b7">[8]</ref>, which also scales only the magnitudes of the task gradients.</p><p xml:id="_JaRuPqR">As shown in the rightmost plot in Figure <ref type="figure" coords="8,269.12,615.33,3.67,8.64">3</ref>, both variants and GradNorm perform worse than PCGrad and the variant where we only vary the gradient magnitude is much worse than PCGrad. This emphasizes the importance of the orientation change, which is particularly notable as multiple prior works only alter gradient magnitudes <ref type="bibr" coords="8,258.76,648.06,10.81,8.64" target="#b7">[8,</ref><ref type="bibr" coords="8,272.06,648.06,11.84,8.64" target="#b52">53]</ref>. We also notice that the variant of PCGrad where only the gradient magnitudes change achieves comparable performance to GradNorm, which suggests that it is important to modify both the gradient directions and magnitudes to eliminate interference and achieve good multi-task learning results. Finally, to test the importance of keeping positive cosine similarities between tasks for positive transfer, we compare PCGrad to a recently proposed method in <ref type="bibr" coords="8,118.15,702.61,16.53,8.64" target="#b54">[55]</ref> that regularizes cosine similarities of different task gradients towards 0. PCGrad outperforms Suteu and Guo <ref type="bibr" coords="8,169.71,713.51,16.60,8.64" target="#b54">[55]</ref> by a large margin. We leave details of the comparison to Appendix G. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3" xml:id="_sCPXjpn">Empirical Analysis of the Tragic Triad</head><p xml:id="_kZdxkTE">Finally, to answer question (1), we compare the performance of standard multi-task SAC and the multi-task SAC with PCGrad. We evaluate each method on two tasks, reach and press button top, in the Meta-World <ref type="bibr" coords="9,186.25,313.80,16.73,8.64" target="#b60">[61]</ref> benchmark. As shown in the leftmost plot in Figure <ref type="figure" coords="9,421.70,313.80,3.81,8.64" target="#fig_3">4</ref>, we plot the multitask curvature, which is computed as</p><formula xml:id="formula_8" coords="9,257.20,322.82,247.15,11.36">H(L; θ t ,θ t+1 ) = 2• L(θ t+1 )−L(θ t )−∇ θ t L(θ t ) T (θ t+1 −θ t ) by</formula><p xml:id="_SfEyDS7">Taylor's Theorem where L is the multi-task loss, and θ t and θ t+1 are the parameters at iteration t and t + 1. During the training process, the multi-task curvature stays positive and is increasing for both Adam and Adam combined PCGrad, suggesting that condition (b) in Theorem 2 that the multi-task curvature is lower bounded by some positive value is widely held empirically. To further analyze conditions in Theorem 2 empirically, we plot the percentage of condition (a) (i.e. conflicting gradients) and the implication of condition (b) (ξ(g 1 , g 2 ) ≤ 1) in Theorem 2 being held among the total number of iterations where the cosine similarity is negative in the plot in the middle of Figure <ref type="figure" coords="9,498.39,402.76,3.68,8.64" target="#fig_3">4</ref>.</p><p xml:id="_ag6mtvM">Along with the plot on the right in Figure <ref type="figure" coords="9,271.63,413.67,3.66,8.64" target="#fig_3">4</ref>, which presents the average return of the two tasks during training, we can see that while Adam and Adam with PCGrad haven't received reward signal from Task 2, condition (a) and the implication of condition (b) stay held and as soon as Adam with PCGrad begins to solve Task 2, the percentage of condition (a) and the implication of condition (b) being held start to decrease. Such a pattern suggests that conflicting gradients, high curvatures and dominating gradients indeed produce considerable challenges in optimization before multi-task learner gains any useful learning signal, which also implies that the tragic triad may indeed be the determining factor where PCGrad can lead to better performance gain over standard multi-task learning in practice.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6" xml:id="_8KDaZ84">Conclusion</head><p xml:id="_esTtN4k">In this work, we identified a set of conditions that underlies major challenges in multi-task optimization: conflicting gradients, high positive curvature, and large gradient differences. We proposed a simple algorithm (PCGrad) to mitigate these challenges via "gradient surgery." PCGrad provides a simple solution to mitigating gradient interference, which substantially improves optimization performance. We provide simple didactic examples and subsequently show significant improvement in optimization for a variety of multi-task supervised learning and reinforcement learning problems. We show that, when some optimization challenges of multi-task learning are alleviated by PCGrad, we can obtain hypothesized benefits in efficiency and asymptotic performance of multi-task settings.</p><p xml:id="_pvAKceF">While we studied multi-task supervised learning and multi-task reinforcement learning in this work, we suspect the problem of conflicting gradients to be prevalent in a range of other settings and applications, such as meta-learning, continual learning, multi-goal imitation learning <ref type="bibr" coords="9,466.04,648.06,15.41,8.64" target="#b9">[10]</ref>, and multi-task problems in natural language processing applications <ref type="bibr" coords="9,375.89,658.97,15.41,8.64" target="#b37">[38]</ref>. Due to its simplicity and model-agnostic nature, we expect that applying PCGrad in these domains to be a promising avenue for future investigation. Further, the general idea of gradient surgery may be an important ingredient for alleviating a broader class of optimization challenges in deep learning, such as the challenges in the stability challenges in two-player games <ref type="bibr" coords="9,282.90,702.61,16.49,8.64" target="#b47">[48]</ref> and multi-agent optimizations <ref type="bibr" coords="9,422.10,702.61,15.15,8.64" target="#b40">[41]</ref>. We believe this work to be a step towards simple yet general techniques for addressing some of these challenges.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_h3ndzY5">Broader Impact</head><p xml:id="_mBDXUrD">Applications and Benefits. Despite recent success, current deep learning and deep RL methods mostly focus on tackling a single specific task from scratch. Prior methods have proposed methods that can perform multiple tasks, but they often yield comparable or even higher data complexity compared to learning each task individually. Our method enables deep learning systems that mitigate inferences between differing tasks and thus achieves data-efficient multi-task learning. Since our method is general and simple to apply to various problems, there are many possible real-world applications, including but not limited to computer vision systems, autonomous driving, and robotics. For computer vision systems, our method can be used to develop algorithms that enable efficient classification, instance and semantics segmentation and object detection at the same time, which could improve performances of computer vision systems by reusing features obtained from each task and lead to a leap in real-world domains such as autonomous driving. For robotics, there are many situations where multi-task learning is needed. For example, surgical robots are required to perform a wide range of tasks such as stitching and removing tumour from the patient's body. Kitchen robots should be able to complete multiple chores such as cooking and washing dishes at the same time. Hence, our work represents a step towards making multi-task reinforcement learning more applicable to those settings.</p><p xml:id="_WB3UaTy">Risks. However, there are potential risks that apply to all machine learning and reinforcement learning systems including ours, including but not limited to safety, reward specification in RL which is often difficult to acquire in the real world, bias in supervised learning systems due to the composition of training data, and compute/data-intensive training procedures. For example, safety issues arise when autonomous driving cars fail to generalize to out-of-distribution data, which leads to crashing or even hurting people. Moreover, reward specification in RL is generally inaccessible in the real world, making RL unable to scale to real robots. In supervised learning domains, learned models could inherit the bias that exists in the training dataset. Furthermore, training procedures of ML models are generally compute/data-intensive, which cause inequitable access to these models. Our method is not immune to these risks. Hence, we encourage future research to design more robust and safe multi-task RL algorithms that can prevent unsafe behaviors. It is also important to push research in self-supervised and unsupervised multi-task RL in order to resolve the issue of reward specification. For supervised learning, we recommend researchers to publish their trained multi-task learning models to make access to those models equitable to everyone in field and develop new datasets that can mitigate biases and also be readily used in multi-task learning.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,270.36,133.99,235.13,8.64;2,270.36,144.60,234.24,7.77;2,270.36,154.56,235.21,7.77;2,270.07,164.53,233.94,7.77;2,270.36,174.49,233.64,7.77;2,270.36,184.45,233.64,7.77;2,270.36,194.41,233.64,7.77;2,270.36,204.38,233.79,7.77;2,270.07,214.34,233.91,7.77;2,270.36,75.69,233.63,56.12"><head>Figure 1 :</head><label>1</label><figDesc xml:id="_sfp2G2G">Figure 1: Visualization of PCGrad on a 2D multi-task optimization problem. (a) A multi-task objective landscape. (b) &amp; (c) Contour plots of the individual task objectives that comprise (a). (d) Trajectory of gradient updates on the multi-task objective using the Adam optimizer. The gradient vectors of the two tasks at the end of the trajectory are indicated by blue and red arrows, where the relative lengths are on a log scale.(e) Trajectory of gradient updates on the multi-task objective using Adam with PCGrad. For (d) and (e), the optimization trajectory goes from black to yellow.</figDesc><graphic coords="2,270.36,75.69,233.63,56.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,307.25,149.79,197.14,8.64;4,307.25,160.11,196.02,8.06;4,307.25,170.36,196.02,7.77;4,307.25,180.32,197.50,7.77;4,307.25,190.00,196.02,8.06;4,307.25,199.96,196.02,8.06;4,307.02,210.21,196.24,7.77;4,307.25,220.17,188.43,7.77"><head>Figure 2 :</head><label>2</label><figDesc xml:id="_R5jEA6v">Figure 2: Conflicting gradients and PCGrad. In (a), tasks i and j have conflicting gradient directions, which can lead to destructive interference. In (b) and (c), we illustrate the PCGrad algorithm in the case where gradients are conflicting. PCGrad projects task i's gradient onto the normal vector of task j's gradient, and vice versa. Non-conflicting task gradients (d) are not altered under PCGrad, allowing for constructive interaction.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="9,108.00,153.45,396.23,8.64;9,108.00,163.72,396.22,8.12;9,108.00,174.03,396.60,7.77;9,108.00,183.64,396.00,8.12;9,108.00,193.95,395.99,7.77;9,107.70,203.60,396.29,8.09;9,107.68,213.53,396.32,8.12;9,108.00,223.49,396.00,8.12;9,108.00,233.80,396.00,7.77;9,108.00,243.77,396.00,7.77;9,108.00,253.73,351.21,7.77;9,108.00,72.00,396.01,78.84"><head>Figure 4 :</head><label>4</label><figDesc xml:id="_ZcxGkXM">Figure 4: An empirical analysis of the theoretical conditions discussed in Theorem 2, showing the first 100 iterations of training on two RL tasks, reach and press button top. Left: The estimated value of the multi-task curvature. We observe high multi-task curvatures exist throughout training, providing evidence for condition (b) in Theorem 2. Middle: The solid lines show the percentage gradients with positive cosine similarity between two task gradients, while the dotted lines and dashed lines show the percentage of iterations in which condition (a) and the implication of condition (b) (ξ(g1, g2) ≤ 1) in Theorem 2 are held respectively, among iterations when the cosine similarity is negative. Right: The average return of each task achieved by SAC and SAC combined with PCGrad. From the plots in the Middle and on the Right, we can tell that condition (a) holds most of the time for both Adam and Adam combined with PCGrad when they haven't solved Task 2 and as soon as Adam combined PCGrad starts to learn Task 2, the percentage of condition (a) held starts to decline. This observation suggests that condition (a) is a key factor for PCGrad excelling in multi-task learning.</figDesc><graphic coords="9,108.00,72.00,396.01,78.84" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="7,107.69,76.07,396.53,256.66"><head>Table 1 :</head><label>1</label><figDesc xml:id="_d5ZhyFt">Three-task learning on the NYUv2 dataset: 13-class semantic segmentation, depth estimation, and surface normal prediction results. #P shows the total number of network parameters. We highlight the best performing combination of multi-task architecture and weighting in bold. The top validation scores for each task are annotated with boxes. The symbols indicate prior methods: * : [28], † :<ref type="bibr" coords="7,378.04,221.24,13.84,7.77" target="#b32">[33]</ref>, ‡ :<ref type="bibr" coords="7,406.82,221.24,13.84,7.77" target="#b39">[40]</ref>. Performance of other methods as reported in Liu et al.<ref type="bibr" coords="7,226.04,231.20,13.74,7.77" target="#b32">[33]</ref>.</figDesc><table coords="7,119.96,76.07,384.17,256.66"><row><cell></cell><cell></cell><cell></cell><cell cols="2">Segmentation</cell><cell>Depth</cell><cell cols="2">Surface Normal</cell></row><row><cell>#P.</cell><cell>Architecture</cell><cell>Weighting</cell><cell cols="2">(Higher Better)</cell><cell>(Lower Better)</cell><cell>Angle Distance (Lower Better)</cell><cell>Within t • (Higher Better)</cell></row><row><cell></cell><cell></cell><cell></cell><cell cols="5">mIoU Pix Acc Abs Err Rel Err Mean Median 11.25 22.5</cell><cell>30</cell></row><row><cell></cell><cell></cell><cell>Equal Weights</cell><cell>14.71</cell><cell>50.23</cell><cell cols="3">0.6481 0.2871 33.56 28.58 20.08 40.54 51.97</cell></row><row><cell>≈3</cell><cell>Cross-Stitch  ‡</cell><cell cols="2">Uncert. Weights  *  15.69</cell><cell>52.60</cell><cell cols="3">0.6277 0.2702 32.69 27.26 21.63 42.84 54.45</cell></row><row><cell></cell><cell></cell><cell>DWA  † , T = 2</cell><cell>16.11</cell><cell>53.19</cell><cell cols="3">0.5922 0.2611 32.34 26.91 21.81 43.14 54.92</cell></row><row><cell></cell><cell></cell><cell>Equal Weights</cell><cell>17.72</cell><cell>55.32</cell><cell cols="3">0.5906 0.2577 31.44 25.37 23.17 45.65 57.48</cell></row><row><cell>1.77</cell><cell>MTAN  †</cell><cell cols="2">Uncert. Weights  *  17.67</cell><cell>55.61</cell><cell cols="3">0.5927 0.2592 31.25 25.57 22.99 45.83 57.67</cell></row><row><cell></cell><cell></cell><cell>DWA  † , T = 2</cell><cell>17.15</cell><cell>54.97</cell><cell cols="3">0.5956 0.2569 31.60 25.46 22.48 44.86 57.24</cell></row><row><cell cols="4">1.77 MTAN  † + PCGrad (ours) Uncert. Weights  *  20.17</cell><cell>56.65</cell><cell cols="3">0.5904 0.2467 30.01 24.83 22.28 46.12 58.77</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>% accuracy</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="3">task specific, 1-fc [46]</cell><cell>42</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="3">task specific, all-fc [46]</cell><cell>49</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="3">cross stitch, all-fc [40]</cell><cell>53</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="3">routing, all-fc + WPL [47]</cell><cell>74.7</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">independent</cell><cell></cell><cell>67.7</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">PCGrad (ours)</cell><cell></cell><cell>71</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="4">routing-all-fc + WPL + PCGrad (ours)</cell><cell>77.5</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="7,305.69,341.05,199.79,28.35"><head>Table 2 :</head><label>2</label><figDesc xml:id="_uumnBFk">CIFAR</figDesc><table /><note xml:id="_6vweUdd">-100 multi-task results. When combined with routing networks, PCGrad leads to a large improvement.</note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="34" xml:id="foot_0">34th Conference on Neural Information Processing Systems (NeurIPS 2020), Vancouver, Canada.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_1">Code is released at https://github.com/tianheyu927/PCGrad</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_7YtzZ6J">Acknowledgments and Disclosure of Funding</head><p xml:id="_SDrVQuj">The authors would like to thank Annie Xie for reviewing an earlier draft of the paper, Eric Mitchell for technical guidance, and Aravind Rajeswaran and Deirdre Quillen for helpful discussions. Tianhe Yu is partially supported by Intel Corporation. Saurabh Kumar is supported by an NSF Graduate Research Fellowship and the Stanford Knight Hennessy Fellowship. Abhishek Gupta is supported by an NSF Graduate Research Fellowship. Chelsea Finn is a CIFAR Fellow in the Learning in Machines and Brains program.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="10,129.58,569.48,374.42,8.64;10,129.58,580.21,374.42,8.82;10,129.58,591.12,158.85,8.82" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_UC2aBt3">Segnet: A deep convolutional encoder-decoder architecture for image segmentation</title>
+		<author>
+			<persName coords=""><forename type="first">Vijay</forename><surname>Badrinarayanan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Kendall</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Roberto</forename><surname>Cipolla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_HhHQe5D">IEEE transactions on pattern analysis and machine intelligence</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">39</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,129.58,606.83,376.17,8.82;10,129.16,617.74,100.57,8.82" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_u8qrsjG">Task clustering and gating for bayesian multitask learning</title>
+		<author>
+			<persName coords=""><forename type="first">Bart</forename><surname>Bakker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tom</forename><surname>Heskes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_G7evAuF">J. Mach. Learn. Res</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,129.58,633.64,374.42,8.64;10,129.58,644.37,289.56,8.82" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_WY5zzDp">Integrated perception with recurrent multi-task neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Hakan</forename><surname>Bilen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrea</forename><surname>Vedaldi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_QKnqWdF">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,129.58,660.08,375.66,8.82;10,129.58,671.17,22.42,8.64" xml:id="b3">
+	<monogr>
+		<title level="m" type="main" xml:id="_hE5ukp8">Convex optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Stephen</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lieven</forename><surname>Vandenberghe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<publisher>Cambridge university press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,129.58,686.89,376.16,8.64;10,129.16,697.62,165.89,8.82" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_88y8KCG">Projected gradient methods for linearly constrained problems</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Paul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jorge</forename><forename type="middle">J</forename><surname>Calamai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Moré</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2A5z8yg">Mathematical programming</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,129.58,713.34,241.12,8.82" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_CBtEpVs">Multitask learning</title>
+		<author>
+			<persName coords=""><forename type="first">Rich</forename><surname>Caruana</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_2WwMTMs">Machine Learning</title>
+				<imprint>
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,75.48,374.42,8.64;11,129.58,86.21,219.97,8.82" xml:id="b6">
+	<monogr>
+		<title level="m" type="main" xml:id="_2UuEN43">Efficient lifelong learning with a-gem</title>
+		<author>
+			<persName coords=""><forename type="first">Arslan</forename><surname>Chaudhry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc</forename><forename type="middle">'</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aurelio</forename><surname>Ranzato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marcus</forename><surname>Rohrbach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohamed</forename><surname>Elhoseiny</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1812.00420</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,101.23,374.42,8.64;11,129.58,111.96,376.16,8.82" xml:id="b7">
+	<monogr>
+		<title level="m" type="main" xml:id="_jBZcpFu">Gradnorm: Gradient normalization for adaptive loss balancing in deep multitask networks</title>
+		<author>
+			<persName coords=""><forename type="first">Vijay</forename><surname>Zhao Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chen-Yu</forename><surname>Badrinarayanan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Rabinovich</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1711.02257</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,126.98,376.07,8.64;11,129.58,137.71,374.42,8.82;11,129.25,148.62,161.63,8.82" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_7mXGEdC">Gradnorm: Gradient normalization for adaptive loss balancing in deep multitask networks</title>
+		<author>
+			<persName coords=""><forename type="first">Vijay</forename><surname>Zhao Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chen-Yu</forename><surname>Badrinarayanan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Rabinovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_EUpzgfR">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,163.63,376.16,8.64;11,129.58,174.36,374.42,8.82;11,129.58,185.27,122.39,8.82" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_ebDXzPs">End-to-end driving via conditional imitation learning</title>
+		<author>
+			<persName coords=""><forename type="first">Felipe</forename><surname>Codevilla</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthias</forename><surname>Miiller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Antonio</forename><surname>López</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vladlen</forename><surname>Koltun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexey</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_DFxDsWb">International Conference on Robotics and Automation (ICRA)</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,200.29,374.42,8.64;11,129.58,211.02,375.67,8.82;11,129.58,222.11,22.42,8.64" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_B6MFTqM">A unified architecture for natural language processing: Deep neural networks with multitask learning</title>
+		<author>
+			<persName coords=""><forename type="first">Ronan</forename><surname>Collobert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jason</forename><surname>Weston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_YeubCkj">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,236.95,374.42,8.64;11,129.58,247.86,374.42,8.64;11,129.58,258.59,374.42,8.82;11,129.58,269.50,179.13,8.82" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_TKHut4F">The cityscapes dataset for semantic urban scene understanding</title>
+		<author>
+			<persName coords=""><forename type="first">Marius</forename><surname>Cordts</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohamed</forename><surname>Omran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sebastian</forename><surname>Ramos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Timo</forename><surname>Rehfeld</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Markus</forename><surname>Enzweiler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rodrigo</forename><surname>Benenson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Uwe</forename><surname>Franke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefan</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bernt</forename><surname>Schiele</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_8rgryCa">Proceedings of the IEEE conference on computer vision and pattern recognition</title>
+				<meeting>the IEEE conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="3213" to="3223" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,284.52,374.42,8.64;11,129.58,295.25,374.42,8.82;11,128.97,306.16,208.80,8.82" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_7UhvHvz">Distilling policy distillation</title>
+		<author>
+			<persName coords=""><forename type="first">Wojciech</forename><forename type="middle">M</forename><surname>Czarnecki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Razvan</forename><surname>Pascanu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Simon</forename><surname>Osindero</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Siddhant</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Grzegorz</forename><surname>Jayakumar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Max</forename><surname>Swirszcz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Jaderberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ctmADVF">International Conference on Artificial Intelligence and Statistics</title>
+				<imprint>
+			<publisher>AISTATS</publisher>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,321.18,374.42,8.64;11,129.58,331.91,375.67,8.82;11,129.58,343.00,22.42,8.64" xml:id="b13">
+	<monogr>
+		<title level="m" type="main" xml:id="_pEYdAyB">Learning modular neural network policies for multi-task and multi-robot transfer</title>
+		<author>
+			<persName coords=""><forename type="first">Coline</forename><surname>Devin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abhishek</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Trevor</forename><surname>Darrell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pieter</forename><surname>Abbeel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sergey</forename><surname>Levine</surname></persName>
+		</author>
+		<idno>CoRR, abs/1609.07088</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,357.84,376.07,8.64;11,129.58,368.57,374.42,8.82;11,129.58,379.48,374.42,8.59;11,129.27,390.39,58.04,8.82" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_NYgdnua">Multi-task learning for multiple language translation</title>
+		<author>
+			<persName coords=""><forename type="first">Daxiang</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hua</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wei</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dianhai</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Haifeng</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_bznSzRX">Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing</title>
+		<title level="s" xml:id="_gjgrn6R">Long Papers</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,405.40,374.42,8.64;11,129.58,416.13,375.67,8.82;11,129.58,427.22,22.42,8.64" xml:id="b15">
+	<monogr>
+		<title level="m" type="main" xml:id="_Hm76nQH">Adapting auxiliary losses using gradient similarity</title>
+		<author>
+			<persName coords=""><forename type="first">Yunshu</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wojciech</forename><forename type="middle">M</forename><surname>Czarnecki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Siddhant</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Razvan</forename><surname>Jayakumar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Balaji</forename><surname>Pascanu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Lakshminarayanan</surname></persName>
+		</author>
+		<idno>CoRR, abs/1812.02224</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,442.06,375.66,8.64;11,129.00,452.97,376.74,8.64;11,129.58,463.88,374.42,8.64;11,129.41,474.61,216.70,8.82" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_qhxeEwH">IMPALA: scalable distributed deep-rl with importance weighted actor-learner architectures</title>
+		<author>
+			<persName coords=""><forename type="first">Lasse</forename><surname>Espeholt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hubert</forename><surname>Soyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rémi</forename><surname>Munos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Karen</forename><surname>Simonyan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Volodymyr</forename><surname>Mnih</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tom</forename><surname>Ward</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yotam</forename><surname>Doron</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vlad</forename><surname>Firoiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tim</forename><surname>Harley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Iain</forename><surname>Dunning</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shane</forename><surname>Legg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Koray</forename><surname>Kavukcuoglu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_3TKMCQu">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,489.63,374.59,8.64;11,129.58,500.36,237.88,8.82" xml:id="b17">
+	<monogr>
+		<title level="m" type="main" xml:id="_h9qNddJ">Orthogonal gradient descent for continual learning</title>
+		<author>
+			<persName coords=""><forename type="first">Mehrdad</forename><surname>Farajtabar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Navid</forename><surname>Azizan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Mott</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ang</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1910.07104</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="11,129.58,515.38,375.67,8.64;11,129.22,526.29,374.95,8.64;11,129.58,537.02,378.60,8.82;11,129.58,549.04,32.38,7.01" xml:id="b18">
+	<monogr>
+		<title level="m" type="main" xml:id="_eHqsFje">Pathnet: Evolution channels gradient descent in super neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Chrisantha</forename><surname>Fernando</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dylan</forename><surname>Banarse</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Charles</forename><surname>Blundell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yori</forename><surname>Zwols</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Ha</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrei</forename><forename type="middle">A</forename><surname>Rusu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><surname>Pritzel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daan</forename><surname>Wierstra</surname></persName>
+		</author>
+		<idno>CoRR, abs/1701.08734</idno>
+		<ptr target="http://arxiv.org/abs/1701.08734" />
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,562.77,374.42,8.82;11,129.58,573.68,244.33,8.82" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_dyTmQpY">Eigenvalues, invariant factors, highest weights, and schubert calculus</title>
+		<author>
+			<persName coords=""><forename type="first">William</forename><surname>Fulton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gkuDPhF">Bulletin of the American Mathematical Society</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="209" to="249" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,588.70,376.07,8.64;11,129.58,599.43,251.23,8.82" xml:id="b20">
+	<monogr>
+		<title level="m" type="main" xml:id="_AtRnAXm">Divide-andconquer reinforcement learning</title>
+		<author>
+			<persName coords=""><forename type="first">Dibya</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Avi</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aravind</forename><surname>Rajeswaran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vikash</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sergey</forename><surname>Levine</surname></persName>
+		</author>
+		<idno>CoRR, abs/1711.09874</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,614.45,374.42,8.64;11,129.58,625.18,226.25,8.82" xml:id="b21">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Ian</forename><forename type="middle">J</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.6544</idno>
+		<title level="m" xml:id="_NEzHT2p">Oriol Vinyals, and Andrew M Saxe. Qualitatively characterizing neural network optimization problems</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,640.20,374.42,8.64;11,129.58,651.11,155.23,8.64" xml:id="b22">
+	<monogr>
+		<title level="m" type="main" xml:id="_xXN8F83">Improved schemes for episodic memory-based lifelong learning</title>
+		<author>
+			<persName coords=""><forename type="first">Yunhui</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mingrui</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tianbao</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tajana</forename><surname>Rosing</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,665.95,374.77,8.64;11,129.58,676.68,374.42,8.82;11,129.58,687.59,113.58,8.82" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_rqbMXTv">Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor</title>
+		<author>
+			<persName coords=""><forename type="first">Tuomas</forename><surname>Haarnoja</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aurick</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pieter</forename><surname>Abbeel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sergey</forename><surname>Levine</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_S2tYHZ4">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,129.58,702.61,376.17,8.64;11,129.58,713.51,258.41,8.64" xml:id="b24">
+	<monogr>
+		<title level="m" type="main" xml:id="_2vFZC7P">Learning an embedding space for transferable robot skills</title>
+		<author>
+			<persName coords=""><forename type="first">Karol</forename><surname>Hausman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jost</forename><surname>Tobias Springenberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ziyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Heess</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Martin</forename><surname>Riedmiller</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,75.48,374.42,8.64;12,129.33,86.21,374.67,8.82;12,129.25,97.12,219.87,8.82" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_dnUP9tt">Multi-task deep reinforcement learning with popart</title>
+		<author>
+			<persName coords=""><forename type="first">Matteo</forename><surname>Hessel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hubert</forename><surname>Soyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lasse</forename><surname>Espeholt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wojciech</forename><surname>Czarnecki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Simon</forename><surname>Schmitt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hado</forename><surname>Van Hasselt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Q7qC7Wn">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+				<meeting>the AAAI Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">33</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,113.13,376.17,8.64;12,129.58,123.86,100.17,8.82" xml:id="b26">
+	<monogr>
+		<title level="m" type="main" xml:id="_J5BsYmv">Distilling the knowledge in a neural network</title>
+		<author>
+			<persName coords=""><forename type="first">Geoffrey</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jeff</forename><surname>Dean</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1503.02531</idno>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,139.88,374.42,8.64;12,129.58,150.61,372.19,8.82" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_JwGP2Ty">Multi-task learning using uncertainty to weigh losses for scene geometry and semantics</title>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Kendall</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yarin</forename><surname>Gal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Roberto</forename><surname>Cipolla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_8KbApE2">Computer Vision and Pattern Recognition</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,166.63,374.42,8.64;12,129.58,177.36,230.47,8.82" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_r9YQshP">Multi-task learning using uncertainty to weigh losses for scene geometry and semantics</title>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Kendall</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yarin</forename><surname>Gal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Roberto</forename><surname>Cipolla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_4ECSPmJ">CVPR</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,193.37,376.16,8.64;12,129.58,204.10,95.19,8.82" xml:id="b29">
+	<monogr>
+		<title level="m" type="main" xml:id="_VcxpB5f">Adam: A method for stochastic optimization</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Diederik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jimmy</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Ba</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.6980</idno>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,220.12,375.66,8.64;12,129.58,230.85,374.42,8.82;12,129.27,241.76,107.03,8.82" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_F8yCqkj">Ubernet: Training a universal convolutional neural network for low-, mid-, and high-level vision using diverse datasets and limited memory</title>
+		<author>
+			<persName coords=""><forename type="first">Iasonas</forename><surname>Kokkinos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_sP8DvWz">Computer Vision and Pattern Recognition</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,257.77,374.42,8.64;12,129.33,268.50,312.59,8.82" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_HPv5UPR">End-to-end training of deep visuomotor policies</title>
+		<author>
+			<persName coords=""><forename type="first">Sergey</forename><surname>Levine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chelsea</forename><surname>Finn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Trevor</forename><surname>Darrell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pieter</forename><surname>Abbeel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_6wRk9qY">The Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,284.52,374.42,8.64;12,129.58,295.25,160.50,8.82" xml:id="b32">
+	<monogr>
+		<title level="m" type="main" xml:id="_dbmfuNP">End-to-end multi-task learning with attention</title>
+		<author>
+			<persName coords=""><forename type="first">Shikun</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Edward</forename><surname>Johns</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">J</forename><surname>Davison</surname></persName>
+		</author>
+		<idno>CoRR, abs/1803.10704</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,311.27,374.42,8.64;12,129.58,322.00,374.42,8.82;12,129.58,333.08,72.23,8.64" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_3TRgMQy">Deep learning face attributes in the wild</title>
+		<author>
+			<persName coords=""><forename type="first">Ziwei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ping</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaogang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaoou</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_MQsKMJ2">Proceedings of the IEEE international conference on computer vision</title>
+				<meeting>the IEEE international conference on computer vision</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="3730" to="3738" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,348.92,376.16,8.64;12,129.58,359.65,110.14,8.82" xml:id="b34">
+	<monogr>
+		<title level="m" type="main" xml:id="_xpBvQrJ">Learning multiple tasks with deep relationship networks</title>
+		<author>
+			<persName coords=""><forename type="first">Mingsheng</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jianmin</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1506.02117</idno>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,375.67,376.17,8.64;12,129.58,386.40,247.06,8.82" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_NncvCkd">Gradient episodic memory for continual learning</title>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Lopez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">-</forename><surname>Paz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc'aurelio</forename><surname>Ranzato</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_rB5qbz5">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,402.41,374.42,8.64;12,129.58,413.14,181.26,8.82" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_DzWgAV9">Attentive single-tasking of multiple tasks</title>
+		<author>
+			<persName coords=""><forename type="first">Kevis-Kokitsi</forename><surname>Maninis</surname></persName>
+		</author>
+		<idno>CoRR, abs/1904.08918</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_n3mMrzc">Ilija Radosavovic, and Iasonas Kokkinos</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,429.16,374.42,8.64;12,129.58,439.89,353.11,8.82" xml:id="b37">
+	<monogr>
+		<title level="m" type="main" xml:id="_MPsahTb">The natural language decathlon: Multitask learning as question answering</title>
+		<author>
+			<persName coords=""><forename type="first">Bryan</forename><surname>Mccann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nitish</forename><surname>Shirish Keskar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Caiming</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Socher</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1806.08730</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,455.91,374.42,8.64;12,129.58,466.64,300.54,8.82" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_XyepCmq">Cross-stitch networks for multi-task learning</title>
+		<author>
+			<persName coords=""><forename type="first">Ishan</forename><surname>Misra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abhinav</forename><surname>Shrivastava</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abhinav</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Martial</forename><surname>Hebert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_NBtQ8qt">Computer Vision and Pattern Recognition</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,482.65,374.42,8.64;12,129.58,493.38,375.67,8.82;12,129.58,504.47,22.42,8.64" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_YvK94rv">Cross-stitch networks for multi-task learning</title>
+		<author>
+			<persName coords=""><forename type="first">Ishan</forename><surname>Misra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abhinav</forename><surname>Shrivastava</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abhinav</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Martial</forename><surname>Hebert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_pbKqtVU">Conference on Computer Vision and Pattern Recognition, CVPR</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,520.31,376.07,8.64;12,129.58,531.04,259.06,8.82" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_FHuDcgc">Distributed subgradient methods for multi-agent optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Angelia</forename><surname>Nedic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Asuman</forename><surname>Ozdaglar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_9dF7FFp">IEEE Transactions on Automatic Control</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,547.06,374.42,8.64;12,129.58,557.79,230.18,8.82" xml:id="b41">
+	<monogr>
+		<title level="m" type="main" xml:id="_EpdxGem">Actor-mimic: Deep multitask and transfer reinforcement learning</title>
+		<author>
+			<persName coords=""><forename type="first">Emilio</forename><surname>Parisotto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jimmy</forename><forename type="middle">Lei</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ruslan</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1511.06342</idno>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,573.62,374.42,8.82;12,129.25,584.53,293.61,8.82" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_D6JNjXW">Some methods of speeding up the convergence of iteration methods</title>
+		<author>
+			<persName coords=""><forename type="first">Boris</forename><forename type="middle">T</forename><surname>Polyak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_s9vHvfF">USSR Computational Mathematics and Mathematical Physics</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1" to="17" />
+			<date type="published" when="1964">1964</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,600.55,376.16,8.64;12,129.58,611.28,321.12,8.82" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_hgXJ27D">Language models are unsupervised multitask learners</title>
+		<author>
+			<persName coords=""><forename type="first">Alec</forename><surname>Radford</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jeffrey</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rewon</forename><surname>Child</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Luan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dario</forename><surname>Amodei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_QVrWDq3">OpenAI Blog</title>
+		<imprint>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,627.29,374.42,8.64;12,129.22,638.20,375.12,8.64;12,129.58,648.93,300.96,8.82" xml:id="b44">
+	<monogr>
+		<title level="m" type="main" xml:id="_pRHXgZg">Learning by playing-solving sparse reward tasks from scratch</title>
+		<author>
+			<persName coords=""><forename type="first">Martin</forename><surname>Riedmiller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Roland</forename><surname>Hafner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Lampe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Neunert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jonas</forename><surname>Degrave</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tom</forename><surname>Van De Wiele</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Volodymyr</forename><surname>Mnih</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Heess</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jost</forename><surname>Tobias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Springenberg</forename></persName>
+		</author>
+		<idno type="arXiv">arXiv:1802.10567</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,664.95,376.07,8.64;12,129.58,675.68,374.42,8.82;12,129.27,686.59,121.94,8.82" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_gzGGzDY">Routing networks: Adaptive selection of non-linear functions for multi-task learning</title>
+		<author>
+			<persName coords=""><forename type="first">Clemens</forename><surname>Rosenbaum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tim</forename><surname>Klinger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthew</forename><surname>Riemer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_8GfzyfV">International Conference on Learning Representations (ICLR)</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,129.58,702.61,374.42,8.64;12,129.58,713.34,337.58,8.82" xml:id="b46">
+	<monogr>
+		<title level="m" type="main" xml:id="_DTC6Vpr">Routing networks and the challenges of modular and compositional computation</title>
+		<author>
+			<persName coords=""><forename type="first">Clemens</forename><surname>Rosenbaum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ignacio</forename><surname>Cases</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthew</forename><surname>Riemer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tim</forename><surname>Klinger</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1904.12774</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,75.48,374.42,8.64;13,129.58,86.21,374.42,8.82;13,129.27,97.12,105.25,8.82" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_dCaUN6n">Stabilizing training of generative adversarial networks through regularization</title>
+		<author>
+			<persName coords=""><forename type="first">Kevin</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aurelien</forename><surname>Lucchi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sebastian</forename><surname>Nowozin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Hofmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_CBzSu4x">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,112.01,375.67,8.82;13,129.58,123.10,22.42,8.64" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" xml:id="_xMmruA4">An overview of multi-task learning in</title>
+		<author>
+			<persName coords=""><forename type="first">Sebastian</forename><surname>Ruder</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1706.05098</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_xNASZrn">deep neural networks</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,137.99,374.42,8.64;13,129.58,148.90,374.77,8.64;13,129.58,159.63,331.89,8.82" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" xml:id="_Z6QBQWP">Policy distillation</title>
+		<author>
+			<persName coords=""><forename type="first">Andrei</forename><forename type="middle">A</forename><surname>Rusu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sergio</forename><surname>Gomez Colmenarejo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>¸aglar Gülc ¸ehre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Guillaume</forename><surname>Desjardins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Kirkpatrick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Razvan</forename><surname>Pascanu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Volodymyr</forename><surname>Mnih</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Koray</forename><surname>Kavukcuoglu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Raia</forename><surname>Hadsell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ZJH8zbM">International Conference on Learning Representations, ICLR</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,174.71,375.67,8.64;13,129.58,185.61,376.16,8.64;13,129.58,196.34,100.17,8.82" xml:id="b50">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Andrei</forename><forename type="middle">A</forename><surname>Rusu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Neil</forename><forename type="middle">C</forename><surname>Rabinowitz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Guillaume</forename><surname>Desjardins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hubert</forename><surname>Soyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Kirkpatrick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Koray</forename><surname>Kavukcuoglu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1606.04671</idno>
+		<title level="m" xml:id="_EYRm2hK">Razvan Pascanu, and Raia Hadsell. Progressive neural networks</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,211.42,374.42,8.64;13,129.58,222.15,263.95,8.82" xml:id="b51">
+	<monogr>
+		<title level="m" type="main" xml:id="_JGPMW2n">Ray interference: a source of plateaus in deep reinforcement learning</title>
+		<author>
+			<persName coords=""><forename type="first">Tom</forename><surname>Schaul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Diana</forename><surname>Borsa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joseph</forename><surname>Modayil</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Razvan</forename><surname>Pascanu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1904.11455</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,237.22,374.42,8.64;13,128.97,247.95,236.27,8.82" xml:id="b52">
+	<analytic>
+		<title level="a" type="main" xml:id="_TknTwkw">Multi-task learning as multi-objective optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Ozan</forename><surname>Sener</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vladlen</forename><surname>Koltun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PrvE36F">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,263.02,56.85,8.64;13,214.86,263.02,290.79,8.64;13,129.58,273.93,59.85,8.64;13,224.25,274.87,280.95,7.01;13,129.58,285.78,171.36,7.01" xml:id="b53">
+	<monogr>
+		<title level="m" type="main" xml:id="_GttCKFA">Notes on first-order methods for minimizing smooth functions</title>
+		<author>
+			<persName coords=""><forename type="first">Yuekai</forename><surname>Sun</surname></persName>
+		</author>
+		<ptr target="https://web.stanford.edu/class/msande318/notes/notes-first-order-smooth.pdf" />
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,299.74,376.17,8.64;13,129.58,310.47,159.58,8.82" xml:id="b54">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Mihai</forename><surname>Suteu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yike</forename><surname>Guo</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1912.06844</idno>
+		<title level="m" xml:id="_j83AS8u">Regularizing deep multi-task networks using orthogonal gradients</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="13,129.58,325.54,375.66,8.64;13,129.58,336.45,374.42,8.64;13,128.97,347.18,236.27,8.82" xml:id="b55">
+	<analytic>
+		<title level="a" type="main" xml:id="_NGR8zfz">Distral: Robust multitask reinforcement learning</title>
+		<author>
+			<persName coords=""><forename type="first">Yee</forename><surname>Teh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Victor</forename><surname>Bapst</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wojciech</forename><forename type="middle">M</forename><surname>Czarnecki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">John</forename><surname>Quan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Kirkpatrick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Raia</forename><surname>Hadsell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Heess</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Razvan</forename><surname>Pascanu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_7WEehBa">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,362.25,375.80,8.64;13,129.58,372.98,244.04,8.82" xml:id="b56">
+	<monogr>
+		<title level="m" type="main" xml:id="_AjZwygj">Branched multi-task networks: Deciding what layers to share</title>
+		<author>
+			<persName coords=""><forename type="first">Simon</forename><surname>Vandenhende</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bert</forename><forename type="middle">De</forename><surname>Brabandere</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Luc</forename><surname>Van Gool</surname></persName>
+		</author>
+		<idno>CoRR, abs/1904.02920</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,388.05,375.80,8.64;13,129.58,398.78,363.86,8.82" xml:id="b57">
+	<analytic>
+		<title level="a" type="main" xml:id="_52GWmk7">Multi-task reinforcement learning: a hierarchical bayesian approach</title>
+		<author>
+			<persName coords=""><forename type="first">Aaron</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alan</forename><surname>Fern</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Soumya</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Prasad</forename><surname>Tadepalli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_fpHDsAE">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,413.86,374.42,8.64;13,129.58,424.77,376.16,8.64;13,129.58,435.50,375.67,8.82;13,129.58,446.59,22.42,8.64" xml:id="b58">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Markus</forename><surname>Wulfmeier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abbas</forename><surname>Abdolmaleki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Roland</forename><surname>Hafner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jost</forename><surname>Tobias Springenberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Neunert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tim</forename><surname>Hertweck</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Lampe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Noah</forename><surname>Siegel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Heess</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Martin</forename><surname>Riedmiller</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1906.11228</idno>
+		<title level="m" xml:id="_9JDQvBv">Regularized hierarchical policies for compositional transfer in robotics</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,461.48,376.16,8.64;13,129.58,472.21,100.17,8.82" xml:id="b59">
+	<monogr>
+		<title level="m" type="main" xml:id="_z328q25">Trace norm regularised deep multi-task learning</title>
+		<author>
+			<persName coords=""><forename type="first">Yongxin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Timothy</forename><forename type="middle">M</forename><surname>Hospedales</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1606.04038</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,487.28,374.42,8.64;13,129.58,498.19,374.42,8.64;13,129.58,508.92,138.90,8.82" xml:id="b60">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Tianhe</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Deirdre</forename><surname>Quillen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhanpeng</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ryan</forename><surname>Julian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Karol</forename><surname>Hausman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chelsea</forename><surname>Finn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sergey</forename><surname>Levine</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1910.10897</idno>
+		<title level="m" xml:id="_9MwCPBT">Meta-world: A benchmark and evaluation for multi-task and meta-reinforcement learning</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,524.00,374.42,8.64;13,129.58,534.73,374.42,8.82;13,129.27,545.63,75.45,8.82" xml:id="b61">
+	<analytic>
+		<title level="a" type="main" xml:id="_2ERGRkT">Taskonomy: Disentangling task transfer learning</title>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><surname>Amir R Zamir</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">William</forename><surname>Sax</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Leonidas</forename><forename type="middle">J</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jitendra</forename><surname>Guibas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Silvio</forename><surname>Malik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Savarese</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_cExUHPt">Computer Vision and Pattern Recognition</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,129.58,560.71,374.77,8.64;13,129.58,571.44,343.54,8.82" xml:id="b62">
+	<analytic>
+		<title level="a" type="main" xml:id="_ehNFkSH">Facial landmark detection by deep multi-task learning</title>
+		<author>
+			<persName coords=""><forename type="first">Zhanpeng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ping</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chen</forename><forename type="middle">Change</forename><surname>Loy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaoou</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_GHSeWKT">European conference on computer vision</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
