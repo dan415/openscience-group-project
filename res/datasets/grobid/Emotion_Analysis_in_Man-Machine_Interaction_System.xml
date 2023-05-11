@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_PXvbrRg">EMOTION ANALYSIS IN MAN-MACHINE INTERACTION SYSTEMS</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="2,92.64,121.25,62.48,10.46"><forename type="first">T</forename><surname>Balomenos</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Image, Video and Multimedia Systems Laboratory</orgName>
+								<orgName type="institution">National Technical University of Athens</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,164.18,121.25,61.26,10.46"><forename type="first">A</forename><surname>Raouzaiou</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Image, Video and Multimedia Systems Laboratory</orgName>
+								<orgName type="institution">National Technical University of Athens</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,234.48,121.25,48.39,10.46"><forename type="first">S</forename><surname>Ioannou</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Image, Video and Multimedia Systems Laboratory</orgName>
+								<orgName type="institution">National Technical University of Athens</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,291.68,121.25,72.38,10.46"><forename type="first">A</forename><surname>Drosopoulos</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Image, Video and Multimedia Systems Laboratory</orgName>
+								<orgName type="institution">National Technical University of Athens</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,373.05,121.25,60.09,10.46"><forename type="first">K</forename><surname>Karpouzis</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Image, Video and Multimedia Systems Laboratory</orgName>
+								<orgName type="institution">National Technical University of Athens</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,463.84,121.25,45.28,10.46"><forename type="first">S</forename><surname>Kollias</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Image, Video and Multimedia Systems Laboratory</orgName>
+								<orgName type="institution">National Technical University of Athens</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_2smeEQT">EMOTION ANALYSIS IN MAN-MACHINE INTERACTION SYSTEMS</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">A9C26E1D287AE16367C3F33B607BC30F</idno>
+					<idno type="DOI">10.1007/978-3-540-30568-2_27</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-11T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_H5GsPCT"><p xml:id="_GWJGX6C">Facial expression and hand gesture analysis plays a fundamental part in emotionally rich man-machine interaction (MMI) systems, since it employs universally accepted non-verbal cues to estimate the users' emotional state. In this paper, we present a systematic approach to extracting expression related features from image sequences and inferring an emotional state via an intelligent rule-based system. MMI systems can benefit from these concepts by adapting their functionality and presentation with respect to user reactions or by employing agent-based interfaces to deal with specific emotional states, such as frustration or anger.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1." xml:id="_ChybvCV">INTRODUCTION</head><p xml:id="_mQe4Xzq">Current information processing and visualization systems are capable of offering advanced and intuitive means of receiving input and communicating output to their users. As a result, Man-Machine Interaction (MMI) systems that utilize multimodal information about their users' current emotional state are presently at the forefront of interest of the computer vision and artificial intelligence communities. Such interfaces give the opportunity to less technology-aware individuals, as well as handicapped people, to use computers more efficiently and thus overcome related fears and preconceptions. Besides this, most emotion-related facial and body gestures are considered to be universal, in the sense that they are recognized along different cultures. Therefore, the introduction of an "emotional dictionary" that includes descriptions and perceived meanings of facial expressions and body gestures, so as to help infer the likely emotional state of a specific user, can enhance the affective nature <ref type="bibr" coords="2,174.78,616.31,17.28,9.02" target="#b12">[13]</ref> of MMI applications.</p><p xml:id="_vUHKJgf">Despite the progress in related research, our intuition of what a human expression or emotion actually represents is still based on trying to mimic the way the human mind works while making an effort to recognize such an emotion. This means that even though image or video input are necessary to this task, this process cannot come to robust results without taking into account features like speech, hand gestures or body pose. These features provide means to convey messages in a much more expressive and definite manner than wording, which can be misleading or ambiguous. While a lot of effort has been invested in examining individually these aspects of human expression, recent research <ref type="bibr" coords="2,530.60,235.31,17.26,9.02" target="#b9">[10]</ref> has shown that even this approach can benefit from taking into account multimodal information.</p><p xml:id="_8eAYZq5">In this paper, we present a systematic approach to analyzing emotional cues from user facial expressions and hand gestures. Emotions are considered as discrete points or areas of an "emotional space" <ref type="bibr" coords="2,483.08,304.31,15.95,9.02" target="#b9">[10]</ref>. In section 2, we provide an overview of affective analysis of facial expressions and gestures. Sections 3 and 4 provide algorithms and experimental results from the analysis of facial expressions and hand gestures in video sequences. In most cases a single expression or gesture cannot help the system deduce a positive decision about the users' observed emotion. As a result, a fuzzy architecture is employed that uses the symbolic representation of the tracked features as input; this concept is described in Section 5. Results of the multimodal affective analysis system are provided in this section, while conclusions and future work concepts are included in Section 6.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2." xml:id="_MdprwsV">AFFECTIVE ANALYSIS IN MMI</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1" xml:id="_2qMS7Kw">Affective facial expression analysis</head><p xml:id="_guGRHFX">There is a long history of interest in the problem of recognizing emotion from facial expressions <ref type="bibr" coords="2,513.16,534.29,11.05,9.02" target="#b8">[9]</ref>, and extensive studies on face perception during the last twenty years <ref type="bibr" coords="2,369.31,557.27,11.05,9.02" target="#b6">[7]</ref>, <ref type="bibr" coords="2,387.29,557.27,11.05,9.02" target="#b4">[5]</ref>. The salient issues in emotion recognition from faces are parallel in some respects to the issues associated with voices, but divergent in others.</p><p xml:id="_vz4RgbV">In the context of faces, the task has almost always been to classify examples of archetypal emotions. That may well reflect the influence of Ekman and his colleagues, who have argued robustly that the facial expression of emotion is inherently categorical. More recently, morphing techniques have been used to probe states that are intermediate between archetypal expressions. They do reveal effects that are consistent with a degree of categorical structure in the domain of facial expression, but they are not particularly large, and there may be alternative ways of explaining them -notably by considering how category terms and facial parameters map onto activation-evaluation space <ref type="bibr" coords="3,230.87,85.86,11.14,9.02" target="#b5">[6]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2" xml:id="_uPd5Xwe">Affective gesture analysis</head><p xml:id="_tKFXcQq">The detection and interpretation of hand gestures has become an important part of human computer interaction (MMI) in recent years <ref type="bibr" coords="3,153.82,154.86,15.27,9.02" target="#b13">[14]</ref>. Sometimes, a simple hand action, such as placing a person's hands over his ears, can pass on the message that he has had enough of what he is hearing; this is conveyed more expressively than with any other spoken phrase. Analyzing hand gestures is a comprehensive task involving motion modeling, motion analysis, pattern recognition, machine learning, and even psycholinguistic studies.</p><p xml:id="_7vnaSnS">The first phase of the recognition task is choosing a model of the gesture. The mathematical model may consider both the spatial and temporal characteristic of the hand and hand gestures <ref type="bibr" coords="3,150.93,281.34,10.61,9.02" target="#b3">[4]</ref>. The approach used for modeling plays a pivotal role in the nature and performance of gesture interpretation. Once the model is decided upon, an analysis stage is used to compute the model parameters from the image features that are extracted from single or multiple video input streams. These parameters constitute some description of the hand pose or trajectory and depend on the modeling approach used. Among the important problems involved in the analysis are those of hand localization, hand tracking <ref type="bibr" coords="3,164.96,384.84,15.33,9.02" target="#b10">[11]</ref>, <ref type="bibr" coords="3,187.32,384.84,15.29,9.02" target="#b11">[12]</ref>, <ref type="bibr" coords="3,209.63,384.84,11.72,9.02" target="#b0">[1]</ref> and selection of suitable image features. The computation of model parameters is followed by gesture recognition. Here, the parameters are classified and interpreted in the light of the accepted model and perhaps the rules imposed by some grammar. The grammar could reflect not only the internal syntax of gestural commands but also the possibility of interaction of gestures with other communication modes like speech, gaze, or facial expressions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3." xml:id="_gzpJqc9">FACIAL EXPRESSION ANALYSIS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" xml:id="_CFtRXKd">Facial Features Extraction</head><p xml:id="_SzxusAQ">Facial analysis includes a number of processing steps which attempt to detect or track the face, to locate characteristic facial regions such as eyes, mouth and nose on it, to extract and follow the movement of facial features, such as characteristic points in these regions, or model facial gestures using anatomic information about the face.</p><p xml:id="_t79JVnp">Although FAPs <ref type="bibr" coords="3,143.01,626.27,12.08,9.02" target="#b7">[8]</ref> provide all the necessary elements for MPEG-4 compatible animation, we cannot use them for the analysis of expressions from video scenes, due to the absence of a clear quantitative definition framework. In order to measure FAPs in real image sequences, we have to define a mapping between them and the movement of specific FDP feature points (FPs), which correspond to salient points on the human face <ref type="bibr" coords="3,312.72,85.85,15.97,9.02" target="#b14">[15]</ref>.</p><p xml:id="_bk8apeC">The facial feature extraction scheme used in the system proposed in this paper is based on an hierarchical, robust scheme, coping with large variations in the appearance of diverse subjects, as well as of the same subject in various instances within real video sequences, we have recently developed <ref type="bibr" coords="3,471.92,154.85,15.96,9.02" target="#b15">[16]</ref>. Soft a priori assumptions are made on the pose of the face or the general location of the features in it. Gradual revelation of information concerning the face is supported under the scope of optimization in each step of the hierarchical scheme, producing a posteriori knowledge about it and leading to a step-by-step visualization of the features in search.</p><p xml:id="_Qq5rwQV">Face detection is performed first through detection of skin segments or blobs, merging of them based on the probability of their belonging to a facial area, and identification of the most salient skin color blob or segment. Primary facial features, such as eyes, mouth and nose, are dealt as major discontinuities on the segmented, arbitrarily rotated face. Following face detection, morphological operations, erosions and dilations, taking into account symmetries, are used to define first the most probable blobs within the facial area to include the eyes and the mouth. Searching through gradient filters over the eyes and between the eyes and mouth provide estimates of the eyebrow and nose positions. Based on the detected facial feature positions, feature points are computed and evaluated An efficient implementation of the scheme has been developed in the framework of the IST ERMIS project (www.image.ntua.gr/ermis)..</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" xml:id="_ECaqjJb">Experimental Results</head><p xml:id="_kAA7BSk">Figure <ref type="figure" coords="3,342.55,488.27,5.01,9.02" target="#fig_0">1</ref> shows a characteristic frame from an image sequence. After skin detection and segmentation, the primary facial features are shown in Figure <ref type="figure" coords="3,476.97,511.31,3.77,9.02">2</ref>. Figure <ref type="figure" coords="3,515.56,511.31,5.01,9.02">3</ref> shows the estimates of the eyes, mouth, eyebrows and nose positions. Figure <ref type="figure" coords="3,366.42,534.29,5.01,9.02">4</ref> shows the initial neutral image used to calculate the FP distances.  In order to extract emotion-related features through hand movement, we implemented a hand-tracking system. Emphasis was on implementing a near real-time, yet robust enough system for our purposes. The general process involves the creation of moving skin masks, namely skin color areas which are tracked between subsequent frames. By tracking the centroid of those skin masks we produce an estimate of the user's movements.</p><p xml:id="_Bcsm6cA">In order to implement a computationally light system, our architecture takes into account a-priori knowledge related to the expected characteristics of the input image. Since the context is MMI applications, we expect to locate the head in the middle area of upper half of the frame and the hand segments near the respective lower corners. In addition to this, we concentrate on the motion of hand segments, given that they are the end effectors of the hand and arm chain and thus the most expressive object in tactile operations.</p><p xml:id="_AmtrzEC">For each given frame, as in the face detection process, a skin color probability matrix is computed by calculating the joint probability of the Cr/Cb image values (Figure <ref type="figure" coords="4,87.79,479.10,3.75,9.02" target="#fig_2">5</ref>). A skin color mask is then obtained from the skin probability matrix with thresholding (Figure <ref type="figure" coords="4,277.88,490.62,3.74,9.02">6</ref>). Possible moving areas are found by thresholding the difference pixels between the current frame and the next, resulting to the possible-motion mask (Figure <ref type="figure" coords="4,277.80,525.12,3.75,9.02">7</ref>). This mask does not contain information about the direction or the magnitude of the movement, but is only indicative of the motion and is used to accelerate the algorithm by concentrating tracking only in moving image areas. Both color (Figure <ref type="figure" coords="4,194.33,582.59,4.27,9.02">6</ref>) and motion (Figure <ref type="figure" coords="4,53.88,594.11,4.27,9.02">7</ref>) masks contain a large number of small objects due to the presence of noise and objects with color similar to the skin. To overcome this, morphological filtering is employed on both masks to remove small objects. All described morphological operations are carried out with a disk structuring element with a radius of 1% of the image width. The distance transform of the color mask is first calculated and only objects above the desired size are retained. These objects are used as markers for the morphological reconstruction of the initial color mask. The color mask is then closed to provide better centroid calculation. The moving skin mask (msm) is then created by fusing the processed skin and motion masks (sm, mm) through the morphological reconstruction of the color mask using the motion mask as marker. The result of this process, after excluding the head object is shown in (Figure <ref type="figure" coords="4,457.96,131.81,3.75,9.02">8</ref>). The moving skin mask consists of many large connected areas. For the next frame a new moving skin mask is created, and a one-to-one object correspondence is performed. Object correspondence between two frames is performed on the color mask and is based on object centroid distance for objects of similar (at least 50%) area (Figure <ref type="figure" coords="4,524.49,200.81,3.74,9.02">9</ref>). In these figures, red markers (crosses) represent the position of the centroid of the detected right hand of the user, while green markers (circles) correspond to the left hand. In the case of hand object merging and splitting, e.g. in the case of clapping, we establish a new matching of the left-most candidate object to the user's right hand and the right-most object to the left hand (Figure <ref type="figure" coords="4,348.24,292.79,8.23,9.02" target="#fig_0">10</ref>). Following object matching in the subsequent moving skin masks, the mask flow is computed, i.e. a vector for each frame depicting the motion direction and magnitude of the frame's objects. The described algorithm is relatively lightweight, allowing a rate of several fps on a usual PC.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2" xml:id="_5XcEPsj">Gesture Classification using HMMs</head><p xml:id="_Bmrvqet">The ability of Hidden Markov Models (HMMs) to deal with time sequential data and to provide time scale invariability as well as learning capability makes them an appropriate selection for gesture classification. An excellent study on HMMs can be found in <ref type="bibr" coords="5,223.23,143.34,15.92,9.02" target="#b16">[17]</ref>. In Table <ref type="table" coords="5,283.97,143.34,5.01,9.02" target="#tab_0">1</ref> we present the utilized features that feed (as sequences of vectors) our HMM classifier, as well as the output classes of the HMM classifier.</p><p xml:id="_5VXfCVW">The recognizer consists of M different HMMs corresponding to the modeled gesture classes. In our case, M=7 as it can be seen in Table <ref type="table" coords="5,157.74,212.34,3.74,9.02" target="#tab_0">1</ref>. We use first order left-to-right models consisting of a varying number (for each one of the HMMs) of internal states j k G , that have been identified through the learning process. For example the third HMM which recognizes low speed on hand lift consists of only three states </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_JZt2c8T">G</head><p xml:id="_fPFBske">while more complex gesture classes like the hand clapping require as much as eight states to be efficiently modeled by the corresponding HMM. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_M4tAwJP">Features</head><formula xml:id="formula_0" coords="5,110.70,326.28,162.16,32.79">X lh -X rh , X f -X rh , X f -X lh, Y lh -Y rh, Y f - Y rh, Y f -Y lh where C f =(X f ,Y f )</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3" xml:id="_J6NtwXb">Experimental results</head><p xml:id="_2CCpRHq">Experiments for testing the recognizing performance of the proposed algorithm were carried out. Gesture sequences of three male subjects, with maximum duration of three seconds, were captured by a typical web-camera at a rate of 10 frames per second. For each one of the gesture classes 15 sequences were acquired, three were used for the initialization of the HMM parameters, seven for training and parameters' re-estimation and five for testing. Each one of the training sequences consisted of approximately 15 frames. The selection of these frames was performed off-line so as to create characteristic examples of the gesture classes. Testing sequences were sub-sampled at a rate of 5 frames per second so as to enable substantial motion to occur. An overall recognition rate of 94,3% was achieved.</p><p xml:id="_wKGNpxM">From the results obtained we observed a mutual misclassification between "Italianate Gestures" and "Hand Clapping -High Frequency"; this is mainly due to the variations on "Italianate Gestures" across different individuals. Thus, training the HMM classifier on a personalized basis is anticipated to improve the discrimination between these two classes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5." xml:id="_UHES3a7">MULTIMODAL AFFECTIVE ANALYSIS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1" xml:id="_QKTJg5r">Facial Expression Analysis Subsystem</head><p xml:id="_g73R5tN">The facial expression analysis subsystem is the main part of the presented system; gestures are utilized to support the outcome of this subsystem.</p><p xml:id="_R5Ee6B8">Let us consider as input to the emotion analysis subsystem a 15-element length feature vector − f that corresponds to the 15 features f i <ref type="bibr" coords="5,427.32,280.32,15.37,9.02" target="#b14">[15]</ref>. The particular values of </p><formula xml:id="formula_1" coords="5,346.14,517.28,66.05,30.83">∏ ∆ ∈ = )<label>( , ) ( , , ) ( ) (</label></formula><formula xml:id="formula_2" coords="5,312.72,521.84,227.68,46.08">k j i k j i j i A k k i r p and ) ( max ) (k i k i p b = ,<label>(1) where } max{ ) ( , ) ( ,</label></formula><formula xml:id="formula_3" coords="5,341.70,553.82,80.43,14.09">k j i i k j i A g r ∩ =</formula><p xml:id="_FZju7r3">expresses the relevance</p><formula xml:id="formula_4" coords="5,312.72,553.75,235.31,52.40">) ( , k j i r of the i-th element of the input feature vector with respect to class ) ( , k j i A . Actually ,...} , { ) ( ' 2 1 g g G A g = = − −</formula><p xml:id="_xrtnRrY">is the fuzzified input vector resulting from a singleton fuzzification procedure <ref type="bibr" coords="5,373.31,621.23,10.64,9.03" target="#b2">[3]</ref>.</p><p xml:id="_bUUj9h6">If a hard decision about the observed emotion has to be made then the following equation is used:</p><formula xml:id="formula_5" coords="5,350.76,654.47,117.64,21.12">i i b q max arg = ,<label>(2)</label></formula><p xml:id="_Z7kESEZ">The various emotion profiles correspond to the fuzzy intersection of several sets and are implemented through a τ-norm of the form t(a,b)=a•b. Similarly the belief that an observed feature vector corresponds to a particular emotion results from a fuzzy union of several sets through an σ-norm which is implemented as u(a,b)=max(a,b).</p><formula xml:id="formula_6" coords="6,70.20,126.50,161.49,99.42">) ( , k j i µ ) ( , k j i c 1 0 ) ( , k j i s ) ( , k j i s ) ( , k j i s Figure 11:</formula><p xml:id="_pEUqkNK">The form of membership functions An emotion analysis system has been created as part of the IST ERMIS project (www.image.ntua.gr/ermis).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2" xml:id="_PB87GDU">Affective Gesture Analysis Subsystem</head><p xml:id="_dvMg2N6">Gestures are utilized to support the outcome of the facial expression analysis subsystem, since in most cases they are too ambiguous to indicate a particular emotion. However, in a given context of interaction, some gestures are obviously associated with a particular expression -e.g. hand clapping of high frequency expresses joy, satisfaction-while others can provide indications for the kind of the emotion expressed by the user. In particular, quantitative features derived from hand tracking, like speed and amplitude of motion, fortify the position of an observed emotion; for example, satisfaction turns to joy or even to exhilaration, as the speed and amplitude of clapping increases. As was mentioned in Section 4, the position of the centroids of the head and the hands over time forms the feature vector sequence that feeds an HMM classifier whose outputs corresponds to particular gesture class. In the following paragraph we describe how the recognized gesture class can be used to provide indications about the occurrence of an emotional state.</p><p xml:id="_DdA8MdW">Table <ref type="table" coords="6,98.69,515.86,5.02,9.03" target="#tab_2">2</ref> below shows the correlation between some detectable gestures with the six archetypal expressions.  Correlation between gestures and emotional states Given a particular context of interaction, gesture classes corresponding to the same emotional are combined in a "logical OR" form. Table <ref type="table" coords="6,209.01,705.35,5.02,9.03" target="#tab_2">2</ref> shows that a par-ticular gesture may correspond to more than one gesture classes carrying different affective meaning. For example, if the examined gesture is clapping, detection of high frequency indicates joy, but a clapping of low frequency may express irony and can reinforce a possible detection of the facial expression disgust.</p><p xml:id="_aRx2Y25">In practice, the gesture class probabilities derived by the HMM classifier are transformed to emotional state indicators by using the information of Table <ref type="table" coords="6,523.50,166.30,3.86,9.03" target="#tab_2">2</ref>. Let EI k be the emotional indicator of emotional state k (k ∈ {1,2,3,4,5,6} corresponds to one of the emotional states presented in Table <ref type="table" coords="6,422.89,200.81,5.02,9.03" target="#tab_2">2</ref> in the order of appearance, i.e., 1-&gt;Joy, 6-&gt;Surprise), GCS= {gc 1 , gc 2 , …, gc N } be the set of gesture classes recognized by the HMM Classifier (N=7), GCS k ⊆ GCS be the set of gesture classes related with the emotional state k, and p(gc i ) be the probability of gesture class gc i obtained from the HMM Classifier. The EI(k) is computed using the following equation:</p><formula xml:id="formula_7" coords="6,356.58,280.79,76.57,20.59">} { max i GC gc k gc EI K i ∈ =</formula><p xml:id="_S7jrZBs">(3)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3" xml:id="_k82zWuZ">The overall decision system</head><p xml:id="_GnryrtB">In the final step of the proposed system, the facial expression analysis subsystem and the affective gesture analysis subsystem are integrated into a system which provides as result the possible emotions of the user, each accompanied by a degree of belief. Although face consists the main "demonstrator" of user's emotion <ref type="bibr" coords="6,377.35,408.64,10.63,9.03" target="#b8">[9]</ref>, the recognition of the accompanying gesture increases the confidence of the result of facial expression subsystem <ref type="bibr" coords="6,392.83,431.62,10.63,9.03" target="#b1">[2]</ref>. Further research is necessary to be carried out in order to define how powerful the influence of a gesture in the recognition of an emotion actually is. It would also be helpful to define which, face or gesture, is more useful for a specific application and change the impact of each subsystem on the final result.</p><p xml:id="_dNsmRTn">In the current implementation the two subsystems are combined as a weighted sum: Let b k be the degree of belief that the observed sequence presents the k-th emotional state, obtained from the facial expression analysis subsystem, and EI k be the corresponding emotional state indicator, obtained from the affective gesture analysis subsystem, then the overall degree of belief d k is given by:</p><formula xml:id="formula_8" coords="6,350.52,578.81,153.88,14.01">k k k EI w b w d ⋅ + ⋅ = 2 1 (4)</formula><p xml:id="_5A3S7ds">where the weights w 1 and w 2 are used to account for the reliability of the two subsystems as far as the emotional state estimation is concerned. In this implementation we use w 1 =0.75 and w 2 =0.25. These values enables the affective gesture analysis subsystem to be important in cases where the facial expression analysis subsystem produces ambiguous results while at the same time leaves the latter subsystem to be the main contributing part in the overall decision system.</p><p xml:id="_kmm38KV">For the input sequence shown in Figure <ref type="figure" coords="7,249.30,75.03,3.59,8.10" target="#fig_0">1</ref>, the affective gesture analysis subsystem consistently provided a "surprise" selection. This was used to fortify the output of the facial analysis subsystem which was around 85%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6." xml:id="_CqvhdHu">CONCLUSIONS -FUTURE WORK</head><p xml:id="_de8JeB4">In this paper we described a holistic approach to emotion modeling and analysis and their applications in MMI applications. We show that it is possible to transform quantitative feature information from video sequences to an estimation of a user's emotional state. This transformation is based on a fuzzy rules architecture that takes into account knowledge of emotion representation and the intrinsic characteristics of human expression. While these features can be used for simple representation purposes, e.g. animation or task-based interfacing, our approach is closer to the target of affective computing. Thus, they are utilized to provide feedback on the users' emotional state, while in front of a computer. Possible applications include human-like agents, that assist everyday chores and react to user emotions or sensitive artificial listeners that introduce conversation topics and react themselves to specific user cues.</p><p xml:id="_3BUMRn3">Future work in the affective modeling area, includes the enrichment of the gesture vocabulary with more affective gestures, as well as the relevant featurebased descriptions. With respect to the recognition part, more sophisticated methods of combination of detected expressions and gestures, mainly through a rule based system, are currently under investigation, along with algorithms that take into account general body posture information.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,312.72,642.09,116.72,8.10;3,312.72,652.41,86.85,8.10;3,335.16,555.42,71.88,84.60"><head>Figure 1 :</head><label>1</label><figDesc xml:id="_SZPge4H">Figure 1: The original frame from the input sequence</figDesc><graphic coords="3,335.16,555.42,71.88,84.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,435.84,642.48,108.47,9.02;3,461.94,654.00,56.44,9.02;3,461.28,555.42,57.72,84.72"><head>Figure 2 :Figure 3 :</head><label>23</label><figDesc xml:id="_wMEggj5">Figure 2: Detected primary facial features</figDesc><graphic coords="3,461.28,555.42,57.72,84.72" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="4,318.66,444.06,109.47,9.02;4,318.60,455.58,109.55,9.02;4,320.46,359.94,106.04,81.72"><head>Figure 5 :</head><label>5</label><figDesc xml:id="_xRhW6ng">Figure 5: Skin color probability for the input image</figDesc><graphic coords="4,320.46,359.94,106.04,81.72" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="4,446.16,439.74,90.21,9.02;4,443.28,451.26,96.10,9.02;4,472.20,462.72,38.20,9.02;4,442.74,472.38,97.50,80.46"><head>Figure 6 :Figure 7 :Figure 8 :Figure 9 :</head><label>6789</label><figDesc xml:id="_9MFqHPw">Figure 6: Initial color mask created with skin detection</figDesc><graphic coords="4,442.74,472.38,97.50,80.46" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="5,316.08,301.60,3.84,8.58;5,316.44,292.62,231.60,9.02;5,312.72,314.58,134.34,9.02;5,453.90,321.59,3.83,8.56;5,451.98,314.58,81.67,9.06;5,540.54,321.59,3.83,8.56;5,538.62,314.93,7.21,8.71;5,312.72,333.84,235.25,9.02;5,312.72,345.30,24.76,9.02;5,312.72,359.64,13.33,9.02;5,346.80,357.19,2.33,6.31;5,340.08,357.19,2.33,6.31;5,341.46,364.21,1.75,6.31;5,342.84,357.38,3.11,6.11;5,344.64,364.40,1.95,6.11;5,339.12,364.40,1.95,6.11;5,331.80,359.91,6.12,8.73;5,354.42,359.64,144.54,9.74;5,502.14,359.64,45.93,9.02;5,312.72,379.62,59.61,9.02;5,390.54,377.18,2.33,6.29;5,383.88,377.18,5.86,6.29;5,381.72,384.33,1.94,6.10;5,377.10,379.62,81.16,9.02;5,475.62,376.34,2.33,6.29;5,468.60,376.34,2.33,6.29;5,470.28,384.68,1.75,6.29;5,471.48,376.53,3.10,6.10;5,473.52,384.87,1.94,6.10;5,467.82,384.87,1.94,6.10;5,462.42,378.60,34.51,10.45;5,513.96,376.34,2.33,6.29;5,507.00,376.34,2.33,6.29;5,508.68,384.68,1.75,6.29;5,509.88,376.53,3.10,6.10;5,511.92,384.87,1.94,6.10;5,506.22,384.87,1.94,6.10;5,501.42,378.60,46.68,10.45;5,312.72,398.64,140.04,9.02;5,472.92,396.20,2.33,6.29;5,466.20,396.20,2.33,6.29;5,467.58,403.22,1.75,6.29;5,468.96,396.39,3.10,6.10;5,470.76,403.41,1.94,6.10;5,465.30,403.41,1.94,6.10;5,457.98,398.64,90.08,9.02;5,312.72,417.60,104.01,9.02;5,435.60,415.04,2.33,6.29;5,428.88,415.04,2.33,6.29;5,430.26,422.18,1.75,6.29;5,431.64,415.23,3.10,6.10;5,433.44,422.37,1.94,6.10;5,427.92,422.37,1.94,6.10;5,422.46,417.60,43.44,9.74;5,465.90,417.60,82.08,9.02;5,312.72,436.62,53.52,9.02;5,385.50,434.18,2.33,6.30;5,378.84,434.18,2.33,6.30;5,380.28,441.20,1.75,6.30;5,381.60,434.37,3.11,6.10;5,383.46,441.39,1.95,6.10;5,378.00,441.39,1.95,6.10;5,371.70,432.84,5.76,12.94;5,393.18,436.62,119.43,9.02;5,530.28,434.04,2.34,6.33;5,523.62,434.04,2.34,6.33;5,527.10,441.24,1.76,6.33;5,526.38,434.23,3.12,6.13;5,530.28,441.43,1.95,6.13;5,524.76,441.43,1.95,6.13;5,517.92,433.43,30.11,12.29;5,312.72,455.64,68.45,9.02;5,399.84,453.20,2.33,6.30;5,393.18,453.20,2.33,6.30;5,394.50,460.22,1.75,6.30;5,395.94,453.39,3.11,6.10;5,397.68,460.41,1.95,6.10;5,392.22,460.41,1.95,6.10;5,386.88,455.64,120.14,9.02;5,525.66,453.20,2.33,6.30;5,519.00,453.20,5.87,6.30;5,516.78,460.41,1.95,6.10;5,512.16,455.64,35.83,9.02;5,312.72,473.64,26.71,9.02;5,358.86,471.20,2.33,6.30;5,352.20,471.20,5.87,6.30;5,351.54,478.41,1.95,6.10;5,346.50,473.95,4.98,8.68;5,367.38,473.64,25.32,9.74;5,396.66,473.64,151.42,9.02;5,316.20,497.53,3.82,8.53;5,314.28,490.56,153.11,9.02;5,486.54,488.12,2.33,6.30;5,479.88,488.12,5.87,6.30;5,477.72,495.27,1.95,6.10;5,473.10,490.56,74.91,9.02;5,312.72,509.82,235.40,9.02;5,312.72,525.06,22.29,9.02"><head>−f</head><label></label><figDesc xml:id="_uXpHT8S">can be rendered to FAP values as shown in the same table resulting in an input vector − G . The elements of − G express the observed values of the corresponding involved FAPsthat an observed, through the vector − G , facial state corresponds to profile ) (k i P and emotion i respectively, are computed through the following equations:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,62.64,349.32,217.63,159.49"><head>Table 1 : a) Features</head><label>1</label><figDesc xml:id="_DM7sHsw"></figDesc><table coords="5,62.64,407.28,180.57,78.02"><row><cell></cell><cell>hand clapping -high frequency</cell></row><row><cell></cell><cell>hand clapping -low frequency</cell></row><row><cell>Gesture Classes</cell><cell>lift of the hand -low speed lift of the hand -high speed hands over the head -gesture</cell></row><row><cell></cell><cell>hands over the head -posture</cell></row><row><cell></cell><cell>italianate gestures</cell></row></table><note xml:id="_73M9CHT">the coordinates of the head centroid, C rh =(X rh ,Y rh ) the coordinates of the right hand centroid, C lh =(X lh ,Y lh ) the coordinates of the left hand centroid (inputs to HMM) and b) Gesture Classes (outputs of HMM)</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="6,63.48,659.34,35.31,9.02"><head>Table 2 :</head><label>2</label><figDesc xml:id="_bh4VxY3"></figDesc><table /></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="7,76.56,499.47,212.40,8.10;7,76.56,509.85,212.45,8.10;7,76.56,520.17,212.39,8.10;7,76.56,530.55,57.28,8.10" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_asrAhu5">Pfinder: Real-time tracking of the human body</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Wren</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Azarbayejani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Darrel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Pentland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rPEXTR4">IEEE Trans. Pattern Anal. Machine Intell</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="780" to="785" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,76.56,551.19,212.37,8.10;7,76.56,561.57,212.42,8.10;7,76.56,571.89,44.52,8.10" xml:id="b1">
+	<monogr>
+		<title level="m" type="main" xml:id="_ascfqQy">Hand and mind: what gestures reveal about thought</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Mcneill</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+			<publisher>University of Chicago Press</publisher>
+			<pubPlace>Chicago, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,76.56,592.59,212.38,8.10;7,76.56,602.97,212.33,8.10;7,76.56,613.29,21.00,8.10" xml:id="b2">
+	<monogr>
+		<title level="m" type="main" xml:id="_jzEzEfj">Fuzzy Sets and Fuzzy Logic, Theory and Application</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Klir</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Yuan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<publisher>Prentice Hall</publisher>
+			<pubPlace>New Jersey</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,76.56,633.99,212.41,8.10;7,76.56,644.37,212.37,8.10;7,76.56,654.69,91.60,8.10" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_75X4Bur">Modeling human hand constraints</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">S</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_sEX4YRb">Proc. Workshop on Human Motion</title>
+				<meeting>Workshop on Human Motion</meeting>
+		<imprint>
+			<date type="published" when="2000-12">Dec. 2000</date>
+			<biblScope unit="page" from="121" to="126" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,76.56,675.39,212.37,8.10;7,76.56,685.77,140.75,8.10" xml:id="b4">
+	<monogr>
+		<title level="m" type="main" xml:id="_XEPTaQn">Approaches to Emotion</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Scherer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Ekman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1984">1984</date>
+			<publisher>Lawrence Erlbaum Associates</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,74.01,212.41,8.10;7,335.40,84.33,212.45,8.10;7,335.40,94.71,212.39,8.10;7,335.40,105.03,212.36,8.10;7,335.40,115.41,76.39,8.10" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_5MGKWZh">Moving to Continuous Facial Expression Space using the MPEG-4 Facial Definition Parameter (FDP) Set</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Karpouzis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Tsapatsoulis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kollias</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Y3X8zCC">Proc. of SPIE Electronic Imaging</title>
+				<meeting>of SPIE Electronic Imaging<address><addrLine>San Jose, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2000-01">2000. January 2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,136.11,212.41,8.10;7,335.40,146.43,152.60,8.10" xml:id="b6">
+	<monogr>
+		<title level="m" type="main" xml:id="_WK27y5z">Recognition of Facial Expressions</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>College</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1975">1975</date>
+			<publisher>Arno Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,167.13,212.45,8.10;7,335.40,177.51,212.36,8.10;7,335.40,187.83,168.95,8.10" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_8kdUFFT">Face and 2-D Mesh Animation in MPEG-4</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Tekalp</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Ostermann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nY2ypXx">Signal Processing: Image Communication</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="387" to="421" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,208.53,212.41,8.10;7,335.40,218.91,212.33,8.10;7,335.40,229.23,38.82,8.10" xml:id="b8">
+	<monogr>
+		<title level="m" type="main" xml:id="_kcF8xaK">The Facial Action Coding System</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Ekman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Friesen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1978">1978</date>
+			<publisher>Consulting Psychologists Press</publisher>
+			<pubPlace>San Francisco, CA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,249.93,212.35,8.10;7,335.40,260.31,212.38,8.10;7,335.40,270.63,212.39,8.10;7,335.40,281.01,165.97,8.10" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_hP28EE7">Emotion Recognition in Human-Computer Interaction</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Cowie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Douglas-Cowie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Tsapatsoulis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Votsis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kollias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Fellenz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Taylor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UR5jADc">IEEE Signal Processing Magazine</title>
+		<imprint>
+			<date type="published" when="2001-01">January 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,301.71,212.34,8.10;7,335.40,312.03,64.99,8.10;7,400.56,310.22,6.18,5.23;7,409.92,312.28,137.80,7.85;7,335.40,322.41,140.00,8.10" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_tdNVfUn">Finding skin in color images</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Kjeldsen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kender</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_VxPkSqM">Proc. 2 nd Int. Conf. Automatic Face and Gesture Recognition</title>
+				<meeting>2 nd Int. Conf. Automatic Face and Gesture Recognition</meeting>
+		<imprint>
+			<date type="published" when="1996">1996</date>
+			<biblScope unit="page" from="312" to="317" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,343.11,212.34,8.10;7,335.40,353.43,212.39,8.10;7,335.40,363.81,212.39,8.10;7,335.40,374.13,212.42,8.10;7,335.40,384.51,105.97,8.10" xml:id="b11">
+	<monogr>
+		<title level="m" type="main" xml:id="_wENfs2Z">A Multimodal Framework for Interacting With Virtual Environments</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">I</forename><surname>Pavlovic</surname></persName>
+		</author>
+		<editor>C.A. Ntuen and E.H. Park</editor>
+		<imprint>
+			<date type="published" when="1996">1996</date>
+			<publisher>Kluwer Academic Publishers</publisher>
+			<biblScope unit="page" from="53" to="71" />
+		</imprint>
+	</monogr>
+	<note>Human Interaction With Complex Systems</note>
+</biblStruct>
+
+<biblStruct coords="7,335.40,405.21,212.34,8.10;7,335.40,415.53,69.98,8.10" xml:id="b12">
+	<monogr>
+		<title level="m" type="main" xml:id="_JxzHTuM">Affective Computing</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">W</forename><surname>Picard</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<publisher>MIT Press</publisher>
+			<pubPlace>Cambridge, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,436.23,212.53,8.10;7,335.40,446.55,212.45,8.10;7,335.40,456.93,212.39,8.10;7,335.40,467.25,91.41,8.10" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_jr793F8">Hand modeling, analysis, and recognition for vision-based human computer interaction</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">S</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s" xml:id="_wWFSc6J">IEEE Signal Processing Magazine</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="51" to="60" />
+			<date type="published" when="2001-05">May 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,487.95,212.35,8.10;7,335.40,498.33,212.44,8.10;7,335.40,508.65,212.28,8.10;7,335.40,519.03,212.39,8.10;7,335.40,529.35,168.17,8.10" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_Eu6FmXC">Parameterized facial expression synthesis based on MPEG-4</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Raouzaiou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Tsapatsoulis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Karpouzis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kollias</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Yk9k9AJ">EURASIP Journal on Applied Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">2002</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1021" to="1038" />
+			<date type="published" when="2002-10">October 2002</date>
+			<publisher>Hindawi Publishing Corporation</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,335.40,550.05,212.45,8.10;7,335.40,560.43,212.33,8.10;7,335.40,570.75,212.36,8.10;7,335.40,581.13,93.59,8.10" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_HryZnpK">A modular approach to facial feature segmentation on real sequences</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Votsis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Drosopoulos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kollias</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MFuxaar">Image Communication</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="67" to="89" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+	<note>Signal Processing</note>
+</biblStruct>
+
+<biblStruct coords="7,335.40,601.83,212.30,8.10;7,335.40,612.15,212.39,8.10;7,335.40,622.53,98.98,8.10" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_j3Dv8DY">A tutorial on HMM and Selected Applications in Speech Recognition</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">R</forename><surname>Rabiner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_frZkxMb">Proceedings of the IEEE</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

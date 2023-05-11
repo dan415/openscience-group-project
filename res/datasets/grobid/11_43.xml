@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_Ztggddk">Biological Sequence Compression Algorithms</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,85.00,152.54,77.71,7.20"><forename type="first">Toshiko</forename><surname>Matsumoto1</surname></persName>
+							<email>toshikom@is.s.u-tokyo.ac.jp</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Information Science</orgName>
+								<orgName type="institution">University of Tokyo</orgName>
+								<address>
+									<addrLine>7-3-1 Hongo, Bunkyo-ku</addrLine>
+									<postCode>113-0033</postCode>
+									<settlement>Tokyo</settlement>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,224.00,152.54,30.22,7.20;1,270.00,152.54,34.66,7.20"><forename type="first">Kunihiko</forename><surname>Sadakane2</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Graduate School of Information Sciences</orgName>
+								<orgName type="institution">Tohoku University</orgName>
+								<address>
+									<addrLine>2-1-1 Katahira, Aoba-ku</addrLine>
+									<postCode>980-8577</postCode>
+									<settlement>Sendai</settlement>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,364.00,152.54,54.89,7.20"><forename type="first">Hiroshi</forename><surname>Imail</surname></persName>
+							<email>imai@is.s.u-tokyo.ac.jp</email>
+						</author>
+						<title level="a" type="main" xml:id="_VuZAvG3">Biological Sequence Compression Algorithms</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">3C66442B060754B729D278294FB3DD40</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-11T16:51+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_8S4Z3RP">DNA</term>
+					<term xml:id="_T6FGMmD">protein</term>
+					<term xml:id="_2yKzZnF">compression</term>
+					<term xml:id="_7r55Y3r">context tree weighting</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_CyAQsuH"><p xml:id="_v6hbR78">Today, more and more DNA sequences are becoming available. The information about DNA sequences are stored in molecular biology databases. The size and importance of these databases will be bigger and bigger in the future, therefore this information must be stored or communicated efficiently. Furthermore, sequence compression can be used to define similarities between biological sequences.</p><p xml:id="_ZzSPFaU">The standard compression algorithms such as gzip or compress cannot compress DNA sequences, but only expand them in size. On the other hand, CTW (Context Tree Weighting Method) can compress DNA sequences less than two bits per symbol. These algorithms do not use special structures of biological sequences.</p><p xml:id="_hTZ6T23">Two characteristic structures of DNA sequences are known. One is called palindromes or reverse complements and the other structure is approximate repeats. Several specific algorithms for DNA sequences that use these structures can compress them less than two bits per symbol.</p><p xml:id="_Y7Kq8Kb">In this paper, we improve the CTW so that characteristic structures of DNA sequences are available. Before encoding the next symbol, the algorithm searches an approximate repeat and palindrome using hash and dynamic programming. If there is a palindrome or an approximate repeat with enough length then our algorithm represents it with length and distance. By using this preprocessing, a new program achieves a little higher compression ratio than that of existing DNA-oriented compression algorithms. We also describe new compression algorithm for protein sequences.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="507.0" lry="725.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="507.0" lry="725.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="507.0" lry="725.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="507.0" lry="725.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="507.0" lry="724.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="507.0" lry="724.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="507.0" lry="725.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="507.0" lry="725.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="507.0" lry="726.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="507.0" lry="726.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" xml:id="_TvGtcFv">Introduction</head><p xml:id="_CY2rbwb">Today, the complete DNA sequences of many organisms are already known, and the completion of human genome project is making steady progress. The information of DNA sequences, RNA sequences, and amino-acid sequences of proteins are stored in molecular biology databases. It is well known that the sizes of these databases are increasing nowadays very fast. Therefore it is needed to store and communicate data efficiently. Furthermore, there are other reasons to study compression of biological sequences.</p><p xml:id="_WvxVfHA">Understanding the Properties of DNA Sequences Using Compression Algorithms Since DNA sequences contain four symbols 'a,' 't,' 'g, <ref type="bibr" coords="1,242.73,606.85,2.50,8.10">'</ref> and 'c,' if these were totally random, the most efficient way to represent them would be using two bits for each symbol. However, only a small fraction of DNA sequences result in a viable organism, therefore the sequences which appear in a living organism are expected to be nonrandom and have some constraints.</p><p xml:id="_S7Rt6Dp">In other words, they should be compressible. The studies in compression algorithms for DNA sequences answer the basic et al.</p><p xml:id="_ck5y3ER">question about the compressibility of DNA sequences, and from a viewpoint of information science, we can use compression techniques to capture the properties of DNA sequences. It is known that DNA sequences have two characteristic structures. One is reverse complements, and the other is approximate repeats. The reverse complement of a sequence is a reverse sequence whose each symbol is replaced with its complement one. The approximate repeats are repeats that contains errors. There have been developed several special-purpose compression algorithms for DNA sequences (Grumbach and Tahi <ref type="bibr" coords="2,80.00,155.17,10.62,9.00" target="#b2">[3]</ref>, Chen, Kwong and Li <ref type="bibr" coords="2,182.00,155.17,10.62,9.00" target="#b0">[1]</ref>, Lanctot, Li and Yang <ref type="bibr" coords="2,287.00,155.17,10.49,9.00" target="#b4">[5]</ref>). These algorithms use the structures and can achieve high compression ratio.</p><p xml:id="_UNGnCuD">There is a difference between the compression ratio of coding and non-coding regions of DNA sequence, and this is supported by a biological hypothesis (Lanctot, Li and Yang <ref type="bibr" coords="2,387.00,190.17,11.24,9.00" target="#b4">[5]</ref>) . Not all of the DNA sequence specify a protein. In higher eukaryotes (such as plants and animals) much of the sequence is cut out before the cell translates it into protein. Random mutations in a DNA sequence are thought to be more deleterious if they take place in a coding regions rather than in a non-coding regions. Therefore the two regions should have different information theoretic entropy.</p><p xml:id="_rnWUP2g">With conditional compression ratio, we can evaluate the "distance" between pairs of DNA sequences (Chen, Kwong and Li <ref type="bibr" coords="2,171.00,261.17,11.24,9.00" target="#b0">[1]</ref>) . DNA sequences that are "close" to each other are required to be "close" to each other on the evolutionary tree, thus the "distance" on the evolutionary tree can be measured by compression algorithms. Therefore we can guess whether organisms are "close" on the evolutionary tree using compression algorithms. The minimum alignment score also can be used to estimate the distance between a pair of sequences, however it is good only to measure two genes that are closely related. It can hardly handle simple changes like reversal, translocation, and shuffling. Using conditional compression ratio is more robust than using the minimum alignment score. Note that we can choose a compression algorithm for defining similarities of sequences so that the compression ratio and the score of the alignment have one-to-one correspondence. Thus compression of DNA sequence is important not only for improvement of efficiency of storage or communication but also for understanding the properties of DNA sequences.</p><p xml:id="_4JC5uMF">Using DNA Sequences as a Challenging Subject for Compression Algorithms DNA sequences only contain four symbols, therefore two bits per symbol is enough to represent these sequences even if they are totally random. However if one applies the standard text compression software such as compress or gzip, they cannot compress DNA sequences but only expand the file with more than two bits per symbol. Thus DNA sequences are important as a new challenge for study of compression algorithms. There are some reasons pointed out. These software are designed mainly for English text compression, while the regularities in DNA sequences are much subtler (Chen, Kwong and Li <ref type="bibr" coords="2,435.00,467.17,10.49,9.00" target="#b0">[1]</ref>). Generally the windows of the methods based on dictionary have a fixed width of small size. The use of small windows is efficient on text whose redundancy is local. However, in the case of DNA sequence, redundancies may occur at very long distances and factors can be very long (Grumbach and Tahi <ref type="bibr" coords="2,435.00,501.17,11.24,9.00" target="#b2">[3]</ref>) .</p><p xml:id="_e7eFWvf">Huffman's code also fails badly on DNA sequences both in the static and adaptive model, because there are only four kind symbols in DNA sequences and the probabilities of occurrence of the symbols are not very different.</p><p xml:id="_fvAJwSq">Concerning compression ratio, PPM (Cleary and Witten <ref type="bibr" coords="2,292.00,548.17,11.24,9.00" target="#b1">[2]</ref>) is one of the best compression algorithms in practice. However it cannot compress DNA sequences less than two bits per symbol either.</p><p xml:id="_ck3AU7D">It is true that the compression of DNA sequence is a difficult task for general compression algorithms, but at the same time, from the viewpoint of compression theory it is an interesting subject for understanding the properties of various compression algorithms.</p><p xml:id="_rJ9pJCH">Contributions of this paper Reverse complements and approximate repeats are known as characteristic structures of DNA sequences. We introduce a new DNA-oriented compression algorithm that uses context tree weighting and takes account of the characteristic structures of DNA sequences. Biological Sequence Compression Algorithms</p><p xml:id="_RY83VmV">The new algorithm has a function for searching reverse complements or approximate repeats using hash table and dynamic programming, and if there is one, the algorithm represents it by its length and distance. Our new algorithm can achieve a little higher compression ratio than that of existing special purpose compression algorithms for DNA sequences.</p><p xml:id="_v3Q9mzb">It is known that compression of proteins is a difficult task (Nevill-Manning and Witten <ref type="bibr" coords="3,431.00,133.17,11.24,9.00" target="#b5">[7]</ref>) . The standard compression algorithms such as gzip or compress cannot compress proteins but only expand them in size. There is a special purpose compression algorithm for proteins that takes account of the underlying biochemical principles and it can compress proteins, although the compression ratio is not very high. Therefore proteins are said to be incompressible. We show that many general compression algorithms can really compress proteins.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" xml:id="_WQ3aXaK">Compression Algorithms</head><p xml:id="_cRvxNYk">We briefly explain two compression algorithms used in our algorithm.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1" xml:id="_3YtV8w6">PPM</head><p xml:id="_VJGsqsc">PPM (Cleary and Witten <ref type="bibr" coords="3,161.00,292.17,11.24,9.00" target="#b1">[2]</ref>) is a kind of statistical compression algorithms and has a high compression ratio. PPM predicts the probability of next symbol using preceding several symbols called context, and then compresses a sequence of symbols one by one with this probability. The maximum value of length d of the context is called order of PPM. This value is one of parameters of PPM.</p><p xml:id="_9jaWDFd">Calculate Probability using Context For each substring of input data whose length is less than or equal to order, PPM stores the frequency of the each symbol that appears after the context. With this values, PPM estimates the probability of the next symbol. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_YPwTfBc">The Value of order</head><p xml:id="_Ask6JNc">If the value of order becomes bigger, the precision of the prediction is improved.</p><p xml:id="_bNWeBn8">However on the other hand, the flexibility of the prediction is lost and the frequency of esc increases.</p><p xml:id="_KgT4f76">The increase of the frequency of esc has a bad influence on the compression ratio, therefore there is an optimal value of order.</p><p xml:id="_UjdNmAH">For each sequence, the optimal value of order exists.</p><p xml:id="_qExV94e">It is well known that the optimal value of order is five for many English texts.</p><p xml:id="_T2BsyaX">For DNA sequences, in many cases the optimal value of order is less than five.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2" xml:id="_CmYEEnb">Context Tree Weighting</head><p xml:id="_gARZ22M">Context Tree Weighting (CTW) is a universal compression algorithm for FSMX sources proposed by Willems et al <ref type="bibr" coords="3,130.00,619.17,15.33,9.00" target="#b9">[11]</ref>. and expected to have good compression ratio with an unknown model and unknown parameters. FSMX sources are related to Tree sources with the property that the next symbol probabilities depend on preceding several symbols. The PPM algorithm uses only one model, but the CTW guesses the probabilities by adding up all possible models using weighting. et al.</p><p xml:id="_7f8N3Sh">Context Tree The contexts are represented in a tree form and called a context tree. Each node of the tree represents a context. All the tree have to satisfy is the restrictions of FSMX sources, for convenience of explanation we assume that the maximum depth of the context tree is D. At each node one store the frequency of the each symbol that appears after the context. Each value of the frequencies of a parent node is the summation of the values of its children.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_dtfH35Q">Probabilities at Each Context</head><p xml:id="_xEtAPFK">For each context, the probability of the next symbol is estimated with the frequencies of symbols stored in the corresponding node of the context tree. For the probability of a symbol c at a context s we write Pse (c). This value is calculated by the concept of the PPM algorithm. In the original algorithm of Willems et al <ref type="bibr" coords="4,264.00,192.17,16.66,9.00" target="#b9">[11]</ref> the Krichevski-Trofimov (KT) probability estimator is used. In the PPM algorithm, a special escape symbol esc is used. If a novel symbol c appears in a context sd which has depth of d, esc is encoded in context sd and then c is encoded in a context sd-1 which has depth of d-1. To use the idea of esc in the CTW program, the estimate for the probability of the symbol c is the probability of esc in the context sd times the probability of c in the shorter context sd-1 . In the null context A, probabilities of symbols they have not appeared are all equal and they divide the escape probability equally among themselves. We denote by A the set of all alphabets. The probability Pe t (c) is calculated as follows:  3 DNA-Oriented Compression Algorithms</p><p xml:id="_eE9HSDG">It is known that DNA sequences have characteristic structures that cannot be observed in other kinds of data such as English text. There are several special purpose compression and entropy estimating algorithms for DNA sequence that use these structures are studied and the compression ratio of these algorithms are better than two bits per symbol (Grumbach and Tahi <ref type="bibr" coords="5,345.00,328.17,10.62,9.00" target="#b2">[3]</ref>, Chen, Kwong and Li <ref type="bibr" coords="5,451.00,328.17,10.62,9.00" target="#b0">[1]</ref>, Lanctot, Li and Yang <ref type="bibr" coords="5,144.00,339.17,11.24,9.00" target="#b4">[5]</ref>) .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" xml:id="_9zjSUd9">Characteristic Structures of DNA Sequences</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_eDkjceA">Reverse Complement</head><p xml:id="_fvvN2Ef">In DNA sequences, the symbols 'a' and 't' are the complement of each other, and the symbols 'g' and 'c' are also the complement to each other. A string yl is the reverse complement of xn1 if xi and yn+1-i are the complement of each other for 1 &lt; i &lt; n, and a pair of strings yni and xni is called palindrome. For example, the reverse complement of aaacgt is acgttt .</p><p xml:id="_RnEWSTK">There are some DNA sequences which have long reverse complements. "CHMPXX" is the complete chromosome III from yeast and one of the standard benchmark sequences used in DNA-oriented compression and entropy estimating algorithms. The benchmark sequences are available at <ref type="bibr" coords="5,417.00,449.17,11.66,9.00">[6]</ref> . "CHM-PXX" has 121024 symbols in it and it has an about 10000 symbols long reverse complement. "VACCG" is the complete gene of a virus and also one of the standard benchmark sequence . "VACCG" has 191737 symbols in it and it has an about 8000 symbols long reverse complement. Therefore the specific redundancy is important for compression algorithms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_w68sDRn">Approximate Repeats</head><p xml:id="_GMDFsp8">DNA sequences, especially ones of higher eukaryotes , have many repeats. It has been conjectured that this is because genes duplicate themselves sometimes for evolutionary or simply for "selfish" purposes. Containing many repeats is favorable for compression algorithms , however such regularities are often blurred by random mutations. Therefore it is important to adapt to repeats that contain errors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" xml:id="_WPWjvuX">DNA-oriented Compression Algorithms</head><p xml:id="_5mGwc7B">Biocompress-2 Grumbach and Tahi <ref type="bibr" coords="5,219.00,608.17,11.66,9.00" target="#b2">[3]</ref> proposed lossless compression algorithms for DNA sequence, namely Biocompress-2. The algorithm is based on LZ77. Biocompress-2 searches for exact repeats or reverse complements and encodes them with length and position of it. Literal encoding and second order arithmetic encoding is also used. In literal encoding each symbol is encoded as a two bit number. Biocompress-2 compares these three methods and chooses the most efficient one dynamically .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_NVy7vbJ">GenCompress</head><p xml:id="_CAa465p">Chen, Kwong and Li <ref type="bibr" coords="6,209.00,89.17,11.66,9.00" target="#b0">[1]</ref> developed GenCompress that is also a compression algorithm for DNA sequence based on LZ77. GenCompress uses both approximate repeats and reverse complements and also uses reverse complements that contain errors. The algorithm searches approximate repeats or approximate reverse complements, and encodes it with length, position and the errors. If an approximate repeat or an approximate reverse complement contains many errors, it does not provide profit in the encoding, therefore GenCompress uses second order arithmetic encoding. We also use heuristics to improve compression ratios described as follows.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1" xml:id="_ZYCwyQV">Judgment of Using Edit Operations</head><p xml:id="_hHaDYPa">Our new function searches approximate repeats or approximate reverse complements using dynamic programming. With more edit operations the length can be enlarged, however we must determine where to stop dynamic programming to maximize the profit and improve the compression ratio. The algorithm estimates the number of bits needed to encode the repeat by CTW using the compression ratio of the sequence already encoded, and find the combination of edit operations that provides the biggest difference. When the length is short, the distance is long or many edit operations is needed, the structure cannot provide profit and then the algorithm does not use it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2" xml:id="_KejUHGT">Non-Greedy Search of Repeats</head><p xml:id="_uq8X75x">If the algorithm searches reverse complements or repeats greedy, it may miss longer one. This is illustrated in Figure <ref type="figure" coords="6,135.00,422.17,3.75,9.00">1</ref>. To cope with this, we defer the selection of these structures with a lazy evaluation mechanism <ref type="bibr" coords="6,139.00,433.17,53.24,9.00">(Horspool [4]</ref>) . After a reverse complement or an approximate repeat of length 1 has been found, the algorithm searches for a longer structure at the next M symbols. If another reverse complement or approximate repeat is found and that provides more profit, the previous one is abandoned. Otherwise, the original one is kept.</p><p xml:id="_3d3NrbZ">reverse complement Figure <ref type="figure" coords="6,183.00,586.54,3.11,7.20">1</ref>: Overlapping two reverse complements.</p><p xml:id="_p9yVcSV">1. find an optimal reverse complement or repeat for vz which begins from the current position i.</p><p xml:id="_spMZMxk">the length of the structure is denoted 10.</p><p xml:id="_rHwgBCz">2. if l0 is smaller than lb, goto 9.</p><p xml:id="_RZXzwSA">3. calculate the number of bits needed to encode lo symbols using LZ77-like function and store in LZ0.</p><p xml:id="_2tAJ9sy">4. estimate the number of bits needed to encode lo symbols using CTW and store in CTWo .</p><p xml:id="_NTjaZU9">5. if LZo &lt; CTWo (the structure does not provide profit) goto 9.</p><p xml:id="_HqBrHs2">6. for k=1 to M (a) find an optimal reverse complement or repeat for v+k. the length of the structure is denoted by lk.</p><p xml:id="_JHp365U">(b) if lk is larger than lb, do the following. i. calculate the number of bits needed to encode lk symbols using LZ77-like function and store in LZk. ii. estimate the number of bits needed to encode lk symbols using CTW and store in CTWk 7. if LZ0-CTWo is larger than LZk-CTWk for 1 &lt; k &lt; M then encode the structure using LZ77-like function and goto 1.</p><p xml:id="_Ue9kX4p">8. find k such that LZk-CTWk is larger than LZk,-CTWk, for 0 &lt; k' &lt; M and encode k-1 symbols using CTW and goto 1.</p><p xml:id="_Amfveky">9. encode one symbol using CTW and goto 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3" xml:id="_y5J9Vxu">Experimental Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_TCeVrrp">Environment of Experiments</head><p xml:id="_gtvwYGb">We use a SUN Ultra60 workstation (CPU Ultra SPARC-II 360 MHz, memory 2048MB) and a Sun Enterprize 450 workstation (CPU Ultra SPARC-II 4x400MHz , memory 4096MB) running Solaris 2.7. If the algorithm searches reverse complements or approximate repeats, more time is needed to execute program than original CTW. And the speed of non-greedy algorithm is slower than that of greedy-algorithm. The maximum number of edit operations also effects the speed. If the sequence is long or contains many reverse complements or approximate repeats, much time is needed. For short sequences such as "HUMDYSTROP" we need about 8 minutes and for long sequences such as "HEHCMVCG" or "SCCHRIII" we need some hours . In many cases the optimal value of order of CTW is 32 (Sadakane, Okazaki, Matsumoto and Imai <ref type="bibr" coords="7,356.00,453.17,11.66,9.00" target="#b7">[9]</ref> ), therefore we use this value. For the value of 7 which indicates the importance of long and short contexts , we examined various values and checked the effect and tendency of 'y. The non-greedy algorithm checks the next 32 symbols.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_c6QjJKc">Compression Ratio of Each Algorithm</head><p xml:id="_KKxQnuU">The compression ratio of each algorithm is shown in Table <ref type="table" coords="7,79.00,525.17,3.75,9.00" target="#tab_3">1</ref>. Biocompress-2 (Grumbach and Tahi <ref type="bibr" coords="7,244.00,525.17,11.24,9.00" target="#b2">[3]</ref>) and GenCompress (Chen, Kwong and Li <ref type="bibr" coords="7,433.00,525.17,11.24,9.00" target="#b0">[1]</ref>) are DNA oriented compression programs. When our algorithm can achieve higher compression ratio than Biocompress-2 and GenCompress, the compression ratio are written in bold face. In the most cases, our new program can achieve a little higher compression ratio than Biocompress and GenCompress. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5" xml:id="_eRmzY8H">Protein Compression Algorithms</head><p xml:id="_R3SPFky">Proteins are sequences drawn from amino acids. There are 20 kinds of amino acids except for some peculiar ones, therefore the size of alphabet of proteins is 20. It is known that the compression of proteins is also very difficult (Nevill-Manning and Witten <ref type="bibr" coords="8,278.00,346.17,11.24,9.00" target="#b5">[7]</ref>) . The size of alphabet is 20, consequently the entropy of proteins is equal to or less than log2(20)=4.322 per symbol. However the compression ratios by the widely used compression algorithms compress or gzip are more than log2(20) bits per symbol. Though PPMD+ can achieve high compression ratio for English text, it cannot compress proteins either.</p><p xml:id="_3s5Rfzf">Compression results are shown in Table <ref type="table" coords="8,226.00,402.17,3.75,9.00" target="#tab_4">2</ref>. The unit of compression ratio is bit per symbol. The proteins are used in a protein-oriented compression algorithm (Nevill-Manning and Witten <ref type="bibr" coords="8,424.00,415.17,11.24,9.00" target="#b5">[7]</ref>) and available at <ref type="bibr" coords="8,96.00,425.17,11.66,9.00" target="#b6">[8]</ref> . When an algorithm can compress a sequence less than log2(20) bits per symbol, the corresponding compression ratio is written in bold face. compress, bzip2 and gzip are widely used compression programs compress, bzip2 and gzip. normal PPMD+gives the results for the statistical compression program PPMD+ (Teahan <ref type="bibr" coords="8,414.00,460.17,14.99,9.00" target="#b8">[10]</ref>). The value of order is set to 5 which is known as the best value for compression ratio of English text. adapted PPMD+ is a modified PPMD+ program whose value of order is adapted. We test the value of order from 0 to 15 and the optimal order for each sequence is in parenthesis next to compression ratio.</p><p xml:id="_Vwh66Em">arith implements the adaptive arithmetic coding. lz-ari is the enhanced arithmetic coding with an LZ77-like function. The size of alphabet is 20.</p><p xml:id="_3tp9YAZ">The values of CTW20 are results of an improved CTW program whose size of alphabet is changed to 20. The value of order is represented in parenthesis. We examine the effect of the value of r. In many case about 0.005 is the optimal, and in Table <ref type="table" coords="8,250.00,563.17,3.75,9.00" target="#tab_4">2</ref>, the best values are given. We cannot examine the compression ratio of CT W20(16) for Human and Saccharomyces Cerevisciae due to lack of memory. lz-CTW encodes exact repeats. Single symbols are encoded by order-8 CTW. lza-CTW is the same as the lz-CTW, except that it encodes approximate repeats by an LZ77-like function.</p><p xml:id="_QP6c29P">CP (Nevill-Manning and Witten <ref type="bibr" coords="8,198.00,610.17,11.24,9.00" target="#b5">[7)</ref>) is a protein-oriented compression algorithm on the basis of PPM and takes account of the underlying biochemical principles. The algorithm uses the probabilities that an amino acid will mutate to another and weights the contexts.</p><p xml:id="_T8yzkwU">As widely used compress and gzip, in all cases cannot compress proteins less than log2(20) bits per symbol. They only expand in size. bzip2 can compress three proteins less than log2(20) bits per arith can compress all proteins less than log2(20) bits per symbol. lz-ari also can compress all proteins. Although in all cases normal PPMD+ only expands in size, adapted PPMD+can really compress all of the proteins less than log2(20) bits per symbol. CTW20 can compress each protein and the results of CT W20(16) are higher a little than CTW20 <ref type="bibr" coords="9,445.77,419.17,15.46,9.00" target="#b6">(8)</ref>. The optimal values of sy are 0.0005, 0.0005, 0.001 and 0.0005 for Haemophilus Influenzae, Human, Methanococcus Janaschii and Saccharomyces Cerevisciae. The variation of the compression ratio by changing the value of r is small, just like the case of original CTW. lz-CTW also can compress all proteins. The difference between the compression ratio of lz-ari and lz-CTW indicates the difference between the power of arithmetic coding and CTW. The compression ratio of CTW is improved because of LZ77-like function, therefore the sequences have repeats in it. Furthermore, the compression ratio, especially for Human, is improved by the lza-CTW that encodes approximate repeats. Each sequence is a connection of proteins of a organism, therefore the LZ77-like function can find repeat both from the same protein and from the previous proteins. The existence of exact and approximate repeats in a sequence may indicate that proteins have repeats, and may indicate that a organism has many similar proteins. Note that it is possible that both are true. We have no idea.</p><note type="other" xml:id="_65duG5c">Sequence Compression Algorithms 51</note><p xml:id="_yrbGcX6">CP can compress all of the proteins less than log2(20) bits per symbol. The compression ratio are improved by enlarging the value of order, however the gains are little. This appears that little compression is possible using algorithms that rely on Markov dependence (Nevill-Manning and Witten <ref type="bibr" coords="9,71.00,612.17,11.24,9.00" target="#b5">[7]</ref>) . However, this algorithm will be improved by using our techniques to combine statistical compression algorithms with CTW.</p><p xml:id="_TV3qaKb">If there are some characteristic structures in proteins, the special purpose algorithms that use the structures can achieve high compression ratio. Concluding Remarks</p><p xml:id="_2DSbyTh">We have proposed DNA and protein sequence compression algorithms. For DNA sequences, our algorithm slightly outperforms GenCompress by encoding bases which are not encoded by repeats by CTW. For protein sequences, our algorithms significantly improves the result of the protein-oriented compression algorithm. Furthermore, ours will be improved by combining CTW with the proteinoriented algorithm. Though improvements of our algorithms seem to be small, the improvements are achieved for most of the examined sequences. Therefore our algorithms can be used to define more precise similarities between sequences. This is important to classify biological sequences and make phylogeny trees.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,54.00,293.22,54.73,6.30;4,70.00,311.49,55.50,9.90;4,69.00,326.49,195.02,9.90;4,70.00,340.49,62.55,9.90;4,86.00,349.49,229.01,9.90;4,86.00,361.49,98.07,9.90;4,54.00,380.17,103.16,9.00;4,70.00,401.17,51.00,9.00;4,69.00,416.17,290.10,9.00;4,70.00,430.17,65.22,9.00;4,86.00,440.17,309.01,9.00;4,85.00,451.17,149.32,9.00"><head></head><label></label><figDesc xml:id="_sBcR6VY">1. calculate Pre(c) (a) let m = 0 (b) for all cEA if c has not appeared, m=m+1 (c) for all cEA if c has appeared, Pre(c) is calculated according as PPM else, Pre (c)=Pre(esc)/m 2. calculate Psed (1&lt;d&lt;D) (a) let e = 0 (b) for all c E A if c has not appeared in the context sd, e = e + Psed (c) (c) for all c E A if c has appeared in the context sd, Psed+1 (c) is calculated according as PPM else, Psed+1 (c) = Psed+1(esc)•Psed (c)/e</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="7,56.00,568.17,180.38,9.00;7,56.00,588.17,404.44,9.00;7,74.00,600.17,387.33,9.00;7,74.00,611.17,386.44,9.00;7,74.00,623.17,154.72,9.00"><head></head><label></label><figDesc xml:id="_exSUfZn">normal CTW The original CTW program. CTW+LZ A non-greedy program which searches exact and approximate reverse complements and exact and approximate repeats. This program encodes these structures using LZ77-like function and edit operations are encoded by arithmetic coding. Symbols which are not encoded in a repeat are encoded by order-32 CTW.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="10,44.00,86.85,4.50,8.10"><head></head><label></label><figDesc xml:id="_2SEh4mQ">6</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="4,42.00,474.49,413.40,79.12"><head></head><label></label><figDesc xml:id="_CsEv274">Adding up Models Assume that a symbol xt has a context Os. For each context s, according the following expression Psw is calculated. Psw, is the weighted probability under Pse , and the next symbol is encoded on the basis of this value at the null context Prw . 7 is a weighting parameter of CTW and</figDesc><table coords="4,42.00,512.22,407.83,41.38"><row><cell cols="2">Biological</cell><cell cols="2">Sequence</cell><cell cols="3">Compression</cell><cell cols="2">Algorithms</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">By defining</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">we obtain</cell><cell cols="3">the expression</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>The</cell><cell>initial</cell><cell>value</cell><cell cols="3">of ƒÀ is 1.0</cell><cell>because</cell><cell cols="2">if xt-11</cell><cell>is a null</cell><cell>sequence</cell><cell></cell><cell>then</cell><cell>Pse (xti-1)</cell><cell>is 1.0</cell><cell>and</cell><cell>thus</cell><cell>Psw (xti-1)</cell></row><row><cell>is 1.0.</cell><cell cols="2">Therefore ƒÀ</cell><cell></cell><cell>can</cell><cell cols="2">be computed</cell><cell cols="3">incrementally</cell><cell>as follows:</cell><cell></cell><cell></cell><cell></cell></row><row><cell>determine</cell><cell cols="3">the importance</cell><cell></cell><cell cols="5">of long or short contexts.</cell><cell cols="2">If -y is large,</cell><cell cols="3">CTW regards</cell><cell>the short contexts</cell><cell>as</cell></row><row><cell>important,</cell><cell cols="4">and if -y is small,</cell><cell></cell><cell cols="2">CTW regards</cell><cell cols="3">the long contexts</cell><cell cols="3">as important.</cell><cell>Note that 0 &lt;</cell><cell>&lt; 1.</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>II n</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="6,45.00,178.17,411.00,70.00"><head></head><label></label><figDesc xml:id="_SsMHusG">new DNA compression algorithm. It is a combination of LZ77-type algorithm like GenCompress and the CTW algorithm. Long exact/approximate repeats are encoded by LZ77-type algorithm, while short repeats are encoded by the CTW.</figDesc><table coords="6,45.00,178.17,401.32,46.00"><row><cell>4</cell><cell>New DNA-Oriented</cell><cell>Compression</cell><cell>Algorithms</cell><cell>Using Context</cell><cell>Tree</cell></row><row><cell></cell><cell>Weighting</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">We propose a</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="8,61.00,95.54,369.66,7.20"><head>Table 1 :</head><label>1</label><figDesc xml:id="_eaqaDR5">Compression ratios of algorithms which encode repeats by using LZ77-like function.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="9,54.00,91.22,332.55,281.95"><head>Table 2 :</head><label>2</label><figDesc xml:id="_cFpECw6">The</figDesc><table coords="9,176.00,91.22,210.55,6.30"><row><cell>results</cell><cell>of general</cell><cell>compression</cell><cell>algorithms</cell><cell>and proteins</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0">Matsumotoet al.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_csQt9y2">Acknowledgement</head><p xml:id="_2uRC9Hd">The work of the second author was supported in part by the Grant-in-Aid on Priority Areas (C), Genome Information Science,' of the Ministry of Education, Science, Sports and Culture of Japan. The work of the third author was supported in part by the Grant-in-Aid on Priority Areas (A), Genome Science.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="10,64.00,323.17,390.33,9.00;10,64.00,332.17,292.50,9.00" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_kJNQfQs">A compression algorithm for DNA sequences and its applications in genome comparison</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kwong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Li</forename><forename type="middle">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_vV8YT5m">Genome Informatics</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="52" to="61" />
+			<date type="published" when="1999-12">December 1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,64.00,353.17,389.77,9.00;10,64.00,362.17,266.50,9.00" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_WNmAVZp">Data compression using adaptive coding and partial string matching</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">G</forename><surname>Cleary</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">H</forename><surname>Witten</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_yt44zMF">IEEE Trans. on Commun., COM</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="396" to="402" />
+			<date type="published" when="1984-04">April 1984</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,64.00,384.17,392.04,9.00;10,64.00,393.17,237.50,9.00" xml:id="b2">
+	<monogr>
+		<title level="m" type="main" xml:id="_sj5VeBn">A new challenge for compression algorithms: genetic sequences, Information Processing &amp; Management</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Grumbach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Tahi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1994">1994</date>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="875" to="886" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,64.00,414.17,392.33,9.00;10,64.00,423.17,214.50,9.00" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_BJfeKmJ">The effect of non-greedy parsing in Ziv-Lempel compression methods</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">N</forename><surname>Horspool</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_9BW6qVG">Proc. of IEEE Data Compression Conference</title>
+				<meeting>of IEEE Data Compression Conference</meeting>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<biblScope unit="page" from="302" to="311" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,64.00,445.17,391.78,9.00;10,64.00,454.17,293.50,9.00" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_x9t6uef">Estimating DNA sequence entropy</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">K</forename><surname>Lanctot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_xY9je3P">Proceedings of the 11th Annual ACM-SIAM Symposium on Discrete Algorithms</title>
+				<meeting>the 11th Annual ACM-SIAM Symposium on Discrete Algorithms</meeting>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<biblScope unit="page" from="409" to="418" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,64.00,506.17,392.44,9.00;10,64.00,515.17,131.50,9.00" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_sR722FW">Protein is incompressible</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">G</forename><surname>Nevill-Manning</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">H</forename><surname>Witten</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_FaBgX4g">Proc. of IEEE Data Compression Conference</title>
+				<meeting>of IEEE Data Compression Conference</meeting>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+			<biblScope unit="page" from="257" to="266" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,64.00,536.17,361.38,9.00" xml:id="b6">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Craig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Nevill-Manning</surname></persName>
+		</author>
+		<ptr target="http://sequence.rutgers.edu/DCC99/" />
+		<imprint/>
+	</monogr>
+	<note>Protein is incompressible</note>
+</biblStruct>
+
+<biblStruct coords="10,64.00,556.17,392.00,9.00;10,64.00,565.17,391.44,9.00;10,64.00,576.17,257.37,9.00" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_F4SzveU">Implementing the context tree weighting method by using conditional probabilities</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Sadakane</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Okazaki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Matsumoto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Imai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PV72feu">Proc. of 22th Symposium on Information Theory and its Applications</title>
+				<meeting>of 22th Symposium on Information Theory and its Applications</meeting>
+		<imprint>
+			<date type="published" when="1999-12">December 1999</date>
+			<biblScope unit="page" from="673" to="676" />
+		</imprint>
+	</monogr>
+	<note>in Japanese</note>
+</biblStruct>
+
+<biblStruct coords="10,64.00,598.17,286.76,9.00;10,379.00,598.17,67.76,9.00" xml:id="b8">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">J</forename><surname>Teahan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Ppmd+</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Program</surname></persName>
+		</author>
+		<ptr target="http://www.cs.waikato.ac.nz/-wjt/software/ppm.tar.gz" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,64.00,617.17,391.55,9.00;10,64.00,628.17,288.50,9.00" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_WcV7tGu">The context tree weighting method: basic properties</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">M J</forename><surname>Willems</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">M</forename><surname>Shtarkov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">J</forename><surname>Tjalkens</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_54cFYrr">IEEE Trans. Inform. Theory, IT</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="653" to="664" />
+			<date type="published" when="1995-05">May 1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

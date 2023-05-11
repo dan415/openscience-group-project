@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_R56Cx8F">Adversarial Multi-task Learning for Text Classification</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2017-04-19">19 Apr 2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,183.97,111.83,58.54,10.75"><forename type="first">Pengfei</forename><surname>Liu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science</orgName>
+								<orgName type="laboratory">Shanghai Key Laboratory of Intelligent Information Processing</orgName>
+								<orgName type="institution" key="instit1">Fudan University</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<addrLine>825 Zhangheng Road</addrLine>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,257.46,111.83,58.80,10.75"><forename type="first">Xipeng</forename><surname>Qiu</surname></persName>
+							<email>xpqiu@fudan.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science</orgName>
+								<orgName type="laboratory">Shanghai Key Laboratory of Intelligent Information Processing</orgName>
+								<orgName type="institution" key="instit1">Fudan University</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<addrLine>825 Zhangheng Road</addrLine>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,331.20,111.83,85.37,10.75"><forename type="first">Xuanjing</forename><surname>Huang</surname></persName>
+							<email>xjhuang@fudan.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science</orgName>
+								<orgName type="laboratory">Shanghai Key Laboratory of Intelligent Information Processing</orgName>
+								<orgName type="institution" key="instit1">Fudan University</orgName>
+								<orgName type="institution" key="instit2">Fudan University</orgName>
+								<address>
+									<addrLine>825 Zhangheng Road</addrLine>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_gF9jh5q">Adversarial Multi-task Learning for Text Classification</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2017-04-19">19 Apr 2017</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">A77D688DA347040F343A45648C8496D3</idno>
+					<idno type="arXiv">arXiv:1704.05742v1[cs.CL]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-11T16:51+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_3bpPHgS"><p xml:id="_XeuC6qU">Neural network models have shown their promising opportunities for multi-task learning, which focus on learning the shared layers to extract the common and task-invariant features. However, in most existing approaches, the extracted shared features are prone to be contaminated by task-specific features or the noise brought by other tasks. In this paper, we propose an adversarial multi-task learning framework, alleviating the shared and private latent feature spaces from interfering with each other. We conduct extensive experiments on 16 different text classification tasks, which demonstrates the benefits of our approach. Besides, we show that the shared knowledge learned by our proposed model can be regarded as off-the-shelf knowledge and easily transferred to new tasks. The datasets of all 16 tasks are publicly available at http://nlp.fudan. edu.cn/data/</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" xml:id="_JRwhe9A">Introduction</head><p xml:id="_caKVhw6">Multi-task learning is an effective approach to improve the performance of a single task with the help of other related tasks. Recently, neuralbased models for multi-task learning have become very popular, ranging from computer vision <ref type="bibr" coords="1,72.00,647.43,85.08,9.46" target="#b25">(Misra et al., 2016;</ref><ref type="bibr" coords="1,160.40,647.43,84.47,9.46" target="#b33">Zhang et al., 2014)</ref> to natural language processing <ref type="bibr" coords="1,162.68,660.98,127.59,9.46" target="#b7">(Collobert and Weston, 2008;</ref><ref type="bibr" coords="1,72.00,674.53,85.27,9.46" target="#b23">Luong et al., 2015)</ref>, since they provide a convenient way of combining information from multiple tasks.</p><p xml:id="_YAEBgnV">However, most existing work on multi-task learning <ref type="bibr" coords="1,110.03,728.77,85.32,9.46">(Liu et al., 2016c,b)</ref> attempts to divide the features of different tasks into private and shared spaces, merely based on whether parameters of The overlap between two black circles denotes shared space. The blue triangles and boxes represent the task-specific features while the red circles denote the features which can be shared. some components should be shared. As shown in Figure <ref type="figure" coords="1,338.96,412.44,3.99,9.46" target="#fig_0">1</ref>-(a), the general shared-private model introduces two feature spaces for any task: one is used to store task-dependent features, the other is used to capture shared features. The major limitation of this framework is that the shared feature space could contain some unnecessary taskspecific features, while some sharable features could also be mixed in private space, suffering from feature redundancy.</p><p xml:id="_NEtGX7T">Taking the following two sentences as examples, which are extracted from two different sentiment classification tasks: Movie reviews and Baby products reviews.</p><p xml:id="_mVgndQc">The infantile cart is simple and easy to use. This kind of humour is infantile and boring. The word "infantile" indicates negative sentiment in Movie task while it is neutral in Baby task. However, the general shared-private model could place the task-specific word "infantile" in a shared space, leaving potential hazards for other tasks. Additionally, the capacity of shared space could also be wasted by some unnecessary features.</p><p xml:id="_Ag5qqNh">To address this problem, in this paper we propose an adversarial multi-task framework, in which the shared and private feature spaces are in-herently disjoint by introducing orthogonality constraints. Specifically, we design a generic sharedprivate learning framework to model the text sequence. To prevent the shared and private latent feature spaces from interfering with each other, we introduce two strategies: adversarial training and orthogonality constraints. The adversarial training is used to ensure that the shared feature space simply contains common and task-invariant information, while the orthogonality constraint is used to eliminate redundant features from the private and shared spaces.</p><p xml:id="_8UUEW9q">The contributions of this paper can be summarized as follows.</p><p xml:id="_ytWDWYW">1. Proposed model divides the task-specific and shared space in a more precise way, rather than roughly sharing parameters. 2. We extend the original binary adversarial training to multi-class, which not only enables multiple tasks to be jointly trained, but allows us to utilize unlabeled data. 3. We can condense the shared knowledge among multiple tasks into an off-the-shelf neural layer, which can be easily transferred to new tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" xml:id="_88ThCQH">Recurrent Models for Text Classification</head><p xml:id="_SyxRN8H">There are many neural sentence models, which can be used for text modelling, involving recurrent neural networks <ref type="bibr" coords="2,149.09,489.75,107.11,9.46" target="#b31">(Sutskever et al., 2014;</ref><ref type="bibr" coords="2,261.17,489.75,29.09,9.46;2,72.00,503.30,52.08,9.46" target="#b6">Chung et al., 2014;</ref><ref type="bibr" coords="2,127.09,503.30,73.71,9.46" target="#b19">Liu et al., 2015a)</ref>, convolutional neural networks <ref type="bibr" coords="2,132.36,516.85,104.36,9.46" target="#b8">(Collobert et al., 2011;</ref><ref type="bibr" coords="2,241.20,516.85,44.16,9.46;2,72.00,530.40,72.55,9.46">Kalchbrenner et al., 2014)</ref>, and recursive neural networks <ref type="bibr" coords="2,72.00,543.95,85.38,9.46" target="#b30">(Socher et al., 2013)</ref>. Here we adopt recurrent neural network with long short-term memory (LSTM) due to their superior performance in various NLP tasks <ref type="bibr" coords="2,96.55,584.60,77.87,9.46" target="#b18">(Liu et al., 2016a;</ref><ref type="bibr" coords="2,177.14,584.60,68.02,9.46" target="#b17">Lin et al., 2017)</ref>.</p><p xml:id="_E9HMC5e">Long Short-term Memory Long short-term memory network (LSTM) <ref type="bibr" coords="2,213.26,620.08,77.01,9.46;2,72.00,633.63,84.88,9.46" target="#b14">(Hochreiter and Schmidhuber, 1997</ref>) is a type of recurrent neural network (RNN) <ref type="bibr" coords="2,147.48,647.18,63.10,9.46" target="#b9">(Elman, 1990)</ref>, and specifically addresses the issue of learning long-term dependencies. While there are numerous LSTM variants, here we use the LSTM architecture used by <ref type="bibr" coords="2,87.01,701.37,109.42,9.46" target="#b16">(Jozefowicz et al., 2015)</ref>, which is similar to the architecture of <ref type="bibr" coords="2,163.40,714.92,68.15,9.46" target="#b13">(Graves, 2013)</ref>  The LSTM is precisely specified as follows.</p><formula xml:id="formula_0" coords="2,322.31,156.49,203.24,52.40">    ct o t i t f t     =     tanh σ σ σ     W p x t h t−1 + b p ,<label>(1)</label></formula><formula xml:id="formula_1" coords="2,336.16,215.76,189.39,27.20">c t = ct i t + c t−1 f t , (2) h t = o t tanh (c t ) ,<label>(3)</label></formula><p xml:id="_X7C6kg8">where x t ∈ R e is the input at the current time step; W p ∈ R 4d×(d+e) and b p ∈ R 4d are parameters of affine transformation; σ denotes the logistic sigmoid function and denotes elementwise multiplication.</p><p xml:id="_ySXd7Hg">The update of each LSTM unit can be written precisely as follows:</p><formula xml:id="formula_2" coords="2,354.99,365.55,170.55,10.67">h t = LSTM(h t−1 , x t , θ p ).<label>(4)</label></formula><p xml:id="_Aq8Xpec">Here, the function LSTM(•, •, •, •) is a shorthand for Eq. (1-3), and θ p represents all the parameters of LSTM.</p><p xml:id="_p4MHMVU">Text Classification with LSTM Given a text sequence x = {x 1 , x 2 , • • • , x T }, we first use a lookup layer to get the vector representation (embeddings) x i of the each word x i . The output at the last moment h T can be regarded as the representation of the whole sequence, which has a fully connected layer followed by a softmax non-linear layer that predicts the probability distribution over classes.</p><formula xml:id="formula_3" coords="2,359.93,574.84,165.62,10.84">ŷ = softmax(Wh T + b) (5)</formula><p xml:id="_4GYPfX8">where ŷ is prediction probabilities, W is the weight which needs to be learned, b is a bias term. Given a corpus with N training samples (x i , y i ), the parameters of the network are trained to minimise the cross-entropy of the predicted and true distributions.</p><formula xml:id="formula_4" coords="2,346.46,690.81,179.09,33.71">L(ŷ, y) = − N i=1 C j=1 y j i log(ŷ j i ),<label>(6)</label></formula><p xml:id="_na437cE">where y j i is the ground-truth label; ŷj i is prediction probabilities, and C is the class number. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3" xml:id="_ZsyPcDx">Multi-task Learning for Text Classification</head><p xml:id="_uhd4CcR">The goal of multi-task learning is to utilizes the correlation among these related tasks to improve classification by learning tasks in parallel. To facilitate this, we give some explanation for notations used in this paper. Formally, we refer to D k as a dataset with N k samples for task k. Specifically,</p><formula xml:id="formula_5" coords="3,136.46,421.48,153.81,15.41">D k = {(x k i , y k i )} N k i=1 (7)</formula><p xml:id="_TQCkExP">where x k i and y k i denote a sentence and corresponding label for task k.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" xml:id="_hFTAuhQ">Two Sharing Schemes for Sentence Modeling</head><p xml:id="_rragxwU">The key factor of multi-task learning is the sharing scheme in latent feature space. In neural network based model, the latent features can be regarded as the states of hidden neurons. Specific to text classification, the latent features are the hidden states of LSTM at the end of a sentence. Therefore, the sharing schemes are different in how to group the shared features. Here, we first introduce two sharing schemes with multi-task learning: fully-shared scheme and shared-private scheme.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_J4PcYck">Fully-Shared Model (FS-MTL)</head><p xml:id="_udZBpQJ">In fully-shared model, we use a single shared LSTM layer to extract features for all the tasks. For example, given two tasks m and n, it takes the view that the features of task m can be totally shared by task n and vice versa. This model ignores the fact that some features are task-dependent. Figure <ref type="figure" coords="3,233.45,742.32,10.30,9.46" target="#fig_1">2a</ref> illustrates the fully-shared model.</p><p xml:id="_ebmBuKr">Shared-Private Model (SP-MTL) As shown in Figure <ref type="figure" coords="3,341.41,80.22,9.09,9.46" target="#fig_1">2b</ref>, the shared-private model introduces two feature spaces for each task: one is used to store task-dependent features, the other is used to capture task-invariant features. Accordingly, we can see each task is assigned a private LSTM layer and shared LSTM layer. Formally, for any sentence in task k, we can compute its shared representation s k t and task-specific representation h k t as follows:</p><formula xml:id="formula_6" coords="3,357.61,212.77,167.94,14.19">s k t = LSTM(x t , s k t−1 , θ s ),<label>(8)</label></formula><formula xml:id="formula_7" coords="3,355.59,230.86,169.96,14.19">h k t = LSTM(x t , h m t−1 , θ k )<label>(9)</label></formula><p xml:id="_bNebD4C">where LSTM(., θ) is defined as Eq. ( <ref type="formula" coords="3,474.42,260.71,3.86,9.46" target="#formula_2">4</ref>).</p><p xml:id="_FwCxFXb">The final features are concatenation of the features from private space and shared space.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" xml:id="_5meRc5t">Task-Specific Output Layer</head><p xml:id="_ZxGYJWc">For a sentence in task k, its feature h (k) , emitted by the deep muti-task architectures, is ultimately fed into the corresponding task-specific softmax layer for classification or other tasks.</p><p xml:id="_vUZREkM">The parameters of the network are trained to minimise the cross-entropy of the predicted and true distributions on all the tasks. The loss L task can be computed as:</p><formula xml:id="formula_8" coords="3,352.94,453.72,172.60,33.98">L T ask = K k=1 α k L(ŷ (k) , y (k) ) (10)</formula><p xml:id="_j7SmRPK">where α k is the weights for each task k respectively. L(ŷ, y) is defined as Eq. 6.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4" xml:id="_7gTve6b">Incorporating Adversarial Training</head><p xml:id="_K5A8Mw2">Although the shared-private model separates the feature space into the shared and private spaces, there is no guarantee that sharable features can not exist in private feature space, or vice versa. Thus, some useful sharable features could be ignored in shared-private model, and the shared feature space is also vulnerable to contamination by some taskspecific information. Therefore, a simple principle can be applied into multi-task learning that a good shared feature space should contain more common information and no task-specific information. To address this problem, we introduce adversarial training into multi-task framework as shown in Figure <ref type="figure" coords="3,490.03,742.32,5.45,9.46" target="#fig_2">3</ref> (ASP-MTL). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1" xml:id="_rtzQRTg">Adversarial Network</head><p xml:id="_Zx5K8dC">Adversarial networks have recently surfaced and are first used for generative model <ref type="bibr" coords="4,234.80,246.30,55.47,9.46;4,72.00,259.85,50.56,9.46" target="#b12">(Goodfellow et al., 2014)</ref>. The goal is to learn a generative distribution p G (x) that matches the real data distribution P data (x) Specifically, GAN learns a generative network G and discriminative model D, in which G generates samples from the generator distribution p G (x). and D learns to determine whether a sample is from p G (x) or P data (x). This min-max game can be optimized by the following risk:</p><formula xml:id="formula_9" coords="4,103.47,392.64,186.80,36.10">φ = min G max D E x∼P data [log D(x)] + E z∼p(z) [log(1 − D(G(z)))]<label>(11)</label></formula><p xml:id="_zDhNZ5w">While originally proposed for generating random samples, adversarial network can be used as a general tool to measure equivalence between distributions <ref type="bibr" coords="4,106.99,485.24,95.45,9.46" target="#b32">(Taigman et al., 2016)</ref>. Formally, <ref type="bibr" coords="4,255.13,485.24,35.14,9.46;4,72.00,498.79,57.82,9.46" target="#b1">(Ajakan et al., 2014)</ref> linked the adversarial loss to the H-divergence between two distributions and successfully achieve unsupervised domain adaptation with adversarial network. Motivated by theory on domain adaptation <ref type="bibr" coords="4,156.24,552.99,101.24,9.46" target="#b2">(Ben-David et al., 2010</ref><ref type="bibr" coords="4,257.48,552.99,32.79,9.46">, 2007;</ref><ref type="bibr" coords="4,72.00,566.54,97.30,9.46" target="#b5">Bousmalis et al., 2016</ref>) that a transferable feature is one for which an algorithm cannot learn to identify the domain of origin of the input observation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2" xml:id="_aYh24Gc">Task Adversarial Loss for MTL</head><p xml:id="_6atqfnS">Inspired by adversarial networks <ref type="bibr" coords="4,234.80,633.92,55.47,9.46;4,72.00,647.47,52.14,9.46" target="#b12">(Goodfellow et al., 2014)</ref>, we proposed an adversarial sharedprivate model for multi-task learning, in which a shared recurrent neural layer is working adversarially towards a learnable multi-layer perceptron, preventing it from making an accurate prediction about the types of tasks. This adversarial training encourages shared space to be more pure and ensure the shared representation not be contaminated by task-specific features.</p><p xml:id="_EYjzFp4">Task Discriminator Discriminator is used to map the shared representation of sentences into a probability distribution, estimating what kinds of tasks the encoded sentence comes from.</p><formula xml:id="formula_10" coords="4,332.72,127.18,192.82,14.19">D(s k T , θ D ) = softmax(b + Us k T )<label>(12)</label></formula><p xml:id="_w9aqTec">where U ∈ R d×d is a learnable parameter and b ∈ R d is a bias.</p><p xml:id="_ERAmUc9">Adversarial Loss Different with most existing multi-task learning algorithm, we add an extra task adversarial loss L Adv to prevent task-specific feature from creeping in to shared space. The task adversarial loss is used to train a model to produce shared features such that a classifier cannot reliably predict the task based on these features.</p><p xml:id="_4KD2fNd">The original loss of adversarial network is limited since it can only be used in binary situation. To overcome this, we extend it to multi-class form, which allow our model can be trained together with multiple tasks:</p><formula xml:id="formula_11" coords="4,313.53,357.58,212.01,27.63">L Adv = min θs λmax θ D ( K k=1 N k i=1 d k i log[D(E(x k ))])<label>(13)</label></formula><p xml:id="_VPxmhAZ">where d k i denotes the ground-truth label indicating the type of the current task. Here, there is a minmax optimization and the basic idea is that, given a sentence, the shared LSTM generates a representation to mislead the task discriminator. At the same time, the discriminator tries its best to make a correct classification on the type of task. After the training phase, the shared feature extractor and task discriminator reach a point at which both cannot improve and the discriminator is unable to differentiate among all the tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_dUQE94w">Semi-supervised Learning Multi-task Learning</head><p xml:id="_pvP9CwG">We notice that the L Adv requires only the input sentence x and does not require the corresponding label y, which makes it possible to combine our model with semi-supervised learning. Finally, in this semi-supervised multi-task learning framework, our model can not only utilize the data from related tasks, but can employ abundant unlabeled corpora.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3" xml:id="_ERJj5xN">Orthogonality Constraints</head><p xml:id="_p7Dxa3R">We notice that there is a potential drawback of the above model. That is, the task-invariant features can appear both in shared space and private space.</p><p xml:id="_QPqeTGD">Motivated by recently work <ref type="bibr" coords="4,444.00,742.31,81.54,9.46" target="#b15">(Jia et al., 2010;</ref><ref type="bibr" coords="4,307.28,755.86,104.70,9.46">Salzmann et al., 2010;</ref><ref type="bibr" coords="4,417.20,755.86,108.35,9.46" target="#b5">Bousmalis et al., 2016)</ref>  on shared-private latent space analysis, we introduce orthogonality constraints, which penalize redundant latent representations and encourages the shared and private extractors to encode different aspects of the inputs. After exploring many optional methods, we find below loss is optimal, which is used by <ref type="bibr" coords="5,244.20,434.57,46.07,9.46;5,72.00,448.12,53.02,9.46" target="#b5">Bousmalis et al. (2016)</ref> and achieve a better performance:</p><formula xml:id="formula_12" coords="5,124.23,477.09,166.04,33.98">L diff = K k=1 S k H k 2 F ,<label>(14)</label></formula><p xml:id="_GFP37Cr">where •<ref type="foot" coords="5,123.29,529.49,4.23,6.99" target="#foot_1">2</ref> F is the squared Frobenius norm. S k and H k are two matrics, whose rows are the output of shared extractor E s (, ; θ s ) and task-specific extrator E k (, ; θ k ) of a input sentence.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4" xml:id="_vGCbRaS">Put It All Together</head><p xml:id="_GxkpNYc">The final loss function of our model can be written as:</p><formula xml:id="formula_13" coords="5,111.52,668.20,174.21,10.77">L = L T ask + λL Adv + γL Dif f (<label>15</label></formula><formula xml:id="formula_14" coords="5,285.72,668.55,4.54,9.46">)</formula><p xml:id="_Xw97uJq">where λ and γ are hyper-parameter.</p><p xml:id="_5rVGBMK">The networks are trained with backpropagation and this minimax optimization becomes possible via the use of a gradient reversal layer <ref type="bibr" coords="5,241.40,742.31,48.87,9.46;5,72.00,755.86,75.44,9.46" target="#b10">(Ganin and Lempitsky, 2015)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5" xml:id="_puHG42F">Experiment 5.1 Dataset</head><p xml:id="_sbBw4eQ">To make an extensive evaluation, we collect 16 different datasets from several popular review corpora.</p><p xml:id="_Ayj32a6">The first 14 datasets are product reviews, which contain Amazon product reviews from different domains, such as Books, DVDs, Electronics, ect. The goal is to classify a product review as either positive or negative. These datasets are collected based on the raw data<ref type="foot" coords="5,403.86,216.32,3.99,6.91" target="#foot_0">1</ref> provided by <ref type="bibr" coords="5,465.76,218.37,59.79,9.46;5,307.28,231.91,23.48,9.46" target="#b4">(Blitzer et al., 2007)</ref>. Specifically, we extract the sentences and corresponding labels from the unprocessed original data 2 . The only preprocessing operation of these sentences is tokenized using the Stanford tokenizer<ref type="foot" coords="5,342.00,284.07,3.99,6.91" target="#foot_2">3</ref> .</p><p xml:id="_gvZh8Ad">The remaining two datasets are about movie reviews. The IMDB dataset<ref type="foot" coords="5,422.62,312.06,3.99,6.91" target="#foot_3">4</ref> consists of movie reviews with binary classes <ref type="bibr" coords="5,420.37,327.66,79.72,9.46" target="#b24">(Maas et al., 2011)</ref>. One key aspect of this dataset is that each movie review has several sentences. The MR dataset also consists of movie reviews from rotten tomato website with two classes<ref type="foot" coords="5,381.40,379.81,3.99,6.91" target="#foot_4">5</ref>  <ref type="bibr" coords="5,385.89,381.86,91.78,9.46" target="#b26">(Pang and Lee, 2005)</ref>.</p><p xml:id="_Af7XAAn">All the datasets in each task are partitioned randomly into training set, development set and testing set with the proportion of 70%, 20% and 10% respectively. The detailed statistics about all the datasets are listed in Table <ref type="table" coords="5,424.87,450.50,4.09,9.46">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2" xml:id="_BVQAUc6">Competitor Methods for Multi-task Learning</head><p xml:id="_kEVJ6K6">The multi-task frameworks proposed by previous works are various while not all can be applied to the tasks we focused. Nevertheless, we chose two most related neural models for multi-task learning and implement them as competitor methods.</p><p xml:id="_2Sa3dcM">• MT-CNN: This model is proposed by Collobert and Weston ( <ref type="formula" coords="5,416.58,602.68,19.39,9.46">2008</ref>) with convolutional layer, in which lookup-tables are shared partially while other layers are task-specific. Table <ref type="table" coords="6,99.93,287.33,4.24,9.46">2</ref>: Error rates of our models on 16 datasets against typical baselines. The numbers in brackets represent the improvements relative to the average performance (Avg.) of three single task baselines.</p><p xml:id="_25y8Nah">• MT-DNN: The model is proposed by <ref type="bibr" coords="6,275.12,335.83,15.15,9.46;6,93.82,349.38,62.08,9.46" target="#b22">Liu et al. (2015b)</ref> with bag-of-words input and multi-layer perceptrons, in which a hidden layer is shared.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3" xml:id="_sxvGwGg">Hyperparameters</head><p xml:id="_B4PMM8H">The word embeddings for all of the models are initialized with the 200d GloVe vectors ( <ref type="bibr" coords="6,238.05,430.72,52.22,9.46;6,72.00,444.27,49.94,9.46" target="#b28">(Pennington et al., 2014)</ref>). The other parameters are initialized by randomly sampling from uniform distribution in [−0.1, 0.1]. The mini-batch size is set to 16.</p><p xml:id="_adNPXmS">For each task, we take the hyperparameters which achieve the best performance on the development set via an small grid search over combinations of the initial learning rate [0.1, 0.01], λ ∈ [0.01, 0.1], and γ ∈ [0.01, 0.1]. Finally, we chose the learning rate as 0.01, λ as 0.05 and γ as 0.01.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4" xml:id="_dzKPm3f">Performance Evaluation</head><p xml:id="_kpfHmDb">Table <ref type="table" coords="6,101.31,606.82,5.45,9.46">2</ref> shows the error rates on 16 text classification tasks. The column of "Single Task" shows the results of vanilla LSTM, bidirectional LSTM (BiLSTM), stacked LSTM (sLSTM) and the average error rates of previous three models. The column of "Multiple Tasks" shows the results achieved by corresponding multi-task models. From this table, we can see that the performance of most tasks can be improved with a large margin with the help of multi-task learning, in which our model achieves the lowest error rates. More concretely, compared with SP-MTL, ASP-MTL achieves 4.1% average improvement surpassing SP-MTL with 1.0%, which indicates the importance of adversarial learning. It is noteworthy that for FS-MTL, the performances of some tasks are degraded, since this model puts all private and shared information into a unified space.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.5" xml:id="_K7ZdJpU">Shared Knowledge Transfer</head><p xml:id="_7eVrY2J">With the help of adversarial learning, the shared feature extractor E s can generate more pure taskinvariant representations, which can be considered as off-the-shelf knowledge and then be used for unseen new tasks.</p><p xml:id="_jR5dVb6">To test the transferability of our learned shared extractor, we also design an experiment, in which we take turns choosing 15 tasks to train our model M S with multi-task learning, then the learned shared layer are transferred to a second network M T that is used for the remaining one task. The parameters of transferred layer are kept frozen, and the rest of parameters of the network M T are randomly initialized.</p><p xml:id="_W6kbCWK">More formally, we investigate two mechanisms towards the transferred shared extractor. As shown in Figure <ref type="figure" coords="6,353.89,661.02,4.09,9.46" target="#fig_3">4</ref>. The first one Single Channel (SC) model consists of one shared feature extractor E s from M S , then the extracted representation will be sent to an output layer. By contrast, the Bi-Channel (BC) model introduces an extra LSTM layer to encode more task-specific information. To evaluate the effectiveness of our introduced adversarial training framework, we also make a compar-Table <ref type="table" coords="7,99.31,288.33,4.24,9.46">3</ref>: Error rates of our models on 16 datasets against vanilla multi-task learning. φ (Books) means that we transfer the knowledge of the other 15 tasks to the target task Books. Results and Analysis As shown in Table <ref type="table" coords="7,266.11,496.97,4.09,9.46">3</ref>, we can see the shared layer from ASP-MTL achieves a better performance compared with SP-MTL. Besides, for the two kinds of transfer strategies, the Bi-Channel model performs better. The reason is that the task-specific layer introduced in the Bi-Channel model can store some private features. Overall, the results indicate that we can save the existing knowledge into a shared recurrent layer using adversarial multi-task learning, which is quite useful for a new task.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.6" xml:id="_SJbDPMT">Visualization</head><p xml:id="_ZrMBZzb">To get an intuitive understanding of how the introduced orthogonality constraints worked compared with vanilla shared-private model, we design an experiment to examine the behaviors of neurons from private layer and shared layer. More concretely, we refer to h tj as the activation of the jneuron at time step t, where t ∈ {1, . . . , n} and j ∈ {1, . . . , d}. By visualizing the hidden state h j and analyzing the maximum activation, we can find what kinds of patterns the current neuron focuses on.</p><p xml:id="_sCBmaET">Figure <ref type="figure" coords="7,349.92,392.52,5.45,9.46">5</ref> illustrates this phenomenon. Here, we randomly sample a sentence from the validation set of Baby task and analyze the changes of the predicted sentiment score at different time steps, which are obtained by SP-MTL and our proposed model. Additionally, to get more insights into how neurons in shared layer behave diversely towards different input word, we visualize the activation of two typical neurons. For the positive sentence "Five stars, my baby can fall asleep soon in the stroller", both models capture the informative pattern "Five stars"<ref type="foot" coords="7,387.01,553.07,3.99,6.91" target="#foot_5">6</ref> . However, SP-MTL makes a wrong prediction due to misunderstanding of the word "asleep".</p><p xml:id="_gFT2jAj">By contrast, our model makes a correct prediction and the reason can be inferred from the activation of Figure <ref type="figure" coords="7,383.03,624.36,20.45,9.46">5-(b)</ref>, where the shared layer of SP-MTL is so sensitive that many features related to other tasks are included, such as "asleep", which misleads the final prediction. This indicates the importance of introducing adversarial learning to prevent the shared layer from being contaminated by task-specific features.</p><p xml:id="_9mKuSFS">We also list some typical patterns captured by  neurons from shared layer and task-specific layer in Table <ref type="table" coords="8,115.23,461.35,4.09,9.46" target="#tab_3">4</ref>, and we have observed that: 1) for SP-MTL, if some patterns are captured by taskspecific layer, they are likely to be placed into shared space. Clearly, suppose we have many tasks to be trained jointly, the shared layer bear much pressure and must sacrifice substantial amount of capacity to capture the patterns they actually do not need. Furthermore, some typical taskinvariant features also go into task-specific layer.</p><p xml:id="_Uauz5V5">2) for ASP-MTL, we find the features captured by shared and task-specific layer have a small amount of intersection, which allows these two kinds of layers can work effectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6" xml:id="_sx7Y58Z">Related Work</head><p xml:id="_MCFxNmz">There are two threads of related work. One thread is multi-task learning with neural network. Neural networks based multi-task learning has been proven effective in many NLP problems <ref type="bibr" coords="8,267.24,714.36,18.42,9.46;8,72.00,727.91,109.42,9.46" target="#b7">(Collobert and Weston, 2008;</ref><ref type="bibr" coords="8,184.15,727.91,81.35,9.46" target="#b11">Glorot et al., 2011)</ref>. <ref type="bibr" coords="8,82.91,742.32,78.24,9.46" target="#b21">Liu et al. (2016c)</ref> first utilizes different LSTM layers to construct multi-task learning framwork for text classification. <ref type="bibr" coords="8,405.62,268.26,77.90,9.46" target="#b20">Liu et al. (2016b)</ref> proposes a generic multi-task framework, in which different tasks can share information by an external memory and communicate by a reading/writing mechanism. These work has potential limitation of just learning a shared space solely on sharing parameters, while our model introduce two strategies to learn the clear and non-redundant shared-private space.</p><p xml:id="_Pt3uybt">Another thread of work is adversarial network. Adversarial networks have recently surfaced as a general tool measure equivalence between distributions and it has proven to be effective in a variety of tasks. <ref type="bibr" coords="8,376.54,445.57,93.14,9.46" target="#b1">Ajakan et al. (2014)</ref>; <ref type="bibr" coords="8,479.48,445.57,46.07,9.46;8,307.28,459.12,53.27,9.46" target="#b5">Bousmalis et al. (2016)</ref> applied adverarial training to domain adaptation, aiming at transferring the knowledge of one source domain to target domain. <ref type="bibr" coords="8,486.45,486.22,39.10,9.46;8,307.28,499.77,45.34,9.46" target="#b27">Park and Im (2016)</ref> proposed a novel approach for multimodal representation learning which uses adversarial back-propagation concept.</p><p xml:id="_nmysckN">Different from these models, our model aims to find task-invariant sharable information for multiple related tasks using adversarial training strategy. Moreover, we extend binary adversarial training to multi-class, which enable multiple tasks to be jointly trained.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7" xml:id="_ZtZymKW">Conclusion</head><p xml:id="_u8wnp8M">In this paper, we have proposed an adversarial multi-task learning framework, in which the taskspecific and task-invariant features are learned non-redundantly, therefore capturing the sharedprivate separation of different tasks. We have demonstrated the effectiveness of our approach by applying our model to 16 different text classification tasks. We also perform extensive qualitative analysis, deriving insights and indirectly explaining the quantitative improvements in the overall performance.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="1,307.28,311.26,218.27,9.46;1,307.28,324.81,218.27,9.46;1,307.28,338.36,218.27,9.46;1,307.28,351.91,218.27,9.46;1,307.28,365.46,176.61,9.46"><head>Figure 1 :</head><label>1</label><figDesc xml:id="_Dnq4rC3">Figure1: Two sharing schemes for task A and task B. The overlap between two black circles denotes shared space. The blue triangles and boxes represent the task-specific features while the red circles denote the features which can be shared.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,72.00,234.74,218.27,9.46;3,72.00,248.29,218.27,9.46;3,72.00,261.84,147.37,9.46"><head>Figure 2 :</head><label>2</label><figDesc xml:id="_aaSfd7P">Figure 2: Two architectures for learning multiple tasks. Yellow and gray boxes represent shared and private LSTM layers respectively.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="4,72.00,152.92,218.27,9.46;4,72.00,166.47,218.27,9.46;4,72.00,180.02,114.89,9.46"><head>Figure 3 :</head><label>3</label><figDesc xml:id="_FSWvNyt">Figure 3: Adversarial shared-private model. Yellow and gray boxes represent shared and private LSTM layers respectively.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="7,72.00,411.76,218.27,9.46;7,72.00,425.31,218.27,9.46;7,72.00,438.51,205.58,10.63"><head>Figure 4 :</head><label>4</label><figDesc xml:id="_gvXZUzV">Figure 4: Two transfer strategies using a pretrained shared LSTM layer. Yellow box denotes shared feature extractor E s trained by 15 tasks.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="8,72.00,179.11,453.54,9.46;8,72.00,192.66,453.54,9.46;8,72.00,206.21,453.54,9.46;8,72.00,219.38,97.32,9.84;8,169.32,217.46,3.92,6.99;8,169.32,224.34,8.47,6.99;8,180.81,219.76,344.74,9.46;8,72.00,232.92,51.81,9.84;8,123.81,231.01,3.92,6.99;8,123.81,237.89,8.47,6.99;8,132.77,233.31,213.60,9.46;8,374.98,72.77,149.67,82.04"><head></head><label></label><figDesc xml:id="_mThKXHN">Figure 5: (a) The change of the predicted sentiment score at different time steps. Y-axis represents the sentiment score, while X-axis represents the input words in chronological order. The darker grey horizontal line gives a border between the positive and negative sentiments. (b) The purple heat map describes the behaviour of neuron h s 18 from shared layer of SP-MTL, while the blue one is used to show the behaviour of neuron h s 21 , which belongs to the shared layer of our model.</figDesc><graphic coords="8,374.98,72.77,149.67,82.04" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="2,72.00,66.28,453.54,699.86"><head></head><label></label><figDesc xml:id="_2MHeZN6">forget gate f t , an output gate o t , a memory cell c t and a hidden state h t . d is the number of the LSTM units. The elements of the gating vectors i t , f t and o t are in [0, 1].</figDesc><table /><note xml:id="_kKvxFNs">but without peep-hole connections.We define the LSTM units at each time step t to be a collection of vectors in R d : an input gate i t , a</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="5,72.00,68.52,218.27,252.81"><head></head><label></label><figDesc xml:id="_DasR9HY">Dataset Train Dev. Test Unlab. Avg. L Vocab.</figDesc><table coords="5,72.00,84.31,218.27,237.02"><row><cell>Books</cell><cell>1400 200 400</cell><cell>2000</cell><cell>159</cell><cell>62K</cell></row><row><cell>Elec.</cell><cell>1398 200 400</cell><cell>2000</cell><cell>101</cell><cell>30K</cell></row><row><cell>DVD</cell><cell>1400 200 400</cell><cell>2000</cell><cell>173</cell><cell>69K</cell></row><row><cell cols="2">Kitchen 1400 200 400</cell><cell>2000</cell><cell>89</cell><cell>28K</cell></row><row><cell cols="2">Apparel 1400 200 400</cell><cell>2000</cell><cell>57</cell><cell>21K</cell></row><row><cell cols="2">Camera 1397 200 400</cell><cell>2000</cell><cell>130</cell><cell>26K</cell></row><row><cell>Health</cell><cell>1400 200 400</cell><cell>2000</cell><cell>81</cell><cell>26K</cell></row><row><cell>Music</cell><cell>1400 200 400</cell><cell>2000</cell><cell>136</cell><cell>60K</cell></row><row><cell>Toys</cell><cell>1400 200 400</cell><cell>2000</cell><cell>90</cell><cell>28K</cell></row><row><cell>Video</cell><cell>1400 200 400</cell><cell>2000</cell><cell>156</cell><cell>57K</cell></row><row><cell>Baby</cell><cell>1300 200 400</cell><cell>2000</cell><cell>104</cell><cell>26K</cell></row><row><cell>Mag.</cell><cell>1370 200 400</cell><cell>2000</cell><cell>117</cell><cell>30K</cell></row><row><cell>Soft.</cell><cell>1315 200 400</cell><cell>475</cell><cell>129</cell><cell>26K</cell></row><row><cell>Sports</cell><cell>1400 200 400</cell><cell>2000</cell><cell>94</cell><cell>30K</cell></row><row><cell>IMDB</cell><cell>1400 200 400</cell><cell>2000</cell><cell>269</cell><cell>44K</cell></row><row><cell>MR</cell><cell>1400 200 400</cell><cell>2000</cell><cell>21</cell><cell>12K</cell></row><row><cell cols="5">Table 1: Statistics of the 16 datasets. The columns</cell></row><row><cell cols="5">2-5 denote the number of samples in training, de-</cell></row><row><cell cols="5">velopment, test and unlabeled sets. The last two</cell></row><row><cell cols="5">columns represent the average length and vocabu-</cell></row><row><cell cols="3">lary size of corresponding dataset.</cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="8,72.00,269.11,221.82,151.48"><head>Table 4 :</head><label>4</label><figDesc xml:id="_4wmnbjY">Typical patterns captured by shared layer and task-specific layer of SP-MTL and ASP-MTL models on Movie and Baby tasks.</figDesc><table coords="8,76.32,269.11,217.50,98.78"><row><cell>Model</cell><cell>Shared Layer</cell><cell>Task-Movie</cell><cell>Task-Baby</cell></row><row><cell>SP-MTL</cell><cell>good, great bad, love, simple, cut, slow, cheap, infantile</cell><cell>good, great, well-directed, pointless, cut, cheap, infantile</cell><cell>love, bad, cute, safety, mild, broken simple</cell></row><row><cell></cell><cell>good, great,</cell><cell>well-directed,</cell><cell>cute, safety,</cell></row><row><cell>ASP-MTL</cell><cell>love, bad</cell><cell>pointless, cut,</cell><cell>mild, broken</cell></row><row><cell></cell><cell>poor</cell><cell>cheap, infantile</cell><cell>simple</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0">https://www.cs.jhu.edu/ ˜mdredze/ datasets/sentiment/</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><ref type="bibr" coords="5,323.42,674.69,73.60,7.77" target="#b4">Blitzer et al. (2007)</ref> also provides two extra processed datasets with the format of Bag-of-Words, which are not proper for neural-based models.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2">http://nlp.stanford.edu/software/ tokenizer.shtml</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_3">https://www.cs.jhu.edu/ ˜mdredze/ datasets/sentiment/unprocessed.tar.gz</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_4">https://www.cs.cornell.edu/people/ pabo/movie-review-data/.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_5">For this case, the vanilla LSTM also give a wrong answer due to ignoring the feature "Five stars".</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_wCAUjHA">Acknowledgments</head><p xml:id="_95XqMFN">We would like to thank the anonymous reviewers for their valuable comments and thank Kaiyu Qian, Gang Niu for useful discussions. This work was partially funded by National Natural Science Foundation of China (No. 61532011 and 61672162), the National High Technology Research and Development Program of China (No. 2015AA015408), Shanghai Municipal Science and Technology Commission (No. 16JC1420401).</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="7,77.98,73.50,50.08,8.06;7,190.38,68.52,43.77,8.06;7,377.92,68.52,63.34,8.06;7,143.97,84.09,382.69,7.77" xml:id="b0">
+	<monogr>
+		<title level="m" type="main" xml:id="_YQRxvVy">Source Tasks Single Task Transfer Models LSTM BiLSTM sLSTM Avg</title>
+		<editor>SP-MTL-SC SP-MTL-BC ASP-MTL-SC ASP-MTL-BC</editor>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,72.00,284.38,55.54,10.75;9,72.00,304.40,218.27,8.64;9,82.91,315.35,207.36,8.64;9,82.91,326.14,207.36,8.81;9,82.91,337.10,72.99,8.81" xml:id="b1">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">References</forename><surname>Hana Ajakan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pascal</forename><surname>Germain</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hugo</forename><surname>Larochelle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mario</forename><surname>Franc ¸ois Laviolette</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Marchand</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.4446</idno>
+		<title level="m" xml:id="_5d93bxp">Domain-adversarial neural networks</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,72.00,358.17,218.27,8.64;9,82.91,369.12,207.36,8.64;9,82.91,380.08,207.36,8.64;9,82.91,390.87,183.30,8.81" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_apfFK72">A theory of learning from different domains</title>
+		<author>
+			<persName coords=""><forename type="first">Shai</forename><surname>Ben-David</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">John</forename><surname>Blitzer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Koby</forename><surname>Crammer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Kulesza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Fernando</forename><surname>Pereira</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jennifer</forename><forename type="middle">Wortman</forename><surname>Vaughan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_NYfgKHc">Machine learning</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="151" to="175" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,72.00,411.94,218.27,8.64;9,82.91,422.90,207.36,8.64;9,82.91,433.69,207.36,8.81;9,82.91,444.64,157.85,8.81" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_XaD48fs">Analysis of representations for domain adaptation</title>
+		<author>
+			<persName coords=""><forename type="first">Shai</forename><surname>Ben-David</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">John</forename><surname>Blitzer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Koby</forename><surname>Crammer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Fernando</forename><surname>Pereira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8QMTDwq">Advances in neural information processing systems</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page">137</biblScope>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,72.00,465.71,218.27,8.64;9,82.91,476.67,207.36,8.64;9,82.91,487.63,207.36,8.64;9,82.91,498.42,168.87,8.81" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_Sk5C8rr">Biographies, bollywood, boom-boxes and blenders: Domain adaptation for sentiment classification</title>
+		<author>
+			<persName coords=""><forename type="first">John</forename><surname>Blitzer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mark</forename><surname>Dredze</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Fernando</forename><surname>Pereira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_SDrE8Gr">ACL</title>
+				<imprint>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="440" to="447" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,72.00,519.48,218.27,8.64;9,82.91,530.44,207.36,8.64;9,82.91,541.23,207.36,8.81;9,82.91,552.19,207.35,8.81;9,82.91,563.31,17.43,8.64" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_TrrZzyr">Domain separation networks</title>
+		<author>
+			<persName coords=""><forename type="first">Konstantinos</forename><surname>Bousmalis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">George</forename><surname>Trigeorgis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nathan</forename><surname>Silberman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dilip</forename><surname>Krishnan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dumitru</forename><surname>Erhan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_cJ2fUzQ">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="343" to="351" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,72.00,584.21,218.27,8.64;9,82.91,595.17,207.36,8.64;9,82.91,606.13,207.36,8.64;9,82.91,616.92,150.99,8.81" xml:id="b6">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Junyoung</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Caglar</forename><surname>Gulcehre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kyunghyun</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.3555</idno>
+		<title level="m" xml:id="_T6MQ2ag">Empirical evaluation of gated recurrent neural networks on sequence modeling</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,72.00,637.98,218.27,8.64;9,82.91,648.94,207.36,8.64;9,82.91,659.73,207.36,8.81;9,82.91,670.69,73.91,8.58" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_4v38Zkn">A unified architecture for natural language processing: Deep neural networks with multitask learning</title>
+		<author>
+			<persName coords=""><forename type="first">Ronan</forename><surname>Collobert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jason</forename><surname>Weston</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_pcuAMQ4">Proceedings of ICML</title>
+				<meeting>ICML</meeting>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,72.00,691.75,218.27,8.64;9,82.91,702.71,207.36,8.64;9,82.91,713.67,207.36,8.64;9,82.91,724.46,138.62,8.81" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_w7mwXQX">Natural language processing (almost) from scratch</title>
+		<author>
+			<persName coords=""><forename type="first">Ronan</forename><surname>Collobert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jason</forename><surname>Weston</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Léon</forename><surname>Bottou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Karlen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Koray</forename><surname>Kavukcuoglu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pavel</forename><surname>Kuksa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_m3Q7G6r">The JMLR</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="2493" to="2537" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,72.00,745.35,218.27,8.81;9,82.91,756.31,118.15,8.81" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZJRe3eh">Finding structure in time</title>
+		<author>
+			<persName coords=""><surname>Jeffrey L Elman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TBMWf5T">Cognitive science</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="179" to="211" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.28,67.28,218.27,8.64;9,318.19,78.24,207.36,8.64;9,318.19,89.03,207.36,8.58;9,318.19,99.99,207.36,8.81" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_UUmAK2F">Unsupervised domain adaptation by backpropagation</title>
+		<author>
+			<persName coords=""><forename type="first">Yaroslav</forename><surname>Ganin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Victor</forename><surname>Lempitsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Txnp68k">Proceedings of the 32nd International Conference on Machine Learning (ICML-15)</title>
+				<meeting>the 32nd International Conference on Machine Learning (ICML-15)</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="1180" to="1189" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.28,122.89,218.27,8.64;9,318.19,133.85,207.36,8.64;9,318.19,144.64,207.36,8.81;9,318.19,155.60,207.36,8.58;9,318.19,166.56,187.45,8.81" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_MfyJPKX">Domain adaptation for large-scale sentiment classification: A deep learning approach</title>
+		<author>
+			<persName coords=""><forename type="first">Xavier</forename><surname>Glorot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Antoine</forename><surname>Bordes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_kQgdS43">Proceedings of the 28th International Conference on Machine Learning (ICML-11)</title>
+				<meeting>the 28th International Conference on Machine Learning (ICML-11)</meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="513" to="520" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.28,189.45,218.27,8.64;9,318.19,200.41,207.36,8.64;9,318.19,211.37,207.36,8.64;9,318.19,222.16,207.35,8.81;9,318.19,233.12,155.34,8.81" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_6RSRndT">Generative adversarial nets</title>
+		<author>
+			<persName coords=""><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jean</forename><surname>Pouget-Abadie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mehdi</forename><surname>Mirza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bing</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Warde-Farley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sherjil</forename><surname>Ozair</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aaron</forename><surname>Courville</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_DMdXfS4">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="2672" to="2680" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.28,256.02,85.41,8.64;9,409.76,256.02,115.79,8.64;9,318.19,266.98,118.32,8.64;9,461.84,266.81,63.71,8.58;9,318.19,277.77,72.78,8.81" xml:id="b13">
+	<monogr>
+		<title level="m" type="main" xml:id="_7TpZ97U">Generating sequences with recurrent neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Graves</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1308.0850</idno>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.28,300.67,218.27,8.64;9,318.19,311.46,207.36,8.81;9,318.19,322.59,66.69,8.64" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_nR6GsPM">Long short-term memory</title>
+		<author>
+			<persName coords=""><forename type="first">Sepp</forename><surname>Hochreiter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jürgen</forename><surname>Schmidhuber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EzQYDPJ">Neural computation</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1735" to="1780" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.28,345.32,218.27,8.64;9,318.19,356.27,207.36,8.64;9,318.19,367.06,207.36,8.81;9,318.19,378.02,99.06,8.81" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_HTYs6t4">Factorized latent spaces with structured sparsity</title>
+		<author>
+			<persName coords=""><forename type="first">Yangqing</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mathieu</forename><surname>Salzmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Trevor</forename><surname>Darrell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_TEyNMWP">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="982" to="990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.28,400.92,218.27,8.64;9,318.19,411.88,207.36,8.64;9,318.19,422.67,207.36,8.81;9,318.19,433.63,207.36,8.58;9,318.19,444.59,15.22,8.58;9,307.28,467.49,218.27,8.64;9,318.19,478.45,207.36,8.64;9,318.19,489.24,180.52,8.81" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_TtkXV6F">An empirical exploration of recurrent network architectures</title>
+		<author>
+			<persName coords=""><forename type="first">Rafal</forename><surname>Jozefowicz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wojciech</forename><surname>Zaremba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_VdFAChV">Proceedings of The 32nd International Conference on Machine Learning</title>
+				<editor>
+			<persName><forename type="first">Nal</forename><surname>Kalchbrenner</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Edward</forename><surname>Grefenstette</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Phil</forename><surname>Blunsom</surname></persName>
+		</editor>
+		<meeting>The 32nd International Conference on Machine Learning</meeting>
+		<imprint>
+			<date type="published" when="2014">2015. 2014</date>
+		</imprint>
+	</monogr>
+	<note>Proceedings of ACL</note>
+</biblStruct>
+
+<biblStruct coords="9,307.28,512.14,218.27,8.64;9,318.19,523.09,207.36,8.64;9,318.19,534.05,207.36,8.64;9,318.19,544.84,187.52,8.81" xml:id="b17">
+	<monogr>
+		<title level="m" type="main" xml:id="_KprEKKS">A structured self-attentive sentence embedding</title>
+		<author>
+			<persName coords=""><forename type="first">Zhouhan</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Minwei</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cicero</forename><surname>Nogueira Dos Santos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mo</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bing</forename><surname>Xiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bowen</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1703.03130</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.28,567.74,218.27,8.64;9,318.19,578.70,207.36,8.64;9,318.19,589.49,148.98,8.81" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_mwn4ePq">Deep fusion LSTMs for text semantic matching</title>
+		<author>
+			<persName coords=""><forename type="first">Pengfe</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xipeng</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jifan</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xuanjing</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_gnBw95Y">Proceedings of ACL</title>
+				<meeting>ACL</meeting>
+		<imprint>
+			<date type="published" when="2016">2016a</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.28,612.39,218.27,8.64;9,318.19,623.35,207.36,8.64;9,318.19,634.31,207.36,8.64;9,318.19,645.10,207.36,8.81;9,318.19,656.06,95.65,8.58" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_YJ3ENVE">Multi-timescale long short-term memory neural network for modelling sentences and documents</title>
+		<author>
+			<persName coords=""><forename type="first">Pengfei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xipeng</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xinchi</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shiyu</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xuanjing</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_MAJbuSq">Proceedings of the Conference on EMNLP</title>
+				<meeting>the Conference on EMNLP</meeting>
+		<imprint>
+			<date type="published" when="2015">2015a</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.28,678.96,218.27,8.64;9,318.19,689.91,207.36,8.64;9,318.19,700.70,97.23,8.58" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_cPvDdcQ">Deep multi-task learning with shared memory</title>
+		<author>
+			<persName coords=""><forename type="first">Pengfei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xipeng</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xuanjing</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_2wkTwW9">Proceedings of EMNLP</title>
+				<meeting>EMNLP</meeting>
+		<imprint>
+			<date type="published" when="2016">2016b</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.28,723.60,218.27,8.64;9,318.19,734.56,207.36,8.64;9,318.19,745.35,207.36,8.81;9,318.19,756.31,170.01,8.58" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_enNJ7Qs">Recurrent neural network for text classification with multi-task learning</title>
+		<author>
+			<persName coords=""><forename type="first">Pengfei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xipeng</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xuanjing</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_GQAtXmZ">Proceedings of International Joint Conference on Artificial Intelligence</title>
+				<meeting>International Joint Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2016">2016c</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,72.00,67.28,218.27,8.64;10,82.91,78.24,207.36,8.64;10,82.91,89.20,207.36,8.64;10,82.91,100.16,207.36,8.64;10,82.91,110.95,32.96,8.58" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_9Hy6CC9">Representation learning using multi-task deep neural networks for semantic classification and information retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">Xiaodong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jianfeng</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaodong</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Li</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kevin</forename><surname>Duh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ye-Yi</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_U6YCt3j">NAACL</title>
+				<imprint>
+			<date type="published" when="2015">2015b</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,72.00,131.04,218.27,8.64;10,82.91,142.00,150.68,8.64;10,248.76,142.00,41.51,8.64;10,82.91,152.79,207.36,8.81;10,82.91,163.75,77.76,8.81" xml:id="b23">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Minh-Thang</forename><surname>Luong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Quoc</forename><forename type="middle">V</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1511.06114</idno>
+		<title level="m" xml:id="_Jcw4VSH">Multi-task sequence to sequence learning</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,72.00,183.84,218.27,8.64;10,82.91,194.80,207.36,8.64;10,82.91,205.76,207.36,8.64;10,82.91,216.55,162.27,8.81" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_jWMu8ds">Learning word vectors for sentiment analysis</title>
+		<author>
+			<persName coords=""><forename type="first">Raymond</forename><forename type="middle">E</forename><surname>Andrew L Maas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><forename type="middle">T</forename><surname>Daly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dan</forename><surname>Pham</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christopher</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Potts</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_tmKKfRU">Proceedings of the ACL</title>
+				<meeting>the ACL</meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="142" to="150" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,72.00,236.65,218.27,8.64;10,82.91,247.61,207.36,8.64;10,82.91,258.40,207.36,8.81;10,82.91,269.35,207.36,8.58;10,82.91,280.31,100.73,8.81" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_GDFJPeT">Cross-stitch networks for multi-task learning</title>
+		<author>
+			<persName coords=""><forename type="first">Ishan</forename><surname>Misra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abhinav</forename><surname>Shrivastava</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abhinav</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Martial</forename><surname>Hebert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_BqCWuQf">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</title>
+				<meeting>the IEEE Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="3994" to="4003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,72.00,300.41,218.27,8.64;10,82.91,311.37,207.36,8.64;10,82.91,322.16,207.36,8.81;10,82.91,333.12,207.36,8.58;10,82.91,344.07,207.36,8.81;10,82.91,355.20,111.80,8.64" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_vS7dsAF">Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales</title>
+		<author>
+			<persName coords=""><forename type="first">Bo</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lillian</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_GBfd8h8">Proceedings of the 43rd annual meeting on association for computational linguistics</title>
+				<meeting>the 43rd annual meeting on association for computational linguistics</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page" from="115" to="124" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,72.00,375.13,218.27,8.64;10,82.91,386.09,207.36,8.64;10,82.91,396.88,207.36,8.81;10,82.91,408.00,2.49,8.64" xml:id="b27">
+	<monogr>
+		<title level="m" type="main" xml:id="_tAfmxVM">Image-text multi-modal representation learning by adversarial backpropagation</title>
+		<author>
+			<persName coords=""><forename type="first">Gwangbeen</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Woobin</forename><surname>Im</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1612.08354</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,72.00,427.93,218.27,8.64;10,82.91,438.89,207.36,8.64;10,82.91,449.68,207.36,8.81;10,82.91,460.81,22.42,8.64" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_EZVBmNC">Glove: Global vectors for word representation</title>
+		<author>
+			<persName coords=""><forename type="first">Jeffrey</forename><surname>Pennington</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christopher</forename><forename type="middle">D</forename><surname>Manning</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_r5vU6fp">Proceedings of the EMNLP</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1532" to="1543" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,72.00,480.73,218.27,8.64;10,82.91,491.69,207.36,8.64;10,82.91,502.48,163.56,8.81" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_4wzhFHM">Factorized orthogonal latent spaces</title>
+		<author>
+			<persName coords=""><forename type="first">Carl</forename><surname>Mathieu Salzmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Raquel</forename><surname>Henrik Ek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Trevor</forename><surname>Urtasun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Darrell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_r6kjtms">AISTATS</title>
+				<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="701" to="708" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,72.00,522.57,218.27,8.64;10,82.91,533.53,207.36,8.64;10,82.91,544.49,207.36,8.64;10,82.91,555.45,207.36,8.64;10,82.91,566.24,148.40,8.81" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_63v7Gux">Recursive deep models for semantic compositionality over a sentiment treebank</title>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Perelygin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jean</forename><forename type="middle">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jason</forename><surname>Chuang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christopher</forename><forename type="middle">D</forename><surname>Manning</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christopher</forename><surname>Potts</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_b7sMTYj">Proceedings of EMNLP</title>
+				<meeting>EMNLP</meeting>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,72.00,586.34,218.27,8.64;10,82.91,597.29,207.36,8.64;10,82.91,608.08,190.61,8.81" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_MxUJTGz">Sequence to sequence learning with neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Quoc Vv</forename><surname>Le</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_J5GXER2">Advances in NIPS</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="3104" to="3112" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,72.00,628.18,218.27,8.64;10,82.91,639.14,207.36,8.64;10,82.91,649.93,158.74,8.81" xml:id="b32">
+	<monogr>
+		<title level="m" type="main" xml:id="_BWJhYBE">Unsupervised cross-domain image generation</title>
+		<author>
+			<persName coords=""><forename type="first">Yaniv</forename><surname>Taigman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Adam</forename><surname>Polyak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lior</forename><surname>Wolf</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1611.02200</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,72.00,670.02,218.27,8.64;10,82.91,680.98,207.36,8.64;10,82.91,691.77,207.36,8.81;10,82.91,702.73,180.95,8.81" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_RQGDjqu">Facial landmark detection by deep multi-task learning</title>
+		<author>
+			<persName coords=""><forename type="first">Zhanpeng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ping</forename><surname>Luo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_2atjEFJ">European Conference on Computer Vision</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="94" to="108" />
+		</imprint>
+	</monogr>
+	<note>Chen Change Loy, and Xiaoou Tang</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

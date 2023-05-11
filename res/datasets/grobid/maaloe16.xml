@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_gP8EGf5">Auxiliary Deep Generative Models</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,55.44,143.51,53.96,8.96"><forename type="first">Lars</forename><surname>Maaløe</surname></persName>
+							<email>larsma@dtu.dk</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Applied Mathematics and Computer Science</orgName>
+								<orgName type="institution">Technical University</orgName>
+								<address>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,55.44,155.47,98.52,8.96"><forename type="first">Casper</forename><forename type="middle">Kaae</forename><surname>Sønderby</surname></persName>
+							<email>casperkaae@gmail.com</email>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Bioinformatics Centre</orgName>
+								<orgName type="department" key="dep2">Department of Biology</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,55.44,167.42,92.81,8.96"><forename type="first">Søren</forename><forename type="middle">Kaae</forename><surname>Sønderby</surname></persName>
+							<email>skaaesonderby@gmail.com</email>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Bioinformatics Centre</orgName>
+								<orgName type="department" key="dep2">Department of Biology</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,55.44,179.38,53.23,8.96"><forename type="first">Ole</forename><surname>Winther</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Applied Mathematics and Computer Science</orgName>
+								<orgName type="institution">Technical University</orgName>
+								<address>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Bioinformatics Centre</orgName>
+								<orgName type="department" key="dep2">Department of Biology</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_FNnF37A">Auxiliary Deep Generative Models</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">EDC41453A1DA3C6ADC77E6AADB0C9DB8</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-11T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_2xRSEbN"><p xml:id="_8BPbsf2">Deep generative models parameterized by neural networks have recently achieved state-ofthe-art performance in unsupervised and semisupervised learning. We extend deep generative models with auxiliary variables which improves the variational approximation. The auxiliary variables leave the generative model unchanged but make the variational distribution more expressive. Inspired by the structure of the auxiliary variable we also propose a model with two stochastic layers and skip connections. Our findings suggest that more expressive and properly specified deep generative models converge faster with better results. We show state-of-theart performance within semi-supervised learning on MNIST, SVHN and NORB datasets.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1." xml:id="_eTjnnH6">Introduction</head><p xml:id="_E4rUjXQ">Stochastic backpropagation, deep neural networks and approximate Bayesian inference have made deep generative models practical for large scale problems <ref type="bibr" coords="1,225.70,517.61,63.74,8.64" target="#b8">(Kingma, 2013;</ref><ref type="bibr" coords="1,55.44,529.56,86.62,8.64" target="#b17">Rezende et al., 2014)</ref>, but typically they assume a mean field latent distribution where all latent variables are independent. This assumption might result in models that are incapable of capturing all dependencies in the data. In this paper we show that deep generative models with more expressive variational distributions are easier to optimize and have better performance. We increase the flexibility of the model by introducing auxiliary variables <ref type="bibr" coords="1,237.51,613.25,51.94,8.64;1,55.44,625.20,56.36,8.64" target="#b0">(Agakov and Barber, 2004)</ref> allowing for more complex latent distributions. We demonstrate the benefits of the increased flexibility by achieving state-of-the-art performance in the semisupervised setting for the <ref type="bibr" coords="1,165.67,661.07,119.49,8.64">MNIST (LeCun et al., 1998)</ref>, SVHN <ref type="bibr" coords="1,336.49,246.76,78.27,8.64" target="#b12">(Netzer et al., 2011)</ref> and NORB <ref type="bibr" coords="1,462.61,246.76,78.83,8.64" target="#b10">(LeCun et al., 2004)</ref> datasets.</p><p xml:id="_AJTuUag">Recently there have been significant improvements within the semi-supervised classification tasks. <ref type="bibr" coords="1,482.95,288.60,58.49,8.64;1,307.44,300.56,26.56,8.64">Kingma et al. (2014)</ref> introduced a deep generative model for semisupervised learning by modeling the joint distribution over data and labels. This model is difficult to train end-to-end with more than one layer of stochastic latent variables, but coupled with a pretrained feature extractor it performs well. Lately the Ladder network <ref type="bibr" coords="1,418.70,360.33,86.59,8.64" target="#b15">(Rasmus et al., 2015;</ref><ref type="bibr" coords="1,508.52,360.33,32.93,8.64;1,307.44,372.29,23.24,8.64" target="#b21">Valpola, 2014)</ref> and virtual adversarial training (VAT) <ref type="bibr" coords="1,485.05,372.29,56.39,8.64;1,307.44,384.24,23.24,8.64" target="#b11">(Miyato et al., 2015)</ref> have improved the performance further with end-toend training.</p><p xml:id="_3uP2QXf">In this paper we train deep generative models with multiple stochastic layers. The Auxiliary Deep Generative Models (ADGM) utilize an extra set of auxiliary latent variables to increase the flexibility of the variational distribution (cf. Sec. 2.2). We also introduce a slight change to the ADGM, a 2-layered stochastic model with skip connections, the Skip Deep Generative Model (SDGM) (cf. Sec. 2.4). Both models are trainable end-to-end and offer state-of-the-art performance when compared to other semisupervised methods. In the paper we first introduce toy data to demonstrate that:</p><p xml:id="_b83N2Qy">(i) The auxiliary variable models can fit complex latent distributions and thereby improve the variational lower bound (cf. Sec. 4.1 and 4.3).</p><p xml:id="_fCesVGZ">(ii) By fitting a complex half-moon dataset using only six labeled data points the ADGM utilizes the data manifold for semi-supervised classification (cf. Sec. 4.2).</p><p xml:id="_nHU2CW3">For the benchmark datasets we show (cf. Sec. 4.4):</p><p xml:id="_Bk7Z7mq">(iii) State-of-the-art results on several semi-supervised classification tasks.</p><p xml:id="_w38zuhA">(iv) That multi-layered deep generative models for semisupervised learning are trainable end-to-end without pre-training or feature engineering.</p><p xml:id="_p5wzBdS">Recently <ref type="bibr" coords="2,93.77,89.91,60.14,8.64" target="#b8">Kingma (2013)</ref>; <ref type="bibr" coords="2,161.00,89.91,86.46,8.64" target="#b17">Rezende et al. (2014)</ref> have coupled the approach of variational inference with deep learning giving rise to powerful probabilistic models constructed by an inference neural network q(z|x) and a generative neural network p(x|z). This approach can be perceived as a variational equivalent to the deep auto-encoder, in which q(z|x) acts as the encoder and p(x|z) the decoder. However, the difference is that these models ensures efficient inference over continuous distributions in the latent space z with automatic relevance determination and regularization due to the KL-divergence. Furthermore, the gradients of the variational upper bound are easily defined by backpropagation through the network(s). To keep the computational requirements low the variational distribution q(z|x) is usually chosen to be a diagonal Gaussian, limiting the expressive power of the inference model.</p><p xml:id="_JQ68BNq">In this paper we propose a variational auxiliary variable approach <ref type="bibr" coords="2,119.54,299.13,118.26,8.64" target="#b0">(Agakov and Barber, 2004)</ref> to improve the variational distribution: The generative model is extended with variables a to p(x, z, a) such that the original model is invariant to marginalization over a: p(x, z, a) = p(a|x, z)p(x, z). In the variational distribution, on the other hand, a is used such that marginal q(z|x) = q(z|a, x)p(a|x)da is a general non-Gaussian distribution. This hierarchical specification allows the latent variables to be correlated through a, while maintaining the computational efficiency of fully factorized models (cf. Fig. <ref type="figure" coords="2,266.43,406.72,3.60,8.64" target="#fig_2">1</ref>). In Sec. 4.1 we demonstrate the expressive power of the inference model by fitting a complex multimodal distribution.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1." xml:id="_kTkRJ4J">Variational auto-encoder</head><p xml:id="_jhRpRzg">The variational auto-encoder (VAE) has recently been introduced as a powerful method for unsupervised learning. Here a latent variable generative model p θ (x|z) for data x is parameterized by a deep neural network with parameters θ. The parameters are inferred by maximizing the variational lower bound of the likelihood</p><formula xml:id="formula_0" coords="2,89.59,533.88,199.85,91.69">− i U VAE (x i ) with log p θ (x) = log z p(x, z)dz ≥ E q φ (z|x) log p θ (x|z)p θ (z) q φ (z|x) (1) ≡ −U VAE (x) .</formula><p xml:id="_aPTHVNe">The inference model q φ (z|x) is parameterized by a second deep neural network. The inference and generative parameters, θ and φ, are jointly trained by optimizing Eq. 1 with stochastic gradient ascent, where we use the reparameterization trick for backpropagation through the Gaussian latent variables <ref type="bibr" coords="2,111.08,708.58,63.09,8.64" target="#b8">(Kingma, 2013;</ref><ref type="bibr" coords="2,176.66,708.58,82.59,8.64" target="#b17">Rezende et al., 2014)</ref>.   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2." xml:id="_qFBPmNh">Auxiliary variables</head><p xml:id="_HTVCtUS">We propose to extend the variational distribution with auxiliary variables a: q(a, z|x) = q(z|a, x)q(a|x) such that the marginal distribution q(z|x) can fit more complicated posteriors p(z|x). In order to have an unchanged generative model, p(x|z), it is required that the joint mode p(x, z, a) gives back the original p(x, z) under marginalization over a, thus p(x, z, a) = p(a|x, z)p(x, z). Auxiliary variables are used in the EM algorithm and Gibbs sampling and have previously been considered for variational learning by <ref type="bibr" coords="2,320.33,364.58,106.44,8.64" target="#b0">Agakov and Barber (2004)</ref>. Concurrent with this work <ref type="bibr" coords="2,307.44,376.54,93.80,8.64" target="#b14">Ranganath et al. (2015)</ref> have proposed to make the parameters of the variational distribution stochastic, which leads to a similar model. It is important to note that in order not to fall back to the original VAE model one has to require p(a|x, z) = p(a), see <ref type="bibr" coords="2,417.85,424.36,106.73,8.64" target="#b0">Agakov and Barber (2004)</ref> and App. A. The auxiliary VAE lower bound becomes log p θ (x) = log a z p(x, a, z)dadz</p><formula xml:id="formula_1" coords="2,354.70,479.53,186.74,23.22">≥ E q φ (a,z|x) log p θ (a|z, x)p θ (x|z)p(z) q φ (a|x)q φ (z|a, x)<label>(2)</label></formula><p xml:id="_77xbq4E">≡ −U AVAE (x) .</p><p xml:id="_WWfayD8">with p θ (a|z, x) and q φ (a|x) diagonal Gaussian distributions parameterized by deep neural networks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3." xml:id="_ETk4mUP">Semi-supervised learning</head><p xml:id="_hF6wpAU">The main focus of this paper is to use the auxiliary approach to build semi-supervised models that learn classifiers from labeled and unlabeled data. To encompass the class information we introduce an extra latent variable y. The generative model P is defined as p(y)p(z)p θ (a|z, y, x)p θ (x|y, z) (cf. Fig. <ref type="figure" coords="2,471.91,642.15,7.75,8.64" target="#fig_2">1a</ref>):</p><formula xml:id="formula_2" coords="2,394.85,659.84,146.59,8.96">p(z) = N (z|0, I),<label>(3)</label></formula><p xml:id="_jTjW33q">p(y) = Cat(y|π), (4) p θ (a|z, y, x) = f (a; z, y, x, θ),</p><p xml:id="_ynTK6yN">(5)</p><formula xml:id="formula_3" coords="2,372.21,704.67,169.23,9.65">p θ (x|z, y) = f (x; z, y, θ) ,<label>(6)</label></formula><p xml:id="_7fnpFbF">where a, y, z are the auxiliary variable, class label, and latent features, respectively. Cat(•) is a multinomial distribution, where y is treated as a latent variable for the unlabeled data points. In this study we only experimented with categorical labels, however the method applies to other distributions for the latent variable y. f (x; z, y, θ) is iid categorical or Gaussian for discrete and continuous observations x. p θ (•) are deep neural networks with parameters θ. The inference model is defined as q φ (a|x)q φ (z|a, y, x)q φ (y|a, x) (cf. Fig. <ref type="figure" coords="3,90.95,178.13,8.02,8.64" target="#fig_2">1b</ref>):</p><formula xml:id="formula_4" coords="3,80.12,196.41,209.32,12.69">q φ (a|x) = N (a|µ φ (x), diag(σ 2 φ (x))),<label>(7)</label></formula><formula xml:id="formula_5" coords="3,70.45,214.66,218.99,9.65">q φ (y|a, x) = Cat(y|π φ (a, x)),<label>(8)</label></formula><formula xml:id="formula_6" coords="3,60.95,228.76,228.49,12.69">q φ (z|a, y, x) = N (z|µ φ (a, y, x), diag(σ 2 φ (a, y, x))) . (9)</formula><p xml:id="_9UHCjQ6">In order to model Gaussian distributions p θ (a|z, y, x), p θ (x|z, y), q φ (a|x) and q φ (z|a, y, x) we define two separate outputs from the top deterministic layer in each deep neural network, µ φ∨θ (•) and log σ 2 φ∨θ (•). From these outputs we are able to approximate the expectations E by applying the reparameterization trick.</p><p xml:id="_R2d67SW">The key point of the ADGM is that the auxiliary unit a introduce a latent feature extractor to the inference model giving a richer mapping between x and y. We can use the classifier (9) to compute probabilities for unlabeled data x u being part of each class and to retrieve a cross-entropy error estimate on the labeled data x l . This can be used in cohesion with the variational lower bound to define a good objective function in order to train the model end-to-end.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_4947V6B">VARIATIONAL LOWER BOUND</head><p xml:id="_dGrpUBs">We optimize the model by maximizing the lower bound on the likelihood (cf. App. B for more details). The variational lower bound on the marginal likelihood for a single labeled data point is</p><formula xml:id="formula_7" coords="3,89.87,516.44,199.57,43.99">log p θ (x, y) = log a z p(x, y, a, z)dzda ≥ E q φ (a,z|x,y) log p θ (x, y, a, z) q φ (a, z|x, y)<label>(10)</label></formula><formula xml:id="formula_8" coords="3,90.98,565.98,53.51,8.74">≡ −L(x, y) ,</formula><p xml:id="_chmNKwc">with q φ (a, z|x, y) = q φ (a|x)q φ (z|a, y, x). For unlabeled data we further introduce the variational distribution for y, q φ (y|a, x):</p><formula xml:id="formula_9" coords="3,83.50,636.69,205.94,45.35">log p θ (x) = log a y z p(x, y, a, z)dzdyda ≥ E q φ (a,y,z|x) log p θ (x, y, a, z) q φ (a, y, z|x)<label>(11)</label></formula><formula xml:id="formula_10" coords="3,84.61,687.59,44.19,8.74">≡ −U(x) ,</formula><p xml:id="_UWhv4Xx">with q φ (a, y, z|x) = q φ (z|a, y, x)q φ (y|a, x)q φ (a|x).</p><p xml:id="_Y2WVZpx">The classifier (9) appears in −U(x u ), but not in −L(x l , y l ).</p><p xml:id="_JYFE8sm">The classification accuracy can be improved by introducing an explicit classification loss for labeled data:</p><formula xml:id="formula_11" coords="3,308.43,114.99,233.01,25.57">L l (x l , y l ) = (12) L(x l , y l ) + α • log E q φ (a|x l ) [− log q φ (y l |a, x l )] ,</formula><p xml:id="_8yphgrT">where α is a weight between generative and discriminative learning. The α parameter is set to β • N l +Nu N l , where β is a scaling constant, N l is the number of labeled data points and N u is the number of unlabeled data points. The objective function for labeled and unlabeled data is</p><formula xml:id="formula_12" coords="3,351.59,219.48,185.70,21.20">J = (x l ,y l ) L l (x l , y l ) + (xu) U(x u ) . (<label>13</label></formula><formula xml:id="formula_13" coords="3,537.29,219.79,4.15,8.64">)</formula><p xml:id="_JymCdz6">2.4. Two stochastic layers with skip connections <ref type="bibr" coords="3,307.44,276.30,84.67,8.64">Kingma et al. (2014)</ref> proposed a model with two stochastic layers but were unable to make it converge endto-end and instead resorted to layer-wise training. In our preliminary analysis we also found that this model: p θ (x|z 1 )p θ (z 1 |z 2 , y)p(z 2 )p(y) failed to converge when trained end-to-end.</p><p xml:id="_sNfWMtf">On the other hand, the auxiliary model can be made into a two-layered stochastic model by simply reversing the arrow between a and x in Fig. <ref type="figure" coords="3,352.91,371.94,7.93,8.64" target="#fig_2">1a</ref>. We would expect that if the auxiliary model works well in terms of convergence and performance then this two-layered model (a is now part of the generative model): p θ (x|y, a, z)p θ (a|z, y)p(z)p(y) should work even better because it is a more flexible generative model. The variational distribution is unchanged: q φ (z|y, x, a)q φ (y|a, x)q φ (a|x). We call this the Skip Deep Generative Model (SDGM) and test it alongside the auxiliary model in the benchmarks (cf. Sec. 4.4).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3." xml:id="_fXXJkKP">Experiments</head><p xml:id="_DAabYcP">The SDGM and ADGM are each parameterized by 5 neural networks (NN): (1) auxiliary inference model q φ (a|x), (2) latent inference model q φ (z|a, y, x), (3) classification model q φ (y|a, x), (4) generative model p θ (a|•), and (5) the generative model p θ (x|•).</p><p xml:id="_WWxbMB7">The neural networks consists of M fully connected hidden layers with h j denoting the output of a layer j = 1, ..., M . All hidden layers use rectified linear activation functions. To compute the approximations of the stochastic variables we place two independent output layers after h M , µ and log σ 2 . In a forward-pass we are propagating the input x through the neural network by</p><formula xml:id="formula_14" coords="3,377.17,673.55,164.27,40.77">h M =NN(x) (14) µ =Linear(h M ) (15) log σ 2 =Linear(h M ) ,<label>(16)</label></formula><p xml:id="_s8Duv3S">with Linear denoting a linear activation function. We then approximate the stochastic variables by applying the reparameterization trick using the µ and log σ 2 outputs.</p><p xml:id="_TDTvten">In the unsupervised toy example (cf. Sec. 4.1) we applied 3 hidden layers with dim(h) = 20, dim(a) = 4 and dim(z) = 2. For the semi-supervised toy example (cf. Sec. 4.2) we used two hidden layers of dim(h) = 100 and dim(a, z) = 10.</p><p xml:id="_gzyPDar">For all the benchmark experiments (cf. Sec. 4.4) we parameterized the deep neural networks with two fully connected hidden layers. Each pair of hidden layers was of size dim(h) = 500 or dim(h) = 1000 with dim(a, z) = 100 or dim(a, z) = 300. The generative model was p(y)p(z)p θ (a|z, y)p θ (x|z, y) for the ADGM and the SDGM had the augmented p θ (x|a, z, y). Both have unchanged inference models (cf. Fig. <ref type="figure" coords="4,207.42,261.82,7.89,8.64" target="#fig_2">1b</ref>).</p><p xml:id="_5MVQ9xz">All parameters are initialized using the Glorot and Bengio (2010) scheme. The expectation over the a and z variables were performed by Monte Carlo sampling using the reparameterization trick <ref type="bibr" coords="4,137.15,315.62,63.56,8.64" target="#b8">(Kingma, 2013;</ref><ref type="bibr" coords="4,203.66,315.62,85.78,8.64" target="#b17">Rezende et al., 2014)</ref> and the average over y by exact enumeration so</p><formula xml:id="formula_15" coords="4,63.80,346.91,225.64,47.01">E q φ (a,y,z|x) [f (a, x, y, z)] ≈ (17) 1 N samp Nsamp i y q(y|a i , x)f (a i , x, y, z yi ),</formula><p xml:id="_ZBaSpzZ">with a i ∼ q(a|x) and z yi ∼ q(z|a, y, x).</p><p xml:id="_xKMCdaP">For training, we have used the Adam (Kingma and Ba, 2014) optimization framework with a learning rate of 3e-4, exponential decay rate for the 1st and 2nd moment at 0.9 and 0.999, respectively. The β constant was between 0.1 and 2 throughout the experiments.</p><p xml:id="_RMK6ESp">The models are implemented in Python using Theano <ref type="bibr" coords="4,55.44,499.94,81.83,8.64" target="#b1">(Bastien et al., 2012)</ref>, Lasagne <ref type="bibr" coords="4,179.98,499.94,92.47,8.64" target="#b3">(Dieleman et al., 2015)</ref> and Parmesan libraries 1 .</p><p xml:id="_JDfEX66">For For the SVHN dataset we used the vectorized and cropped training set dim(x) = 3072 with classes from 0 to 9, com-1 Implementation is available in a repository named auxiliarydeep-generative-models on github.com. bined with the extra set resulting in 604388 data points. The test set is of size 26032. We trained on the small NORB dataset consisting of 24300 training samples and an equal amount of test samples distributed across 5 classes: animal, human, plane, truck, car. We normalized all NORB images following <ref type="bibr" coords="4,409.88,130.31,80.27,8.64" target="#b11">Miyato et al. (2015)</ref> using image pairs of 32x32 resulting in a vectorized input of dim(x) = 2048. The labeled subsets consisted of 1000 evenly distributed labeled samples. The batch size for SVHN was 2000 and for NORB 200, where half of the batch was labeled samples. To avoid the phenomenon on modeling discretized values with a real-valued estimation <ref type="bibr" coords="4,493.89,202.04,47.55,8.64;4,307.44,214.00,21.44,8.64" target="#b20">(Uria et al., 2013)</ref>, we added uniform noise between 0 and 1 to each pixel value. We normalized the NORB dataset by 256 and the SVHN dataset by the standard deviation on each color channel. Both datasets were assumed Gaussian distributed for the generative models p θ (x|•).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4." xml:id="_2wYXNCC">Results</head><p xml:id="_BkaMNpM">In this section we present two toy examples that shed light on how the auxiliary variables improve the distribution fit. Thereafter we investigate the unsupervised generative log-likelihood performance followed by semi-supervised classification performance on several benchmark datasets. We demonstrate state-of-the-art performance and show that adding auxiliary variables increase both classification performance and convergence speed (cf. Sec. 3 for details).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1." xml:id="_fQtW8qj">Beyond Gaussian latent distributions</head><p xml:id="_zVvkeJZ">In variational auto-encoders the inference model q φ (z|x) is parameterized as a fully factorized Gaussian. We demonstrate that the auxiliary model can fit complicated posterior distributions for the latent space. To do this we consider the 2D potential model p(z) = exp(U (z))/Z <ref type="bibr" coords="4,485.70,485.05,55.74,8.64;4,307.44,497.01,68.62,8.64" target="#b16">(Rezende and Mohamed, 2015)</ref> that leads to the bound</p><formula xml:id="formula_16" coords="4,328.45,535.82,208.85,23.23">log Z ≥ E q φ (a,z) log exp(U (z))p θ (a|z) q φ (a)q φ (z|a) . (<label>18</label></formula><formula xml:id="formula_17" coords="4,537.29,542.88,4.15,8.64">)</formula><p xml:id="_jfaVVqz">Fig. <ref type="figure" coords="4,327.43,589.02,9.40,8.64">2a</ref> shows the true posterior and Fig. <ref type="figure" coords="4,476.11,589.02,9.96,8.64">2b</ref> shows a density plot of z samples from a ∼ q φ (a) and z ∼ q φ (z|a) from a trained ADGM. This is similar to the findings of <ref type="bibr" coords="4,307.44,624.89,124.45,8.64" target="#b16">Rezende and Mohamed (2015)</ref> in which they demonstrate that by using normalizing flows they can fit complicated posterior distributions. The most frequent solution found in optimization is not the one shown, but one where Q fits only one of the two equivalent modes. The one and two mode solution will have identical values of the bound so it is to be expected that the simpler single mode solution will be easier to infer. A good semi-supervised model will be able to learn the data manifold for each of the half-moons and use this together with the limited labeled information to build the classifier.</p><p xml:id="_3TupWCu">The ADGM converges close to 0% classification error in 10 epochs (cf. Fig. <ref type="figure" coords="5,125.41,401.65,7.61,8.64">2c</ref>), which is much faster than an equivalent model without the auxiliary variable that converges in more than 100 epochs. When investigating the auxiliary variable we see that it finds a discriminating internal representation of the data manifold and thereby aids the classifier (cf. Fig. <ref type="figure" coords="5,90.95,461.42,7.89,8.64">2d</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3." xml:id="_3EAjPnr">Generative log-likelihood performance</head><p xml:id="_UZUXxP7">We evaluate the generative performance of the unsupervised auxiliary model, AVAE, using the MNIST dataset. The inference and generative models are defined as</p><formula xml:id="formula_18" coords="5,72.11,554.97,217.33,96.59">q φ (a, z|x) = q φ (a 1 |x)q φ (z 1 |a 1 , x) (19) L i=2 q φ (a i |a i−1 , x)q φ (z i |a i , z i−1 ) , p θ (x, a, z) = p θ (x|z 1 )p(z L )p θ (a L |z L ) (20) L−1 i=1 p θ (z i |z i+1 )p θ (a i |z ≥i ) .</formula><p xml:id="_U5nc8Mw">where L denotes the number of stochastic layers.</p><p xml:id="_pfRBvae">We report the lower bound from Eq. ( <ref type="formula" coords="5,213.47,684.66,3.87,8.64" target="#formula_1">2</ref>) for 5000 importance weighted samples and use the same training and parameter settings as in <ref type="bibr" coords="5,146.51,708.58,92.24,8.64" target="#b18">Sønderby et al. (2016)</ref>  We evaluate the negative log-likelihood for the 1 and 2 layered AVAE. We found that warm-up was crucial for activation of the auxiliary variables. Table <ref type="table" coords="5,451.56,512.23,4.98,8.64">1</ref> shows log-likelihood scores for the permutation invariant MNIST dataset. The methods are not directly comparable, except for the Ladder VAE (LVAE) <ref type="bibr" coords="5,380.23,548.10,92.40,8.64" target="#b18">(Sønderby et al., 2016)</ref>, since the training is performed differently. However, they give a good indication on the expressive power of the auxiliary variable model. The AVAE is performing better than the VAE with normalizing flows <ref type="bibr" coords="5,400.76,595.92,124.25,8.64" target="#b16">(Rezende and Mohamed, 2015)</ref> and the importance weighted auto-encoder with 1 IW sample <ref type="bibr" coords="5,307.44,619.83,75.82,8.64" target="#b2">(Burda et al., 2015)</ref>. The results are also comparable to the Ladder VAE with 5 latent layers <ref type="bibr" coords="5,446.02,631.78,95.42,8.64" target="#b18">(Sønderby et al., 2016)</ref> and variational Gaussian process VAE <ref type="bibr" coords="5,465.25,643.74,71.91,8.64" target="#b19">(Tran et al., 2015)</ref>.</p><p xml:id="_6MuSbfj">As shown in <ref type="bibr" coords="5,359.01,655.69,74.78,8.64" target="#b2">Burda et al. (2015)</ref> and <ref type="bibr" coords="5,452.82,655.69,88.62,8.64" target="#b18">Sønderby et al. (2016)</ref> increasing the IW samples and annealing the learning rate will likely increase the log-likelihood. 1.32% (±0.07) 16.61% (±0.24) 9.40% (±0.04)</p><p xml:id="_Rm4eS4B">Table <ref type="table" coords="6,77.38,179.65,3.36,7.77">2</ref>. Semi-supervised test error % benchmarks on MNIST, SVHN and NORB for randomly labeled and evenly distributed data points. The lower section demonstrates the benchmarks of the contribution of this article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4." xml:id="_HYaKnjX">Semi-supervised benchmarks MNIST EXPERIMENTS</head><p xml:id="_xCS6gPB">Table <ref type="table" coords="6,80.21,253.43,4.98,8.64">2</ref> shows the performance of the ADGM and SDGM on the MNIST dataset. The ADGM's convergence to around 2% is fast (around 200 epochs), and from that point the convergence speed declines and finally reaching 0.96% (cf. Fig. <ref type="figure" coords="6,97.90,301.25,3.60,8.64" target="#fig_7">5</ref>). The SDGM shows close to similar performance and proves more stable by speeding up convergence, due to its more advanced generative model. We achieved the best results on MNIST by performing multiple Monte Carlo samples for a ∼ q φ (a|x) and z ∼ q φ (z|a, y, x).</p><p xml:id="_2kWHRHv">A good explorative estimate of the models ability to comprehend the data manifold, or in other words be as close to the posterior distribution as possible, is to evaluate the generative model. In Fig. <ref type="figure" coords="6,75.25,648.80,9.40,8.64" target="#fig_6">4a</ref> demonstrate the information contribution from the stochastic unit a i and z j (subscripts i and j denotes a unit) in the SDGM as measured by the average over the test set of the KL-divergence between the variational distribution and the prior. Units with little information content will be close to the prior distribution and the KL-divergence term will thus be close to 0. The number of clearly activated units in z and a is quite low ∼ 20, but there is a tail of slightly active units, similar results have been reported by <ref type="bibr" coords="6,307.44,251.99,73.33,8.64" target="#b2">Burda et al. (2015)</ref>. It is still evident that we have information flowing through both variables though. Fig. <ref type="figure" coords="6,502.15,263.94,39.29,8.64" target="#fig_6">2d and 4b</ref> shows clustering in the auxiliary space for both the ADGM and SDGM respectively.  In order to investigate whether the stochasticity of the auxiliary variable a or the network depth is essential to the models performance, we constructed an ADGM with a deterministic auxiliary variable. Furthermore we also implemented the M2 model of <ref type="bibr" coords="7,162.06,391.26,86.39,8.64">Kingma et al. (2014)</ref> using the exact same hyperparameters as for learning the ADGM. Fig. <ref type="figure" coords="7,75.30,415.17,4.98,8.64" target="#fig_7">5</ref> shows how the ADGM outperforms both the M2 model and the ADGM with deterministic auxiliary variables. We found that the convergence of the M2 model was highly unstable; the one shown is the best obtained.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_a39u28z">SVHN &amp; NORB EXPERIMENTS</head><p xml:id="_tJXSPsw">From Table <ref type="table" coords="7,107.06,493.38,4.98,8.64">2</ref> we see how the SDGM outperforms VAT with a relative reduction in error rate of more than 30% on the SVHN dataset. We also tested the model performance, when we omitted the SVHN extra set from training. Here we achieved a classification error of 29.82%. The improvements on the NORB dataset was not as significant as for SVHN with the ADGM being slightly worse than VAT and the SDGM being slightly better than VAT.</p><p xml:id="_B3ajtry">On SVHN the model trains to around 19% classification error in 100 epochs followed by a decline in convergence speed. The NORB dataset is a significantly smaller dataset and the SDGM converges to around 12% in 100 epochs.</p><p xml:id="_dHVcWnh">We also trained the NORB dataset on single images as opposed to image pairs (half the dataset) and achieved a classification error around 13% in 100 epochs.</p><p xml:id="_V5fzvfA">For Gaussian input distributions, like the image data of SVHN and NORB, we found the SDGM to be more stable than the ADGM.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5." xml:id="_6z2fjSb">Discussion</head><p xml:id="_MxVh8mh">The ADGM and SDGM are powerful deep generative models with relatively simple neural network architectures. They are trainable end-to-end and since they follow the principles of variational inference there are multiple improvements to consider for optimizing the models like using the importance weighted bound or adding more layers of stochastic variables. Furthermore we have only proposed the models using a Gaussian latent distribution, but the model can easily be extended to other distributions <ref type="bibr" coords="7,307.44,197.51,95.41,8.64" target="#b13">(Ranganath et al., 2014;</ref><ref type="bibr" coords="7,405.34,197.51,21.44,8.64">2015)</ref>.</p><p xml:id="_8xgE8Aa">One way of approaching the stability issues of the ADGM, when training on Gaussian input distributions x is to add a temperature weighting between discriminative and stochastic learning on the KL-divergence for a and z when estimating the variational lower bound <ref type="bibr" coords="7,472.07,263.26,69.37,8.64;7,307.44,275.22,21.44,8.64" target="#b18">(Sønderby et al., 2016)</ref>. We find similar problems for the Gaussian input distributions in van den Oord et al. ( <ref type="formula" coords="7,440.23,287.17,16.60,8.64">2016</ref>), where they restrict the dataset to ordinal values in order to apply a softmax function for the output of the generative model p(x|•). This discretization of data is also a possible solution. Another potential stabilizer is to add batch normalization <ref type="bibr" coords="7,502.12,334.99,39.32,8.64;7,307.44,346.95,61.87,8.64" target="#b5">(Ioffe and Szegedy, 2015)</ref> that will ensure normalization of each output batch of a fully connected hidden layer.</p><p xml:id="_GWduZTG">A downside to the semi-supervised variational framework is that we are summing over all classes in order to evaluate the variational bound for unlabeled data. This is a computationally costly operation when the number of classes grow. In this sense, the Ladder network has an advantage. A possible extension is to sample y when calculating the unlabeled lower bound −U(x u ), but this may result in gradients with high variance.</p><p xml:id="_JAyTDNm">The framework is implemented with fully connected layers.</p><p xml:id="_USec5ZF">VAEs have proven to work well with convolutional layers so this could be a promising step to further improve the performance. Finally, since we expect that the variational bound found by the auxiliary variable method is quite tight, it could be of interest to see whether the bound for p(x, y) may be used for classification in the Bayes classifier manner p(y|x) ∝ p(x, y).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6." xml:id="_VJCRe3v">Conclusion</head><p xml:id="_6zUfj6p">We have introduced a novel framework for making the variational distributions used in deep generative models more expressive. In two toy examples and the benchmarks we investigated how the framework uses the auxiliary variables to learn better variational approximations. Finally we have demonstrated that the framework gives state-of-the-art performance in a number of semi-supervised benchmarks and is trainable end-to-end.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_NKDcSzK">A. Auxiliary model specification</head><p xml:id="_52WV3bQ">In this appendix we study the theoretical optimum of the auxiliary variational bound found by functional derivatives of the variational objective. In practice we will resort to restricted deep network parameterized distributions. But this analysis nevertheless shed some light on the properties of the optimum. Without loss of generality we consider only auxiliary a and latent z: p(a, z) = p(z)p(a|z), p(z) = f (z)/Z and q(a, z) = q(z|a)q(a). The results can be extended to the full semi-supervised setting without changing the overall conclusion. The variational bound for the auxiliary model is</p><formula xml:id="formula_19" coords="8,100.43,229.97,189.01,22.31">log Z ≥ E q(a,z) log f (z)p(a|z) q(z|a)q(a) .<label>(21)</label></formula><p xml:id="_buG8nuJ">We can now take the functional derivative of the bound with respect to p(a|z). This gives the optimum p(a|z) = q(a, z)/q(z), which in general is intractable because it requires marginalization: q(z) = q(z|a)q(a)da.</p><p xml:id="_75fGYfs">One may also restrict the generative model to an uninformed a-model: p(a, z) = p(z)p(a). Optimizing with respect to p(a) we find p(a) = q(a). When we insert this solution into the variational bound we get q(a) E q(z|a) log f (z) q(z|a) da .</p><p xml:id="_vUBKEQW">The solution to the optimization with respect to q(a) will simply be a δ-function at the value of a that optimizes the variational bound for the z-model. So we fall back to a model for z without the auxiliary as also noted by <ref type="bibr" coords="8,258.19,445.23,31.24,8.64;8,55.44,457.18,71.38,8.64" target="#b0">Agakov and Barber (2004)</ref>.</p><p xml:id="_wkTcjCc">We have tested the uninformed auxiliary model in semisupervised learning for the benchmarks and we got competitive results for MNIST but not for the two other benchmarks. We attribute this to two factors: in semi-supervised learning we add an additional classification cost so that the generic form of the objective is log Z ≥ E q(a,z) log f (z)p(a) q(z|a)q(a) + g(a) ,</p><p xml:id="_rVyPEXx">we keep p(a) fixed to a zero mean unit variance Gaussian and we use deep iid models for f (z), q(z|a) and q(a). This taken together can lead to at least a local optimum which is different from the collapse to the pure z-model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_sDcjUtC">B. Variational bounds</head><p xml:id="_RSEXAat">In this appendix we give an overview of the variational objectives used. The generative model p θ (x, a, y, z) for the Auxiliary Deep Generative Model and the Skip Deep Generative Model are defined as ADGM: p θ (x, a, y, z) = p θ (x|y, z)p θ (a|x, y, z)p(y)p(z) .</p><p xml:id="_n2kh4qj">(24) SDGM: p θ (x, a, y, z) = p θ (x|a, y, z)p θ (a|x, y, z)p(y)p(z) . (25)</p><p xml:id="_wz5XYGq">The lower bound −L(x, y) on the labeled log-likelihood is defined as log p(x, y) = log a z p θ (x, y, a, z)dzda (26)</p><p xml:id="_KHajQgc">≥ E q φ (a,z|x,y) log p θ (x, y, a, z) q φ (a, z|x, y) ≡ −L(x, y) ,</p><p xml:id="_cCNf44q">where q φ (a, z|x, y) = q φ (a|x)q φ (z|a, y, x). We define the function f (•) to be f (x, y, a, z) = log p θ (x,y,a,z) q φ (a,z|x,y) . In the lower bound for the unlabeled data −U(x) we treat the discrete y<ref type="foot" coords="8,334.53,359.72,3.49,6.05" target="#foot_1">3</ref> as a latent variable. We rewrite the lower bound in the form of <ref type="bibr" coords="8,354.75,373.35,81.59,8.64">Kingma et al. (2014)</ref>: log p(x) = log a y z p θ (x, y, a, z)dzda ≥ E q φ (a,y,z|x) [f (•) − log q φ (y|a, x)] (27)</p><p xml:id="_PdsktGH">= E q φ (a|x) y q φ (y|a, x)E q φ (z|a,x) [f (•)] + E q φ (a|x) − y q φ (y|a, x) log q φ (y|a, x)</p><p xml:id="_h4djctW">H(q φ (y|a,x))</p><p xml:id="_DuTWXuX">= E q φ (a|x) y q φ (y|a, x)E q φ (z|a,x) [f (•)] + H(q φ (y|a, x))</p><formula xml:id="formula_22" coords="8,349.76,575.78,44.19,8.74">≡ −U(x) ,</formula><p xml:id="_GxbgfYA">where H(•) denotes the entropy. The objective function of −L(x, y) and −U(x) are given in Eq. ( <ref type="formula" coords="8,465.37,609.97,8.30,8.64">12</ref>) and Eq. ( <ref type="formula" coords="8,517.65,609.97,7.64,8.64" target="#formula_12">13</ref>).</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="2,307.44,199.70,234.00,7.77;2,307.44,210.66,234.00,7.77;2,307.44,221.33,198.70,8.06"><head>Figure 1 .</head><label>1</label><figDesc xml:id="_fhjF7cn">Probabilistic graphical model of the ADGM for semisupervised learning. The incoming joint connections to each variable are deep neural networks with parameters θ and φ.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="4,72.01,529.83,217.43,8.64;4,55.44,541.47,234.00,8.96;4,55.44,553.74,234.00,8.64;4,55.44,565.38,234.00,8.96;4,55.44,577.65,234.00,8.64;4,55.44,589.61,234.00,8.64;4,55.44,601.24,234.00,8.96;4,55.44,613.20,234.00,8.96;4,55.44,625.47,234.00,8.64;4,55.44,637.43,234.00,8.64;4,55.44,649.38,116.63,8.64"><head></head><label></label><figDesc xml:id="_6RNNCU9">the MNIST dataset we have combined the training set of 50000 examples with the validation set of 10000 examples. The test set remained as is. We used a batch size of 200 with half of the batch always being the 100 labeled samples. The labeled data are chosen randomly, but distributed evenly across classes. To speed up training, we removed the columns with a standard deviation below 0.1 resulting in an input size of dim(x) = 444. Before each epoch the normalized MNIST images were binarized by sampling from a Bernoulli distribution with mean parameter set to the pixel intensities.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="5,128.10,173.11,9.95,7.77;5,237.26,173.38,10.45,7.77;5,346.92,173.96,9.95,7.77;5,456.08,173.31,10.45,7.77;5,55.44,185.84,486.00,8.35;5,55.44,197.08,486.00,7.77;5,55.44,208.04,131.98,7.77;5,55.44,233.17,205.83,8.96;5,55.44,252.21,234.00,8.64;5,55.44,264.16,234.00,8.64;5,55.44,276.12,234.00,8.64;5,55.44,287.75,234.00,9.81;5,55.44,299.71,234.00,9.81;5,55.44,311.98,234.00,8.64;5,55.44,323.62,234.00,8.96;5,55.44,335.89,234.00,8.64"><head></head><label></label><figDesc xml:id="_bpMJD7t">(a) True posterior of the prior p(z). (b) The approximation q φ (z|a)q φ (a) of the ADGM. (c) Prediction on the half-moon data set after 10 epochs with only 3 labeled data points (black) for each class. (d) PCA plot on the 1st and 2nd principal component of the corresponding auxiliary latent space. 4.2. Semi-supervised learning on two half-moons To exemplify the power of the ADGM for semisupervised learning we have generated a 2D synthetic dataset consisting of two half-moons (top and bottom), where (x top , y top ) = (cos([0, π]), sin([0, π])) and (x bottom , y bottom ) = (1 − cos([0, π]), 1 − sin([0, π]) − 0.5), with added Gaussian noise. The training set contains 1e4 samples divided into batches of 100 with 3 labeled data points in each class and the test set contains 1e4 samples.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="6,55.44,586.07,234.00,7.77;6,55.44,596.74,234.00,8.35;6,55.44,607.70,234.00,8.06;6,55.44,618.94,234.00,7.77;6,55.44,629.90,83.16,7.77;6,355.16,494.17,136.08,147.77"><head>Figure 3 .</head><label>3</label><figDesc xml:id="_7uRkX4M">Figure 3. MNIST analogies. (a) Forward propagating a data point x (left) through q φ (z|a, x) and generate samples p θ (x|yj, z) for each class label yj (right). (b) Generating a sample for each class label from random generated Gaussian noise; hence with no use of the inference model.</figDesc><graphic coords="6,355.16,494.17,136.08,147.77" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="6,307.44,663.45,234.00,7.77;6,307.44,674.12,234.00,8.06;6,307.44,685.36,234.00,7.77;6,307.44,696.32,234.00,7.77;6,307.44,707.28,37.85,7.77"><head>Figure 4 .</head><label>4</label><figDesc xml:id="_M8PeGtx">Figure 4. SDGM trained on 100 labeled MNIST. (a) The KLdivergence for units in the latent variables a and z calculated by the difference between the approximated value and its prior. (b) PCA on the 1st and 2nd principal component of the auxiliary latent space.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="7,55.44,289.48,234.00,8.06;7,55.44,300.73,234.00,7.77;7,55.44,311.69,234.00,7.77;7,55.44,322.65,47.08,7.77;7,58.88,58.55,224.64,224.64"><head>Figure 5 .</head><label>5</label><figDesc xml:id="_2TUsbUT">Figure5. 100 labeled MNIST classification error % evaluated every 10 epochs between equally optimized SDGM, ADGM, M2(Kingma et al., 2014)  and an ADGM with a deterministic auxiliary variable.</figDesc><graphic coords="7,58.88,58.55,224.64,224.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,242.29,231.89,299.16,485.33"><head></head><label></label><figDesc xml:id="_DCGWG3p">with warm-up 2 , batch normalization and 1 Monte Carlo and IW sample for training.</figDesc><table coords="5,307.44,277.26,234.01,199.06"><row><cell></cell><cell>≤ log p(x)</cell></row><row><cell>VAE+NF, L=1 (REZENDE AND MOHAMED, 2015)</cell><cell>−85.10</cell></row><row><cell>IWAE, L=1, IW=1 (BURDA ET AL., 2015)</cell><cell>−86.76</cell></row><row><cell>IWAE, L=1, IW=50 (BURDA ET AL., 2015)</cell><cell>−84.78</cell></row><row><cell>IWAE, L=2, IW=1 (BURDA ET AL., 2015)</cell><cell>−85.33</cell></row><row><cell>IWAE, L=2, IW=50 (BURDA ET AL., 2015)</cell><cell>−82.90</cell></row><row><cell>VAE+VGP, L=2 (TRAN ET AL., 2015)</cell><cell>−81.90</cell></row><row><cell>LVAE, L=5, IW=1 (SØNDERBY ET AL., 2016)</cell><cell>−82.12</cell></row><row><cell>LVAE, L=5, FT, IW=10 (SØNDERBY ET AL., 2016)</cell><cell>−81.74</cell></row><row><cell>AUXILIARY VAE (AVAE), L=1, IW=1</cell><cell>−84.59</cell></row><row><cell>AUXILIARY VAE (AVAE), L=2, IW=1</cell><cell>−82.97</cell></row><row><cell cols="2">Table 1. Unsupervised test log-likelihood on permutation invari-</cell></row><row><cell cols="2">ant MNIST for the normalizing flows VAE (VAE+NF), impor-</cell></row><row><cell cols="2">tance weighted auto-encoder (IWAE), variational Gaussian pro-</cell></row><row><cell cols="2">cess VAE (VAE+VGP) and Ladder VAE (LVAE) with FT denot-</cell></row><row><cell cols="2">ing the finetuning procedure from Sønderby et al. (2016), IW the</cell></row><row><cell cols="2">importance weighted samples during training, and L the number</cell></row><row><cell>of stochastic latent layers z1, .., zL.</cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0">Temperature on the KL-divergence going from 0 to 1 within the first 200 epochs of training.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_1">y is assumed to be multinomial but the model can easily be extended to different distributions.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_p9hnak7">Acknowledgements</head><p xml:id="_PfvYH8v">We thank Durk P. Kingma and Shakir Mohamed for helpful discussions. This research was supported by the Novo Nordisk Foundation, Danish Innovation Foundation and the NVIDIA Corporation with the donation of TITAN X and Tesla K40 GPUs.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="9,55.44,184.23,234.00,8.64;9,65.40,196.02,224.03,8.81;9,65.40,207.97,224.04,8.81;9,65.40,220.09,150.62,8.64" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_JHhwPRg">An Auxiliary Variational Method</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Agakov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Barber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_BkS7f3n">Neural Information Processing</title>
+		<title level="s" xml:id="_A9KEQ94">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Berlin Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="page" from="561" to="566" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,241.16,234.00,8.64;9,65.40,253.12,224.04,8.64;9,65.40,265.07,224.04,8.64;9,65.40,276.86,224.03,8.81;9,65.40,288.81,211.93,8.58" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_drvQbsb">Theano: new features and speed improvements</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Bastien</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Lamblin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Pascanu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bergstra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">J</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bergeron</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Bouchard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_S6wDX5w">Deep Learning and Unsupervised Feature Learning, workshop at Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,310.05,234.00,8.64;9,65.40,321.84,224.04,8.81;9,65.40,333.79,75.27,8.58" xml:id="b2">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Burda</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Grosse</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Salakhutdinov</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1509.00519</idno>
+		<title level="m" xml:id="_DCPpbwB">Importance Weighted Autoencoders</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,355.03,234.00,8.64;9,65.40,366.98,224.04,8.64;9,65.40,378.94,89.96,8.64" xml:id="b3">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Dieleman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Schlter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Raffel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Olson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">K</forename><surname>Sønderby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Nouri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Van Den Oord</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">B</forename></persName>
+		</author>
+		<title level="m" xml:id="_qJDJb9v">Lasagne: First release</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,400.00,234.00,8.64;9,65.40,411.96,224.04,8.64;9,65.40,423.74,224.03,8.81;9,65.40,435.70,224.04,8.81;9,65.40,447.82,37.36,8.64" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_rJ4DVWA">Understanding the difficulty of training deep feedforward neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Glorot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_dKCmKX8">Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS10)</title>
+				<meeting>the International Conference on Artificial Intelligence and Statistics (AISTATS10)</meeting>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="249" to="256" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,468.89,234.00,8.64;9,65.40,480.85,224.04,8.64;9,65.40,492.63,224.03,8.81;9,65.40,504.59,151.49,8.81" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_PwzsM9p">Batch normalization: Accelerating deep network training by reducing internal covariate shift</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ioffe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Szegedy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_cgQhArZ">Proceedings of International Conference of Machine Learning</title>
+				<meeting>International Conference of Machine Learning</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="448" to="456" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,525.82,234.00,8.64;9,65.40,537.78,129.05,8.64;9,224.31,537.61,65.12,8.58;9,65.40,549.56,70.29,8.58" xml:id="b6">
+	<monogr>
+		<title level="m" type="main" xml:id="_DavKHuv">Adam: A Method for Stochastic Optimization</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Ba</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.6980</idno>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,570.80,234.00,8.64;9,65.40,582.76,224.04,8.64;9,65.40,594.54,224.04,8.81;9,65.40,606.50,195.11,8.81" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_CdANTjN">Semi-Supervised Learning with Deep Generative Models</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">P</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Rezende</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mohamed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Welling</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_nUuPJjB">Proceedings of the International Conference on Machine Learning</title>
+				<meeting>the International Conference on Machine Learning</meeting>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="3581" to="3589" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,55.44,627.73,234.00,8.64;9,65.40,639.52,206.32,8.81" xml:id="b8">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Diederik P;</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Welling</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1312.6114</idno>
+		<title level="m" xml:id="_WyHcukB">Auto-Encoding Variational Bayes</title>
+				<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,55.44,660.75,234.00,8.64;9,65.40,672.71,224.04,8.64;9,65.40,684.50,224.04,8.81;9,65.40,696.45,224.04,8.58;9,65.40,708.58,72.50,8.64" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_URvQHKr">Gradient-based learning applied to document recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Bottou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Haffner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_7QqMQRM">Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition</title>
+				<meeting>the IEEE Computer Society Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<biblScope unit="page" from="2278" to="2324" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,70.54,234.00,8.64;9,317.40,82.49,224.04,8.64;9,317.40,94.28,224.03,8.81;9,317.40,106.23,224.04,8.58;9,317.40,118.19,129.12,8.81" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_4nPX3s9">Learning methods for generic object recognition with invariance to pose and lighting</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Bottou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_gBb7NUk">Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition</title>
+				<meeting>the IEEE Computer Society Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="page" from="97" to="104" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,138.28,234.00,8.64;9,317.40,150.24,224.04,8.64;9,317.40,162.03,198.78,8.81" xml:id="b11">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Miyato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S.-I</forename><surname>Maeda</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Koyama</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Nakae</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ishii</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1507.00677</idno>
+		<title level="m" xml:id="_VW3FeDT">Distributional Smoothing with Virtual Adversarial Training</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,182.12,234.00,8.64;9,317.40,194.07,224.04,8.64;9,317.40,205.86,224.04,8.81;9,317.40,217.82,224.04,8.58;9,317.40,229.77,144.56,8.58" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_nejFKaQ">Reading digits in natural images with unsupervised feature learning</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Netzer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Coates</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bissacco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_BtuAAJ5">Deep Learning and Unsupervised Feature Learning, workshop at Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2011">2011. 2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,249.87,234.00,8.64;9,317.40,261.65,224.04,8.81;9,317.40,273.61,70.29,8.58" xml:id="b13">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Ranganath</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Charlin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Blei</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1411.2581</idno>
+		<title level="m" xml:id="_XKKzCs4">Deep exponential families</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,293.70,234.00,8.64;9,317.40,305.66,139.36,8.64;9,478.77,305.49,62.67,8.58;9,317.40,317.44,75.27,8.58" xml:id="b14">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Ranganath</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Blei</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1511.02386</idno>
+		<title level="m" xml:id="_dbfexKJ">Hierarchical variational models</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,337.54,234.00,8.64;9,317.40,349.49,224.04,8.64;9,317.40,361.28,224.04,8.81;9,317.40,373.23,109.02,8.81" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_HCZBxpv">Semi-supervised learning with ladder networks</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Rasmus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Berglund</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Honkala</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Valpola</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Raiko</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_2kym7Ye">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="3532" to="3540" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,393.33,234.00,8.64;9,317.40,405.11,224.04,8.81;9,317.40,417.07,224.04,8.81;9,317.40,429.19,47.32,8.64" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_6ABXTX7">Variational Inference with Normalizing Flows</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Rezende</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mohamed</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_VGejuQg">Proceedings of the International Conference of Machine Learning</title>
+				<meeting>the International Conference of Machine Learning</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="1530" to="1538" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,449.12,234.00,8.64;9,317.40,461.07,224.04,8.64;9,317.40,473.03,147.73,8.64;9,480.76,472.86,60.68,8.58;9,317.40,484.82,70.29,8.58" xml:id="b17">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Rezende</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mohamed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Wierstra</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1401.4082</idno>
+		<title level="m" xml:id="_cFETA4u">Stochastic Backpropagation and Approximate Inference in Deep Generative Models</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,504.91,234.00,8.64;9,317.40,516.86,224.04,8.64;9,317.40,528.65,166.75,8.81" xml:id="b18">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">K</forename><surname>Sønderby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Raiko</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Maaløe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">K</forename><surname>Sønderby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Winther</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1602.02282</idno>
+		<title level="m" xml:id="_rTqttV6">Ladder variational autoencoders</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,548.74,234.00,8.64;9,317.40,560.70,132.41,8.64;9,477.11,560.53,64.33,8.58;9,317.40,572.49,75.27,8.58" xml:id="b19">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Ranganath</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Blei</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1511.06499</idno>
+		<title level="m" xml:id="_Be8bBGT">Variational Gaussian process</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="9,307.44,592.58,234.00,8.64;9,317.40,604.54,224.04,8.64;9,317.40,616.32,224.04,8.81;9,317.40,628.45,72.50,8.64" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_G6tj8eG">Rnade: The real-valued neural autoregressive density-estimator</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Uria</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Murray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Larochelle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_zvTSdrR">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="2175" to="2183" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,648.37,234.00,8.64;9,317.40,660.16,168.42,8.81;9,307.44,680.25,234.00,8.64;9,317.40,692.04,224.04,8.81;9,317.40,703.99,75.27,8.58" xml:id="b21">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Valpola</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1411.7783</idno>
+		<idno>arXiv:1601.06759</idno>
+		<title level="m" xml:id="_rjnTHUw">From neural pca to deep unsupervised learning</title>
+				<editor>
+			<persName><forename type="first">A</forename><surname>Oord</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">K</forename><surname>Nal</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">K</forename><surname>Kavukcuoglu</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2014">2014. 2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>Pixel recurrent neural networks</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

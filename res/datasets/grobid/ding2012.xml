@@ -1,0 +1,2565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_XMaJf28">Interleukin-17 contributes to cardiovascular diseases</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2012-02-14">14 February 2012</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,51.02,141.63,71.40,8.78"><forename type="first">Hua-Sheng</forename><surname>Ding</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,131.24,141.63,41.95,8.78"><forename type="first">Jun</forename><surname>Yang</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,182.04,141.63,44.27,8.78"><forename type="first">Jian</forename><surname>Yang</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,51.02,154.10,65.33,8.78"><forename type="first">Jia-Wang</forename><surname>Ding</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,125.23,154.10,45.34,8.78"><forename type="first">Ping</forename><surname>Chen</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,179.49,154.10,40.37,8.78"><forename type="first">Ping</forename><surname>Zhu</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,51.02,529.12,37.56,7.44"><forename type="first">H.-S</forename><surname>Ding</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,91.45,528.66,31.65,8.18"><forename type="first">Á</forename><forename type="middle">J</forename><surname>Yang</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,149.10,529.12,26.55,7.44"><forename type="first">J</forename><surname>Yang</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,183.63,529.12,38.07,7.44"><forename type="first">J.-W</forename><surname>Ding</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,51.02,578.84,37.56,7.44"><forename type="first">H.-S</forename><surname>Ding</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,165.54,578.84,38.07,7.44"><forename type="first">J.-W</forename><surname>Ding</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Institute of Cardiovascular Diseases</orgName>
+								<orgName type="institution">Three Gorges University</orgName>
+								<address>
+									<addrLine>Yichang 443000</addrLine>
+									<settlement>Hubei Province</settlement>
+									<country>China, China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Cardiology</orgName>
+								<orgName type="institution">The First College of Clinical Medical Sciences</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="institution">Three Gorges University</orgName>
+								<address>
+									<addrLine>Yichang 443000</addrLine>
+									<settlement>Hubei Province</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department">Department of Emergency</orgName>
+								<orgName type="institution">The First College of Clinical Medical Sciences</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<orgName type="institution">Three Gorges University</orgName>
+								<address>
+									<addrLine>Yichang 443000</addrLine>
+									<settlement>Hubei Province</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff5">
+								<orgName type="department">Department of Nephrology</orgName>
+								<orgName type="institution">The First College of Clinical Medical Sciences</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff6">
+								<orgName type="institution">Three Gorges University</orgName>
+								<address>
+									<postCode>443000</postCode>
+									<settlement>Yichang, Hubei Province</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_wsxZfag">Interleukin-17 contributes to cardiovascular diseases</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2012-02-14">14 February 2012</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">7A8ABD7FBB9700C5A94E3844E8DDE7DE</idno>
+					<idno type="DOI">10.1007/s11033-012-1580-5</idno>
+					<note type="submission">Received: 5 September 2011 / Accepted: 30 January 2012 /</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-11T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_XEmEmaF">Interleukin-17</term>
+					<term xml:id="_MavnZtt">T helper 17 cells</term>
+					<term xml:id="_HnRM8nM">Inflammatary response</term>
+					<term xml:id="_vk2hkdX">Cardiovascular diseases</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_fjE73pj"><p xml:id="_egJezH5">Interleukin (IL)-17 (also known as IL-17A), as the signature cytokine of the newly described T helper 17 (Th17) cell population, is the founding member of a new subclass of cytokines that have highly proinflammatory properties. Recently there is accumulating evidence that stipulates the involvement of IL-17 in the pathogenesis of cardiovascular diseases via amplifying the inflammation induced by other cytokines in synergistic interactions. The present review provides a summary of the potential roles of IL-17 in the context derived from both animal models and clinical settings in cardiovascular diseases, and perspectives for IL-17-targeted cytokine therapy.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_DYUjE8P">Introduction</head><p xml:id="_Rd5H2wd">CD4 ? T cells which can be induced to differentiate into various T helper (Th) subsets after activation are pivotal in regulating the immune and inflammation response in that they coordinate the functions of other immune cell types <ref type="bibr" coords="1,331.77,358.51,10.61,8.76" target="#b0">[1]</ref>. Traditionally, Th cells are thought to develop into Th1 and Th2 cell subsets with distinct cytokine profiles and functions. Th1 cells are involved in autoimmune diseases and the eradication of intracellular pathogens (by producing interferon-c, IFN-c) while the Th2 cell lineage is important for participating the elimination of extracellular organisms (by producing interleukin (IL)-4, IL-5, and IL-13) <ref type="bibr" coords="1,392.54,445.64,8.04,8.76" target="#b1">[2]</ref><ref type="bibr" coords="1,400.58,445.64,4.02,8.76" target="#b2">[3]</ref><ref type="bibr" coords="1,404.60,445.64,8.04,8.76" target="#b3">[4]</ref>. Recent findings have demonstrated that a new subset of preferential IL-17-producing cells (named Th17 cells) which is distinct from the Th1 or Th2 cells plays a critical role in inducing inflammatory tissue injury <ref type="bibr" coords="1,365.16,495.47,8.32,8.76" target="#b4">[5]</ref><ref type="bibr" coords="1,373.48,495.47,4.16,8.76" target="#b5">[6]</ref><ref type="bibr" coords="1,373.48,495.47,4.16,8.76" target="#b6">[7]</ref><ref type="bibr" coords="1,373.48,495.47,4.16,8.76" target="#b7">[8]</ref><ref type="bibr" coords="1,373.48,495.47,4.16,8.76" target="#b8">[9]</ref><ref type="bibr" coords="1,373.48,495.47,4.16,8.76" target="#b9">[10]</ref><ref type="bibr" coords="1,373.48,495.47,4.16,8.76" target="#b10">[11]</ref><ref type="bibr" coords="1,377.64,495.47,12.48,8.76" target="#b11">[12]</ref>. IL-17 is implicated in numerous immune and inflammatory responses primarily as a proinflammatory regulator by inducing the expression of various inflammatory mediators, such as cytokines, chemokines, adhesion molecules, and growth factors <ref type="bibr" coords="1,514.60,545.25,10.77,8.76" target="#b5">[6,</ref><ref type="bibr" coords="1,529.29,545.25,9.97,8.76" target="#b12">[13]</ref><ref type="bibr" coords="1,539.26,545.25,4.99,8.76" target="#b13">[14]</ref><ref type="bibr" coords="1,539.26,545.25,4.99,8.76" target="#b14">[15]</ref><ref type="bibr" coords="1,306.14,557.72,11.84,8.76" target="#b15">[16]</ref>. There is emerging evidence that an increase in IL-17 level is closely associated with a range of inflammatory diseases including inflammatory bowel diseases, systemic lupus erythematosus, osteoporosis <ref type="bibr" coords="1,452.75,595.08,12.77,8.76" target="#b16">[17]</ref><ref type="bibr" coords="1,465.52,595.08,4.26,8.76" target="#b17">[18]</ref><ref type="bibr" coords="1,469.77,595.08,12.77,8.76" target="#b18">[19]</ref>. Consistently, recent studies have demonstrated that IL-17 has a pivotal role in cardiovascular diseases and has been considered as a crucial regulator in cardiovascular diseases. In this review, we highlight our current knowledge on IL-17 and its role in cardiovascular diseases and hope that this information may aid the development of novel therapeutic strategies for cardiovascular diseases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_mrKshtc">IL-17: structure, sources and function</head><p xml:id="_qNgJGJr">This cytokine was first described as a rodent complementary DNA transcript in 1993 and was originally termed cytotoxic T-lymphocyte-associated antigen 8 (CTLA-8), and later renamed IL-17(also called IL-17A) <ref type="bibr" coords="2,255.00,121.87,12.79,8.76" target="#b19">[20]</ref><ref type="bibr" coords="2,267.79,121.87,4.26,8.76" target="#b20">[21]</ref><ref type="bibr" coords="2,272.05,121.87,12.79,8.76" target="#b21">[22]</ref>. Subsequent genomic sequencing resulted in the discovery of other five additional family members called IL-17B, IL-17C, IL-17D, IL-17E, and IL-17F and they all exerted proinflammatory activities <ref type="bibr" coords="2,167.24,171.70,15.82,8.76" target="#b22">[23,</ref><ref type="bibr" coords="2,189.35,171.70,11.84,8.76" target="#b23">24]</ref>. Among the IL-17 family members, IL-17 as a disulfide-linked homodimeric glycoprotein, is the most intensively investigated cytokine and has 155 amino acids with a molecular weight of 35 kDa <ref type="bibr" coords="2,85.60,221.53,15.81,8.76" target="#b20">[21,</ref><ref type="bibr" coords="2,106.13,221.53,11.84,8.76" target="#b24">25]</ref>. IL-17 gene is located on chromosome 6p12 and the cellular source of IL-17 is produced predominantly by a specific subset of Th cells, namely Th17 cells, but has more recently been expanded to include cd T cells, CD8 ? memory T cells, natural killer T cells, neutrophils eosinophils, macrophages and monocytes <ref type="bibr" coords="2,255.34,283.79,15.82,8.76" target="#b17">[18,</ref><ref type="bibr" coords="2,274.17,283.79,9.97,8.76" target="#b24">[25]</ref><ref type="bibr" coords="2,284.14,283.79,4.99,8.76" target="#b25">[26]</ref><ref type="bibr" coords="2,284.14,283.79,4.99,8.76" target="#b26">[27]</ref><ref type="bibr" coords="2,51.02,296.26,11.84,8.76" target="#b27">[28]</ref>. After binding to its receptors, the key biological function of IL-17 is it involvement in inducing and mediating immune and proinflammatory responses via other cytokines in synergistic interactions. Many studies demonstrated that IL-17 as a proinflammatory cytokine is involved in inflammatory bowel diseases, systemic lupus erythematosus, osteoporosis <ref type="bibr" coords="2,167.87,370.98,12.79,8.76" target="#b16">[17]</ref><ref type="bibr" coords="2,180.65,370.98,4.26,8.76" target="#b17">[18]</ref><ref type="bibr" coords="2,184.92,370.98,12.79,8.76" target="#b18">[19]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_mbEuqGD">IL-17: signaling pathway</head><p xml:id="_xdmtUKR">Similar to the IL-17 cytokine family, IL-17 receptors form a unique family contained five members refer as to IL-17RA, IL-17RB, IL-17RC, IL-17RD, and IL-17RE <ref type="bibr" coords="2,227.51,458.11,15.31,8.76" target="#b23">[24]</ref>. The IL-17 receptors are expressed ubiquitously particularly in nonimmune origin, particularly epithelial and mesenchymal cells within diseased or inflamed tissues <ref type="bibr" coords="2,220.42,495.47,15.76,8.76" target="#b28">[29,</ref><ref type="bibr" coords="2,239.81,495.47,11.84,8.76" target="#b29">30]</ref>. Among these IL-17 receptors, IL-17 binding to both the IL-17RA and IL-17RC subunits mediates signalling pathway <ref type="bibr" coords="2,252.90,520.36,15.31,8.76" target="#b30">[31]</ref>. The biological activity of IL-17 is dependent on a formation of receptor complex composed of IL-17RA and IL-17RC <ref type="bibr" coords="2,270.02,545.30,15.26,8.76" target="#b31">[32]</ref>. IL-17 signaling through its receptors is distinct compared to typical adaptive Th cell cytokines. Rather than activating JAK-STAT pathways, IL-17 stimulates proinflammatory pathways more typical of innate, proinflammatory cytokines such as IL-1 or TLR agonists <ref type="bibr" coords="2,424.91,84.56,15.26,8.76" target="#b23">[24]</ref>. It was demonstrated that IL-17 signaling can induce various downstream pathways which include nuclear factor-jB (NF-jB), mitogen-activated protein kinase (MAPK) pathways and the C/EBP transcription factors which can induce many production of various proinflammatory cytokines <ref type="bibr" coords="2,449.17,146.87,12.79,8.76" target="#b32">[33]</ref><ref type="bibr" coords="2,461.96,146.87,4.26,8.76" target="#b33">[34]</ref><ref type="bibr" coords="2,466.22,146.87,12.79,8.76" target="#b34">[35]</ref>. Recent studies have shown that Act-1(the adaptor protein NF-jB activator 1) plays an important role in IL-17-dependent signaling <ref type="bibr" coords="2,306.14,184.17,12.79,8.76" target="#b35">[36]</ref><ref type="bibr" coords="2,318.92,184.17,4.26,8.76" target="#b36">[37]</ref><ref type="bibr" coords="2,323.19,184.17,12.79,8.76" target="#b37">[38]</ref>. Additionally, the research by Schwander et al. showed that tumor necrosis factor receptor-associated factor 6 was essential for IL-17-induced NF-jB activation and the expression of IL-6 or intercellular adhesion molecule (ICAM)-1 <ref type="bibr" coords="2,350.75,234.00,15.30,8.76" target="#b38">[39]</ref>. Hence, the IL-17 signaling cascade is far from being completely understood.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_KJHkRN5">IL-17 and cardiovascular diseases</head><p xml:id="_axkDRpG">Although significant advances in treatments, cardiovascular diseases remain the leading cause of morbidity and mortality around the world. There is accumulating evidence that inflammatory cytokines (such as IL-6, TLR4, NF-jB) play a key role in the occurrence and development of cardiovascular diseases including atherosclerosis, cardiac ischemia/reperfusion injury, heart failure, and myocarditis <ref type="bibr" coords="2,339.25,395.91,12.79,8.76" target="#b39">[40]</ref><ref type="bibr" coords="2,352.03,395.91,4.26,8.76" target="#b40">[41]</ref><ref type="bibr" coords="2,352.03,395.91,4.26,8.76" target="#b41">[42]</ref><ref type="bibr" coords="2,356.29,395.91,12.79,8.76" target="#b42">[43]</ref>. As its wide and intense proinflammation activity, the contribution of IL-17 in cardiovascular diseases has become investigative focus (Tabel 1).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_EFBMPWa">IL-17 and Atherosclerosis</head><p xml:id="_DvXEngv">Atherosclerosis, defined as lipid-driven and chronic inflammation of the artery wall, involves a complicated interplay between many different cell types and cytokine networks. Both innate and adaptive immune responses have been demonstrated to regulate local and systemic inflammation during all stages of atherogenesis <ref type="bibr" coords="2,508.41,545.35,15.82,8.76" target="#b43">[44,</ref><ref type="bibr" coords="2,528.43,545.35,11.84,8.76" target="#b44">45]</ref>. Macrophages, T lymphocytes and, to a lesser extent, mast cells contribute to the smoldering inflammatory response in the vessel wall <ref type="bibr" coords="3,120.02,59.68,15.81,8.76" target="#b45">[46,</ref><ref type="bibr" coords="3,140.82,59.68,11.84,8.76" target="#b46">47]</ref>. Recent research by Erbel and colleagues showed evidence for the proatherogenic role of IL-17 via proinflammatory changes at multiple levels such as cell adhesion, extravasation, cell activation, T cell (co) stimulation/proliferation, and antigen presentation <ref type="bibr" coords="3,258.23,109.51,15.31,8.76" target="#b47">[48]</ref>. In line with this result, several studies by various investigators have also demonstrated that IL-17 level is increased and IL-17 plays an essential proatherogenesis role in animal models and patients with coronary artery syndrome <ref type="bibr" coords="3,51.02,171.76,12.79,8.76" target="#b48">[49]</ref><ref type="bibr" coords="3,63.81,171.76,4.26,8.76" target="#b49">[50]</ref><ref type="bibr" coords="3,63.81,171.76,4.26,8.76" target="#b50">[51]</ref><ref type="bibr" coords="3,63.81,171.76,4.26,8.76" target="#b51">[52]</ref><ref type="bibr" coords="3,63.81,171.76,4.26,8.76" target="#b52">[53]</ref><ref type="bibr" coords="3,63.81,171.76,4.26,8.76" target="#b53">[54]</ref><ref type="bibr" coords="3,68.07,171.76,12.79,8.76" target="#b54">[55]</ref>. Interestingly, in contrast to these studies, Taleb et al. revealed that loss of suppressor of cytokine signaling-3 (SOCS-3) in mouse T cells increased IL-17A production and induced an anti-inflammatory macrophage phenotype which can lead to a reduction in lesion development and vascular inflammation <ref type="bibr" coords="3,148.70,234.01,15.31,8.76" target="#b55">[56]</ref>. They concluded that IL-17 may have a protective role in atherogenesis despite it was unclear as to whether IL-10 or IL-17 was leading to the suppressor phenotype, as IL-10 can function as a very potent regulatory cytokine which is atheroprotective <ref type="bibr" coords="3,270.02,283.84,15.26,8.76" target="#b55">[56]</ref>.</p><p xml:id="_bGFRTAe">Additionally, these investigators also found that in vivo administration of IL-17 to LDLR -/-mice resulted in reduced endothelial VCAM-1 expression, reduced vascular T cell infiltration and atherosclerotic lesion development and then they concluded that endogenous expression of SOCS3 in T cells can interrupt a major regulatory pathway in atherosclerosis through inhibition of IL-17 production and that IL-17 may function as an atheroprotective cytokine. Taken together, these findings indicate that IL-17 plays dual role in the development of atherosclerosis and these potential mechanisms await more direct studies to address.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_UxjtDqB">IL-17 and myocardial ischemia/reperfusion injury</head><p xml:id="_kSZAs89">Myocardial ischemia reperfusion injury (IRI) refers to the tissue damage which occurs when blood supply returns to tissue after a period of ischemia and is predominantly associated with myocardial infarction but can also be seen in trauma, stroke, solid organ transplantation and coronary artery bypass graft (CABG) surgery <ref type="bibr" coords="3,203.13,557.77,15.81,8.76" target="#b56">[57,</ref><ref type="bibr" coords="3,222.63,557.77,11.84,8.76" target="#b57">58]</ref>. The shorter the ischemic period, the better the clinical outcome. Both T and B cells constituting the primary arms of the adaptive immune response, conventionally thought of as innocent bystanders, play a variety of roles during all phases of IRI <ref type="bibr" coords="3,51.02,620.08,15.81,8.76" target="#b58">[59,</ref><ref type="bibr" coords="3,70.52,620.08,11.84,8.76" target="#b59">60]</ref>. In brain, lung, liver, heart, intestine, and kidney models of IRI, T cells particularly CD4 ? T cells mediate tissue injury and possibly repair as well <ref type="bibr" coords="3,233.80,644.98,12.79,8.76" target="#b58">[59]</ref><ref type="bibr" coords="3,246.59,644.98,4.26,8.76" target="#b59">[60]</ref><ref type="bibr" coords="3,246.59,644.98,4.26,8.76" target="#b60">[61]</ref><ref type="bibr" coords="3,250.85,644.98,12.79,8.76" target="#b61">[62]</ref>. The expression of IL-17 was detected as early as 1 h after reperfusion, lasted for 24 h, and showed no peak in this period <ref type="bibr" coords="3,79.20,682.34,15.30,8.76" target="#b62">[63]</ref>. The study also found that CD4 ? T lymphocyte was a major source of IL-17 in myocardial tissue after reperfusion and administration of anti-IL-17 leaded to a dramatical decrease in serum troponin T and myocardial infarct size, suggesting that IL-17 might be involved in the pathogenesis of myocardial IRI <ref type="bibr" coords="3,437.84,84.57,15.30,8.76" target="#b62">[63]</ref>.  <ref type="bibr" coords="3,446.00,570.25,15.31,8.76" target="#b71">[71]</ref>. Hence, Targeting IL-17 may be an attractive therapy for patients with myocarditis via ameliorating the myocardium inflammation.</p><formula xml:id="formula_0" coords="3,306.14,121.79,9.50,8.78">IL</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_cNyK54C">Conclusions and perspectives</head><p xml:id="_MNYP3nD">The effect of the revision of the Th1/Th2 paradigm to add Th17 cells cannot be overstated as it becomes a watershed in our understanding of the T cell-mediated pathogenesis of cardiovascular diseases. As the predominant product of Th17 cells, IL-17 owns an imperative proinflammatory role and clinical value in the occurence and development of cardiovascular diseases. Current cardiovascular researches suggest that the use of some drugs affecting the receptors and signal transduction pathway of IL-17 will become a hot area of clinical research and that the application of neutralizing antibodies or receptor antagonists of IL-17 to block its biological activity expression may provide a new therapeutic approach in cardiovascular disease research.</p><p xml:id="_4dRhU9H">With the mechanisms of IL-17 and its relevant cytokines to be further explored, IL-17 will have widespread application prospects in the prevention and clinical treatment of cardiovascular diseases.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="3,306.14,121.79,238.10,457.22"><head></head><label></label><figDesc xml:id="_zQaKBqJ">-17 and heart failure</figDesc><table coords="3,306.14,146.87,238.10,432.13"><row><cell>Chronic heart failure,mainly caused by cardiac fibrosis and</cell></row><row><cell>ventricle remodeling, is a progressive syndrome and the</cell></row><row><cell>outcome of a variety of cardiovascular diseases. The</cell></row><row><cell>pathologic changes in heart failure occur in two steps: one</cell></row><row><cell>is cardiomyocyte hypertrophy, necrosis, and apoptosis and</cell></row><row><cell>the other is cardiac fibroblasts hyperplasia and cardiac</cell></row><row><cell>fibrosis defined as a progressive accumulation of fibrillar</cell></row><row><cell>extracellular matrix (ECM). IL-17 can upregulate and/or</cell></row><row><cell>function synergically with local inflammatory mediators</cell></row><row><cell>such as IL-6, IL-1b, and TNF-a, and enhance ECM injury</cell></row><row><cell>by activating the production of matrix metalloprotein-</cell></row><row><cell>ases(MMPs) and inhibiting the synthesis of matrix repair</cell></row><row><cell>components, such as proteoglycans and collagens [64].</cell></row><row><cell>Previous research found that the regulation of Th1/Th2/</cell></row><row><cell>Th17 balance may be one of the underlying mechanisms of</cell></row><row><cell>inflammation-mediated cardiac remodeling [65]. Recent</cell></row><row><cell>study by Feng et al. directly demonstrated that IL-17 can</cell></row><row><cell>contribute to myocardial fibrosis in isoproterenol-induced</cell></row><row><cell>heart failure and the receptor activator of NF-jB ligand/</cell></row><row><cell>osteoprotegerin (RANKL/OPG) system may serve as a link</cell></row><row><cell>between IL-17 and MMP-1 in cardiac fibroblasts [66].</cell></row><row><cell>IL-17 and Myocarditis</cell></row><row><cell>IL-17 is closely correlated with myocarditis. For instance,</cell></row><row><cell>IL-17 mRNA and/or protein obviously elevated in the</cell></row><row><cell>model of viral myocarditis (VMC) mice [67-69]. In addi-</cell></row><row><cell>tion, IL-17 inhibition ameliorated the myocardium</cell></row><row><cell>inflammation in IL-17 monoclonal antibody (IL-17mAb)-</cell></row><row><cell>treated VMC mice, indicating IL-17 is crucially involved</cell></row><row><cell>in the pathogenesis of murine VMC [70]. Recently, Bal-</cell></row><row><cell>deviano GC et al. demonstrated a critical role for IL-17A in</cell></row><row><cell>postmyocarditis cardiac remodeling and the progression to</cell></row><row><cell>dilated cardiomyopathy (DCM)</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0">Mol Biol Rep (2012) 39:7473-7478</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_wYy3gAC"><p xml:id="_Vrsraja">Acknowledgment This work was supported in part by the National Natural Science Foundation of China (Grant No. 81170133) and the Natural Science Foundation of Hubei Province, China (Grant No. 2011CDB179).</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="4,58.45,307.96,230.67,7.44;4,65.59,317.94,223.51,7.44;4,65.59,327.86,223.53,7.44;4,65.59,337.84,114.25,7.44" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_NpaajKs">Two types of murine helper T cell clone. I. Definition according to profiles of lymphokine activities and secreted proteins</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">R</forename><surname>Mosmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Cherwinski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">W</forename><surname>Bond</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Giedlin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">L</forename><surname>Coffman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_6vd9wXg">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">136</biblScope>
+			<biblScope unit="page" from="2348" to="2357" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.45,347.82,230.65,7.44;4,65.59,357.80,151.13,7.44" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_pHYNZ3z">Functional diversity of helper T lymphocytes</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">K</forename><surname>Abbas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">M</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ufgEfd6">Nature</title>
+		<imprint>
+			<biblScope unit="volume">383</biblScope>
+			<biblScope unit="page" from="787" to="793" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.45,367.72,230.67,7.44;4,65.59,377.70,122.37,7.44" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_YrUKmAh">The lineage decisions of helper T cells</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">M</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Reiner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VsmQmJw">Nat Rev Immunol</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="933" to="944" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.45,387.67,230.70,7.44;4,65.59,397.65,29.64,7.44" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_79jrh4w">The Th1/Th2 paradigm</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Romagnani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_BufB2UZ">Immunol Today</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="263" to="266" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.45,407.57,230.67,7.44;4,65.59,417.55,218.57,7.44;4,284.14,415.68,4.96,4.96;4,65.59,427.53,223.52,7.44;4,65.59,437.45,173.30,7.44" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_hTSChMA">Interleukin 17-producing CD4 ? effector T cells develop via a lineage distinct from the T helper type 1 and 2 lineages</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">E</forename><surname>Harrington</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">D</forename><surname>Hatton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Mangan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Turner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">L</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">M</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">T</forename><surname>Weaver</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XA7MY4U">Nat Immunol</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="1123" to="1132" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.45,447.43,230.66,7.44;4,65.59,457.41,223.56,7.44;4,65.59,467.38,223.53,7.44;4,65.59,477.30,131.29,7.44" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_934f4YC">A distinct lineage of CD4 T cells regulates tissue inflammation by producing interleukin 17</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">O</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">H</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Nurieva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Hood</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Dong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ZVASAtA">Nat Immunol</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="1133" to="1141" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.45,487.28,230.67,7.44;4,65.59,497.26,223.52,7.44;4,65.59,507.24,223.48,7.44;4,65.59,517.16,217.67,7.44" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_MBcGRBU">Surface phenotype and antigenic specificity of human interleukin 17-producing T helper memory cells</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">V</forename><surname>Acosta-Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Rivino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Geginat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Jarrossay</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Gattorno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lanzavecchia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Sallusto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Napolitani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8RWffxz">Nat Immunol</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="639" to="646" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.45,527.14,230.71,7.44;4,65.59,537.12,223.54,7.44;4,65.59,547.04,223.48,7.44;4,65.59,557.02,212.45,7.44" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_6EPNHxK">Interleukins 1 beta and 6 but not transforming growth factor-beta are essential for the differentiation of interleukin 17-producing human T helper cells</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">V</forename><surname>Acosta-Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Napolitani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lanzavecchia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Sallusto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_taBvJUr">Nat Immunol</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="942" to="949" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.45,566.99,230.67,7.44;4,65.59,576.57,223.53,7.84;4,65.59,586.89,223.56,7.44;4,65.59,596.87,223.50,7.44;4,65.59,606.85,94.12,7.44" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_ehRyTM8">Phenotypic and functional features of human Th17 cells</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Annunziato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Cosmi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Santarlasci</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Maggi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Liotta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Mazzinghi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Parente</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">`</forename><forename type="middle">L</forename><surname>Filı</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ferri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Frosali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Giudici</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Romagnani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Parronchi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Tonelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Maggi</forename><forename type="middle">E</forename><surname>Romagnani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_sd43qaE">J Exp Med</title>
+		<imprint>
+			<biblScope unit="volume">204</biblScope>
+			<biblScope unit="page" from="1849" to="1861" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.08,616.83,231.02,7.44;4,65.59,626.75,220.62,7.44" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_Pa6WqWr">TH-17 cells in the circle of immunity and autoimmunity</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Bettelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Oukka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">K</forename><surname>Kuchroo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Phq5gBc">Nat Immunol</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="345" to="350" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.08,636.73,231.06,7.44;4,65.59,646.71,223.54,7.44;4,65.59,656.63,36.25,7.44" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_QqvQQvk">TH17 cells in development: an updated view of their molecular identity and genetic programming</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Dong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ftRZkF9">Nat Rev Immunol</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="337" to="348" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.08,666.60,231.03,7.44;4,65.59,676.58,223.52,7.44;4,65.59,686.56,116.80,7.44" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_VwN4ygA">Th17: an effector CD4 T cell lineage with regulatory T cell ties</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">T</forename><surname>Weaver</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">E</forename><surname>Harrington</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Mangan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Gavrieli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">M</forename><surname>Murphy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CeqS4P4">Immunity</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="677" to="688" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,58.08,696.31,231.04,7.61;4,65.59,706.46,217.54,7.44" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_tA2RN36">Interleukin-17: a mediator of inflammatory responses</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Witowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ksiazek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jo</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mtMWPJG">Cell Mol Life Sci</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="567" to="579" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,59.43,231.06,7.44;4,320.71,69.35,223.54,7.44;4,320.71,79.32,219.56,7.44" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_h7Tzsn3">Modulation of bronchial epithelial cells by IL-17</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kawaguchi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Kokubu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Kuga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Matsukura</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Hoshino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ieki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Imai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Adachi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">K</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wHEf9tB">J Allergy Clin Immunol</title>
+		<imprint>
+			<biblScope unit="volume">108</biblScope>
+			<biblScope unit="page" from="804" to="809" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,89.30,231.06,7.44;4,320.71,99.22,223.52,7.44;4,320.71,109.20,223.46,7.44;4,320.71,119.18,148.66,7.44" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_2RMJeNZ">PTEN down-regulates IL-17 expression in a murine model of toluene di isocyanate-induced airway disease</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">R</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">S</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">H</forename><surname>Min</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">H</forename><surname>Choe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">R</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7m4Rphy">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">179</biblScope>
+			<biblScope unit="page" from="6820" to="6829" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,129.16,230.99,7.44;4,320.71,139.08,194.47,7.44" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_qKXsEze">Interleukin 17 in vascular inflammation</title>
+		<author>
+			<persName coords=""><forename type="first">Von</forename><surname>Vietinghoff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5FmX977">Cytokine Growth Factor Rev</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="463" to="469" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,149.06,231.02,7.44;4,320.71,159.04,223.52,7.44;4,320.71,169.01,149.20,7.44" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_jQB68Gf">Increased expression of interleukin 17 in inflammatory bowel disease</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Fujino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Andoh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Bamba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ogawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Hata</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Araki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Bamba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Fujiyama</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MZY5kkk">Gut</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="65" to="70" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,178.94,231.06,7.44;4,320.71,188.91,223.55,7.44;4,320.71,198.89,223.52,7.44;4,320.71,208.87,136.90,7.44" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_ywBSWsH">Increased serum interleukin 17 in patients with systemic lupus erythematosus</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">F</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">F</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">P</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">C</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">M</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">P</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">Q</forename><surname>Ye</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KjpQgwr">Mol Biol Rep</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="81" to="85" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,218.79,231.05,7.44;4,320.71,228.77,223.47,7.44;4,320.71,238.75,173.60,7.44" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_fveCSTs">Type 17 T-helper cells might be a promising therapeutic target for osteoporosis</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">L</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">G</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">Q</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">S</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_C4WftQX">Mol Biol Rep</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="771" to="774" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,248.33,231.07,7.78;4,320.71,258.65,223.51,7.44;4,320.71,268.62,223.53,7.44;4,320.71,278.60,184.04,7.44" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_6uHsAYP">CTLA-8, cloned from an activated T cell, bearing AU-rich messenger RNA instability sequences, and homologous to a herpesvirus Saimiri gene</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Rouvier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">F</forename><surname>Luciani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Matte ´i Mg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Denizot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Golstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_egvRJWn">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">150</biblScope>
+			<biblScope unit="page" from="5445" to="5456" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,288.52,231.03,7.44;4,320.71,298.50,223.52,7.44;4,320.71,308.48,223.50,7.44;4,320.71,318.46,105.42,7.44" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_tzZy9DK">Herpesvirus Saimiri encodes a new cytokine, IL-17, which binds to a novel cytokine receptor</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">C</forename><surname>Fanslow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">F</forename><surname>Seldin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Rousseau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Painter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">R</forename><surname>Comeau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">I</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">K</forename><surname>Spriggs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EhCZskM">Immunity</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="811" to="821" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,328.38,231.07,7.44;4,320.71,338.36,223.51,7.44;4,320.71,348.34,44.72,7.44" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_pFGHqkU">Complete nucleotide sequence of the mouse CTLA 8 gene</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Timour</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Painter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Fanslow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Spriggs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_h5nDmFu">Gene</title>
+		<imprint>
+			<biblScope unit="volume">168</biblScope>
+			<biblScope unit="page" from="223" to="225" />
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,358.26,231.03,7.44;4,320.71,368.24,223.53,7.44;4,320.71,378.21,216.33,7.44" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_RcT5wy7">Regulatory mechanisms of helper T cell differentiation: new lessons learned from interleukin 17 family cytokines</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">P</forename><surname>Pappu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Angkasekwinai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Dong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_j8RrTzZ">Pharmacol Ther</title>
+		<imprint>
+			<biblScope unit="volume">117</biblScope>
+			<biblScope unit="page" from="374" to="384" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,388.19,231.01,7.44;4,320.71,398.11,129.00,7.44" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_mBwn4Xr">Structure and signalling in the IL-17 receptor family</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Gaffen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JgNJhQR">Nat Rev Immunol</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="556" to="567" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,407.75,231.06,7.78;4,320.71,418.07,127.11,7.44" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_NASxGWb">Linde ´n A (2004) Interleukin-17 family members and inflammation</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">K</forename><surname>Kolls</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_YkZJPvt">Immunity</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="467" to="476" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,428.05,231.03,7.44;4,320.71,437.97,223.54,7.44;4,320.71,447.95,223.55,7.44;4,320.71,457.92,223.51,7.44;4,320.71,467.90,100.66,7.44" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_g659wfY">Critical role of ROR-gammat in a new thymic pathway leading to IL-17-producing invariant NKT cell differentiation</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">L</forename><surname>Michel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Mendes-Da-Cruz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">C</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Lochner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Dy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Eberl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Leite-De-Moraes</forename><surname>Mc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2ZKR97t">Proc Natl Acad Sci U S A</title>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="page" from="19845" to="19850" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,477.82,231.02,7.44;4,320.71,487.80,223.51,7.44;4,320.71,497.78,53.76,7.44;4,389.99,497.78,40.99,7.44;4,446.51,497.78,32.35,7.44;4,494.36,497.78,3.26,7.44;4,513.13,497.78,31.13,7.44;4,320.71,507.70,53.19,7.44" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_6SaaFHd">IL-17 production is dominated by gamma delta T cells rather than CD4 T cells during Mycobacterium tuberculosis infection</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Lockhart</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Flynn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_uyEn2Tx">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">177</biblScope>
+			<biblScope unit="page" from="4662" to="4669" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,517.34,231.03,7.78;4,320.71,527.66,223.52,7.44;4,320.71,537.64,223.52,7.44;4,320.71,547.56,198.70,7.44" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_f9Ab8Mq">IL-17 is increased in asthmatic airways and induces human bronchial fibroblasts to produce cytokines</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Molet</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Hamid</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Davoine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Nutku</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Taha</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">´n</forename><surname>Page</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Olivenstein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Elias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Chakir</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_QBTQVcm">J Allergy Clin Immunol</title>
+		<imprint>
+			<biblScope unit="volume">108</biblScope>
+			<biblScope unit="page" from="430" to="438" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,557.54,231.01,7.44;4,320.71,567.51,167.52,7.44" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_6mfyJQE">IL-17/Th17 targeting: on the road to prevent chronic destructive arthritis?</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Lubberts</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_W3TpMGk">Cytokine</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="84" to="91" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,577.49,231.04,7.44;4,320.71,587.41,223.52,7.44;4,320.71,597.39,40.49,7.44" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_7VzMNaX">IL-17 and the Th17 lineage in systemic lupus erythematosus</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">A</forename><surname>Garrett-Sinha</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Gaffen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KHMNnAb">Curr Opin Rheumatol</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="519" to="525" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,607.37,231.03,7.44;4,320.71,617.29,223.56,7.44;4,320.71,627.27,223.51,7.44;4,320.71,637.25,223.51,7.44;4,320.71,647.22,223.52,7.44;4,320.71,657.15,223.52,7.44;4,320.71,667.12,223.54,7.44;4,320.71,677.10,38.11,7.44" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_7gbp8TE">Identification of the IL-17 receptor related molecule IL-17RC as the receptor for IL-17F</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">E</forename><surname>Kuestner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">W</forename><surname>Taft</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Haran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">S</forename><surname>Brandt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Brender</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Lum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Harder</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Okada</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">D</forename><surname>Ostrander</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Kreindler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Aujla</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Reardon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Shea</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Schreckhise</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">R</forename><surname>Bukowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Presnell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Guerra-Lewis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Parrish-Novak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Ellsworth</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Jaspers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">E</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Appleby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">K</forename><surname>Kolls</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Rixon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">W</forename><surname>West</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">D</forename><surname>Levin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FBKbZk8">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">179</biblScope>
+			<biblScope unit="page" from="5462" to="5473" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,313.20,687.08,231.05,7.44;4,320.71,697.00,223.49,7.44;4,320.71,706.98,220.56,7.44" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_gJCx6UG">Cutting edge: interleukin 17 signals through a heteromeric receptor complex</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Toy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Kugler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wolfson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vanden</forename><surname>Bos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Gurgel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Derry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Tocker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Peschon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_g7WwEzY">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">177</biblScope>
+			<biblScope unit="page" from="36" to="39" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,59.42,231.01,7.44;5,65.59,69.34,74.45,7.44" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_59GSzDp">An overview of IL-17 function and signaling</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Gaffen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_hveFVv5">Cytokine</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="402" to="407" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,79.32,230.98,7.44;5,65.59,89.30,223.53,7.44;5,65.59,99.22,223.47,7.44;5,65.59,109.20,108.32,7.44" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_uDG7tCs">Interleukin-17-induced gene expression in articular chondrocytes is associated with activation of mitogen-activated protein kinases and NF-kappaB</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Shalom-Barak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Quach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Lotz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Hx44WbZ">J Biol Chem</title>
+		<imprint>
+			<biblScope unit="volume">273</biblScope>
+			<biblScope unit="page" from="27467" to="27473" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,119.18,231.02,7.44;5,65.59,129.15,223.52,7.44;5,65.59,139.08,70.21,7.44" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_pnHeCCQ">Structure-function relationships in the IL-17 receptor: implications for signal transduction and therapy</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Gaffen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XSmkPju">Cytokine</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="92" to="104" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,149.05,231.03,7.44;5,65.59,159.03,223.48,7.44;5,65.59,169.01,141.14,7.44" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_r4kF3Rr">Act1 adaptor protein is an immediate and essential signaling component of interleukin-17 receptor</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">H</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Dong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_uVAa49J">J Biol Chem</title>
+		<imprint>
+			<biblScope unit="volume">281</biblScope>
+			<biblScope unit="page" from="35603" to="35607" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,178.93,231.03,7.44;5,65.59,188.91,223.48,7.44;5,65.59,198.89,223.55,7.44;5,65.59,208.87,223.54,7.44;5,65.59,218.79,223.50,7.44;5,65.59,228.76,85.29,7.44" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_EeYSmDZ">The adaptor Act1 is required for interleukin 17-dependent signaling associated with autoimmune and inflammatory disease</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Hartupee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">Z</forename><surname>Altuntas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">F</forename><surname>Gulen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jane-Wit D</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiao</forename><forename type="middle">J</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Giltiay</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kordula</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><forename type="middle">W</forename><surname>Vallance</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Swaidani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Aronica</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Tuohy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">K</forename><surname>Hamilton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">X</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_HmRqnMe">Nat Immunol</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="247" to="256" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,238.74,231.06,7.44;5,65.59,248.66,223.56,7.44;5,65.59,258.64,29.64,7.44" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" xml:id="_KyDBxmW">Act1 modulates autoimmunity through its dual functions in CD40L/BAFF and IL-17 signaling</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_c9tXY6K">Cytokine</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="page" from="105" to="113" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,268.62,231.02,7.44;5,65.59,278.60,223.52,7.44;5,65.59,288.52,215.16,7.44" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_8xC9enA">Requirement of tumor necrosis factor receptor-associated factor (TRAF) 6 in interleukin 17 signal transduction</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Schwandner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Yamaguchi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Cao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TRQ4HW3">J Exp Med</title>
+		<imprint>
+			<biblScope unit="volume">191</biblScope>
+			<biblScope unit="page" from="1233" to="1240" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,298.50,231.08,7.44;5,65.59,308.48,223.50,7.44;5,65.59,318.45,223.50,7.44;5,65.59,328.38,212.06,7.44" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_KmzjKWX">Attenuation of ischemia-reperfusion injury by Sevoflurane postconditioning involves protein kinase B and glycogen synthase kinase 3 beta activation in isolated rat hearts</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">X</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">T</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">X</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">H</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_SX46jXw">Mol Biol Rep</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="3763" to="3769" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,338.35,231.02,7.44;5,65.59,348.33,223.49,7.44;5,65.59,358.25,223.54,7.44;5,65.59,368.23,48.95,7.44" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_vWvwj6K">The cardioprotective effect of fluvastatin on ischemic injury via down-regulation of toll-like receptor 4</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X-D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J-W</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z-Q</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S-G</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fTPbBtH">Mol Biol Rep</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="3037" to="3044" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,378.21,231.03,7.44;5,65.59,388.19,223.47,7.44;5,65.59,398.11,223.50,7.44;5,65.59,408.09,223.56,7.44;5,65.59,418.06,29.64,7.44" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" xml:id="_xvxh6bK">Adenosine postconditioning protects against myocardial ischemia-reperfusion injury though modulate production of TNF-alpha, prevents activation of transcription factor NF-kappaB</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Ke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">X</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">L</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zVzWUUu">Mol Biol Rep</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="531" to="553" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,428.04,231.05,7.44;5,65.59,437.96,223.52,7.44;5,65.59,447.94,223.52,7.44;5,65.59,457.92,223.53,7.44;5,65.59,467.90,114.24,7.44" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_uaGrqAE">A polymorphism in the visfatin gene promoter is related to decreased plasma levels of inflammatory markers in patients with coronary artery diseases</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">P</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><forename type="middle">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">Z</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nT5MnvX">Mol Biol Rep</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="819" to="825" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,477.82,231.06,7.44;5,65.59,487.80,223.54,7.44;5,65.59,497.78,56.02,7.44" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_JcTeqyR">Innate and adaptive immunity in the pathogenesis of atherosclerosis</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">K</forename><surname>Hansson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Libby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Schonbeck</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">Q</forename><surname>Yan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_V5yCa2x">Circ Res</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="page" from="281" to="291" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,507.70,231.02,7.44;5,65.59,517.68,217.44,7.44" xml:id="b44">
+	<analytic>
+		<title level="a" type="main" xml:id="_ChM29WD">The immune response in atherosclerosis: a double-edged sword</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">K</forename><surname>Hansson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Libby</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cVTsJHy">Nat Rev Immunol</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="508" to="519" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,527.65,231.03,7.44;5,65.59,537.63,223.55,7.44;5,65.59,547.55,223.50,7.44;5,65.59,557.53,114.70,7.44" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_bmTAvYB">Atherosclerotic lesions in humans. In situ immunophenotypic analysis suggesting an immune mediated response</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">C</forename><surname>Van Der Wal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">K</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Bentz Van De Berg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Van Der Loos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">E</forename><surname>Becker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_stVBZ62">Lab Invest</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="166" to="170" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,567.51,231.03,7.44;5,65.59,577.49,223.54,7.44;5,65.59,587.41,223.53,7.44;5,65.59,597.39,16.94,7.44" xml:id="b46">
+	<analytic>
+		<title level="a" type="main" xml:id="_PxundUn">Infiltrates of activated mast cells at the site of coronary atheromatous erosion or rupture in myocardial infarction</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">T</forename><surname>Kovanen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kaartinen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Paavonen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fexPfgy">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="page" from="1084" to="1088" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,607.36,231.03,7.44;5,65.59,617.12,223.53,7.61;5,65.59,627.26,223.46,7.44;5,65.59,637.24,114.76,7.44" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_XgZk26V">Inhibition of IL-17A attenuates atherosclerotic lesion development in apoE-deficient mice</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Erbel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Bea</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Wangler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Celik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Lasitschka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bo</forename><surname>¨ckler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Katus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">A</forename><surname>Dengler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EunKkSX">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">183</biblScope>
+			<biblScope unit="page" from="8167" to="8175" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,647.22,231.03,7.44;5,65.59,657.14,174.13,7.44" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" xml:id="_Ne2eybk">IL-6 and the acute phase response in murine atherosclerosis</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Schindler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eGdD3Kj">Atherosclerosis</title>
+		<imprint>
+			<biblScope unit="volume">177</biblScope>
+			<biblScope unit="page" from="43" to="51" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,58.08,667.12,231.03,7.44;5,65.59,677.10,223.51,7.44;5,65.59,687.08,223.51,7.44;5,65.59,697.00,223.55,7.44;5,65.59,706.97,141.74,7.44" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" xml:id="_XXxaZDg">Interleukin-17 and interferongamma are produced concomitantly by human coronary arteryinfiltrating T cells and act synergistically on vascular smooth muscle cells</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">E</forename><surname>Eid</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">F</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ranjbaran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Gallo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">I</forename><surname>Sokol</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Pfau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Pober</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Tellides</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WCPnNaV">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="page" from="1424" to="1432" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,59.43,231.03,7.44;5,320.71,69.35,223.54,7.44;5,320.71,79.33,179.86,7.44" xml:id="b50">
+	<analytic>
+		<title level="a" type="main" xml:id="_H2Vwa3y">The Th17/Treg imbalance in patients with acute coronary syndrome</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">J</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><forename type="middle">Q</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">T</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">H</forename><surname>Liao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gXv7JMt">Clin Immunol</title>
+		<imprint>
+			<biblScope unit="volume">127</biblScope>
+			<biblScope unit="page" from="89" to="97" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,89.31,231.01,7.44;5,320.71,99.23,223.55,7.44;5,320.71,109.21,223.51,7.44;5,320.71,119.19,147.35,7.44" xml:id="b51">
+	<analytic>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">T</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">L</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">H</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">Y</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">H</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Cheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_MsrVdUp">The Th17/Treg functional imbalance during atherogenesis in ApoE</title>
+				<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="185" to="193" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,129.16,231.06,7.44;5,320.71,139.08,223.48,7.44;5,320.71,149.06,223.55,7.44;5,320.71,159.04,223.54,7.44;5,320.71,169.02,29.64,7.44" xml:id="b52">
+	<analytic>
+		<title level="a" type="main" xml:id="_uvSVseD">Differential expression of interleukin-17 family cytokines in intact and complicated human atherosclerotic plaques</title>
+		<author>
+			<persName coords=""><forename type="first">O</forename><forename type="middle">J</forename><surname>De Boer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Van Der Meer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Teeling</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Van Der Loos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">M</forename><surname>Idu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Van Maldegem</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Aten</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">C</forename><surname>Van Der Wal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bjfrDS2">J Pathol</title>
+		<imprint>
+			<biblScope unit="volume">220</biblScope>
+			<biblScope unit="page" from="499" to="508" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,178.94,231.03,7.44;5,320.71,188.92,223.55,7.44;5,320.71,198.90,220.55,7.44" xml:id="b53">
+	<analytic>
+		<title level="a" type="main" xml:id="_7yK635x">Blockade of IL-17A results in reduced atherosclerosis in apoE-deficient mice</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kmr</forename><surname>Prasad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Butcher</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dobrian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">K</forename><surname>Kolls</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Galkina</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FSc2ByY">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page" from="1746" to="1755" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,208.87,231.06,7.44;5,320.71,218.80,223.55,7.44;5,320.71,228.77,223.52,7.44;5,320.71,238.75,114.76,7.44" xml:id="b54">
+	<analytic>
+		<title level="a" type="main" xml:id="_4PVKF4g">IL-17A is proatherogenic in high-fat diet-induced and Chlamydia pneumoniae infection-accelerated atherosclerosis in mice</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Shimada</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Crother</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Arditi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EEKvXch">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">185</biblScope>
+			<biblScope unit="page" from="5619" to="5627" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,248.67,231.00,7.44;5,320.71,258.65,223.52,7.44;5,320.71,268.63,223.49,7.44;5,320.71,278.61,223.50,7.44;5,320.71,288.53,128.25,7.44" xml:id="b55">
+	<analytic>
+		<title level="a" type="main" xml:id="_EfD3x33">Loss of SOCS3 expression in T cells reveals a regulatory role for interleukin-17 in atherosclerosis</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Taleb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Romain</forename><forename type="middle">M</forename><surname>Ramkhelawon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Uyttenhove</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Pasterkamp</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Herbin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Esposito</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Perez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Yasukawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Snick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">V</forename><surname>Yoshimura</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Tedgui</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Mallat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Rmf59FN">J Exp Med</title>
+		<imprint>
+			<biblScope unit="volume">206</biblScope>
+			<biblScope unit="page" from="2067" to="2077" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,298.51,231.00,7.44;5,320.71,308.49,140.78,7.44" xml:id="b56">
+	<analytic>
+		<title level="a" type="main" xml:id="_WThBUJz">Acute myocardial infarction: reperfusion treatment</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Ribichini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Wijns</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UwEawMc">Heart</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="page" from="298" to="305" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,318.46,231.01,7.44;5,320.71,328.38,223.56,7.44;5,320.71,338.36,21.17,7.44" xml:id="b57">
+	<analytic>
+		<title level="a" type="main" xml:id="_hDaXj7g">The inflammatory response in myocardial infarction</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">G</forename><surname>Frangogiannis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">W</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">L</forename><surname>Entman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xz6WZND">Cardiovasc Res</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="31" to="47" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,348.34,231.06,7.44;5,320.71,358.26,182.88,7.44" xml:id="b58">
+	<analytic>
+		<title level="a" type="main" xml:id="_TbypByA">Ischemia-reperfusion and immediate T cell responses</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Rabb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Womer</forename><surname>Kl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gCjveM2">Cell Immunol</title>
+		<imprint>
+			<biblScope unit="volume">248</biblScope>
+			<biblScope unit="page" from="4" to="11" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,368.24,231.06,7.44;5,320.71,378.22,183.24,7.44" xml:id="b59">
+	<analytic>
+		<title level="a" type="main" xml:id="_HfpwV6u">Lymphocytes and ischemia-reperfusion injury</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Linfert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Chowdhry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Rabb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_BWNJ44s">Transplant Rev</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,387.80,231.06,7.84;5,320.71,398.12,223.50,7.44;5,320.71,408.10,154.91,7.44;5,475.60,406.21,4.96,4.96;5,485.86,408.08,58.37,7.44;5,320.71,418.06,223.53,7.44;5,320.71,428.04,155.90,7.44" xml:id="b60">
+	<analytic>
+		<title level="a" type="main" xml:id="_d4nRMm3">IL-17 producing CD4 ? T cells mediate accelerated ischemia/reperfusion-induced injury in autoimmunity-prone mice</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Edgerton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Crispı ´n</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Moratz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Bettelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Oukka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Simovic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zacharia</forename><forename type="middle">A</forename><surname>Egan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dalle</forename><surname>Lucca</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Juang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">T</forename><surname>Tsokos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">C</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_t9hrE3Y">Clin Immunol</title>
+		<imprint>
+			<biblScope unit="volume">130</biblScope>
+			<biblScope unit="page" from="313" to="321" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,437.96,231.06,7.44;5,320.71,447.94,223.52,7.44;5,320.71,457.92,215.80,7.44" xml:id="b61">
+	<analytic>
+		<title level="a" type="main" xml:id="_3qgWFxm">In vitro induced CD4(?)CD25(?)Foxp3(?) Tregs attenuate hepatic ischemia-reperfusion injury</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Pu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_3WbsQxV">Int Immunopharmacol</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="549" to="552" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,467.89,231.08,7.44;5,320.71,477.82,223.55,7.44;5,320.71,487.79,212.89,7.44" xml:id="b62">
+	<analytic>
+		<title level="a" type="main" xml:id="_J6ykq4p">The role of IL-17 in ischemia reperfusion injury</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">T</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">F</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">X</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">F</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">F</forename><surname>Nie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">H</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Cheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_BfuGd3p">J Clin Cardiol</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="130" to="132" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,497.77,231.04,7.44;5,320.71,507.69,223.52,7.44;5,320.71,517.67,223.55,7.44;5,320.71,527.65,36.25,7.44" xml:id="b63">
+	<analytic>
+		<title level="a" type="main" xml:id="_mcqM3mm">The role of T helper 17 (Th17) and regulatory T cells (Treg) in human organ transplantation and autoimmune disease</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Afzali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Lombardi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">I</forename><surname>Lechler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">M</forename><surname>Lord</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EfWx2DM">Clin Exp Immunol</title>
+		<imprint>
+			<biblScope unit="volume">148</biblScope>
+			<biblScope unit="page" from="32" to="46" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,537.63,231.03,7.44;5,320.71,547.55,223.55,7.44;5,320.71,557.53,223.54,7.44;5,320.71,567.50,81.93,7.44" xml:id="b64">
+	<analytic>
+		<title level="a" type="main" xml:id="_vETGDqy">IL-17 induces myocardial fibrosis and enhances RANKL/OPG and MMP/TIMP signaling in isoproterenol-induced heart failure</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yan</forename><forename type="middle">W</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cQrDzrG">Exp Mol Pathol</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page" from="212" to="218" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,577.48,231.03,7.44;5,320.71,587.40,223.48,7.44;5,320.71,597.38,223.51,7.44;5,320.71,607.36,154.04,7.44" xml:id="b65">
+	<analytic>
+		<title level="a" type="main" xml:id="_2VYVurk">Adenovirus-mediated ICOSIg gene transfer alleviates cardiac remodeling in experimental autoimmune myocarditis</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Fu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CTM8h5g">Immunol Cell Biol</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="659" to="665" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,617.28,231.07,7.44;5,320.71,627.26,223.53,7.44;5,320.71,637.24,223.49,7.44;5,320.71,647.22,177.57,7.44" xml:id="b66">
+	<analytic>
+		<title level="a" type="main" xml:id="_kCc8rmB">Th17 cells contribute to viral replication in coxsackievirus B3-induced acute viral myocarditis</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><forename type="middle">W</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">L</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">P</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">H</forename><surname>Liao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_NbFz2K3">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">185</biblScope>
+			<biblScope unit="page" from="4004" to="4010" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,657.14,231.07,7.44;5,320.71,667.12,223.52,7.44;5,320.71,677.09,191.27,7.44" xml:id="b67">
+	<analytic>
+		<title level="a" type="main" xml:id="_MtqMkES">Distinct different expression of Th17 and Th9 cells in coxsackie virus B3-induced mice viral myocarditis</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Qing</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Weifeng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yuluan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yanlan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_uNwSR6a">Virol J</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">267</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,313.20,687.07,231.07,7.44;5,320.71,696.99,223.53,7.44;5,320.71,706.97,195.91,7.44" xml:id="b68">
+	<analytic>
+		<title level="a" type="main" xml:id="_ukgjcTr">Expression of IL-23/Th17 pathway in a murine model of coxsackie virus B3-induced viral myocarditis</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">F</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">L</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">L</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_78pRQYP">Virol J</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">301</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,51.02,34.36,125.26,7.44;5,527.30,34.36,16.94,7.44" xml:id="b69">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JhGmHfU">Mol Biol Rep</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page">7477</biblScope>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,58.08,59.42,231.05,7.44;6,65.59,69.34,223.52,7.44;6,65.59,79.32,223.49,7.44;6,65.59,89.30,112.48,7.44" xml:id="b70">
+	<analytic>
+		<title level="a" type="main" xml:id="_wF2UGRc">Treatment with a neutralizing anti-murine interleukin-17 antibody after the onset of coxsackievirus b3-induced viral myocarditis reduces myocardium inflammation</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yuluan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Qing</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yanlan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gXV4g5s">Virol J</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">17</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.20,59.42,231.03,7.44;6,320.71,69.34,223.52,7.44;6,320.71,79.32,223.51,7.44;6,320.71,89.30,223.55,7.44" xml:id="b71">
+	<analytic>
+		<title level="a" type="main" xml:id="_fYbT7e3">Interleukin-17A is dispensable for myocarditis but essential for the progression to dilated cardiomyopathy</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">C</forename><surname>Baldeviano</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">V</forename><surname>Talor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Bedja</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Gabrielson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Iwakura</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">R</forename><surname>Rose</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Cihakova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_u63XcQ6">Circ Res</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="page" from="1646" to="1655" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
