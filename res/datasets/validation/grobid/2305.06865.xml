@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_22ryqYe">MULTI-TIER CLIENT SELECTION FOR MOBILE FEDERATED LEARNING NETWORKS</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2023-05-11">11 May 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,219.68,126.78,50.38,10.29"><forename type="first">Yulan</forename><surname>Gao</surname></persName>
+							<email>yulan.gao@ntu.edu.sg</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Nanyang Technological University</orgName>
+								<address>
+									<country key="SG">Singapore</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,280.52,126.78,67.65,10.29"><forename type="first">Yansong</forename><surname>Zhao</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Nanyang Technological University</orgName>
+								<address>
+									<country key="SG">Singapore</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,358.64,126.78,35.10,10.29"><forename type="first">Han</forename><surname>Yu</surname></persName>
+							<email>han.yu@ntu.edu.sg</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Nanyang Technological University</orgName>
+								<address>
+									<country key="SG">Singapore</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_3MjAhRa">MULTI-TIER CLIENT SELECTION FOR MOBILE FEDERATED LEARNING NETWORKS</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-05-11">11 May 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">28A4797C4B80143CA8638F5BEEF534A0</idno>
+					<idno type="arXiv">arXiv:2305.06865v1[cs.LG]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_775R88N">Federated Learning Network</term>
+					<term xml:id="_B9hpqxj">Social Relations</term>
+					<term xml:id="_dYMuE9q">Client Selection</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_XSnhrzx"><p xml:id="_bEgC4kC">Federated learning (FL), which addresses data privacy issues by training models on resource-constrained mobile devices in a distributed manner, has attracted significant research attention. However, the problem of optimizing FL client selection in mobile federated learning networks (MFLNs), where devices move in and out of each others' coverage and no FL server knows all the data owners, remains open. To bridge this gap, we propose a first-of-its-kind Socially-aware Federated Client Selection (SocFedCS) approach to minimize costs and train high-quality FL models. SocFedCS enriches the candidate FL client pool by enabling data owners to propagate FL task information through their local networks of trust, even as devices are moving into and out of each others' coverage. Based on Lyapunov optimization, we first transform this time-coupled problem into a step-by-step optimization problem. Then, we design a method based on alternating minimization and self-adaptive global best harmony search to solve this mixed-integer optimization problem. Extensive experiments comparing SocFedCS against five state-of-theart approaches based on four real-world multimedia datasets demonstrate that it achieves 2.06% higher test accuracy and 12.24% lower cost on average than the best-performing baseline.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1." xml:id="_pMZ6VhZ">INTRODUCTION</head><p xml:id="_twxs7Uy">Federated learning (FL) is a distributed collaborative machine learning (ML) paradigm that has emerged in the context of growing data privacy concerns. It is built on the fundamental principle of offloading training from a central server to local devices (a.k.a. clients) <ref type="bibr" coords="1,152.61,613.66,10.58,8.64" target="#b0">[1]</ref>. In this way, data owners' sensitive privacy information can be protected as FL avoids the movement of raw data from the devices to the central server. From an application standpoint, coupled with the prevalence of ubiquitously connected mobile smart devices (e.g., mobile phone, iPad, edge sensors, etc.), the expected upsurge of distributed mobile terminals collaboratively training ML models is materializing <ref type="bibr" coords="1,118.62,697.35,10.58,8.64" target="#b1">[2]</ref>. In mobile federated learning networks (MFLNs) 1 as exemplified in Figure <ref type="figure" coords="1,402.33,468.19,3.74,8.64" target="#fig_0">1</ref>, devices (e.g., mobile phones, autonomous vehicles) are highly heterogeneous in terms of their capabilities and availability. This is exacerbated by the fact that mobile devices are moving around and can enter or exit each other's coverage over time. Coupled with concerns that there exist malicious devices seeking to compromise the privacy of others <ref type="bibr" coords="1,375.32,539.92,10.58,8.64" target="#b2">[3]</ref>, optimizing the selection of clients to join FL tasks is an important research challenge.</p><p xml:id="_MMCN8Pb">The social relationships among mobile clients can be established via the mobile social networks (MSNs) connecting them. Research on leveraging MSNs to enhance FL client selection has emerged in recent years to improve the trustworthiness and reliability of the selected clients, while mitigating misbehaviours <ref type="bibr" coords="1,391.81,623.86,10.79,8.64" target="#b3">[4,</ref><ref type="bibr" coords="1,405.56,623.86,7.19,8.64" target="#b4">5]</ref>. These investigations, however, are based on the common assumption that the FL server knows all the candidate FL clients. This assumption is not always realistic, especially in MFLNs in which the inherent conflict between FL client access and wireless broadband shortage exists. Therefore, considering a more realistic setting in which the FL server does not know all data owners and needs to rely on other nodes to recommend candidate FL clients to it, is a challenging open research question which must be solved to enable practical MFLNs to emerge.</p><p xml:id="_nQuYeAA">To bridge this important gap, we propose the Sociallyaware Federated Client Selection (SocFedCS) approach for trustworthy and cost-effective FL client selection in MFLNs. It takes into account whether an FL client has established trustworthy social relationships with the FL server, and classifies them into: 1) first-order clients (FCs), and 2) secondorder clients (SCs). The set of FCs are data owners known to the FL server through previous interactions in an <ref type="bibr" coords="2,268.03,195.40,30.17,8.64">MFLN.</ref> In contrast, SCs are data owners who are not directly known to the FL server, but are known to one or more FCs. The FL server cannot directly access SCs. The social relationships among nodes in an MFLN can be measured by the frequency of communications. In addition, FCs and SCs can enter or exit the coverage by a given FL server over time, and thus might not be able to continuously participate in FL training. SocFedCS aims to dynamically select FL clients for a given FL server from the pool of directly or indirectly known candidate mobile clients to form FL teams under the aforementioned setting.</p><p xml:id="_XCUV3Rn">SocFedCS is, to the best of our knowledge, the first multitier client FL selection approach leveraging client recommendation. FCs can recommend trusted SCs to the FL server under SocFedCS to enhance the optimization of client selection decisions. Specifically, we formulate an infinite-horizon time-average problem to jointly optimize the FL client selection and the local model training to achieve the minimum time-average cost in the worst case. By leveraging Lyapunov optimization, we transform the complex time-coupled problem into a step-by-step online joint optimization problem. Specifically, we design a two-stage algorithm which uses a computationally affordable search for obtaining the trustworthy and cost-effective FL client selection, and selfadaptive global best harmony search (SGHS) for optimal local model accuracy. We evaluate and compare the performance of SocFedCS against five state-of-the-art FL client selection approaches through extensive experiments based on real-world multimedia datasets MNIST, Fashion-MNIST, CIFAR-10, and CIFAR-100. The results show that SocFedCS achieves 2.06% higher test accuracy and 12.24% lower cost on average than the best-performing baseline.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2." xml:id="_acSmDK6">RELATED WORK</head><p xml:id="_SzCeyW7">With regard to FL client selection, a range of sophisticated approaches have been proposed to achieve the goals of improving FL model performance and training efficiency (e.g., FedCS <ref type="bibr" coords="2,85.26,666.83,11.62,8.64" target="#b5">[6]</ref> and FedGS <ref type="bibr" coords="2,150.07,666.83,10.45,8.64" target="#b6">[7]</ref>). Subsequently, FL client selection strategies for performance trade-off optimization have been studied in <ref type="bibr" coords="2,120.97,690.74,10.58,8.64" target="#b7">[8]</ref>. An application of the FL client selection in multimedia course recommendation can be found in <ref type="bibr" coords="2,54.43,714.65,10.58,8.64" target="#b8">[9]</ref>. However, they did not take client trustworthiness into ac-count and are not effective in attracting high-quality clients.</p><p xml:id="_Vh8UgC5">A promising way to improve FL client selection is to leverage additional information (e.g., trust among clients). A pioneering work in <ref type="bibr" coords="2,406.28,111.57,16.60,8.64" target="#b9">[10]</ref> revealed the potential benefits of communicating with trusted users for FL through rigorous regret analysis. Khan et al. <ref type="bibr" coords="2,425.59,135.48,11.62,8.64" target="#b3">[4]</ref> investigated the loss function minimization problem for socially-aware-clustering-enabled dispersed FL (DDFL) based on matching theory. Cluster heads of the DDFL framework are determined based on social ties. They then act as aggregation servers. The key challenges, opportunities and research roadmap of social-aware FL have been detailed in <ref type="bibr" coords="2,419.82,207.21,10.58,8.64" target="#b4">[5]</ref>. To elaborate, FL client selection can be improved by leveraging social connections among clients to identify trusted data owners. The aforementioned studies are all based on the assumption that the FL server knows all the FL clients, and the FL clients stay within the coverage of the FL server throughout the training process.</p><p xml:id="_SpEar4E">Different from the above literature, SocFedCS is designed to select cost-effective and trustworthy FL clients and schedule them at different rounds, while meeting the long-term requirements of FL training. It supports more realistic settings in which the FL server does not know all the data owners, and enables multi-tier search for suitable clients through a social network <ref type="bibr" coords="2,350.32,350.89,15.77,8.64" target="#b10">[11,</ref><ref type="bibr" coords="2,368.65,350.89,13.28,8.64" target="#b11">12]</ref> of client mobile devices which can dynamically enter or exist the coverage area of the FL server.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3." xml:id="_CFUtSZm">PRELIMINARIES</head><p xml:id="_XngnUfw">We consider an MFLN consisting of N densely and randomly mobile FL clients within the coverage of the FL server, where the N clients are a union of M FCs and K SCs (N = M +K). The FL server can directly communicate with FCs, but not with SCs. The index sets of FCs and SCs are denoted as M {1, 2, . . . , M } and K {1, 2, . . . , K}, respectively. Without loss of generality, we assume that the number of SCs is no less than FCs (i.e., K ≥ M ). In order to upload and update trained parameters, we consider an OFDMA protocol to establish a wireless communication for clients.</p><p xml:id="_yPzBm9g">Discussions on superimposing social networks over mobile FL have been propelled to the forefront of FL research <ref type="bibr" coords="2,315.21,558.11,10.58,8.64" target="#b3">[4]</ref>. The driving motivation is that information embeded in social attributes can potentially support client discovery, selection and avoid leakage of learning parameters in MFLNs. Based on the Community Impact Factor <ref type="bibr" coords="2,479.20,593.97,10.58,8.64" target="#b3">[4]</ref>, we characterize the social relationship between FCs and SCs with the level of trust reflected by the average communication frequency between any pair of mobile devices. We denote social relationships as an M × K weighted matrix W t = [w t m,k ] with each entry w t m,k ∈ [0, 1] representing the trust between FC m and SC k, which is quantified by the normalized communication frequency between m and k. The social trust determines whether an FC would recommend an SC to an FL server or not. In order to reduce the exposure by an FL server to the risk of unreliable client recommendations, we limit the level of trust transitivity <ref type="bibr" coords="3,132.99,75.48,16.60,8.64" target="#b12">[13]</ref> to two in this paper (i.e., if a server trusts FC m, and m trusts SC k, then the server can trust k; but no further).</p><p xml:id="_hSqygFF">FL training minimizes the loss function through communications between the server and the clients. Each client iteratively computes the local model until a local accuracy 0 ≤ θ ≤ 1 is achieved, and then uploads it to the FL server. The collected local models are aggregated to form a global model ω ω ω. When a specific global model accuracy 0 ≤ ≤ 1 is reached, the FL training process is terminated. As mentioned in <ref type="bibr" coords="3,65.97,195.31,15.27,8.64" target="#b13">[14]</ref>, for the convex loss function, the local iterations is general upper bounded by O(log(1/θ)) = η log(1/θ), which is suitable for gradient or stochastic descent iterative algorithms. In addition, the number of local iterations can be normalized as log(1/θ). Here, θ and are the differences of the model gradients between two successive iterations of training at the local level and at the global level, respectively. 2   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4." xml:id="_nHhx4pF">THE PROPOSED APPROACH</head><p xml:id="_MJsa6tm">In this section, we describe how SocFedCS leverages social relationships among MFLN devices to optimize FL client selection. To facilitate the introduction of SocFedCS, the following entities are modeled from the perspective of FCs because SCs are recommended by FCs known to the FL server. Thus, the union of potential clients in the view of an FC m is Nm = N m ∪ {m}, where N m = {k ∈ K |w m,k &gt; 0} is the set of SCs trusted by m. The FL server can directly select a known FC or an SC recommended by a known FC.</p><p xml:id="_c9MF7bd">In the communication phase, the data rate of each FL client i ∈ Nm , m ∈ M under SocFedCS can be written as:</p><formula xml:id="formula_0" coords="3,100.51,458.97,197.69,12.69">R t m,i = α t m,i B log[1 + h t i p i /(N 0 B)],<label>(1)</label></formula><p xml:id="_NAjVcpA">where α t m,i ∈ {0, 1} is the FL client selection indicator in the view of FC m in the t-th round, i.e., α t m,i = 1 if any i ∈ Nm is chosen by the server, α t m,i = 0 otherwise. B represents the transmission bandwidth, N 0 is the spectrum density of the white Gaussian noise. p i represents the transmit power budget of client i. h t i denotes the channel power gain between client i and the FL server. We denote the data size of the local model at client i as C i . Thus, the time of uploading them can be estimated as T com,t m,i = C i /R t m,i . Correspondingly, the energy consumption for uploading local model parameters is E com,t m,i = α t m,i p i T com,t m,i . In the computation phase, the total number of CPU cycles required to process the training D i data samples is D i Q i , where Q i is the number of CPU cycles that is required to process one data sample. Let f i be the CPU frequency of client i, ρ i f ζ i denotes the computational power of i, where ρ i is a constant that depends on the average switched capacitance and </p><formula xml:id="formula_1" coords="3,315.21,96.39,243.78,37.52">i is T cmp,t m,i = α t m,i D i Q i /f i . The correspond- ing energy consumption for one local iteration at client i is E cmp,t m,i = ρ i D i Q i (α t m,i ) ζ−1 f ζ−1 i</formula><p xml:id="_Aykt9Kr">. The time cost, T t m,i , and energy consumption, E t m,i , at client i ∈ Nm in the t-th round can be respectively formulated as:</p><formula xml:id="formula_2" coords="3,344.70,164.59,214.29,13.61">T t m,i = 1/(1 − θ t )[log(1/θ t )T cmp,t m,i + T com,t m,i ],<label>(2)</label></formula><formula xml:id="formula_3" coords="3,343.17,181.94,215.82,13.61">E t m,i = 1/(1 − θ t )[log(1/θ t )E cmp,t m,i + E com,t m,i ].<label>(3)</label></formula><p xml:id="_FEr2ghX">Constraints and Assumptions.</p><p xml:id="_rWh5Z7w">(1) Long-term Goal of FL training: For a given MFLN, the long-term goal of FL training shall be considered as FCs may occasionally be unable to perform FL tasks due to resource constraints and unavailability. To this end, we introduce a long-term constraint in Eq. ( <ref type="formula" coords="3,551.25,251.79,3.87,8.64" target="#formula_4">4</ref>) to ensure that the target participation rate for an FC m shall not be lower than ∆ ∈ [0, 1]. Without loss of generality, we set ∆ = L/N where L is the maximum number of clients allowed to join FL training in each round.</p><formula xml:id="formula_4" coords="3,325.94,315.94,229.18,22.31">lim R→∞ 1 R R t=1 E i∈ Nm α t m,i ≥ ∆, ∀m ∈ M. (<label>4</label></formula><formula xml:id="formula_5" coords="3,555.12,323.00,3.87,8.64">)</formula><p xml:id="_cRUspuX">(2) The Duration of a Local Iteration: To alleviate the straggler issue, for each FL client i ∈ Nm , m ∈ M, the training time for one local iteration shall be upper bounded by T cmp max , which can be formulated as:</p><formula xml:id="formula_6" coords="3,351.49,397.37,207.50,13.14">α t m,i D t i Q i /f i ≤ T cmp max , ∀i ∈ Nm , m ∈ M.<label>(5)</label></formula><p xml:id="_9bmzh2v">We employ the weighted sum method to deal with the tradeoff between energy consumption and delay using parameters λ t i and λ e i with 0 ≤ λ t i , λ e i ≤ 1, λ t i + λ e i = 1. Thus, the Weighted Sum of Energy consumption and Time cost (WSET) is expressed as λ t i T t m,i + λ e i E t m,i . Therefore, the total cost of each i ∈ Nm , m ∈ M can be modeled as:</p><formula xml:id="formula_7" coords="3,339.35,498.93,219.64,26.67">G t m,i = λ t i T t m,i + λ e i E t m,i + σC 0 , if i = m, λ t i T t m,i + λ e i E t m,i , otherwise,<label>(6)</label></formula><p xml:id="_KzU2pCx">where σC 0 represents the cost of an SC being successfully recommended by an FC. σ &gt; 0 is a control parameter that enables system administrators to indicate their relative preferences between WSET and the cost of recommendation. It is reasonable to add an additional cost when an SC is selected since SCs are not directly known to an FL server. In addition, for simplicity, C 0 &gt; 0 can be considered as constant since FCs have trusted SCs within their local networks.</p><p xml:id="_rzkr7sC">To summarize, SocFedCS is designed to solve the following optimization problem:</p><formula xml:id="formula_8" coords="3,357.89,658.88,201.11,22.33">min α α α t ,θ t lim R→∞ 1 R R t=1 max i∈ Nm,m∈M G t m,i<label>(7)</label></formula><formula xml:id="formula_9" coords="3,362.30,685.27,196.69,13.14">s.t. α t m,i ∈ {0, 1}, ∀i ∈ Nm , m ∈ M,<label>(7a)</label></formula><formula xml:id="formula_10" coords="3,394.96,702.39,159.89,20.09">M m=1 α t m,i ≤ 1, ∀i ∈ Nm , (<label>7b</label></formula><formula xml:id="formula_11" coords="3,554.84,708.67,4.15,8.64">) i∈ Nm α t m,i ≤ 1, ∀m ∈ M,<label>(7c)</label></formula><p xml:id="_37KBR3G">Eq. ( <ref type="formula" coords="4,139.30,95.30,3.87,8.64" target="#formula_4">4</ref>) and Eq. ( <ref type="formula" coords="4,186.65,95.30,3.60,8.64" target="#formula_6">5</ref>),</p><p xml:id="_PRvS9UG">where α α α t = {α t m,i } i∈ Nm,m∈M represents the set of client selection policies.</p><p xml:id="_tbu2EV3">The goal of Eq. ( <ref type="formula" coords="4,138.56,136.31,3.87,8.64" target="#formula_8">7</ref>) is to minimize clients' long-term cost (WSET and cost of recommendation) subject to the long-term requirements of FL training in Eq. ( <ref type="formula" coords="4,198.26,160.22,3.87,8.64" target="#formula_4">4</ref>) (which tolerates shortterm violation), as well as a hard constraint in Eq. ( <ref type="formula" coords="4,263.33,172.18,3.87,8.64" target="#formula_6">5</ref>) which cannot be compromised. The time-coupled objective function and Constraint (4) are difficult for offline solutions to deal with. In addition, client selection is performed before the real training process. Subsequently, for an alternative suboptimal problem to be solved, we elaborate on our transformation of the offline problem into a step-by-step online scheduling problem which can be effectively solved by Lyapunov optimization <ref type="bibr" coords="4,91.78,267.82,15.27,8.64" target="#b14">[15]</ref>.</p><p xml:id="_g3GEWuu">To transform Eq. ( <ref type="formula" coords="4,150.06,279.78,3.87,8.64" target="#formula_8">7</ref>) into an online optimization problem, we introduce a virtual queue z t m for an FC m to rewrite Eq. ( <ref type="formula" coords="4,100.18,303.69,3.53,8.64" target="#formula_4">4</ref>). The queuing dynamics of z m is expressed as</p><formula xml:id="formula_13" coords="4,54.43,316.40,243.78,36.75">z t+1 m = max 0, z t m + ∆1 [ i∈ Nm α t m,i =0] − i∈ Nm α t m,i . 1 [condition] is an indicator function. Its value is 1 if [condi- tion]</formula><p xml:id="_9HkRaEm">is true; otherwise, its value is 0. Inspired by <ref type="bibr" coords="4,262.11,344.52,15.27,8.64" target="#b14">[15]</ref>, Eq. ( <ref type="formula" coords="4,58.30,356.47,3.87,8.64" target="#formula_4">4</ref>) holds if all the virtual queues remain mean rate stable throughout the FL process. Thus, we use Lyapunov optimization to limit the growth of each queue z t m . Consider a quadratic Lyapunov function L(Θ Θ Θ t )</p><formula xml:id="formula_14" coords="4,54.43,390.14,243.78,61.71">1 2 m∈M (z t m ) 2 , where Θ Θ Θ t {z t m } m∈M . The drift of the Lyapunov function L(Θ Θ Θ t ) = E[L(Θ Θ Θ t+1 ) − L(Θ Θ Θ t )|Θ Θ Θ t ] satisfies: L(Θ Θ Θ t ) ≤ Γ + m∈M z t m E ∆ − i∈ Nm α t m,i |Θ Θ Θ t , (<label>8</label></formula><formula xml:id="formula_15" coords="4,294.33,438.03,3.87,8.64">)</formula><p xml:id="_NnbqadF">where Γ = M (1 + ∆ 2 )/2 is a constant. Thus, our goal is to minimize the combination of the right-hand-side of Eq. ( <ref type="formula" coords="4,290.46,471.21,3.87,8.64" target="#formula_14">8</ref>) and a penalty term V G t m,i , where V ≥ 0 is a weight for balancing the trade-off between the goals of minimization and satisfying Eq. ( <ref type="formula" coords="4,115.83,507.08,3.53,8.64" target="#formula_4">4</ref>).</p><p xml:id="_XkREas2">For brevity, we omit the constant (i.e., Γ) and transform Eq. ( <ref type="formula" coords="4,74.94,530.99,3.87,8.64" target="#formula_8">7</ref>) into the following problem:</p><formula xml:id="formula_16" coords="4,61.72,548.35,236.49,23.14">min α α α t ,θ t max i∈ Nm,m∈M V G t m,i + m∈M z t m ∆ − i∈ Nm α t m,i<label>(9)</label></formula><p xml:id="_C9F6Rhw">s.t. Eq. ( <ref type="formula" coords="4,100.04,578.00,3.87,8.64" target="#formula_6">5</ref>) and Eq. (7a) − (7c).</p><p xml:id="_5TEHweP">It can be observed that the objective function Eq. ( <ref type="formula" coords="4,259.94,595.10,3.87,8.64" target="#formula_16">9</ref>) is nonconvex and Constraints (7a) and (7b) imply that Eq. ( <ref type="formula" coords="4,269.20,607.05,3.87,8.64" target="#formula_16">9</ref>) is an integer optimization problem. In general, there is no efficient and standard method to solve such mixed-integer problems.</p><p xml:id="_nKXU3zs">Using the alternating optimization techniques, we separately and iteratively solve α α α t and θ t . In particular, we first solve for optimal FL client selection α α α t given a fixed θ t , and then derive the optimal local model accuracy θ t * when α α α t is fixed. Moreover, due to the unique client selection constraints Eq. (7a)-Eq. (7c), the number of possible client selection strategies is reduced from 2 M (K+1) to (K + 1) M .</p><p xml:id="_eQHsT2Y">Here, given θ t , we propose a computationally affordable approach according to the characteristics of Constraint ( <ref type="formula" coords="4,551.24,87.43,3.87,8.64" target="#formula_6">5</ref>) to obtain the feasible set of selected clients for Eq. ( <ref type="formula" coords="4,548.41,99.39,3.53,8.64" target="#formula_16">9</ref>). With this feasible selection set, upon introducing</p><formula xml:id="formula_18" coords="4,315.21,109.45,243.77,24.68">F m,i (θ t ) = V G t m,i + m∈M [∆− i∈ Nm α t m,i ]</formula><p xml:id="_2FMB6wp">, each FC m simply ranks candidate SCs (i ∈ Nm ) in ascending order of their F m,i (θ t ) values, and recommends the one with the lowest F m,i (θ t ) to the FL server. The FL server then sorts the received candidate SCs in ascending order of their F m,i (θ t ) values. For each round, the FL server selects the top-L clients with the lowest F m,i (θ t ) values for FL training. Then, the FL server updates the virtual queues associated with all FCs.</p><p xml:id="_FZh5UDF">Based on the aforementioned optimal selection policy α α α t , we set the function F(θ t ) = max i∈ Nm,m∈M F m,i (θ t ). Upon introducing function F(θ t ), the optimal local model accuracy can be deduced by the following unconstrained problem:</p><formula xml:id="formula_19" coords="4,408.85,276.11,150.14,16.95">min 0≤θ t ≤1 F(θ t ).<label>(10)</label></formula><p xml:id="_EuC4AnH">Eq. ( <ref type="formula" coords="4,335.83,305.65,8.30,8.64" target="#formula_19">10</ref>) can be solved by following the SGHS algorithm <ref type="bibr" coords="4,539.90,305.65,15.27,8.64" target="#b15">[16]</ref>.</p><p xml:id="_RwvqUn9">It is described by a five-tuple HMS, HMCR, PAR, BW, NI consisting of the following components: Harmony Memory Size (HMS), Harmony Memory Consideration Rate (HMCR), Pitch Adjustment Rate (PAR), Distance BandWidth (BW) and the number of Improvisations (NI). By introducing these adaptive parameters, SGHS can achieve improved performance on continuously optimizing Eq. ( <ref type="formula" coords="4,476.26,389.33,7.64,8.64" target="#formula_19">10</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5." xml:id="_End5bN7">EXPERIMENTAL EVALUATION</head><p xml:id="_ZnNghXb">In this section, we conduct extensive experiments to evaluate SocFedCS based on the Erdos-Renyi random network <ref type="bibr" coords="4,315.21,464.58,16.60,8.64" target="#b16">[17]</ref> and four multimedia datasets: MNIST, Fashion-MNIST, CIFAR-10, and CIFAR-100.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1." xml:id="_xZwpR4t">Experiment Settings</head><p xml:id="_sbNVMcQ">To ensure that the complexity of the simulations is tractable while considering a significantly loaded system, we design a circular area with size π(100 × 100) m 2 centered around an FL server containing M = 40 randomly distributed FCs and K = 80 SCs. To model a realistic mobile environment, the Gauss-Markov mobility model <ref type="bibr" coords="4,460.50,582.95,16.60,8.64" target="#b17">[18]</ref> is used to simulate the movements of mobile devices. The Erdos-Renyi random graph is used to construct the social relationships among FCs and SCs with a connection probability of p = 0.7. The trust level W t can be further established through online social networks, the entries w t m,k of which quantify the average communication rate between pairs of nodes.</p><p xml:id="_QtSy9sY">We consider an MFLN environment with carrier frequency 2.3 GHz and bandwidth 0.2 MHz. The channel realizations are generated according to the 3GPP propagation environment. Throughout the simulations, candidate clients are assumed to have the same computation time constraint in For mentioned datasets, the training set is distributed to N = 120 clients (i.e., FCs and SCs). The availability of each client follows the same Bernoulli distribution with parameter 0.6. For each round, we select L = 14 clients from the population. We investigated two experimental scenarios: Scenario 1: the data distribution of clients is IID. To simulate different quality levels of local data, we generate different percentages of noisy labels to clients based on the trust levels between FCs and SCs. Specifically, each FC m owns 100(1 − w m,: /w)% noisy data, where w m,: = k∈K w m,k and w = m∈M,k∈K w m,k . Likewise, each SC k owns 100(1 − w :,k /w)% noisy data with w :,k = m∈M w m,k . Scenario 2: following the data quality settings in Scenario 1, we consider the non-IID data distributions with a heterogeneity level of 30%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2." xml:id="_qWUQEMz">Comparison Approaches</head><p xml:id="_Z5JfA9v">We compare the performance of SocFedCS with the following five approaches in terms of the time-average cost (Eq. ( <ref type="formula" coords="5,270.70,508.09,3.73,8.64" target="#formula_8">7</ref>)) and the global model test accuracy:</p><p xml:id="_gH9ztVb">1. Random: FL server randomly selects L available FCs. 2. Greedy: FL server selects the top L available FCs with the lowest costs in each round. 3. PowCS <ref type="bibr" coords="5,112.35,576.32,15.49,8.64" target="#b18">[19]</ref>: Under this approach, the server first samples from a fixed candidate set M 0 (L ≤ |M 0 | ≤ M ) FCs. Then, the server sends the current global model ω ω ω t to the FCs in M 0 . These FCs compute and send back to the server their local loss. 3 Finally, from the candidate set M 0 , the server selects the L FCs with the highest local loss. 4. FedCS <ref type="bibr" coords="5,112.21,662.00,10.79,8.64" target="#b5">[6]</ref>: It allows the FL server to aggregate as many available FC local model updates as possible 3 The local loss function is Lm(ω</p><formula xml:id="formula_20" coords="5,55.62,689.81,242.59,25.05">ω ω) = 1 Dm Dm l=1 f l (x l , y l , ω ω ω) = 1 Dm Dm l=1 1 2 ||y l − ω ω ω T x l || 2</formula><p xml:id="_Ayt8cJ3">, where {x l , y l } Dm l=1 represents the inputoutput pair of each data sample. within a fixed deadline. We set the deadline to 2 s, which makes the number of selected clients appropriate relative to L. 5. Oort <ref type="bibr" coords="5,362.71,262.43,15.49,8.64" target="#b19">[20]</ref>: Based on the guidelines outlined in <ref type="bibr" coords="5,525.54,262.43,15.27,8.64" target="#b19">[20]</ref>, the FL server possesses the capacity to select the top L FCs who have made the most valuable contributions.</p><p xml:id="_SE4Z33u">The performance comparison is based on the premise that the aforementioned approaches only perform FL client selection in the first-order client tier. To assess the effectiveness of SocFedCS, we set up an environment with PyTorch. We train two different convolutional neural network (CNN) models for MNIST, Fashion-MNIST, CIFAR-10, and CIFAR-100, respectively. All mentioned datasets are divided among the FL clients following Scenario 1 and Scenario 2.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3." xml:id="_6BKfBUM">Results and Discussion</head><p xml:id="_PkUTVzj">In this section, we analyze the performance of the comparison approaches in terms of time-average cost and test accuracy. The results are shown in Table <ref type="table" coords="5,439.23,472.89,3.74,8.64" target="#tab_0">1</ref>.</p><p xml:id="_KBvZbQQ">In terms of time-average cost, it can be observed that SocFedCS significantly outperforms all the baselines. FedCS performs the worst due to its aggressive strategy for selecting as many clients as possible, which can lead to significant increases in costs. SocFedCS can reduce cost by 12.24% on average compared with the best performing baseline -Greedy -which can only perform FL client selection on the FC tier. This result demonstrates that, despite the additional cost of cross-tier client selection, the SocFedCS approach enables multi-tier search for suitable clients with minimal cost.</p><p xml:id="_QwAzrDy">According to Eq. ( <ref type="formula" coords="5,407.40,607.05,3.53,8.64" target="#formula_7">6</ref>), the FL server's aggressive attitude towards cost reduction can lead to a higher local test accuracy (i.e., θ), thereby leading to lower global test accuracy. As expected, the model performance under Greedy, which only performs FL client selection on the FC tier, is poor. SocFedCS can consistently produce high-quality FL models, while reducing the cost. Table <ref type="table" coords="5,410.03,678.78,4.98,8.64" target="#tab_0">1</ref> shows that SocFedCS achieves the highest test accuracy or close to the highest test accuracy under all experiment settings. It achieves 2.06% higher average test accuracy than the best performing baseline, FedCS.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6." xml:id="_vuzzKWU">CONCLUSIONS AND FUTURE WORK</head><p xml:id="_W7hzXqD">In this paper, we proposed the SocFedCS to optimize multitier FL client selection in MFLNs, in which FL servers do not know all candidate FL clients. We design a virtual queue and leverage Lyapunov optimization to tackle the long-term constraints and objectives that are time-coupled. A computationally affordable iterative algorithm exploiting alternating minimization and SGHS is then proposed to solve the mixedinteger optimization problem efficiently. In light of the results of simulations and experiments, we found that SocFedCS achieved 12.24% lower cost and 2.06% higher test accuracy on average than the best performing baselines. To the best of our knowledge, it is the first multi-tier client selection approach designed for MFLNs.</p><p xml:id="_zPa4tzC">In subsequent research, we will extend SocFedCS to support longer chains of trust transtivity beyond the current two steps so that more candidate FL clients can be indirectly leveraged in complex MFLNs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7." xml:id="_TdkSF3Q">ACKNOWLEDGEMENT</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="1,315.21,387.80,243.78,9.03;1,315.21,400.15,243.77,8.64;1,315.21,412.10,243.77,8.64;1,315.21,424.06,135.05,8.64;1,339.59,205.70,195.03,167.06"><head>Fig. 1 .</head><label>1</label><figDesc xml:id="_qS2H3JP">Fig. 1. An example MFLN. The size of a node corresponds to the number of other nodes it is connected to. Purple nodes represent FL servers initiating FL tasks. Green nodes represent data owners (i.e., FL clients).</figDesc><graphic coords="1,339.59,205.70,195.03,167.06" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,65.29,695.50,27.95,8.25;3,88.16,695.31,57.45,8.44;3,140.53,695.31,157.67,8.62;3,54.43,706.23,36.47,7.17;3,85.82,705.99,212.38,7.40;3,54.43,715.95,39.67,6.91;3,315.21,75.16,243.78,8.96;3,315.21,87.43,243.78,8.64;3,315.21,99.39,51.68,8.64"><head>2</head><label></label><figDesc xml:id="_D8URB8B">|| L(ω ω ω t )|| ≤ || L(ω ω ω t−1 )|| and || Lm(ω ω ω t )|| ≤ θ|| Lm(ω ω ω t−1 )||, where L(ω ω ω) and Lm(ω ω ω) are the loss function of global and local model, respectively. the average activity factor, and ζ(ζ ≥ 2) is a constant. Then, under SocFedCS, the computation time for one local iteration at client</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,54.43,81.95,488.41,199.08"><head>Table 1 .</head><label>1</label><figDesc xml:id="_FEftduv">Performance comparison under Scenario 1 (S1) and Scenario 2 (S2). The transmit power budget p n of each client n ∈ N is randomly assigned from the set {0.1, 0.2, 0.3, 0.4, 0.5} Watt. The CPU frequency f n of each client n is uniformly selected from the set {2 × 10 7 , 3 × 10 7 , . . . , 2 × 10 8 } cycles/byte.</figDesc><table coords="5,54.43,94.26,488.41,140.61"><row><cell></cell><cell>MNIST</cell><cell></cell><cell>CIFAR-10</cell><cell></cell><cell cols="2">Fashion-MNIST</cell><cell cols="2">CIFAR-100</cell></row><row><cell>Method</cell><cell>S1</cell><cell>S2</cell><cell>S1</cell><cell>S2</cell><cell>S1</cell><cell>S2</cell><cell>S1</cell><cell>S2</cell></row><row><cell></cell><cell cols="8">Cost Acc (%) Acc (%) Cost Acc (%) Acc (%) Cost Acc (%) Acc (%) Cost Acc (%) Acc (%)</cell></row><row><cell cols="2">Random 3.981 85.21</cell><cell cols="2">67.48 4.247 58.93</cell><cell cols="2">49.33 3.996 67.23</cell><cell cols="2">60.52 4.276 47.82</cell><cell>38.27</cell></row><row><cell cols="2">Greedy 2.976 94.15</cell><cell cols="2">75.17 3.257 64.06</cell><cell cols="2">57.70 2.966 83.09</cell><cell cols="2">74.98 3.265 50.77</cell><cell>44.25</cell></row><row><cell cols="2">PowCS 3.987 96.25</cell><cell cols="2">82.63 4.248 65.71</cell><cell cols="2">57.13 3.988 95.51</cell><cell cols="2">82.14 4.289 55.27</cell><cell>49.27</cell></row><row><cell cols="2">FedCS 4.997 97.98</cell><cell cols="2">85.42 4.299 65.33</cell><cell cols="2">57.07 5.017 94.17</cell><cell cols="2">85.01 5.349 57.21</cell><cell>48.37</cell></row><row><cell>Oort</cell><cell>3.568 96.33</cell><cell cols="2">83.73 3.848 65.96</cell><cell cols="2">56.34 3.670 95.12</cell><cell cols="2">81.76 3.975 55.22</cell><cell>49.33</cell></row><row><cell cols="2">SocFedCS 2.598 97.70</cell><cell>87.09 2.901</cell><cell></cell><cell cols="2">58.51 2.490 97.56</cell><cell cols="2">85.66 2.950 60.17</cell><cell>51.83</cell></row><row><cell cols="3">one local iteration, T cmp max = 0.1 s.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_RK9DQBJ"><p xml:id="_tW8EgVG">This research is supported, in part, by the National Research Foundation Singapore and DSO National Laboratories under the AI Singapore Programme (AISG Award No: AISG2-RP-2020-019); the RIE 2020 Advanced Manufacturing and Engineering (AME) Programmatic Fund (No. A20G8b0102), Singapore; the Joint NTU-WeBank Research Centre on Fintech (NWJ-2020-008); the Nanyang Assistant Professorship (NAP); Future Communications Research &amp; Development Programme (FCP-NTU-RG-2021-014); and the Joint SDU-NTU Centre for Artificial Intelligence Research (C-FAIR).</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="6,76.00,498.72,222.20,8.64;6,76.00,510.68,222.20,8.64;6,76.00,522.46,222.20,8.81;6,76.00,534.59,87.17,8.64" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZHwvxQR">Federated machine learning: concept and applications</title>
+		<author>
+			<persName coords=""><forename type="first">Qiang</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tianjian</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yongxin</forename><surname>Tong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_AC8rjyD">ACM Trans. Intell. Syst. Technol</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="19" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,76.00,546.73,222.20,8.64;6,76.00,558.68,222.20,8.64;6,76.00,570.64,222.20,8.64;6,76.00,582.42,159.58,8.81" xml:id="b1">
+	<monogr>
+		<title level="m" type="main" xml:id="_f25RhZb">Federated optimization: distributed machine learning for on-device intelligence</title>
+		<author>
+			<persName coords=""><forename type="first">Jakub</forename><surname>Konečnỳ</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Brendan</forename><surname>Mcmahan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><surname>Ramage</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Richtárik</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1610.02527</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="6,76.00,594.73,222.21,8.64;6,76.00,606.52,222.20,8.81;6,76.00,618.47,114.85,8.81" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_WcqNwsY">Privacy and robustness in federated learning: Attacks and defenses</title>
+		<author>
+			<persName coords=""><forename type="first">Lingjuan</forename><surname>Lyu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jHN8Yx6">IEEE Trans. Neural Networks Learn. Syst</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,76.00,630.78,222.21,8.64;6,76.00,642.73,91.24,8.64;6,188.35,642.73,109.85,8.64;6,76.00,654.52,222.20,8.81;6,76.00,666.48,222.20,8.81;6,76.00,678.60,22.42,8.64" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_RkgcmBQ">Socially-aware-clusteringenabled federated learning for edge networks</title>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Latif</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhu</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dusit</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Choong</forename><surname>Niyato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hong</forename><surname>Seon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_437tswH">IEEE Trans. Net. Ser. Manag</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="2641" to="2658" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,76.00,690.74,222.21,8.64;6,76.00,702.69,222.20,8.64;6,76.00,714.48,179.43,8.81" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_QdQfMe9">Social-aware federated learning: challenges and opportunities in collaborative data training</title>
+		<author>
+			<persName coords=""><forename type="first">Abdul-Rasheed</forename><surname>Ottun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VDhKfdh">IEEE Internet Comput</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,75.48,222.20,8.64;6,336.79,87.43,222.20,8.64;6,336.79,99.22,147.89,8.81" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_T5mN2Gw">Client selection for federated learning with heterogeneous resources in mobile edge</title>
+		<author>
+			<persName coords=""><forename type="first">Takayuki</forename><surname>Nishio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ryo</forename><surname>Yonetani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_9bn7DKe">ICC</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1" to="7" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,111.17,222.20,8.81;6,336.79,123.30,222.20,8.64;6,336.79,135.08,145.97,8.81" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_ewrztqD">Data heterogeneity-robust federated learning via group client selection in industrial IoT</title>
+		<author>
+			<persName coords=""><surname>Zonghang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_vjKtz6A">IEEE Internet Things J</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,147.21,222.20,8.64;6,336.79,159.16,222.19,8.64;6,336.79,170.95,212.63,8.81" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_8f8VyHj">How valuable is your data? optimizing client recruitment in federated learning</title>
+		<author>
+			<persName coords=""><forename type="first">Yichen</forename><surname>Ruan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaoxi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Carlee</forename><surname>Joe-Wong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_wCRFf7W">WiOpt</title>
+				<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,183.07,222.20,8.64;6,336.79,195.03,222.20,8.64;6,336.79,206.82,202.13,8.81" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_Rx7FUAJ">Privacy-preserving federated learning framework in multimedia courses recommendation</title>
+		<author>
+			<persName coords=""><forename type="first">Yangjie</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ming</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jia</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PPHVVY3">Wireless Netw</title>
+				<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="1" to="10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,218.94,222.20,8.64;6,336.79,230.89,222.20,8.64;6,336.79,242.85,222.20,8.64;6,336.79,254.81,75.02,8.64" xml:id="b9">
+	<monogr>
+		<title level="m" type="main" xml:id="_YaxkWp9">Central server free federated learning over single-sided trust social networks</title>
+		<author>
+			<persName coords=""><forename type="first">Chaoyang</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Conghui</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hanlin</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shuang</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ji</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1910.04956</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="6,336.79,266.76,222.20,8.64;6,336.79,278.72,222.20,8.64;6,336.79,290.67,222.19,8.64;6,336.79,302.46,174.69,8.81" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_5uen3CT">Mitigating herding in hierarchical crowdsourcing networks</title>
+		<author>
+			<persName coords=""><forename type="first">Han</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chunyan</forename><surname>Miao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cyril</forename><surname>Leung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yiqiang</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Simon</forename><surname>Fauvel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qiang</forename><surname>Victor R Lesser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pSQcz3U">Scientific Reports</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,314.58,222.20,8.64;6,336.79,326.54,222.20,8.64;6,336.79,338.49,222.20,8.64;6,336.79,350.28,222.20,8.81;6,336.79,362.40,22.42,8.64" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_F7Fs7te">Algorithmic management for improving collective productivity in crowdsourcing</title>
+		<author>
+			<persName coords=""><forename type="first">Han</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chunyan</forename><surname>Miao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yiqiang</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Simon</forename><surname>Fauvel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaoming</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Victor R Lesser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wJ92TS7">Scientific Reports</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">12541</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,374.36,222.20,8.64;6,336.79,386.14,222.20,8.81;6,336.79,398.27,87.17,8.64" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_TDwzg8e">Trust transitivity in complex social networks</title>
+		<author>
+			<persName coords=""><forename type="first">Guanfeng</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mehmet</forename><forename type="middle">A</forename><surname>Orgun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_KQs4h7m">AAAI</title>
+				<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="1222" to="1229" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,410.22,222.20,8.64;6,336.79,422.18,222.20,8.64;6,336.79,434.13,222.20,8.64;6,336.79,445.92,189.68,8.81" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZEUEbrw">Federated learning over wireless networks: optimization model design and analysis</title>
+		<author>
+			<persName coords=""><forename type="first">Wei</forename><surname>Nguyen H Tran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Albert</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Minh</forename><forename type="middle">Nh</forename><surname>Zomaya</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Choong</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hong</forename><surname>Seon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_FjMMWS8">INFOCOM</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1387" to="1395" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,458.04,222.20,8.64;6,336.79,469.83,222.20,8.81;6,336.79,481.95,77.21,8.64" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_TGXvAq5">A sustainable incentive scheme for federated learning</title>
+		<author>
+			<persName coords=""><forename type="first">Han</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Q5QCgdu">IEEE Intelligent Systems</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="58" to="69" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,493.91,222.20,8.64;6,336.79,505.86,222.20,8.64;6,336.79,517.65,222.20,8.81;6,336.79,529.61,215.50,8.81" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_tZjchyD">An improved harmony search algorithm for solving optimization problems</title>
+		<author>
+			<persName coords=""><forename type="first">Mehrdad</forename><surname>Mahdavi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohammad</forename><surname>Fesanghary</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ebrahim</forename><surname>Damangir</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mkd6tDY">Appl. mathe. comput</title>
+		<imprint>
+			<biblScope unit="volume">188</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1567" to="1579" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,541.73,222.20,8.64;6,336.79,553.68,222.19,8.64;6,336.79,565.47,208.43,8.81" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_gZPjdV3">Model for cascading failures in complex networks</title>
+		<author>
+			<persName coords=""><forename type="first">Paolo</forename><surname>Crucitti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vito</forename><surname>Latora</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Massimo</forename><surname>Marchiori</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_3wdGX2A">Physical Review E</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">45104</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,577.59,222.20,8.64;6,336.79,589.55,222.20,8.64;6,336.79,601.34,222.20,8.81;6,336.79,613.46,42.34,8.64" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_bUsW5Fx">A survey of mobility models for ad hoc network research</title>
+		<author>
+			<persName coords=""><forename type="first">Tracy</forename><surname>Camp</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jeff</forename><surname>Boleng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vanessa</forename><surname>Davies</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XPz7KvM">Wirel. Commun. Mobile Comput</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="483" to="502" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,336.79,625.42,222.20,8.64;6,336.79,637.37,222.20,8.64;6,336.79,649.33,222.20,8.64;6,336.79,661.28,109.05,8.64" xml:id="b18">
+	<monogr>
+		<title level="m" type="main" xml:id="_Kc8Rjkp">Client selection in federated learning: convergence analysis and power-of-choice selection strategies</title>
+		<author>
+			<persName coords=""><forename type="first">Yae</forename><surname>Jee Cho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jianyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gauri</forename><surname>Joshi</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2010.01243</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="6,336.79,673.24,222.20,8.64;6,336.79,685.19,222.20,8.64;6,336.79,696.98,222.20,8.81;6,336.79,709.10,42.34,8.64" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_Svmjkkb">Oort: Efficient federated learning via guided participant selection</title>
+		<author>
+			<persName coords=""><forename type="first">Fan</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiangfeng</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mosharaf</forename><surname>Harsha V Madhyastha</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Chowdhury</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_dVQCNBz">OSDI</title>
+				<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="19" to="35" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

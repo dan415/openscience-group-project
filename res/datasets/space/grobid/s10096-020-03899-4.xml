@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_fQMQ3q2">The genetic sequence, origin, and diagnosis of SARS-CoV-2</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2020-04-24">24 April 2020</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,51.02,145.45,55.29,8.80"><forename type="first">Huihui</forename><surname>Wang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Clinical Laboratory</orgName>
+								<orgName type="institution">the First Affiliated Hospital of Anhui Medical University</orgName>
+								<address>
+									<postCode>230032</postCode>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,119.06,145.45,42.06,8.80"><forename type="first">Xuemei</forename><surname>Li</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Clinical Laboratory</orgName>
+								<orgName type="institution">the First Affiliated Hospital of Anhui Medical University</orgName>
+								<address>
+									<postCode>230032</postCode>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,173.82,145.45,25.45,8.80"><forename type="first">Tao</forename><surname>Li</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Clinical Laboratory</orgName>
+								<orgName type="institution">the First Affiliated Hospital of Anhui Medical University</orgName>
+								<address>
+									<postCode>230032</postCode>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Key Laboratory of Anti-Inflammatory and Immune Medicine</orgName>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department" key="dep1">Ministry of Education</orgName>
+								<orgName type="department" key="dep2">Anhui Collaborative Innovation Center of Anti-inflammatory and Immune Medicine</orgName>
+								<orgName type="department" key="dep3">Institute of Clinical Pharmacology</orgName>
+								<orgName type="institution">Anhui Medical University</orgName>
+								<address>
+									<addrLine>No. 218 Jixi road, Shushan district</addrLine>
+									<settlement>Hefei, Anhui</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,217.53,145.45,65.11,8.80"><forename type="first">Shubing</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Clinical Laboratory</orgName>
+								<orgName type="institution">the First Affiliated Hospital of Anhui Medical University</orgName>
+								<address>
+									<postCode>230032</postCode>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,295.43,145.45,51.78,8.80"><forename type="first">Lianzi</forename><surname>Wang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Clinical Laboratory</orgName>
+								<orgName type="institution">the First Affiliated Hospital of Anhui Medical University</orgName>
+								<address>
+									<postCode>230032</postCode>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,359.94,145.45,35.52,8.80"><forename type="first">Xian</forename><surname>Wu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Clinical Laboratory</orgName>
+								<orgName type="institution">the First Affiliated Hospital of Anhui Medical University</orgName>
+								<address>
+									<postCode>230032</postCode>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,408.13,145.45,45.68,8.80"><forename type="first">Jiaqing</forename><surname>Liu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Clinical Laboratory</orgName>
+								<orgName type="institution">the First Affiliated Hospital of Anhui Medical University</orgName>
+								<address>
+									<postCode>230032</postCode>
+									<settlement>Hefei</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_aMpfhke">The genetic sequence, origin, and diagnosis of SARS-CoV-2</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2020-04-24">24 April 2020</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">E4013D8E63EAD44C4C235C3B8C26A39B</idno>
+					<idno type="DOI">10.1007/s10096-020-03899-4</idno>
+					<note type="submission">Received: 12 March 2020 / Accepted: 7 April 2020</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_zp4JqEz">SARS-CoV-2</term>
+					<term xml:id="_sHvpdfq">COVID-19</term>
+					<term xml:id="_HEsK5jz">Origin</term>
+					<term xml:id="_Nmjbghw">Diagnosis</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_zPVEx2t"> Coronavirus disease 2019 (COVID-19)<p xml:id="_g7hqwGS">, caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), is a new infectious disease that first emerged in Hubei province, China, in December 2019, which was found to be associated with a large seafood and animal market in Wuhan. Airway epithelial cells from infected patients were used to isolate a novel coronavirus, named the SARS-CoV-2, on January 12, 2020, which is the seventh member of the coronavirus family to infect humans. Phylogenetic analysis of full-length genome sequences obtained from infected patients showed that SARS-CoV-2 is similar to severe acute respiratory syndrome coronavirus (SARS-CoV) and uses the same cell entry receptor, angiotensin-converting enzyme 2 (ACE2), as SARS-CoV. The possible person-to-person disease rapidly spread to many provinces in China as well as other countries. Without a therapeutic vaccine or specific antiviral drugs, early detection and isolation become essential against novel Coronavirus. In this review, we introduced current diagnostic methods and criteria for the SARS-CoV-2 in China and discuss the advantages and limitations of the current diagnostic methods, including chest imaging and laboratory detection.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ZMYJpxA">Introduction</head><p xml:id="_7JZh3jv">Coronaviruses are unsegmented single-stranded RNA viruses ranging from 26 to 32 kilobases in length, belonging to the subfamily Coronavirinae of the family Coronaviridae of the order Nidovirales <ref type="bibr" coords="1,121.10,457.89,10.20,8.75" target="#b0">[1]</ref>. According to the serotype and genomic characteristics, the Coronavirinae subfamily is divided into four major genera: Alphacoronavirus, Betacoronavirus, Gammacoronavirus, and Deltacoronavirus <ref type="bibr" coords="1,226.15,495.25,10.33,8.75" target="#b1">[2]</ref>. The former two genera primarily infect mammals, whereas the latter two predominantly infect birds <ref type="bibr" coords="1,159.88,520.14,10.31,8.75" target="#b2">[3]</ref>. Coronaviruses mainly cause respiratory and gastrointestinal tract infections; six kinds of human CoVs have been previously identified, including the HCoV-NL63 and the HCoV-229E, which belong to the Alphacoronavirus genus, and the HCoV-OC43, the HCoVHKU1, the severe acute respiratory syndrome coronavirus (SARS-CoV), and the Middle East respiratory syndrome coronavirus (M ERS-CoV), which belong to the Betacoronavirus genus <ref type="bibr" coords="1,401.73,433.00,10.33,8.75" target="#b3">[4]</ref>. Given the high prevalence and wide distribution of coronaviruses in animals, the large genetic diversity and frequent recombination of their genomes, and increasing human-animal interface activities and frequent cross-species infections, novel coronaviruses are likely to emerge periodically in humans <ref type="bibr" coords="1,428.88,495.25,10.31,8.75" target="#b4">[5]</ref>.</p><p xml:id="_954EFfv">In December 2019, a group of pneumonia cases was reported at a wholesale seafood market in Wuhan, Hubei province, which was found to be caused by previously unknown Coronaviruses <ref type="bibr" coords="1,364.31,545.08,10.20,8.75" target="#b5">[6]</ref>. On December 29, 2019, the local hospitals using a surveillance mechanism for "pneumonia of an unknown etiology," which was established in the wake of the 2003 severe acute respiratory syndrome (SARS) outbreak, identified the first 4 cases which were all associated with the Huanan (Southern China) Seafood Wholesale Market. On December 31, 2019, the Chinese Center for Disease Control and Prevention (China CDC) dispatched a rapid response team to accompany Hubei provincial and Wuhan city health authorities and to conduct an epidemiologic and etiologic investigation. Similar cases were subsequently reported in Wuhan, and many of these patients did not have contacts with the Huanan Seafood Wholesale Markets or animals. Epidemiological investigation showed that about only 1% of the patients had direct contact with the live-animal market trade, while more than three quarters were local residents of Wuhan or had made contact with people from Wuhan, suggesting a person-to-person transmission of this novel coronavirus was possible <ref type="bibr" coords="2,127.05,109.51,10.27,8.75" target="#b6">[7]</ref>. Airway epithelial cells from infected patients were used to isolate a novel coronavirus, temporarily named 2019-nCoV <ref type="bibr" coords="2,130.51,134.46,10.27,8.75" target="#b7">[8]</ref>, but later, the Coronavirus Research Group (CSG) of the International Committee for the classification of viruses found that the new coronavirus is related to the SARS virus (SARS-CoV) that swept China in 2003. Both belong to a "species" category called severe acute respiratory syndrome-related coronavirus. Therefore, on February 11, 2020, the International Committee for the classification of viruses designated the name of this coronavirus as the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) <ref type="bibr" coords="2,275.53,234.06,10.27,8.75" target="#b8">[9]</ref>. In addition, the World Health Organization has named the disease caused by the SARS-CoV-2 as coronavirus disease 2019 (COVID-19). The possible person-to-person transmission rapidly spreads to many provinces in China as well as other countries. By February 27, 2020, 78,824 cases were laboratory-confirmed, and 2788 died in China <ref type="bibr" coords="2,234.37,308.78,14.85,8.75" target="#b9">[10]</ref>. The current public health emergency is partially similar to the SARS outbreak in southern China in 2002. The two cases share similarities. Both occurred during the winter with initial cases related to an exposure to live animals sold at animal markets, and the amino acid sequence identity between the SARS-CoV-2 and the SARS-CoV S-proteins is 76.47% <ref type="bibr" coords="2,251.89,383.50,14.72,8.75" target="#b10">[11]</ref>. The current knowledge of the physical and chemical properties of Coronaviruses is mainly derived from the study of the SARS-CoV and the MERS-CoV. The Coronaviruses are sensitive to exposure to heat (56 °C for 30 min), as well as solvents including ether, 75% ethanol, chlorine-containing disinfectant, peroxyacetic acid, and chloroform. Other lipid solvents can also effectively inactivate the virus except for chlorhexidine <ref type="bibr" coords="2,86.51,483.11,14.90,8.75" target="#b11">[12]</ref>. According to Zhong's latest pilot experiment, 4 out of the 62 stool specimens tested positive to the SARS-CoV-2, suggesting oral-fecal route might have played a role in the rapid transmission of SARS-CoV-2 <ref type="bibr" coords="2,221.05,520.47,10.27,8.75" target="#b6">[7]</ref>. However, no cases of transmission via the fecal-oral route have yet been reported for SARS-CoV-2. Contamination of fomite is more likely to be caused by airway/hands. At present, respiratory transmission and direct contact transmission are the main routes for SARS-CoV-2.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_XPg8kWX">Genetic sequence and origin of the SARS-CoV-2</head><p xml:id="_tq2r2q2">The genome of Coronaviruses, ranging from 26 to 32 kilobases in length, includes a variable number of open reading frames (ORFs) <ref type="bibr" coords="2,111.34,682.39,14.90,8.75" target="#b12">[13]</ref>. The SARS-CoV-2 genome was reported to possess 14 ORFs encoding 27 proteins <ref type="bibr" coords="2,226.32,694.81,15.13,8.75" target="#b13">[14]</ref>. The spike surface glycoprotein plays an essential role in binding to receptors on the host cell and is crucial for determining host tropism and transmission capacity, mediating receptor binding and membrane fusion <ref type="bibr" coords="2,397.64,84.62,15.04,8.75" target="#b14">[15]</ref>. Generally, the spike protein of Coronaviruses is functionally divided into the S1 domain, responsible for receptor binding, and the S2 domain, responsible for cell membrane fusion <ref type="bibr" coords="2,427.35,121.98,14.90,8.75" target="#b15">[16]</ref>. The eight accessory proteins (3a, 3b, p6, 7a, 7b, 8b, 9b, and orf14) and four major structural proteins, including the spike surface glycoprotein (S), small envelope protein (E), matrix protein (M), and nucleocapsid protein (N), are located in the 3′-terminus of the SARS-CoV-2 genome <ref type="bibr" coords="2,398.27,184.23,14.99,8.75" target="#b13">[14]</ref>. When researchers compare the SARS-CoV-2 with the SARS-CoV at the amino acid level, they found the SARS-CoV-2 was quite similar to the SARS-CoV, but there were some notable differences in the 8a, 8b, and 3b protein <ref type="bibr" coords="2,366.46,234.06,14.85,8.75" target="#b13">[14]</ref>. When researchers compared the SARS-CoV-2 with the MERS-CoV, they found that the SARS-CoV-2 was distant from and less related to the MERS-CoVs. From the phylogenetic tree based on whole genomes, the SARS-CoV-2 is parallel to the SARS-like bat CoVs, while the SARS-CoV has descended from the SARS-like bat CoV lineage, indicating that SARS-CoV-2 is closer to the SARS-like bat CoVs than the SARS-CoVs based on of the wholegenome sequence <ref type="bibr" coords="2,381.03,333.67,15.04,8.75" target="#b13">[14]</ref>. Analysis of the genome from nine patients' samples also confirmed that the SARS-CoV-2 was more similar to two SARS-like bat CoVs from Zhoushan in eastern China, bat-SL-CoVZC45 and bat-SL-CoVZXC21, than to the SARS-CoV and the MERS-CoV <ref type="bibr" coords="2,494.70,383.50,15.45,8.75" target="#b16">[17]</ref>. At the whole-genome level, the SARS-CoV-2 shares an 87.99% sequence identity with the bat-SL-CoVZC45 and 87.23% sequence identity with the bat-SL-CoVZXC2, less genetically similar to the SARS-CoV (about 79%) and MERS-CoV (about 50%) <ref type="bibr" coords="2,357.22,445.75,14.90,8.75" target="#b16">[17]</ref>. At the protein level, the lengths of most of the proteins encoded by the SARS-CoV-2, the bat-SL-CoVZC45, and the bat-SL-CoVZXC21 were similar, with only a few minor insertions or deletions <ref type="bibr" coords="2,470.16,483.11,14.90,8.75" target="#b16">[17]</ref>. Although the SARS-CoV-2 was closer to the bat-SL-CoVZC45 and the bat-SL-CoVZXC21 at the whole-genome level, the receptorbinding domain of the SARS-CoV-2 located in lineage B was closer to that of the SARS-CoV <ref type="bibr" coords="2,458.76,532.94,14.94,8.75" target="#b16">[17]</ref>. Given the close relationship between the SARS-CoV-2 and the SARS-CoVs or the SARS-like bat CoVs, further studies of the amino acid substitutions in different proteins could explain how the SARS-CoV-2 differs structurally and functionally from the SARS-CoVs and how these differences affect the functionality and pathogenesis of the SARS-CoV-2.</p><p xml:id="_TTHf8N7">It was reported that 27 of the first 41 infected patients had been exposed to the Huanan Seafood Market <ref type="bibr" coords="2,491.30,632.55,14.85,8.75" target="#b17">[18]</ref>. Thus, it was believed that the new coronavirus originated from the Huanan Seafood Market in Wuhan and spread from animal hosts to humans in the process of wildlife trade, transportation, slaughter, and trade. Bats have the most variety of coronaviruses in their bodies and are the hosts of many kinds of coronaviruses, such as the SARS-CoVand the MERS-CoV <ref type="bibr" coords="3,51.02,59.74,15.28,8.75" target="#b18">[19]</ref>. The SARS-CoV and the MERS-CoV are considered highly pathogenic, and it is very likely that the SARS-CoV was transmitted from bats to palm civets and the MERS-CoV was transmitted from bats to dromedary camels and finally to humans <ref type="bibr" coords="3,83.79,109.51,15.42,8.75" target="#b19">[20,</ref><ref type="bibr" coords="3,101.59,109.51,11.63,8.75" target="#b20">21]</ref>. Given the high sequence similarity between the SARS-CoV-2 and the SARS-like bat CoVs from Hipposideros bats in China, the natural host of the SARS-CoV-2 may be the Hipposideros bat. The discovery that pangolin coronavirus genomes have 85.5% to 92.4% sequence similarity to SARS-CoV-2 suggests pangolins should be considered as possible hosts in the emergence of SARS-CoV-2 <ref type="bibr" coords="3,51.02,196.70,14.90,8.75" target="#b21">[22]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_K3TDTmX">Diagnosis</head><p xml:id="_vTG74EX">According to the seventh edition of Pneumonia Diagnosis and Treatment program for novel coronavirus infection reported by the National Health Commission of the People's Republic of China, suspected cases were defined as patients having fever or respiratory symptoms, a typical ground-glass opacity chest imaging as well as a history of exposure to wildlife in the Wuhan seafood market, and a travel history or contact with people from Wuhan within 2 weeks of diagnosis <ref type="bibr" coords="3,269.08,346.15,16.04,8.75" target="#b11">[12]</ref>. Confirmed cases with the SARS-CoV-2 were identified as a positive result of a high-throughput sequencing or an RT-PCR assay for respiratory specimens including nasal and pharyngeal swab specimens, bronchoalveolar lavage fluid, sputum, or bronchial aspirates or a positive result of anti-SARS-CoV-2 IgM/IgG or the titer of anti-SARS-CoV-2 IgG antibody in the recovery period was four times or more higher than in the acute period <ref type="bibr" coords="3,103.24,445.75,14.90,8.75" target="#b11">[12]</ref>. At present, the diagnosis of the COVID-19 is mainly based on clinical characteristics, epidemiological history, chest imaging, and laboratory detection.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_CBRRWSU">Clinical characteristics and epidemiological history</head><p xml:id="_pRarwgF">The most common symptoms of confirmed patients were fever, cough, and myalgia or fatigue, whereas sputum production, headache, diarrhea, and vomiting were rare <ref type="bibr" coords="3,255.06,545.42,12.77,8.75" target="#b22">[23]</ref><ref type="bibr" coords="3,267.82,545.42,4.26,8.75" target="#b23">[24]</ref><ref type="bibr" coords="3,267.82,545.42,4.26,8.75" target="#b24">[25]</ref><ref type="bibr" coords="3,272.08,545.42,12.77,8.75" target="#b25">[26]</ref>. Mild cases only have a low fever and mild fatigue, without pneumonia. Severe and moderate cases had clinical manifestations of dyspnea, lymphopenia, and hypoalbuminemia, which mainly occurred in elderly patients <ref type="bibr" coords="3,223.93,595.20,15.04,8.75" target="#b22">[23]</ref>. It is worth noting that patients with severe or critical illness may have a moderate or low fever, or even no significant fever <ref type="bibr" coords="3,252.73,620.09,14.85,8.75" target="#b11">[12]</ref>. The elderly and those with chronic diseases, including diabetes, hypertension, and cardiovascular disease, have poor prognoses <ref type="bibr" coords="3,64.74,657.45,14.90,8.75" target="#b11">[12]</ref>. Most severe patient died of severe pneumonia, severe respiratory failure, and multiple organ failure <ref type="bibr" coords="3,267.90,669.92,16.99,8.75" target="#b25">[26]</ref>. Epidemiological investigations indicate that most patients were local residents of Wuhan or had direct exposure to the Huanan Seafood Market, a travel history to Wuhan, or contact with confirmed cases <ref type="bibr" coords="3,389.99,59.73,10.31,8.75" target="#b6">[7]</ref>. In addition, outbreaks within family clusters have been reported from several provinces in China <ref type="bibr" coords="3,306.14,84.62,14.90,8.75" target="#b26">[27]</ref>. An increasing number of cluster cases including family cluster cases are occurring <ref type="bibr" coords="3,411.31,97.09,15.42,8.75" target="#b23">[24,</ref><ref type="bibr" coords="3,429.33,97.09,11.59,8.75" target="#b24">25]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Un4MnDb">Chest imaging</head><p xml:id="_gFt4bbv">The most common patterns seen on chest CT were bilateral, peripheral, and ground-glass opacity <ref type="bibr" coords="3,452.36,159.34,15.41,8.75" target="#b27">[28,</ref><ref type="bibr" coords="3,470.78,159.34,11.63,8.75" target="#b28">29]</ref>. Less common CT findings were nodules, cystic changes, bronchiolectasis, pleural effusion, and lymphadenopathy <ref type="bibr" coords="3,467.04,184.23,15.59,8.75" target="#b27">[28,</ref><ref type="bibr" coords="3,486.31,184.23,11.67,8.75" target="#b28">29]</ref>. Chest CT images of an early-stage COVID-19 patients showed multiple small plaques and interstitial changes. The findings of a progressive stage chest CT images included a bilateral multiple ground-glass opacity and an infiltrating opacity with consolidation, interstitial thickening or fibrous stripes <ref type="bibr" coords="3,492.60,246.54,12.47,8.75" target="#b28">[29]</ref><ref type="bibr" coords="3,505.07,246.54,4.16,8.75" target="#b29">[30]</ref><ref type="bibr" coords="3,509.23,246.54,12.47,8.75" target="#b30">[31]</ref>. The diffuse lesions in bilateral lungs could be seen in the most seriously affected patients, whose CT showed as "white lungs" <ref type="bibr" coords="3,334.15,283.90,14.85,8.75" target="#b30">[31]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_nJZyks9">Laboratory detection</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_8WTV4BD">Specific laboratory detection</head><p xml:id="_hYpmbcV">Isolation of the causal agent and determination of its partial genome sequence provided the basis for next-generation sequencing or real-time reverse transcriptase-polymerase chain reaction (RT-PCR) methods for the SARS-CoV-2 <ref type="bibr" coords="3,509.44,395.98,15.59,8.75" target="#b13">[14,</ref><ref type="bibr" coords="3,528.72,395.98,11.67,8.75" target="#b16">17]</ref>. After the SARS-CoV-2 was isolated from a lower respiratory tract specimen, a diagnostic RT-PCR test was developed. RT-PCR tests were based on the RNA-dependent RNA polymerase (RdRp) gene of the ORF1ab sequence, E gene, N gene, and S gene of the SARS-CoV-2 genome <ref type="bibr" coords="3,476.84,458.23,12.68,8.75" target="#b31">[32]</ref><ref type="bibr" coords="3,489.52,458.23,4.23,8.75" target="#b32">[33]</ref><ref type="bibr" coords="3,489.52,458.23,4.23,8.75" target="#b33">[34]</ref><ref type="bibr" coords="3,493.75,458.23,12.68,8.75" target="#b34">[35]</ref>. Among these assays, RT-PCR assays targeting the RdRp assay had the highest analytical sensitivity <ref type="bibr" coords="3,445.46,483.11,15.61,8.75" target="#b31">[32]</ref>. The SARS-CoV-2 nucleic acid can be detected in nasal and pharyngeal swab specimens, bronchoalveolar lavage fluid, sputum, bronchial aspirates, blood, anal swab, and other samples by an RT-PCR <ref type="bibr" coords="3,328.48,532.95,15.53,8.75" target="#b35">[36,</ref><ref type="bibr" coords="3,347.70,532.95,11.67,8.75" target="#b36">37]</ref>. In a case with severe peptic ulcers after the onset of symptoms, the SARS-CoV-2 was directly detected in the esophageal erosion and at the bleeding site <ref type="bibr" coords="3,505.19,557.83,10.31,8.75" target="#b6">[7]</ref>. Some patients infected with the SARS-CoV-2 also displayed gastrointestinal symptoms such as diarrhea <ref type="bibr" coords="3,454.96,582.72,15.36,8.75" target="#b22">[23,</ref><ref type="bibr" coords="3,473.56,582.72,12.96,8.75" target="#b37">38]</ref> because some viruses may enter the digestive tract through the throat, infecting the intestinal epithelial cells and activating the intestinal immune response. Thus, the SARS-CoV-2 nucleic acid can also be detected in the stool samples of some patients <ref type="bibr" coords="3,518.74,632.55,10.48,8.75" target="#b6">[7,</ref><ref type="bibr" coords="3,531.95,632.55,12.30,8.75" target="#b35">36,</ref><ref type="bibr" coords="3,306.14,645.03,11.71,8.75" target="#b36">37]</ref>. High-throughput sequencing or an RT-PCR assay has become a standard and formative assessment for the diagnosis of the COVID-19 <ref type="bibr" coords="3,379.73,669.91,14.86,8.75" target="#b11">[12]</ref>. However, nucleic acid amplification kits sometimes produced false-negative results among patients whose clinical features, chest imaging, and laboratory detection accorded with the COVID-19 <ref type="bibr" coords="3,441.81,707.27,15.36,8.75" target="#b29">[30,</ref><ref type="bibr" coords="3,459.72,707.27,11.59,8.75" target="#b38">39]</ref>. There are several possible reasons for the false-negative results from the nucleic acid kit. Firstly, although older age was correlated with higher viral load <ref type="bibr" coords="4,91.67,84.62,14.86,8.75" target="#b39">[40]</ref>, it is not clear whether the viral load in body fluids has a positive linear correlation with the severity of symptoms after infection. If the virus in the suspected patients remains to be rapidly replicated and released in the lungs, the nasal and pharyngeal swabs sampling may not collect enough virus for diagnosis. Secondly, the current common sampling method is to collect nasal and pharyngeal swabs, sputum, or the alveolar lavage fluid <ref type="bibr" coords="4,150.46,171.81,15.42,8.75" target="#b35">[36,</ref><ref type="bibr" coords="4,169.17,171.81,12.24,8.75" target="#b39">40,</ref><ref type="bibr" coords="4,184.70,171.81,11.59,8.75" target="#b40">41]</ref>. Few patients with the SARS-CoV-2 infection had prominent signs and symptoms of the respiratory tract, indicating that the target cells may be located in the lower airway <ref type="bibr" coords="4,156.58,209.17,14.90,8.75" target="#b17">[18]</ref>. The viral nucleic acid is most easily detected in the alveolar lavage fluid, followed by sputum, nasal, and pharyngeal swabs <ref type="bibr" coords="4,187.43,234.06,12.49,8.75" target="#b40">[41]</ref><ref type="bibr" coords="4,199.92,234.06,4.16,8.75" target="#b41">[42]</ref><ref type="bibr" coords="4,204.08,234.06,12.49,8.75" target="#b42">[43]</ref>. A study of 4880 cases showed that the alveolar lavage fluid exhibited the most highest positive rate of 100% for SARS-CoV-2 ORF1ab gene; the sputum exhibited a 49.12% positive rate, and the nasal and pharyngeal swabs samples showed a poor positive rate of 38.25% <ref type="bibr" coords="4,85.61,296.31,15.17,8.75" target="#b40">[41]</ref>. Alveolar lavage fluid collection is generally suitable for patients with a severe or critical illness, not mild cases. Sputum specimens are also more difficult to obtain because few patients with the SARS-CoV-2 infection had sputum production <ref type="bibr" coords="4,112.93,346.14,10.54,8.75" target="#b6">[7,</ref><ref type="bibr" coords="4,125.80,346.14,11.63,8.75" target="#b17">18]</ref>. Due to the limitations associated with operations and patient acceptance, the most common sampling method in clinical practice is nasal and pharyngeal swab collection. However, respiratory samples collected from 80 individuals at different stages of infection showed a median of 7•99 × 10 4 in nasal and pharyngeal swab samples and 7• 52 × 10 5 in sputum samples <ref type="bibr" coords="4,163.78,420.87,14.86,8.75" target="#b35">[36]</ref>. Sputum samples generally showed higher viral loads than throat swab samples <ref type="bibr" coords="4,255.63,433.28,15.42,8.75" target="#b35">[36,</ref><ref type="bibr" coords="4,273.71,433.28,11.63,8.75" target="#b42">43]</ref>. The low viral load in nasal and pharyngeal swab makes the diagnosis of the SARS-CoV-2 more difficult. On the other hand, RT-PCR test results of pharyngeal swab specimens were variable and potentially unstable <ref type="bibr" coords="4,186.63,483.12,15.08,8.75" target="#b43">[44]</ref>. It was reported that patients with initial non-positive results were eventually confirmed with COVID-19 by 3~5 repeated swab PCR tests <ref type="bibr" coords="4,270.59,508.00,14.90,8.75" target="#b43">[44]</ref>. The phenomenon of SARS-CoV-2 positive in the stool samples but negative nucleic acid in throat swab specimens indicated that selecting fecal samples for a nucleic acid test may be an alternative strategy <ref type="bibr" coords="4,138.56,557.84,14.90,8.75" target="#b44">[45]</ref>. Considering that the SARS-CoV-2 nucleic acid can be detected in nasal and pharyngeal swab specimens, bronchoalveolar lavage fluid, sputum, bronchial aspirates, blood, and anal swab <ref type="bibr" coords="4,181.47,595.20,15.53,8.75" target="#b35">[36,</ref><ref type="bibr" coords="4,200.70,595.20,11.67,8.75" target="#b36">37]</ref>, it is suggested to collect samples from multiple site of the same patient at different stages and combine them for detection to improve the positive rate. Thirdly, the SARS-CoV-2 is an RNA virus with low stability, which is easily degraded by RNA enzymes released after exogenous or cellular destruction, affecting the final detection efficiency. Improper sampling location, insufficient sampling strength, and irregular sample delivery process account for the false-negative results of the nucleic acid kit test <ref type="bibr" coords="4,81.75,707.28,14.86,8.75" target="#b38">[39]</ref>. Besides, in order to improve the sensitivity of detection, most manufacturers choose two or more regions of viral nucleic acid sequence for detection, including the ORF1ab sequence, E gene, N gene, and S gene of the SARS-CoV-2 genome <ref type="bibr" coords="4,396.00,97.09,12.49,8.75" target="#b31">[32]</ref><ref type="bibr" coords="4,408.49,97.09,4.16,8.75" target="#b32">[33]</ref><ref type="bibr" coords="4,408.49,97.09,4.16,8.75" target="#b33">[34]</ref><ref type="bibr" coords="4,412.66,97.09,12.49,8.75" target="#b34">[35]</ref>. In actual tests, there is a certain proportion of positive results of a single target gene locus indicating that the sensitivity of the reagent to different gene regions is indeed different <ref type="bibr" coords="4,409.50,134.45,14.90,8.75" target="#b40">[41]</ref>, which may also be caused by the competition between the loci of two or three target genes. Furthermore, reagent reaction conditions, reaction system, and nucleic acid addition amount may affect the sensitivity of detection and analysis <ref type="bibr" coords="4,407.86,184.23,14.90,8.75" target="#b45">[46]</ref>. It is an effective measure for the clinical laboratory to carry out quality control for each batch of reagents by using the confirmed negative and positive samples before routine work.</p><p xml:id="_TpvpVnm">Based on the above reasons, detection of the viral RNA using RT-PCR can only achieve a sensitivity of 30~60% <ref type="bibr" coords="4,306.15,258.95,15.42,8.75" target="#b40">[41,</ref><ref type="bibr" coords="4,325.20,258.95,12.30,8.75" target="#b46">47,</ref><ref type="bibr" coords="4,341.13,258.95,11.63,8.75" target="#b47">48]</ref>, depending on the course and condition of the patient, the type and number of clinical specimens collected, and the protocol used. The older had higher positive rate than the young <ref type="bibr" coords="4,346.57,296.30,16.08,8.75" target="#b40">[41]</ref> which may be explained by the finding that the older was correlated with higher viral load <ref type="bibr" coords="4,476.40,308.78,14.90,8.75" target="#b39">[40]</ref>. Supplement serum IgM/IgG antibody detection against the SARS-CoV-2 internal nucleoprotein (NP) and surface spike protein receptor-binding domain (RBD) can make up for the shortcomings of RT-PCR in some cases <ref type="bibr" coords="4,446.18,358.55,15.36,8.75" target="#b39">[40,</ref><ref type="bibr" coords="4,464.49,358.55,11.59,8.75" target="#b48">49]</ref>. The antibody is the product of a humoral immune response after infection with the virus. Generally, IgM antibodies rise within a few days after a viral infection and can be detected as soon as a week of incubation, and IgG antibodies appear in the middle and late stages of the infection. There is a process of a continuous increase in the antibody titer, and it remains in the blood circulation for a long time. At the moment, the most widely used methods for serodiagnosis of the SARS-CoV-2 infection in clinical microbiology laboratories are antibody detection in acute-and convalescent-phase sera by colloidal gold immunochromatography and enzyme-linked immunosorbent assay (ELISA) <ref type="bibr" coords="4,364.60,507.99,14.90,8.75" target="#b39">[40]</ref>. In short, a test for IgM/IgG antibodies can also determine whether a patient has been infected with the SARS-CoV-2 recently or previously and act as a supplementary detection to identify patients with high clinical suspicion of the SARS-CoV-2 infection but negative RT-PCR findings <ref type="bibr" coords="4,306.15,570.30,15.42,8.75" target="#b39">[40,</ref><ref type="bibr" coords="4,323.78,570.30,11.63,8.75" target="#b48">49]</ref>. The new serological diagnostic kits for IgM and IgG antibodies for SARS-CoV-2 have the advantages of high sensitivity and early diagnosis. In addition, the operational requirements of antibody detection in clinical microbiology laboratories are relatively low, fast, capable of large quantities, and can be completed in basic laboratories compared with the nucleic acid test. Anti-SARS-CoV-2 IgM antibody was positive at 3~5 days after onset, and the titer of anti-SARS-CoV-2 IgG antibody in the recovery period was four times or more higher than in the acute period <ref type="bibr" coords="4,425.25,682.39,14.90,8.75" target="#b11">[12]</ref>. Although the supplementary antibody test can make up for the missed diagnosis of RT-PCR, it still cannot diagnose all infected patients. The detection of IgM and IgG antibodies can only achieve a sensitivity of 70% at 4~6 days after admission for COVID-19 patients (unpublished data from our group). The detection of IgM and IgG antibodies may be futile for the elderly, because of hypoimmunity and a weak antibody production capacity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_r6cduDC">Nonspecific laboratory detection</head><p xml:id="_Azckzt8">The laboratory examination of patients at an early stage showed leucopenia, lymphopenia, high level of aspartate aminotransferase, C-reactive protein (CRP), and erythrocyte sedimentation rate <ref type="bibr" coords="5,110.66,209.18,14.90,8.75" target="#b17">[18]</ref>. Most patients had normal serum levels of procalcitonin. Compared with moderate cases, severe cases more frequently had lymphopenia, with higher levels of alanine aminotransferase, lactate dehydrogenase, C-reactive protein, ferritin, and D-dimer as well as markedly higher levels of IL-2R, IL-6, IL-10, and TNF-α <ref type="bibr" coords="5,176.99,271.42,14.90,8.75" target="#b22">[23]</ref>. Typical abnormal laboratory findings in pediatric patients were elevated creatine kinase MB, decreased lymphocytes, leucopenia, and elevated procalcitonin <ref type="bibr" coords="5,105.79,308.78,14.95,8.75" target="#b23">[24]</ref>. Recent studies have also shown another potential diagnostic biomarker for the SARS-CoV-2 diagnosis. Renin cleaves liver-derived angiotensinogen (AGT) into angiotensin I, which is then further processed by the angiotensin-converting enzyme (ACE) into the octapeptide angiotensin II. The abnormal increase of angiotensin II has been reported to be associated with hypertension, heart failure, and lung and kidney dysfunction as well as several pathophysiological features, including inflammation, metabolic dysfunction, and aging <ref type="bibr" coords="5,132.15,420.86,15.36,8.75" target="#b49">[50,</ref><ref type="bibr" coords="5,151.09,420.86,11.59,8.75" target="#b50">51]</ref>. Xu et al. performed structural modeling of the S-protein of the SARS-CoV-2 to evaluate its ability to interact with human angiotensin-converting enzyme 2 (ACE2) molecules. Because of the loss of hydrogen bond interactions due to replacing Arg426 with Asn426 in the SARS-CoV-2 S-protein, the binding free energy for the SARS-CoV-2 S-protein increased by 28 kcal mol -1 when compared with the SARS-CoV S-protein binding. The results revealed that the SARS-CoV-2 S-protein has a strong binding affinity to human ACE2 <ref type="bibr" coords="5,150.29,532.95,14.63,8.75" target="#b10">[11]</ref>. A study discovered the markedly increased level of angiotensin II in the plasma samples from SARS-CoV-2-infected patients was linearly correlated with viral load and lung injury <ref type="bibr" coords="5,177.16,570.31,14.86,8.75" target="#b51">[52]</ref>. It is suggested that the imbalance of the renin-angiotensin-aldosterone system is caused by the SARS-CoV-2, and angiotensin receptor blocker (ARB) drugs may be used as a potential repurposing treatment of the SARS-CoV-2 infection. Similar studies have demonstrated that the SARS-CoV could bind to its receptor ACE2, downregulating its expressions, resulting in increased angiotensin II levels in mouse blood samples, signaling through angiotensin II receptor 1, leading to an acute lung injury <ref type="bibr" coords="5,51.02,682.39,14.90,8.75" target="#b52">[53]</ref>. Besides, markedly, elevation of angiotensin II level in the H7N9-infected patients was associated with the disease severity and outcomes <ref type="bibr" coords="5,140.71,707.28,14.85,8.75" target="#b53">[54]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Za3KRFa">Discussion</head><p xml:id="_bhdk93E">Chest CT imaging showed that 76.4% of infected patients manifested as pneumonia on admission, which was mainly ground-glass opacity (50%) and bilateral patchy shadowing (46.4%). The majority of severe patients could be diagnosed by chest X-ray and chest CT imaging. Despite these predominant manifestations, it was reported that 221 out of the 926 (23.87%) in severe cases compared with 9 out of the 173 nonsevere cases (5.20%) who had no abnormal radiological findings were diagnosed by symptoms plus RT-PCR positive findings, suggesting that not all patients had abnormal chest radiological findings of pneumonia. Chest CT images of the early-stage COVID-19 patients showed unilateral or bilateral ground-glass opacity, which was similar to some non-COVID-19 images of patients with the respiratory syncytial viral (RSV), mycoplasma, and parainfluenza virus, suggesting that chest CT scans cannot the identify COVID-19 patients and the non-COVID-19 patients in some cases. Co-infection with other viruses such as influenza A/B, rhino/enterovirus, respiratory syncytial virus, other atypical pathogens, fungi, and bacteria has been reported in the COVID-19 patients <ref type="bibr" coords="5,306.14,333.67,15.42,8.75" target="#b48">[49,</ref><ref type="bibr" coords="5,324.74,333.67,11.59,8.75" target="#b54">55]</ref>. Mixed infection among COVID-19 patients makes the diagnosis of chest CT images more difficult. Besides, positive respiratory pathogen results cannot serve as evidence for the exclusion of SARS-COV-2 infection. Methods of pathogen-specific detection are mainly divided into four types, including virus culture, nucleic acid detection, antigen detection, and antibody detection. In terms of virus culture, the cultivation of the SARS-CoV-2 requires biosafety level 3 laboratory facilities, which are not available in most clinical microbiology laboratories. Thus, the cultivation of the SARS-CoV-2 is mainly used for scientific research. Commercial antigen detection kits require the preparation of monoclonal antibodies and polyclonal antibodies, whereas it costs a long time from production to extraction during antibody preparation, and the preparation process is complicated. Detection of the viral nucleic acid using an RT-PCR assay has become a standard and formative assessment for the diagnosis of COVID-19. However, detection of viral RNA using RT-PCR can only achieve a sensitivity of 30~60%, depending on the course and condition of the patient, the type and number of clinical specimens collected, and the protocol used. In order to improve the positive rate of detection, it is suggested to collect multiple site samples of the same patient at different stages repeatedly and combine them for detection. The phenomenon of SARS-CoV-2 positive in the stool samples but negative nucleic acid in throat swab specimens should be taken seriously. Patients with early or mild illness may have a low viral load in nasal and pharyngeal swabs, resulting in falsenegative nucleic acid tests. Thus, selecting fecal samples for a nucleic acid test may be an alternative strategy, regardless of the presence or absence of gastrointestinal symptoms such as diarrhea. In addition, a fecal-oral transmission might exist in the transmission of 2019-nCoV; thus, the transmission via gastrointestinal secretions should be fully considered to control the rapid spread worldwide. Whole genome sequencing (WGS) method can overcome the mutation problems which cause false-negative results in RT-PCR <ref type="bibr" coords="6,204.72,121.98,15.36,8.75" target="#b54">[55,</ref><ref type="bibr" coords="6,222.63,121.98,11.63,8.75" target="#b55">56]</ref>, whereas it is not applicable to clinical practice considering the economic status of patients. For individuals with high clinical suspicion of the SARS-CoV-2 infection but negative RT-PCR findings, the detection of IgM/IgG antibodies should be considered. We recommend IgM antibody testing 1 week after infection and IgG antibody testing 4 weeks after infection. Although the supplementary antibody test can make up for the missed diagnosis of RT-PCR, it cannot diagnose all the infected patients. Collectively, for chest CT scans, RT-PCR assays, and the detection of IgM/IgG antibodies, multiple and repetitive tests should be considered during different stages of the COVID-19. Further research of SARS-CoV-2 and the development of more sensitive detection methods will facilitate the diagnosis of COVID-19. In addition, the development of broad-spectrum antiviral drugs and vaccines will enhance the ability to manage future outbreaks caused by this cluster of viruses.</p></div>		</body>
+		<back>
+
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_CT4RP6U"><p xml:id="_eXEBtAK">Funding information This study was supported by the Natural Science Foundation of China (grant nos. 81571572, 81201488, and 30801088).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_EvevU9u">Compliance with ethical standards</head></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_bn8yE4P"><p xml:id="_KjrqDNt">Authors' contributions HW and XL were major contributors to writing the manuscript. HW, XL, SZ, LW, JL, XW, TL, YX, and WW checked and revised the manuscript. All authors read and approved the final manuscript.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_H3wtPt7">Conflict of interest</head><p xml:id="_Wbm29UA">The authors declare that they have no conflict of interest.</p><p xml:id="_D5KYsJ3">Ethics approval Not applicable.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="6,58.51,564.38,230.65,7.44;6,70.36,574.36,69.94,7.44" xml:id="b0">
+	<analytic>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">R</forename><surname>Weiss</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Leibowitz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Pvm7Wzz">Coronavirus pathogenesis</title>
+				<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="page" from="85" to="164" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,58.51,585.36,230.64,7.44;6,70.24,595.40,218.87,7.44;6,70.24,605.37,111.53,7.44" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_gAWRKWY">Structure, function, and evolution of coronavirus spike proteins</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-virology-110615-042301</idno>
+		<ptr target="https://doi.org/10.1146/annurev-virology-110615-042301" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wbYdyCG">Annu Rev Virol</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="237" to="261" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,58.51,616.37,230.63,7.44;6,70.53,626.35,218.52,7.44;6,70.53,636.33,218.57,7.44;6,70.53,646.31,76.44,7.44" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_yqnRFR3">Inferring the hosts of coronavirus using dual statistical models based on nucleotide composition</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">Q</forename><surname>Xia</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/srep17155</idno>
+		<ptr target="https://doi.org/10.1038/srep17155" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KDRpRvP">Sci Rep</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">17155</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,58.51,657.31,230.63,7.44;6,70.24,667.34,218.85,7.44;6,70.24,677.32,168.68,7.44" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_4VCUbjf">Epidemiology, genetic recombination, and pathogenesis of coronaviruses</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Shi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.tim.2016.03.003</idno>
+		<ptr target="https://doi.org/10.1016/j.tim.2016.03.003" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_3fSc93f">Trends Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="490" to="502" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,58.51,688.32,230.63,7.44;6,70.24,698.29,218.87,7.44;6,70.24,708.27,151.97,7.44" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_sexXxHF">A novel coronavirus from patients with pneumonia in China</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wang</forename><forename type="middle">W</forename></persName>
+		</author>
+		<idno type="DOI">10.1056/NEJMoa2001017</idno>
+		<ptr target="https://doi.org/10.1056/NEJMoa2001017" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_sGx9Cjx">N Engl J Med</title>
+		<imprint>
+			<biblScope unit="volume">382</biblScope>
+			<biblScope unit="page" from="727" to="733" />
+			<date type="published" when="2019">2020. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.62,58.23,230.63,7.44;6,325.36,68.27,218.91,7.44;6,325.36,78.25,217.21,7.44" xml:id="b5">
+	<monogr>
+		<title level="m" type="main" xml:id="_9sEaYDT">Report of clustering pneumonia of unknown etiology in Wuhan City</title>
+		<idno type="DOI">10.1146/annurev-ology-042301</idno>
+		<ptr target="http://wjw.wuhan.gov.cn/front/web/showDetail/2019123108989" />
+		<imprint>
+			<date type="published" when="2019-12-31">31 Dec 2019</date>
+			<publisher>Wuhan Municipal Health Commission</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.62,88.85,230.70,7.44;6,325.36,98.83,218.96,7.44;6,325.36,108.80,219.00,7.44;6,325.36,118.84,51.84,7.44" xml:id="b6">
+	<monogr>
+		<title level="m" type="main" xml:id="_FnjkK3W">Clinical characteristics of 2019 novel coronavirus infection in China</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">J</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">Y</forename><surname>Ni</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Hu</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-ology-042301</idno>
+		<ptr target="https://www.medrxiv.org/content/10.1101/2020.02.06.20020974v1" />
+		<imprint>
+			<date type="published" when="2020-02-29">2020. 2020 Feb 29</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.62,129.44,230.59,7.44;6,325.36,139.42,218.86,7.44;6,325.36,149.40,133.25,7.44" xml:id="b7">
+	<monogr>
+		<idno type="DOI">10.1146/annurev-ology-042301</idno>
+		<ptr target="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/" />
+		<title level="m" xml:id="_SqD5Uf4">WHO. Novel coronavirus (2019-nCoV) situation reports</title>
+				<imprint>
+			<date type="published" when="2020-01-20">20 Jan 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.78,160.05,230.39,7.44;6,326.15,169.29,218.10,8.47;6,326.15,180.01,218.15,7.44;6,326.15,189.99,218.06,7.44;6,326.15,200.02,56.65,7.44" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_VchMmzs">Severe acute respiratory syndrome-related coronavirus: the species and its viruses -a statement of the Coronavirus Study Group</title>
+		<idno type="DOI">10.1146/annurev-ology-042301</idno>
+		<ptr target="https://www.biorxiv.org/content/10.1101/2020.02.07.937862v1.full" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_HD57zDa">Biorxiv</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+		<respStmt>
+			<orgName>Coronavirus Study Group</orgName>
+		</respStmt>
+	</monogr>
+	<note>Preprint. cited 2020 Fab 29</note>
+</biblStruct>
+
+<biblStruct coords="6,313.07,210.62,231.20,7.44;6,325.19,220.60,219.09,7.44;6,325.19,230.58,219.03,7.44" xml:id="b9">
+	<monogr>
+		<title/>
+		<idno type="DOI">10.1146/annurev-ology-042301</idno>
+		<imprint>
+			<date type="published" when="2020-02-27">February 27. 2020. 2 0 2 0 0 2 / d5e15557ee534fcbb5aaa9301ea5235f. 27 Feb 2020</date>
+		</imprint>
+		<respStmt>
+			<orgName>National Health Commission Update on</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,312.94,241.18,231.38,7.44;6,324.91,251.22,219.36,7.44;6,324.91,261.20,219.33,7.44;6,324.91,271.17,158.32,7.44" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_3HveCBq">Evolution of the novel coronavirus from the ongoing Wuhan outbreak and modeling of its spike protein for risk of human transmission</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11427-020-1637-5</idno>
+		<ptr target="https://doi.org/10.1007/s11427-020-1637-5" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TDpNWyh">Sci China Life Sci</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page" from="457" to="460" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.07,281.77,231.27,7.44;6,325.19,291.81,219.08,7.44;6,325.19,301.79,219.09,7.44;6,325.19,311.77,217.95,7.44" xml:id="b11">
+	<monogr>
+		<title level="m" type="main" xml:id="_FUwmyEm">National Health Commission of the People&apos;s Republic of China. New coronavirus pneumonia prevention and control program</title>
+		<idno type="DOI">10.1146/annurev-ology-042301</idno>
+		<ptr target="http://www.nhc.gov.cn/yzygj/s7653p/202003/46c9294a7dfe4cef80dc7f5912eb1989" />
+		<imprint>
+			<date type="published" when="2020-04">Apr 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.07,322.37,231.25,7.44;6,325.19,332.40,219.00,7.44;6,325.19,342.38,55.82,7.44" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_Wh8ZCkd">From SARS to MERS, thrusting coronaviruses into the spotlight</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Bao</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/v11010059</idno>
+		<ptr target="https://doi.org/10.3390/v11010059" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tcxUPVQ">Viruses</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.07,352.98,231.16,7.44;6,325.19,362.96,219.12,7.44;6,325.19,372.94,219.05,7.44;6,325.19,382.97,22.92,7.44" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_Ygw4HDz">Genome composition and divergence of the novel coronavirus (2019-nCoV) originating in China</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.chom.2020.02.001</idno>
+		<ptr target="https://doi.org/10.1016/j.chom.2020.02.001" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_DWUeedC">Cell Host Microbe</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.20,393.57,231.05,7.44;6,325.47,403.55,218.76,7.44;6,325.47,413.53,218.80,7.44;6,325.47,423.56,90.40,7.44" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_pW7DmTH">Predicting the receptorbinding domain usage of the coronavirus based on kmer frequency on spike protein</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chen</forename><forename type="middle">W</forename></persName>
+		</author>
+		<idno type="DOI">10.1016/j.meegid.2018.03.028</idno>
+		<ptr target="https://doi.org/10.1016/j.meegid.2018.03.028" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_RStRyX9">Infect Genet Evol</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="183" to="184" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.20,434.17,231.03,7.44;6,325.47,444.14,218.85,7.44;6,325.47,454.12,218.77,7.44;6,325.47,464.16,218.80,7.44;6,325.47,474.13,57.86,7.44" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_TuCyxQ2">Receptor-binding domain of SARS-CoV spike protein induces highly potent neutralizing antibodies: implication for developing subunit vaccine</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bbrc.2004.09.106</idno>
+		<ptr target="https://doi.org/10.1016/j.bbrc.2004.09.106" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_z2SqYz3">Biochem Biophys Res Commun</title>
+		<imprint>
+			<biblScope unit="volume">324</biblScope>
+			<biblScope unit="page" from="773" to="781" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.20,484.74,231.02,7.44;6,325.47,494.71,218.78,7.44;6,325.47,504.69,218.80,7.44;6,325.47,514.73,123.40,7.44" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_YU7bZBf">Genomic characterisation and epidemiology of 2019 novel coronavirus: implications for virus origins and receptor binding</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0140-6736(20)30251-8</idno>
+		<ptr target="https://doi.org/10.1016/S0140-6736(20" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2N6GFeM">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">395</biblScope>
+			<biblScope unit="page" from="30251" to="30258" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.07,525.33,231.15,7.44;6,325.19,535.31,219.18,7.44;6,325.19,545.28,191.54,7.44" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_RVF6TvB">Clinical features of patients infected with 2019 novel coronavirus in Wuhan</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0140-6736(20)30183-5</idno>
+		<idno>S0140-6736(20)30183-5</idno>
+		<ptr target="https://doi.org/10.1016/" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WqsWQVA">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">395</biblScope>
+			<biblScope unit="page" from="497" to="506" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.20,555.94,231.08,7.44;6,325.42,565.92,218.85,7.44;6,325.42,575.89,83.49,7.44" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_jBe5ZMz">Origin and evolution of pathogenic coronaviruses</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">L</forename><surname>Shi</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41579-018-0118-9</idno>
+		<ptr target="https://doi.org/10.1038/s41579-018-0118-9" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_62HN8aB">Nat Rev Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="181" to="192" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.07,586.49,231.25,7.44;6,325.19,596.53,219.12,7.44;6,325.19,606.51,218.97,7.44;6,325.19,616.49,55.07,7.44" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_QNnfjeT">Isolation and characterization of viruses related to the SARS coronavirus from animals in southern China</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">J</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">Q</forename><surname>He</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.1087139</idno>
+		<ptr target="https://doi.org/10.1126/science.1087139" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_YbkUJeh">Science</title>
+		<imprint>
+			<biblScope unit="volume">302</biblScope>
+			<biblScope unit="page" from="276" to="278" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.07,627.09,231.19,7.44;6,325.19,637.07,219.08,7.44;6,325.19,647.10,173.17,7.44" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_NYzbqTU">Evidence for camel-tohuman transmission of MERS coronavirus</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Drosten</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Kellam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">A</forename><surname>Memish</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.1087139</idno>
+		<ptr target="https://doi.org/10.1126/science.1087139" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jfsf7eY">N Engl J Med</title>
+		<imprint>
+			<biblScope unit="volume">371</biblScope>
+			<biblScope unit="page" from="1359" to="1360" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.07,657.70,231.16,7.44;6,325.19,667.68,219.18,7.44;6,325.19,677.66,94.04,7.44" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_d4rC7Xx">Identifying SARS-CoV-2 related coronaviruses in Malayan pangolins</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">T</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">H</forename><surname>Shum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">C</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-020-2169-0</idno>
+		<ptr target="https://doi.org/10.1038/s41586-020-2169-0" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XzsZGsk">Nature</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,313.20,688.32,231.00,7.44;6,325.36,698.29,218.87,7.44;6,325.36,708.27,137.21,7.44" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_dDJqxvS">Clinical and immunologic features in severe and moderate coronavirus disease 2019</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Guo</surname></persName>
+		</author>
+		<idno type="DOI">10.1172/JCI137244</idno>
+		<ptr target="https://doi.org/10.1172/JCI137244" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rf5FMZn">J Clin Invest</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,58.23,231.14,7.44;7,70.07,68.27,219.07,7.44;7,70.07,78.24,218.98,7.44;7,70.07,88.22,195.06,7.44" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_4sjmCyx">Clinical and epidemiological features of 36 children with coronavirus disease 2019 (COVID-19) in Zhejiang, China: an observational cohort study</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Hong</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S1473-3099(20)30198-5</idno>
+		<ptr target="https://doi.org/10.1016/S1473-3099(20)30198-5" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wuK6arp">Lancet Infect Dis</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,58.08,98.20,231.06,7.44;7,70.24,108.23,218.95,7.44;7,70.24,118.21,77.48,7.44" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_whfHgR2">Characteristics of COVID-19 infection in Beijing</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lou</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jinf.2020.02.018</idno>
+		<ptr target="https://doi.org/10.1016/j.jinf.2020.02.018" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Xy4ar8r">J Inf Secur</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="401" to="406" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,128.19,231.20,7.44;7,70.07,138.17,219.04,7.44;7,70.07,148.20,219.08,7.44;7,70.07,158.18,135.71,7.44" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_E5uEHdx">Epidemiological and clinical characteristics of 99 cases of 2019 novel coronavirus pneumonia in Wuhan, China: a descriptive study</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Dong</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0140-6736(20)30211-7</idno>
+		<ptr target="https://doi.org/10.1016/S0140-6736(20)30211-7" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8stjQyC">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">395</biblScope>
+			<biblScope unit="page" from="507" to="513" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,168.16,231.18,7.44;7,70.07,178.14,219.04,7.44;7,70.07,188.17,219.08,7.44;7,70.07,198.15,206.23,7.44" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_qvbSya5">A familial cluster of pneumonia associated with the 2019 novel coronavirus indicating person-to-person transmission: a study of a family cluster</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">F</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">H</forename><surname>Kok</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0140-6736(20)30154-9</idno>
+		<idno>S0140-6736(20)30154-9</idno>
+		<ptr target="https://doi.org/10.1016/" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TPBRy8D">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">395</biblScope>
+			<biblScope unit="page" from="514" to="523" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,208.13,231.27,7.44;7,70.07,218.11,219.06,7.44;7,70.07,228.14,219.01,7.44;7,70.07,238.12,41.20,7.44" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_mH859aA">Frequency and distribution of chest radiographic findings in COVID-19 positive patients</title>
+		<author>
+			<persName coords=""><forename type="first">Hyf</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hys</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Fong</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.2020201160</idno>
+		<ptr target="https://doi.org/10.1148/radiol.2020201160" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_vcSE8ct">Radiology</title>
+		<imprint>
+			<date type="published" when="2019">2019. 201160</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,248.10,220.56,7.44;7,70.07,258.08,219.06,7.44;7,70.07,268.11,219.17,7.44;7,70.07,278.09,81.45,7.44" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_BEzZTUB">Radiological findings from patients with COVID-19 pneumonia in Wuhan, China: a descriptive study</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Jiang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S1473-3099(20)30086-4</idno>
+		<ptr target="https://doi.org/10.1016/S1473-3099" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tp8JMxu">Lancet Infect Dis</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="30086" to="30090" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,58.21,288.07,230.93,7.44;7,70.64,298.04,218.50,7.44;7,70.64,308.08,218.45,7.44;7,70.64,318.06,160.29,7.44" xml:id="b29">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Cao</surname></persName>
+		</author>
+		<idno type="DOI">10.2214/AJR.20.22959</idno>
+		<idno>COVID-19</idno>
+		<ptr target="https://doi.org/10.2214/AJR.20.22959" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eqwyDbA">Clinical Features and Chest CT Manifestations of Coronavirus Disease</title>
+		<imprint>
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="page" from="1" to="6" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note>AJR Am J Roentgenol</note>
+</biblStruct>
+
+<biblStruct coords="7,57.95,328.04,231.27,7.44;7,70.07,338.01,219.14,7.44;7,70.07,348.05,219.15,7.44;7,70.07,358.03,66.35,7.44" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_JPCRCbb">Clinical and high-resolution CT Features of the COVID-19 infection: comparison of the initial and follow-up changes</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/RLI.0000000000000674</idno>
+		<ptr target="https://doi.org/10.1097/RLI.0000000000000674" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xkVCSUY">Investig Radiol</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,368.00,231.25,7.44;7,70.07,377.98,219.02,7.44;7,70.07,388.02,219.02,7.44;7,70.07,398.00,29.06,7.44" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_y8jxgHE">Detection of 2019 novel coronavirus (2019-nCoV) by real-time RT-PCR</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">M</forename><surname>Corman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Landt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kaiser</surname></persName>
+		</author>
+		<idno type="DOI">10.2807/1560-7917.ES.2020.25.3.2000045</idno>
+		<ptr target="https://doi.org/10.2807/1560-7917.ES.2020.25.3.2000045" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_NYGhn5r">Euro Surveill</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,407.97,231.28,7.44;7,70.07,417.95,219.04,7.44;7,70.07,427.99,219.17,7.44;7,70.07,437.96,64.93,7.44" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZsgFmcm">Rapid establishment of laboratory diagnostics for the novel coronavirus SARS-CoV-2 in Bavaria</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Konrad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Eberle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dangel</surname></persName>
+		</author>
+		<idno type="DOI">10.2807/1560-7917</idno>
+		<ptr target="https://doi.org/10.2807/1560-7917" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7KqpRa5">Euro Surveill</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<date type="published" when="2020-02">2020. February 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,447.94,231.15,7.44;7,70.07,457.92,219.13,7.44;7,70.07,467.96,219.14,7.44;7,70.07,477.93,219.04,7.44;7,70.07,487.91,163.42,7.44" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_qSAS92g">Improved molecular diagnosis of COVID-19 by the novel, highly sensitive and specific COVID-19-RdRp/Hel real-time reverse transcription-polymerase chain reaction assay validated in vitro and with clinical specimens</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">F</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">C</forename><surname>Yip</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">K</forename><surname>To</surname></persName>
+		</author>
+		<idno type="DOI">10.1128/JCM.00310-20</idno>
+		<ptr target="https://doi.org/10.1128/JCM.00310-20" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Cfrmu4j">J Clin Microbiol</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,497.89,231.16,7.44;7,70.07,507.92,219.06,7.44;7,70.07,517.90,219.04,7.44;7,70.07,527.88,219.02,7.44;7,70.07,537.86,29.06,7.44" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_mzj823N">Laboratory readiness and response for novel coronavirus (2019-nCoV) in expert laboratories in 30 EU/EEA countries</title>
+		<author>
+			<persName coords=""><forename type="first">Cbem</forename><surname>Reusken</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">K</forename><surname>Broberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Haagmans</surname></persName>
+		</author>
+		<idno type="DOI">10.2807/1560-7917.ES.2020.25.6.2000082</idno>
+		<ptr target="https://doi.org/10.2807/1560-7917.ES.2020.25.6.2000082" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wR94SZ8">Euro Surveill</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<date type="published" when="2020-01">2020. January 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,547.89,231.16,7.44;7,70.07,557.87,219.08,7.44;7,70.07,567.85,99.93,7.44" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_Y97ECsX">Viral load of SARS-CoV-2 in clinical samples</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S1473-3099(20)30113-4</idno>
+		<ptr target="https://doi.org/10.1016/S1473-3099" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zYzjVTR">Lancet Infect Dis</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="30113" to="30114" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,577.88,231.19,7.44;7,70.07,587.86,219.07,7.44;7,70.07,597.84,219.02,7.44;7,70.07,607.82,82.79,7.44" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_UKxKSQb">Detectable 2019-nCoV viral RNA in blood is a strong indicator for the further clinical severity</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Yuan</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/22221751.2020.1732837</idno>
+		<ptr target="https://doi.org/10.1080/22221751.2020.1732837" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_sJmkx3c">Emerg Microbes Infect</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="469" to="473" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,617.85,231.25,7.44;7,70.07,627.83,219.08,7.44;7,70.07,637.81,219.02,7.44;7,70.07,647.79,195.06,7.44" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" xml:id="_DNMZAea">Clinical features and obstetric and neonatal outcomes of pregnant patients with COVID-19 in Wuhan, China: a retrospective, single-centre, descriptive study</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Kang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S1473-3099(20)30176-6</idno>
+		<ptr target="https://doi.org/10.1016/S1473-3099(20)30176-6" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2nucXds">Lancet Infect Dis</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,657.82,231.27,7.44;7,70.07,667.80,219.00,7.44;7,70.07,677.78,219.13,7.44" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_pRaP9Nd">Chest CT for typical 2019-nCoV pneumonia: relationship to negative RT-PCR testing</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.2020200343</idno>
+		<ptr target="https://doi.org/10.1148/radiol.2020200343" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EsbWTEM">Radiology</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,57.95,687.76,231.20,7.44;7,70.07,697.79,219.14,7.44;7,70.07,707.77,219.03,7.44;7,325.19,58.24,219.06,7.44;7,325.19,68.28,57.70,7.44" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_GuzTf2T">Temporal profiles of viral load in posterior oropharyngeal saliva samples and serum antibody responses during infection by SARS-CoV-2: an observational cohort study</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">K</forename><surname>To</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><forename type="middle">T</forename><surname>Tsang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">S</forename><surname>Leung</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S1473-3099(20)30196-1</idno>
+		<ptr target="https://doi.org/10.1016/S1473-3099" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FHvdV8U">Lancet Infect Dis</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="30196" to="30197" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,78.71,231.25,7.44;7,325.19,88.69,219.05,7.44;7,325.19,98.66,219.04,7.44;7,325.19,108.64,152.03,7.44" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_4xmT4Fc">Positive rate of RT-PCR detection of SARS-CoV-2 infection in 4880 cases from one hospital</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cca.2020.03.009</idno>
+		<ptr target="https://doi.org/10.1016/j.cca.2020.03.009" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FqjAShq">Clin Chim Acta</title>
+		<imprint>
+			<biblScope unit="volume">505</biblScope>
+			<biblScope unit="page" from="172" to="175" />
+			<date type="published" when="2020-01">2020. Jan to Feb 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,119.13,231.25,7.44;7,325.19,129.11,219.14,7.44;7,325.19,139.09,219.08,7.44;7,325.19,149.05,219.01,7.44;7,325.19,159.09,41.92,7.44" xml:id="b41">
+	<monogr>
+		<title level="m" type="main" xml:id="_KF2CG3Q">Evaluating the accuracy of different respiratory specimens in the laboratory diagnosis and monitoring the viral shedding of 2019-nCoVinfections</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">G</forename><surname>Shen</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-ology-042301</idno>
+		<ptr target="https://www.medrxiv.org/content/10.1101/2020.02.11.20021493v2" />
+		<imprint>
+			<date type="published" when="2020-02-17">17 Feb 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,169.52,231.14,7.44;7,325.19,179.50,219.16,7.44;7,325.19,189.47,114.65,7.44" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_fq9MySD">Quantitative detection and viral load analysis of SARS-CoV-2 in infected patients</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/cid/ciaa345</idno>
+		<ptr target="https://doi.org/10.1093/cid/ciaa345" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8fqRHuM">Clin Infect Dis</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,199.91,231.28,7.44;7,325.19,209.94,219.04,7.44;7,325.19,219.92,197.31,7.44" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_adkf5S6">Stability issues of RT-PCR testing of SARS-CoV-2 for hospitalized patients clinically diagnosed with COVID-19</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jmv.25786</idno>
+		<ptr target="https://doi.org/10.1002/jmv.25786" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eguvUHP">J Med Virol</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,230.35,231.20,7.44;7,325.19,240.33,219.13,7.44;7,325.19,250.31,207.19,7.44" xml:id="b44">
+	<analytic>
+		<title level="a" type="main" xml:id="_JEsMqHU">Detectable SARS-CoV-2 viral RNA in feces of three children during recovery period of COVID-19 pneumonia</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/jmv.25795</idno>
+		<ptr target="https://doi.org/10.1002/jmv.25795" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_DQYFqee">J Med Virol</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,260.79,231.20,7.44;7,325.19,270.77,219.14,7.44;7,325.19,280.75,219.08,7.44;7,325.19,290.73,96.36,7.44" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_bgwF7bp">Potential preanalytical and analytical vulnerabilities in the laboratory diagnosis of coronavirus disease 2019 (COVID-19)</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Lippi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Simundic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Plebani</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/cclm-2020-0285</idno>
+		<ptr target="https://doi.org/10.1515/cclm-2020-0285" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_GzbPq6k">Clin Chem Lab Med</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,301.16,231.18,7.44;7,325.19,311.19,219.08,7.44;7,325.19,321.17,219.17,7.44;7,325.19,331.15,62.49,7.44" xml:id="b46">
+	<analytic>
+		<title level="a" type="main" xml:id="_qVeTw9T">Correlation of chest CT and RT-PCR testing in coronavirus disease 2019 (COVID-19) in China: a report of 1014 cases</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Ai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Hou</surname></persName>
+		</author>
+		<idno type="DOI">10.1148/radiol.2020200642</idno>
+		<ptr target="https://doi.org/10.1148/radiol.2020200642" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CwQfZ42">Radiology</title>
+		<imprint>
+			<date type="published" when="2020">2020. 200642</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.20,341.58,231.09,7.44;7,325.42,351.62,218.90,7.44;7,325.42,361.59,218.87,7.44;7,325.42,371.57,77.03,7.44" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_4BgKYCX">Comparison of different samples for 2019 novel coronavirus detection by nucleic acid amplification tests</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijid.2020.02.050</idno>
+		<ptr target="https://doi.org/10.1016/j.ijid.2020.02.050" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_QSqDmSG">Int J Infect Dis</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="page" from="264" to="267" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,382.00,231.25,7.44;7,325.19,392.04,182.23,7.44" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" xml:id="_8dJhMPA">Eleven faces of coronavirus disease</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">Y</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">X</forename><surname>Lu</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/all.14289</idno>
+		<ptr target="https://doi.org/10.1111/all.14289" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_9MtrXdc">Allergy</title>
+		<imprint>
+			<date type="published" when="2019">2020. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.20,402.47,231.03,7.44;7,325.36,412.45,218.88,7.44;7,325.36,422.43,219.00,7.44;7,325.36,432.40,60.13,7.44" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" xml:id="_5s2fZw2">Renal effects and associated outcomes during angiotensin-Neprilysin inhibition in heart failure</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Damman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Gori</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Claggett</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jchf.2018.02.004</idno>
+		<ptr target="https://doi.org/10.1016/j.jchf.2018.02.004" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xx9nsKH">JACC Heart Fail</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="489" to="498" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,442.89,231.28,7.44;7,325.19,452.87,219.11,7.44;7,325.19,462.85,219.11,7.44;7,325.19,472.83,218.96,7.44;7,325.19,482.86,41.37,7.44" xml:id="b50">
+	<analytic>
+		<title level="a" type="main" xml:id="_wMnJDeK">Long-term changes of renal function in relation to ace inhibitor/angiotensin receptor blocker dosing in patients with heart failure and chronic kidney disease</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Fröhlich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Nelges</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Täger</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ahj.2016.03.024</idno>
+		<ptr target="https://doi.org/10.1016/j.ahj.2016.03.024" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_96qtknJ">Am Heart J</title>
+		<imprint>
+			<biblScope unit="volume">178</biblScope>
+			<biblScope unit="page" from="28" to="36" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.20,493.29,231.11,7.44;7,325.42,503.27,218.85,7.44;7,325.42,513.25,218.95,7.44;7,325.42,523.23,64.67,7.44" xml:id="b51">
+	<analytic>
+		<title level="a" type="main" xml:id="_tjF52fP">Clinical and biochemical biomarkerses from SARS-CoV-2 infected patients linked to viral loads and lung injury</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11427-020-1643-8</idno>
+		<ptr target="https://doi.org/10.1007/s11427-020-1643-8" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_bFhCDKt">Sci China Life Sci</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,533.71,231.19,7.44;7,325.19,543.69,219.07,7.44;7,325.19,553.67,219.04,7.44" xml:id="b52">
+	<analytic>
+		<title level="a" type="main" xml:id="_6FkKPg4">Lessons from SARS: a new potential therapy for acute respiratory distress syndrome (ARDS) with angiotensin converting enzyme 2 (ACE2)</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Imai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Kuba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Penninger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EhAJGcZ">Masui</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="302" to="310" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,564.10,231.26,7.44;7,325.19,574.14,219.05,7.44;7,325.19,584.11,128.20,7.44" xml:id="b53">
+	<analytic>
+		<title level="a" type="main" xml:id="_KKs8bmF">Angiotensin II plasma levels are linked to disease severity and predict fatal outcomes in H7N9-infected patients</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_feRjyqQ">Nat Commun</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">3595</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,313.07,594.54,231.25,7.44;7,325.19,604.52,219.06,7.44;7,325.19,614.50,219.14,7.44;7,325.19,624.54,219.04,7.44;7,325.19,634.51,41.58,7.44" xml:id="b54">
+	<analytic>
+		<title level="a" type="main" xml:id="_2U9qw4x">Optimizing diagnostic strategy for novel coronavirus pneumonia, a multi-center study in Eastern China</title>
+		<author>
+			<persName coords=""><forename type="first">Jing-Wen</forename><surname>Ai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hao-Cheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Teng</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-ology-042301</idno>
+		<ptr target="https://www.medrxiv.org/content/10.1101/2020.02.13.20022673v1" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mx2uFFY">Medrxiv</title>
+		<imprint>
+			<date type="published" when="2020-03-29">2020. 2020 Mar 29</date>
+		</imprint>
+	</monogr>
+	<note>Preprint</note>
+</biblStruct>
+
+<biblStruct coords="7,313.07,644.94,231.16,7.44;7,325.19,654.92,219.06,7.44;7,325.19,664.96,219.17,7.44;7,325.19,674.94,198.07,7.44" xml:id="b55">
+	<analytic>
+		<title level="a" type="main" xml:id="_uaQXFVg">A metagenomics study for the identification of respiratory viruses in mixed clinical specimens: an application of the iterative mapping approach</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">N</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">W</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00705-017-3367-4</idno>
+		<ptr target="https://doi.org/10.1007/s00705-017-3367-4" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_U7g7Srb">Arch Virol</title>
+		<imprint>
+			<biblScope unit="volume">162</biblScope>
+			<biblScope unit="page" from="2003" to="2012" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,306.14,697.68,238.11,7.54;7,306.14,707.76,198.61,7.44" xml:id="b56">
+	<monogr>
+		<title level="m" type="main" xml:id="_vdg9xM7">Publisher&apos;s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

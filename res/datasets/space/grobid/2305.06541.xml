@@ -1,0 +1,1652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_9s26NsX">Spectral Clustering on Large Datasets: When Does it Work? Theory from Continuous Clustering and Density Cheeger-Buser</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2023-05-11">11 May 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,124.87,170.76,69.26,10.48"><forename type="first">Timothy</forename><surname>Chu</surname></persName>
+							<email>timothyzchu@gmail.com</email>
+						</author>
+						<author>
+							<persName coords="1,271.89,170.76,74.38,10.48"><forename type="first">Gary</forename><forename type="middle">L</forename><surname>Miller</surname></persName>
+							<email>glmiller@cs.cmu.edu</email>
+						</author>
+						<author>
+							<persName coords="1,405.91,170.76,99.33,10.48"><forename type="first">Noel</forename><forename type="middle">J</forename><surname>Walkington</surname></persName>
+							<email>noelw@andrew.cmu.edu</email>
+						</author>
+						<title level="a" type="main" xml:id="_VHguW35">Spectral Clustering on Large Datasets: When Does it Work? Theory from Continuous Clustering and Density Cheeger-Buser</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-05-11">11 May 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">A991859774CE5D97018FBEC1ACCCAA10</idno>
+					<idno type="arXiv">arXiv:2305.06541v1[cs.LG]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_92HWNk6"><p xml:id="_awKsq82">Spectral clustering is one of the most popular clustering algorithms that has stood the test of time. It is simple to describe, can be implemented using standard linear algebra, and often finds better clusters than traditional clustering algorithms like k-means and k-centers. The foundational algorithm for two-way spectral clustering, by Shi and Malik, creates a geometric graph from data and finds a spectral cut of the graph.</p><p xml:id="_Hhx3uTD">In modern machine learning, many data sets are modeled as a large number of points drawn from a probability density function. Little is known about when spectral clustering works in this setting -and when it doesn't. Past researchers justified spectral clustering by appealing to the graph Cheeger inequality (which states that the spectral cut of a graph approximates the "Normalized Cut"), but this justification is known to break down on large data sets.</p><p xml:id="_7YJnnN4">We provide theoretically-informed intuition about spectral clustering on large data sets drawn from probability densities, by proving when a continuous form of spectral clustering considered by past researchers (the unweighted spectral cut) finds good clusters of the underlying density itself. Our work suggests that Shi-Malik spectral clustering works well on data drawn from mixtures of Laplace distributions, and works poorly on data drawn from certain other densities, such as a density we call the 'square-root trough'.</p><p xml:id="_m5HCNrX">Our core theorem proves that weighted spectral cuts have low weighted isoperimetry for all probability densities. Our key tool is a new Cheeger-Buser inequality for all probability densities, including discontinuous ones.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="27" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="28" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="29" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="30" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" xml:id="_MVNJDpg">Introduction</head><p xml:id="_wGMWuf4">Spectral clustering <ref type="bibr" coords="3,166.34,99.86,33.03,9.57" target="#b52">[SM97,</ref><ref type="bibr" coords="3,203.91,99.86,38.94,9.57" target="#b47">NJW01]</ref> is one of the most popular methods in machine learning for finding clusters in data [VL07, VLBB08, BN04, BN07, BN05, LLKL11, YHJ09, KL19, CCLB21, ZR18, ACSS20, KSAM19, MS22, SSL + 18, BGA20], and has inspired modern deep-learning based approaches to clustering and semantic segmentation [LUZ17, SSL + 18, MKRLV22]. The foundational paper in spectral clustering, by Shi and Malik <ref type="bibr" coords="3,329.11,154.06,30.91,9.57" target="#b52">[SM97]</ref>, gave a two-way normalized spectral clustering algorithm based on spectral cuts of a geometric graph from data.</p><p xml:id="_URpuqKu">Despite this popularity, little is known theoretically about the quality of clusters given by spectral clustering on large data sets. Researchers previously justified spectral clustering <ref type="bibr" coords="3,507.12,194.70,32.88,9.57" target="#b4">[BN04,</ref><ref type="bibr" coords="3,72.00,208.25,30.00,9.57" target="#b43">MS22]</ref> by appealing to the graph Cheeger inequality <ref type="bibr" coords="3,330.01,208.25,32.73,9.57" target="#b1">[AM84]</ref>, which guarantees that the spectral cut of a geometric graph has a low surface area (sum of edge weights crossing the cut) to volume (sum of edge weights on the smaller side of the cut) ratio.<ref type="foot" coords="3,359.33,233.40,4.23,6.99" target="#foot_0">1</ref> However, graph Cheeger gives very poor guarantees on large or infinite graphs [Tre21, BHL + 15, KKRT16]. <ref type="foot" coords="3,417.12,246.95,4.23,6.99" target="#foot_1">2</ref>One fundamental assumption of machine learning is that data can be modeled as a points in Euclidean space drawn from an underlying probability density. Researchers have analyzed spectral clustering by examining its behavior as the number of samples drawn from a density grows large [VLBB08, TS18, TSVB + 16]. Past work showed that normalized Shi-Malik spectral clustering <ref type="bibr" coords="3,91.46,316.65,33.03,9.57" target="#b52">[SM97]</ref> on a large sample from probability density ρ is related to its continuous form: the unweighted spectral cut of ρ 2 <ref type="bibr" coords="3,233.11,330.20,29.09,9.57" target="#b56">[TS18]</ref>.</p><p xml:id="_ZuAvJnP">Our Contribution:  We prove that continuous (normalized Shi-Malik) spectral clustering works well on mixtures of Laplace distributions. This, combined with <ref type="bibr" coords="4,299.33,370.79,29.09,9.57" target="#b56">[TS18]</ref>, gives theoretically informed intuition that normalized Shi-Malik spectral clustering works well on large data sets drawn from these densitiesbut it stops short of formally proving that Shi-Malik spectral clustering on a sample drawn from a density converges to an good cut on these densities as the number of samples grows large. We also show that continuous (normalized Shi-Malik) spectral clustering works poorly on densities similar to the 'square-root trough' density in Figure <ref type="figure" coords="4,287.85,438.54,4.24,9.57" target="#fig_1">1</ref>.2.</p><p xml:id="_SteCbMp">We prove the unweighted spectral cut on any function f has a good surface area to volume ratio (also known as isoperimetry), as long as the probability density does not vary by more than a constant factor on balls of radius 1. Examples of such functions include mixtures of Laplace distributions. Loosely speaking, a cut with good isoperimetry will cut through regions of low probability mass, while dividing the space into two regions of comparatively high probability mass. Some kind of condition on the function is necessary: in Appendix A, we show that unweighted spectral cuts have very bad isoperimetry on the function f (x, y)</p><formula xml:id="formula_0" coords="4,72.00,531.10,468.00,25.40">= x + 1 2 K supported on [−1, 1] × [0, K],</formula><p xml:id="_YEpw7nF">where K is large.</p><p xml:id="_jKrm3TN">Our core theorem proves that weighted spectral cuts have low weighted isoperimetry for all probability densities. This theorem implies the aforementioned results on unweighted spectral cuts. The weights are functions from each point x in the domain to the positive reals, chosen based on how large of a ball can be drawn centered at the point x so that the density at each point in the ball is within a constant factor of the density at any other point in the ball. Our paper gives the first spectral cuts with any isoperimetry guarantee, weighted or otherwise, on all densities: even discontinuous ones.</p><p xml:id="_erz7svD">Our core tool is a new Cheeger <ref type="bibr" coords="4,244.22,655.33,35.76,9.57" target="#b11">[Che70]</ref> and Buser <ref type="bibr" coords="4,335.82,655.33,35.06,9.57" target="#b7">[Bus82]</ref> inequality on probability densities, which relates weighted isoperimetry of a probability density to its weighted fundamental eigenvalue. Weights are necessary: unweighted Buser inequalities are false for the function ρ(x) = |x| + on the interval [−1, 1] (see Section 6 of <ref type="bibr" coords="5,228.83,75.51,51.64,9.57" target="#b16">[CMWW20]</ref>). Our paper gives the first Buser-type inequality on all probability densities, including discontinuous ones. Past Buser inequalities on densities relied on log-concavity <ref type="bibr" coords="5,154.04,102.61,38.33,9.57" target="#b26">[KLS95,</ref><ref type="bibr" coords="5,196.42,102.61,31.04,9.57" target="#b38">LV18a]</ref>, Lipschitzness <ref type="bibr" coords="5,303.30,102.61,53.60,9.57" target="#b16">[CMWW20]</ref>, or a bound on some analog of Ricci curvature for densities (one analog is based on the Hessian of the log density, see Theorem 1.4 in <ref type="bibr" coords="5,86.06,129.71,31.35,9.57" target="#b40">[Mil09]</ref>). Buser inequalities were previously known for manifolds <ref type="bibr" coords="5,410.79,129.71,35.06,9.57" target="#b7">[Bus82,</ref><ref type="bibr" coords="5,450.83,129.71,31.67,9.57" target="#b31">Led04,</ref><ref type="bibr" coords="5,487.46,129.71,30.00,9.57" target="#b40">Mil09]</ref> and graphs [KKRT16, BHL + 15] with some notion of bounded curvature.</p><p xml:id="_ShJYeRF">The core difficulty in our work is proving the density Buser inequality: the density Cheeger inequality is straightforward from existing proofs of the Cheeger inequality in manifold <ref type="bibr" coords="5,483.64,170.35,35.76,9.57" target="#b11">[Che70]</ref> and graph <ref type="bibr" coords="5,101.94,183.90,35.15,9.57" target="#b1">[AM84]</ref> settings. Using weights to ensure a correct Cheeger-Buser inequality is necessary even in the case of graphs <ref type="bibr" coords="5,174.28,197.45,36.67,9.57" target="#b13">[Chu97]</ref> <ref type="foot" coords="5,210.94,195.50,4.23,6.99" target="#foot_2">3</ref> , and should not be considered a major drawback of our approach.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1" xml:id="_vJXqeD7">Road Map</head><p xml:id="_Cs4KEc3">For the remainder of Section 1, we provide definitions and give our main theorem: Theorem 1.6, which states weighted spectral cuts have good weighted isoperimetry. We also give our core tool, Theorem 1.7, a weighted Cheeger-Buser inequality on densities. In Section 1.3.1, we explain how our weighted spectral cut theorem proves our result on unweighted spectral cuts. We survey past work in Section 1.4.</p><p xml:id="_PbmjyAH">In Section 2, we give a simple proof of the density Buser inequality in Theorem 1.7, in one dimension. In Section 3, we overview proof techniques for the d-dimensional density Buser inequality, which requires considerably heavier computation than our one dimensional proof. We give future directions in Section 4.</p><p xml:id="_n8t3JpQ">Appendix A shows that unweighted spectral cuts can have poor unweighted isoperimetry. Appendix B shows how to prove Theorem 1.6 from Theorem 1.7. Appendix C proves the Cheeger inequality in Theorem 1.7. Appendix D proves the Buser inequality in Theorem 1.7. In Appendix E, we present special cases of Theorem 1.7. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.2" xml:id="_y6D2Jw9">Definitions</head><formula xml:id="formula_1" coords="5,199.44,481.87,205.41,34.70">Φ m,c (A) := B(A) c(x)dx min A m(x)dx, R d −A m(x)dx</formula><p xml:id="_yhVxuvY">where B(A) is the boundary of A.</p><p xml:id="_t5wycx8">The unweighted isoperimetry of set A with respect to ρ is defined as Φ ρ,ρ (A).<ref type="foot" coords="5,480.80,549.34,4.23,6.99" target="#foot_3">4</ref> </p><p xml:id="_uEPdNBe">Definition 1.2. Let m : R d → R and c : R d → R be integrable functions. Define the (m, c) isoperimetric constant Φ m,c as:</p><formula xml:id="formula_2" coords="5,254.57,613.66,102.86,17.23">Φ m,c := inf A⊂R d Φ m,c (A)</formula><p xml:id="_ggVewux">The unweighted isoperimetric constant on probability density function ρ is defined as Φ ρ,ρ Definition 1.3. Let m : R d → R and s : R d → R. Define the (m, s) Rayleigh quotient of u : R → R to be:</p><formula xml:id="formula_3" coords="6,91.93,109.37,281.49,80.86">Q u,m,s = R d s(x)|∇u(x)| 2 dx R d m(x)|u(x)| 2 dx Define the (m, s) fundamental eigenvalue λ m,s 2 as: λ m,s 2 := inf m(x)u(x)dx=0 Q u,m,s</formula><p xml:id="_R9GKgYv">Define the (m, s) fundamental eigenfunction u m,s 2 be:</p><formula xml:id="formula_4" coords="6,222.93,223.63,165.65,15.42">u m,s 2 := arg min m(x)u(x)dx=0 Q u,m,s</formula><p xml:id="_HXraduT">This definition is a modeled off the definition of a fundamental eigenvalue of a graph Laplacian with edge and mass weights. The unweighted fundamental eigenvalue of probability density function ρ, is defined as λ ρ,ρ 2 , and the unweighted fundamental eigenfunction is u Note that the weighted spectral cut is defined as a subset of R d , similar to how a cut on a graph can be defined as a subset of the graph's vertices.</p><p xml:id="_tbPZmdc">Definition 1.5. The unweighted spectral cut of a probability density ρ is defined as the (ρ, ρ, ρ) weighted spectral cut.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.3" xml:id="_m4FaSKH">Main Theorems: Weighted Spectral Cuts and Density Cheeger-Buser</head><p xml:id="_HeXym6h">The core theorem of our paper is Theorem 1.6. Our core tool is Theorem 1.7. Proving Theorem 1.6 using our core tool is straightforward (Appendix B). The core technical contribution is the Buser inequality in Theorem 1.7.</p><p xml:id="_SnAZAsJ">Theorem 1.6. (Weighted Spectral Cut) Let ρ : R d → R ≥0 , let C be a constant, and let R : R d → R ≥0 be an L-Lipschitz function such that ρ(y) ρ(z) ≤ C for all y, z in a ball of radius R(x) centered at x. Let A be the (ρ, R 2 ρ, Rρ) weighted spectral cut of ρ. Then:</p><formula xml:id="formula_5" coords="6,171.18,561.42,261.11,20.51">Φ ρ,Rρ ≤ Φ ρ,Rρ (A) ≤ O C d(L + 1)Φ ρ,Rρ + √ d • Φ ρ,Rρ</formula><p xml:id="_kK3fC6K">This theorem shows that weighted spectral cuts have low weighted isoperimetry. This is the core theorem in our paper. We prove Theorem 1.6 using a new, weighted Cheeger/ Buser inequality: Theorem 1.7. (Weighted Cheeger/Buser Inequality for Probability Densities)</p><p xml:id="_drWewF4">Let ρ :</p><formula xml:id="formula_6" coords="6,125.49,646.03,258.31,51.68">R d → R ≥0 with x∈R d ρ(x) &lt; ∞. For any R : R d → R, Φ 2 ρ,Rρ 4 ≤ λ ρ,R 2 ρ 2</formula><p xml:id="_dwsPyMG">Suppose furthermore that R has the property that 1 2 ρ(x) ≤ ρ(y) ≤ 2ρ(x) for any y in a ball of radius R(x) around x, for some L-Lipschitz function R. Then:</p><formula xml:id="formula_7" coords="7,217.65,107.24,171.20,16.87">λ ρ,R 2 ρ 2 ≤ d • O (L + 1)Φ ρ,Rρ + Φ 2 ρ,Rρ</formula><p xml:id="_ghaeqjH">We call the first inequality the weighted density Cheeger inequality, and the second inequality the weighted density Buser inequality. Proving Theorem 1.6 from Theorem 1.7 is standard (see Appendix B). The proof for weighted density Cheeger is straightforward (see Appendix C). The core difficulty is proving the Buser inequality of Theorem 1.7, which is in Appendix D. A simplified proof of our Buser inequality in one dimension is given in Section 2.</p><p xml:id="_MGnkhHV">For Theorems 1.6 and 1.7, the restriction that R is L-Lipschitz is not as restrictive as it seems: for any density ρ, setting R(x) to be the maximum possible value so that ρ doesn't vary by more than a constant factor on balls of radius R(x) centered at x, results in R being 1-Lipschitz. Thus, we can state corollaries that do not depend on L:</p><p xml:id="_bqeA6E5">Corollary 1.8. (Weighted Spectral Cut, no Lipschitz Condition) Let ρ : R d → R ≥0 , and let R : R d → R be defined such that for all x, R(x) is the maximum value such that ρ(y) ρ(z) ≤ 2 for all y, z in a ball of radius R(x) centered at x. Let A be the (ρ, R 2 ρ, Rρ) weighted spectral cut of ρ. Then:</p><formula xml:id="formula_8" coords="7,72.00,305.33,468.00,47.48">Φ ρ,Rρ ≤ Φ ρ,Rρ (A) ≤ O dΦ ρ,Rρ + √ d • Φ ρ,Rρ Corollary 1.9. (Weighted Buser, no Lipschitz Condition) Let ρ : R d → R ≥0 with x∈R d ρ(x) &lt; ∞.</formula><p xml:id="_y7eQ4Bv">Let R : R d → R be defined such that for all x, R(x) is the maximum value such that ρ(y) ρ(z) ≤ 2 for all y, z in a ball of radius R(x) centered at x. Then</p><formula xml:id="formula_9" coords="7,72.00,389.92,303.33,35.11">λ ρ,R 2 ρ 2 ≤ d • O(Φ ρ,Rρ + Φ 2 ρ,Rρ ) Proof.</formula><p xml:id="_Ksg2rh5">(of Corollaries 1.8 and 1.9) Observe that any ball of radius R(x) centered at x cannot be contained strictly in the interior of a ball of radius R(y) centered at y, by definition of R. Therefore, R is 1-Lipschitz, and our corollaries follow from Theorems 1.6 and 1.7.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.3.1" xml:id="_CVjmNd2">Theorems for Continuous Spectral Clustering</head><p xml:id="_E5HwZX4">We state and prove our main result on unweighted spectral cuts of ρ (equivalently, continuous Shi-Malik spectral clustering on √ ρ).</p><p xml:id="_fVKpft2">Corollary 1.10. (Continuous Spectral Clustering / Unweighted Spectral Cut) Let ρ : R d → R ≥0 , which does not vary by more than a constant multiple C on all balls of radius 1. Let A be the unweighted spectral cut of ρ. Then:</p><formula xml:id="formula_10" coords="7,217.12,572.23,177.75,10.77">Φ ρ,ρ ≤ Φ ρ,ρ (A) ≤ O C,d ( Φ ρ,ρ + Φ ρ,ρ )</formula><p xml:id="_EaWHYBf">Proof. This follows directly from Theorem 1.6 when R is constant.</p><p xml:id="_ptMukms">If ρ has the property described in the corollary, so does ρ 2 . Thus, the (ρ 2 , ρ 2 , ρ 2 ) spectral cut has good (ρ 2 , ρ 2 ) isoperimetry when ρ doesn't vary by more than a constant factor on balls of constant radius. Since (ρ 2 , ρ 2 , ρ 2 ) spectral cuts are a continuous form of spectral clustering on ρ [TS18] (see past work in Section 1.4.1), this corollary informs us about when continuous spectral clustering on ρ has a good (ρ 2 , ρ 2 ) isoperimetry. We now state our unweighted Cheeger-Buser inequality on probability densities.</p><p xml:id="_VRrMdfu">Corollary 1.11. (Unweighted Cheeger-Buser) If ρ : R d → R does not vary by more than a constant multiple C on balls of constant radius K, then</p><formula xml:id="formula_11" coords="8,218.98,110.27,174.05,15.42">Ω(Φ 2 ρ,ρ ) ≤ λ ρ,ρ 2 ≤ O C,K (dΦ ρ,ρ + Φ 2 ρ,ρ )</formula><p xml:id="_tu3ePQd">Proof. This follows directly from Theorem 1.7 when R is constant.  <ref type="bibr" coords="8,251.47,316.87,30.91,9.57" target="#b56">[TS18]</ref> shows that normalized Shi-Malik spectral clustering<ref type="foot" coords="8,535.27,314.92,4.23,6.99" target="#foot_4">5</ref> on datasets drawn i.i.d from a probability density, behaves similarly to (ρ 2 , ρ 2 , ρ 2 ) weighted spectral cuts on the density when the number of samples grows large. They also show that unnormalized spectral clustering in the limit behaves similarly to (ρ, ρ 2 , ρ 2 ) spectral cuts<ref type="foot" coords="8,432.28,355.57,4.23,6.99" target="#foot_5">6</ref> . Corollary 1.11 show notions of isoperimetry guaranteed by normalized spectral cut methods. Our work provides theoretical justifications for normalized Shi-Malik spectral clustering on large datasets, for certain classes of densities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.4" xml:id="_aAYgq93">Past Work and Contributions</head><p xml:id="_DVTm89e">Researchers have previously suggested that Shi-Malik clustering works due to the graph Cheeger inequality <ref type="bibr" coords="8,124.17,425.26,32.88,9.57" target="#b4">[BN04,</ref><ref type="bibr" coords="8,162.24,425.26,27.53,9.57" target="#b43">MS22]</ref>. As shown in the introduction, this argument breaks down for large datasets: the quality of approximation given by the graph Cheeger and Buser inequalities gets arbitrarily bad as the number of points gets large <ref type="bibr" coords="8,317.00,452.36,31.58,9.57" target="#b55">[Tre21]</ref>, which is undesirable in the large data setting. On some densities, spectral cuts can give cuts with undesirable isoperimetry that defy machine learning intuition. See Appendix A for more details. Other work on spectral clustering has shown its limitations on certain data sets: however, this past work focuses more on the limits of the "normalized cut" approach that spectral clustering is based on <ref type="bibr" coords="8,413.73,506.56,31.49,9.57" target="#b46">[NG06]</ref>, whereas our work accepts that the normalized cut is a reasonable approach.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.4.2" xml:id="_gkvgBv3">Cheeger and Buser Inequalities</head><p xml:id="_Dmmexy2">Cheeger and Buser inequalities have been foundational to spectral graph theory [Chu97, AM84], manifold theory [Bus82, <ref type="bibr" coords="8,191.79,583.07,31.67,9.57" target="#b31">Led04,</ref><ref type="bibr" coords="8,227.65,583.07,28.31,9.57" target="#b40">Mil09]</ref>, and probability densities <ref type="bibr" coords="8,388.06,583.07,36.20,9.57" target="#b38">[LV18a,</ref><ref type="bibr" coords="8,428.46,583.07,32.86,9.57" target="#b26">KLS95]</ref>. Our work significantly expands the scope of Buser inequalities for densities.</p><p xml:id="_6qBGmkh">For Probability Densities: Past researchers have considered Buser-like inequalities on restricted probability densities, using unweighted isoperimetry and unweighted fundamental eigenvalues. Log concave densities allow for a tighter bound of Φ 2 = Θ d (λ 2 ) <ref type="bibr" coords="8,411.06,637.26,38.33,9.57" target="#b26">[KLS95,</ref><ref type="bibr" coords="8,452.75,637.26,31.04,9.57" target="#b38">LV18a]</ref>, where d is the dimension of the density's domain. Log concave densities are relevant to volume estimation and sampling algorithms for convex bodies <ref type="bibr" coords="9,259.26,89.06,32.43,9.57" target="#b17">[DF89,</ref><ref type="bibr" coords="9,295.44,89.06,31.04,9.57" target="#b38">LV18a]</ref>, since the indicator function for any convex body is log-concave <ref type="bibr" coords="9,169.81,102.61,34.34,9.57" target="#b38">[LV18a]</ref>. This line of work is related to the KLS conjecture -a fundamental conjecture in convex geometry [KLS95, LV18b, Che20, JLV22]. While the bounds for log concave densities are tighter than the bounds we obtain, these densities are very restricted. For example, log concave densities cannot have two local maxima. While this is not an issue for convex body sampling, past results on this line are less applicable to spectral clustering.</p><p xml:id="_P9MGkeR">The work of <ref type="bibr" coords="9,153.70,170.35,57.27,9.57" target="#b16">[CMWW20]</ref> shows a weighted Buser inequality relating (ρ, ρ 2 ) isoperimetry with the (ρ, ρ 3 ) fundamental eigenvalue for Lipschitz densities. This work suffers from a core drawback that both quantities are 0 for densities like the Gaussian or Laplace distribution. The spectral cut algorithm from their work, when applied to any mixture of two Gaussians in one dimension, results in cuts arbitrarily far out on the tail. This is because the (ρ, ρ 2 ) isoperimetry of cuts far out on the tail goes to 0. Our theorems overcome this barrier: it can be shown that the (ρ, Rρ) isoperimetry of a Gaussian mixture is non-zero, when R : R d → R ≥0 is chosen so that ρ does not vary by more than a constant multiple on balls of radius R(x) centered at x, and R(x) is as large as possible.</p><p xml:id="_46vv3QT">The manifold Buser inequality (Theorem 1.4 in <ref type="bibr" coords="9,324.00,278.75,31.55,9.57" target="#b40">[Mil09]</ref>, first shown in <ref type="bibr" coords="9,433.49,278.75,34.07,9.57" target="#b31">[Led04]</ref>) addresses the case of probability densities on manifolds, but is limited to density functions whose Hessian of the log density is bounded. In contrast, our work applies to all densities, including discontinuous ones.</p><p xml:id="_cTQVWee">For Graphs: The Cheeger inequality for graphs <ref type="bibr" coords="9,344.90,322.23,35.15,9.57" target="#b1">[AM84]</ref> states that up to constant factors, the fundamental eigenvalue of the normalized Laplacian is bounded below by the square of the graph isoperimetry 7 , and bounded above by the graph isoperimetry. This inequality is the foundation of spectral graph theory <ref type="bibr" coords="9,273.75,362.88,35.15,9.57" target="#b1">[AM84,</ref><ref type="bibr" coords="9,314.12,362.88,31.44,9.57" target="#b13">Chu97]</ref>. Insights from these inequalities have been applied to algorithmic tasks including multi-way graph clustering It is known that the upper bound of the Cheeger inequality graphs loses meaning as the number of vertices grows large <ref type="bibr" coords="9,221.90,457.72,31.58,9.57" target="#b55">[Tre21]</ref>. Researchers have established tighter upper bounds on the fundamental eigenvalue via Buser inequalities for large or infinite graphs, which require a bound on some discrete analog of Ricci curvature [Tre21, BHL + 15, KKRT16].</p><p xml:id="_2hvwyvT">Cheeger and Buser Inequality for Manifolds: The Cheeger <ref type="bibr" coords="9,411.83,501.20,35.76,9.57" target="#b11">[Che70]</ref> and Buser [Bus82] inequalities on manifolds are foundational. They were first discovered in manifolds, and only later were they applied to graph theory <ref type="bibr" coords="9,241.32,528.30,35.15,9.57" target="#b1">[AM84]</ref> and other settings. The Cheeger inequality applies to all compact manifolds, while the Buser inequality only applies to compact manifolds with Ricci curvature bounded from below.</p><p xml:id="_p59CgaY">Manifold Cheeger inequalities and Buser inequalities are useful to understand heat diffusion and mixing rates of random walks on manifolds <ref type="bibr" coords="9,305.95,582.50,35.07,9.57" target="#b7">[Bus82,</ref><ref type="bibr" coords="9,345.04,582.50,29.74,9.57" target="#b31">Led04]</ref>. For more on Cheeger and Buser inequalities on manifolds, see <ref type="bibr" coords="9,214.60,596.05,33.01,9.57" target="#b31">[Led04]</ref>.</p><p xml:id="_jSDry3C">7 Isoperimetry in graphs is also known as sparsity or the normalized edge expansion</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" xml:id="_kdXfzhA">A simple proof of density Buser in one dimension</head><p xml:id="_Rc4U2y7">We give a simple proof of Theorem 1.7 in one dimension using the Hardy-Muckenhoupt inequality <ref type="bibr" coords="10,88.87,113.41,37.88,9.57" target="#b44">[Muc72,</ref><ref type="bibr" coords="10,130.90,113.41,30.60,9.57" target="#b51">Sch18,</ref><ref type="bibr" coords="10,165.65,113.41,42.34,9.57" target="#b45">MWW18]</ref>. The Hardy-Muckenhoupt Inequality can be viewed as a bound on the fundamental eigenvalue of a mass-weighted, edge-weighted graph Laplacian, from a three-way split of the graph. See <ref type="bibr" coords="10,182.10,140.51,49.38,9.57" target="#b45">[MWW18,</ref><ref type="bibr" coords="10,235.12,140.51,30.60,9.57" target="#b51">Sch18]</ref> for details.</p><p xml:id="_W8PaSeG">This section illustrates why we choose our weights in Theorem 1.7 the way that we do. Our choice of weights leads to a simple proof for Theorem 1.7 in one dimension. We conjecture (but do not prove) that the localization lemma [KLS95, LV17, JLV22] can generalize this proof to all higher dimensions. This paper's full proof of Theorem 1.7 in higher dimension uses a different set of tools, and requires heavier computation compared to the simple proof in this section. The work of <ref type="bibr" coords="10,151.30,353.05,33.63,9.57" target="#b51">[Sch18,</ref><ref type="bibr" coords="10,187.85,353.05,46.36,9.57" target="#b45">MWW18]</ref> showed that this Hardy Value can be viewed in terms of effective and mass weights on graphs. Loosely speaking, the numerator of the Hardy Value can be seen as the effective conductance between the sets {x ≤ a} and {x ≥ b} where s is the infinitesimal conductance, and the denominator can be seen as the smaller of the masses of these two sets where m is the infinitesimal mass. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1" xml:id="_rU8Jcgj">Preliminaries: Hardy Splits and Inequality</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2" xml:id="_zJvf4yA">Density Cheeger-Buser in one dimension</head><p xml:id="_2xywBMh">Proof. (of Theorem 1.7 in one dimension)</p><p xml:id="_9eFxUev">Let ρ be any one-dimensional L 1 function R → R. Let R : R → R ≥0 be a 1-Lipschitz function, where for all z, ρ(x)/ρ(y) is bounded above by 2 for all x, y in balls of radius R(z) centered at z. The numerator of the (ρ, ρR 2 ) Hardy value will be bounded by a constant multiple of ρ(0)R(0). The denominator of this Hardy value will be bounded by a constant multiple of the smaller of 0 −∞ ρ(x)dx and ∞ 0 ρ(x)dx.</p><p xml:id="_q9556UA">First, we prove the Buser inequality, by upper bounding the (ρ, ρR 2 ) fundamental eigenvalue by a (ρ, ρR 2 ) Hardy value of some Hardy split, and then upper bounding that Hardy value by the (ρ, ρR) isoperimetric constant. In one dimension, any isoperimetric cut can be represented by a single point x, where the two sides of the cut are {y : y ≤ x} and {y : y &gt; x}. Without loss of generality, suppose the (ρ, ρR) isoperimetric cut is at x = 0.</p><p xml:id="_e4hfW85">The (ρ, ρR 2 ) fundamental eigenvalue is upper bounded by the (ρ, ρR 2 ) Hardy value for any Hardy split, by the Hardy-Muckenhoupt inequality. Without loss of generality, suppose that</p><formula xml:id="formula_12" coords="11,77.15,563.56,93.66,16.45">0 −∞ ρ(x) ≤ ∞ 0 ρ(x)</formula><p xml:id="_NH9dWVf">. Now consider the Hardy split defined by (0, R(0)/2). The Hardy Value of the split equals:</p><formula xml:id="formula_13" coords="11,230.23,603.73,309.77,39.14">1/ R(0)/2 0 dx ρ(x)R(x) 2 min 0 ∞ ρ(x)dx, ∞ R(0)/2 ρ(x)dx (2.1)</formula><p xml:id="_28xp8FW">The numerator of the Hardy value of this split is equal to:</p><formula xml:id="formula_14" coords="12,273.49,96.62,266.51,30.84">1 R(0)/2 0 dx ρ(x)R(x) 2 (2.2)</formula><p xml:id="_ufKtma6">By the definition of R, we know that ρ(x) doesn't change by more than a constant factor in the interval [0, R(0)/2]. Since R is 1-Lipschitz, R(x) also doesn't change by more than a constant factor on this interval. Therefore, the value in Equation 2.2 is a constant multiple of 1 R(0)/2 0 dx ρ(0)R(0) 2 which equals ρ(0)R(0)/2. Thus, the numerator of the Hardy Value is Θ(ρ(0)R(0)). Now we bound the denominator of the Hardy Value. We claim that</p><formula xml:id="formula_15" coords="12,72.00,242.68,487.49,35.95">∞ R(0)/2 ρ(x)dx = Θ ∞ 0 ρ(x)dx . This is because R(0) R(0)/2 ρ(x)dx = Θ R(0) 0 ρ(x)dx</formula><p xml:id="_8GrMBvN">, by the definition of R(0). Putting together the numerator and denominator bound, the (ρ, ρR 2 ) Hardy value of the Hardy Split (0, R(0</p><formula xml:id="formula_16" coords="12,218.61,282.86,303.32,61.22">)/2) is Θ   ρ(0)R(0) min 0 −∞ ρ(x)dx, ∞ 0 ρ(x)dx  </formula><p xml:id="_FzE3eDn">which is a constant multiple of the isoperimetry of the (ρ, ρR) cut at 0, which we assumed without loss of generality was optimal. Therefore, the (ρ, ρR 2 ) fundamental eigenvalue of any density is bounded above by a constant multiple of the (ρ, ρR) cut in one dimension, which proves the Buser inequality in Theorem 1.7 for one dimension. The Cheeger inequality in this case is a straightforward derivation from the original proof <ref type="bibr" coords="12,235.75,412.67,33.94,9.57" target="#b11">[Che70]</ref>, and has been deferred to Appendix C.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3" xml:id="_fN3Q93H">Technique for Density Cheeger-Buser in d dimensions</head><p xml:id="_DtQdJCw">We prove the Buser inequality in Theorem 1.7 by using mollification over balls of radius R. Consider an indicator function of the (ρ, ρR) isoperimetric cut: the indicator function is 1 on one side of the cut and 0 on the other. For each point x, we create a new function that is the weighted average of our indicator function in a ball of radius R(x) around x (this is also known in the literature as 'mollification' on a ball of radius R(x) around x <ref type="bibr" coords="12,326.24,539.14,29.36,9.57" target="#b18">[Fri44]</ref>). We will show the (ρ, ρR 2 ) Rayleigh quotient of this new function is bounded above by the weighted isoperimetry of the cut.</p><p xml:id="_Tgtzejy">Although the idea is simple, the details for proving that this idea works are technical, and have been deferred to Appendix (the entire appendix is a proof of Theorem 1.7). These computational details are not standard: past proof techniques for Buser type inequalities generally involve mollification of balls of constant radius (or relied on heat kernel arguments with a constant specific heat capacity <ref type="bibr" coords="12,115.92,620.44,32.64,9.57" target="#b31">[Led04]</ref>), rather than with balls of varying radii. Mollifying with balls of varying radii introduces computational issues from extra terms not present when the radii are all the same 9 , and much of our proof is devoted to bounding these extra terms. Despite the technical complications, we have organized our proof in the appendix in a clear and organized way, and we believe it is accessible to the interested reader with limited background on mollification.</p><p xml:id="_UMcr4aF">This technical argument is similar to that presented in <ref type="bibr" coords="13,358.99,102.61,53.60,9.57" target="#b16">[CMWW20]</ref>, but differs in a key way: their work only applied only to the case when ρ was L-Lipschitz, and their work can be interpreted as a strict corollary of ours when R is forced to be ρ/L (see Corollary E.1). Forcing R in this fashion leads to spectral cuts for any mixture of two one-dimensional Gaussians being arbitrarily far out on the tail, which is undesirable. Our work avoids such issue. Compared to <ref type="bibr" coords="13,479.70,156.80,53.60,9.57" target="#b16">[CMWW20]</ref>, our proof is cleaner and disentangles ρ and R in a careful way.</p><p xml:id="_64bmReg">We are allowed to have ρ(x) equal to 0 for some x, which differs from nearly every other proof about spectral cuts [VLBB08, TSVB + 16, GTS16, GTS15, TS18]. No non-empty ball of radius R(x) around point x contains y where ρ(y) = 0. This is key: if ρ has a cut with 0 isoperimetry, it is necessary for our proof method that any ball of mollification does not 'cross' this 0 cut.</p><p xml:id="_uRzc8CS">As mentioned earlier, our technique for the Cheeger component of Theorem 1.7 is straightforward from existing work, and can be found in Appendix C.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4" xml:id="_BpvyQf8">Conclusion and Open Questions</head><p xml:id="_YXSZwG6">We give the first result on isoperimetry of spectral cuts, weighted or otherwise, on general probability densities. This informs us when continuous spectral clustering finds clusters with good isoperimetry, and when it doesn't. We list some future directions of work:</p><p xml:id="_7fB6ush">One Cheeger-Buser to Rule Them All.</p><p xml:id="_6QBfmpU">Is there be a single, unified inequality for probability densities supported on manifolds, that covers all of: the Cheeger-Buser inequality in Theorem 1.7, the tighter Cheeger inequality for log concave densities (see Section 1.4), and the manifold Buser inequality [Bus82]? This setting is relevant to manifold learning [BN04, BN07], which assumes data can be modeled as samples from a density supported on a manifold.</p><p xml:id="_U3pBzAD">A Simpler Proof of Density Buser using Hardy Inequalities. In Section 2, we use the Hardy-Muckenhoupt inequality to show a Buser inequality (Theorem 1.7) on probability densities in one dimension. Can we use the Localization Lemma <ref type="bibr" coords="13,332.38,445.86,38.33,9.57" target="#b26">[KLS95]</ref> to generalize this proof to arbitrary dimension? This would simplify our full proof in Appendix D through D.6. Can the localization lemma improve dimension dependence?</p><p xml:id="_nDQv6G6">Convergence of Spectral Clustering to Spectral Cuts. Our paper combined with <ref type="bibr" coords="13,507.62,486.51,29.09,9.57" target="#b56">[TS18]</ref>, gives intuition that spectral clustering on a large number of samples drawn from a mixture of Laplace distributions, converges to a cut of the mixture with low isoperimetry. However, this intuition is not yet a formal proof. Currently, the convergence proofs of <ref type="bibr" coords="13,362.63,527.16,30.91,9.57" target="#b56">[TS18]</ref> (linking spectral clustering on large datasets to unweighted spectral cuts) require that the density be of bounded support: can we do away with this assumption?</p><p xml:id="_VPgyaSN">New Spectral Clustering Algorithms. Our work suggests there exist weighted variants of spectral clustering algorithms on samples from a density, which approximate our weighted spectral cut when the number of samples grows large. Do these algorithms work well in practice? What are these algorithms, and can we prove they converge to weighted spectral cuts on the underlying density? What if we know something about the structure of the underlying density, such as knowing it is the mixture of Gaussians?</p><p xml:id="_CCvV29S">Manifold Buser without lower bounds on Ricci Curvature. Buser's inequality on manifolds <ref type="bibr" coords="13,121.64,662.65,35.06,9.57" target="#b7">[Bus82]</ref> requires a lower bound on the Ricci curvature. This is necessary as long as the isoperimetry and eigenvalue of the manifold are unweighted. If one allows for weighted isoperimetry and weighted eigenvalues, can we find a weighted Buser inequality that applies to all manifolds (possibly by including point-wise Ricci curvature into the weights), for which the manifold Buser inequality is a corollary? Proof. Let g : R d → R ≥0 be a differentiable function, and let g = u 2 . By Cauchy Schwarz:</p><formula xml:id="formula_17" coords="21,175.48,115.86,264.07,119.39">R d c(x)|∇g(x)|dx = 2 R d c(x)|u(x)||∇u(x)|dx ≤ 2 R d c(x) 2 /m(x)|∇u(x)| 2 dx R d m(x)u(x) 2 dx ≤ 2 c/ √ ms ∞ R d s(x)|∇u(x)| 2 dx R d m(x)u(x) 2 dx</formula><p xml:id="_7rkfHwR">Dividing through by R d m(x)g(x)dx, setting g as members of the sequence of differentiable functions that converge to the indicator function given by the isoperimetric cut, and squaring both sides gives us our desired result.</p><p xml:id="_qBpDpjY">When we set m = ρ, c = ρR, s = ρR 2 for any ρ, R : R d → R ≥0 , the Cheeger inequality of Theorem 1.7 follows. We can prove a slightly stronger theorem with the same proof, which will be useful in proving Theorem 1.6 on weighted spectral cut isoperimetry.</p><p xml:id="_XGrrqmk">Lemma C.2. Let A be the (m, s, c) spectral sweep cut. Then:</p><formula xml:id="formula_18" coords="21,264.05,383.51,83.41,13.93">Φ m,c (A) 2 ≤ 4λ m,s</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_5uX27xd">2</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_dJKeXtp">D Proof of Buser Inequality on Densities</head><p xml:id="_H8PsZ2C">The remainder of the appendix is devoted to the technical proof of the Buser inequality in Theorem 1.7. The Cheeger portion of the inequality is proven in Appendix C.</p><p xml:id="_XjQeHBF">• Section D.1 contains notation and conventions that we use throughout the Appendix.</p><p xml:id="_Gw8UXrM">• Section D.2 introduces two Lemmas to bound the numerator and denominator of a key Rayleigh quotient. We will show how to prove Buser's inequality from these two lemmas.</p><p xml:id="_67FJYSF">The numerator lemma will be proven in Section D.4, and the denominator lemma will be proven in Section D.5.</p><p xml:id="_MFn4cDF">• Section D.3 gives two tools we use to prove the numerator and denominator bounds.</p><p xml:id="_SbqbXwy">• Section D.4 proves the numerator bound Lemma from Section D.2.</p><p xml:id="_2NbE2wr">• Section D.5 proves the denominator bound Lemma from Section D.2.</p><p xml:id="_BfHcSGu">where</p><formula xml:id="formula_19" coords="23,196.44,84.69,217.92,25.61">Φ u := ρ|∇u| 1 1 ρ(u − u) 1 ≈ ∂ ρR (A) min(V ol ρ (A), V ol ρ (A c ))</formula><p xml:id="_9XvE36m">Setting θ = min(1, 1/(2L), 1/(8Φ u )) and set u to be the indicator function of A corresponding to the optimal (ρ, ρR) cut:</p><formula xml:id="formula_20" coords="23,234.54,142.47,142.93,13.13">λ 2 ≤ O(max(Φ(3dL + d), Φ 2 ))</formula><p xml:id="_keQ5XGY">To prove this, we bound the numerator and denominator of the Rayleigh quotient in Equation D.1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_xsT9ufH">Lemma D.2. (Numerator bound)</head><p xml:id="_eQq3EtB">For ρ and R where R is L-Lipschitz, ρR doesn't change by more than a factor of 4 on a ball of radius R, and any θ where θL ≤ 1/2.</p><formula xml:id="formula_21" coords="23,203.80,250.14,209.36,24.43">ρR 2 |∇u θ | 2 2 1 ≤ 6d(2 + 3L) θ u ∞ ρR|∇u| 2 1</formula><p xml:id="_7UXxJGF">Lemma D.3. (Denominator Bound) For ρ and R where R is L-Lipschitz, ρR doesn't change by more than a factor of 4 on a ball of radius R, and any θ where θL ≤ 1/2.</p><formula xml:id="formula_22" coords="23,203.02,331.42,210.91,24.43">ρ(u θ − u θ ) 2 1 ≥ 1 4 ρ(u − u) 1 − 2θ ρR∇u 1</formula><p xml:id="_w8MNDAZ">Proof. (of Lemma D.1) Lemma D.2 and D.3 tell us that, for indicator functions u (guaranteeing u ∞ ≤ 1): </p><formula xml:id="formula_23" coords="23,190.97,400.39,215.60,30.32">ρR 2 ∇u θ 2 2 1 ρ(u θ − u θ ) 2 1 ≤ 6d(2 + 3L) ρR|∇u| 2 1 θ 1 4 ρ(u − u) 1 − θ ρR|∇u|</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_XGTaxjn">D.2.2 Denominator Bound Proof</head><p xml:id="_kDsk8MC">Now we prove the denominator bound in Lemma D.3, by introducing two lemmas. The proof of the latter is long, and deferred to Section D.4.</p><p xml:id="_BCu53MS">Lemma D.6. For all ρ and R (no restrictions) and indicator functions u</p><formula xml:id="formula_24" coords="24,200.82,153.88,215.32,24.43">ρ(u θ − u θ ) 2 1 ≥ 1 4 ρ(u − u) 1 − ρ(u θ − u) 1</formula><p xml:id="_yjbNZrc">Proof. (of Lemma D.6) We know by triangle inequality:</p><formula xml:id="formula_25" coords="24,72.00,208.65,468.00,73.50">√ ρ(u θ − u θ ) 2 ≥ √ ρ(u − u) 2 − √ ρ ((u θ − u θ ) − (u − u)) 2 If a ≥ b − c, then a 2 ≥ b 2 − 2bc + c 2 ≥ b 2 /2 − c 2 . Thus: √ ρ(u θ − u θ ) 2 2 ≥ 1 2 √ ρ(u − u) 2 2 − √ ρ ((u θ − u θ ) − (u − u)) 2 2 (D.2)</formula><p xml:id="_ajZf3h4">First, note that all functions f , ρ(f − f ) 2 ≤ ρf 2 . This follows from basic calculus: this can be seen by replacing f in the previous computation with a constant c and optimizing for c. In particular, this holds if f = (u θ − u) and f = u θ − u Second, note that u θ − u ∞ ≤ 1 when u is an indicator function. Therefore:</p><formula xml:id="formula_26" coords="24,89.93,352.12,450.07,19.02">√ ρ ((u θ − u θ ) − (u − u)) 2 2 ≤ √ ρ(u θ − u) 2 2 ≤ ρ(u θ − u) 1 u θ − u ∞ ≤ ρ(u θ − u) 1 (D.3)</formula><p xml:id="_6zpbJHr">Now let A be the set that u is an indicator function for. Note that A ρ(u−u) = − A C ρ(u−u), which follows since A ρ(u − u) = 0 by the definition of u. We note that on A, u ≥ u and on A C , u ≤ u, and thus (for all R with L-Lipschitz R and θL ≤ 1 2 . No assumptions on ρ).</p><formula xml:id="formula_27" coords="24,72.00,408.77,468.00,72.80">A ρ(u − u) = − A C ρ(u − u) = 1 2 |ρ(u − u)|. Now notice that ρ(u − u) 2 = (1 − u) A ρ(u − u) − u A C ρ(u − u)) = 1 2 |ρ(u − u)|. Thus: 1 2 √ ρ(u − u) 2 2 = 1 4 ρ(u − u 1 (D.</formula><p xml:id="_VNBMn3t">First, we show how to use these claims to prove our numerator bound. Then we provide full proofs of these claims. </p><formula xml:id="formula_28" coords="27,72.00,346.36,401.62,261.23">≤ (1 + θL) y |∇u(x − θR(x)y)| 2 φ(y) (R is L-Lipschitz, and |y| 2 ≤ 1 when φ(y) = 0) = (1 + θL)(|∇u| 2 ) θ Proof. (of Claim D.12) (ρR|∇u θ | 2 )(x) ρR(x)(|∇u| 2 ) θ (x) (by Claim D.11) = y ρR(x)|(∇u)(x − θR(x)y)| 2 φ(y)dy ≤ max y∈B(0,1) ρR(x) ρR(x − θRy) y ρR(x − θRy)|(∇u)(x − θR(x)y)| 2 φ(y)dy = max y∈B(0,1) ρR(x) ρR(x − θRy) (ρR|∇u| 2 ) θ (x) ≤ 2 1 − θL (ρR|∇u| 2 ) θ (x)</formula><p xml:id="_cpaNmc8">Proof. This is a direct consequence of Lemma D.8 applied to the function ρR|∇u| 2</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_FYGZKsN">D.5 Proofs for Denominator Bound Lemmas</head><p xml:id="_67byZvV">We prove Lemma D.7, which we've shown suffices to prove Lemma D.3. We do so by introducing an intermediate claim.</p><p xml:id="_Ef6u5wT">Claim D.14. For L-Lipschitz R and ρ(x) varying by no more than a factor of two in balls of radius R(x) centered at R, given θL ≤ 1 2 : The eigenvalue λ ρ,ρ 2 2 (in Corollary E.2) appears when studying unnormalized spectral clustering, when a large number of datapoints are drawn from a density ρ [VLBB08, <ref type="bibr" coords="30,468.50,312.52,27.88,9.57" target="#b56">TS18,</ref><ref type="bibr" coords="30,500.53,312.52,33.83,9.57" target="#b20">GTS15]</ref>. This corollary shows that the (ρ, ρ 2 , ρ 3/2 ) spectral cut of the probability density has good (ρ, ρ 3/2 ) isoperimetry. This is almost, but not quite the same, as the spectral cut corresponding to unnormalized spectral clustering (which does a (ρ, ρ 2 , ρ 2 ) cut) <ref type="bibr" coords="30,365.97,353.17,29.09,9.57" target="#b56">[TS18]</ref>. This theorem suggests that unnormalized spectral clustering is theoretically un-sound, and a new clustering algorithm can be built which converges to the (ρ, ρ 2 , ρ 3/2 ) cut of the density. We note that Corollary E.3 is not true if we instead set R(x) := C for any constant C. A counterexample can be found by taking two unit variance Gaussians in one dimension, and spacing them arbitrarily far apart. This corollary suggests that a variant of spectral clustering may be more effective on mixtures of Gaussians, compared to standard methods in use today.</p><formula xml:id="formula_29" coords="28,72.00,168.58,340.19,135.68">ρ(x)(u θ (x) − u(x)) ≤ 4θ 1 0 (ρR|∇u| 2 ) tθ (x)dt Proof. ρ(x)(u θ (x) − u(x)) = ρ y (u(x − θR(x)y) − u(x))φ(y)dy (definition of u θ ) = θρ y t∈[0,1] −R(x)</formula></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,82.36,554.02,242.17,9.57;3,324.53,552.06,6.59,6.99;3,331.12,542.31,9.09,9.57;3,340.21,551.16,23.63,7.90;3,367.35,554.02,16.08,9.57;3,383.43,551.90,6.59,6.99;3,390.02,542.37,9.09,9.57;3,399.11,550.99,58.44,7.90;3,462.33,554.02,67.31,9.57;3,82.36,567.56,447.28,9.57;3,82.36,581.11,447.28,9.57;3,82.36,594.66,422.69,9.57;3,82.36,376.98,232.58,160.97"><head>Figure 1 . 1 :</head><label>11</label><figDesc xml:id="_3TnTK48">Figure 1.1: The mixture of Laplace distributions e − √ x 2 +y 2 + e − √ (x−2) 2 +(y−2) 2 scaled to have integral one. We prove continuous (normalized Shi-Malik) spectral clustering finds a cut with low surface area to volume ratio on mixtures of Laplace distributions. This gives intuition that Shi-Malik spectral clustering may find good clusters on data drawn from these densities.</figDesc><graphic coords="3,82.36,376.98,232.58,160.97" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,82.36,290.51,214.60,9.57;4,312.00,289.37,217.64,10.71;4,82.36,304.06,447.28,9.57;4,82.36,317.61,447.28,9.57;4,82.36,331.16,398.46,9.57;4,82.36,89.77,246.01,184.68"><head>Figure 1</head><label>1</label><figDesc xml:id="_daq7nzT">Figure 1.2: The 'square-root trough' density |x| + 1/2 20 on [−1, 1] × [0, 20], scaled to have integral one. We show the continuous (normalized Shi-Malik) spectral clustering finds the suboptimal cut y = 10, when the cut x = 0 is much smaller. This gives intuition that Shi-Malik spectral clustering may find bad clusters on data drawn from these densities.</figDesc><graphic coords="4,82.36,89.77,246.01,184.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="5,72.00,459.32,138.03,10.21;5,210.03,457.41,4.36,6.99;5,217.91,459.36,226.97,10.18;5,444.88,457.41,4.36,6.99;5,453.64,459.36,58.54,9.57"><head>Definition 1. 1 .</head><label>1</label><figDesc xml:id="_GktBmAv">Let m, c : R d → R. The (m, c)-isoperimetry of a set A ⊂ R d is defined as</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="9,414.76,376.43,125.24,9.57;9,72.00,389.97,207.11,9.57;9,279.12,388.02,6.59,6.99;9,286.20,389.97,161.51,9.57;9,447.71,388.02,6.59,6.99;9,454.80,389.97,85.20,9.57;9,72.00,403.52,239.10,9.57;9,311.10,401.57,6.59,6.99;9,318.18,403.52,107.63,9.57;9,425.81,401.57,6.59,6.99;9,432.89,403.52,107.10,9.57;9,72.00,417.07,468.00,9.57;9,72.00,430.62,243.18,9.57"><head></head><label></label><figDesc xml:id="_gw84Kjx">[LRTV12, LGT14], Laplacian system solving [ST04, KMP10, CKM + 14], balanced cuts [OSV12, CGL + 20], expander decomposition [ST04, SW19], maximum flow [CKM + 11], sparsest cut [KLL + 13, AM84, ST04], and more [GM95, OSVV08, OV11, KW16, KLL16, Sch18, KLT22]. For a deeper exposition on Cheeger's inequality and its proof, see [AM84, Chu97, ST04].</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="10,72.00,258.06,266.94,10.18;10,338.94,256.11,6.59,6.99;10,346.02,258.06,123.59,10.18;10,469.61,256.11,10.82,6.99;10,480.93,258.06,59.07,9.57;10,72.00,271.61,90.71,10.18;10,162.79,269.66,10.82,6.99;10,174.11,271.61,34.68,9.57;10,219.78,267.98,8.47,6.99;10,217.66,277.45,15.05,6.99;10,235.03,271.58,304.97,9.60;10,72.00,285.13,353.03,9.60;10,270.19,310.87,10.91,9.57;10,290.19,307.25,3.62,6.99;10,288.07,316.71,4.50,6.99;10,296.13,310.87,45.69,9.57;10,230.56,330.30,18.18,9.57;10,264.35,326.68,4.50,6.99;10,262.23,336.14,15.05,6.99;10,279.60,330.30,39.24,9.57;10,327.93,326.68,8.47,6.99;10,325.81,336.14,3.62,6.99;10,338.71,330.30,36.21,9.57"><head></head><label></label><figDesc xml:id="_QrdC4jF">Consider a one dimensional mass function m : R → R ≥ , cut function c : R → R ≥0 , and spring function s : R → R ≥0 , where ∞ −∞ m(x)dx &lt; ∞. Define a Hardy Split to be two reals (a, b) with a ≤ b. We define the (m, s) Hardy Value of the Hardy Split (a, b) to be: 1/ b a (dx/s(x)) min a −∞ m(x)dx, ∞ b m(x)dx</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="10,82.36,586.95,447.28,9.57;10,82.36,600.50,447.28,9.57;10,82.36,614.05,447.28,9.57;10,82.36,627.60,169.09,9.57;10,82.36,441.44,447.27,115.90"><head>Figure 2</head><label>2</label><figDesc xml:id="_xMnbgm9">Figure 2.1: A Hardy split of m defined by (a, b). The (m, s) Hardy Value of this split can be interpreted as the effective conductance between x = a and x = b, divided by the mass of the smaller of x &lt; a and x &gt; b. Here, each infinitesimal conductance is equal to s(x) and each infinitesimal mass is equal to m(x).</figDesc><graphic coords="10,82.36,441.44,447.27,115.90" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="11,82.36,334.41,447.27,9.57;11,82.36,347.96,203.11,9.57;11,285.55,346.01,4.23,6.99;11,290.28,347.96,239.35,9.57;11,82.36,361.51,28.66,9.57;11,111.10,359.56,4.23,6.99;11,115.83,361.51,413.81,9.57;11,82.36,375.06,447.27,9.57;11,82.36,388.61,180.98,9.57;11,82.36,202.88,447.27,101.92"><head>Figure 2</head><label>2</label><figDesc xml:id="_59yxBdq">Figure 2.2: (Proof Sketch) Suppose our (ρ, ρR) isoperimetric cut is at x = 0. The Hardy-Muckenhoupt inequality tells us the (ρ, ρR 2 ) fundamental eigenvalue is upper bounded by the (ρ, ρR 2 ) Hardy value of the split (0, R(0)/2). We will prove this Hardy value is upper bounded by the (ρ, ρR) isoperimetric constant. R(0) has the property that ρ does not vary by more than a multiple of 2 on [−R(0), R(0)].</figDesc><graphic coords="11,82.36,202.88,447.27,101.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="23,406.57,421.60,14.42,6.99;23,72.00,436.79,384.69,10.63;23,91.93,459.10,170.79,9.57;23,72.00,496.18,177.20,9.60;23,72.00,516.81,468.00,9.57;23,72.00,530.36,71.37,9.57;23,72.00,551.79,250.84,10.21;23,322.84,549.87,4.36,6.99;23,330.73,551.82,21.82,10.18;23,352.55,549.87,10.82,6.99;23,367.77,551.82,94.62,9.57;23,209.40,580.45,94.56,10.77;23,316.21,573.07,22.79,9.57;23,324.89,587.93,5.12,9.57;23,342.62,580.45,29.47,9.57;23,387.39,580.45,20.17,10.63;23,72.00,609.05,468.00,9.60;23,72.00,622.63,210.60,9.57;23,243.34,645.87,130.29,10.77;23,72.00,669.11,468.00,10.63;23,72.00,682.66,293.75,10.77"><head>2 1</head><label>1</label><figDesc xml:id="_jbvCzBp">Divide the numerator and denominator by ρ(u − u) 1 , and Lemma D.1 follows. Now we prove Lemma D.2 and D.3.D.2.1 Numerator Bound ProofWe prove the numerator bound in Lemma D.2 by introducing two lemmas, whose proofs we defer to Section D.4:Lemma D.4. Given any L-Lipschitz function R : R d → R ≥0 and any function u, R(x)|∇u θ (x)| 2 ∞ ≤ O(d) θ + 2dL u ∞Lemma D.5. For ρ and L-Lipschitz R where ρR doesn't change by more than a factor of 4 on a ball of radius R, and any θ where θL ≤ 1/2:ρR|∇u θ | 2 1 ≤ 6 ρR|∇u|2 1 Proof. (of Lemma D.2, numerator bound) We know for all a, b that ab 1 ≤ a ∞ b 1 . Set a := R|∇u θ | 2 and b := ρR|∇u θ | 2 , and apply Lemmas D.4 and D.5.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="24,529.88,464.52,10.12,9.57;24,91.93,491.53,366.39,9.57;24,72.00,514.02,468.00,9.60;24,72.00,527.60,235.69,9.57;24,246.11,552.11,124.73,10.77;24,72.00,576.61,468.01,9.57;24,91.93,612.68,448.08,9.57;24,72.00,626.23,310.18,9.57;27,72.00,75.48,65.89,9.60;27,241.82,89.06,62.99,10.77;27,325.31,89.06,49.83,10.63"><head></head><label></label><figDesc xml:id="_suSH2MP">4) Combining Inequalities D.2, D.3, and D.4 completes the proof of our lemma. Lemma D.7. For ρ and R where R is L-Lipschitz, ρR doesn't change by more than a factor of 4 on a ball of radius R, and any θ where θL ≤ 1/2, ρ(u θ − u) 1 ≤ 2θ ρR∇u 1 Proof. (of Lemma D.3, denominator bound) This follows immediately from Lemma D.6 and D.7. Therefore, we have proven the Buser inequality in Lemma D.1, conditional on proofs for Lemma D.4, D.5, D.6, and D.7. See Section D.5 for these proofs. Claim D.13. (ρR|∇u| 2 ) θ 1 ρR|∇u| 2 1</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="27,72.00,167.66,386.67,9.57;27,458.67,165.71,8.47,6.99;27,467.63,167.66,3.03,9.57;27,72.00,203.73,247.60,9.57;27,113.09,228.24,45.03,10.77;27,116.12,252.10,29.01,10.63;27,153.51,264.00,4.19,6.99;27,160.30,252.10,100.30,9.57;27,264.63,266.05,4.23,6.99;27,293.00,252.10,82.60,10.77;27,116.12,283.85,8.49,9.57;27,137.34,295.75,4.19,6.99;27,144.12,283.85,118.90,10.63;27,267.05,297.79,4.23,6.99;27,295.42,283.85,106.88,9.57;27,116.12,315.59,8.49,9.57;27,137.34,327.49,4.19,6.99;27,142.31,315.59,201.42,9.57;27,347.75,329.54,4.23,6.99;27,376.12,315.59,122.79,9.57"><head>(((</head><label></label><figDesc xml:id="_s23KzrG">Proof. (of Lemma D.5, numerator bound) Combine Claim D.12 and Claim D.13. 10 . Proof. (of Claim D.11, used in proving Claim D.12) |∇u θ (x)| 2 = ∇ x y u(x − θR(x)y)φ(y)dy 2 Definition of u θ ) = y ∇ x (u(x − θR(x)y)φ(y)dy 2 Linearity of gradient) = y (I − θ∇R(x) ⊗ y) • ∇u(x − θR(x)y)φ(y)dy 2 Multivariable chain rule)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10" coords="28,208.04,285.37,137.37,9.57;28,169.85,310.72,239.21,9.57;28,107.42,333.62,22.58,9.57;28,137.88,345.52,36.79,6.99;28,177.28,333.62,153.81,9.57;28,352.90,333.62,130.09,9.57;28,107.42,365.05,22.58,9.57;28,137.88,376.95,36.79,6.99;28,177.28,365.05,8.49,9.57;28,208.18,357.67,23.09,9.57;28,186.96,372.54,65.53,9.57;28,253.68,365.05,199.89,9.57;28,107.42,400.01,16.64,9.57;28,146.47,400.01,20.30,9.57;28,126.18,409.82,60.89,6.99;28,208.48,392.63,28.73,9.57;28,190.08,407.50,65.53,9.57;28,268.32,411.91,36.79,6.99;28,307.72,400.01,196.26,9.57;28,107.42,436.73,16.64,9.57;28,138.65,429.35,5.45,9.57;28,125.56,444.21,31.64,9.57;28,169.91,448.63,36.79,6.99;28,209.30,436.73,196.26,9.57;28,169.85,463.83,328.49,9.57;28,107.42,490.97,22.09,9.57;28,141.33,502.87,36.79,6.99;28,180.73,490.97,196.26,9.57;28,404.25,490.97,78.97,9.57;28,107.42,523.44,22.09,9.57;28,137.70,535.34,36.79,6.99;28,177.09,523.44,184.95,10.63;28,383.85,523.44,75.38,10.63;28,107.42,554.16,22.09,9.57;28,137.70,566.06,24.23,6.99;28,162.42,554.16,80.70,10.77;28,264.94,554.16,239.98,10.77;29,72.00,75.51,344.73,9.57;29,177.88,99.04,54.32,10.77;29,175.45,123.91,28.15,9.57;29,216.64,114.23,4.23,6.99;29,211.79,135.81,4.23,6.99;29,221.37,123.91,55.63,10.77;29,283.79,136.78,4.23,6.99;29,290.34,123.91,9.62,9.57;29,321.78,123.91,78.03,9.57;29,175.45,155.59,22.09,9.57;29,210.57,145.91,4.23,6.99;29,205.73,167.49,4.23,6.99;29,222.58,155.59,66.05,12.22;29,290.95,155.59,9.62,9.57;29,175.45,186.30,22.09,9.57;29,218.60,176.61,4.23,6.99;29,213.76,198.20,4.23,6.99;29,241.41,178.92,5.45,9.57;29,226.35,193.78,35.58,9.57;29,263.12,186.30,9.62,9.57;29,288.04,186.30,49.83,10.63;29,360.18,186.30,79.40,9.57;29,175.45,215.06,22.09,9.57;29,212.13,207.68,5.45,9.57;29,199.04,222.54,31.64,9.57;29,237.33,215.06,49.83,10.63;29,175.45,236.92,77.67,10.63;29,275.44,236.92,78.97,9.57;29,72.00,260.45,49.84,9.57;29,72.00,288.75,170.11,10.52;29,72.00,310.10,110.85,9.57;29,91.93,323.65,448.08,9.57;29,72.00,337.20,278.69,10.18;29,350.69,335.25,4.36,6.99;29,358.57,337.20,21.82,10.18;29,380.39,335.25,4.36,6.99;29,385.25,337.20,3.03,9.57;29,201.49,376.85,20.01,7.90;29,224.32,365.86,58.74,9.57;29,292.15,376.85,19.52,7.90;29,349.63,358.48,20.55,9.57;29,315.68,372.19,88.47,11.78;29,405.34,365.86,10.75,9.57;29,514.70,365.86,25.30,9.57;29,72.00,395.41,468.00,10.63;29,72.00,408.96,468.00,9.57;29,72.00,422.50,468.00,9.57;29,72.00,436.05,189.75,9.57;29,91.93,449.60,95.74,9.57;29,144.67,473.13,19.71,10.77;29,514.70,473.13,25.30,9.57;29,142.24,496.03,8.49,9.57;29,159.82,507.02,48.60,7.90;29,211.23,496.03,112.48,9.57;29,514.70,496.03,25.30,9.57;29,142.24,526.30,8.49,9.57;29,159.82,537.29,19.71,7.90;29,182.35,526.30,20.72,9.57;29,210.95,537.29,20.01,7.90;29,233.77,526.30,91.76,9.57;29,514.70,526.30,25.30,9.57;29,142.24,557.29,8.49,9.57;29,159.82,568.28,19.71,7.90;29,182.35,557.29,20.72,9.57;29,210.95,568.28,19.52,7.90;29,271.56,549.91,20.55,9.57;29,234.48,565.82,64.73,9.57;29,299.60,563.24,10.82,6.99;29,299.21,565.82,29.99,10.42;29,514.70,557.29,25.30,9.57;29,161.03,582.26,311.76,9.57;29,509.25,582.26,30.76,9.57;29,142.24,605.87,8.49,9.57;29,159.82,616.86,19.52,7.90;29,182.15,605.87,20.55,9.57;29,210.58,616.86,19.71,7.90;29,271.31,598.49,20.72,9.57;29,234.31,614.39,64.73,9.57;29,299.43,611.81,10.82,6.99;29,299.04,614.39,29.99,10.42;29,509.24,605.87,30.76,9.57;29,72.00,637.77,181.27,9.57;29,266.37,635.48,4.23,6.99;29,258.11,643.53,20.77,6.99;29,285.52,637.77,37.92,10.63;29,336.53,635.48,4.23,6.99;29,328.27,643.53,20.76,6.99;29,355.68,637.77,49.49,10.63;29,88.40,658.73,5.42,10.91;29,104.42,664.39,19.71,7.90;29,126.95,659.46,40.73,9.57;29,88.40,681.93,208.34,11.36;30,88.40,74.78,43.73,10.91;30,72.00,98.02,211.56,9.57;30,72.00,130.01,10.59,12.62;30,98.73,130.01,286.97,12.62;30,72.00,156.72,116.51,10.21;30,188.52,154.80,4.36,6.99;30,196.40,156.75,159.69,10.18;30,218.86,182.80,20.00,9.57;30,238.86,180.30,4.23,6.99;30,238.86,187.26,14.68,7.90;30,254.54,182.80,25.15,9.57;30,279.69,178.04,14.68,8.44;30,279.69,187.93,4.23,6.99;30,298.39,182.80,37.94,9.57;30,336.33,182.80,36.88,11.36;30,373.22,180.30,4.23,6.99;30,373.22,187.26,14.68,7.90;30,388.89,182.80,4.24,9.57;30,91.93,207.31,448.08,9.57;30,72.00,220.85,381.55,9.57;30,72.00,243.34,302.23,9.60;30,207.66,269.42,20.00,9.57;30,227.66,266.92,4.23,6.99;30,227.66,274.51,22.15,7.98;30,250.80,269.42,25.15,9.57;30,275.95,264.67,14.68,8.44;30,275.95,274.55,4.23,6.99;30,294.66,269.42,37.94,9.57;30,332.60,273.51,22.15,7.98;30,358.17,269.42,18.78,9.57;30,376.96,266.92,4.23,6.99;30,376.96,274.51,22.15,7.98;30,400.10,269.42,4.24,9.57"><head>≤</head><label></label><figDesc xml:id="_2zgBvMM">y • ∇u(x − tθR(x)y)φ(y)dtdy (Chain rule and fundamental theorem of calculus) = θρ t∈[0,1] y −R(x)y • ∇u(x − tθRy)φ(y)dydt (Swap order of integration) = θρ t∈[0,1] y − R(x) ρR(x − tθRy) ρR(x − tθRy) (y • ∇u(x − tθRy)) φ(y)dydt ≤ θ max y∈B(0,1),t∈[0,1] ρR(x) ρR(x − tθRy) t∈[0,1] y ρR(x − tθRy)(y • ∇u(x − tθRy))φ(y)dydt ≤ θ 2 1 − θL t∈[0,1] y ρR(x − tθRy)(y • ∇u(x − tθRy))φ(y)dydt(variation in ρ is bounded in balls of radius R, and R is L-Lipschitz)≤ 4θ t∈[0,1] y ρR(x − tθRy)(y • ∇u(x − tθRy))φ(y)dydt (since θL ≤ 1/2) ≤ 4θ t∈[0,1] y ρR(x − tθRy)|∇u(x − tθRy)| 2 φ(y)dydt (since |y| 2 ≤ 1 ) = 4θ t∈[0,1] (ρR|∇u| 2 ) tθ (x)dt (Definition of f tθ when f (x) := ρ(x)R(x)|∇u(x)| 2 )Proof. (of Lemma D.7, key Lemma for proving the denominator bound)ρ(u θ − u) 8θ ρR|∇u| 2 1 (since θL ≤ 1/2)as desired.D.6 Proofs for Useful ToolsProof. (of Lemma D.8)The change of variables formula in multivariable calculus, combined with the inverse function theorem, says that for invertible, surjective functions g : R d → R d :x∈R d f (g(x))dx = z∈R d f (z) det(J x (g)(g −1 (z))) dz (D.5)Now let g(x) := g y (x) := x − θR(x)y where y is a constant. Note that the Jacobian J x (g)(x) = I − θ∇R(x) ⊗ y, and the determinant (by the Matrix determinant lemma) is 1 − y • θ∇R(x). We note that g is invertible due to the Jacobian determinant being non-zero when θL &lt; 1, and it is not difficult to see g must be surjective. Set z = x − θR(x)y.f θ 1 (D.6) = x∈R d y∈R df (x − θR(x)y)φ(y)dxdy (above and below by 1 1+θL f 1 and 1 1−θL f 1 , since:• y∈R d φ(y) = 1 • |y| 2 ≤ 1 when φ(y) = 0,and |∇R(x)| ≤ L • θL &lt; 1 by our initial assumptions on φ, R, L, and θ. E Special Cases of Weighted Spectral Cuts Corollary E.1. If ρ : R d → R is a Lipschitz function, thenΩ(Φ 2 ρ,ρ 2 ) ≤ λ ρ,ρ 3 2 ≤ O(dΦ ρ,ρ 2 + Φ 2 ρ,ρ 2 )Corollary E.1 is the main result of [CMWW20] (Theorem 1.5 in that paper). But, it is a simple consequence of our Theorem 1.7, implying our new theorem is far more general. Corollary E.2. If ρ is the square of a Lipschitz function, then Ω(Φ 2 ρ,ρ 3/2 ) ≤ λ ρ,ρ 2 2 ≤ O(dΦ ρ,ρ 3/2 + Φ 2 ρ,ρ 3/2 )</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11" coords="30,72.00,402.75,468.00,9.60;30,72.00,416.33,383.09,9.57;30,91.93,429.88,200.19,9.57;30,212.24,457.14,20.00,9.57;30,232.24,454.64,4.23,6.99;30,232.24,461.84,17.40,6.99;30,250.19,457.14,25.15,9.57;30,275.34,452.38,21.10,8.44;30,275.34,462.27,4.23,6.99;30,300.47,457.14,77.10,10.69;30,377.57,454.64,4.23,6.99;30,377.57,461.84,17.40,6.99;30,395.52,457.14,4.24,9.57"><head></head><label></label><figDesc xml:id="_vGed96A">Corollary E.3. (Weighted Cheeger-Buser for Mixtures of Gaussians) Let ρ be the mixture of a finite number of Gaussians in d dimensions with variance bounded away from 0.Let R(x) = max(1, 1/ − log ρ(x)). Then:Ω(Φ 2 ρ,ρR ) ≤ λ ρ,ρR 2 2 ≤ O(dΦ ρ,ρR + Φ 2 ρ,ρR )</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="8,72.00,187.85,468.00,138.59"><head></head><label></label><figDesc xml:id="_9RhzeXY">1.4.1 Spectral Clustering on Large Datasets and Continuous Clustering Shi-Malik normalized spectral clustering [SM97] builds a geometric graph with data as vertices (using either the Gaussian kernel as edge weights, or by connecting the graph locally), and then performing a spectral sweep cut method based on Cheeger cut methods in spectral graph theory [SM97, NJW01, VL07, AM84, Chu97]. Researchers have studied the behavior of spectral clustering on large data sets drawn i.i.d from a probability density [VLBB08, TS18, TSVB + 16], and have shown convergence properties of spectral clustering as the data set grows large. Previous work established robust connections between widely used two-way spectral clustering algorithms (like the one in [SM97]), and spectral cuts applied to probability density [VLBB08, TS18, TSVB + 16]. Loosely speaking,</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0">This ratio is known as the isoperimetry of the cut, and minimizing this quantity is known as the "Normalized Cut"<ref type="bibr" coords="3,95.04,640.15,27.89,7.86" target="#b52">[SM97,</ref><ref type="bibr" coords="3,126.01,640.15,24.45,7.86" target="#b58">VL07]</ref> or "Sparsest Cut" [MS90, LR99, CGR05] problem.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1">The Cheeger inequality guarantees that spectral cuts on a graph are a 1/Φ approximation to optimal (where Φ is the minimum isoperimetry over all cuts). On geometric graphs like the n point line or the √ n × √ n grid, 1/Φ diverges since the surface area scales more slowly with n than the volume. For large or infinite graphs, researchers needed graph Buser inequalities for tighter spectral cut guarantees [Tre21, BHL + 15, KKRT16].</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2">Cheeger inequalities using normalized Laplacians set the weights of each vertex to be its weighted degree.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_3">The unweighted isoperimetry of A corresponds to the ρ-weighted surface area to volume ratio for the set A or R d \A, depending which has smaller ρ-weighted mass.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_4">Normalized spectral clustering uses a normalized Laplacian of an intermediate geometric graph, while unnormalized spectral clustering uses an unnormalized Laplacian. See<ref type="bibr" coords="8,319.44,669.91,27.00,7.86" target="#b58">[VL07]</ref> for more information.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_5">  6  These proofs currently rely on some initial assumptions about ρ -for more details, refer to<ref type="bibr" coords="8,457.38,680.87,26.11,7.86" target="#b56">[TS18]</ref> </note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_6">The upper bound is straightforward from simple bounds on the Rayleigh quotient formulation of the fundamental eigenvalue<ref type="bibr" coords="11,115.95,667.06,30.24,7.86" target="#b44">[Muc72]</ref>. The difficulty in proving the Hardy-Muckenhoupt inequality is in the lower bound, which we do not use in this proof.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="9" xml:id="foot_7">For example, the integral of the function after mollification is not equal to the integral of the function before mollification when the molliifcation balls have varying radii, in contrast to the case when the radius does not vary.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="10" xml:id="foot_8">Note that the weight we attached to ∇u θ was ρR in these claims, but we could have used any monomial in ρ and R (at the cost of some constant factors)</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1" xml:id="_3Q42RsB">Acknowledgements</head><p xml:id="_8zSVnf8">We would like to thank Emanuel Milman, Luca Trevisan, and Michel Ledoux for explaining the state of the art in Buser inequalities on probability densities, manifolds, and graphs. We would also like to thank Alex Wang for helpful discussions.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_9P2X4r8">Appendix A Density whose Unweighted Spectral Cut has poor Isoperimetry</head><p xml:id="_dDpsxTJ">In this section, we show that for any K, there exists a density function whose unweighted isoperimetric constant is O(1/2 K ), and whose unweighted spectral cut has unweighted isoperimetry O(1/K).</p><p xml:id="_g7NP9c2">Consider function ρ supported on [−1, 1] × [0, K] for constant K, and let:</p><p xml:id="_FXPMk3Y">ρ(x, y) = |x| + 1 2 K ρ is constructed to be the Cartesian product of |x| + 1 2 K from [−1, 1], and function that is 1 on [0, K]. The unweighted fundamental eigenvalue of |x| + 1 2 K on [−1, −1] is O(1/K), by the Hardy-Muckenhoupt inequality (see Section 2). The unweighted fundamental eigenvalue of the function that is 1 on</p><p xml:id="_MFFyZYm">By symmetry arguments, it can be shown that the (ρ, ρ) fundamental eigenfunction is either constant on the lines x = C for all constants C, or else constant on the lines y = C for all constants C. From this, we can deduce that for large K, the unweighted spectral cut is defined by y ≤ K/2, which has unweighted isoperimetry O(1/K). The isoperimetric constant is O(1/2 K ), which occurs for the cut defined by x ≤ 0. Thus, the unweighted spectral cut can have unweighted isoperimetry that is exponentially worse than optimal. The computation is exactly the same when we scale √ ρ to have integral 1, so that √ ρ a true probability density function (continuous spectral clustering on probability density √ ρ is the same as unweighted spectral cut on ρ, see Section 1.4.1 and <ref type="bibr" coords="20,501.82,371.03,28.64,9.57" target="#b56">[TS18]</ref>).</p><p xml:id="_BXfNdVh">This work combined with with <ref type="bibr" coords="20,240.46,384.58,30.91,9.57" target="#b56">[TS18]</ref> (see Section 1.4.1), gives evidence that two-way normalized spectral clustering may give undesirable clusters when applied to √ ρ.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_rUJNJGu">B Spectral Cut Theorems follow from Density Cheeger-Buse</head><p xml:id="_mvQqUbU">We prove that Theorem 1.7 implies Theorem 1.6. This derivation is straightforward from past work, but we include it here for completeness.</p><p xml:id="_ZcBFrPz">Proof. (Of Theorem 1.6) Let A be the (ρ, ρR 2 , ρR) weighted spectral cut, where ρ, R, L, C, d are defined as in Theorem 1.6. Then Lemma C.2 and the Buser inequality in Theorem 1.7 imply:</p><p xml:id="_bBrfsvR">) and Theorem 1.6 follows.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_qp3QEDq">C Proof of Cheeger Inequality on Densities</head><p xml:id="_T3DD5sN">In this section, we prove the Cheeger inequality portion of Theorem 1.7. This inequality is straightforward from existing work like [Che70, AM84], but we include a derivation here for completeness.</p><p xml:id="_6tevm3G">Theorem C.1. Let m, c, s : R d → R ≥0 . Then:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" xml:id="_MBqyXtN">Notation</head><p xml:id="_nmqCHPJ">In this section, we list notation to simplify our calculations.</p><p xml:id="_cGxtdEJ">• u θ (x) := y∈R d u(x − θR(x)y)φ(y)dy for some function R : R d → R and some mollifier φ : R d → R ≥0 supported on the unit ball centered at 0, which we notate as B(0, 1). Here, we force φ(y) = 1. In our write-up, θ is always a constant.</p><p xml:id="_H3cbMrD">-This is equivalent to taking the ball of radius θR(x) around x, and finding the weighted average of u in that ball.</p><p xml:id="_SNnDcgd">u θ depends on both R and φ.</p><p xml:id="_guUX7me">• u denotes the constant R d ρ(y)u(y)dy R d ρ(y)dy , which is equal to the ρ-weighted average of u.</p><p xml:id="_BNMaVjB">• a b will mean a &lt;= Cb for some constant C.</p><p xml:id="_ZdjNpwY">• a ≈ b will mean cb ≤ a ≤ Cb for some positive constants c and C.</p><p xml:id="_mcEyDpd">• ∇ x (f (x, y)) means that f (x, y) will be treated as a function in x with constant y, and the gradient will be taken accordingly.</p><p xml:id="_Tp7Uc7K">• ∇u(f (x)) means that the gradient of u will be applied to f (x). This is in contrast with ∇(u(f (x)), where the gradient is applied to the function u • f</p><p xml:id="_DhKJnSw">. This shorthand will be convenient in simplifying certain equations.</p><p xml:id="_EKvPHKW">• u q = u(y) q dy 1/q</p><p xml:id="_s86cbuf">• R(x) in this paper will generally have the property that ρ doesn't vary by more than a factor of 2 on the ball of radius R(x) centered at x.</p><p xml:id="_HdcBt7Q">• The notation (ρR|∇u| 2 ) θ is equivalent to defining f (x) := ρ(x)R(x)|∇u(x)| 2 and computing f θ (x).</p><p xml:id="_kSygfrQ">• J x (f )(x ) refers to the Jacobian of function f : R</p><p xml:id="_TQmpJKg">No serious attempts were made to optimize the non-dimensionally sensitive constants.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_cKUf4Gy">D.2 Rayleigh Quotient Bound</head><p xml:id="_HMEqnWg">Lemma D.1. (Buser Inequality) For all indicator functions u that is 1 on A ⊂ R d and 0 elsewhere, θ &lt; min(1, 1 2L ), ρ, and L-Lipschitz R where ρ(y)R(y) varies by at most a factor of 4 for y in ball of radius R(x) around x:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Y2ZQYaJ">D.3 Useful Tools</head><p xml:id="_ffyXTDZ">Lemma D.8. (Bounding the L 1 norm of a mollified function) Let R be any L-Lipschitz function, and let f : R d → R ≥0 be a non-negative function. Then 1 1+θL f 1 ≤ f θ 1 ≤ 1 1−θL f 1 for any f when θL &lt; 1.</p><p xml:id="_WygVyzM">We note that in the case of constant R, the inequalities become equality. We defer the proof to Appendix D.6 Lemma D.9. There exists a smooth mollifier φ(y) supported on the unit ball where φ(y) = 1 and</p><p xml:id="_sW8fdfD">Proof. This fact about mollifiers is known in the folklore, and one such mollifier can be constructed by letting φ be smooth approximations of the indicator function on the unit ball, scaled so that the integral of φ is 1.</p><p xml:id="_TYQPnnb">Lemma D.10. For any differentiable radially symmetric φ : R d → R ≥0 satisfying φ(y) = 1 and φ decreasing radially outwards:</p><p xml:id="_XRcvATr">Proof. This follows directly from Lemma D.9.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_XC3gcSS">D.4 Proofs for Numerator Bound Lemmas</head><p xml:id="_TnQKyp8">Proof. (Of Lemma D.4) Recall the multivariable integration by parts formula:</p><p xml:id="_UupUNr8">where S is the surface of V and n is the outward unit normal of S. The key to our proof is use of this formula. (Proof continued on next page). Claim D.12.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_K7CPb6Y">R(x)|∇u</head><p xml:id="_U2RfHEv">(ρR|∇u θ | 2 )(x) (ρR|∇u| 2 ) θ (x)</p><p xml:id="_k2tzS3Z">(for all x, where we have restrictions on ρR and θL.)</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="14,134.73,236.75,405.28,9.57;14,134.73,250.30,405.27,9.57;14,134.73,263.85,341.84,9.57" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_qJrGnaQ">Algorithms and hardness for linear algebra on geometric graphs</title>
+		<author>
+			<persName coords=""><forename type="first">Josh</forename><surname>Alman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Timothy</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aaron</forename><surname>Schild</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhao</forename><surname>Song</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PJzAuFW">2020 IEEE 61st Annual Symposium on Foundations of Computer Science (FOCS)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="541" to="552" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,134.73,284.79,405.27,9.57;14,134.73,298.34,405.27,9.57;14,134.73,311.89,389.39,9.57" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_mWxHg4W">Eigenvalues, expanders and superconcentrators</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Alon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">D</forename><surname>Milman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_7hmQZJG">Proceedings of the 25th Annual Symposium on Foundations of Computer Science, 1984, FOCS &apos;84</title>
+				<meeting>the 25th Annual Symposium on Foundations of Computer Science, 1984, FOCS &apos;84<address><addrLine>Washington, DC, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="1984">1984</date>
+			<biblScope unit="page" from="320" to="322" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,134.72,332.83,405.28,9.57;14,134.73,346.38,405.27,9.57;14,134.73,359.93,228.07,9.57" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_79ZHkrH">Spectral clustering with graph neural networks for graph pooling</title>
+		<author>
+			<persName coords=""><forename type="first">Maria</forename><surname>Filippo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniele</forename><surname>Bianchi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cesare</forename><surname>Grattarola</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Alippi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Ev3Ab9m">International Conference on Machine Learning (ICML)</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="874" to="883" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,72.00,380.87,25.76,9.57;14,97.76,378.92,6.59,6.99;14,104.84,380.87,13.94,9.57;14,134.73,380.87,405.26,9.57;14,134.73,394.42,405.27,9.57;14,134.73,407.97,24.85,9.57" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_Pq9vDVh">Li-yau inequality on graphs</title>
+		<author>
+			<persName coords=""><surname>Bhl + 15] Frank</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Paul</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yong</forename><surname>Horn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gabor</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dan</forename><surname>Lippner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shing-Tung</forename><surname>Mangoubi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Yau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Ye5QKVG">Journal of Differential Geometry</title>
+		<imprint>
+			<biblScope unit="volume">99</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="359" to="405" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,134.73,428.91,405.27,9.57;14,134.73,442.46,203.15,9.57" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_8pwsPUh">Semi-supervised learning on riemannian manifolds</title>
+		<author>
+			<persName coords=""><forename type="first">Mikhail</forename><surname>Belkin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Partha</forename><surname>Niyogi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XDaZxtv">Mach. Learn</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="209" to="239" />
+			<date type="published" when="2004-06">June 2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,134.73,463.40,405.27,9.57;14,134.73,476.95,405.27,9.57;14,134.73,490.50,186.16,9.57" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_fyabHdd">Towards a theoretical foundation for laplacianbased manifold methods</title>
+		<author>
+			<persName coords=""><forename type="first">Mikhail</forename><surname>Belkin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Partha</forename><surname>Niyogi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_BrNNj6B">International Conference on Computational Learning Theory</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page" from="486" to="500" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,134.73,511.44,405.28,9.57;14,134.73,524.99,361.05,9.57" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_YubZUfX">Convergence of laplacian eigenmaps</title>
+		<author>
+			<persName coords=""><forename type="first">Mikhail</forename><surname>Belkin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Partha</forename><surname>Niyogi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_KH2JPJF">Advances in Neural Information Processing Systems (NeurIPS)</title>
+				<imprint>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="page" from="129" to="136" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,134.73,543.18,405.28,12.32;14,134.73,559.48,233.16,9.57" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_hNSYpM5">A note on the isoperimetric constant</title>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Buser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PhS3DZg">Annales scientifiques de l&apos; École Normale Supérieure</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="213" to="230" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,134.73,580.42,405.27,9.57;14,134.73,593.97,405.27,9.57;14,134.73,607.52,355.40,9.57" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_U87R7RC">Two-way kernel matrix puncturing: towards resource-efficient pca and spectral clustering</title>
+		<author>
+			<persName coords=""><forename type="first">Romain</forename><surname>Couillet</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Florent</forename><surname>Chatelain</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><forename type="middle">Le</forename><surname>Bihan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_E9mwNRX">International Conference on Machine Learning (ICML)</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="2156" to="2165" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,78.57,628.46,19.72,9.57;14,98.29,626.51,6.59,6.99;14,105.37,628.46,13.94,9.57;14,134.73,628.46,405.28,9.57;14,134.73,642.01,405.27,9.57;14,134.73,655.56,405.28,9.57;14,134.73,669.11,405.28,9.57;14,134.73,682.66,285.89,9.57" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_PUafQyt">A deterministic algorithm for balanced cut with applications to dynamic connectivity, flows, and beyond</title>
+		<author>
+			<persName coords=""><forename type="first">Julia</forename><surname>Chuzhoy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yu</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jason</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Danupon</forename><surname>Nanongkai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thatchaphol</forename><surname>Saranurak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_RxjZ4Wr">61st IEEE Annual Symposium on Foundations of Computer Science, FOCS 2020</title>
+				<editor>
+			<persName><forename type="first">Sandy</forename><surname>Irani</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Durham, NC, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020">November 16-19, 2020. 2020</date>
+			<biblScope unit="page" from="1158" to="1167" />
+		</imprint>
+	</monogr>
+	<note>CGL + 20</note>
+</biblStruct>
+
+<biblStruct coords="15,134.72,75.51,405.27,9.57;15,134.73,89.06,405.28,9.57;15,134.73,102.61,405.27,9.57;15,134.73,116.16,405.28,9.57;15,134.73,129.71,24.85,9.57" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_kr89DSu">Embeddings of negative-type metrics and an improved approximation to generalized sparsest cut</title>
+		<author>
+			<persName coords=""><forename type="first">Shuchi</forename><surname>Chawla</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anupam</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Harald</forename><surname>Räcke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_zy6dwdv">Proceedings of the Sixteenth Annual ACM-SIAM Symposium on Discrete Algorithms, SODA 2005</title>
+				<meeting>the Sixteenth Annual ACM-SIAM Symposium on Discrete Algorithms, SODA 2005<address><addrLine>Vancouver, British Columbia, Canada</addrLine></address></meeting>
+		<imprint>
+			<publisher>SIAM</publisher>
+			<date type="published" when="2005">January 23-25, 2005. 2005</date>
+			<biblScope unit="page" from="102" to="111" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,151.88,405.28,9.57;15,134.73,165.43,405.28,9.57;15,134.73,178.98,169.42,9.57" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_WuMMRw3">A lower bound for the smallest eigenvalue of the laplacian</title>
+		<author>
+			<persName coords=""><forename type="first">Jeff</forename><surname>Cheeger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_fyScZEn">Problems in Analysis: A Symposium in Honor of Salomon Bochner</title>
+				<meeting><address><addrLine>Princeton, N. J.</addrLine></address></meeting>
+		<imprint>
+			<publisher>Princeton Univ. Press</publisher>
+			<date type="published" when="1970">1970</date>
+			<biblScope unit="page" from="195" to="199" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,201.15,405.28,9.57;15,134.73,214.70,97.06,9.57" xml:id="b12">
+	<monogr>
+		<title level="m" type="main" xml:id="_mMcnTwE">An almost constant lower bound of the isoperimetric coefficient in the kls conjecture</title>
+		<author>
+			<persName coords=""><forename type="first">Yuansi</forename><surname>Chen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,236.88,405.28,9.57;15,134.73,250.43,252.05,9.57" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_nsAZhaZ">Spectral Graph Theory</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">R K</forename><surname>Chung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_6NrgAWm">Regional Conference Series in Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<date type="published" when="1997">1997</date>
+			<publisher>American Mathematical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,79.35,272.60,22.05,9.57;15,101.39,270.65,6.59,6.99;15,108.48,272.60,431.52,9.57;15,134.73,286.15,405.27,9.57;15,134.73,299.70,405.28,9.57;15,134.73,313.25,405.27,9.57;15,134.73,326.80,287.24,9.57" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_qd9kngx">Electrical flows, laplacian systems, and faster approximation of maximum flow in undirected graphs</title>
+		<author>
+			<persName coords=""><forename type="first">Paul</forename><surname>Christiano</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jonathan</forename><forename type="middle">A</forename><surname>Kelner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aleksander</forename><surname>Madry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Spielman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shang-Hua</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_zzBytCh">Proceedings of the 43rd ACM Symposium on Theory of Computing, STOC 2011</title>
+				<editor>
+			<persName><forename type="first">Lance</forename><surname>Fortnow</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">P</forename><surname>Salil</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Vadhan</surname></persName>
+		</editor>
+		<meeting>the 43rd ACM Symposium on Theory of Computing, STOC 2011<address><addrLine>San Jose, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2011-06">June 2011. 2011</date>
+			<biblScope unit="page" from="273" to="282" />
+		</imprint>
+	</monogr>
+	<note>CKM + 11</note>
+</biblStruct>
+
+<biblStruct coords="15,79.35,348.98,22.05,9.57;15,101.39,347.03,6.59,6.99;15,108.48,348.98,431.53,9.57;15,134.73,360.88,405.27,13.53;15,134.73,378.39,405.28,9.57;15,134.73,391.94,360.37,9.57" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_tQnUmYq">Solving SDD linear systems in nearly mlog 1/2 n time</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Michael</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">CKM + 14</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rasmus</forename><surname>Cohen</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">CKM + 14</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gary</forename><forename type="middle">L</forename><surname>Kyng</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">CKM + 14</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jakub</forename><forename type="middle">W</forename><surname>Miller</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">CKM + 14</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Pachocki</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">CKM + 14</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anup</forename><forename type="middle">B</forename><surname>Peng</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">CKM + 14</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><surname>Rao</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">CKM + 14</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chen</forename><surname>Shen</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">CKM + 14</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><surname>Xu</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">CKM + 14</orgName>
+			</affiliation>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Wd7nuk2">Symposium on Theory of Computing, STOC</title>
+				<editor>
+			<persName><forename type="first">David</forename><forename type="middle">B</forename><surname>Shmoys</surname></persName>
+		</editor>
+		<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2014-05-31">2014. May 31 -June 03, 2014. 2014</date>
+			<biblScope unit="page" from="343" to="352" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,414.12,405.27,9.57;15,134.73,427.66,405.27,9.57;15,134.73,441.21,379.41,9.87" xml:id="b16">
+	<monogr>
+		<title level="m" type="main" xml:id="_a2CnkjD">Weighted cheeger and buser inequalities, with applications to clustering and cutting probability densities</title>
+		<author>
+			<persName coords=""><forename type="first">Timothy</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gary</forename><forename type="middle">L</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Noel</forename><forename type="middle">J</forename><surname>Walkington</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><forename type="middle">L</forename><surname>Wang</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/2004.09589.CoRR,abs/2004.09589" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,463.39,405.27,9.57;15,134.73,476.94,405.27,9.57;15,134.73,490.49,405.27,9.57" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_yCY5PKk">A random polynomial time algorithm for approximating the volume of convex bodies</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Dyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Frieze</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_qHKpRbe">Proceedings of the Twenty-first Annual ACM Symposium on Theory of Computing, STOC &apos;89</title>
+				<meeting>the Twenty-first Annual ACM Symposium on Theory of Computing, STOC &apos;89<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="1989">1989</date>
+			<biblScope unit="page" from="375" to="381" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,512.66,405.27,9.57;15,134.73,526.21,368.68,9.57" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_Z39nfge">The identity of weak and strong extensions of differential operators</title>
+		<author>
+			<persName coords=""><forename type="first">Kurt</forename><surname>Otto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Friedrichs</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Say8cem">Transactions of the American Mathematical Society</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="132" to="151" />
+			<date type="published" when="1944">1944</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,548.39,405.27,9.57;15,134.73,561.94,337.32,9.57" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_AZYkDpW">On the performance of the spectral graph partitioning methods</title>
+		<author>
+			<persName coords=""><forename type="first">Stephen</forename><surname>Guattery</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gary</forename><forename type="middle">L</forename><surname>Miller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_qKsM8Ms">SODA&apos;95</title>
+				<imprint>
+			<publisher>ACM-SIAM</publisher>
+			<date type="published" when="1995">1995</date>
+			<biblScope unit="page" from="233" to="242" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,584.11,405.27,9.57;15,134.73,597.66,405.27,9.57;15,134.73,611.21,108.48,9.57" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZyHBw2b">On the rate of convergence of empirical measures in ∞-transportation distance</title>
+		<author>
+			<persName coords=""><forename type="first">Nicolás</forename><surname>García</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Trillos</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dejan</forename><surname>Slepčev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Qu57ckw">Canadian Journal of Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1358" to="1383" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,633.39,405.27,9.57;15,134.73,646.94,377.32,9.57" xml:id="b21">
+	<monogr>
+		<title level="m" type="main" xml:id="_M9FDsrW">Continuum limit of total variation on point clouds. Archive for Rational Mechanics and Analysis</title>
+		<author>
+			<persName coords=""><forename type="first">Nicolás</forename><surname>García</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Trillos</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dejan</forename><surname>Slepčev</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">220</biblScope>
+			<biblScope unit="page" from="193" to="241" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,134.73,669.11,405.27,9.57;15,134.73,682.66,249.59,9.57" xml:id="b22">
+	<monogr>
+		<title level="m" type="main" xml:id="_erFYqk8">A slightly improved bound for the KLS constant</title>
+		<author>
+			<persName coords=""><forename type="first">Arun</forename><surname>Jambulapati</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yin</forename><surname>Tat Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Santosh</forename><forename type="middle">S</forename><surname>Vempala</surname></persName>
+		</author>
+		<idno>CoRR, abs/2208.11644</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.73,75.51,405.27,9.57;16,134.73,89.06,344.72,9.57" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_UabXmvB">Discrete curvature and abelian groups</title>
+		<author>
+			<persName coords=""><forename type="first">Bo'az</forename><surname>Klartag</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gady</forename><surname>Kozma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Ralli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Prasad</forename><surname>Tetali</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_x58bmdy">Canadian Journal of Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="655" to="674" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.73,111.57,405.27,9.57;16,134.73,125.12,405.27,9.57;16,72.00,147.64,25.15,9.57;16,97.15,145.69,6.59,6.99;16,104.24,147.64,13.94,9.57;16,134.72,147.64,405.28,9.57;16,134.73,161.19,405.27,9.57;16,134.73,174.74,405.27,9.57;16,134.73,188.29,405.28,9.57;16,134.73,201.83,228.48,9.57" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_UZctWJS">Improved cheeger&apos;s inequality: analysis of spectral partitioning algorithms through higher order spectral gap</title>
+		<author>
+			<persName coords=""><forename type="first">Ioannis</forename><surname>Koutis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Huong</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">; Tsz Chiu</forename><surname>Kwok</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chi</forename><surname>Lap</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yin</forename><surname>Lau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shayan</forename><surname>Tat Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Luca</forename><surname>Oveis Gharan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Trevisan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_63PceFY">Advances in Neural Information Processing Systems (NeurIPS)</title>
+				<editor>
+			<persName><forename type="first">Dan</forename><surname>Boneh</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Tim</forename><surname>Roughgarden</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Joan</forename><surname>Feigenbaum</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Palo Alto, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013">2019. June 1-4, 2013. 2013</date>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="11" to="20" />
+		</imprint>
+	</monogr>
+	<note>Symposium on Theory of Computing Conference, STOC&apos;13</note>
+</biblStruct>
+
+<biblStruct coords="16,134.73,224.35,405.27,9.57;16,134.73,237.90,405.27,9.57;16,134.73,251.45,405.27,9.57;16,134.73,265.00,405.27,9.57;16,134.73,278.55,176.82,9.57" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_J3YQwQf">Improved cheeger&apos;s inequality and analysis of local graph partitioning using vertex expansion and expansion profile</title>
+		<author>
+			<persName coords=""><forename type="first">Tsz</forename><surname>Chiu Kwok</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lap</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chi</forename><surname>Lau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yin</forename><surname>Tat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lee</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_D5kTZyw">Proceedings of the Twenty-seventh Annual ACM-SIAM Symposium on Discrete Algorithms, SODA &apos;16</title>
+				<meeting>the Twenty-seventh Annual ACM-SIAM Symposium on Discrete Algorithms, SODA &apos;16<address><addrLine>Philadelphia, PA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Society for Industrial and Applied Mathematics</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="1848" to="1861" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.73,301.06,405.27,9.57;16,134.73,314.61,405.28,9.57;16,134.73,328.16,47.87,9.57" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_qAu5Hq4">Isoperimetric problems for convex bodies and a localization lemama</title>
+		<author>
+			<persName coords=""><forename type="first">Ravi</forename><surname>Kannan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">László</forename><surname>Lovász</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Miklós</forename><surname>Simonovits</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MRmrHtX">Discrete &amp; Computational Geometry</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="541" to="559" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.72,350.68,405.28,9.57;16,134.73,364.23,405.27,9.57;16,134.73,377.77,405.27,9.57;16,134.73,391.32,174.12,9.57" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_DEHFSM2">Cheeger inequalities for vertex expansion and reweighted eigenvalues</title>
+		<author>
+			<persName coords=""><forename type="first">Tsz</forename><surname>Chiu Kwok</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lap</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chi</forename><surname>Lau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kam</forename><surname>Chuen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tung</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_rR2Jgyu">63rd IEEE Annual Symposium on Foundations of Computer Science, FOCS 2022</title>
+				<meeting><address><addrLine>Denver, CO, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-11-03">October 31 -November 3, 2022. 2022</date>
+			<biblScope unit="page" from="366" to="377" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.72,413.84,405.28,9.57;16,134.73,427.39,405.28,9.57;16,134.73,440.94,405.27,9.57;16,134.73,454.49,146.25,9.57" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_6khEnqR">Approaching optimality for solving SDD linear systems</title>
+		<author>
+			<persName coords=""><forename type="first">Ioannis</forename><surname>Koutis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gary</forename><forename type="middle">L</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Peng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Pe64uXH">51th Annual IEEE Symposium on Foundations of Computer Science, FOCS 2010</title>
+				<meeting><address><addrLine>Las Vegas, Nevada, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2010">October 23-26, 2010. 2010</date>
+			<biblScope unit="page" from="235" to="244" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.72,477.00,405.27,9.57;16,134.73,490.55,405.27,9.57;16,134.73,504.10,323.47,9.57" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_XG8bZCn">Guarantees for spectral clustering with fairness constraints</title>
+		<author>
+			<persName coords=""><forename type="first">Matthäus</forename><surname>Kleindessner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Samira</forename><surname>Samadi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pranjal</forename><surname>Awasthi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jamie</forename><surname>Morgenstern</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_wUBgtcg">International Conference on Machine Learning (ICML)</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="3458" to="3467" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.73,526.62,405.27,9.57;16,134.73,540.17,254.27,9.57" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_jNcjwef">Cheeger-type approximation for sparsest stcut</title>
+		<author>
+			<persName coords=""><forename type="first">Robert</forename><surname>Krauthgamer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tal</forename><surname>Wagner</surname></persName>
+		</author>
+		<idno>14:1-14:21</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Q4rQTCu">ACM Trans. Algorithms</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.72,562.68,405.28,9.57;16,134.73,576.23,250.03,9.57" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_C7qtu2t">Spectral gap, logarithmic Sobolev constant, and geometric bounds</title>
+		<author>
+			<persName coords=""><forename type="first">Michel</forename><surname>Ledoux</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ZFaETSX">Surveys in differential geometry</title>
+				<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="219" to="240" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.73,598.75,405.26,9.57;16,134.73,612.30,399.12,9.57" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_WdTFRRp">Multi-way spectral partitioning and higher-order cheeger inequalities</title>
+		<author>
+			<persName coords=""><forename type="first">James</forename><forename type="middle">R</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shayan</forename><surname>Oveis Gharan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Luca</forename><surname>Trevisan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_GZnJhRv">Journal of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,134.73,634.81,405.27,9.57;16,134.73,648.36,405.27,9.57;16,134.73,661.91,405.27,9.57;16,134.73,675.46,287.37,9.57" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_BU75PdN">Time and space efficient spectral clustering via column sampling</title>
+		<author>
+			<persName coords=""><forename type="first">Mu</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiao-Chen</forename><surname>Lian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><forename type="middle">T</forename><surname>Kwok</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bao-Liang</forename><surname>Lu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_x6q7knT">The 24th IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2011</title>
+				<meeting><address><addrLine>Colorado Springs, CO, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE Computer Society</publisher>
+			<date type="published" when="2011-06-25">20-25 June 2011. 2011</date>
+			<biblScope unit="page" from="2297" to="2304" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.72,75.51,405.28,9.57;17,134.73,89.06,405.27,9.57;17,134.73,102.61,241.32,9.57" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_suDcJVJ">Multicommodity max-flow min-cut theorems and their use in designing approximation algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">Tom</forename><surname>Leighton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Satish</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_83txMUj">Prelim version in ACM STOC 1988</title>
+				<imprint>
+			<publisher>JACM</publisher>
+			<date type="published" when="1999">1999</date>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="787" to="832" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.73,125.12,405.28,9.57;17,134.73,138.67,405.27,9.57;17,134.73,152.22,326.04,9.57" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_G5arKHC">Many sparse cuts via higher eigenvalues</title>
+		<author>
+			<persName coords=""><forename type="first">Anand</forename><surname>Louis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Prasad</forename><surname>Raghavendra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Prasad</forename><surname>Tetali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Santosh</forename><surname>Vempala</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_V7wZ58R">Proceedings of the forty-fourth annual ACM symposium on Theory of computing, STOC 2012</title>
+				<meeting>the forty-fourth annual ACM symposium on Theory of computing, STOC 2012</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="1131" to="1140" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.72,174.74,405.28,9.57;17,134.73,188.29,405.27,9.57;17,134.73,201.83,24.85,9.57" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_GWVTeeB">Deep spectral clustering learning</title>
+		<author>
+			<persName coords=""><forename type="first">Raquel</forename><surname>Marc T Law</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><forename type="middle">S</forename><surname>Urtasun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Zemel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ZG9T4RA">International conference on machine learning (ICML)</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="1985" to="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.72,224.35,405.27,9.57;17,134.73,237.90,405.28,9.57;17,134.73,251.45,405.28,9.57;17,134.73,265.00,24.85,9.57" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" xml:id="_UgtpSAd">Eldan&apos;s stochastic localization and the kls hyperplane conjecture: An improved lower bound for expansion</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">T</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">S</forename><surname>Vempala</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CjXj3Kq">IEEE 58th Annual Symposium on Foundations of Computer Science</title>
+		<imprint>
+			<biblScope unit="page" from="998" to="1007" />
+			<date type="published" when="2017-10">2017. 2017. Oct 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.72,287.51,405.28,9.57;17,134.73,301.06,24.85,9.57" xml:id="b38">
+	<monogr>
+		<title level="m" type="main" xml:id="_8rAbcVn">The Kannan-Lovász-Simonovits conjecture</title>
+		<author>
+			<persName coords=""><forename type="first">Tat</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Santosh</forename><forename type="middle">S</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Vempala</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.73,323.58,405.27,9.57;17,134.73,337.13,405.27,9.57;17,134.73,350.68,405.27,9.57;17,134.73,364.23,28.79,9.57" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_3jyCutX">Stochastic localization + stieltjes barrier = tight bound for log-Sobolev</title>
+		<author>
+			<persName coords=""><forename type="first">Tat</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Santosh</forename><forename type="middle">S</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Vempala</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_tDTX5St">Proceedings of the 50th Annual ACM SIGACT Symposium on Theory of Computing, STOC 2018</title>
+				<meeting>the 50th Annual ACM SIGACT Symposium on Theory of Computing, STOC 2018<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="1122" to="1129" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.73,386.74,405.28,9.57;17,134.73,400.29,257.77,9.57" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_VtVWmvc">On the role of convexity in isoperimetry, spectral gap and concentration</title>
+		<author>
+			<persName coords=""><forename type="first">Emanuel</forename><surname>Milman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_793vMyF">Inventiones mathematicae</title>
+		<imprint>
+			<biblScope unit="volume">177</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="43" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.73,422.81,405.27,9.57;17,134.73,436.36,405.28,9.57;17,134.73,449.90,405.28,9.57;17,134.73,463.45,276.71,9.57" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" xml:id="_HJNT2aH">Deep spectral methods: A surprisingly strong baseline for unsupervised semantic segmentation and localization</title>
+		<author>
+			<persName coords=""><forename type="first">Luke</forename><surname>Melas-Kyriazi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christian</forename><surname>Rupprecht</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Iro</forename><surname>Laina</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrea</forename><surname>Vedaldi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_yYMHG4v">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+				<meeting>the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="8364" to="8375" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.73,485.97,405.28,9.57;17,134.73,499.52,255.86,9.57" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_Y3Szgy6">Sparsest cuts and bottlenecks in graphs</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Farhad</forename><surname>Matula</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Shahrokhi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_k4UqxZt">Discrete Applied Mathematics</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="113" to="123" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.73,522.03,405.27,9.57;17,134.73,535.58,405.28,9.57;17,134.73,549.13,24.85,9.57" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_g9SrsTA">A tighter analysis of spectral clustering, and beyond</title>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Macgregor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">He</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_mCpfUVg">International Conference on Machine Learning (ICML)</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="14717" to="14742" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.73,571.65,405.27,9.57;17,134.73,585.20,86.66,9.57" xml:id="b44">
+	<analytic>
+		<title level="a" type="main" xml:id="_9wuCm3F">Hardy&apos;s inequality with weights</title>
+		<author>
+			<persName coords=""><forename type="first">Benjamin</forename><surname>Muckenhoupt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7RkMtAW">Studia Mathematica</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="31" to="38" />
+			<date type="published" when="1972">1972</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.73,607.71,405.27,9.57;17,134.73,621.26,403.38,9.87;17,134.73,634.81,62.04,9.87" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_PrG7ha9">Hardy-muckenhoupt bounds for laplacian eigenvalues</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Gary</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Noel</forename><forename type="middle">J</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><forename type="middle">L</forename><surname>Walkington</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Wang</surname></persName>
+		</author>
+		<ptr target="http://arxiv.org/abs/1812.02841" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_SASRuKn">RANDOM/APPROX</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,134.73,657.33,405.27,9.57;17,134.73,670.88,278.12,9.57" xml:id="b46">
+	<monogr>
+		<title level="m" type="main" xml:id="_7kBVYFu">Fundamental limitations of spectral clustering. Advances in neural information processing systems</title>
+		<author>
+			<persName coords=""><forename type="first">Boaz</forename><surname>Nadler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Meirav</forename><surname>Galun</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="volume">19</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,134.73,75.51,405.27,9.57;18,134.73,89.06,405.27,9.57;18,134.73,102.61,405.28,9.57;18,134.73,116.16,194.58,9.57" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_WU5jcwP">On spectral clustering: Analysis and an algorithm</title>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">Y</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><forename type="middle">I</forename><surname>Jordan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yair</forename><surname>Weiss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_dyWVTvR">Proceedings of the 14th International Conference on Neural Information Processing Systems: Natural and Synthetic, NIPS&apos;01</title>
+				<meeting>the 14th International Conference on Neural Information Processing Systems: Natural and Synthetic, NIPS&apos;01<address><addrLine>Cambridge, MA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2001">2001</date>
+			<biblScope unit="page" from="849" to="856" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,134.73,138.09,405.27,9.57;18,134.73,151.64,405.27,9.57;18,134.73,165.19,405.27,9.57;18,134.73,178.74,208.47,9.57" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" xml:id="_9beSdmk">Approximating the exponential, the lanczos method and an o (m)-time spectral algorithm for balanced separator</title>
+		<author>
+			<persName coords=""><forename type="first">Lorenzo</forename><surname>Orecchia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sushant</forename><surname>Sachdeva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nisheeth</forename><forename type="middle">K</forename><surname>Vishnoi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_rVMHfUD">Proceedings of the forty-fourth annual ACM symposium on Theory of computing (STOC)</title>
+				<meeting>the forty-fourth annual ACM symposium on Theory of computing (STOC)</meeting>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="1141" to="1160" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,134.73,200.68,405.27,9.57;18,134.73,214.23,405.28,9.57;18,134.73,227.78,405.28,9.57;18,134.73,241.33,24.85,9.57" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" xml:id="_wUNrDaD">On partitioning graphs via single commodity flows</title>
+		<author>
+			<persName coords=""><forename type="first">Lorenzo</forename><surname>Orecchia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Leonard</forename><forename type="middle">J</forename><surname>Schulman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Umesh</forename><forename type="middle">V</forename><surname>Vazirani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nisheeth</forename><forename type="middle">K</forename><surname>Vishnoi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_h2fdAgE">Proceedings of the fortieth annual ACM symposium on Theory of computing, STOC &apos;08</title>
+				<meeting>the fortieth annual ACM symposium on Theory of computing, STOC &apos;08</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="page" from="461" to="470" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,134.73,263.27,405.27,9.57;18,134.73,276.82,405.27,9.57;18,134.73,290.37,405.27,9.57;18,134.73,303.91,405.27,9.57;18,134.73,317.46,126.73,9.57" xml:id="b50">
+	<analytic>
+		<title level="a" type="main" xml:id="_8sabpGk">Towards an sdp-based approach to spectral methods: A nearly-linear-time algorithm for graph partitioning and decomposition</title>
+		<author>
+			<persName coords=""><forename type="first">Lorenzo</forename><surname>Orecchia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nisheeth</forename><forename type="middle">K</forename><surname>Vishnoi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_jQGdGWy">Proceedings of the Twenty-second Annual ACM-SIAM Symposium on Discrete Algorithms, SODA &apos;11</title>
+				<meeting>the Twenty-second Annual ACM-SIAM Symposium on Discrete Algorithms, SODA &apos;11<address><addrLine>Philadelphia, PA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Society for Industrial and Applied Mathematics</publisher>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="532" to="545" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,134.73,339.40,352.96,9.57" xml:id="b51">
+	<analytic>
+		<title level="a" type="main" xml:id="_ggU72rT">A schur complement cheeger inequality</title>
+		<author>
+			<persName coords=""><forename type="first">Aaron</forename><surname>Schild</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_hNEr47J">ITCS &apos;19</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,134.73,361.34,405.28,9.57;18,134.73,374.89,272.76,9.57;18,72.00,396.83,21.97,9.57;18,93.97,394.88,6.59,6.99;18,101.05,396.83,13.94,9.57;18,134.73,396.83,405.27,9.57;18,134.73,410.38,405.27,9.57;18,134.73,423.93,207.22,9.57" xml:id="b52">
+	<analytic>
+		<title level="a" type="main" xml:id="_h5PEZhc">Normalized cuts and image segmentation</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">B</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jitendra</forename><surname>Malik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ZC9NQdS">Spectral clustering using deep neural networks. International Conference on Learning Representations (ICLR)</title>
+				<editor>
+			<persName><forename type="first">Uri</forename><surname>Shaham</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Kelly</forename><surname>Stanton</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Henry</forename><surname>Li</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Boaz</forename><surname>Nadler</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Ronen</forename><surname>Basri</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Yuval</forename><surname>Kluger</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Spectralnet</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="1997">01 1997. 2018</date>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="888" to="905" />
+		</imprint>
+	</monogr>
+	<note>SSL + 18</note>
+</biblStruct>
+
+<biblStruct coords="18,134.73,445.87,405.27,9.57;18,134.73,459.41,405.27,9.57;18,134.73,472.96,405.27,9.57;18,134.73,486.51,197.31,9.57" xml:id="b53">
+	<analytic>
+		<title level="a" type="main" xml:id="_7aGBj8G">Nearly-linear time algorithms for graph partitioning, graph sparsification, and solving linear systems</title>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><forename type="middle">A</forename><surname>Spielman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shang-Hua</forename><surname>Teng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_VA5A2W2">Proceedings of the Thirty-sixth Annual ACM Symposium on Theory of Computing, STOC &apos;04</title>
+				<meeting>the Thirty-sixth Annual ACM Symposium on Theory of Computing, STOC &apos;04<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="page" from="81" to="90" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,134.73,508.45,405.27,9.57;18,134.73,522.00,405.28,9.57;18,134.73,535.55,405.28,9.57;18,134.73,549.10,324.09,9.57" xml:id="b54">
+	<analytic>
+		<title level="a" type="main" xml:id="_DcBdW2d">Expander decomposition and pruning: Faster, stronger, and simpler</title>
+		<author>
+			<persName coords=""><forename type="first">Thatchaphol</forename><surname>Saranurak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Di</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_evhgxjD">Proceedings of the Thirtieth Annual ACM-SIAM Symposium on Discrete Algorithms, SODA 2019</title>
+				<editor>
+			<persName><forename type="first">Timothy</forename><forename type="middle">M</forename><surname>Chan</surname></persName>
+		</editor>
+		<meeting>the Thirtieth Annual ACM-SIAM Symposium on Discrete Algorithms, SODA 2019<address><addrLine>San Diego, California, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>SIAM</publisher>
+			<date type="published" when="2019">January 6-9, 2019. 2019</date>
+			<biblScope unit="page" from="2616" to="2635" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,134.73,571.04,405.28,9.87;18,134.73,584.59,393.90,9.87" xml:id="b55">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Luca</forename><surname>Trevisan</surname></persName>
+		</author>
+		<ptr target="https://lucatrevisan.wordpress.com/2021/10/07/buser-inequalities-in-graphs/" />
+		<title level="m" xml:id="_w6jWsyS">Buser inequalities in graphs</title>
+				<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="2023" to="2024" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,134.73,606.53,405.27,9.57;18,134.73,620.08,405.27,9.57;18,134.73,633.62,24.85,9.57" xml:id="b56">
+	<analytic>
+		<title level="a" type="main" xml:id="_QddVRGF">A variational approach to the consistency of spectral clustering</title>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Trillos</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dejan</forename><surname>Slepčev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eF9Pe76">Applied and Computational Harmonic Analysis</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="239" to="281" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,78.58,655.56,26.30,9.57;18,104.88,653.61,6.59,6.99;18,111.96,655.56,428.04,9.57;18,134.73,669.11,405.27,9.57;18,134.73,682.66,129.25,9.57" xml:id="b57">
+	<analytic>
+		<title level="a" type="main" xml:id="_jpYmSPT">Consistency of cheeger and ratio graph cuts</title>
+		<author>
+			<persName coords=""><forename type="first">Nicolás</forename><surname>García Trillos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dejan</forename><surname>Slepčev</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Von Brecht</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Laurent</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xavier</forename><surname>Bresson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Zj9j8at">TSVB + 16</title>
+				<imprint>
+			<date type="published" when="2016-01">Jan 2016</date>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="6268" to="6313" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="19,134.72,75.51,405.28,9.57;19,134.73,89.06,97.57,9.57" xml:id="b58">
+	<analytic>
+		<title level="a" type="main" xml:id="_4jgxrkX">A tutorial on spectral clustering</title>
+		<author>
+			<persName coords=""><forename type="first">Ulrike</forename><surname>Von</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Luxburg</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ZZQbC3w">Statistics and computing</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="395" to="416" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="19,134.73,111.57,405.27,9.57;19,134.73,125.12,275.30,9.57" xml:id="b59">
+	<monogr>
+		<title level="m" type="main" xml:id="_dk3jtVD">Consistency of spectral clustering. The Annals of Statistics</title>
+		<author>
+			<persName coords=""><forename type="first">Ulrike</forename><surname>Von Luxburg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mikhail</forename><surname>Belkin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Olivier</forename><surname>Bousquet</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="page" from="555" to="586" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="19,134.73,147.64,405.27,9.57;19,134.73,161.19,405.28,9.57;19,134.73,174.74,231.71,9.57" xml:id="b60">
+	<analytic>
+		<title level="a" type="main" xml:id="_ewr97MG">Fast approximate spectral clustering</title>
+		<author>
+			<persName coords=""><forename type="first">Donghui</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ling</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><forename type="middle">I</forename><surname>Jordan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_9JPVSFa">Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining</title>
+				<meeting>the 15th ACM SIGKDD international conference on Knowledge discovery and data mining</meeting>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="907" to="916" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="19,134.73,197.25,405.28,9.57;19,134.73,210.80,405.28,9.57;19,134.73,224.35,24.85,9.57" xml:id="b61">
+	<analytic>
+		<title level="a" type="main" xml:id="_Bp4N5gh">Understanding regularized spectral clustering via graph conductance</title>
+		<author>
+			<persName coords=""><forename type="first">Yilin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Karl</forename><surname>Rohe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_8FkKRCw">Advances in Neural Information Processing Systems (NeurIPS)</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page">31</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_YU3PpsQ">An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,42.88,177.85,73.56,9.45"><forename type="first">Arun</forename><forename type="middle">Hs</forename><surname>Kumar</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Veterinary Medicine</orgName>
+								<orgName type="institution">University College Dublin</orgName>
+								<address>
+									<addrLine>Dublin-04</addrLine>
+									<settlement>Stemcology, Belfield</settlement>
+									<country key="IE">Ireland</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">DVM, PhD</orgName>
+								<orgName type="department" key="dep2">School of Veterinary Medicine</orgName>
+								<orgName type="institution">Correspondence Arun HS Kumar</orgName>
+								<address>
+									<addrLine>Room 216</addrLine>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="institution">University College Dublin</orgName>
+								<address>
+									<postCode>Dublin-04</postCode>
+									<settlement>Belfield</settlement>
+									<country key="IE">Ireland</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_jY5FfE9">An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">DFB45F250348CDB376B25745386548EC</idno>
+					<idno type="DOI">10.1101/2023.04.13.536697</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_RHAcAJR"><p xml:id="_vJ866df">Background Sortilin1 (SORT1) is a ubiquitously expressed transporter involved in sorting or clearing proteins and is pathologically linked to tissue fibrosis and calcification. Targeting SORT1 may have potential clinical efficacy in controlling or reversing cardiovascular fibrosis and/or calcification. Hence this study assessed the protein-protein network of human SORT1 and its targetability using small molecule nutra/pharmaceuticals.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_7vAanGK">Material and methods</head><p xml:id="_MEms7yS">Network proteins of SORT1 in homo sapiens was identified using the String database, and the affinity of the protein-protein interaction of this network was analysed using Chimera software. The tissue specific expression profile of SORT1 was evaluated and assessed for enrichment in different cell types including the immune cells. A library of in-house small molecules and currently used therapeutics for cardiovascular diseases were screened using AutoDock vina to assess targetability of human SORT1. Concentration affinity (CA) ratio of the small molecules was estimated to assess the clinical feasibility of targeting SORT1.</p><p xml:id="_J3uPkwY">Results IGF2R, NTRK2, GRN and GGA1 were identified as high affinity interaction networks of SORT1.</p><p xml:id="_SYkcfJv">Of these high affinity interactions, IGF2R and GRN can be considered as relevant networks in regulating tissue fibrosis or microcalcification process due to their influence on T-cell activation, inflammation, wound repair, and tissue remodelling process. The tissue cell type enrichment indicated major 1 * 1 12/5/23, 21:57 An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules |… about:blank 2/11</p><p xml:id="_CJDkpav">expression of SORT1 in adipocytes, specialised epithelial cells, monocytes, cardiomyocytes, and thyroid glandular cells. The binding pocket analysis of human SORT1 showed twelve potential drug interaction sites with varying binding score (0.86 to 5.83) and probability of interaction (0.004 to 0.304). Five of the drug interaction sites were observed to be targetable at therapeutically feasible concentration of the small molecules evaluated. Empagliflozin, sitagliptin and lycopene showed superior affinity and CA ratio compared to established inhibitors of SORT1.</p><p xml:id="_UhNbrjQ">Conclusion IGF2R and GRN are relevant networks of SORT1 regulating tissue fibrosis or microcalcification process. SORT1 can be targeted using currently approved small molecule therapeutics (empagliflozin and sitagliptin) or widely used nutraceutical (Lycopene) which should be evaluated in a randomised clinical trial to assess the efficacy to reduce cardiac/vascular microcalcification process.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_gUKZaRQ">Introduction</head><p xml:id="_5x8jYsZ">Sortilin1 (SORT1) is a ubiquitously expressed membrane glycoprotein which functions as sorting receptor in the Golgi apparatus and a clearance receptor on the cells membrane which is vital to functional regulation of cell homeostasis.</p><p xml:id="_nQyH6hU">In its role as a sorting receptor, it transports proteins from Golgi apparatus to their intended target site using the endosomes/lysosomes as a cargo, based on a pH based dissociation kinetics. Among the various transporter functions of SORT1, its ability to scavenge extracellular lipoprotein lipase and promote mineralisation of extracellular matrix, contribute to tissue fibrosis, calcification, and foam cell formation. SORT1 seems to favour intracellular accumulation of lipids and triglycerides by suppression and/or degradation of adipogenesis factors and lipid efflux transporters. The expression of SORT1 is highly enriched in adipocytes and smooth muscle cells, which together with its contribution to tissue fibrosis and calcification makes it a vital target in the development of unstable atherosclerotic plaques (UAP) and vascular calcification.</p><p xml:id="_U8vf379">Increased expression of SORT1 is observed in calcified arteries of humans. Consistent with this SORT1 knockout mice show reduced arterial calcification without impacting bone mineral density.</p><p xml:id="_VKBKyB3">This suggest a specific role of SORT1 in pathological microcalcification process without disturbing the physiological bone mineralisation. SORT1 is reported to transport alkaline phosphatase (ALP) to extracellular vesicles (EV) and trigger mineralisation of extracellular matrix (specifically collagen), which leads to functional compromise of otherwise an elastic tissue. The role of SORT1 in microcalcification can collaterally contribute to formation of unstable atherosclerotic plaques (UAP) through the synergistic effects of SORT1 on secreting proinflammatory cytokines (IL6 and IFN gamma) from macrophages. Inflammation and microcalcification are hallmarks of UAP to which SORT1 seems to have a direct contributory role, independent from its effects on lipoprotein metabolism.</p><p xml:id="_PMC6ZMj">Interestingly the contribution of SORT1 to UAP is also independent of plasma cholesterol levels.</p><p xml:id="_xbfK6n3">12/5/23, 21:57</p><p xml:id="_pFgGuV6">An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules |… about:blank 3/11</p><p xml:id="_ZTdE9qV">The microcalcification promotion role of SORT1 is not limited to vascular smooth muscles, as recently SORT1 was reported to promote aortic valve fibrosis and calcification following mechanical injury. It appears to me that following tissue injury the transporter function of SORT1 facilitates extracellular matrix deposition (EV dependent and independent mechanisms) which is further reinforced by ALP induced calcification to minimise the impact of the tissue injury. During this calcification process if the endogenous pool of progenitor cells are not efficient to replace the damaged tissue, then the calcified tissue will persist by further mineralisation. There seems to be a transient window during which the activity of SORT1 can be pharmacologically interfered to promote tissue regeneration by either endogenous or exogenous progenitor cells. Hence to address the pharmacological interference of SORT1, this study assessed its protein network, expression profile in human tissues, and its targetability using small molecules.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_WtsvuKN">Materials and Methods</head><p xml:id="_ndQ3zNG">The network protein analysis of human SORT1 was conducted as reported before using the STRING Database (https://string-db.org), to observe its functional protein-protein interactions. The protein networks were identified and reviewed in the UniProt database and the most resolved protein structure based on the full length of protein and atomic resolution was selected for analysis in this study. The PDB code or AlphaFold structure of the selected protein was used to import the protein structure onto the Chimera software and the number of hydrogen bonds (H-bond) formed between SORT1 and its associated network proteins at 10 Armstrong (10A) distance was evaluated. A heatmap of the number of H-bonds formed between SORT1 and its associated network proteins was generated to identify the high affinity interactions.</p><p xml:id="_AXkKr5z">The protein expression profile of SORT1 in various human tissues were text mined from the Human Protein Atlas (https://www.proteinatlas.org) database together with the data on enrichment of SORT1 in various tissue cell types. The SORT1 mRNA expression pattern in human immune cells was also assessed from this database. The binding sites of human SORT1 were identified using the PrankWeb:</p><p xml:id="_GjcvXfs">Ligand Binding Site Prediction tool (https://prankweb.cz/). To assess the targetability of SORT1 by small molecules, in this study molecular docking of selected drugs approved for therapeutics of cardiovascular disease were evaluated against AlphaFold structure of human SORT1 using AutoDock vina 1.2.0.</p><p xml:id="_5xwntjs">Briefly, the AlphaFold structure of SORT1 was optimised for molecular docking in the AutoDock MGL tools. The isomeric SMILES sequence of the selected small molecules were obtained from the PubChem database and were converted into the PDB format using the Chimera software. The PDB structures of small molecules were further processed in the AutoDock MGL tools for molecular docking as reported previously. SORT1 AlphaFold structure was also screened against our inhouse compound library to identify a high affinity inhibitor. AF38469 and SB203580 which are reported to be orally bioavailable SORT1 inhibitor were used as reference compounds.</p><p xml:id="_vwZxxG3">To assess the targetability potential of SORT1 by the small molecules, the concentration affinity ratio (CA ratio) for each of the small molecules was calculated as described before.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_rAjAg6M">Results</head><p xml:id="_g8CPX9A">The network protein analysis of SORT1 in humans showed high affinity interactions with IGF2R, NTRK2, GRN and GGA1 (Figure <ref type="figure" coords="4,165.98,154.97,4.29,9.93" target="#fig_1">1</ref>). IGF2R is a cation-independent mannose-6-phosphate receptor, which facilitates transport of phosphorylated lysosomal enzymes from the Golgi complex/cell surface to lysosomes and also positively regulated T-cell coactivation. NTRK2 is a neurotrophic factor receptor tyrosine kinase which supports development and maturation of nervous system, including establishing nerve-nerve or nerve-glial cell synapses. GRN is a secreted protein which modulates inflammation, wound repair, and tissue remodelling through cytokine like mechanisms influencing fibroblasts and endothelial cells. GGA1 is a binding protein which facilitates a two-way protein sorting and trafficking between the trans-Golgi network (TGN) and endosomes. The analysis of SORT1 protein expression in human tissues suggested major presence in brain, kidneys, skin, colon, placenta, endocrine glands and testis (epididymis) (figure <ref type="figure" coords="4,429.41,473.87,4.29,9.93" target="#fig_2">2</ref>). The tissue cell type enrichment of this data suggested major expression in adipocytes, specialised epithelial cells, cardiomyocytes and thyroid glandular cells (figure <ref type="figure" coords="4,290.96,515.14,4.29,9.93" target="#fig_2">2</ref>). The analysis of SORT1 mRNA expression in immune cells indicated significantly higher expression in monocyte subsets (especially nonclassical monocytes) (figure <ref type="figure" coords="4,140.25,555.66,4.29,9.93" target="#fig_2">2</ref>). The binding pocket analysis of human SORT1 showed twelve potential drug interaction sites with varying binding score (0.86 to 5.83) and probability of interaction (0.004 to 0.304) (figure <ref type="figure" coords="4,477.84,744.00,4.29,9.93" target="#fig_3">3</ref>).  The screening of in-house ligand library against human SORT1 showed high affinity of lycopene against five of the SORT1 binding pockets (Table <ref type="table" coords="5,247.68,305.04,4.60,9.93">1</ref>, figure <ref type="figure" coords="5,293.63,305.04,4.29,9.93" target="#fig_3">3</ref>). In a recent study SORT1 was reported to contribute to calcification of human aortic valves involving MAPK and YAP pathways which drive trans differentiation of functional cells to myofibroblastic-osteogenic phenotype. Lycopene was observed to bind at several SORT1-YAP interaction sites (figure <ref type="figure" coords="5,298.92,366.57,4.29,9.93" target="#fig_3">3</ref>), suggesting its potential to interfere with SORT1-YAP signalling. The potential of various cardiovascular therapeutics to target SORT1 was also analysed (figure <ref type="figure" coords="5,80.24,407.09,4.29,9.93">4</ref>). Empagliflozin and sitagliptin showed therapeutically feasible affinity and CA ratio against SORT1 similar to that of lycopene (figure <ref type="figure" coords="5,247.86,428.10,4.29,9.93">4</ref>). Among the small molecules tested bisoprolol had the highest affinity against SORT1, however considering its very low CA ratio, the feasibility to achieve therapeutic safety is unlikely. Two of the orally bioavailable SORT1 inhibitors reported in the literature i.e., SB203580 (3.24 µM) and AF38469 (638.76 µM) showed affinity against SORT1 which was inferior to lycopene (1.23 µM) (figure <ref type="figure" coords="5,190.11,509.89,4.29,9.93">4</ref>).</p><p xml:id="_eCYtRVe">Table <ref type="table" coords="5,75.70,545.80,4.00,8.10">1</ref>:</p><p xml:id="_junb5X3">Molecular docking of Lycopene with human SORT1</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_4Kz6AfE">Figure 4:</head><p xml:id="_MtHVQpk">Affinity of small molecules with human Sortilin1 (SORT1). The affinity and concentration-affinity (CA) ratio value of various small molecules against SORT1 is summarised in the table. The images show the degree of interaction (number of hydrogen bonds; yellow lines) and the interaction sites between the selected small molecules and SORT1 (brown colour).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_H9gKzXK">Discussion</head><p xml:id="_THdqbPg">SORT1 is reported to be the driver of microcalcification process associated with cardio-valvular and cardiovascular diseases independent of abnormalities with lipid metabolism and plasma cholesterol levels.</p><p xml:id="_cDR5zs9">Hence this study analysed targetability of SORT1 and has identified new/therapeutic immune cells together with its expression in calcified vascular tissue supports its role in pathological vascular remodelling process eventually leading to microcalcification. SORT1 is highly expressed in adipocytes which is consistent with several studies linking the disturbed lipid metabolism with valvular and arterial calcification process. However some preclinical studies have also reported lipid and cholesterol independent mechanisms of SORT1 in inducing tissue calcification. The lipid independent role of SORT1 on tissue calcification is of specific interest in the context of UAP, as none of the therapeutics currently used for lipid management are shown to reduce the risk associated with UAP vascular pathology. Hence, targeting of SORT1 together with or without lipid management therapeutics can prove to be beneficial in improving vascular physiology by reducing microcalcification process. The potential to target SORT1 using currently approved small molecule therapeutics (empagliflozin and sitagliptin) or widely used nutraceutical (Lycopene) identified in this study is particularly promising and should be evaluated in a randomised clinical trial to assess the efficacy to reduce cardiac/vascular microcalcification process.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_67tQ6Tx">Declaration of interest statement none</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,516.59,53.33,9.20,7.44;3,453.94,337.71,27.60,7.44;3,479.67,697.12,27.60,7.44;3,194.60,738.39,25.76,7.44;3,408.41,779.66,25.77,7.44;4,26.45,19.13,58.98,4.75;4,115.66,19.13,452.36,4.75;4,26.45,822.13,47.68,4.75;4,550.56,822.13,17.98,4.75"><head></head><label></label><figDesc xml:id="_QbcfwT7">the human Sortilin1 protein network, its expression and targetability using small molecules |… about:blank 4/11</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,50.38,348.46,37.97,8.10;4,50.38,368.72,485.80,8.10;4,50.38,380.73,471.22,8.10;4,50.38,393.48,460.73,8.10;4,50.38,406.24,488.74,8.10;4,50.38,418.99,422.67,8.10"><head>Figure 1 :</head><label>1</label><figDesc xml:id="_76mzdSd">Figure 1:Affinity of human Sortilin1 (SORT1; UniProt ID Q99523) to its network proteins. Network proteins of SORT1 from the string database is shown. The network proteins are represented using their gene code and UniProt ID. Heatmap showing the degree of interaction (number of hydrogen bonds (H Bonds)) between each of the network protein and SORT1 at 10 Armstrong (10A) bond distance. Scale: green to red = high to low. The high affinity network proteins (IGF2R, NTRK2, GRN, and GGA1) in cyan are show interacting (yellow lines represent the H Bonds) with human SORT1 (brown).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="4,50.38,605.83,37.97,8.10;4,50.38,625.34,482.84,8.10;4,50.38,638.10,492.26,8.10;4,50.38,650.85,476.35,8.10;4,50.38,663.61,476.52,8.10;4,50.38,676.36,471.22,8.10;4,50.38,688.37,271.74,8.10"><head>Figure 2 :</head><label>2</label><figDesc xml:id="_dhvj3DU">Figure 2:Expression profile of Sortilin1 (SORT1) in human tissues. The quantitative protein expression of SORT1 in various human tissue and cell types is shown as a heat map (Scale: green to red = high to low). The mRNA expression of SORT1 in human immune cells is shown as bar graph (The expression profile is categorised based on the nTPM ranging from 0 to 12 and colour coded based on cell category type). The cell type enrichment (Scale 0 to 1) of SORT1 protein in human tissues is shown as a vertical line graph and colour coded based on cell category type. The gender specific protein expression of SORT1 in various human tissue is shown qualitatively using images.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="5,50.38,166.88,37.97,8.10;5,50.38,187.14,492.86,8.10;5,50.38,199.14,486.70,8.10;5,50.38,211.90,492.00,8.10;5,50.38,224.65,492.35,8.10;5,50.38,237.41,471.00,8.10;5,50.38,250.17,29.99,8.10"><head>Figure 3 :</head><label>3</label><figDesc xml:id="_wHb5n9D">Figure 3:Targetability of human Sortilin1 (SORT1). The twelve binding pockets of SORT1 identified are colour coded and represented in 2D (the relative area of the colour indicates the binding score which ranged from 0.86 to 5.83). The molecular docking of lycopene (ball and stick model) with human SORT1 with its five interaction sites are shown. The bottom left panel shows the highest affinity interaction between lycopene (stick model) with human SORT1. The bottom right panel shows the interaction sites of lycopene (purple stick model) between human SORT1 (brown colour) and yes-associated protein 1 (YAP; cyan colour).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="5,74.13,343.71,478.46,448.65"><head></head><label></label><figDesc xml:id="_K4RgPCc">Lycopene, empagliflozin and sitagliptin) with affinity to SORT1 at therapeutically feasible range which can be tested for efficacy in a clinical trial.The major network proteins of SORT1 identified in this study seem to vastly support the transporter function of SORT1. However the SORT1-GRN network is of specific interest within the context of microcalcification process. The GRN dependent modulation of inflammation, wound repair, and tissue /5/23, 21:57 An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules |…</figDesc><table coords="5,74.13,343.71,478.46,448.65"><row><cell>12/5/23, 21:57</cell><cell cols="3">An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules |…</cell></row><row><cell cols="4">small molecules (remodelling process is synergistic with the SORT1 facilitated extracellular matrix deposition reinforced</cell></row><row><cell cols="2">by ALP induced tissue calcification.</cell><cell cols="2">A recent study has reported the role of MAPK and YAP</cell></row><row><cell cols="4">pathways in SORT1 induced aortic valve calcification following mechanical injury. While it is possible</cell></row><row><cell cols="4">that biological response to acutely induced mechanical injury may differ from subacute/chronic injury</cell></row><row><cell cols="4">classically seen with cardio-valvular and cardiovascular diseases in humans. The increased expression</cell></row><row><cell cols="3">of SORT1 observed in calcified arteries of humans</cell><cell>does suggest that some overlap exists in</cell></row><row><cell cols="4">biological response to acute, subacute and chronic injury to tissues. This concept was validated by a</cell></row><row><cell cols="4">preclinical study simulating acute mechanical tissue injury and pharmacological interventions</cell></row><row><cell cols="4">demonstrating the efficacy of orally bioavailable SORT1 inhibitors in reducing the incidence of</cell></row><row><cell cols="2">microcalcification process.</cell><cell cols="2">The comparison of the affinity of these SORT1 inhibitors with</cell></row><row><cell></cell><cell></cell><cell></cell><cell>[8]</cell></row><row><cell cols="4">lycopene, empagliflozin and sitagliptin in this study suggest the potential superior efficacy outcomes from</cell></row><row><cell cols="4">using these small molecules, which will be interesting to be evaluated in randomised clinical trials. The</cell></row><row><cell cols="2">therapeutic use of empagliflozin</cell><cell>and sitagliptin</cell><cell>in patients who are at higher risk of</cell></row><row><cell cols="4">developing tissue calcification should allow rapid testing of its clinical efficacy in reducing the incidence</cell></row><row><cell cols="4">of calcified aortic valves and/or unstable plaques. Further as lycopene is a generally regarded as safe</cell></row><row><cell>nutraceutical,</cell><cell cols="3">a coformulation of lycopene/empagliflozin or lycopene/sitagliptin can also be</cell></row><row><cell></cell><cell></cell><cell></cell><cell>[3, 8]</cell></row><row><cell cols="4">evaluated. Concerns are also expressed over achieving therapeutic concentration of lycopene in</cell></row><row><cell>circulation.</cell><cell cols="3">However the large volume of distribution of lycopene (150 to 1400 litres or 2-19 l/kg)</cell></row><row><cell cols="4">together with its high lipo-solubility suggests that it is extensively distributed into peripheral tissues.</cell></row><row><cell cols="4">Additionally population studies have shown serum lycopene concentrations of &gt;0.7 µM, suggesting</cell></row><row><cell cols="4">SORT1 targetable concentration (CA ratio ∼ = 1) is achievable. In addition to the SORT1 inhibitors other</cell></row><row><cell cols="4">allosteric approachs such as small molecules which can interfere with SORT1-YAP or SORT1-GRN</cell></row><row><cell cols="4">signalling may also be developed as therapeutics for clinical management of calcified valves/arteries.</cell></row><row><cell cols="4">The expression of SORT1 in cardiomyocytes although is consistent with its pathological role in valvular</cell></row><row><cell>calcification,</cell><cell cols="3">its lower expression in vascular smooth muscles contradicts its reported role in arterial</cell></row><row><cell cols="4">calcification. In this context the contributory role of non-classical monocytes (myeloid cells) to formation</cell></row><row><cell cols="4">of viable vascular smooth muscles can be a mechanism by which SORT1 leads to vascular</cell></row><row><cell>classification.</cell><cell></cell><cell></cell></row><row><cell>[1, 7, 8, 27]</cell><cell></cell><cell></cell></row><row><cell>about:blank about:blank</cell><cell></cell><cell></cell><cell>6/11 7/11</cell></row></table><note xml:id="_wAs7XRU">The constant recycling of vascular smooth muscle cells by myeloid cells is an essential process in retaining optimal vascular physiology and the role of SORT1 in this process is unclear. However following mechanical injury to arteries, the myeloid cells promote remodelling of vascular smooth muscles under an inflammatory milieu and paraphs SORT1 plays an active role in this process.The highest expression profile of SORT1 mRNA in the monocyte subpopulation among all 12</note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_hVjZbVk">Acknowledgements</head><p xml:id="_vrrs25k">Research support from University College Dublin-Seed funding/Output Based Research Support Scheme (R19862, 2019), Royal Society-UK (IES\R2\181067, 2018) and Stemcology (STGY2917, 2022) is acknowledged.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="2,373.06,676.86,18.41,7.44;2,137.82,738.39,27.60,7.44;2,508.86,759.40,23.00,7.44;2,509.89,779.66,23.00,7.44;6,214.22,167.38,41.40,7.44;6,437.58,187.64,9.20,7.44;6,288.94,249.17,36.80,7.44;6,324.05,290.44,9.20,7.44;6,171.51,330.95,46.00,7.44;6,197.89,392.48,27.60,7.44;6,295.95,392.48,27.60,7.44;6,108.43,454.01,27.60,7.44;6,95.56,495.28,27.60,7.44;6,523.14,515.54,27.60,7.44;6,102.91,649.85,23.00,7.44;6,108.42,712.13,27.60,7.44;6,84.54,793.92,27.60,7.44;7,42.88,530.15,59.43,9.93;7,52.33,561.25,472.41,8.51;7,52.33,578.50,394.44,8.51" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_jzh7jY6">Sortilin, encoded by the cardiovascular risk gene SORT1, and its suggested functions in cardiovascular disease</title>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Q6zPHWC">Current atherosclerosis reports</title>
+		<editor>Kjolby, M., Nielsen, M. S. and Petersen, C. M.</editor>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>13, 14. 7, 13] [7, 13] [24, 25, 28. 7, 29, 30. 7, 8, 31, 32. 33, 34. 35, 36. 37, 38. 39, 40. 39, 40. 8, 41. 42, 43. 42, 43</note>
+</biblStruct>
+
+<biblStruct coords="7,57.18,613.02,475.52,8.51;7,52.33,630.28,298.67,8.51" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_FmssUEc">Mechanism underlying the regulation of sortilin expression and its trafficking function</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ouyang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lv</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_frUd22n">Journal of Cellular Physiology</title>
+		<imprint>
+			<biblScope unit="volume">235</biblScope>
+			<biblScope unit="page" from="8958" to="8971" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,56.75,664.79,482.02,8.51;7,52.33,682.80,118.13,8.51" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_Fs5WwbM">New insight into sortilin in controlling lipid metabolism and the risk of atherogenesis</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Peng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TQYTeU9">Biological Reviews</title>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="232" to="243" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,56.47,717.32,475.32,8.51;7,52.33,734.58,190.61,8.51" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_kC6ukjh">Sorting through the extensive and confusing roles of sortilin in metabolic disease</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">A</forename><surname>Mitok</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">P</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">D</forename><surname>Attie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Cy93Hkd">Journal of Lipid Research</title>
+		<imprint>
+			<biblScope unit="page">63</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,56.53,769.09,487.99,8.51;7,52.33,787.10,421.25,8.51;7,202.76,94.59,36.80,7.44;7,427.39,114.85,39.56,7.44" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_AsXyvC4">Sortilin/neurotensin receptor-3 binds and mediates degradation of lipoprotein lipase</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Nielsen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Jacobsen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Olivecrona</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Gliemann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Petersen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FKvwvsG">Journal of Biological Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">274</biblScope>
+			<biblScope unit="page" from="46" to="49" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note>3, 44, 45</note>
+</biblStruct>
+
+<biblStruct coords="7,137.03,176.38,25.76,7.44;8,26.45,19.13,58.98,4.75;8,115.66,19.13,452.36,4.75;8,26.45,822.13,47.68,4.75;8,550.56,822.13,17.98,4.75" xml:id="b5">
+	<monogr>
+		<title level="m" type="main" xml:id="_eTXg8qn">21:57 An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules |…</title>
+		<idno>50-52] 12/5/23</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,57.26,36.75,482.38,8.51;8,52.33,54.01,349.24,8.51" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_ES4Qs5c">Sortilin is upregulated during osteoblastic differentiation of mesenchymal stem cells and promotes extracellular matrix mineralization</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Maeda</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FDhGG72">Journal of cellular physiology</title>
+		<imprint>
+			<biblScope unit="volume">193</biblScope>
+			<biblScope unit="page" from="73" to="79" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,56.73,88.53,493.53,8.51;8,52.33,106.53,176.46,8.51" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_naUR3ke">Sortilin mediates vascular calcification via its recruitment into extracellular vesicles</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Goettsch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_SdqA4Cb">The Journal of clinical investigation</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="page" from="1323" to="1336" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,56.21,141.05,445.77,8.51;8,52.33,158.31,192.01,8.51" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_X99hVfp">Sortilin enhances fibrosis and calcification in aortic valve disease by inducing interstitial cell heterogeneity</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Iqbal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xr2KcXx">European Heart Journal</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,56.42,192.82,471.08,8.51;8,52.33,210.08,135.47,8.51" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_gVFXJUd">Sortilin is the major 110-kDa protein in GLUT4 vesicles from adipocytes</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">J</forename><surname>Morris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VJht3jv">Journal of Biological Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">273</biblScope>
+			<biblScope unit="page" from="3582" to="3587" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,61.37,244.60,469.72,8.51;8,52.33,262.61,173.85,8.51" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_9HRxUct">Involvement of TNF-α in abnormal adipocyte and muscle sortilin expression in obese mice and humans</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Kaddai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cxcMcwt">Diabetologia</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="932" to="940" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,60.97,297.12,459.23,8.51;8,52.33,314.38,254.22,8.51" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_2MeSbWu">Emerging roles for vascular smooth muscle cell exosomes in calcification and coagulation</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kapustin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Shanahan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_NMP2scs">The Journal of physiology</title>
+		<imprint>
+			<biblScope unit="volume">594</biblScope>
+			<biblScope unit="page" from="2905" to="2914" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,60.22,348.90,457.37,8.51;8,52.33,366.16,261.53,8.51" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_VFA6VBY">Dimerization of sortilin regulates its trafficking to extracellular vesicles</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Itoh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Mizuno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Aikawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Aikawa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8N5sJDp">Journal of Biological Chemistry</title>
+		<imprint>
+			<biblScope unit="volume">293</biblScope>
+			<biblScope unit="page" from="4532" to="4544" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,61.63,400.67,476.40,8.51;8,52.33,418.68,239.49,8.51" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_Xe7F8Kv">Targeting sortilin in immune cells reduces proinflammatory cytokines and atherosclerosis</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">B</forename><surname>Mortensen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TEn5pMn">The Journal of clinical investigation</title>
+		<imprint>
+			<biblScope unit="volume">124</biblScope>
+			<biblScope unit="page" from="5317" to="5322" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,60.53,453.20,472.32,8.51;8,52.33,470.45,60.46,8.51" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_Hz9ynKs">Regulatory roles of sortilin and SorLA in immune-related processes</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Talbot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2PKG3vJ">Frontiers in Pharmacology</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">1507</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,62.35,504.97,455.95,8.51;8,52.33,522.98,498.95,8.51;8,52.33,540.24,28.22,8.51" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_KaSqT2k">Network profiling of hepatocellular carcinoma targets for evidence based pharmacological approach to improve clinical efficacy</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Manchukonda</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Z2cZpV6">Biology, Engineering, Medicine and Science Reports</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="11" to="15" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,61.09,574.75,491.37,8.51;8,52.33,592.01,119.15,8.51" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_ujPfuTA">Analysing the role of SERPINE1 network in the pathogenesis of human glioblastoma</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Khosravi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Kaliaperumal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_AWu945a">bioRxiv</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,61.91,626.53,473.00,8.51;8,52.33,644.53,333.87,8.51" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_yWpKSXF">Pharmacological targets of Asundexian relevant to its therapeutic efficacy in treating cardiovascular diseases</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_DnFBSTw">Biology, Engineering, Medicine and Science Reports</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="24" to="27" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,61.91,679.05,446.34,8.51;8,52.33,696.31,472.92,8.51" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_dCzBcXG">GABBR1 and HDAC1 are the major targets of valproic acid in regulation of its anticonvulsant pharmacological effects</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Ptprc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nKXZqgT">Biology, Engineering, Medicine and Science Reports</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="28" to="32" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,61.91,730.82,437.29,8.51;8,52.33,748.08,267.35,8.51" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_4heNCjD">Comparative pharmacology of direct oral anticoagulants and vitamin K antagonist</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_HdJdqcp">Biology, Engineering, Medicine and Science Reports</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="16" to="23" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,61.62,782.60,476.27,8.51;9,26.45,19.13,58.98,4.75;9,115.66,19.13,452.36,4.75;9,26.45,822.13,47.68,4.75;9,550.56,822.13,17.98,4.75;9,52.33,33.75,369.22,8.51" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_mQu9PfW">Insulin-like growth factor 2 enhances regulatory T-cell functions and suppresses food allergy in an 12/5/23, 21:57 An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules |… about:blank 9/11 experimental model</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_R8YqZvE">Journal of allergy and clinical immunology</title>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="page" from="1702" to="1708" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note>e5</note>
+</biblStruct>
+
+<biblStruct coords="9,61.02,68.27,476.26,8.51;9,52.33,85.53,13.14,8.51" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_xekJgcR">Type-2 IGF receptor: a multi-ligand binding protein</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Braulke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_etJtUhR">Hormone and metabolic research</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="242" to="246" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.47,120.04,445.04,8.51;9,52.33,138.05,220.92,8.51" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_XCZ4Dhe">The CREB1-BDNF-NTRK2 pathway in depression: multiple gene-cognition-environment interactions</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Juhasz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mGBaPk7">Biological psychiatry</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="762" to="771" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.22,172.57,483.11,8.51;9,52.33,189.82,243.00,8.51" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_3hFpT9R">Functional characterization of human NTRK2 mutations identified in patients with severe early-onset obesity</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Gray</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Uf7rWcM">International journal of obesity</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="359" to="364" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,60.61,224.34,489.54,8.51;9,52.33,242.35,170.68,8.51" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_6VX5QW2">Insights into the role of progranulin in immunity, infection, and inflammation</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Jian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Konopka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CH2gY8e">Journal of leukocyte biology</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="page" from="199" to="208" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.62,276.11,480.74,8.51;9,52.33,294.12,70.98,8.51" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_p7pgkdZ">Progranulin is a mediator of the wound response</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">H</forename><surname>Ong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Halper</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bateman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KEVuNtG">Nature medicine</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="225" to="229" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.71,328.64,481.23,8.51;9,52.33,345.90,236.85,8.51" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_S7wY9aR">GGA proteins regulate retrograde transport of BACE1 from endosomes to the trans-Golgi network</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Wahle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eTtmwDB">Molecular and Cellular Neuroscience</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="453" to="461" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,60.84,380.41,487.96,8.51;9,52.33,398.42,494.21,8.51;9,52.33,415.68,49.95,8.51" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_nNwdwmj">CELSR2-PSRC1-SORT1 gene expression and association with coronary artery disease and plasma lipid levels in an Asian Indian cohort</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Arvind</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Nair</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Jambunathan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">V</forename><surname>Kakkar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Shanker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CvnUKqJ">Journal of cardiology</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page" from="339" to="346" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.79,450.19,466.93,8.51;9,52.33,467.45,60.47,8.51" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_skgqJgb">Progranulin regulates neuronal outgrowth independent of sortilin</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Gass</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wdXWYTt">Molecular neurodegeneration</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.64,501.97,487.35,8.51;9,52.33,519.98,297.77,8.51" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_BerfN7T">The roles of non-coding RNAs in vascular calcification and opportunities as therapeutic targets</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Ryu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Ahn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Kook</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y.-K</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cXzykbX">Pharmacology &amp; Therapeutics</title>
+		<imprint>
+			<biblScope unit="volume">218</biblScope>
+			<biblScope unit="page">107675</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.14,554.49,482.29,8.51;9,52.33,571.75,180.48,8.51" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_sqSnvuY">Genome-wide association study for coronary artery calcification with follow-up in myocardial infarction</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">J</forename><surname>O'donnell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zfcJb7n">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">124</biblScope>
+			<biblScope unit="page" from="2855" to="2864" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.58,606.27,484.02,8.51;9,52.33,624.28,241.39,8.51" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_4UmeRP7">Cardiovascular calcification: artificial intelligence and big data accelerate mechanistic discovery</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Rogers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Aikawa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_X6Nd2qy">Nature Reviews Cardiology</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="261" to="274" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.06,658.79,464.56,8.51;9,52.33,676.05,309.88,8.51" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_GQaBKyZ">Apoptosis regulates human vascular calcification in vitro: evidence for initiation of vascular calcification by apoptotic bodies</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Proudfoot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mt5uESc">Circulation research</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page" from="1055" to="1062" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,61.93,710.57,447.58,8.51;9,52.33,727.82,352.24,8.51" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_drbasxp">Empagliflozin and clinical outcomes in patients with type 2 diabetes mellitus, established cardiovascular disease, and chronic kidney disease</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Wanner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FmmCkZg">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">137</biblScope>
+			<biblScope unit="page" from="119" to="129" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,60.85,762.34,490.36,8.51;9,52.33,780.35,354.54,8.51;10,26.45,19.13,58.98,4.75;10,115.66,19.13,452.36,4.75;10,26.45,822.13,47.68,4.75;10,545.47,822.13,23.07,4.75" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_6JEazbg">Safety and tolerability of empagliflozin in patients with type 2 diabetes: pooled analysis of phase I-III clinical trials</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kohler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Zeller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Iliev</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kaspers</surname></persName>
+		</author>
+		<idno>12/5/23</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_4B2Mxby">57 An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules |… about</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="1707" to="1726" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,60.62,36.75,323.13,8.51" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_D5BQPtN">Sitagliptin: a review in type 2 diabetes</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">J</forename><surname>Scott</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7GJAMuR">Drugs</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page" from="209" to="224" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.21,71.27,484.77,8.51;10,52.33,88.53,357.51,8.51" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_N9HNhFW">Safety and tolerability of sitagliptin in type 2 diabetes: pooled analysis of 25 clinical studies</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">S</forename><surname>Engel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Round</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">T</forename><surname>Golm</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">D</forename><surname>Kaufman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">J</forename><surname>Goldstein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_hdpJFa6">Diabetes Therapy</title>
+		<imprint>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="119" to="145" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,60.74,123.04,371.63,8.51" xml:id="b37">
+	<monogr>
+		<title level="m" type="main" xml:id="_mZqV65P">Therapeutic and medicinal uses of lycopene: A systematic review</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Joshi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,60.82,157.56,452.41,8.51;10,52.33,174.82,453.26,8.51" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_xG7t2Jj">The potential role of lycopene for the prevention and therapy of prostate cancer: from molecular mechanisms to clinical evidence</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">P</forename><surname>Holzapfel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_BWWM8BS">International journal of molecular sciences</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="14620" to="14646" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.21,209.33,450.57,8.51;10,52.33,227.34,343.28,8.51" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_MtNPJ3f">Cardiovascular disease and possible ways in which lycopene acts as an efficient cardioprotectant against different cardiovascular risk factors</title>
+		<author>
+			<persName coords=""><forename type="first">M.-J</forename><surname>Hsieh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dzUBErW">Molecules</title>
+		<imprint>
+			<biblScope unit="page">3235</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.39,261.86,477.70,8.51;10,52.33,279.11,483.52,8.51;10,52.33,297.12,33.46,8.51" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_xt8gb2Q">Lycopene used as anti-inflammatory nanodrug for the treatment of rheumathoid arthritis: animal assay, pharmacokinetics, ABC transporter and tissue deposition</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">M</forename><surname>Moia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rH95MHp">Colloids and Surfaces B: Biointerfaces</title>
+		<imprint>
+			<biblScope unit="volume">188</biblScope>
+			<biblScope unit="page">110814</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.26,331.64,465.76,8.51;10,52.33,348.90,284.63,8.51" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" xml:id="_4Gaf7kB">Sortilin and its multiple roles in cardiovascular and metabolic diseases</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Goettsch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kjolby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Aikawa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fTXVUga">Arteriosclerosis, thrombosis, and vascular biology</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="19" to="25" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.91,383.41,488.86,8.51;10,52.33,400.67,44.68,8.51" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_mTG4gP8">Role of CX3CR1 receptor in monocyte/macrophage driven neovascularization</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gdbNXRn">PLoS One</title>
+		<imprint>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">e57230</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.91,435.19,467.89,8.51;10,52.33,453.20,249.27,8.51" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_6CcwKPk">Bone marrow-derived CX3CR1 progenitors contribute to neointimal smooth muscle cells via fractalkine CX3CR1 interaction</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KYuhbj3">FASEB J</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="81" to="92" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.48,487.71,414.19,8.51" xml:id="b44">
+	<analytic>
+		<title level="a" type="main" xml:id="_kNddgh6">Role of sortilin in lipid metabolism</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Conlon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nKUsBTa">Current opinion in lipidology</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="198" to="204" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.94,522.23,490.04,8.51;10,52.33,539.49,39.44,8.51" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_vaPRkhz">Implications of sortilin in lipid metabolism and lipid disorder diseases</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Gao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WwBa4qS">DNA and Cell Biology</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="1050" to="1061" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.62,574.00,475.82,8.51;10,52.33,591.26,494.68,8.51;10,52.33,609.27,76.23,8.51" xml:id="b46">
+	<analytic>
+		<title level="a" type="main" xml:id="_JBMPWgV">Increased sortilin and its independent effect on circulating proprotein convertase subtilisin/kexin type 9 (PCSK9) in statin-naive patients with coronary artery disease</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D.-Q</forename><surname>Peng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KRTkhQq">International journal of cardiology</title>
+		<imprint>
+			<biblScope unit="volume">227</biblScope>
+			<biblScope unit="page" from="61" to="65" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.79,643.78,489.49,8.51;10,52.33,661.04,28.22,8.51" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_yBfHy2y">Sortilin: a novel regulator in lipid metabolism and atherogenesis</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>-Y</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5pA54xv">Clinica Chimica Acta</title>
+		<imprint>
+			<biblScope unit="volume">460</biblScope>
+			<biblScope unit="page" from="11" to="17" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.09,695.56,480.58,8.51;10,52.33,713.57,34.16,8.51" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" xml:id="_wYBB8D8">Calcification in atherosclerotic lesions</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Sheppard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Daugherty</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wsbmrTt">Current opinion in lipidology</title>
+		<imprint>
+			<biblScope unit="page">543</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,61.44,748.08,474.37,8.51;10,52.33,765.34,337.70,8.51;11,26.45,19.13,58.98,4.75;11,115.66,19.13,452.36,4.75;11,26.45,822.13,47.68,4.75;11,545.47,822.13,23.07,4.75" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" xml:id="_FYsZUeW">A sequence variant associated with sortilin-1 (SORT1) on 1p13. 3 is independently associated with abdominal aortic aneurysm</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">T</forename><surname>Jones</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_945V25h">Human molecular genetics</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="2941" to="2947" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>12/5/23, 21:57 An assessment of the human Sortilin1 protein network, its expression and targetability using small molecules |… about:blank 11/11</note>
+</biblStruct>
+
+<biblStruct coords="11,60.82,36.75,462.04,8.51;11,52.33,54.01,384.24,8.51" xml:id="b50">
+	<analytic>
+		<title level="a" type="main" xml:id="_SCk6DWH">New insight into biology, molecular diagnostics and treatment options of unstable carotid atherosclerotic plaque: a narrative review</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Migdalski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Jawien</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_uDZnAba">Annals of Translational Medicine</title>
+		<imprint>
+			<biblScope unit="page">9</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,61.90,88.53,432.75,8.51;11,52.33,106.53,368.52,8.51" xml:id="b51">
+	<analytic>
+		<title level="a" type="main" xml:id="_NbeqtSq">Unstable carotid artery plaque: new insights and controversies in diagnostics and treatment</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Skagen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Skjelland</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Zamani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Russell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KFnUaQc">Croatian Medical Journal</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="311" to="320" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,61.05,141.05,487.91,8.51;11,52.33,158.31,408.44,8.51" xml:id="b52">
+	<analytic>
+		<title level="a" type="main" xml:id="_uqbRmbf">The effect of statins on carotid plaque morphology: a LDL-associated action or one more pleiotropic effect of statins?</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">C</forename><surname>Makris</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lavida</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">N</forename><surname>Nicolaides</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Geroulakos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XZwva49">Atherosclerosis</title>
+		<imprint>
+			<biblScope unit="volume">213</biblScope>
+			<biblScope unit="page" from="8" to="20" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

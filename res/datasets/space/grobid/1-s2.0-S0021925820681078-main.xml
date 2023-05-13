@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_FM2C5r2">Act1 Adaptor Protein Is an Immediate and Essential Signaling Component of Interleukin-17 Receptor *</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2006-10-11">October 11, 2006,</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,39.68,179.05,63.90,7.95;1,103.57,177.66,2.27,4.86"><forename type="first">Seon</forename><forename type="middle">Hee</forename><surname>Chang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Immunology</orgName>
+								<address>
+									<addrLine>M. D. Anderson Cancer Center</addrLine>
+									<postCode>77030</postCode>
+									<settlement>Houston</settlement>
+									<region>Texas</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,114.37,179.05,40.16,7.95;1,154.52,177.66,1.73,4.86"><forename type="first">Heon</forename><surname>Park</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Immunology</orgName>
+								<orgName type="institution">University of Washington</orgName>
+								<address>
+									<postCode>98195</postCode>
+									<settlement>Seattle</settlement>
+									<region>Washington</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,178.75,179.05,43.61,7.95;1,222.36,177.66,2.27,4.86"><forename type="first">Chen</forename><surname>Dong</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Immunology</orgName>
+								<address>
+									<addrLine>M. D. Anderson Cancer Center</addrLine>
+									<postCode>77030</postCode>
+									<settlement>Houston</settlement>
+									<region>Texas</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_hKDQ8vD">Act1 Adaptor Protein Is an Immediate and Essential Signaling Component of Interleukin-17 Receptor *</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2006-10-11">October 11, 2006,</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">6AC30D32220FA4435FEE5338A7C23675</idno>
+					<idno type="DOI">10.1074/jbc.C600256200</idno>
+					<note type="submission">Received for publication, September 25, 2006, and in revised form, October 11, 2006</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_WDG8GrC">immunosorbent assay</term>
+					<term xml:id="_MPQpHyY">DMEM, Dulbecco&apos;s modified Eagle&apos;s medium</term>
+					<term xml:id="_p2jc5FB">HA, hemagglutinin</term>
+					<term xml:id="_86tbA4p">shRNA, short hairpin RNA</term>
+					<term xml:id="_HJXWB22">LPS, lipopolysaccharide</term>
+					<term xml:id="_D7yyg2t">WT, wild-type</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_vDajNj4"><p xml:id="_p32Rqpq">Interleukin (IL)-17, the founding member of the IL-17 cytokine family, is the hallmark of a novel subset of CD4 ؉ T cells that is regulated by TGF␤, IL-6, and IL-23. IL-17 plays an important role in promoting tissue inflammation in host defense against infection and in autoimmune diseases. Although IL-17 has been reported to regulate the expression of proinflammatory cytokines, chemokines, and matrix metalloproteinases, the signaling mechanism of IL-17 receptor has not been understood. An earlier study found that IL-17 activates NF-B and MAPK pathways and requires TRAF6 to induce IL-6. However, it is unknown what molecule(s) directly associates with IL-17 receptor to initiate the signaling. We demonstrate here that IL-17 receptor family shares sequence homology in their intracellular region with Toll-IL-1 receptor (TIR) domains and with Act1, a novel adaptor previously reported as an NF-B activator. MyD88 and IRAK4, downstream signaling components of TIR, are not required for IL-17 signaling. On the other hand, Act1 and IL-17 receptor directly associate likely via homotypic interaction. Deficiency of Act1 in fibroblast abrogates IL-17-induced cytokine and chemokine expression, as well as the induction of C/EBP␤, C/EBP␦, and IB. Also, absence of Act1 results in a selective defect in IL-17-induced activation of NF-B pathway. These results thus indicate Act1 as a membrane-proximal adaptor of IL-17 receptor with an essential role in induction of inflammatory genes. Our study not only for the first time reveals an immediate signaling mechanism downstream of an IL-17 family receptor but also has implications in therapeutic treatment of various immune diseases.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="594.0" lry="783.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="594.0" lry="783.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="594.0" lry="783.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="594.0" lry="783.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="594.0" lry="783.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_xB6PDTV"><p xml:id="_bU5KQGp">Inflammatory reactions are complex biological processes involving both innate and adaptive immune systems. Chronic inflammation is crucially regulated by CD4 ϩ T cells in many autoimmune diseases. Recent work has identified a novel subset of CD4 ϩ T cells that produce IL-17, <ref type="foot" coords="1,468.29,99.21,3.77,5.50" target="#foot_2">3</ref> named as THIL-17, TH17, or THi cells <ref type="bibr" coords="1,383.38,112.58,10.11,8.93" target="#b0">(1)</ref>. T cell differentiation into these cells is regulated by cytokines such as TGF␤, IL-6, and IL-23 <ref type="bibr" coords="1,517.98,124.46,10.11,8.93" target="#b1">(2)</ref>. More and more evidence has associated these cells with normal host responses to infection and abnormal inflammatory autoimmune diseases <ref type="bibr" coords="1,364.10,160.12,10.11,8.93" target="#b0">(1)</ref>.</p><p xml:id="_8v9v6x8">IL-17, also called IL-17A, is the founding member of a novel cytokine family-IL-17 family <ref type="bibr" coords="1,423.44,183.89,10.11,8.93" target="#b0">(1)</ref>. Widely regarded as a proinflammatory cytokine, IL-17 is crucial in regulation of tissue inflammation in vivo <ref type="bibr" coords="1,395.91,207.66,10.11,8.93" target="#b2">(3)</ref>. IL-17 regulates the production of cytokines (IL-6, TNF-␣, and IL-1␤), chemokines (RANTES, MCP-1, MIP-2/IL-8, MIP-3␣, and GRO␣), cell-surface markers (RANKL and ICAM-1) and proinflammatory mediators (prostaglandin E 2 , nitric oxide, and cyclooxygenase-2) (1). Moreover, IL-17 also synergizes with TNF-␣ in inflammatory regulation <ref type="bibr" coords="1,347.48,278.99,10.11,8.93" target="#b3">(4)</ref>.</p><p xml:id="_mE47JvU">IL-17 binds to and signals through IL-17 receptor A (IL-17RA), a member of the IL-17R family <ref type="bibr" coords="1,472.30,302.76,10.11,8.93" target="#b4">(5)</ref>. Recently, it was reported that IL-17RA might form a heterodimer with IL-17RC <ref type="bibr" coords="1,303.68,326.53,10.11,8.93" target="#b5">(6)</ref>. IL-17 activates NF-B and MAP kinase pathways, which results in up-regulation of IL-6 <ref type="bibr" coords="1,435.28,338.42,10.30,8.93" target="#b6">(7,</ref><ref type="bibr" coords="1,448.75,338.42,6.86,8.93" target="#b7">8)</ref>, although other reports have suggested JAK/STAT pathway involved in IL-17 signaling <ref type="bibr" coords="1,303.68,362.18,10.30,8.93" target="#b8">(9,</ref><ref type="bibr" coords="1,317.50,362.18,11.39,8.93" target="#b9">10)</ref>. It was shown that IL-6 induction by IL-17 in mouse embryonic fibroblasts (MEFs) is dependent on TRAF6 <ref type="bibr" coords="1,542.24,374.05,10.11,8.93" target="#b7">(8)</ref>. Thus, IL-17 may signal via mechanisms similar to IL-1 and Toll-like receptors (TLRs).</p><p xml:id="_SmwNGD2">How IL-17R family receptors signal remain largely unknown. IL-17RA has a long cytoplasmic tail with ϳ500 amino acids with no sequence conserved in any other cytokine receptor families, suggesting that they belong to a unique cytokine receptor family. IL-17RA and TRAF6 overexpression resulted in co-immunoprecipitation of the two molecules <ref type="bibr" coords="1,501.35,469.06,10.11,8.93" target="#b7">(8)</ref>. However, it is unclear whether the association is direct. A consensus TRAF6-binding motif, PXEXXZ (X, aromatic/acidic residue), is absent in IL-17RA. Notably, TLRs, IL-1 receptors, and TNF receptors all initiate their signaling via homotypic interaction with downstream adaptor proteins. Many TLRs and IL-1 receptors utilize MyD88 in their signal transduction leading to activation of TRAF6 and downstream pathways <ref type="bibr" coords="1,481.88,552.19,14.70,8.93" target="#b10">(11)</ref>. Interestingly, one article recently suggested that all isoforms of IL-17 receptors contained a conserved sequence segment that shares similar residues in two out of three conserved motifs of Toll-like receptor (TIR)/IL-1R domain. A new superfamily consisting of TIR and IL-17R homology domains was thus proposed as STIR (SEFIR (similar expression to fibroblast growth factor genes and IL-17Rs) and TIR) <ref type="bibr" coords="2,133.26,70.55,14.70,8.93" target="#b11">(12)</ref>.</p><p xml:id="_R7epmkA">IL-17R SEFIR domain is also observed in one cytoplasmic protein, Act1. Act1 is also known as CIKS, a connection to IB kinase and stress-activated kinase. Although initially reported to activate NF-B in CD40-mediated signaling <ref type="bibr" coords="2,228.05,117.55,14.70,8.93" target="#b12">(13)</ref>, an analysis on Act1-deficient mice suggested Act1 as a negative regulator for CD40-and BAFF-induced B cell survival <ref type="bibr" coords="2,228.61,141.05,14.70,8.93" target="#b13">(14)</ref>. A striking feature of Act1 is that it contains the TRAF6 binding motif and exhibited TRAF6 association in vitro <ref type="bibr" coords="2,207.67,164.55,14.70,8.93" target="#b14">(15)</ref>. Therefore, we hypothesize that IL-17RA employs Act1 as its adaptor protein to transduce signaling. In this paper, we show that Act1 not only directly associates with IL-17RA via the SEFIR motif but also is essential for IL-17 regulation of inflammatory gene expression. This is the first report on an adaptor protein for the IL-17R family.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_xePa77J">MATERIALS AND METHODS</head><p xml:id="_Jy6deFC">Cytokines and Antibodies-Antibodies used in experiments are as follows: anti-FLAG-M2 (Sigma), anti-HA.11 (Covance); anti-GST (BD Biosciences); anti-Act1 H-300, anti-IB␣, anti-TRAF6 H-274 (Santa Cruz Biotechnology); anti-human IL-17RA (R&amp;D Systems); and HRP-conjugated goat antimouse or anti-rabbit secondary antibodies (Jackson Immu-noResearch and GE Healthcare). IL-6 ELISA antibodies were obtained from BD Biosciences. IL-1␤ and TNF-␣ were obtained from BD Biosciences, and IL-17 was obtained from R&amp;D Systems.</p><p xml:id="_ag9w2wZ">Phylogeny Analysis-Multiple sequence alignment treebuilding were performed using Bonsai 1.1.6 with default settings.</p><p xml:id="_aw6zYnu">Cell Culture-MEF was derived from C57BL6 using a standard protocol. MyD88 Ϫ/Ϫ MEF was provided by Dr. Ruslan Medzhitov (Yale University) and IRAK4 Ϫ/Ϫ MEF by Dr. Wen-Chen Yeh (University of Toronto). A549 was obtained from ATCC (Manassas, VA) and grown in high glucose DMEM supplemented with 10% fetal bovine serum (Atlanta Biologicals). For measurement of IL-6, 4 ϫ 10 4 cells were plated onto 24-well plates. Next day, cells were treated with cytokines overnight, and the culture supernatant was subjected to ELISA.</p><p xml:id="_tEqykyR">Plasmids-The full length of Act1 was cloned into pcDNA3. HA tag was added by PCR on N terminus of Act1. The SEFIR domain of Act1, amino acids 336 -555, was inserted to pGEX4T-1 (Amersham Biosciences) for GST fusion protein. Cytoplasmic domain of IL-17RA, amino acids 346 -864, was either cloned into pcDNA with an N terminus HA tag or inserted to pGEX4T-1. The full length of IL-17RA with a FLAG tag was obtained from Dr. Sarah Gaffen (State University of New York, Buffalo, NY).</p><p xml:id="_82JweYk">In Vitro Transcription and Translation-Plasmids encoding HA-Act1 was subject to T7 Quick Coupled in vitro transcription and translation (Promega). Samples were separated by SDS-PAGE; gels were transferred to polyvinylidene difluoride membrane and blotted with HA antibody.</p><p xml:id="_WGumbTv">GST Pulldown Assays-GST-SEFIR Act1 fusion protein was expressed in BL21(DE3) cells (Promega) and affinity-purified onto glutathione-Sepharose 4B beads according to the manufacturer's protocol. GST pulldown assays were performed with a total of 2 g of GST-Act1 protein bound to glutathione-Sepharose 4B beads and equilibrated in binding buffer (20 mM Tris-HCl, pH 7.9, 150 mM KCl, 4 mM MgCl 2 , 1 mM EDTA, 1 mM dithiothreitol, 10% glycerol, 0.1% Nonidet P-40, 2 mg/ml bovine serum albumin). Bound GST protein was then incubated with 293T cell lysates expressing HA-IL-17RA. In another experiment, 10 l of in vitro transcription and translation product, HA-Act1, was incubated in the same binding buffer with GST-cytoplasmic domain of IL-17RA. After washing with binding buffer five times, beads were resuspended in SDS-PAGE sample buffer and loaded onto a 10% SDS-PAGE gel for electrophoresis. Bands for bound proteins were visualized by autoradiography.</p><p xml:id="_hgsSDWX">Transduction of Cell Lines with shRNA of Act1-A retroviral construct, pSM2c, encoding mouse Act1 microRNA-adapted shRNA was purchased from Openbiosystems (Huntsville, AL). The packaging cell line 293T (5 ϫ 10 6 ) was plated on 100-mm tissue culture plates. On the following day, 14 g of the pSM2c-shRNA Act1, 10 g of Gag/pol plasmid DNA and VSVg plasmid DNA were co-transfected by calcium phosphate method. The medium was changed 12 h after transfection, and the cells were cultured for another 48 h. Conditioned medium was then collected and cleared of debris by low speed centrifugation (2,500 ϫ g for 5 min) and filtered through a 0.45-m filter and stored at Ϫ70 °C. MEFs were infected with culture fluid from the virus-producing cells in the presence of 8 g/ml polybrene. The medium was changed on the following day. Two days after infection, cells were trypsinized and replated at a 1:3 dilution in puromycin medium. Stable transfectants were obtained at 1-2 weeks.</p><p xml:id="_UhQrrFZ">Real-time PCR-MEFs were plated onto 6-well plates at density of 10 5 /well. The cells were treated for 4 h in serumfree DMEM prior to stimulation with the indicated cytokines. DNA was synthesized with RNA prepared by TRIzol using RNase H-reverse transcriptase (Invitrogen). cDNA was analyzed by real-time quantitative PCR in triplicates by using iQ CYBR Green Supermix (Bio-Rad) in the iCycler sequence detection system (Bio-Rad). The starting quantity of the initial cDNA sample was calculated from primer-specific standard curves by using the iCycler Data Analysis Software. The expression level of each gene was normalized to actin expression level using standard curve method Cell Lysis, Immunoblotting, and Immunoprecipitation-Cells were washed once with ice-cold phosphate-buffered saline and lysed in cell lysis buffer (50 mM Tris, pH 8.0, 5 mM EDTA, 1% Triton X-100, 100 mM NaCl, 1 mM sodium orthovanadate, 1 mM phenylmethylsulfonyl fluoride) supplemented with protease inhibitors. The cells were incubated at 4 °C for 30 min with the lysis buffer. Cell debris and unbroken cells were pelleted by centrifugation (15,000 ϫ g) for 10 min at 4 °C. Supernatant fractions were used directly for Western blot analysis or for immunoprecipitation. For Western blots, 50 -100 g of total protein was electrophoresed through 10% SDS-polyacrylamide gels followed by transfer to polyvinylidene difluoride (Millipore) membranes. The membranes were blocked for 1 h in 5% milk, TBST (25 mM Tris-HCl, pH 8.0, 125 mM NaCl, 0.1% Tween 20) followed by overnight incubation with primary antibodies. HRP-conjugated primary antibodies were removed, the membranes were washed with TBST, and the signal was detected with ECL reagent (Promega). Densitometry (for signal-density) was analyzed with the EpiChemi 3 Darkroom TM (UVP Bioimaging Systems) using Labworks Image Acquisition and Analysis Software 4.5. For immunoprecipitation experiments, cleared cell lysates were incubated with 50 l of FLAG M2-agarose affinity gel for 90 min followed by three 5-min washes in lysis buffer. Immunoprecipitates were denatured with 1ϫ SDS sample buffer for 5 min at 100 °C.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ZSqXe3S">RESULTS AND DISCUSSION</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_BG3Jqaq">IL-17RA Shares Similarity with TIR Domain but Does Not Utilize MyD88 and IRAK4 for IL-6 Induction-Although no information exists on what molecules directly associate with</head><p xml:id="_TupTgzn">IL-17RA, a recent article suggested that the members of human IL-17 receptor family share some homology with TIR domains existing in TLR/IL-1R family members. This similarity was further supported by a phylogenic sequence analysis on the STIR domains from mouse IL-17Rs, TLRs and IL-1R (Fig. <ref type="figure" coords="3,357.15,564.04,8.74,8.93" target="#fig_1">1A</ref>). Thus, we first tested whether IL-17RA shares proximal signaling units with those used by TIR-containing receptors.</p><p xml:id="_6gr7fvG">MyD88 is an essential adaptor downstream of most TLRs, and it is essential for IL-1R signaling. IL-6 was produced equally in WT and MyD88 Ϫ/Ϫ MEF upon IL-17 treatment (Fig. <ref type="figure" coords="3,326.52,634.55,8.40,8.93" target="#fig_1">1B</ref>), indicating that MyD88 is not essential in IL-17 signaling. We further investigated the involvement of IRAK4, a crucial downstream molecule of MyD88 in TLR/ IL-1R signaling <ref type="bibr" coords="3,373.65,669.80,15.32,8.93" target="#b10">(11)</ref>. IRAK4 acts to recruit IRAK1, which further interacts with TRAF6 leading to its activation. Upon IL-17 treatment, IL-6 production was preserved in IRAK4 Ϫ/Ϫ MEF (Fig. <ref type="figure" coords="3,401.89,705.05,8.40,8.93" target="#fig_1">1B</ref>). Therefore, we concluded that IL-17RA may utilize different proximal signaling subunits from those used by TIR.   <ref type="figure" coords="3,261.73,560.86,13.06,7.06" target="#fig_1">17RA</ref>. The cells were lysed, and the proteins were immunoprecipitated with anti-FLAG beads. Anti-HA antibody and TRAF6 antibody were used to detect the immunoprecipitated complex. Lysates of transfected cells were blotted with FLAG antibody to determine the expression levels of the IL-17RA and MyD88. B, lung epithelial cell line, A549, was treated with 100 ng/ml IL-17 for the indicated time. IL-17RA was immunoprecipitated with anti-IL-17RA antibody. Immune complexes were examined with anti-Act1 antibody by Western analysis. Input lysates were normalized by immunoblotting with an anti-actin antibody. C, aliquots of in vitro translated HA-Act1 were precipitated using GST or GST-cytoplasmic domain of IL-17RA and analyzed by SDS-PAGE and blotted with an anti-HA antibody. D, 293T cells were transfected with a HA-tagged IL-17RA for 18 h. The cell lysates were precipitated with recombinant GST or GST-Act1 SEFIR domain and analyzed by SDS-PAGE and immunoblotting with an antibody to HA.</p><p xml:id="_CAjUMJQ">Act1 Physically Associates with IL-17RA through Its SEFIR Domain-In addition to IL-17RA, Act1, a cytoplasmic protein reported to interact with TRAF6, also contains a SEFIR domain. Therefore, we reasoned that Act1 may interact with the cytoplasmic domain of IL-17RA via homotypic interaction. We first tested whether Act1 can associate with IL-17RA. Full-length and SEFIR domain of Act1 and full-length and the cytoplasmic domain of IL-17RA were subcloned into expression vectors and used to determine the association of Act1 and IL-17RA. When Full-length HA-tagged Act1 and FLAG-tagged IL-17RA ( <ref type="formula" coords="4,279.62,528.79,8.07,8.93">16</ref>) proteins were simultaneously expressed in 293 cells, HA-tagged Act1 was co-immunoprecipitated by a FLAG antibody (Fig. <ref type="figure" coords="4,39.68,564.04,8.45,8.93" target="#fig_2">2A</ref>), suggesting that IL-17RA and Act1 may associate directly or indirectly. Interestingly, TRAF6 was co-precipitated with FLAG-IL-17RA, similar to the previous report <ref type="bibr" coords="4,232.69,587.53,10.11,8.93" target="#b7">(8)</ref>, suggesting that TRAF6 exists in the same complex. In contrast, MyD88 under the same condition was not co-precipitated with IL-17RA and TRAF6 (Fig. <ref type="figure" coords="4,148.65,622.78,8.45,8.93" target="#fig_2">2A</ref>). To examine the association of Act1 with IL-17RA complex in a more physiological setting, we treated a lung epithelial cell line, A549, with IL-17, and IL-17RA was immunoprecipitated with an anti-IL-17RA antibody. Endogenous Act1 protein constitutively associated with IL-17RA, which was transiently enhanced after IL-17 treatment (Fig. <ref type="figure" coords="4,59.84,693.27,8.10,8.93" target="#fig_2">2B</ref>).</p><p xml:id="_BXhPdBr">To further assess whether Act1 and IL-17RA form direct association, recombinant full-length Act1 with a HA tag was produced by in vitro transcription and translation system. Also, GST fusion construct of cytoplasmic domain of IL-17RA was expressed and purified from Escherichia coli. A GST pulldown assay revealed that these proteins indeed form association in vitro (Fig. <ref type="figure" coords="4,538.93,117.52,8.40,8.93" target="#fig_2">2C</ref>), indicating that they can directly interact. To examine whether this interaction is mediated by a homotypic interaction, a bacterially expressed GST fusion protein containing the SEFIR domain of Act1 was used to precipitate associated proteins from lysates of 293 cells expressing a HA-tagged cytoplasmic domain of IL-17RA. Indeed, Act1 SEFIR domain but not GST control was sufficient to pull down IL-17RA cytoplasmic domain (Fig. <ref type="figure" coords="4,411.69,282.00,8.67,8.93" target="#fig_2">2D</ref>), indicating that Act1 and IL-17RA can form homotypic association mediated by SEFIR domain. Therefore, Act1 physically associates with IL-17RA and may be involved in IL-17RA signaling.</p><p xml:id="_z64qvQV">Act1 Is Required for IL-17-induced Gene Expression-Next we examined whether the interaction between Act1 and IL-17RA is required for IL-17-mediated gene expression. To facilitate this, we investigated whether Act1 could be silenced by an Act1-specific shRNA. A fibroblast line was established with a retroviral construct expressing Act1 shRNA. As determined by Western blot, Act1 was reduced over 70% in cells expressing shRNA (Fig. <ref type="figure" coords="4,538.88,458.23,8.43,8.93" target="#fig_3">3A</ref>), indicative of efficient silencing of Act1. Upon treatments with IL-17 in the presence or absence of TNF-␣, IL-6 production was reduced by about 50% in Act1-shRNA MEF (Fig. <ref type="figure" coords="4,504.58,493.55,8.10,8.93" target="#fig_3">3B</ref>). In addition, the level of IB␣ protein was maintained in Act1-shRNA MEF, while IB␣ was degraded in WT MEF upon IL-17 treatment, indicating a critical role of Act1 in activating NF-B pathway (Fig. <ref type="figure" coords="4,362.08,540.55,8.40,8.93" target="#fig_3">3C</ref>). Since both WT and Act1-shRNA MEF all efficiently degraded IB␣ in response to TNF-␣ (Fig. <ref type="figure" coords="4,517.37,552.30,8.40,8.93" target="#fig_3">3C</ref>), Act1 is selectively required for IL-17RA signaling leading to NF-B activation.</p><p xml:id="_cjYVbyT">To substantiate this observation, we examined inflammatory gene expression in wild-type and Act1-deficient MEF treated with various cytokines. Up-regulation of chemokines such as MCP-1(CCL2) and MCP-3(CCL7) were completely abrogated in the absence of Act1 (Fig. <ref type="figure" coords="4,414.71,634.55,8.67,8.93" target="#fig_3">3D</ref>). It was reported that IL-17 also induces transcription factors, C/EBP␤ and C/EBP␦. In addition, IB, an inducible nuclear protein that is highly homologous to the IB family member Bcl-3, is induced by IL-17 <ref type="bibr" coords="4,537.35,669.80,14.70,8.93" target="#b16">(17)</ref>. Inductions of these transcriptional regulators also depended on Act1 (Fig. <ref type="figure" coords="4,348.15,693.30,7.93,8.93" target="#fig_3">3E</ref>). However, no defect was observed in Act1-silenced or -deficient cells after treatment TNF-␣, IL-1␤, and LPS (Fig. <ref type="figure" coords="4,342.09,716.80,52.34,8.93" target="#fig_3">3, B, D, and E</ref>), indicating Act1 is selectively required for IL-17 signaling in fibroblasts. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,529.34,549.23,26.34,8.93;2,303.67,561.18,252.00,8.93;2,303.67,573.13,252.04,8.93;2,303.67,585.09,252.06,8.93;2,303.67,597.04,252.01,8.93;2,303.67,608.99,252.05,8.93;2,303.67,620.13,252.07,9.87;2,303.67,632.92,252.07,8.93;2,303.67,644.87,252.10,8.93;2,303.68,656.83,252.00,8.93;2,303.68,668.78,252.07,8.93;2,303.68,679.90,252.06,9.87;2,303.68,692.69,252.05,8.93;2,303.68,703.81,252.05,9.87;2,303.68,716.60,252.11,8.93;2,303.68,728.55,39.41,8.93"><head></head><label></label><figDesc xml:id="_wFxuBwU">. The primer sets for real-time PCR are: MCP-1, CTC AGC CAG ATG CAG TTA ACG CCC (forward) and GGT GCT GAA GAC CTT AGG GCA GAT (reverse); MCP-3, CTC ATA GCC GCT GCT TTC AGC ATC (forward) and GTC TAA GTA TGC TAT AGC CTC CTC (reverse); CCAAT/enhancer-binding protein ␤ (C/EBP␤), CGC ACC ACG ACT TCC TCT (forward) and CGA GGC TCA CGT AAC CGT (reverse); C/EBP␦, TGC CAT GTA CGA CGA CGA G (forward) and GCC GCT TTG TGG TTG CTG (reverse), molecule possessing ankyrin repeats induced by lipopolysaccharide (LPS; MAIL)/inhibitor of B (IB), TGA CAT CAC CGC AAA CGC (forward) and GAA ATC CTG GCA CTG GTC TC (reverse); ␤-actin; GAC GGC CAG GTC ATC ACT ATT G (forward) and AGG AAG GCT GGA AAA GAG CC (reverse).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,39.68,309.76,360.39,7.06;3,39.68,318.26,360.46,7.06;3,39.68,325.16,360.35,8.67;3,39.67,333.66,360.39,8.67;3,39.67,343.76,286.84,7.06;3,40.28,58.66,358.36,245.00"><head>FIGURE 1 .</head><label>1</label><figDesc xml:id="_cnHgMaP">FIGURE 1. IL-17RA shares signaling motifs with TLRs and IL-1R but does not utilizes MyD88 or IRAK4. A, Phylogenic analysis of STIR domain sequences from TLR, IL-1R, IL-17R, and adaptor proteins. The analysis was performed using Bonsai software. B, IL-6 induction by IL-17 is not dependent on MyD88 or IRAK4. WT, MyD88 Ϫ/Ϫ , and IRAK4 Ϫ/Ϫ MEF were left untreated or stimulated with recombinant mouse TNF-␣ (10 ng/ml), IL-1␤ (20 ng/ml), and IL-17 (100 ng/ml) for 24 h, and IL-6 production in the supernatants was measured by ELISA.</figDesc><graphic coords="3,40.28,58.66,358.36,245.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="3,39.68,552.36,252.28,7.06;3,39.67,560.86,252.23,7.06;3,39.67,569.36,252.27,7.06;3,39.67,577.85,252.27,7.06;3,39.67,586.35,252.30,7.06;3,39.67,594.84,252.25,7.06;3,39.68,603.34,252.28,7.06;3,39.68,611.84,252.29,7.06;3,39.68,620.33,252.25,7.06;3,39.68,628.83,252.32,7.06;3,39.67,637.32,252.33,7.06;3,39.67,645.82,252.27,7.06;3,39.66,654.32,252.20,7.06;3,39.66,662.81,252.35,7.06;3,39.66,671.31,187.67,7.06;3,40.40,369.26,250.06,177.00"><head>FIGURE 2 .</head><label>2</label><figDesc xml:id="_wA8Zd3V">FIGURE 2. Interaction of Act1 and IL-17RA.A, 293 cells were transfected with FLAG-tagged IL-17RA or MyD88 together with HA-tagged Act1 or IL-17RA. The cells were lysed, and the proteins were immunoprecipitated with anti-FLAG beads. Anti-HA antibody and TRAF6 antibody were used to detect the immunoprecipitated complex. Lysates of transfected cells were blotted with FLAG antibody to determine the expression levels of the IL-17RA and MyD88. B, lung epithelial cell line, A549, was treated with 100 ng/ml IL-17 for the indicated time. IL-17RA was immunoprecipitated with anti-IL-17RA antibody. Immune complexes were examined with anti-Act1 antibody by Western analysis. Input lysates were normalized by immunoblotting with an anti-actin antibody. C, aliquots of in vitro translated HA-Act1 were precipitated using GST or GST-cytoplasmic domain of IL-17RA and analyzed by SDS-PAGE and blotted with an anti-HA antibody. D, 293T cells were transfected with a HA-tagged IL-17RA for 18 h. The cell lysates were precipitated with recombinant GST or GST-Act1 SEFIR domain and analyzed by SDS-PAGE and immunoblotting with an antibody to HA.</figDesc><graphic coords="3,40.40,369.26,250.06,177.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="4,39.68,321.79,360.42,7.06;4,39.68,330.29,360.42,7.06;4,39.68,338.78,360.41,7.06;4,39.68,347.28,360.36,7.08;4,39.67,355.79,360.37,7.06;4,39.67,364.28,360.34,7.07;4,39.67,372.79,360.32,7.07;4,39.68,381.29,360.38,7.06;4,39.68,389.78,360.36,7.06;4,39.68,398.28,14.86,7.06;4,40.28,58.68,358.36,257.00"><head>FIGURE 3 .</head><label>3</label><figDesc xml:id="_vJhq2dT">FIGURE 3. Act1 is essential for IL-17 induction of inflammatory gene expression.A, MEF was infected with retrovirus shRNA of Act1, and the infected MEF was selected using puromycin. Cell lysates were analyzed on SDS-PAGE and immunoblotted with an anti-Act1. Actin was used as an internal control. B, WT and shRNA-Act1expressing MEFs were left untreated or stimulated with recombinant mouse TNF-␣ (10 ng/ml), IL-1␤ (20 ng/ml), and IL-17 (100 ng/ml) for 24 h, and IL-6 production in the supernatants was measured by ELISA. C, MEFs were treated with IL-17 for 15-90 min and TNF-␣ for 15 min. Cell lysates were analyzed by SDS-PAGE, and the membrane was immunoblotted with anti-IB␣ and actin. The acquired image was quantitated on IB␣ expression levels normalized according to actin expression level. D and E, RNA samples from wild-type and Act1deficient MEF treated with various cytokines were analyzed for expression of indicated genes using real-time PCR.</figDesc><graphic coords="4,40.28,58.68,358.36,257.00" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0">Received a post-doctoral fellowship from the Arthritis Foundation.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1">A Cancer Research Institute Investigator and an M. D. Anderson Cancer Center Trust Fellow. To whom correspondence should be addressed: Dept. of Immunology, M. D. Anderson Cancer Center, 7455 Fannin, Unit 906, Houston, TX 77030. Tel.: 713-563-3203; Fax: 713-563-0604; E-mail: cdong@mdanderson.org</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2">.<ref type="bibr" coords="1,303.68,647.50,3.08,4.42" target="#b2">3</ref> The abbreviations used are: IL-17, interleukin 17; IL-17R, IL-17 receptor; SEFIR, SEF (similar expression to fibroblast growth factor) and IL-17R domain; STIR, domain superfamily consisting of SEFIR and TIR; TIR, Toll-IL-1 receptor domain; C/EBP, CCAAT/enhancer binding protein; IB␣ and IB, inhibitors of B; TGF, transforming growth factor; TNF, tumor necrosis factor; MEF, mouse embryonic fibroblast; TLR, Toll-like receptor; GST, glutathione S-transferase; HRP, horseradish peroxidase; ELISA, enzyme-linked</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_3">ACCELERATED PUBLICATION: Act1 Is Essential in </note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_ZRky9vr"><p xml:id="_NvCB4jb">Acknowledgments-We thank Dr. Ruslan Medzhitov (Yale University) for FLAG-MyD88 construct and MyD88-deficient MEFs, Dr. Wen-Chen Yeh (University of Toronto) for IRAK4 Ϫ/Ϫ MEF, Dr. Sarah Gaffen (State University of New York, Buffalo, NY) for FLAG-IL-17RA construct, Drs. Xiaoxia Li and Caini Liu (Cleveland Clinic Learner Research Institute) for providing RNA samples from cytokine-treated Act-1-deficient MEF and for their discussion, and the entire Dong Laboratory for help and discussion.</p></div>
+			</div>
+
+
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_hZ5dKWF"><p xml:id="_s8K7h9s">* This work was supported in part by the National Institutes of Health (to C. D.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_6uPrBbH"><p xml:id="_FcjRPhz">Altogether, our study demonstrates that IL-17RA use a novel adaptor, Act1, as a membrane-proximal factor to initiate the signaling. Act1 likely recruits TRAF6 and other signaling intermediates to IL-17RA complex. Deficiency of Act1 in fibroblasts leads to impaired NF-B activation and deficiency of proinflammatory cytokines and chemokines upon IL-17 treatment. Based on these in vitro our observations, we expect significant contribution of Act1 in IL-17-mediated autoimmune disease. Additional studies are required to elucidate how IL-17RA signaling complex is organized, whether other members of the IL-17RA family utilize Act1 and whether Act1-independent pathway of IL-17 signaling exists. Nonetheless, this study also suggests that interruption of Act1-dependent signaling events may help alleviate immunopathology mediated by IL-17 and IL-17-producing T cells.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="5,46.46,368.73,164.09,7.36" xml:id="b0">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Dong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VUBYSK5">Nat. Rev. Immunol</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="329" to="334" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,46.46,378.73,245.29,7.36;5,318.18,58.73,119.14,7.36" xml:id="b1">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">T</forename><surname>Weaver</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">E</forename><surname>Harrington</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Mangan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Gavrieli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">M</forename><surname>Murphy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_yfp6aP7">Immunity</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="677" to="688" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.46,68.73,245.29,7.36;5,318.18,78.73,237.55,7.36;5,318.18,88.73,36.33,7.36" xml:id="b2">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">O</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">H</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Nurieva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Hood</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Dong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MwBDgTp">Nat. Immunol</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="1133" to="1141" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.46,98.73,245.26,7.36;5,318.18,108.73,218.38,7.36" xml:id="b3">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Ruddy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">C</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">K</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yamamoto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kasayama</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">L</forename><surname>Kirkwood</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Gaffen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jNxXFJS">J. Biol. Chem</title>
+		<imprint>
+			<biblScope unit="volume">279</biblScope>
+			<biblScope unit="page" from="2559" to="2567" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.47,118.73,245.30,7.36;5,318.19,128.73,237.54,7.36;5,318.19,138.73,29.42,7.36" xml:id="b4">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">C</forename><surname>Fanslow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">F</forename><surname>Seldin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Rousseau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Painter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">R</forename><surname>Comeau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">I</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">K</forename><surname>Spriggs</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ZjX9CAE">Immunity</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="811" to="821" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.47,148.73,245.29,7.36;5,318.19,158.73,187.20,7.36" xml:id="b5">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Toy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Kugler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wolfson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Vanden Bos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Gurgel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Derry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Tocker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Peschon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_z99nKaG">J. Immunol</title>
+		<imprint>
+			<biblScope unit="volume">177</biblScope>
+			<biblScope unit="page" from="36" to="39" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.47,168.73,245.28,7.36;5,318.19,178.73,44.20,7.36" xml:id="b6">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Shalom-Barak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Quach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Lotz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MPSCX3m">J. Biol. Chem</title>
+		<imprint>
+			<biblScope unit="volume">273</biblScope>
+			<biblScope unit="page" from="27467" to="27473" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.47,188.73,245.26,7.36;5,318.19,198.73,36.33,7.36" xml:id="b7">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Schwandner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Yamaguchi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Cao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_QtKSur7">J. Exp. Med</title>
+		<imprint>
+			<biblScope unit="volume">191</biblScope>
+			<biblScope unit="page" from="1233" to="1240" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.47,208.73,245.24,7.36;5,318.19,218.73,154.22,7.36" xml:id="b8">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">Y</forename><surname>Kao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Thai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Wachi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">W</forename><surname>Harper</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_BEThr4G">J. Immunol</title>
+		<imprint>
+			<biblScope unit="volume">173</biblScope>
+			<biblScope unit="page" from="3482" to="3491" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.11,228.73,245.63,7.36;5,318.19,238.73,115.91,7.36" xml:id="b9">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">V</forename><surname>Subramaniam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">S</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">E</forename><surname>Adunyah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pHZYSc9">Biochem. Biophys. Res. Commun</title>
+		<imprint>
+			<biblScope unit="volume">262</biblScope>
+			<biblScope unit="page" from="14" to="19" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.10,248.73,210.33,7.36" xml:id="b10">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Kawai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Akira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7VNmrx4">Cell Death Differ</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="816" to="825" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.10,258.73,245.65,7.36;5,318.18,268.73,163.79,7.36" xml:id="b11">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Novatchkova</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Leibbrandt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Werzowa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Neubuser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Eisenhaber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rkrH4Tv">Trends Biochem. Sci</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="226" to="229" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.10,278.73,245.66,7.36;5,318.18,288.73,49.64,7.36" xml:id="b12">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Zyw7kdT">Proc. Natl. Acad. Sci. U. S. A</title>
+		<imprint>
+			<biblScope unit="volume">99</biblScope>
+			<biblScope unit="page" from="9386" to="9391" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.10,298.73,245.60,7.36;5,318.18,308.73,237.61,7.36;5,318.18,318.73,75.30,7.36" xml:id="b13">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Naramura</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">C</forename><surname>Snow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">F</forename><surname>Ware</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">L</forename><surname>Fairchild</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">A</forename><surname>Omori</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">C</forename><surname>Rickert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Scott</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">L</forename><surname>Kotzin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MZgUTsd">Immunity</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="575" to="587" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.10,328.73,245.61,7.36;5,318.18,338.73,45.05,7.36" xml:id="b14">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kanamori</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Kai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Hayashizaki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Suzuki</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KkWAfRR">FEBS Lett</title>
+		<imprint>
+			<biblScope unit="volume">532</biblScope>
+			<biblScope unit="page" from="241" to="246" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.10,348.73,245.66,7.36;5,318.18,358.73,107.72,7.36" xml:id="b15">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Kramer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Maitra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Jiao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Gaffen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rAp7RnF">J. Immunol</title>
+		<imprint>
+			<biblScope unit="volume">176</biblScope>
+			<biblScope unit="page" from="711" to="715" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,310.10,368.73,245.63,7.36;5,318.19,378.73,58.29,7.36" xml:id="b16">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Ruddy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Plamondon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Gaffen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_qhbhT35">J. Leukocyte Biol</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page" from="388" to="399" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

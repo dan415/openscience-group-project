@@ -1,7 +1,7 @@
 from grobid.client import GrobidClient
 import xml.etree.ElementTree as ET
 import os
-from src.ontology_classes import Paper
+from ontology_classes import Paper
 
 
 class PaperProcessor:
@@ -37,6 +37,8 @@ class PaperProcessor:
         return Paper(tree=res, filename=paper_name, pdf_path=input_path, xml_path=self.output_path)
     def process_folder(self, folder):
         papers = []
+        if not self.grobid.test_alive():
+            print("INITIALIZE GROBID FIRST")
         for paper in os.listdir(folder):
             if paper.endswith(".pdf"):
                 paper_obj = self.process(folder + paper)

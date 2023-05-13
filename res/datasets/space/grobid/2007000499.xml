@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_bYEJnVp">Bi-modal Emotion Recognition from Expressive Face and Body Gestures</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,168.43,123.05,82.50,14.36;1,253.27,117.84,2.39,14.35"><forename type="first">Hatice</forename><surname>Gunes</surname></persName>
+							<email>haticeg@it.uts.edu.au</email>
+							<affiliation key="aff0">
+								<orgName type="department">Faculty of Information Technology</orgName>
+								<orgName type="laboratory">Computer Vision Research Group</orgName>
+								<orgName type="institution">University of Technology</orgName>
+								<address>
+									<postBox>PO Box 123</postBox>
+									<postCode>2007</postCode>
+									<settlement>Sydney, Broadway</settlement>
+									<region>NSW</region>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,296.84,123.05,108.42,14.36"><forename type="first">Massimo</forename><surname>Piccardi</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Faculty of Information Technology</orgName>
+								<orgName type="laboratory">Computer Vision Research Group</orgName>
+								<orgName type="institution">University of Technology</orgName>
+								<address>
+									<postBox>PO Box 123</postBox>
+									<postCode>2007</postCode>
+									<settlement>Sydney, Broadway</settlement>
+									<region>NSW</region>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_xSTJYg7">Bi-modal Emotion Recognition from Expressive Face and Body Gestures</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">62BDDA75A9BA36AFE50CCB4714665441</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_EqG8KdK">Bi-modal emotion recognition</term>
+					<term xml:id="_8wRgQBA">Facial expression</term>
+					<term xml:id="_GvMM5BZ">Expressive body gestures</term>
+					<term xml:id="_76S5Feb">Feature-level fusion</term>
+					<term xml:id="_T2P6BEh">Decision-level fusion</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_r4u3cDw"><p xml:id="_g65acxU">Psychological research findings suggest that humans rely on the combined visual channels of face and body more than any other channel when they make judgments about human communicative behavior. However, most of the existing systems attempting to analyze the human nonverbal behavior are mono-modal and focus only on the face. Research that aims to integrate gestures as an expression mean has only recently emerged. Accordingly, this paper presents an approach to automatic visual recognition of expressive face and upper-body gestures from video sequences suitable for use in a vision-based affective multi-modal framework. Face and body movements are captured simultaneously using two separate cameras. For each video sequence single expressive frames both from face and body are selected manually for analysis and recognition of emotions. Firstly, individual classifiers are trained from individual modalities. Secondly, we fuse facial expression and affective body gesture information at the feature and at the decision level. In the experiments performed, the emotion classification using the two modalities achieved a better recognition accuracy outperforming classification using the individual facial or bodily modality alone.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" xml:id="_U8K9TFY">Introduction and methodology</head><p xml:id="_VcYmWt9">Automated emotion recognition plays an important role in affective computing, a new paradigm of human-computer interaction (HCI) conceptual- ising computers as affective entities. However, automated emotion recognition proves in itself a very challenging task. To date, the most promising results have been achieved in recognition of emotions from facial expressions. Other modalities such as body movements and gestures have only recently started attracting the attention of the HCI community (e.g. <ref type="bibr" coords="2,370.10,263.33,12.09,11.97" target="#b0">[1]</ref>). Moreover, despite the common use of multiple modalities in human-human interaction (HHI), relatively few works have focused on implementing emotion recognition systems using affective multimodal data. The most common approach has been to combine facial expression with audio information <ref type="bibr" coords="2,374.72,321.11,11.69,11.97" target="#b1">[2]</ref>. Kapoor et al. <ref type="bibr" coords="2,474.09,321.11,12.34,11.97" target="#b2">[3]</ref> addressed the problem of detecting the affective states of high-interest, lowinterest and refreshing in a child who is solving a puzzle. To this aim, they combined sensory information from the face video, the posture sensor (a chair sensor) and the game being played in a probabilistic framework. Balomenos et al. <ref type="bibr" coords="2,121.70,393.35,12.34,11.97" target="#b3">[4]</ref> combined facial expressions and hand gestures for the recognition of six prototypical emotions.</p><p xml:id="_cx9bQNW">In our work, we aim to extend the affective channels used for emotion recognition to include spontaneous body gestures from the whole upper body. Our motivation stems from a study by Ambady and Rosenthal <ref type="bibr" coords="2,392.34,470.82,12.34,11.97" target="#b4">[5]</ref> suggesting that the most significant channel for judging behavioral cues of humans appears to be the visual channel for the facial expressions and body gestures. Accordingly, we compare the experimental results from feature-level and decision-level fusion of the face and body modalities to determine which fusion approach is more suitable for our work. We focus on facial expressions and body gestures (i.e. shoulder shrug) separately and analyze the individual frames, namely neutral and expressive frames. After describing the feature extraction techniques for face and body briefly, classification results from four subjects are presented. Firstly, individual classifiers are trained separately with face and body features for mono-modal classification into labeled emotion categories. Then, we fuse affective face and body modalities for classification into combined emotion categories at (a) at the feature-level; and (b) at the decision-level. The system framework illustrating these steps is shown in Fig. <ref type="figure" coords="2,353.58,658.61,4.54,11.97" target="#fig_0">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1" xml:id="_MwtDaeh">Modality 1: Facial expression</head><p xml:id="_em9sp4p">The leading study of <ref type="bibr" coords="3,197.03,64.75,106.29,11.97">Ekman and Frisen [6]</ref> formed the basis of visual automatic face expression recognition. Their studies suggested that anger, disgust, fear, happiness, sadness and surprise are the six basic prototypical face expressions recognized universally. Brave and Nass provide details of the facial cues for the displayed emotions in <ref type="bibr" coords="3,230.09,122.54,11.69,11.97" target="#b6">[7]</ref>. We base our facial feature extraction module on distinguishing these cues from the neutral face and from each other. Table <ref type="table" coords="3,91.93,151.43,5.85,11.97" target="#tab_0">1</ref> provides the list of the facial emotion categories recognized by our system based on the visual changes occurring on the face.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.2" xml:id="_gVTvvxy">Modality 2: Expressive upper-body gestures</head><p xml:id="_gBaE287">Human recognition of emotions from body movements and postures is still an unresolved area of research in psychology and non-verbal communication. Ambady and Rosenthal found out that humans rely on the combined visual channels of face and body more than any other channel when they make judgments about human communicative behavior <ref type="bibr" coords="3,351.30,311.12,11.69,11.97" target="#b4">[5]</ref>. In his paper <ref type="bibr" coords="3,438.49,311.12,11.69,11.97" target="#b7">[8]</ref>, Coulson presented experimental results on attribution of 6 emotions (anger, disgust, fear, happiness, sadness and surprise) to static body postures by using computer-generated figures. From his experiments he concluded that human recognition of emotion from posture is comparable to recognition from the voice, and some postures are recognized as well as facial expressions. Burgoon et al. clearly discuss the issue of emotion recognition from bodily cues and provide useful references in a recent publication in the context of national security <ref type="bibr" coords="3,125.60,426.69,11.69,11.97" target="#b8">[9]</ref>. We provide a table based on the cues described by Coulson <ref type="bibr" coords="3,451.48,426.69,12.34,11.97" target="#b7">[8]</ref> and Burgoon et al. <ref type="bibr" coords="3,169.25,441.14,12.34,11.97" target="#b8">[9]</ref> with the list of the expressive body gestures and the correlation between the gestures and the emotion categories used in the recordings of our database (see Table <ref type="table" coords="3,230.58,470.03,4.55,11.97">2</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.3" xml:id="_pVS3Xdu">Data Collection</head><p xml:id="_axvWgaR">There have been some attempts to create comprehensive test-bed for comparative studies of facial expression analysis (see <ref type="bibr" coords="3,316.01,571.93,12.34,11.97" target="#b1">[2]</ref> for a detailed study). However, existing databases lack expressive quality of the body and do not take into consideration the relationship between the bodily parts ( i.e. between hands; hands and the face; hands, face and shoulders, etc.). Therefore, they cannot be used for the extensive analysis of human nonverbal communicative behavior. Moreover, none of the aforementioned works <ref type="bibr" coords="3,345.42,644.17,12.18,11.97" target="#b3">[4]</ref>- <ref type="bibr" coords="3,365.78,644.17,12.34,11.97" target="#b2">[3]</ref> created an extensive affective gesture database for common research use. To cope with the existing  limitations, we created a bimodal database that consists of recordings of facial expressions alone and combined face and body expressions. We recorded the sequences simultaneously using two fixed SONY XCD-X710CR cameras, connected to two different PCs with a simple setup and uniform background.</p><p xml:id="_vX8hnsq">One camera was placed specifically capturing the head only and the second camera was placed in order to capture upper-body movement from the waist above. We choose to use two cameras due to the fact that current off-the-shelf technology still does not provide us with frames with the required quality to process detailed upper-body and face information together. Prior to recordings subjects were instructed to take a neutral position, facing the camera and looking straight to it with hands visible and placed on the table. Examples of data sequences recorded by camera 1 (for body) and camera 2 (for face) can be seen in Fig. <ref type="figure" coords="5,170.84,80.78,4.54,11.97" target="#fig_1">2</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" xml:id="_8469aC9">Feature Extraction</head><p xml:id="_Fm6n6QY">A vast literature covers techniques for facial feature extraction (i.e. <ref type="bibr" coords="5,445.25,171.21,17.33,11.97" target="#b9">[10]</ref>). In this work, we choose to use the well-known methods proposed in face, body and hand detection approaches since such methods have proven reliable and computationally efficient. We assume that initially the person is in frontal view, the upper-body, hands and face are visible and not occluding each other. Our feature vector consists of displacement measures between two major frames; namely a frame with the neutral expression ("neutral frame") and one where the expression is at its apex ("expressive frame").</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1" xml:id="_Cgb8YRP">Face feature extraction</head><p xml:id="_wkvbff8">Firstly, morphological operations are used to smooth the image. We then apply skin color segmentation based on HSV color space. We obtain the face region by choosing the largest connected component among the candidate skin areas.</p><p xml:id="_9VArxyA">We then employ closing (dilation and erosion) and find the contour of the face that returns the filled face region. We detect the key features in the neutral frame and define the bounding rectangle for each facial feature. For feature extraction we apply two basic methods. The first one is based on the graylevel information of the face region combined with edge maps and the second one is based on the min-max analysis by Sobottka and Pitas <ref type="bibr" coords="5,418.42,470.82,17.15,11.97" target="#b10">[11]</ref>. We first enhance the face region by histogram equalization. We improve the contrast of the features by thresholding the image into binary. For example, in the case of the eyes, this is due to the color of the pupils and the sunken eye-sockets.</p><p xml:id="_tCrdFb7">Our method also uses min-max analysis introduced by Sobottka and Pitas <ref type="bibr" coords="5,468.23,528.60,18.19,11.97" target="#b10">[11]</ref> to detect the eyebrows, eyes, mouth and chin, by evaluating the topographic gray-level relief. After binarizing the image, face histograms are determined by the X-and Y-axis projection. We use the information of expected locations of face parts to restrict the searching area within the face region. We detect and locate eyes, eyebrows, nostrils, and chin. After detecting the key features in the neutral frame and defining the bounding rectangles for face features, we consider the temporal information in the subsequent frames by computing the optical flow in such bounding rectangles. Furthermore, we analyze the wrinkle changes by using edge density per unit area against a threshold. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2" xml:id="_gYcsBCT">Body feature extraction</head><p xml:id="_tXkTQpg">Our body model is a combination of a silhouette based and color based body models to determine the location of the upper-body parts while the person is in a sitting posture. It is used to predict the locations of the body parts (head, torso, shoulders and hands). In each frame a segmentation process based on a background subtraction method is applied in order to obtain the silhouette of the upper body. We then apply thresholding, noise cleaning and morphological filtering. After thresholding, one iteration of 3*3 dilation is applied on the binary image. Then, a binary connected component operator is used to find the foreground regions, and small regions are eliminated. Since the remaining region is bigger than the original one it is restored to its original size by the erosion procedure. We then generate a set of features for the detected foreground object, including its centroid, area, bounding box and expansion/contraction ratio for comparison purpose.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ZVE99eA">Segmentation and tracking of the body parts:</head><p xml:id="_rzbYpz4">We first locate the face and the hands exploiting skin color information. Among the detected candidate regions, the largest connected component gives the face region; the second and third largest connected components give the hands, respectively. We then calculate the centroid of these regions in order to use them as reference points for the body movement. We employ the Camshift technique <ref type="bibr" coords="6,384.66,485.26,18.19,11.97" target="#b11">[12]</ref> for tracking the hands and comparison of bounding rectangles is used to predict their locations in subsequent frames (see Fig. <ref type="figure" coords="6,250.38,514.15,4.55,11.97" target="#fig_2">3</ref>).</p><p xml:id="_76YYzBk">Hand pose and orientation estimation: Orientation helps to discriminate between different poses of the hand. On convergence, the Camshift algorithm returns orientation, length and width of the bounding rectangle for the hand, hence, enabling the estimation of hand rotation <ref type="bibr" coords="6,332.55,571.93,17.15,11.97" target="#b11">[12]</ref>. Using this information we decide if the hand is in a vertical or horizontal position. After estimating the initial pose of the hand it is possible to determine the position of the fingers. We define four categories for finger position estimation: up, down, right and left. We use this information when classifying the feature vectors into various body movements (e.g. arms crossed, hands touching the head etc.)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3" xml:id="_Dfys76M">Emotion Recognition and Experimental Results</head><p xml:id="_Hv7yDsq">In our experiments we select a whole frame sequence where an expression is formed in order to perform emotion recognition. We processed 54 sequences in total, 27 for face and 27 for body from four subjects. We processed about 1500 frames for the face and 1500 for the body. However, we used only the "expressive" or "apex" frames for training and testing and we omitted the frames with intermediate movements. We used nearly half of these for training and the other half for testing purposes. The ground truth in this experiment is based on the fact that (a) subjects were asked to perform expressive face and body gestures corresponding to particular emotions and (b) the subjects believed that they were performing accordingly. After obtaining the feature vector for face and body separately we performed emotion recognition using Weka, a publicly available toolbox for automatic classification <ref type="bibr" coords="7,418.95,223.76,17.15,11.97" target="#b12">[13]</ref>. We performed emotion recognition in two stages: mono-modal and bi-modal emotion recognition. The details of these procedures are explained in the following sections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" xml:id="_FfDwxGn">Mono-modal emotion recognition</head><p xml:id="_MGnDNBa">The face feature vector and the body feature vector consist of 148 and 140 features, respectively. Such values are relatively high and may pose a challenge to the training of the classification algorithms. A basic rule for deciding the minimum number of samples in a training set is for that to be proportional to the number of features used. Since our number of training samples is limited, a classifier with a reduced feature set could be better trained than a classifier using the whole feature set. Therefore, we explored a feature selection technique to find the feature subset maximizing the performance of the classifiers. We applied attribute selection in Weka by a best-first search method in forward direction. This selection method searches the space of attribute subsets by greedy hill-climbing augmented with a backtracking facility. Setting the number of consecutive non-improving nodes allowed us control of the level of backtracking done.</p><p xml:id="_mhRv78T">Feature selection. The best-first search method in Weka evaluated a total number of 4478 subsets and found the best subset with a merit of 74.6% for the facial input data. The number of features selected was 29 among 148 features.</p><p xml:id="_AQXuWcy">The same method evaluated a total number of 2111 subsets and found the best subset with a merit of 93% for the body input data. The number of features selected was 11 among 140 features.</p><p xml:id="_jWz7VZx">Mono-modal recognition based on the face. After the feature selection procedure, we fed the reduced face feature vector to the classifiers for mono-modal emotion recognition. The best recognition results in Weka were obtained with the BayesNet classification algorithm; results are presented in Table <ref type="table" coords="8,451.12,85.56,5.85,11.97" target="#tab_1">3</ref> (first row). Additionally, Table <ref type="table" coords="8,227.87,100.01,5.85,11.97">4</ref> presents the full "confusion matrix" for the reduced facial feature vector (29 features) for the four subjects. From the left column of Table <ref type="table" coords="8,183.20,128.90,5.85,11.97">4</ref> it can be seen that a number of "anger" samples were classified as "disgust". This might be due to a certain self-similarity between these two classes. Moreover, some of the "uncertainty" samples were classified as "happiness". This can be explained with the fact that all of the happiness expressions in the experiments are performed with open mouth, hence lower cheek regions are pulled down; similar movement is done when performing uncertainty by pulling down the lower cheek regions.</p><p xml:id="_JtTnGSJ">Mono-modal recognition based on the body. After the feature selection procedure, we similarly fed the reduced body feature vectors to the classifiers for mono-modal emotion recognition. The best recognition results in Weka were again obtained with the BayesNet classification algorithm; results are presented in Table <ref type="table" coords="8,191.00,287.80,5.85,11.97" target="#tab_1">3</ref> (second row). Additionally, the right column of Table <ref type="table" coords="8,480.59,287.80,5.85,11.97">4</ref> presents the full "confusion matrix" for the reduced body feature vector (11 features) for the four subjects. From the right column of Table <ref type="table" coords="8,425.86,316.70,4.54,11.97">4</ref>, it can be seen that a number of "anger" samples are classified as "anxiety". This can be explained with the fact that "anxiety" was performed by tapping fingers on the table and part of "anger" was performed by making the hands into fists. For both of these gestures the amount of hand movement is limited if compared to other classes such as disgust, happiness and fear. Overall, from Table <ref type="table" coords="8,124.61,403.37,5.85,11.97" target="#tab_1">3</ref> we can conclude that body movements are more distinguishable between themselves than facial movements. This is due to the fact that facial movements are small movements and even high resolution might not be able to provide absolute recognition accuracy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" xml:id="_EVcDE3q">Bi-modal emotion recognition</head><p xml:id="_2GnNy2z">In general, modality fusion is about integrating all single modalities into a combined representation <ref type="bibr" coords="8,199.09,545.17,17.15,11.97" target="#b13">[14]</ref>. One of the key issues in multimodal data processing is to decide when to combine the information. Typically, fusion is either done at the feature-level or deferred to the decision-level <ref type="bibr" coords="8,360.99,574.07,17.15,11.97" target="#b13">[14]</ref>. To make the fusion issue tractable, the individual modalities are usually assumed independent of each other.</p><p xml:id="_h5FHmY2">Feature-level fusion. Feature-level fusion is performed by using the extracted features from each modality and concatenating these features into one larger vector. The resulting vector is input to a single classifier which uses the com-Table <ref type="table" coords="9,121.92,21.40,5.45,10.91">4</ref> Confusion matrices for the reduced face and body feature vectors.</p><p xml:id="_PDf74Qm">Confusion matrix for the reduced facial feature vector (29 attributes) for 4 subjects using BayesNet.</p><p xml:id="_u6gJNW6">Confusion matrix for the reduced body feature vector   bined information to assign the test samples into appropriate classes. We fuse face and body features of the corresponding expressive frames from the videos obtained from face and body cameras. However, we obtain a large feature vector consisting of 288 features. Similarly to the mono-modal emotion recognition, we decided to use a feature selection method prior to classification. Best-first search method was used with ten-fold cross validation to obtain a decisive reduction in the features' number (14 after selection). We experimented various classifiers on a dataset consisting of 412 training and 386 testing instances. For the feature set with 14 attributes, BayesNet provided, again, the best classification accuracy. The recognition results and the confusion matrix obtained are presented in Table <ref type="table" coords="9,315.36,415.27,4.54,11.97" target="#tab_2">5</ref>. Table <ref type="table" coords="9,359.23,415.27,5.85,11.97" target="#tab_2">5</ref> shows that a number of "anger" samples were classified as "anxiety". This case is similar to the monomodal emotion recognition results based on body feature set alone (compare with Table <ref type="table" coords="9,149.85,458.61,4.54,11.97">4</ref>, right column), however the number of misclassifications is much reduced. In general, for the emotions considered, we observe that using the two modalities achieves better recognition accuracy, outperforming the classification using the face or body modality alone, suggesting that using expressive face and body information adds accuracy to the emotion recognition based solely either on the face or the body. To correctly interpret these results, it is important to recall that our experiment tests unseen instances from the same subjects used for the training phase. Accuracy might be lower for totally unseen subjects.</p><p xml:id="_bJjJZVB">Decision-level fusion. Decision-level fusion enables each modality to be first pre-classified independently and the final classification is based on the fusion of the outputs the different modalities. Designing optimal strategies for decisionlevel fusion is still an open research issue, depending also on the framework chosen for optimality. Various approaches have been proposed including the cial expressions and body gestures separately and analyzed individual frames, namely neutral and expressive frames. Firstly, two classifiers were trained separately with face and body features for mono-modal classification into labeled emotion categories. We then fused affective face and body modalities for classification into combined emotion categories (a) at the feature-level, in which the data from both modalities are combined before classification and (b) at the decision-level, in which the outputs of the mono-modal systems are integrated by the use of product, sum and weight criteria. Our experimental results show that: the emotion classification using the two modalities combined achieves better recognition accuracy in general, outperforming the classification using the face modality or body modality alone; by comparing Tables <ref type="table" coords="11,417.30,167.46,36.12,11.97" target="#tab_2">5 and 7</ref>, early fusion seems to achieve better recognition accuracy compared to late fusion; and that amongst the three late fusion approaches, the sum rule proved the best way to fuse such two modalities. Future extensions of this work will verify the consistency of these findings on full-length expressive video sequences.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,104.17,155.34,370.02,10.91;2,161.63,22.01,255.10,120.00"><head>Fig. 1 .</head><label>1</label><figDesc xml:id="_5XMyE5Z">Fig. 1. System framework for mono-modal and bi-modal emotion recognition.</figDesc><graphic coords="2,161.63,22.01,255.10,120.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,91.93,167.34,394.52,10.91;4,91.93,180.89,118.66,10.91;4,145.50,22.02,141.70,114.20"><head>Fig. 2 .</head><label>2</label><figDesc xml:id="_S4ySVkj">Fig. 2. Example sequences from FABO obtained from body (left columns) and face (right columns) cameras.</figDesc><graphic coords="4,145.50,22.02,141.70,114.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="6,138.56,164.92,301.24,10.91;6,204.15,22.06,170.00,129.52"><head>Fig. 3 .</head><label>3</label><figDesc xml:id="_yHG7wqy">Fig. 3. Camshift tracking when one hand merges with the face.</figDesc><graphic coords="6,204.15,22.06,170.00,129.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="9,295.36,58.64,146.75,5.98;9,110.10,67.74,147.48,5.98;9,295.36,67.74,147.49,5.98;9,110.10,77.24,33.01,5.98;9,295.36,77.24,33.01,5.98;9,110.10,86.34,79.55,5.98;9,295.36,86.34,79.55,5.98;9,110.10,95.44,88.41,5.98;9,295.36,95.44,88.41,5.98;9,110.10,104.55,68.71,5.98;9,295.36,104.55,68.71,5.98;9,110.10,113.65,78.54,5.98;9,295.36,113.65,78.54,5.98;9,110.10,122.74,96.78,5.98;9,295.36,122.74,93.12,5.98;9,110.10,131.84,82.74,5.98;9,295.36,131.84,79.09,5.98"><head>(</head><label></label><figDesc xml:id="_xVTsuC5">11 attributes) for 4 subjects using BayesNet. rows: true class; columns: actual classification rows: true class; columns: actual classification a</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="4,91.93,202.72,394.51,339.45"><head>Table 1</head><label>1</label><figDesc xml:id="_QMubnMN">List of the facial emotions recognized by our system and the changes that occur on the face when they are displayed.</figDesc><table coords="4,113.13,246.43,352.12,71.09"><row><cell>anxiety</cell><cell>fear</cell></row><row><cell>lip bite; stretching of the mouth; eyes turn</cell><cell>brows raised and drawn together; forehead wrinkles</cell></row><row><cell>up/down/left/right; lip wipe</cell><cell>drawn to the center; upper eyelid is raised and lower</cell></row><row><cell></cell><cell>eyelid is drawn up; mouth is open; lips are slightly</cell></row><row><cell></cell><cell>tense or stretched and drawn back</cell></row><row><cell>anger</cell><cell>happiness</cell></row><row><cell>brows lowered and drawn together; lines appear be-</cell><cell></cell></row></table><note xml:id="_878WRaj">tween brows; lower lid is tensed and may or may not be raised; upper lid is tense and may or may not be lowered due to brows action; lips are either pressed firmly together with corners straight or down or open corners of lips are drawn back and up; mouth may or may not be parted with teeth exposed or not; cheeks are raised; lower eyelid shows wrinkles below it, and may be raised but not tense; wrinkles around the outer corners of the eyes disgust uncertainty upper lip is raised; lower lip is raised and pushed up to upper lip or it is lowered; nose is wrinkled; cheeks are raised; brows are lowered; tongue out lid drop; inner brow raised; outer brow raised; chin raised; jaw sideways; corners of the lips are drawn downwards Table 2 List of the bodily emotions recognized by our system and the changes that occur on the body when they are displayed. anxiety fear hands close to the table surface; fingers moving; fingers tapping on the table body contracted; body backing; hands high up, trying to cover bodily parts anger happiness body extended; hands on the waist; hands made into fists and kept low, close to the table surface body extended; hands kept high; hands made into fists and kept high disgust uncertainty body backing; left/right hand touching the neck shoulder shrug; palms up</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="8,91.93,21.40,366.02,52.11"><head>Table 3</head><label>3</label><figDesc xml:id="_G8hPs5p">Emotion recognition results for the reduced face and body feature vector.</figDesc><table coords="8,117.93,48.53,340.02,24.98"><row><cell>Modality</cell><cell>Classifier</cell><cell>Training</cell><cell>Test</cell><cell>Attributes</cell><cell>Number of classes</cell><cell>Correctly classified</cell></row><row><cell>Face</cell><cell>BayesNet</cell><cell>414</cell><cell>386</cell><cell>29</cell><cell>6</cell><cell>76.40 %</cell></row><row><cell>Body</cell><cell>BayesNet</cell><cell>424</cell><cell>386</cell><cell>11</cell><cell>6</cell><cell>89.90%</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="9,91.93,147.83,394.51,38.01"><head>Table 5</head><label>5</label><figDesc xml:id="_Fub9wBY">Emotion classification for the combined feature vector with BayesNet into 6 emotion categories (disgust, happiness, fear, anger, uncertainty and anxiety).</figDesc><table /></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_SpEa9ec">Table 6</head><p xml:id="_p2sjR6m">Description of the three late-fusion criteria used: sum, product and weight. sum rule, product rule, using weights, maximum/minimum/median rule, majority vote etc. <ref type="bibr" coords="10,172.00,234.06,17.15,11.97" target="#b14">[15]</ref>. We analyzed the first three techniques mentioned above for our system, namely the sum, product and weight criteria. We describe the general approach of late integration of the individual classifier outputs as follows: X = (x f , x b ) represents the overall feature vector consisting of the face feature vector, x f , and the body feature vector, x b . Under a Maximum-a-Posteriori (MAP) approach, X must be assigned to that of M possible classes, (w 1 , ..., w k , ..., w M ), having maximum posterior probability p(w k |X). An early integration approach would compute such a probability explicitly. In late integration, instead, two separate classifiers provide the posterior probabilities p(w k |x f ) and p(w k |x b ) for face and body, respectively, to be combined into a single posterior probability p(w k |X) with one of the fusion methods described in the following. Moreover, in the infrequent case in which the combined p(w k |X) has exactly the same value for two or more classes, we resort to the classification provided by the face classifier since we believe this is the "major" mode in our bi-modal approach. If the same happens for p(w k |x f ), we arbitrarily retain the first class in appearance order. The description of the three criteria we compared is given in Table <ref type="table" coords="10,318.81,465.19,4.54,11.97">6</ref>. In our case, the face modality is assumed to be the main modality. Thus, we assigned arbitrary weights as follows: σ f = 0.7 for the face modality and σ f = 0.3 for the body modality. The late fusion results for sum, product and weight criteria are all presented in Table <ref type="table" coords="10,137.41,522.97,4.54,11.97">7</ref>. According to our experimental results, with 91.1% recognition accuracy sum rule provides better fusion results than product or weight criteria.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_mtsTnhP">Sum rule</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4" xml:id="_jcVtRQf">Conclusions</head><p xml:id="_9QwMfvq">This paper presented an approach to automatic visual analysis of expressive face and upper-body gestures and associated emotions suitable for use in a vision-based affective multimodal framework. In our work, we focused on fa-</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="11,111.89,309.90,374.53,10.91;11,111.89,323.45,374.55,10.91;11,111.89,337.00,24.84,10.91" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_jygw5fk">To feel or not to feel:the role of affect in human-computer interaction</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Hudlicka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Xp4QTVB">International Journal of Human-Computer Studies</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="1" to="32" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,111.89,357.89,374.53,10.91;11,111.89,371.44,374.55,10.91;11,111.89,384.99,88.47,10.91" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_Zjn6WWy">Affective multimodal human-computer interaction</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C M</forename><surname>Pantic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Sebe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_QKSsp9V">Proceedings of ACM International Conference on Multimedia</title>
+				<meeting>ACM International Conference on Multimedia</meeting>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page" from="669" to="676" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,111.89,405.88,374.55,10.91;11,111.89,419.43,374.55,10.91;11,111.89,432.98,206.68,10.91" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_u64zyau">Probabilistic combination of multiple modalities to detect interest</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kapoor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">W</forename><surname>Picard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Ivanov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PEnhBZN">Proceedings of IEEE International Conference on Pattern Recognition</title>
+				<meeting>IEEE International Conference on Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="page" from="969" to="972" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,111.89,453.87,374.55,10.91;11,111.89,467.43,374.55,10.91;11,111.89,480.97,288.56,10.91" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_zY4JKan">Emotion analysis in man-machine interaction systems</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Balomenos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Raouzaiou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ioannou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Drosopoulos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Karpouzis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">D</forename><surname>Kollias</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s" xml:id="_bNsHc69">Lecture Notes in Computer Science Springer</title>
+		<imprint>
+			<biblScope unit="volume">3361</biblScope>
+			<biblScope unit="page" from="318" to="328" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,111.89,501.87,374.55,10.91;11,111.89,515.41,374.55,10.91;11,111.89,528.97,75.14,10.91" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_cYzHaxB">Thin slices of expressive behavior as predictors of interpersonal consequences: A meta-analysis</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Ambady</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Rosenthal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Zk8KQFu">Psychological Bulletin</title>
+		<imprint>
+			<biblScope unit="volume">111</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="256" to="274" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,111.89,549.86,374.55,10.91;11,111.89,563.41,325.20,10.91" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_gFq88CS">Unmasking the face: a guide to recognizing emotions from facial clues</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Ekman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">V</forename><surname>Friesen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WKUVjYE">Imprint</title>
+		<imprint>
+			<date type="published" when="1975">1975</date>
+			<publisher>Prentice-Hall</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,111.89,584.31,374.55,10.91;11,111.89,597.86,374.54,10.91;11,111.89,611.40,369.23,10.91" xml:id="b6">
+	<monogr>
+		<title level="m" type="main" xml:id="_DYdMFhG">Emotion in HCI, in: The Human-Computer Interaction Handbook: Fundamentals, Evolving Technologies and Emerging Applications</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Brave</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Nass</surname></persName>
+		</author>
+		<editor>J. Jacko and A. Sears</editor>
+		<imprint>
+			<date type="published" when="2002">2002</date>
+			<publisher>Lawrence Erlbaum Associates</publisher>
+			<pubPlace>Hillsdale, NJ</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,111.89,632.30,374.56,10.91;11,111.89,645.85,374.55,10.91;11,111.89,659.40,75.14,10.91" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_36KQQk7">Attributing emotion to static body postures: Recognition accuracy, confusions, and viewpoint dependence</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Coulson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cQJcEbu">Journal of Nonverbal Behavior</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="117" to="139" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,111.89,23.78,374.54,10.91;12,111.89,37.33,374.56,10.91;12,111.89,50.88,374.54,10.91;12,111.89,64.43,24.84,10.91" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_BPNfZKB">Augmenting human identification of emotional states in video</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">K</forename><surname>Burgoon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">L</forename><surname>Jensen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">O</forename><surname>Meservy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kruse</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">F</forename><surname>Nunamaker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_F49pYJe">Proceedings of the International Conference on Intelligent Data Analysis</title>
+				<meeting>the International Conference on Intelligent Data Analysis</meeting>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+	<note>in press</note>
+</biblStruct>
+
+<biblStruct coords="12,111.89,86.79,374.56,10.91;12,111.89,100.34,374.55,10.91" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_6DjNRvw">Detecting faces in images: A survey</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Kriegman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Ahuja</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gAR3WVY">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="34" to="58" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,111.89,122.71,374.55,10.91;12,111.89,136.26,374.55,10.91;12,111.89,149.81,186.34,10.91" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_NFPxa9X">A novel method for automatic face segmentation facial feature extraction and tracking</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Sobottka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Pitas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_DNNmBXQ">Journal of Signal Processing and Image Communication</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="263" to="281" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,111.89,172.17,374.55,10.91;12,111.89,185.73,247.23,10.91" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_emWmxZP">Computer vision face tracking for use in a perceptual user interface</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">R</forename><surname>Bradski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8ZA9je7">Intel Technology Journal Second Quarter</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,111.89,208.09,374.55,10.91;12,111.89,221.64,374.55,10.91;12,111.89,235.19,24.84,10.91" xml:id="b12">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Witten</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Frank</surname></persName>
+		</author>
+		<title level="m" xml:id="_SQWS9RF">Data Mining: Practical Machine Learning Tools and Techniques with Java Implementations</title>
+				<meeting><address><addrLine>San Francisco</addrLine></address></meeting>
+		<imprint>
+			<publisher>Morgan Kaufmann</publisher>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,111.89,257.56,374.55,10.91;12,111.89,271.10,269.38,10.91" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_uk3W7Dr">Multimodal integration-a statistical view</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Oviatt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Cohen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_3Fu7yM2">IEEE Transactions on Multimedia</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="334" to="341" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,111.89,293.47,374.56,10.91;12,111.89,307.02,374.55,10.91;12,111.89,320.56,19.38,10.91;12,184.77,399.33,283.46,5.98;12,184.77,413.78,283.46,5.98;12,184.77,428.23,283.47,5.98;12,184.77,442.68,180.05,5.98" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_jRkRuJ7">Hatice Gunes is a PhD candidate in Computer Science at Faculty of Information Technology at the University of Technology, Sydney (UTS), Australia. Her major research interests are in the areas of affective computing and multimodal human-computer interaction</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">I</forename><surname>Kuncheva</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Gbrg6rQ">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="281" to="286" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+	<note>A theoretical study on six classifier fusion strategies. She is a student member of the IEEE and ACM</note>
+</biblStruct>
+
+<biblStruct coords="12,184.77,535.78,283.46,5.98;12,184.77,550.23,283.47,5.98;12,184.77,564.67,283.46,5.98;12,184.77,579.12,283.47,5.98;12,184.77,593.56,283.46,5.98;12,184.77,608.01,283.47,5.98;12,184.77,622.45,188.40,5.98" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_JVFnN6u">He currently co-ordinates the activity of the Computer Vision research group at the Faculty of Information Technology, UTS. His major research interests are in the areas of computer vision, pattern recognition, image analysis and processing, video processing for multimedia, and computer architecture for computer vision and multimedia application</title>
+		<author>
+			<persName coords=""><forename type="first">A/</forename><surname>Prof</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_BBA4Utj">Massimo Piccardi is with the Faculty of Information Technology at the University of Technology, Sydney (UTS)</title>
+				<imprint/>
+	</monogr>
+	<note>He is a member of the IEEE, the IEEE Computer Society and the International Association for Pattern Recognition</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

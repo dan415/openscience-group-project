@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_HxrM5BW">How Expressive are Spectral-Temporal Graph Neural Networks for Time Series Forecasting?</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2023-05-11">11 May 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,125.62,182.55,34.63,8.06"><forename type="first">Ming</forename><surname>Jin</surname></persName>
+							<email>ming.jin@monash.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Monash University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,168.88,182.55,46.60,8.06"><forename type="first">Guangsi</forename><surname>Shi</surname></persName>
+							<email>guangsi.shi@monash.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Monash University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,224.11,182.55,53.01,8.06"><forename type="first">Yuan-Fang</forename><surname>Li</surname></persName>
+							<email>yuanfang.li@monash.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Monash University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,285.75,182.55,55.97,8.06"><forename type="first">Qingsong</forename><surname>Wen</surname></persName>
+							<email>qingsong.wen@alibaba-inc.com</email>
+						</author>
+						<author>
+							<persName coords="1,350.36,182.55,35.62,8.06"><forename type="first">Bo</forename><surname>Xiong</surname></persName>
+							<email>bo.xiong@ipvs.uni-stuttgart.de</email>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Stuttgart</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,394.61,182.55,40.46,8.06"><forename type="first">Tian</forename><surname>Zhou</surname></persName>
+							<email>tian.zt@alibaba-inc.com</email>
+						</author>
+						<author>
+							<persName coords="1,443.70,182.55,41.02,8.06"><forename type="first">Shirui</forename><surname>Pan</surname></persName>
+							<email>s.pan@griffith.edu.au</email>
+							<affiliation key="aff2">
+								<orgName type="institution">Griffith University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_pAwT7PU">How Expressive are Spectral-Temporal Graph Neural Networks for Time Series Forecasting?</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-05-11">11 May 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">D11CDCF256348065BED12061AC7DDF95</idno>
+					<idno type="arXiv">arXiv:2305.06587v1[cs.LG]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_XCVrAjk"><p xml:id="_EWaRw2x">Spectral-temporal graph neural network is a promising abstraction underlying most time series forecasting models that are based on graph neural networks (GNNs). However, more is needed to know about the underpinnings of this branch of methods. In this paper, we establish a theoretical framework that unravels the expressive power of spectral-temporal GNNs. Our results show that linear spectraltemporal GNNs are universal under mild assumptions, and their expressive power is bounded by our extended first-order Weisfeiler-Leman algorithm on discrete-time dynamic graphs. To make our findings useful in practice on valid instantiations, we discuss related constraints in detail and outline a theoretical blueprint for designing spatial and temporal modules in spectral domains. Building on these insights and to demonstrate how powerful spectral-temporal GNNs are based on our framework, we propose a simple instantiation named Temporal Graph GegenConv (TGC), which significantly outperforms most existing models with only linear components and shows better model efficiency. * Equal contribution.</p><p xml:id="_baxMw6m">Preprint. Under review.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_hvNQWXz"><p xml:id="_FENGBNE">Graph neural networks (GNNs) have achieved considerable success in static graph representation learning for many tasks <ref type="bibr" coords="1,157.01,497.90,10.72,8.64" target="#b0">[1]</ref>. Many recent studies, such as STGCN <ref type="bibr" coords="1,108.00,508.80,11.66,8.64" target="#b1">[2]</ref> and MTGNN <ref type="bibr" coords="1,178.35,508.80,10.62,8.64" target="#b2">[3]</ref>, have successfully extended GNNs to time series forecasting. Among these methods, either first-order approximation of ChebyConv <ref type="bibr" coords="1,269.52,530.62,11.54,8.64" target="#b3">[4]</ref> or graph diffusion <ref type="bibr" coords="1,134.94,541.53,11.50,8.64" target="#b4">[5]</ref> is typically used to model time series relations, where a strong assumption of local homophiles is made <ref type="bibr" coords="1,108.00,563.35,10.44,8.64" target="#b5">[6]</ref>. Thus, they are only capable of modeling positive correlations between time series that exhibit strong similarities, and we denote this branch of methods as messagepassing-based spatial-temporal GNNs (MP-STGNNs).</p><p xml:id="_RDpThNK">Nevertheless, how to model real-world multivariate time series with complex spatial dependencies that evolve remains an open question. This complexity is depicted in Fig. <ref type="figure" coords="1,126.27,639.71,3.74,8.64" target="#fig_0">1</ref>, in which differently signed relations between traffic sensors (time series) are evident.</p><p xml:id="_8VBdVCV">Recently, Cao et al. <ref type="bibr" coords="1,187.04,656.10,11.62,8.64" target="#b6">[7]</ref> introduced the concept of spectral-temporal GNNs (SPTGNNs), which sheds light on modeling differently signed time series correlations by approximating graph convolutions with a broad range of graph spectral filters beyond low-pass filtering <ref type="bibr" coords="1,385.93,677.92,10.87,8.64" target="#b7">[8,</ref><ref type="bibr" coords="1,399.29,677.92,7.25,8.64" target="#b8">9]</ref>. Though StemGNN <ref type="bibr" coords="1,492.29,677.92,11.71,8.64" target="#b6">[7]</ref> has achieved remarkable improvements in time series forecasting, the theoretical foundations of </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_nbE3RYB">Summary of the theoretical results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_aKXevkY">SPTGNNs Linear SPTGNNs</head><p xml:id="_sMgVpTd">Prop. 1 Linear SPTGNNs is universal under mild conditions Thm.  SPTGNNs remain under-researched. There are several unresolved fundamental questions: Q1. What is the general form of SPTGNNs? Q2. How expressive are SPTGNNs? Q3. When will they fail to generalize well? Q4. How to design provably expressive SPTGNNs?</p><p xml:id="_qT9Z7v9">We establish a series of theoretical results (summarized in Fig. <ref type="figure" coords="2,352.57,287.17,4.07,8.64" target="#fig_2">2</ref>) to answer these questions. We begin by formulating a general framework of SPTGNNs (Q1; Sec. 3.1), and then prove its universality of linear models (i.e., linear SPTGNNs are powerful enough to represent arbitrary time series) under mild assumptions through the lens of discrete-time dynamic graphs (DTDGs) <ref type="bibr" coords="2,411.27,319.90,16.46,8.64" target="#b9">[10]</ref> and spectral GNNs <ref type="bibr" coords="2,108.00,330.81,15.18,8.64" target="#b12">[13]</ref>. We further discuss related constraints from various aspects (Q3; Sec. 3.2) to make our theorem useful in practice on any valid instantiations. After this, we extend the color-refinement algorithm on DTDGs and prove that the expressive power of SPTGNNs is theoretically bounded by the proposed temporal 1-WL test (Q2; Sec. <ref type="bibr" coords="2,229.89,363.54,11.03,8.64">3.2</ref>). To answer the last question (Q4; Sec. 3.3), we prove that under mild assumptions and with high probability, linear SPTGNNs are sufficient to produce expressive time series representations with orthogonal polynomial and space projection bases in their graph and temporal frequency-domain models. Our results, for the first time, unravel the learning capabilities of SPTGNNs and outline a blueprint for designing powerful GNN-based forecasting models.</p><p xml:id="_PPHXtcg">Drawing from and to validate these theoretical insights, we present a simple SPTGNN instantiation, named TGC (short for Temporal Graph GegenConv), that well generalizes related work in time series forecasting. Though our primary goal is not to achieve state-of-the-art performance, our method, remarkably, is very efficient and significantly outperforms numerous existing models on several time series benchmarks and forecasting settings with minimal designs. Comprehensive experiments on synthetic and real-world datasets demonstrate that: (1) Our approach excels at learning time series relations of different types compared to MP-STGNNs; (2) Our design principles, e.g., orthogonal bases, are crucial for SPTGNNs to perform well; (3) Our linear model (TGC) can be readily augmented with nonlinearities and other common model choices. Finally, and more importantly, our findings pave the way for devising a broader array of provably expressive SPTGNNs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" xml:id="_fJdYd4Q">Preliminaries</head><p xml:id="_dQhtcPx">In time series forecasting, given a series of historical observations X ∈ R N ×T ×D encompassing N different D-dimensional variables across T time steps, we aim to learn a function f (•) : X → Ŷ, where the errors between the forecasting results Ŷ ∈ R N ×H×D and ground-truth Y are minimized with the following mean squared loss:</p><formula xml:id="formula_0" coords="2,263.60,609.78,87.24,14.56">1 H H t=1 || Ŷt − Y t || 2</formula><p xml:id="_YuHUdYX">F . H denotes the forecasting horizon. In this work, we learn an adjacency matrix A ∈ R N ×N from the input window X to describe the connection strength between N variables, as in <ref type="bibr" coords="2,302.02,642.27,10.72,8.64" target="#b6">[7]</ref>. Specifically, we use X t := X :,t,: ∈ R N ×D to denote the observations at a specific time t, and X n := X n,:,: ∈ R T ×D as a time series of a specific variable n with T time steps and D feature dimensions. Detailed preliminaries are in Appendix A.</p><p xml:id="_C9JqmZ4">Graph Spectral Filtering. For simplicity and modeling the multivariate time series from the graph perspective, we let G t = (A, X t ) denote an undirected graph snapshot at a specific time t with the node features X t . In a graph snapshot, A and its degree matrix</p><formula xml:id="formula_1" coords="2,360.84,710.23,143.99,14.11">D ∈ R N ×N s.t. D i,i = N j=1 A i,j ; thus, its normalized graph Laplacian matrix L = D − 1 2 (D − A)D − 1 2</formula><p xml:id="_FQBtrCU">is symmetric and can be proven to be positive semi-definite. We let the eigendecomposition of G t to be L = UΛU . Below, we define graph convolution to filter input signal in the spectral domain w.r.t. node connectivity. Definition 1 (Graph Convolution). Assume there is a filter function of eigenvalues g(•) : [0, 2] → R, we define the graph convolution on G t as filtering the input signal X t with the spectral filter:</p><formula xml:id="formula_2" coords="3,246.66,138.35,257.34,9.68">g(Λ) X t := Ug(Λ)U X t .<label>(1)</label></formula><p xml:id="_3faV6vK">Directly computing Eq. 1 is costly. We approximate the learnable filter function g θ (Λ) with a truncated K-degree polynomial expansion: g θ (λ) := K k=0 Θ k,: P k (λ); thus, graph spectral filtration takes the form of Ug θ (Λ)U X t :=</p><formula xml:id="formula_3" coords="3,108.00,181.94,396.00,27.87">K k=0 Θ k,: UP k (Λ)U X t = K k=0 Θ k,: P k ( L)X t . If we let g θ ( L) = K k=0 Θ k,: P k ( L), we have the graph convolution redefined as: g(Λ) X t := g θ ( L)X t .</formula><p xml:id="_ADdpZn2">Orthogonal Time Series Representations. Time series can be analyzed in both time and spectral domains. In this work, we focus on modeling time series using sparse orthogonal representations. Specifically, for an input signal of the n th variable, we represent X n by a set of orthogonal components Xn . We provide further details in Appendix A, discussing discrete Fourier transformation (DFT) and other applicable space projections with orthogonal bases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3" xml:id="_YhSvK8W">Spectral-Temporal Graph Neural Networks</head><p xml:id="_RtuADxr">We address all research questions in this section. We first introduce the general form of SPTGNNs and then unravel the expressive power of this branch of methods. On this basis, we further shed light on the design of powerful SPTGNNs with theoretical proofs. Overall Architecture. We illustrate the general framework of SPTGNNs in Fig. <ref type="figure" coords="3,242.33,393.07,3.81,8.64" target="#fig_3">3</ref>, where we stack M building blocks to capture spatial and temporal dependencies in spectral domains. Without loss of generality, we formulate this framework with the minimum redundancy and a straightforward optimization objective, where common add-ons in prior arts, e.g., spectral attention <ref type="bibr" coords="3,177.18,458.52,15.13,8.64" target="#b13">[14]</ref>, can be easily incorporated. To achieve time series connectivity without prior knowledge, we directly use the latent correlation layer from <ref type="bibr" coords="3,323.80,480.34,10.58,8.64" target="#b6">[7]</ref>, as this is not our primary focus.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" xml:id="_UhyqtjS">Formulation</head><formula xml:id="formula_4" coords="3,326.58,352.27,183.26,22.64">! ℱ ℱ "# " $ # % M× $% &amp; ' (, *</formula><p xml:id="_bJmujpW">Building Block. From the graph perspective and given the adjacency matrix A, we can view the input signal X as a particular DTDG with a sequence of regularly-sampled static graph snapshots {G t } T −1 t=0 , where node features evolve but with fixed graph topology. In a SPTGNN block, we filter X from the spatial and temporal perspectives in spectral domains with graph spectral filters (GSFs) and temporal spectral filters (TSFs). Formally, considering a single dimensional input X d := X :,:,d ∈ R N ×T , we define a SPTGNN block as follows without the residual connection:</p><formula xml:id="formula_5" coords="3,199.43,573.02,300.69,30.55">Z d = T φ d g θ d ( L)X d = T φ d K k=0 Θ k,d P k ( L)X d . (<label>2</label></formula><formula xml:id="formula_6" coords="3,500.13,583.75,3.87,8.64">)</formula><p xml:id="_vfQFeHT">This formulation is straightforward. T φ (•) represents TSFs, which work in conjunction with space projectors (detailed in Sec. <ref type="bibr" coords="3,218.29,619.22,15.93,8.64">3.3)</ref> to model temporal dependencies between node embeddings across snapshots. The internal expansion corresponds to GSFs' operation, which embeds node features for each snapshot G t by learning variable relations. The above process can be understood in different ways. The polynomial bases and coefficients generate distinct GSFs, allowing the internal K-degree expansion in Eq. 2 to be seen as a combination of different dynamic graph profiles at varying hops in the graph domain. Each profile filters out a specific frequency signal. Temporal dependencies are then modeled for each profile before aggregation:</p><formula xml:id="formula_7" coords="3,326.49,685.09,141.00,14.11">Z d = K k=0 T φ d Θ k,d P k ( L)X d ,</formula><p xml:id="_47faRPZ">which is equivalent to our formulation. Alternatively, dynamic graph profiles can be formed directly in the spectral domain, resulting in a formulation in StemGNN <ref type="bibr" coords="3,335.19,713.51,11.62,8.64" target="#b6">[7]</ref> but with increased time complexity. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" xml:id="_yTgHpeJ">Expressive Power of Spectral-Temporal GNNs</head><p xml:id="_VryJsvq">In this section, we develop a theoretical framework bridging spectral and dynamic GNNs, elucidating the expressive power of SPTGNNs for modeling time series data. All proofs are in Appendix C.</p><p xml:id="_CvUWyVD">Linear GNNs. For a linear GNN on X ∈ R N ×D , we define it using a trainable weight matrix W and parameterized spectral filters g θ ( L) as Z = g θ ( L)XW. This simple linear GNN can express any polynomial filter functions, denoted as Polynomial-Filter-Most-Expressive (PFME), under mild assumptions <ref type="bibr" coords="4,159.76,275.14,15.27,8.64" target="#b12">[13]</ref>. Its expressive power establishes a lower bound for spectral GNNs.</p><p xml:id="_wJhBE2X">To examine the expressive power of SPTGNNs, we generalize spectral GNNs to model dynamic graphs. For simplicity, we initially consider linear GNNs with a single linear mapping f φ (•). Next, we separately explore these conditions and relate them to practical spectral-temporal GNNs.</p><p xml:id="_uQuXewv">Multidimensional and Multivariate Prediction. In a graph snapshot, each dimension may exhibit different properties, necessitating distinct filters for processing <ref type="bibr" coords="4,389.50,482.36,15.42,8.64" target="#b12">[13]</ref>. An example with twodimensional predictions is provided in Fig. <ref type="figure" coords="4,285.51,493.27,3.81,8.64" target="#fig_4">4</ref>. A simple solution involves using multidimensional polynomial coefficients, as explicitly shown in Eq. 2. A concrete example is presented in <ref type="bibr" coords="4,463.19,504.18,10.55,8.64" target="#b7">[8]</ref>, where given a series of Bernstein bases, different polynomial coefficients result in various Bernstein approximations, corresponding to distinct GSFs. Similarly, when modeling temporal clues between graph snapshots, either dimension in any variable constitutes a unique time series requiring a specific filtering. An example reconstructing a two-variate time series of one dimension is in Fig. <ref type="figure" coords="4,482.63,547.81,3.81,8.64" target="#fig_4">4</ref>. In practice, we use multidimensional masking and weight matrices for each variable, forming a set of different TSFs. This is discussed in Sec. 3.3.</p><p xml:id="_UrPEdKu">Missing Frequency Components and Repeated Eigenvalues. GSFs can only scale existing frequency components of specific eigenvalues. For each graph snapshot, linear SPTGNNs cannot generate new frequency components if certain frequencies are missing from the original graph spectrum. For instance, in Fig. <ref type="figure" coords="4,216.92,625.21,3.81,8.64" target="#fig_4">4</ref>, a frequency component corresponding to λ = 1 cannot be generated with a spectral filter. Although this issue is challenging to address, it is rare in real-world attributed graphs <ref type="bibr" coords="4,136.65,647.03,15.16,8.64" target="#b12">[13]</ref>. In a graph with repeated eigenvalues given its topology, multiple frequency components will be scaled by the same P k (λ), affecting spectral filtering.</p><p xml:id="_qSqePZH">Universal Temporal Spectral Filtering. For a finite-length one-dimensional univariate time series, it can be provably modeled using a frequency-domain model (FDM), consisting of sparse orthogonal space projectors and spectral filters. Fig. <ref type="figure" coords="4,271.80,702.61,4.98,8.64" target="#fig_4">4</ref> exemplifies modeling two time series with distinct TSFs. Further details are discussed in Sec. 3.3. The left test fails to distinguish non-isomorphic nodes at t 1 , e.g., A and C, while the right example demonstrates a successful test.</p><formula xml:id="formula_8" coords="5,172.13,70.63,267.94,53.38">A D B C A D B C Initialization 2 " 2 # A D B C A D B C Termination 2 " 2 # A D B C A D B C Initialization 2 " 2 # A D B C A D B C Termination 2 " 2 #</formula><p xml:id="_5TzQCj2">Nonlinearity. Nonlinear activation can be applied in both GSFs and TSFs. In the first case, we examine the role of nonlinearity over the spatial signal, i.e., σ(X t ), enabling frequency components to be mixed w.r.t. the graph spectrum <ref type="bibr" coords="5,256.90,196.45,15.16,8.64" target="#b12">[13]</ref>. In the second case, we investigate the role of nonlinearity over the temporal signal by studying its equivalent effect σ (•), as σ(</p><formula xml:id="formula_9" coords="5,396.98,205.47,108.76,11.22">X n ) = F −1 σ (F(X n )) .</formula><p xml:id="_rPzqYm8">Here, we have σ ( Xn ) = F σ(F </p><formula xml:id="formula_10" coords="5,146.40,351.72,95.67,11.23">∈ V, c (0) (v, t) = X t [v].</formula><p xml:id="_jcyBsHp">In the absence of node features, all nodes get the same color. Iteration: At step l, node colors are updated with an injective (hash) function:</p><formula xml:id="formula_11" coords="5,132.91,366.85,371.10,32.34">∀v ∈ V, t ∈ [1, T ), c (l+1) (v, t) = HASH(c (l) (v, t), c (l) (v, t − 1), { {c (l) (u, t) : e u,v,t ∈ E(G t )} }). When t = 0 or T = 1, node colors are refined without c (l) (v, t − 1)</formula><p xml:id="_FRZGJff">in the hash function. Termination: The test is performed on two dynamic graphs in parallel, stopping when multisets of colors diverge at the end time, returning non-isomorphic. Otherwise, it is inconclusive.</p><p xml:id="_qCDZfyN">The temporal 1-WL test on DTDGs is an extension of the 1-WL test and serves as a specific case of the continuous-time variant <ref type="bibr" coords="5,220.26,446.17,15.30,8.64" target="#b14">[15]</ref>. Based on this, we demonstrate that the expressive power of linear SPTGNNs is bounded by the temporal 1-WL test.</p><p xml:id="_tKq99qY">Theorem 2. For a linear SPTGNN with valid temporal FDMs and a K-degree polynomial basis in its GSFs, ∀u,</p><formula xml:id="formula_12" coords="5,162.52,480.64,241.04,11.23">v ∈ V, Z t [u] = Z t [v] if C (K+1) (u, t) = C (K+1) (v, t). Z t [i]</formula><p xml:id="_qre6vt2">and C (K) (i, t) represent node i's embedding at time t in such a GNN and the K-step temporal 1-WL test, respectively.</p><p xml:id="_Vw3mnt4">In other words, if a temporal 1-WL test cannot differentiate two nodes at a specific time, then a linear SPTGNN will fail as well. However, this seems to contradict Theorem 1, where a linear SPTGNN assigns any two nodes with different embeddings at a valid time step (under mild assumptions, regardless of whether they are isomorphic or not). For the temporal 1-WL test, it may not be able to differentiate some non-isomorphic temporal nodes and always assigns isomorphic nodes with the same representation/color. We provide examples in Fig. <ref type="figure" coords="5,349.69,568.01,3.78,8.64" target="#fig_5">5</ref>. To resolve this discrepancy, we first prove that under mild conditions, i.e., a DTDG has no multiple eigenvalues and missing frequency components, the temporal 1-WL test can differentiate any non-isomorphic nodes at a valid time. Proposition 2. If a discrete-time dynamic graph with a fixed graph topology at time t has no repeated eigenvalues in its normalized graph Laplacian and has no missing frequency components in each snapshot, then the temporal 1-WL is able to differentiate all non-isomorphic nodes at time t.</p><p xml:id="_SpXPGTZ">We further prove that under the same assumptions, all pairs of nodes are non-isomorphic. Proposition 3. If a discrete-time dynamic graph with a fixed graph topology has no multiple eigenvalues in its normalized graph Laplacian and has no missing frequency components in each snapshot, then no automorphism exists.</p><p xml:id="_498WC3r">Therefore, we close the gap and demonstrate that the expressive power of linear SPTGNNs is theoretically bounded by the proposed temporal 1-WL test.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3" xml:id="_t42yPxH">Design of Spectral Filters</head><p xml:id="_YCUnaXg">In this section, we outline a blueprint for designing powerful SPTGNNs, with all proofs available in Appendix C. We initially explore the optimal acquisition of spatial node embeddings within individual snapshots, focusing on the selection of the polynomial basis, P k (•), for linear SPTGNNs. Theorem 3. For a linear SPTGNN optimized with mean squared loss, any complete polynomial bases result in the same expressive power, but an orthonormal basis guarantees the maximum convergence rate if its weight function matches the graph signal density.</p><p xml:id="_Exb2zp2">This theorem guides the design of GSFs for learning node embeddings in each snapshot w.r.t. the optimization of coefficients. Following this, we discuss the optimal modeling of temporal clues between snapshots in spectral domains. We begin by analyzing the function bases in space projectors. Lemma 1. A time series with data points x j (t) can be expressed by Q uncorrelated components z i (t) with an orthogonal (possibly complex) projector <ref type="bibr" coords="6,301.38,221.87,16.08,8.59" target="#b15">[16]</ref>, i.e.,</p><formula xml:id="formula_13" coords="6,340.84,218.76,93.53,14.11">x j (t) = Q i=1 e ij z i (t).</formula><p xml:id="_KH48fAV">The eigenvectors e i are orthogonal and determine the relationship between the data points x j (t).</p><p xml:id="_46ZfsVF">Operating on all spectral components is typically unnecessary <ref type="bibr" coords="6,367.45,252.45,15.89,8.64" target="#b16">[17,</ref><ref type="bibr" coords="6,386.57,252.45,11.92,8.64" target="#b13">14]</ref>. Consider a multivariate time series</p><formula xml:id="formula_14" coords="6,106.83,263.01,397.17,33.93">X 1 (t), • • • , X N (t), where each T -length univariate time series X i (t) is transformed into a vector a i = (a i,1 , • • • , a i,T ) ∈ R T ×1 through a space projection. We form matrix A = (a 1 , a 2 , • • • , a N ) ∈ R N ×T</formula><p xml:id="_5shZsYR">and apply a linear spectral filter as AW. Note that A does not denote the adjacency matrix here. We then randomly select S &lt; T columns in A using the masking matrix S ∈ {0, 1} S×T , obtaining compact representation A = AS and linear spectral filtration as A W. We demonstrate that, under mild conditions, A W preserves most information from AW. By projecting each column vector of A into the subspace spanned by column vectors in A , we obtain</p><formula xml:id="formula_15" coords="6,108.00,340.26,396.00,22.14">P A (A) = A (A ) † A. Let A k represent A's approximation by its k largest singular value decomposition. The lemma below shows ||AW − P A (A)W|| F is close to ||W|| F ||A − A k || F if</formula><p xml:id="_fbsmDxf">the number of randomly sampled columns S is on the order of k 2 . Lemma 2. Suppose the projection of A by A is P A (A), and the coherence measure of A is µ(A) = Ω(k/N ), then with a high probability, the error between AW and</p><formula xml:id="formula_16" coords="6,108.00,388.58,396.00,20.56">P A (A)W is bounded by ||AW − P A (A)W|| F ≤ (1 + )||W|| F ||A − A k || F if S = O(k 2 / 2 ).</formula><p xml:id="_jPARgEg">The lemmas above demonstrate that in most cases we can express a 1-dimensional time series with (1) orthogonal space projectors and (2) a reduced-order linear spectral filter. For practical application on D-dimensional multivariate time series data, we simply extend dimensions in S and W. Theorem 4. Assuming accurate node embeddings in each snapshot, a linear SPTGNN can, with high probability, produce expressive time series representations at valid times if its temporal FDMs consist of: (1) Linear orthogonal space projectors; (2) Individual reduced-order linear spectral filters.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4" xml:id="_RK5TFuh">Connection to Related Work</head><p xml:id="_qhTKjbY">Here, we briefly discuss the connection between our theoretical framework and other GNN-based methods. See Appendix B for detailed related work. In comparison to MP-STGNNs, our approach offers two main advantages: (1) It can model differently signed time series relations by learning a wide range of GSFs (e.g., low-pass and high-pass); (2) On this basis, it can represent arbitrary multivariate time series under mild assumptions with provably expressive temporal FDMs. As such, our results effectively generalize these methods (Fig. <ref type="figure" coords="6,316.34,575.53,3.52,8.64" target="#fig_2">2</ref>). While a few studies on SPTGNNs exist, e.g., StemGNN <ref type="bibr" coords="6,152.69,586.44,10.60,8.64" target="#b6">[7]</ref>, our work is the first to establish a theoretical framework for generalizing this family of methods, which is strictly more powerful. See Appendix B for detailed comparisons.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4" xml:id="_wMtPYp5">Instantiation</head><p xml:id="_vWfT7SQ">In this section, we present a straightforward yet effective instantiation based on the discussion in Sec. 3. We first outline the basic formulation of the proposed Temporal Graph GegenConv (TGC) and then connect it to other common practices. For the sake of clarity, we primarily present the canonical TGC, which contains only linear components in its building blocks and strictly inherits the basic formulation presented in Fig. <ref type="figure" coords="6,252.55,691.70,3.81,8.64" target="#fig_3">3</ref>. Refer to Appendix D for model details. Again, our primary aim here is not to achieve state-of-the-art performance, but rather to validate our theoretical insights through the examination of TGC (and one of its variants).</p><p xml:id="_JJMByBJ">Graph Convolution. We implement P k (•) in GSFs using the Gegenbauer basis due to its (1) generality and simplicity among orthogonal polynomials, (2) universality regarding its weight function, and (3) reduced model tuning expense. The Gegenbauer basis has the form</p><formula xml:id="formula_17" coords="7,109.20,95.40,394.81,25.40">P α k (x) = 1 k [2x(k + α − 1)P α k−1 (x) − (k + 2α − 2)P α k−2 (x)]</formula><p xml:id="_7NyyCYB">, with P α 0 (x) = 1 and P α 1 (x) = 2αx for k &lt; 2. Specifically, P α k (x), k = 0, 1, ... are orthogonal on the interval [−1, 1] w.r.t. the weight function (1 − x 2 ) α−1/2 . Based on this, we rewrite P k ( L) in Eq. 2 as P α k (I − L) = P α k ( Â), and the corresponding graph frequency-domain model (convolution) is defined as</p><formula xml:id="formula_18" coords="7,413.83,145.24,67.25,14.11">K k=0 θ k P α k ( Â)X.</formula><p xml:id="_Nw7PKEZ">Temporal Frequency-Domain Models. When designing temporal FDMs, linear orthogonal projections should be approximately sparse to support dimension reduction, e.g., DFT. For spectral filters, we randomly select S frequency components before filtration. Specifically, for components f ∈ C T in F ∈ C N ×T ×D along N and D dimensions, we denote sampled components as f := f I ∈ C S , where</p><formula xml:id="formula_19" coords="7,107.69,214.90,398.05,22.60">I = {i 0 , • • • , i S−1 } is a set of selection indices s.t. ∀s ∈ {0, . . . , S − 1} and i s−1 &lt; i s . This is equivalent to f = f Ŝ with Ŝ ∈ {0, 1} S×T , where Ŝi,s = 1 if i = i s .</formula><p xml:id="_bUM6XRK">Thus, a standard reduced-order TSF is defined as f = f Ŝ W with a trainable weight matrix W ∈ C S×S .</p><p xml:id="_VWxe2Ny">TGC Building Block. Suppose Z = K k=0 θ k P α k ( Â)X, we discuss two linear toy temporal FDMs. We first consider a basic coarse-grained filtering with the masking and weight matrices S 1 and Φ 1 :</p><formula xml:id="formula_20" coords="7,189.49,292.66,314.51,13.17">F = F( Z), F = PAD(FS 1 Φ 1 ), Z = F −1 (F ).<label>(3)</label></formula><p xml:id="_aeKgB6p">Next, we consider an optional fine-grained filtration based on time series decomposition, where S 2 and Φ 2 are optimized to further capture information in detailed signals (e.g., seasonalities) while maintaining global time series profiles (i.e., trends):</p><formula xml:id="formula_21" coords="7,118.51,349.98,381.62,21.59">Z t , Z s = DECOMP(Z ), F s = F(Z s ), F s = PAD(F s S 2 Φ 2 ), Z = Z t + F −1 (F s ).<label>(4</label></formula><p xml:id="_Xv2Bdkw">) After stacking multiple blocks, we forecast by transforming time series representations Z. For time series decomposition and component padding, i.e., DECOMP(•) and PAD(•), refer to Appendix D. In the same appendix, we also show that this implementation can be further boosted with the inclusion of nonlinearities and other common model choices (TGC † ), leading to more competitive performance.</p><p xml:id="_u3VDbpz">Connection to Other Polynomial Bases. We compare our design in TGC with other common practices in approximating graph convolutions: Monomial, Chebyshev, Bernstein, and Jacobi bases. More details are in Appendix E. For non-orthogonal polynomials, such as Monomial and Bernstein, our method with the Gegenbauer basis guarantees faster model convergences (Theorem 3) and better empirical performances in most cases. Compared with other orthogonal polynomials, we know that: (1) Our basis is a generalization of the second-kind Chebyshev basis; (2) Though our choice is a particular form of the Jacobi basis, the orthogonality of the Gegenbauer basis is well-posed in most real-world scenarios concerning its weight function; thus, our design is a simpler and nearly optimal solution for our purpose with only minor performance degradation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5" xml:id="_smA2dnh">Experiment</head><p xml:id="_JUQSRz7">In this section, we evaluate the effectiveness and efficiency of our method on seven real-world benchmarks by comparing TGC and TGC † with twenty different baselines. To empirically validate our theoretical claims, we further perform extensive ablation studies and present a variety of visualizations using both synthetic and real-world examples.</p><p xml:id="_TsgHGjg">Main Results. Our method is evaluated against related work in terms of model effectiveness (Tab. 1 and Tab. 2, averaged over 5 runs) and efficiency (Tab. 3, averaged over 5 runs), showcasing the potential of SPTGNNs for time series forecasting. Our additional result statistics are in Appendix H. We compare our vanilla instantiation (TGC) with the most pertinent and representative works in Tab. 1 (left) on four traffic benchmarks, employing the forecasting protocol from <ref type="bibr" coords="7,425.44,667.72,10.45,8.64" target="#b6">[7]</ref>. Next, we assess our method (TGC † , the nonlinear version of TGC) against state-of-the-art STGNNs in Tab. 1 (right), utilizing a standard testbed from <ref type="bibr" coords="7,237.61,689.54,15.16,8.64" target="#b17">[18]</ref>. Additionally, we report long-term forecasting results in Tab. 2, comparing our approach with state-of-the-art models and adhering to the setting in <ref type="bibr" coords="7,446.87,700.45,15.42,8.64" target="#b29">[30]</ref>. Detailed experimental setups are available in Appendix G.</p><p xml:id="_nsHzupE">Table <ref type="table" coords="8,132.59,80.12,3.95,8.64">1</ref>: Short-term forecasting results on four traffic benchmarks. We use the bold and underline fonts to indicate the best and second-best results. We follow <ref type="bibr" coords="8,346.27,91.03,11.51,8.64" target="#b6">[7]</ref> and <ref type="bibr" coords="8,376.93,91.03,16.49,8.64" target="#b17">[18]</ref> for the experimental setting and baseline results in left and right tables, respectively.  Our method consistently outperforms most baselines by significant margins in Tab. 1 and Tab. 2. In short-term forecasting, TGC and TGC † achieve average performance gains of 7.3% and 1.7% w.r.t. the second-best results. Notably, we observe a significant improvement (∼8%) over StemGNN <ref type="bibr" coords="8,200.59,400.66,10.44,8.64" target="#b6">[7]</ref>, a special case of our method with nonlinearities. Considerable enhancements are also evident when compared to ASTGCN <ref type="bibr" coords="8,149.13,433.39,16.46,8.64" target="#b23">[24]</ref> (∼9%) and LSGCN <ref type="bibr" coords="8,248.68,433.39,16.46,8.64" target="#b25">[26]</ref> (∼7%), which primarily differ from StemGNN in temporal dependency modeling and design nuances. In long-term forecasting, our method further exhibits impressive performance, outperforming the second-best results by about 3.3%. These results indicate that even simple, yet appropriately configured SPTGNNs (discussed in Sec. 3.3) are potent time series predictors. In Tab. 3, we examine our method's efficiency by comparing TGC to representative baselines. We find that TGC forms the simplest and most efficient SPTGNN to date compared with StemGNN. In comparison to other STGNNs, such as STGCN <ref type="bibr" coords="8,364.45,509.75,11.75,8.64" target="#b1">[2]</ref> and DCRNN <ref type="bibr" coords="8,434.94,509.75,15.42,8.64" target="#b21">[22]</ref>, our method also exhibits superior model efficiency across various aspects. Though deep time series models like LSTNet <ref type="bibr" coords="8,142.59,531.57,16.60,8.64" target="#b18">[19]</ref> are faster in model training, they do not have spatial modules and thus less effective.</p><p xml:id="_QEXVHRC">Evaluation of Modeling Time Series Dependencies. Our method, in contrast to most GNN-based approaches, excels at learning different signed spatial relations between time series. Predetermined or learned graph topologies typically reflect the strength of underlying connectivity, yet strongly correlated time series might exhibit distinct properties (e.g., trends), which MP-STGNNs often struggle to model effectively. To substantiate our claims, we first visualize and compare the learned TGC and STGCN(1 st ) <ref type="bibr" coords="8,180.01,611.63,11.62,8.64" target="#b1">[2]</ref> representations on two synthetic time series groups with positive and negative correlations. Fig. <ref type="figure" coords="8,183.69,622.54,9.59,8.64" target="#fig_17">6a</ref> reveals that STGCN(1 st ) fails to differentiate between the two correlation groups. This is because methods like STGCN(1 st ) aggregate neighborhood information with a single perspective (i.e., low-pass filtration). We further examine the learned embeddings of two groups of randomly sampled time series between TGC and STGCN(1 st ) on a real-world traffic dataset (Fig. <ref type="figure" coords="8,489.79,655.27,7.73,8.64" target="#fig_7">6b</ref>), where similar phenomena can be observed. Our experimental settings are detailed in Appendix G.</p><p xml:id="_eF95Tn9">Ablation Studies. We perform ablation studies from three perspectives. First, we evaluate the GSFs in TGC with different polynomial bases   In the first block of results, we validate the discussion in Sec.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6" xml:id="_PFRPYWf">Conclusion</head><p xml:id="_78Qz3t5">We formally define spectral-temporal GNNs and establish a theoretical framework for this family of methods, with the following important takeaways: (1) Spectral-temporal GNNs can be universal with mild assumptions; (2) Orthogonal bases and individual spectral filters are key to designing powerful GNN-based time series models. To validate our theorem, we propose a simple instantiation (TGC) and its nonlinear variant (TGC † ), outperforming most baselines on various real-world benchmarks.</p><p xml:id="_EZrTqzh">Having established a firm theoretical groundwork for GNN-based time series forecasting, we are yet to explore specific scenarios such as time-evolving graph structures. Additionally, investigating the applicability of our theories to other tasks, such as time series classification and anomaly detection, would also be valuable. We leave these explorations for future work.</p><p xml:id="_EuvuwjK">assuming local homophiles. Some STGNNs, such as ASTGCN <ref type="bibr" coords="14,375.99,75.48,16.74,8.64" target="#b23">[24]</ref> and LSGCN <ref type="bibr" coords="14,450.56,75.48,15.42,8.64" target="#b25">[26]</ref>, directly employ ChebConv <ref type="bibr" coords="14,186.69,86.39,11.75,8.64" target="#b3">[4]</ref> for capturing time series dependencies. However, their graph convolutions using the Chebyshev basis, along with the intuitive temporal models they utilize, result in sub-optimal solutions. Consequently, the expressiveness of most STGNNs remains limited. Spectral-temporal graph neural networks (SPTGNNs), on the other hand, first make it possible to fill the gap by (properly) approximating both graph and temporal convolutions with a broad range of filters in spectral domains, allowing for better pattern extraction and modeling. A representative work in this category is StemGNN <ref type="bibr" coords="14,151.80,151.84,10.46,8.64" target="#b6">[7]</ref>. However, it faces two fundamental limitations: (1) Its direct application of ChebConv is sub-optimal, and (2) although its temporal FDMs employ orthogonal space projections, they fail to make proper multidimensional and multivariate predictions as discussed. We elaborate on the connection between our research and GNN-based time series forecasting methods later in this section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_awQg9QM">B.3 Spectral Graph Neural Networks</head><p xml:id="_DArkfNp">Spectral graph neural networks are grounded in spectral graph signal filtering, where graph convolutions are approximated by truncated polynomials with finite degrees. These graph spectral filters can be either trainable or not. Examples with predefined spectral filters include APPNP <ref type="bibr" coords="14,469.76,263.59,16.73,8.64" target="#b40">[41]</ref> and GraphHeat <ref type="bibr" coords="14,155.09,274.50,15.42,8.64" target="#b41">[42]</ref>, as illustrated in <ref type="bibr" coords="14,241.42,274.50,10.72,8.64" target="#b7">[8]</ref>. Another branch of work employs different polynomials with trainable coefficients (i.e., filter weights) to approximate effective graph convolutions. For instance, ChebConv <ref type="bibr" coords="14,153.27,296.31,11.71,8.64" target="#b3">[4]</ref> utilizes Chebyshev polynomials, inspiring the development of many popular spatial GNNs with simplifications <ref type="bibr" coords="14,218.57,307.22,15.36,8.64" target="#b42">[43]</ref>. BernNet <ref type="bibr" coords="14,277.54,307.22,11.70,8.64" target="#b7">[8]</ref> employs Bernstein polynomials but can only express positive filter functions due to regularization constraints. Recently, JacobiConv <ref type="bibr" coords="14,430.16,318.13,16.72,8.64" target="#b12">[13]</ref> demonstrated that graph spectral filtering with Jacobi polynomial approximation is highly effective on a wide range of graphs under mild constraints. Although spectral graph neural networks pave the way for SPTGNNs, they primarily focus on modeling static graph-structured data without the knowledge telling how to effectively convolute on dynamic graphs for modeling time series data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_4gqgNzq">B.4 Connection to Related Work</head><p xml:id="_6GMSmWU">We discuss the connection between our theoretical framework of SPTGNNs and most related works, including deep time series models, spatial-temporal GNNs, and spectral GNNs. Most of the deep time series models approximate expressive temporal filters with deep neural networks and learn important patterns directly in the time domain, e.g., TCN <ref type="bibr" coords="14,290.55,451.70,15.13,8.64" target="#b37">[38]</ref>, where some complex properties (e.g., periodicity) may not be well modeled. Our work generalizes these methods in two ways: (1) When learning on univariate time series data, our temporal frequency-domain models guarantee that the most significant properties are well modeled with high probability (Lemma 1 and Lemma 2); (2) When learning on multivariate time series data, our framework models diverse inter-relations between time series (Fig. <ref type="figure" coords="14,496.53,495.33,4.07,8.64" target="#fig_0">1</ref>) and intra-relations within time series with theoretical evidence. For most spatial-temporal GNNs, they either use the first-order approximation of ChebyConv <ref type="bibr" coords="14,355.89,517.15,11.75,8.64" target="#b3">[4]</ref> (e.g., STGCN(1 st ) <ref type="bibr" coords="14,451.04,517.15,11.35,8.64" target="#b1">[2]</ref>) or graph diffusion (e.g., DCRNN <ref type="bibr" coords="14,205.35,528.06,15.85,8.64" target="#b21">[22]</ref>) to model time series dependencies. These methods can be generalized as message-passing-based spatial-temporal GNNs (MP-STGNNs). In comparison, our framework has two major advantages: (1) It can model differently signed time series relations by learning a wide range of graph spectral filters (e.g., low-pass and high-pass), while MP-STGNNs only capture positive correlations between time series exhibiting strong similarities; (2) On this basis, it can express any multivariate time series under mild assumptions with provably expressive temporal frequency-domain models, while MP-STGNNs approximate effective temporal filtering in time domains with deep neural networks. Even compared to STGNNs employing ChebyConv, our proposal generalizes them well: (1) We provide a blueprint for designing effective graph spectral filters and point out that using Chebyshev basis is sub-optimal; (2) Instead of approximating expressive temporal models with deep neural networks, we detail how to simply construct them in frequency domains. Therefore, our results generalize most STGNNs effectively. Although there are few studies on SPTGNNs, such as StemGNN <ref type="bibr" coords="14,153.31,658.97,10.70,8.64" target="#b6">[7]</ref>, we are not only the first to define the general formulation and provide a theoretical framework to generalize this branch of methods but also free from the limitations of StemGNN mentioned above. Compared with spectral GNNs, such as BernNet <ref type="bibr" coords="14,370.10,680.79,11.48,8.64" target="#b7">[8]</ref> and JacobiConv <ref type="bibr" coords="14,447.93,680.79,15.13,8.64" target="#b12">[13]</ref>, our work extends graph convolution to model dynamic graphs comprising a sequence of regularly-sampled graph snapshots. A detailed comparison between the polynomial basis in our instantiation and that in common spectral GNNs is in Appendix E. Proof. Let us assume that t = 1 (i.e., there is only one snapshot G t of the graph {G t } T −1 t=0 ), T φ (•) reduces to linear functions of a graph snapshot and the linear spectral-temporal GNN reduces to a linear spectral GNN, which can be equivalently written as:</p><formula xml:id="formula_22" coords="15,250.61,214.14,253.39,12.20">Z t = g θ ( L)X t Φ ∈ R N ×D . (S8)</formula><p xml:id="_2T7wFkD">We first prove the universality theorem of linear spectral GNNs in a graph snapshot on the basis of Theorem 4.1 in <ref type="bibr" coords="15,173.04,250.14,15.42,8.64" target="#b12">[13]</ref>. In other words, assuming Xt = U X t has non-zero row vectors and L has unique eigenvalues, we first aim to prove that for any Z t,d ∈ R N ×1 , there is a linear spectral GNN to produce it. We assume there exists φ * ∈ R D s.t. all elements in Xt φ * are non-zero. Considering a case where ( Xt φ) i = 0 and letting the solution space to be S i we know that S i is a proper subspace of R D as the i-th row of Xt is non-zero. Therefore, R D \ ∪ N i=1 S i = ∅, and we know that all vectors φ in R D \ ∪ N i=1 S i are valid to form φ * . We then filter Xt φ * to get Z t,d . Firstly, we let Zt,d = U Z t,d and assume there is a polynomial with N − 1 order:</p><formula xml:id="formula_23" coords="15,168.02,347.69,335.98,45.61">p i := g θ (λ i ), = N −1 k=0 θ k λ k i s.t. p i = Zt,d [i]/( Xt φ * ) i and ∀i ∈ {1, • • • , N }. (S9)</formula><p xml:id="_4Yrwpxc">On this basis, the polynomial coefficients θ is the solution of a linear system Bθ = p where B i,j = λ j−1 i . Since λ i are different from each other, B turns to a nonsingular Vandermonde matrix, where a solution θ always exists. Therefore, a linear spectral GNN can produce any one-dimensional prediction under certain assumptions.</p><p xml:id="_KhQ2m5n">The above proof states that linear spectral GNNs can produce any one-dimensional prediction if L has no repeated eigenvalues (i.e., condition 1) and the node features X contain all frequency components w.r.t. graph spectrum (i.e., condition 2). When t ≥ 2, T φ (•) turns to linear functions over all historical observations of graph snapshots. In order to distinguish between different historical graph snapshots, T φ (•) must be universal approximations of all historical graph snapshots, implying that T φ (•) is able to express any one-dimensional univariate time series (i.e., condition 3).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_FT6JKgw">C.2 Proof of Theorem 2</head><p xml:id="_bdS6T27">Theorem 2. For a linear SPTGNN with valid temporal FDMs and a K-degree polynomial basis in its GSFs, ∀u,</p><formula xml:id="formula_24" coords="15,162.52,564.61,241.04,11.23">v ∈ V, Z t [u] = Z t [v] if C (K+1) (u, t) = C (K+1) (v, t). Z t [i]</formula><p xml:id="_Gdt4fGG">and C (K) (i, t) represent node i's embedding at time t in such a GNN and the K-step temporal 1-WL test, respectively.</p><p xml:id="_bWtFkap">Proof. Given valid temporal frequency-domain models (i.e., space projectors and TSFs) and a Kdegree polynomial filter function, the prediction of a linear SPTGNN can be formulated as follows.</p><formula xml:id="formula_25" coords="15,247.29,637.03,256.71,30.55">Z = T φ K k=0 Θ k P k ( L)X . (S10)</formula><p xml:id="_DJ7RZwb">For ease of reading, we redefine T φ (•) as the combination of space projections and TSFs in the following proof. Let us assume t = 1 (i.e., there is only one snapshot G t of the graph {G t } T −1 t=0 ), T φ (•) reduces to linear functions of a single graph snapshot and a linear SPTGNN reduces to a linear spectral GNN. Using the framework in <ref type="bibr" coords="15,271.24,713.51,15.41,8.64" target="#b41">[42]</ref>, Eq. S10 can be viewed as a k + 1-layer GNN. The output of the last layer in GNN produces the output of linear spectral GNNs <ref type="bibr" coords="16,414.45,75.48,15.31,8.64" target="#b12">[13]</ref>. According to the proof of Lemma 2 in <ref type="bibr" coords="16,194.45,87.48,15.36,8.64" target="#b41">[42]</ref>, if WL node labels C (K+1) (u) = C (K+1) (v), the corresponding GNN's node features should be the same at any iteration. Therefore, for all nodes ∀u, v ∈</p><formula xml:id="formula_26" coords="16,108.00,98.04,396.00,21.10">V, Z[u] = Z[v] if C (K+1) (u) = C (K+1) (v).</formula><p xml:id="_Zf6pUTj">When t ≥ 2, we have a DTDG defined as a sequence of graph snapshots (G 1 , G 2 , . . .) that are sampled at regular intervals, and each snapshot is a static graph. Note that any DTDGs can be equivalently converted to continuous-time temporal graphs (CTDGs). The CTDG can be equivalently viewed as time-stamped multi-graphs with timestamped edges, i.e., G(t</p><formula xml:id="formula_27" coords="16,396.62,159.51,109.13,9.65">) = {(u k , v k , t k ) | t k &lt; t}.</formula><p xml:id="_AA8bmdc">According to Proposition 6 in <ref type="bibr" coords="16,230.47,170.74,15.39,8.64" target="#b14">[15]</ref>, the expressive power of dynamic GNN with injective message passing is bounded by the temporal WL test on G(t). Since T φ (•) is a set of linear functions over all historical observations of graph snapshots, i.e., T φ (•) represents linear transformations of G(t). The defined SPTGNN, i.e., Z = T φ ( K k=0 Θ k P k ( L)X), should be as expressive as dynamic GNN with injective message passing. Hence, if temporal WL node labels C (K+1) (u, t) = C (K+1) (v, t), the corresponding GNN's node features should be the same at any timestamp t and at any iteration. Therefore, for all nodes ∀u, v ∈ V,</p><formula xml:id="formula_28" coords="16,248.89,240.03,190.08,11.23">Z t [u] = Z t [v] if C (K+1) (u, t) = C (K+1) (v, t).</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_HwKQPZJ">C.3 Proof of Proposition 2</head><p xml:id="_wHBCKD6">Proposition 2. If a discrete-time dynamic graph with a fixed graph topology at time t has no repeated eigenvalues in its normalized graph Laplacian and has no missing frequency components in each snapshot, then the temporal 1-WL is able to differentiate all non-isomorphic nodes at time t.</p><p xml:id="_bnadK7e">Proof. Assume there are no repeated eigenvalues and missing frequency components w.r.t. graph spectrum in a DTDG with fixed topology and time-evolving features, i.e., {G t } T −1 t=0 . According to Corollary 4.4 in <ref type="bibr" coords="16,227.15,359.62,15.19,8.64" target="#b12">[13]</ref>, we know that if a graph has no repeated eigenvalues and missing frequency components, then 1-WL test can differentiate any pair of non-isomorphic nodes. We denote the colors of two nodes u and v in G t after L 1-WL interactions as</p><formula xml:id="formula_29" coords="16,108.00,380.63,397.74,22.86">C (L) (u, t) and C (L) (v, t) s.t. C (L) (u, t) = C (L) (v, t) if u</formula><p xml:id="_68kYyUB">and v are non-isomorphic. On this basis, we consider two scenarios in G t+1 : (1) Two or more non-isomorphic nodes have identical initial colors; (2) None of the nonisomorphic nodes have identical colors. Under the assumptions in this proposition, the 1-WL test can differentiate u and v in G t+1 on both cases with different C (L) (u, t + 1) := HASH(c (L−1) (u, t + 1), { {c (L−1) (m, t + 1) : e u,m,t+1 ∈ E(G t+1 )} }) and</p><formula xml:id="formula_30" coords="16,108.00,476.12,349.55,11.23">C (L) (v, t + 1) := HASH(c (L−1) (v, t + 1), { {c (L−1) (m, t + 1) : e v,m,t+1 ∈ E(G t+1 )} }).</formula><p xml:id="_NTEH7jS">Therefore, no matter whether C (L) (u, t) and C (L) (v, t) are identical or not (they are different in fact as mentioned), we have nonidentical</p><formula xml:id="formula_31" coords="16,108.00,530.71,397.16,11.23">C (L) (u, t + 1) := HASH(c (L−1) (u, t + 1), c (L−1) (u, t), { {c (L−1) (m, t + 1) : e u,m,t+1 ∈ E(G t+1 )} })</formula><p xml:id="_HJhVk7g">and</p><formula xml:id="formula_32" coords="16,108.00,563.49,397.16,23.22">C (L) (v, t + 1) := HASH(c (L−1) (v, t + 1), c (L−1) (v, t), { {c (L−1) (m, t + 1) : e v,m,t+1 ∈ E(G t+1 )} }) in the temporal 1-WL test, where C (L) (u, t) := c (L−1) (u, t) and C (L) (v, t) := c (L−1) (v, t).</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ha3s8ZM">C.4 Proof of Proposition 3</head><p xml:id="_8dJFfqY">Proposition 3. If a discrete-time dynamic graph with a fixed graph topology has no multiple eigenvalues in its normalized graph Laplacian and has no missing frequency components in each snapshot, then no automorphism exists.</p><p xml:id="_GHCKWEB">Proof. Given a DTDG {G t } T −1 t=0 consists of T static graph snapshots with fixed graph topology and time-evolving node features, we first prove that all pairs of nodes are non-isomorphic.</p><p xml:id="_eBMWFkf">In a snapshot G t , assume there is a permutation matrix P, we have</p><formula xml:id="formula_33" coords="16,245.44,710.65,258.56,11.50">L := P LP = PUΛU P ,<label>(S11)</label></formula><p xml:id="_CHb7c3B">and we know Λ := U PUΛU P U = VΛV , (S12) where V is an orthogonal matrix. Since all diagonal elements in Λ are different because we assume no repeated eigenvalues, then the eigenspace of each eigenvalue has only one dimension <ref type="bibr" coords="17,450.33,110.81,15.34,8.64" target="#b12">[13]</ref>; thus, we have U PU = D, where D is a diagonal matrix s.t. V := D with ±1 elements. Now considering the node features X t := PX t , we have Xt = V Xt ; thus (I − D) Xt = 0 based on the above discussion. If there are no missing frequency components in Xt , i.e., no zero row vectors, we have D = I and know that P = UDU = I. (S13)</p><p xml:id="_d9pW2XY">Hence, we prove that all nodes in a graph snapshot G t are non-isomorphic. In {G t } T −1 t=0 , we have V := D always holds across all snapshots if its normalized graph Laplacian has no repeated eigenvalues. On this basis, if there are no missing frequency components by giving X t , ∀t ∈ {0, 1, . . . , T − 1}, all pairs of nodes are non-isomorphic in an attributed DTDG with fixed graph topology.</p><p xml:id="_ZCPCf8h">C.5 Proof of Theorem 3 Theorem 3. For a linear SPTGNN optimized with mean squared loss, any complete polynomial bases result in the same expressive power, but an orthonormal basis guarantees the maximum convergence rate if its weight function matches the graph signal density.</p><p xml:id="_Aw7FTq3">Proof. Directly analyzing Eq. 2 is complex and unnecessary to study the effectiveness of different polynomial bases when learning time series relations at each time step. Since optimizing the spectraltemporal GNNs formulated in Eq. 2 can be understood as a two-step (i.e., graph-then-temporal) optimization problem, we directly analyze the optimization of Θ w.r.t. the formulation below based on the squared loss</p><formula xml:id="formula_34" coords="17,186.59,367.61,317.41,57.62">L = 1 2 ||Z t − Y t || 2 F on a graph snapshot G t with the target Y t . Z t = K k=0 Θ k P k ( L)X t . (S14)</formula><p xml:id="_5mFZQ4Y">This is a convex optimization problem, thus the convergence rate of gradient descent relates to the condition number of the Hessian matrix <ref type="bibr" coords="17,277.31,445.13,15.42,8.64" target="#b44">[45]</ref>. In other words, the convergence rate reaches the maximum if κ(H) reaches the minimum. We have H k1,k2 defined as follows that is similar in <ref type="bibr" coords="17,484.54,456.04,15.27,8.64" target="#b12">[13]</ref>.</p><formula xml:id="formula_35" coords="17,221.26,480.03,282.74,56.41">∂L ∂Θ k1 ∂Θ k2 = X t P k2 ( L)P k1 ( L)X t , = n i=1 P k2 (λ i )P k1 (λ i ) Xt [λ i ].<label>(S15)</label></formula><p xml:id="_F5BqQwC">This equation can be written as a Riemann sum as follows.</p><formula xml:id="formula_36" coords="17,173.44,568.54,330.56,30.32">∂L ∂Θ k1 ∂Θ k2 = n i=1 P k2 (λ i )P k1 (λ i ) F (λ i ) − F (λ i−1 ) λ i − λ i−1 (λ i − λ i−1 ). (S16)</formula><p xml:id="_XUMZVuQ">In the above formula, F (λ i ) := λj ≤λi ( Xt [λ j ]) 2 and F (λi)−F (λi−1)</p><p xml:id="_4fWSXEA">λi−λi−1 denotes the graph signal density at the frequency λ i . When n → ∞, we have the (k 1 , k 2 ) element in H rewrite as follows.</p><formula xml:id="formula_37" coords="17,221.75,648.57,282.25,26.29">H k1,k2 = 2 λ=0 P k2 (λ)P k1 (λ) ∆F (λ) ∆λ dλ. (S17)</formula><p xml:id="_NEVRNuP">We know that κ(H) reaches the minimum if H is a diagonal matrix, which tells that the polynomial bases, e.g., P k1 (λ) and P k2 (λ), should be orthogonal w.r.t. the weight function ∆F (λ) ∆λ .</p><p xml:id="_kkcQ9ga">C.6 Proof of Lemma 2 Lemma 2. Suppose the projection of A by A is P A (A), and the coherence measure of A is µ(A) = Ω(k/N ), then with a high probability, the error between AW and P A (A)W is bounded by</p><formula xml:id="formula_38" coords="18,119.90,116.12,290.11,11.23">||AW − P A (A)W|| F ≤ (1 + )||W|| F ||A − A k || F if S = O(k 2 / 2 ).</formula><p xml:id="_CW6c847">Proof. Similar to the analysis in Theorem 3 from <ref type="bibr" coords="18,307.07,146.75,16.60,8.64" target="#b45">[46]</ref> and Theorem 1 from <ref type="bibr" coords="18,410.82,146.75,15.27,8.64" target="#b13">[14]</ref>, we have</p><formula xml:id="formula_39" coords="18,176.05,173.94,327.95,42.08">||AW − P A (A)W|| F ≤ ||W|| F ||A − P A (A)|| F = ||W|| F ||A − A (A ) † A|| F ≤ ||W|| F ||A − (AS )(A k S ) † A k || F . (S18)</formula><p xml:id="_UdxYrHp">Then, following Theorem 5 from <ref type="bibr" coords="18,243.74,231.01,15.38,8.64" target="#b45">[46]</ref>, if S = O(k 2 / 2 × µ(A)N/k), we can obtain the following result with a probability at least 0.7</p><formula xml:id="formula_40" coords="18,197.38,269.30,306.62,11.72">||A − (AS )(A k S ) † A k || F ≤ (1 + )||A − A k || F . (S19)</formula><p xml:id="_mRFnvjY">Since µ(A) = Ω(k/N ), when S = O(k 2 / 2 ) together with Eq. S18 and Eq. S19, we can obtain the final bound as   </p><formula xml:id="formula_41" coords="18,195.60,334.89,303.98,9.68">||AW − P A (A)W|| F ≤ (1 + )||W|| F ||A − A k || F . (<label>S20</label></formula><formula xml:id="formula_42" coords="18,187.64,555.34,231.68,56.69">' * ∈ ℂ $×&amp;×' $&amp; ∈ ℂ !×#×$ Φ" ∈ ℂ !×#×#×$ ⊗ $′&amp; ∈ ℂ !×#×$ ⊗ Padding !′ &amp; ∈ ℂ '×)×* ℱ )" ! ∈ ℝ $×&amp;×' Sampling !′ ∈ ℝ $×&amp;×' &amp;′+ ∈ ℝ '×)×* Moving Average ⊝ &amp;′&amp; ∈ ℝ '×)×* ℱ</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_SBWyzBV">D.2 Time Series Decomposition</head><p xml:id="_ZnDunFy">Given a time series x ∈ R T , we extract its trend information by conducting moving average with a window size w on the input signal, i.e., x(t) = x(t − w + 1) + • • • + x(t) /w, where we simply pad the first w − 1 data points with zeros in x. After this, we obtain detailed time series information (e.g., seasonality) by subtracting the trend from the input signal.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_GmcVQVy">D.3 Component Padding</head><p xml:id="_MEbtWdZ">We employ discrete Fourier transformations as space projections by default in TGC and TGC † . We pad the filtered signal tensors in both the coarse-grained and fine-grained temporal FDMs with 0 + 0j, thereby reshaping them from C N ×S×D to C N ×T ×D . An illustration of this can be seen in Fig. <ref type="figure" coords="19,488.03,117.27,8.67,8.64" target="#fig_13">S2</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_7mHDYmR">D.4 Nonlinearities</head><p xml:id="_3wpFVeP">Nonlinearities can be either applied in graph and/or temporal frequency-domain models. We apply both in TGC † . In the first case, we add the RELU activation σ(•) as follows.</p><p xml:id="_9PRA4Uw">g(Λ) X t := g θ ( L)σ(X t ).</p><p xml:id="_64phPum">(S21)</p><p xml:id="_Tqu5Q9k">In the second case, we have Eq. 3 and Eq. 4 modified as follows.</p><formula xml:id="formula_43" coords="19,116.10,243.72,387.90,57.17">F = F( Z), F = PAD(σ(FS 1 Φ 1 )), Z = F −1 (F ). (S22) Z t , Z s = DECOMP(Z ), F s = F(Z s ), F s = PAD(σ(F s S 2 Φ 2 )), Z = Z t + F −1 (F s ). (S23)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_YegeBSB">D.5 Spectral Attention</head><p xml:id="_vnvSnpF">Attention in spectral domains <ref type="bibr" coords="19,226.92,336.34,16.55,8.64" target="#b13">[14]</ref> can be easily incorporated in temporal frequency-domain models.</p><p xml:id="_exQjWJX">In TGC † , we implement the spectral filters in fine-grained temporal FDMs with spectral attention instead of Eq. S23.</p><p xml:id="_7jtThFP">⊗ Specifically, we first decompose the input signal via Z t , Z s = DECOMP(Z ). After this, we generate the queries </p><formula xml:id="formula_44" coords="19,189.82,390.17,229.62,55.08">&amp;′ + ∈ ℝ '×)×* &amp;′&amp; ∈ ℝ '×)×* ( ∈ ℝ '×)×* MLP ) ∈ ℝ '×)×* MLP * ∈ ℝ '×)×* MLP + ( ∈ ℂ !×#×$ + * ∈ ℂ !×#×$ + ) ∈ ℂ !×#×$ ℱ ℱ ℱ Sampling Sampling Sampling ⊗ ⊗ Softmax Padding $′&amp; ∈ ℂ !×#×$ !′ &amp; ∈ ℂ '×)×* ℱ +" ! ∈ ℝ &amp;×(×)</formula><formula xml:id="formula_45" coords="19,156.25,486.42,273.47,12.19">Q = σ(Φ 2,1 Z t ) ∈ R N ×T ×D , keys K = σ(Φ 2,2 Z s ) ∈ R N ×T ×D</formula><formula xml:id="formula_46" coords="19,246.48,562.24,257.52,26.70">F s = SOFTMAX( Q K n q d q ) Ṽ. (S24)</formula><p xml:id="_xmxFVSu">Now we obtain the learned embeddings via Z = Z t + F −1 PAD(F s ) . We illustrate the tensor flow of this process in Fig. <ref type="figure" coords="19,196.56,611.81,8.67,8.64" target="#fig_14">S3</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_9RnRCVW">E Connection to Other Polynomial Bases</head><p xml:id="_uAGKthB">We compare our instantiation with common practices in approximating graph convolutions: Monomial, Chebyshev, Bernstein, and Jacobi bases. We visualize these polynomial bases with limited degrees in Fig. <ref type="figure" coords="19,169.28,684.45,8.67,8.64" target="#fig_16">S4</ref>.</p><p xml:id="_ppzRAqY">For the Monomial basis (1 − λ) k , it is non-orthogonal for arbitrary choices of weight functions <ref type="bibr" coords="19,486.76,700.84,15.19,8.64" target="#b12">[13]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_G4g2epC">Although the Bernstein basis</head><formula xml:id="formula_47" coords="19,234.13,710.82,72.57,13.97">K k (1 − λ 2 ) K−k ( λ<label>2</label></formula><p xml:id="_qE9CuwB">) k is also non-orthogonal, existing studies show that a small conditional number of the Hessian matrix κ(H) may still be achieved to enable fast convergence, where κ(H) can also be lower than using Monomial basis <ref type="bibr" coords="20,400.59,312.36,15.40,8.64" target="#b46">[47]</ref>. While the Bernstein basis is better than the Monomial basis in approximating graph convolutions, our instantiation with the Gegenbauer basis guarantees the minimum κ(H) to be achieved in most cases; thus, it is more desired.</p><p xml:id="_xpPY8AB">We provide examples in Fig. <ref type="figure" coords="20,226.77,345.09,10.73,8.64" target="#fig_5">S5</ref> showing that the weight functions of Gegenbauer polynomials fit graph signal densities well in most cases. Our main results also confirm this in Tab. 4.</p><p xml:id="_ZmW7uSP">For orthogonal polynomials, the second-kind Chebyshev basis is a particular case of the Gegenbauer basis with α = 1 and only orthogonal w.r.t. a particular weight √ 1 − λ<ref type="foot" coords="20,396.02,383.48,3.97,6.12" target="#foot_0">2</ref> . Though the Gegenbauer basis forms a particular case of the Jacobi basis with both of its parameters set to α − 1 2 , we show that the orthogonality of the Gegenbauer basis is well-posed on common real-world graphs w.r.t. its weight function (1 − λ 2 ) α− 1 2 as shown in Fig. <ref type="figure" coords="20,295.75,419.11,8.67,8.64" target="#fig_5">S5</ref>. Thus, in this work, we use the Gegenbauer basis as a simpler solution for our purpose with only minor performance degradation (Tab. 4). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_WeYP5wx">F Datasets</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ApKNVqj">G Experimental Setting</head><p xml:id="_bZCjmE2">All experiments are conducted on a Linux server with 4× GeForce RTX 2080 Ti 11GB, 1× Intel Core i9-9900X, and 128GB system memory.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_BsFyzWM">G.1 Short-Term Forecasting</head><p xml:id="_ejbcBWV">Here, we detail the experimental setting of short-term time series forecasting. Our main results are in Tab. 1 and Tab. S4. The dataset statistics are in Tab. S1. We briefly introduce all baselines as follows.</p><p xml:id="_pWammHr">• FC-LSTM <ref type="bibr" coords="21,191.19,226.35,16.56,8.64" target="#b47">[48]</ref> forecasts a time series with fully-connected long short-term memory units.</p><p xml:id="_HkzaS2n">• TCN <ref type="bibr" coords="21,167.39,241.45,16.60,8.64" target="#b37">[38]</ref> forecasts time series data with stacked dilated convolutions.</p><p xml:id="_ZyBPVyP">• LSTNet <ref type="bibr" coords="21,180.11,256.55,16.50,8.64" target="#b18">[19]</ref> uses convolutions to mine local time series dependencies and recurrent neural networks to model temporal clues.</p><p xml:id="_xanqQNd">• DeepState <ref type="bibr" coords="21,189.52,282.56,16.70,8.64" target="#b19">[20]</ref> takes advantage of state space models, where time-related parameters are calculated via recurrent neural networks by digesting the input series.</p><p xml:id="_frNuCfr">• DeepGLO <ref type="bibr" coords="21,190.09,308.56,16.64,8.64" target="#b20">[21]</ref> leverages TCN regularized matrix factorization to capture global features, along with another set of temporal networks to capture local patterns of each time series.</p><p xml:id="_rKtDMnC">• SFM <ref type="bibr" coords="21,167.38,334.57,16.73,8.64" target="#b48">[49]</ref> enhances long short-term memory units by breaking down cell states of a time series into a set of frequency components.</p><p xml:id="_dvjsxYX">• DCRNN <ref type="bibr" coords="21,182.48,360.58,16.73,8.64" target="#b21">[22]</ref> integrates graph diffusion into recurrent neural networks to capture spatial and temporal relations in multivariate time series data.</p><p xml:id="_sgsE5VT">• STGCN <ref type="bibr" coords="21,181.18,386.58,11.75,8.64" target="#b1">[2]</ref> combines ChebyConv <ref type="bibr" coords="21,289.00,386.58,11.75,8.64" target="#b3">[4]</ref> and temporal convolutions together into a decoupled neural architecture to capture spatial and temporal multivariate time series relations simultaneously. Note that STGCN(1 st ) adopts the first-order approximation of ChebyConv.</p><p xml:id="_my8KZDn">• Graph WaveNet <ref type="bibr" coords="21,215.35,423.50,16.53,8.64" target="#b22">[23]</ref> integrates TCN and graph diffusion <ref type="bibr" coords="21,376.77,423.50,10.51,8.64" target="#b4">[5]</ref>, along with a graph structure refinement mechanism, to learn spatial and temporal multivariate time series relations.</p><p xml:id="_UfPP99Q">• ASTGCN <ref type="bibr" coords="21,187.88,449.51,16.57,8.64" target="#b23">[24]</ref> improves existing works with separate spatial and temporal attention. Note that MSTGCN is a variant of ASTGCN with all attention mechanisms disabled.</p><p xml:id="_WcshqY5">• STG2Seq <ref type="bibr" coords="21,187.02,475.51,16.73,8.64" target="#b24">[25]</ref> proposes to capture both spatial and temporal correlations simutaneously with hierarchical graph convolutions adapted from GCN <ref type="bibr" coords="21,370.62,486.42,15.27,8.64" target="#b42">[43]</ref>.</p><p xml:id="_cfjAuXJ">• LSGCN <ref type="bibr" coords="21,181.64,501.52,16.73,8.64" target="#b25">[26]</ref> introduces the spatial gated block with a novel attention-enhanced graph convolution network to better capture spatial dependencies in STGNNs.</p><p xml:id="_H9rtPgT">• STSGCN <ref type="bibr" coords="21,186.14,527.53,16.47,8.64" target="#b26">[27]</ref> proposes a space-time-separable graph convolution network to models entire graph dynamics with only graph convolution networks adapted from GCN <ref type="bibr" coords="21,442.56,538.43,15.27,8.64" target="#b42">[43]</ref>.</p><p xml:id="_5QdFkpj">• STFGNN <ref type="bibr" coords="21,186.64,553.53,16.47,8.64" target="#b27">[28]</ref> incorporates various time series correlation mining strategies to learn spatialtemporal fusion graphs that facilitate the learning of latent spatial and temporal dependencies.</p><p xml:id="_rjk24BW">• STGODE <ref type="bibr" coords="21,187.88,579.54,16.47,8.64" target="#b28">[29]</ref> introduces spatial-temporal graph ordinary differential equation networks to better capture both short-and long-range spatial correlations compared with other STGNNs.</p><p xml:id="_BvQSCB7">• StemGNN <ref type="bibr" coords="21,190.08,605.55,11.64,8.64" target="#b6">[7]</ref> marries ChebyConv and temporal frequency-domain models to model time series spatial and temporal dependencies in spectral domains.</p><p xml:id="_jZXtX77">General experimental setting. We adopt the Mean Absolute Forecasting Errors (MAE) and Root Mean Squared Forecasting Errors (RMSE) as evaluation metrics. On three traffic datasets (i.e., PeMS03, 04, and 08), we use the data split of 60%-20%-20%. On the rest of the time series datasets, i.e., PeMS07, Electricity, Solar-Energy, and ECG, we follow <ref type="bibr" coords="21,350.48,672.52,11.58,8.64" target="#b6">[7]</ref> and use the split ratio of 70%-20%-10%. For data preprocessing, we use min-max normalization and Z-Score normalization on ECG and the rest of the datasets, respectively. On four traffic datasets (i.e., PeMS03, 04, 07, and 08), we use the past 1-hour observations to predict the next 15-minute traffic volume or speed. We also use this setting in ablation studies and model efficiency comparisons. On the Electricity dataset, we forecast the next 1-hour consumption with the past 24-hour readings. On the Solar-Energy dataset, we use the past 4-hour data to predict the productions in the next half hour. On the ECG dataset, we set the window size and forecasting horizon to 12 and 3. For the baseline configurations, we follow <ref type="bibr" coords="22,473.52,130.02,10.51,8.64" target="#b6">[7]</ref>. For the primary hyperparameter settings of TGC on different datasets, see Tab. S2.</p><p xml:id="_CHhqkqd">Experimental setting in Tab. 1 (right). We adopt the same evaluation metrics and follow the experimental setting in <ref type="bibr" coords="22,203.20,174.78,15.40,8.64" target="#b17">[18]</ref>. For the four traffic datasets, we use a data split of 60%-20%-20%. In terms of data preprocessing, min-max normalization is employed. Here, we use the past 1-hour observations to predict the next 1-hour traffic volume or speed. We denote these two groups as types A and B in our experiments. Referring to our discussion and the results in Fig. <ref type="figure" coords="23,163.37,130.02,7.77,8.64" target="#fig_17">6a</ref>, we make two clear observations: (1) Both our method (i.e., TGC) and MP-STGNNs can learn positive relations between time series (i.e., same colored shapes should be close to each other); (2) However, only our method can model differently signed (e.g., purely negatively correlated) time series (i.e., differently colored shapes should be far away from each other).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_CQJ3wzr">H Additional Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_UEKZWFz">H.1 Additional Forecasting Results</head><p xml:id="_5F9z5ff">Table <ref type="table" coords="23,132.17,251.07,8.90,8.64" target="#tab_6">S4</ref>: Additional short-term forecasting results on three general time series benchmarks, where we follow <ref type="bibr" coords="23,149.99,261.98,11.62,8.64" target="#b6">[7]</ref> for the experimental setting and baseline results. We use the bold and underline fonts to indicate the best and second-best results. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_s5yBGkX">I Visualization</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="1,341.64,545.14,164.01,8.64;1,341.64,556.05,162.85,8.64;1,341.64,566.57,164.02,9.03;1,341.64,577.87,164.10,8.64;1,341.64,588.39,164.01,9.03;1,341.64,599.69,163.60,8.64;1,341.28,610.59,164.38,8.64;1,341.64,621.50,162.36,8.64;1,340.54,475.82,84.39,62.70"><head>Figure 1 :</head><label>1</label><figDesc xml:id="_fmPgbBQ">Figure 1: Differently signed spatial relations between time series in PeMS07 dataset. Left: Visualization of four randomly selected traffic sensor readings. Right: Spatial relations between time series may be different at two windows (e.g., A and D are positively and negatively correlated in windows 1 and 2, respectively).</figDesc><graphic coords="1,340.54,475.82,84.39,62.70" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="2,159.15,226.41,293.71,8.64"><head>Figure 2 :</head><label>2</label><figDesc xml:id="_t29fYgQ">Figure 2: Venn diagram of our method and overview of our contributions.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="3,325.80,403.58,179.85,8.64;3,325.80,414.17,179.85,8.96;3,325.80,424.25,178.20,11.50;3,325.37,437.67,178.63,9.68;3,325.80,449.66,107.24,8.96;3,434.03,448.08,10.20,6.12;3,444.73,449.66,59.27,8.96;3,325.80,460.89,114.54,8.64"><head>Figure 3 :</head><label>3</label><figDesc xml:id="_gMQqGHQ">Figure 3: The general formulation of SPT-GNNs with M building blocks to predict future values Ŷ based on historical observations X. g θ (•) and T φ (•) are graph and temporal spectral filters. F(•) and F −1 (•) are forward and inverse space projectors.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="4,108.00,144.10,396.00,9.03;4,108.00,155.40,397.74,8.64;4,108.00,165.92,316.63,9.03"><head>Figure 4 :</head><label>4</label><figDesc xml:id="_yguZwpb">Figure 4: Multidimensional and multivariate predictions. Left: Multidimensional predictions within a snapshot require individual filtration for each output dimension to preserve different information. Right: Individual filter is needed to model each single-dimensional time series.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="5,108.00,131.69,397.75,8.64;5,107.69,142.28,396.31,9.65;5,108.00,153.51,121.74,8.64"><head>Figure 5 :</head><label>5</label><figDesc xml:id="_fup74yK">Figure 5: Two examples of temporal 1-WL test on non-attributive discrete-time dynamic graphs.The left test fails to distinguish non-isomorphic nodes at t 1 , e.g., A and C, while the right example demonstrates a successful test.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="8,290.95,702.61,213.23,8.64;8,108.00,713.51,396.00,8.64;9,204.40,72.14,9.97,6.85;9,261.75,70.82,29.89,7.63;9,126.08,71.94,35.99,6.85;9,107.70,134.61,194.34,7.77;9,108.00,144.58,194.37,7.77;9,108.00,154.54,185.28,7.77;9,402.50,72.62,9.94,6.83;9,460.63,71.10,29.81,7.68;9,332.25,72.55,20.34,6.83;9,307.17,134.61,194.34,7.77;9,307.47,144.58,194.36,7.77;9,307.47,154.54,185.28,7.77"><head></head><label></label><figDesc xml:id="_YeS3g2X">(A.1 to A.5) in the first block. Next, we examine other core designs in the second block: B.1 and B.2 apply identical polynomial coefficients in GSFs and TGC STGCN (1 ,-) Synthetic Data (a) Visualization of learned embeddings w.r.t. different time series correlations on a synthetic dataset. Types A and B represent series groups with opposing trends. TGC STGCN (1 ,-) PeMS07 (b) Visualization of learned embeddings w.r.t. different time series correlations on PeMS07 dataset. Types A and B represent series groups with opposing trends.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="9,163.17,168.66,285.66,8.64;9,108.00,185.95,396.00,8.96;9,107.69,196.86,396.31,8.96;9,108.00,208.09,396.00,8.64;9,108.00,219.00,95.36,8.64;9,203.36,217.11,3.65,6.12;9,207.51,219.00,278.42,8.64;9,306.92,78.22,64.29,50.11"><head>Figure 6 :</head><label>6</label><figDesc xml:id="_Dcqs9NM">Figure 6: Evaluation of learning differently signed time series relations. trainable weights in temporal FDMs along D dimensions, respectively. B.3 utilizes the same set of TSFs across N variables. B.4 replaces orthogonal space projections with random transformations. B.5 and B.6 separately remove the coarse-grained and fine-grained temporal FDMs. Lastly, we evaluate add-ons that make TGC † . C.1 eliminates nonlinearities, and C.2 disables the spectral attention.</figDesc><graphic coords="9,306.92,78.22,64.29,50.11" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="9,175.43,246.30,122.26,8.64;9,108.00,257.21,189.69,8.64;9,108.00,268.11,188.79,8.64;9,108.00,279.02,188.03,8.64;9,108.00,289.93,188.04,8.64;9,107.64,300.84,188.40,8.64;9,107.64,311.75,190.05,8.64;9,108.00,322.66,188.03,8.64;9,108.00,333.57,189.69,8.64;9,108.00,344.48,189.69,8.64;9,108.00,355.39,188.03,8.64;9,107.65,366.30,188.38,8.64;9,108.00,377.21,188.03,8.64;9,108.00,388.11,188.03,8.64;9,107.67,399.02,397.57,8.64;9,107.64,409.93,396.36,8.64;9,108.00,420.84,366.27,8.64;9,474.27,418.95,3.65,6.12;9,478.42,420.84,5.81,8.64"><head>4 : ( 1 )</head><label>41</label><figDesc xml:id="_8DCmCsa">Orthogonal polynomials (A.3 to A.5) yield significantly better performance than non-orthogonal alternatives (A.1 and A.2); (2) Although the performance gaps between A.3 to A.5 are minor, polynomial bases with orthogonality that hold on more general weight functions tend to result in better performances. The results of B.1 to B.3 support the analysis of multidimensional and multivariate predictions in Sec. 3.2, with various degradations observed. In B.4, we see an average 4% MAE and 7% RMSE reduction, confirming the related analysis in Sec. 3.3. The results of B.5 and B.6 indicate that both implementations (Eq. 3 and Eq. 4) are effective, with fine-grained temporal FDMs icing on the cake. In the last block, we note a maximum 3.1% and 0.8% improvement over TGC by introducing nonlinearities (C.2) and spectral attention (C.1). Simply combining both leads to even better performance (i.e., TGC † ).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="9,345.60,494.65,160.05,8.64;9,345.60,505.17,160.14,9.03;9,345.60,516.08,76.07,8.96;9,108.00,440.42,227.64,9.03;9,108.00,451.72,75.67,8.64;9,183.67,449.83,6.77,6.12;9,190.93,451.40,144.70,8.96;9,108.00,462.63,229.29,8.64;9,108.00,473.54,227.63,8.64;9,108.00,484.45,229.30,8.64;9,108.00,495.36,184.23,8.64;9,292.23,493.46,6.77,6.12;9,299.50,495.04,36.14,8.96;9,108.00,506.27,227.64,8.64;9,108.00,517.18,225.75,8.64;9,108.00,536.76,396.00,9.03;9,108.00,548.05,396.00,8.64;9,108.00,558.64,396.00,8.96;9,108.00,569.55,391.27,8.96;9,345.60,435.97,76.03,56.23"><head>Figure 7 :</head><label>7</label><figDesc xml:id="_2MkzE7a">Figure 7: Model convergence comparison on PeMS07 dataset. Left: lr = 0.01. Right: lr = 0.001. Model Convergence. We compare model convergence between STGCN(1 st ) [2], StemGNN [7], and TGC across two scenarios with different learning rates. Our instantiation with Gegenbauer bases has the fastest convergence rate in both cases, further confirming Theorem 3 with ablation studies. Also, as anticipated, STGCN(1 st ) is more tractable than StemGNN w.r.t. the model training due to certain relaxations but at the cost of model effectiveness. Additional Experiments. Refer to Appendix H for details. (1) We evaluate TGC against additional baselines on other time series benchmarks; (2) We conduct parameter studies examining the impact of the Gegenbauer parameter α, polynomial degree K, number of selected modes S, and number of building blocks M ; (3) Forecasting visualizations; (4) Statistics of our results in Tab. 1 and Tab. 2.</figDesc><graphic coords="9,345.60,435.97,76.03,56.23" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10" coords="15,108.00,73.71,53.57,10.75;15,108.00,98.27,107.55,8.96;15,107.67,118.29,396.32,8.96;15,108.00,128.31,395.99,11.28;15,108.00,141.77,394.80,9.65"><head>1 Theorem 1 .</head><label>11</label><figDesc xml:id="_zhEjYKw">A linear SPTGNN can produce arbitrary dimensional time series representations at any valid time iff: (1) L has no repeated eigenvalues; (2) X encompasses all frequency components with respect to the graph spectrum; (3) T φ (•) can express any single-dimensional univariate time series.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12" coords="18,108.00,518.24,397.17,9.65;18,108.00,530.20,282.03,8.96;18,391.02,528.62,10.20,6.12;18,401.71,530.20,102.29,8.96"><head>2 ,Figure S1 :</head><label>2S1</label><figDesc xml:id="_dpMZ5P9">Figure S1: An illustration of Temporal Graph GegenConv (TGC), where g θ (•), T φ1 (•), and T φ2 (•) are GSFs and two different TSFs. We use DFT and IDFT as F(•) and F −1 (•) in our implementation.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13" coords="18,156.14,622.47,299.72,8.64"><head>Figure S2 :</head><label>S2</label><figDesc xml:id="_rftAp5Q">Figure S2: Tensor flow in fine-grained temporal frequency-domain models.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14" coords="19,108.68,454.18,394.64,8.64"><head>Figure S3 :</head><label>S3</label><figDesc xml:id="_aKKXjFh">Figure S3: Tensor flow in fine-grained temporal frequency-domain models using spectral attention.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15" coords="19,430.43,487.96,73.57,8.99;19,108.00,500.19,36.01,9.68;19,144.01,504.73,3.76,6.12;19,148.27,500.22,23.25,9.30;19,171.51,498.65,31.80,6.12;19,204.03,500.22,299.98,8.96;19,108.00,510.72,330.23,11.50;19,438.23,517.78,10.31,6.12;19,452.95,513.27,17.75,9.30;19,470.69,511.69,31.30,6.12;19,502.71,513.59,2.54,8.64;19,110.00,524.75,54.20,11.28;19,164.20,531.81,10.31,6.12;19,179.12,527.29,17.95,9.30;19,197.07,525.72,31.30,6.12;19,229.08,524.75,79.71,11.50;19,308.79,531.81,10.31,6.12;19,323.71,527.29,17.95,9.30;19,341.65,525.72,31.30,6.12;19,373.67,527.61,130.34,8.64;19,108.00,538.52,68.35,8.64"><head></head><label></label><figDesc xml:id="_AFbuEx2">, and values V = σ(Φ 2,3 Z s ) ∈ R N ×T ×D . σ(•) denotes the ReLU activation. Then, we project all three matrices into the frequency domain via the discrete Fourier transformation, i.e., Q = F(Q)S 2,1 ∈ C N ×S×D , K = F(K)S 2,2 ∈ C N ×S×D , and Ṽ = F(V)S 2,3 ∈ C N ×S×D . Finally, we select informative components with</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16" coords="20,153.51,161.41,304.97,8.64;20,108.00,177.73,87.12,66.64"><head>Figure S4 :</head><label>S4</label><figDesc xml:id="_W3XSpGq">Figure S4: Different polynomial bases in approximating graph convolutions.</figDesc><graphic coords="20,108.00,177.73,87.12,66.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_17" coords="25,108.00,620.34,284.84,8.64;25,392.84,618.45,6.77,6.12;25,400.11,620.03,103.89,8.96;25,108.00,631.25,396.00,8.64;25,108.00,642.16,396.00,8.64;25,108.00,653.07,146.58,8.64;25,108.00,484.72,126.72,101.33"><head>( a )</head><label>a</label><figDesc xml:id="_fg2VV82">Figure S7: Forecasting visualizations of TGC, StemGNN, and STGCN(1 st ) on PeMS08 and PeMS04 datasets are shown in the first and last six subplots, which we refer to as groups A and B. In each group, the first and last three subplots present visualizations for three randomly selected sensors at two different periods on the test sets.</figDesc><graphic coords="25,108.00,484.72,126.72,101.33" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="4,107.64,302.44,398.10,135.70"><head></head><label></label><figDesc xml:id="_ykwnT4B">To align with our formulation, T φ (•) should also be linear functions; thus, Eq. 2 can be interpreted as a linear GNN extension, where f φ (•) depends on historical observations instead of a graph snapshot. Accordingly, linear SPTGNNs establish a lower bound for the expressive power of SPTGNNs. Proposition 1. A SPTGNN can differentiate any pair of nodes at an arbitrary valid time that linear SPTGNNs can if T φ (•) can express any linear time-variant functions.</figDesc><table coords="4,107.67,380.18,396.33,57.96"><row><cell>Despite their simplicity, linear SPTGNNs maintain the fundamental spectral filtering forms of</cell></row><row><cell>SPTGNNs. We begin by defining the universal approximation theorem for linear SPTGNNs.</cell></row><row><cell>Theorem 1. A linear SPTGNN can produce arbitrary dimensional time series representations at any</cell></row><row><cell>valid time iff: (1) L has no repeated eigenvalues; (2) X encompasses all frequency components with</cell></row><row><cell>respect to the graph spectrum; (3) T φ (•) can express any single-dimensional univariate time series.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="8,107.69,204.00,397.96,111.99"><head>Table 2 :</head><label>2</label><figDesc xml:id="_7juR6Ja">Long-term forecasting results on three time series benchmarks. We follow<ref type="bibr" coords="8,443.95,204.00,16.66,8.64" target="#b29">[30]</ref> for experimental settings and baseline results. We use same notations as in Tab. 1.</figDesc><table coords="8,119.50,228.44,368.87,87.55"><row><cell cols="2">Method</cell><cell></cell><cell>TGC  †</cell><cell cols="2">FILM [30]</cell><cell cols="2">FEDFORMER [14]</cell><cell cols="2">AUTOFORMER [31]</cell><cell cols="2">INFORMER [32]</cell><cell cols="2">LOGTRANS [33]</cell><cell cols="2">REFORMER [34]</cell></row><row><cell cols="2">Metric</cell><cell>MAE</cell><cell>RMSE</cell><cell>MAE</cell><cell>RMSE</cell><cell>MAE</cell><cell>RMSE</cell><cell>MAE</cell><cell>RMSE</cell><cell>MAE</cell><cell>RMSE</cell><cell>MAE</cell><cell>RMSE</cell><cell>MAE</cell><cell>RMSE</cell></row><row><cell>Electricity</cell><cell cols="2">96 192 0.303 0.293 336 0.313</cell><cell>0.425 0.440 0.470</cell><cell>0.267 0.258 0.283</cell><cell>0.392 0.404 0.433</cell><cell>0.297 0.308 0.313</cell><cell>0.427 0.442 0.460</cell><cell>0.317 0.334 0.338</cell><cell>0.448 0.471 0.480</cell><cell>0.368 0.386 0.394</cell><cell>0.523 0.544 0.548</cell><cell>0.357 0.368 0.380</cell><cell>0.507 0.515 0.529</cell><cell>0.402 0.433 0.433</cell><cell>0.558 0.590 0.591</cell></row><row><cell>Weather</cell><cell cols="2">96 192 0.286 0.235 336 0.317</cell><cell>0.408 0.468 0.515</cell><cell>0.262 0.288 0.323</cell><cell>0.446 0.478 0.516</cell><cell>0.296 0.336 0.380</cell><cell>0.465 0.525 0.582</cell><cell>0.336 0.367 0.395</cell><cell>0.515 0.554 0.599</cell><cell>0.384 0.544 0.523</cell><cell>0.547 0.773 0.760</cell><cell>0.490 0.589 0.652</cell><cell>0.677 0.811 0.892</cell><cell>0.596 0.638 0.596</cell><cell>0.830 0.867 0.799</cell></row><row><cell>Solar</cell><cell cols="2">96 192 0.263 0.242</cell><cell>0.443 0.470</cell><cell>0.311 0.356</cell><cell>0.557 0.595</cell><cell>0.363 0.354</cell><cell>0.448 0.483</cell><cell>0.552 0.674</cell><cell>0.787 0.856</cell><cell>0.264 0.280</cell><cell>0.469 0.487</cell><cell>0.262 0.284</cell><cell>0.467 0.489</cell><cell>0.255 0.274</cell><cell>0.451 0.475</cell></row><row><cell></cell><cell cols="2">336 0.271</cell><cell>0.478</cell><cell>0.370</cell><cell>0.628</cell><cell>0.372</cell><cell>0.518</cell><cell>0.937</cell><cell>1.131</cell><cell>0.285</cell><cell>0.496</cell><cell>0.295</cell><cell>0.512</cell><cell>0.278</cell><cell>0.491</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="8,305.67,336.57,199.99,106.08"><head>Table 3 :</head><label>3</label><figDesc xml:id="_zsfe5fp"></figDesc><table coords="8,313.04,384.37,189.24,58.28"><row><cell>Method</cell><cell>PeMS03</cell><cell>PeMS04</cell><cell>PeMS07</cell><cell>PeMS08</cell></row><row><cell cols="5">LSTNET 0.4/2.2/3.8 0.3/1.3/2.3 0.2/0.9/1.5 0.2/1.0/1.7</cell></row><row><cell cols="5">DEEPGLO 0.6/14/8.3 0.6/8.5/6.0 0.3/6.2/6.6 0.3/5.9/4.2</cell></row><row><cell>DCRNN</cell><cell>OOM</cell><cell>0.4/♦/♦</cell><cell>0.4/♦/♦</cell><cell>0.4/♦/♦</cell></row><row><cell>STGCN</cell><cell cols="4">0.3/25/13 0.3/14/6.9 0.2/8.6/4.1 0.2/8.0/5.0</cell></row><row><cell cols="5">STEMGNN 1.4/17/24 1.3/9.0/13 1.2/6.0/8.0 1.1/6.0/9.0</cell></row><row><cell>TGC</cell><cell cols="4">0.4/12/21 0.3/6.2/11 0.2/3.9/7.2 0.1/4.2/8.4</cell></row></table><note xml:id="_jupP3Ky">Efficiency comparison of representative models: Trainable parameters (M), time-per-epoch (s), and total training time (min); ♦ indicates significantly larger values compared to other methods.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" coords="9,305.69,234.14,199.96,157.53"><head>Table 4 :</head><label>4</label><figDesc xml:id="_rwa4PAb">Ablation study results. We use the bold and underline fonts to denote the best and secondbest results in each ablation block, respectively.</figDesc><table coords="9,310.93,271.52,194.37,40.77"><row><cell>Variant</cell><cell cols="3">MAE RMSE MAE RMSE MAE RMSE MAE RMSE PeMS03 PeMS04 PeMS07 PeMS08</cell></row><row><cell>A.1 Monomial</cell><cell>27.64 43.52 59.41 120.18 5.68</cell><cell>8.73</cell><cell>29.36 43.37</cell></row><row><cell>A.2 Bernstein</cell><cell>27.38 43.17 55.17 105.13 5.57</cell><cell>8.64</cell><cell>27.57 40.28</cell></row><row><cell>A.3 Chebyshev</cell><cell>13.56 21.84 18.78 29.89 1.94</cell><cell>3.37</cell><cell>14.36 22.93</cell></row><row><cell cols="2">A.4 Gegenbauer 13.52 21.74 18.77 29.92 1.92</cell><cell>3.35</cell><cell>14.35 22.73</cell></row></table><note xml:id="_5aSZ2Ns">A.5 Jacobi 13.14 21.51 18.64 29.44 1.91 3.34 14.29 22.15 TGC (Ours) 13.52 21.74 18.77 29.92 1.92 3.35 14.55 22.73 B.1 w/o MD-F 14.07 21.82 19.07 30.34 2.05 3.45 15.14 23.49 B.2 w/o MD-F † 13.62 21.73 18.92 30.11 1.96 3.40 15.06 23.25 B.3 w/o MV-F 13.80 21.77 19.12 30.50 1.97 3.44 15.12 23.58 B.4 w/o O-SP 13.72 21.75 19.10 30.42 2.03 3.53 15.38 28.84 B.5 w/o C-FDM 13.83 21.47 19.15 30.52 2.01 3.47 15.18 23.71 B.6 w/o F-FDM 13.71 21.59 18.81 29.96 1.93 3.39 14.88 23.10 TGC † (Ours) 13.39 21.34 18.41 29.39 1.84 3.28 14.38 22.43 C.1 w/o NL 13.75 21.43 18.63 29.70 1.92 3.36 14.94 24.93 C.2 w/o S-Attn 13.42 21.38 18.50 29.53 1.86 3.30 14.43 22.54</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7" coords="20,134.89,478.46,370.35,191.59"><head>Table S1 :</head><label>S1</label><figDesc xml:id="_pvWATDY">Statistics of eight different real-world time series datasets used in our work. Weather 5 : This dataset consists of the one-year records of 21 meteorological stations installed in Germany. The sampling rate in this dataset is 10 minutes.• ECG 6 : This dataset consists of the 5000 records of 140 electrocardiograms in the URC time series archive 7 .</figDesc><table coords="20,135.38,492.11,369.86,167.03"><row><cell>Statistic</cell><cell cols="5">PeMS03 PeMS04 PeMS07 PeMS08 Electricity</cell><cell>Solar</cell><cell cols="2">Weather ECG</cell></row><row><cell># of time series</cell><cell>358</cell><cell>307</cell><cell>228</cell><cell>170</cell><cell>321</cell><cell>137</cell><cell>21</cell><cell>140</cell></row><row><cell># of data points</cell><cell>26,209</cell><cell>16,992</cell><cell>12,672</cell><cell>17,856</cell><cell>26,304</cell><cell>52,560</cell><cell cols="2">52,696 5,000</cell></row><row><cell>Sampling rate</cell><cell>5 min</cell><cell>5 min</cell><cell>5 min</cell><cell>5 min</cell><cell>1 hour</cell><cell cols="2">10 min 10 min</cell><cell>-</cell></row><row><cell>Predefined graph</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>Yes</cell><cell>No</cell><cell>No</cell><cell>No</cell><cell>No</cell></row><row><cell cols="9">• PeMS03, 04, 07, and 08 2 : These datasets are collected by the Caltrans Performance</cell></row><row><cell cols="9">Measurement System (PeMS) 3 from traffic sensors installed in highway systems spanned</cell></row><row><cell cols="9">across metropolitan areas in California. The sampling rate of these datasets is 5 minutes,</cell></row><row><cell cols="9">where PeMS03, 07, and 08 record traffic flow, and PeMS04 is about traffic speed.</cell></row><row><cell cols="9">• Electricity 4 : This dataset consists of electricity consumption records of 321 customers with</cell></row><row><cell cols="2">1-hour sampling rate.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="9">• Solar-Energy 4 : This dataset consists of photovoltaic production records of 137 sites in</cell></row><row><cell cols="8">Alabama State in 2006. The sampling rate in this dataset is 10 minutes.</cell><cell></cell></row><row><cell>•</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8" coords="22,137.75,216.42,336.20,55.79"><head>Table S2 :</head><label>S2</label><figDesc xml:id="_NRJqkNF">The hyperparameter setting of TGC for short-term time series forecasting. , each with a length of 2000. For the first group, we generate a sinusoidal signal and develop 100 distinct instances with varying amplitudes and injected random noise. Similarly, we generate another group of data based on cosinusoidal oscillation. Consequently, we know that: (1) Time series within each group are positively correlated; (2) Time series across different groups are negatively correlated.</figDesc><table coords="22,142.99,230.07,324.53,42.14"><row><cell>Hyperparameters</cell><cell cols="7">PeMS03 PeMS04 PeMS07 PeMS08 Electricity Solar ECG</cell></row><row><cell>Gegenbauer parameter α</cell><cell>3.08</cell><cell>0.47</cell><cell>1</cell><cell>1</cell><cell>1.2</cell><cell>1.2</cell><cell>1.2</cell></row><row><cell># polynomial degree K</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>4</cell></row><row><cell># selected component S</cell><cell>5</cell><cell>4</cell><cell>5</cell><cell>5</cell><cell>5</cell><cell>5</cell><cell>5</cell></row><row><cell># building block M</cell><cell>2</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note xml:id="_aePDnqh">series</note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0">https://github.com/microsoft/StemGNN</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_1">https://pems.dot.ca.gov/</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_2">https://github.com/laiguokun/multivariate-time-series-data</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_3">https://github.com/zhouhaoyi/Informer2020</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_4">https://github.com/microsoft/StemGNN/blob/master/dataset/ECG_data.csv</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_5">https://www.cs.ucr.edu/~eamonn/time_series_data/</note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_YEc59Wa">How Expressive are Spectral-Temporal Graph Neural</head><p xml:id="_eHUFQ5v">Networks for Time Series Forecasting? (Supplementary Material)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_HGyhv4W">A Preliminaries</head><p xml:id="_7ceN7RQ">For a matrix M ∈ R a×b , we denote M i,: and M :,j as the i th row and j th column of this matrix. Specifically, we use M AB to denote a submatrix of M with row and column index sets A and B. Suppose M can be factorized into a canonical form and represented by its eigenvalues Λ and eigenvectors U, we denote its condition number as κ(M) = |λmax| |λmin| , where λ min and λ max are the smallest and largest eigenvalues, respectively. κ(M) = ∞ if M is singular.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_FFx7bxg">A.1 Graph Spectral Filtering</head><p xml:id="_KA3hQa8">In this work, we model a multivariate time series with the length T as a set of undirected graph snapshots {G t } T −1 t=0 s.t. G t = (A, X t ). Given a graph topology A, we have its degree matrix defined as D ∈ R N ×N s.t. D i,i = N j=1 A i,j , which is symmetric. On this basis, we define the normalized graph Laplacian matrix as L = D − 1 2 LD − 1  2 , where L = D − A, and we know L is symmetric and positive semi-definite. We let its eigendecomposition of L to be L = UΛU , where Λ and U are matrices of eigenvalues and eigenvectors. We first define graph Fourier transformation (GFT) below. Definition A1. Graph Fourier transform of the signal X t is defined as Xt = U X t , where X(λ) t = U :,λ X t denote the frequency component of input signal at the frequency λ. Corresponsively, the inverse graph Fourier transform of Xt is defined as X t = U Xt .</p><p xml:id="_Ran9KzF">The above definition describes how to transform input signals between original and orthonormal spaces, and we say X t contains λ frequency component if X(λ) t = 0. To filter input signals in the frequency domain w.r.t. node connectivity, we have graph convolution defined below. Definition A2. Assume there is a filter function of eigenvalues g(•) : [0, 2] → R, we define the spectral convolution on G t as filtering the input signal X t with the spectral filter:</p><p xml:id="_QDUK3ZF">The filter function can be parameterized, i.e., g θ (Λ), but directly calculating the above equation requires eigendecomposition with the time complexity of O(N 3 ). To alleviate this issue, we can first approximate g θ (Λ) with a truncated expansion of a polynomial with K degrees:</p><p xml:id="_pVyHnez">Thus, graph spectral filtering takes the following form:</p><p xml:id="_VBxKFNc">If we let g θ ( L) = K k=0 Θ k,: P k ( L), we derive the following practical spectral graph convolution operation that goes beyond the low-pass filtering:</p><p xml:id="_kqxdWQT">(S4)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_6Xjd7Ym">A.2 Orthogonal Time Series Representations</head><p xml:id="_JE9YSN3">In real-world time series data, complex behaviors such as periodic patterns are prevalent. Spectral analysis facilitates the disentanglement and identification of these patterns. This study aims to represent time series using sparse orthogonal components. Given an input signal, X n , its values at time t are denoted as X n (t). As per Lemma 1, numerous orthogonal projections, such as discrete Fourier or cosine transformations, can serve as space projections for our objectives. Definition A3. Discrete Fourier transformation (DFT) on time series takes measurements at discrete intervals, and transforms observations into frequency-dependent amplitudes:</p><p xml:id="_yvwTXmY">Inverse transformation (IDFT) maps a signal from the frequency domain back to the time domain:</p><p xml:id="_GxwAuXh">Definition A4. Discrete cosine transformation (DCT) is similar but uses real numbers, which express a sequence of observations with a set of cosine waves oscillating at different frequencies:</p><p xml:id="_xVzh44c">Inverse transformation (IDCT) distributes the data back to the time domain by multiplying 2/T .</p><p xml:id="_5nzXUdh">In this study, we employ DFT and IDFT by default in temporal frequency-domain models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_qwKuRf7">B Related Work B.1 Deep Time Series Forecasting</head><p xml:id="_AHzjn35">Time series forecasting has been extensively researched over time. Traditional approaches primarily focus on statistical models, such as vector autoregressive (VAR) <ref type="bibr" coords="13,367.73,439.82,16.66,8.64" target="#b34">[35]</ref> and autoregressive integrated moving average (ARIMA) <ref type="bibr" coords="13,218.72,450.73,15.41,8.64" target="#b35">[36]</ref>. In contrast, deep learning-based methods have recently achieved significant success. Deep learning-based approaches, on the other hand, have achieved great success in recent years. For example, recurrent neural network (RNN) and its variants, e.g., FC-LSTM <ref type="bibr" coords="13,486.17,472.55,15.26,8.64" target="#b36">[37]</ref>, are capable to well model univariate time series. TCN <ref type="bibr" coords="13,332.18,483.46,16.74,8.64" target="#b37">[38]</ref> improves these methods by modeling multivariate time series as a unified entity and considering the dependencies between different variables. Follow-up research, such as LSTNet <ref type="bibr" coords="13,279.57,505.28,16.50,8.64" target="#b18">[19]</ref> and DeepState <ref type="bibr" coords="13,358.04,505.28,15.16,8.64" target="#b19">[20]</ref>, proposes more complex models to handle interlaced temporal and spatial clues by marrying sequential models with convolution networks or state space models. Recently, Transformer <ref type="bibr" coords="13,325.39,527.09,16.81,8.64" target="#b38">[39]</ref>-based approaches have made great leaps, especially in long-term forecasting <ref type="bibr" coords="13,249.41,538.00,15.29,8.64" target="#b39">[40]</ref>. For these methods, an encoder-decoder architecture is normally applied with improved self-and cross-attention, e.g., logsparse attention <ref type="bibr" coords="13,416.37,548.91,15.13,8.64" target="#b32">[33]</ref>, locality-sensitive hashing <ref type="bibr" coords="13,140.86,559.82,15.13,8.64" target="#b33">[34]</ref>, and probability sparse attention <ref type="bibr" coords="13,287.75,559.82,15.12,8.64" target="#b31">[32]</ref>. As time series can be viewed as a signal of mixed seasonalities, Zhou et al. further propose FEDformer <ref type="bibr" coords="13,317.44,570.73,16.46,8.64" target="#b13">[14]</ref> and a follow-up work FiLM <ref type="bibr" coords="13,447.73,570.73,16.46,8.64" target="#b29">[30]</ref> to rethink how spectral analysis benefits time series forecasting. Nevertheless, these methods do not explicitly model inter-time series relationships (i.e., spatial dependencies), and we elaborate on the connections between them and our research later in this section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_emtWWuD">B.2 Spatial-Temporal Graph Neural Networks</head><p xml:id="_skv585E">A line of research explores capturing time series relations using GNNs. For instance, DCRNN <ref type="bibr" coords="13,487.37,648.06,16.63,8.64" target="#b21">[22]</ref> combines a recurrent unit with graph diffusion <ref type="bibr" coords="13,299.89,658.97,11.75,8.64" target="#b4">[5]</ref> to simultaneously capture temporal and spatial dependencies, while Graph WaveNet <ref type="bibr" coords="13,262.52,669.88,16.73,8.64" target="#b22">[23]</ref> interleaves TCN <ref type="bibr" coords="13,352.19,669.88,16.74,8.64" target="#b37">[38]</ref> and graph diffusion layers. Subsequent studies, such as STSGCN <ref type="bibr" coords="13,248.08,680.79,15.40,8.64" target="#b26">[27]</ref>, MTGNN <ref type="bibr" coords="13,309.50,680.79,10.70,8.64" target="#b2">[3]</ref>, STFGNN <ref type="bibr" coords="13,368.20,680.79,15.40,8.64" target="#b27">[28]</ref>, and STG-NCDE <ref type="bibr" coords="13,459.71,680.79,15.41,8.64" target="#b17">[18]</ref>, adopt similar principles but other ingenious designs to better characterize underlying spatial-temporal clues. However, these methods struggle to model differently signed time series relations since their graph convolutions operate under the umbrella of message passing, which serves as low-pass filtering </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_TWEY2hD">G.2 Long-Term Forecasting</head><p xml:id="_MdrbFvH">In this subsection, we detail the experimental setting of long-term time series forecasting. Our results are in Tab. 2. The dataset statistics are in Tab. S1. For all baselines, we detail them as follows.</p><p xml:id="_6EDfM9h">• FiLM <ref type="bibr" coords="22,171.27,360.44,16.56,8.64" target="#b29">[30]</ref> first applies Legendre polynomial to approximate time series and then denoises approximations with a frequency-domain model based on Fourier projections. • FEDformer <ref type="bibr" coords="22,197.11,386.04,16.73,8.64" target="#b13">[14]</ref> proposes a frequency-enhanced Transformer framework for effective long-term time series forecasting. • Autoformer <ref type="bibr" coords="22,196.00,411.65,16.47,8.64" target="#b30">[31]</ref> designs a decomposition Transformer with the auto-correlation mechanism for long-term time series forecasting. • Informer <ref type="bibr" coords="22,185.40,437.26,16.48,8.64" target="#b31">[32]</ref> is an efficient Transformer with ProbSparse self-attention for long-term time series forecasting. • LogTrans <ref type="bibr" coords="22,188.03,462.86,16.73,8.64" target="#b32">[33]</ref> uses LogSparse attention to implement an efficient Transformer for time series forecasting. • Reformer <ref type="bibr" coords="22,187.58,488.47,16.52,8.64" target="#b33">[34]</ref> marries local-sensitive hashing with Transformer to significantly reduce the model complexity.</p><p xml:id="_URdJ8Hs">Similar to short-term forecasting, we adopt the MAE and RMSE as evaluation matrices. For dataset split and baseline settings, we follow <ref type="bibr" coords="22,252.74,531.16,15.12,8.64" target="#b29">[30]</ref>. Specifically, we use the split of 70%-10%-20% for all three datasets. On the Electricity dataset, we use the past 4 days' observations to predict the consumption of the next 4, 8, and 14 days. On the Solar-Energy and Weather datasets, we predict the next 16, 32, and 56 hours' readings by using the past 16-hour data. It is worth noting that we use Jacobi polynomial basis for long-term forecasting by default, which has two tunable parameters α and β (See Appendix E). The hyperparameter setting of our method for long-term forecasting is in Tab. S3. We provide our supplementary short-term forecasting results in Tab. S4, from which the following observations can be made:  In Fig. <ref type="figure" coords="23,137.50,626.24,8.84,8.64">S6</ref>, we study four important hyperparameters in TGC. Our experimental results lead to the following observations: (1) Adjusting the α in Gegenbauer polynomials impacts model performance variably across datasets. For instance, a larger α is favored in the PeMS datasets, as depicted in Fig. <ref type="figure" coords="23,125.42,658.97,17.36,8.64">S6a;</ref> (2) The polynomial degree should not be too small to avoid information loss, as demonstrated by the poor performance when K = 1 in Fig. <ref type="figure" coords="23,290.78,669.88,13.45,8.64">S6b</ref>. In practice, we set K between 3 and 5, as higher degrees do not bring additional performance gains; (3) Similarly, setting S too small or too large is not desirable, as shown in Fig. <ref type="figure" coords="23,244.27,691.70,13.34,8.64">S6c</ref>. This is to prevent information loss and mitigate the impact of noise; (4) Stacking more building blocks seems to result in better performance, as illustrated in Fig. <ref type="figure" coords="23,126.27,713.51,13.49,8.64">S6d</ref>. However, this comes at the cost of model efficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ru6uyxB">H.3 Additional Main Result Statistics</head><p xml:id="_26vdZyR">Tab. S5 and Tab. S6 present both the average performances and 95% confidence intervals for our results reported in Tab. 1 and Tab. 2 with five individual runs on seven real-world time series datasets, covering both short-term and long-term forecasting tasks. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="10,127.92,92.30,376.08,7.94;10,127.54,102.26,139.83,7.93" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_ygU4KrB">Graph representation learning</title>
+		<author>
+			<persName coords=""><surname>William L Hamilton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_fEZ8kaS">Synthesis Lectures on Artificial Intelligence and Machine Learning</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="1" to="159" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,121.41,376.08,7.77;10,127.92,131.21,376.08,7.93;10,127.37,141.18,168.51,7.93" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_dDqj2qU">Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Bing</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Haoteng</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhanxing</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_4ZK9wmR">Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence</title>
+				<meeting>the Twenty-Seventh International Joint Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="3634" to="3640" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,160.33,376.08,7.77;10,127.92,170.13,376.08,7.93;10,127.70,180.09,340.07,7.93" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_mzAJdE7">Connecting the dots: Multivariate time series forecasting with graph neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Zonghan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shirui</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Guodong</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jing</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaojun</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chengqi</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_BAJXrkz">Proceedings of the 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</title>
+				<meeting>the 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="753" to="763" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,199.24,376.08,7.77;10,127.60,209.04,376.41,7.93;10,127.92,219.17,65.01,7.77" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_unCRFAx">Convolutional neural networks on graphs with fast localized spectral filtering</title>
+		<author>
+			<persName coords=""><forename type="first">Michaël</forename><surname>Defferrard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xavier</forename><surname>Bresson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pierre</forename><surname>Vandergheynst</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_m6D2k6m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="3837" to="3845" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,238.16,376.08,7.77;10,127.37,247.96,289.10,7.93" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_PGhbRGe">Diffusion improves graph learning</title>
+		<author>
+			<persName coords=""><forename type="first">Johannes</forename><surname>Klicpera</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefan</forename><surname>Weißenberger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stephan</forename><surname>Günnemann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_STpW6aX">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="13366" to="13378" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,267.11,376.08,7.77;10,127.92,276.91,377.20,7.93;10,127.92,287.04,113.70,7.77" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_HPanZ2d">Beyond low-pass filters: Adaptive feature propagation on graphs</title>
+		<author>
+			<persName coords=""><forename type="first">Shouheng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dongwoo</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qing</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_NmrcEXs">Joint European Conference on Machine Learning and Knowledge Discovery in Databases</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="450" to="465" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,306.02,377.20,7.77;10,127.75,315.99,377.82,7.77;10,127.92,325.79,337.24,7.93" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_B4gJ9G8">Spectral temporal graph neural network for multivariate time-series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Defu</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yujing</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Juanyong</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ce</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xia</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Congrui</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yunhai</forename><surname>Tong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bixiong</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jing</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jie</forename><surname>Tong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_8M7nMk6">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="17766" to="17778" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,344.94,376.08,7.77;10,127.92,354.74,370.78,7.93" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_x9Ha3TA">Bernnet: Learning arbitrary graph spectral filters via bernstein approximation</title>
+		<author>
+			<persName coords=""><forename type="first">Mingguo</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhewei</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hongteng</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_rSkfsWJ">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="14239" to="14251" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,373.73,376.08,7.93;10,127.62,383.69,238.74,7.93" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_pkRCJhN">Signed graph convolutional networks</title>
+		<author>
+			<persName coords=""><forename type="first">Tyler</forename><surname>Derr</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yao</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiliang</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PuvZJVN">2018 IEEE International Conference on Data Mining (ICDM)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="929" to="934" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,402.84,376.08,7.77;10,127.92,412.65,377.20,7.93;10,127.92,422.77,20.17,7.77" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_hqCbbB7">Bin Yang, and Shirui Pan. Multivariate time series forecasting with dynamic graph neural odes</title>
+		<author>
+			<persName coords=""><forename type="first">Ming</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yu</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuan-Fang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Siheng</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mCdX9vh">IEEE Transactions on Knowledge and Data Engineering</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,441.76,376.08,7.77;10,127.92,451.56,376.08,7.93;10,127.70,461.52,171.62,7.93" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_unVSCKr">Graph sequential neural ode process for link prediction on dynamic and sparse graphs</title>
+		<author>
+			<persName coords=""><forename type="first">Linhao</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gholamreza</forename><surname>Haffari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shirui</forename><surname>Pan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_JdHJcAX">Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining</title>
+				<meeting>the Sixteenth ACM International Conference on Web Search and Data Mining</meeting>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="778" to="786" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,480.67,376.08,7.77;10,127.92,490.48,345.37,7.93" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_XRvzFrn">Neural temporal walks: Motif-aware representation learning on continuous-time dynamic graphs</title>
+		<author>
+			<persName coords=""><forename type="first">Ming</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuan-Fang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shirui</forename><surname>Pan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_5bmge8z">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,509.46,376.08,7.93;10,127.62,519.43,145.47,7.93" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_p8sG6JF">How powerful are spectral graph neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Xiyuan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Muhan</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Awggvkg">International Conference on Machine Learning</title>
+				<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,538.58,376.39,7.77;10,127.92,548.38,376.08,7.93;10,127.54,558.34,243.27,7.93" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_hv7mrwn">Fedformer: Frequency enhanced decomposed transformer for long-term series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Tian</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ziqing</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qingsong</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xue</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Liang</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rong</forename><surname>Jin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ga2PVhS">International Conference on Machine Learning</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">162</biblScope>
+			<biblScope unit="page" from="27268" to="27286" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,577.49,376.08,7.77;10,127.92,587.29,376.08,7.93;10,127.62,597.26,166.83,7.93" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_VvKwhfj">Provably expressive temporal graph networks</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Amauri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Diego</forename><surname>Souza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Samuel</forename><surname>Mesquita</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Kaski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Vikas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Garg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_jGygcWR">Advances in Neural Information Processing Systems</title>
+				<editor>
+			<persName><forename type="first">Alice</forename><forename type="middle">H</forename><surname>Oh</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Alekh</forename><surname>Agarwal</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Danielle</forename><surname>Belgrave</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Kyunghyun</forename><surname>Cho</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,616.41,376.08,7.77;10,127.92,626.21,376.75,7.93;10,127.62,636.33,68.99,7.77" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_yE9CUzp">Empirical orthogonal representation of time series in the frequency domain. part i: Theoretical considerations</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Robert</forename><forename type="middle">E</forename><surname>Wallace</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Dickinson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_NEEBtTC">Journal of Applied Meteorology and Climatology</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="887" to="892" />
+			<date type="published" when="1972">1972</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,655.32,376.08,7.77;10,127.92,665.12,376.08,7.93;10,127.77,675.09,139.81,7.93" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_ETypz7R">Transform once: Efficient operator learning in frequency domain</title>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Poli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefano</forename><surname>Massaroli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Federico</forename><surname>Berto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jinkyoo</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tri</forename><surname>Dao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christopher</forename><surname>Re</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefano</forename><surname>Ermon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_eSKXV8e">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,127.92,694.24,377.57,7.77;10,127.92,704.04,377.20,7.93;10,127.92,714.16,87.66,7.77" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_aAHsUrZ">Graph neural controlled differential equations for traffic forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Jeongwhan</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hwangyong</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jeehyun</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Noseong</forename><surname>Park</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_r8gqTnn">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+				<meeting>the AAAI Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="6367" to="6374" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,76.13,376.08,7.77;11,127.92,85.93,376.08,7.94;11,127.77,95.89,181.07,7.94" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_m8YWUEu">Modeling long-and short-term temporal patterns with deep neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Guokun</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wei-Cheng</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yiming</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hanxiao</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Y5NGP7J">Proceedings of 41st International ACM SIGIR Conference on Information Retrieval</title>
+				<meeting>41st International ACM SIGIR Conference on Information Retrieval</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="95" to="104" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,113.98,376.08,7.77;11,127.75,123.78,376.25,7.93;11,127.64,133.75,162.22,7.93" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_3nMpVQw">Deep state space models for time series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Syama</forename><surname>Sundar Rangapuram</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthias</forename><forename type="middle">W</forename><surname>Seeger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jan</forename><surname>Gasthaus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lorenzo</forename><surname>Stella</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuyang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tim</forename><surname>Januschowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_u4TREcQ">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="7796" to="7805" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,151.84,376.31,7.77;11,127.92,161.64,376.08,7.93;11,127.92,171.61,94.46,7.93" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_P9mRs4B">Think globally, act locally: A deep neural network approach to high-dimensional time series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Rajat</forename><surname>Sen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hsiang-Fu</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Inderjit S</forename><surname>Dhillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_exHqARh">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">32</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,189.70,377.32,7.77;11,127.92,199.50,344.40,7.93" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_CwVWnaQ">Diffusion convolutional recurrent neural network: Data-driven traffic forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Yaguang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rose</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cyrus</forename><surname>Shahabi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yan</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_SgT9my6">International Conference on Learning Representations</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,217.59,376.08,7.77;11,127.92,227.40,376.08,7.93;11,127.37,237.36,168.51,7.93" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_C66NPqS">Graph wavenet for deep spatial-temporal graph modeling</title>
+		<author>
+			<persName coords=""><forename type="first">Zonghan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shirui</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Guodong</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jing</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chengqi</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_73rw94p">Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence</title>
+				<meeting>the Twenty-Eighth International Joint Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1907" to="1913" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,255.45,376.08,7.77;11,127.92,265.25,376.08,7.93;11,127.37,275.22,201.96,7.93" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_uh2hUaM">Attention based spatial-temporal graph convolutional networks for traffic flow forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Shengnan</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Youfang</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ning</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chao</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Huaiyu</forename><surname>Wan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_jS9tssq">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+				<meeting>the AAAI Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="922" to="929" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,293.31,376.08,7.77;11,127.92,303.11,376.08,7.93;11,127.92,313.07,376.08,7.93;11,127.92,323.20,66.99,7.77" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_WfgVK5D">Stg2seq: spatial-temporal graph to sequence model for multi-step passenger demand forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Lei</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lina</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xianzhi</forename><surname>Salil S Kanhere</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Quan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Sheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_zzqB7Te">28th International Joint Conference on Artificial Intelligence, IJCAI 2019</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1981" to="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,341.13,376.08,7.77;11,127.92,350.93,353.34,7.93" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_tzxpNYt">Lsgcn: Long short-term traffic prediction with graph convolutional networks</title>
+		<author>
+			<persName coords=""><forename type="first">Rongzhou</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chuyin</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yubao</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Genan</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Weiyang</forename><surname>Kong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_5jQG8Np">IJCAI</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="2355" to="2361" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,369.03,376.08,7.77;11,127.92,378.83,376.08,7.93;11,127.62,388.79,161.47,7.93" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_BucG6aM">Space-time-separable graph convolutional network for pose forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Theodoros</forename><surname>Sofianos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alessio</forename><surname>Sampieri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Luca</forename><surname>Franco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Fabio</forename><surname>Galasso</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_4aPT6fP">Proceedings of the IEEE/CVF International Conference on Computer Vision</title>
+				<meeting>the IEEE/CVF International Conference on Computer Vision</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="11209" to="11218" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,406.88,377.65,7.77;11,127.92,416.69,319.93,7.93" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_3aPGBXG">Spatial-temporal fusion graph neural networks for traffic flow forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Mengzhang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhanxing</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_mH6zaY9">Proceedings of the AAAI conference on artificial intelligence</title>
+				<meeting>the AAAI conference on artificial intelligence</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="4189" to="4196" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,434.78,376.24,7.77;11,127.92,444.58,376.43,7.93;11,127.92,454.54,126.27,7.93" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_UkzVy6b">Spatial-temporal graph ode networks for traffic flow forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Zheng</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qingqing</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Guojie</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kunqing</forename><surname>Xie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_fJrqDJZ">Proceedings of the 27th ACM SIGKDD conference on knowledge discovery &amp; data mining</title>
+				<meeting>the 27th ACM SIGKDD conference on knowledge discovery &amp; data mining</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="364" to="373" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,472.64,377.33,7.77;11,127.92,482.44,376.08,7.93;11,127.77,492.40,139.81,7.93" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_qverpmj">Film: Frequency improved legendre memory model for long-term time series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Tian</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ziqing</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qingsong</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Liang</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tao</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wotao</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rong</forename><surname>Jin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_4mM5F9u">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,510.50,376.08,7.77;11,127.60,520.30,376.41,7.93;11,127.70,530.26,171.91,7.93" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_7uMdD9Q">Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Haixu</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiehui</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jianmin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mingsheng</forename><surname>Long</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_RGchxCz">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="22419" to="22430" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,548.35,377.65,7.77;11,127.92,558.16,376.08,7.93;11,127.37,568.12,253.59,7.93" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_hYwGrYa">Informer: Beyond efficient transformer for long sequence time-series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Haoyi</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shanghang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jieqi</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shuai</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jianxin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hui</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wancai</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_WjjMRET">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+				<meeting>the AAAI Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="11106" to="11115" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,586.21,377.65,7.77;11,127.92,596.17,376.08,7.77;11,127.37,605.98,251.07,7.93" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_9j6dqsS">Enhancing the locality and breaking the memory bottleneck of transformer on time series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Shiyang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaoyong</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiyou</forename><surname>Yao Xuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wenhu</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yu-Xiang</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xifeng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Yan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_wZdaeTx">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">32</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,127.92,623.91,376.08,7.93;11,127.62,633.87,235.14,7.93" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_RejGc9C">Reformer: The efficient transformer</title>
+		<author>
+			<persName coords=""><forename type="first">Nikita</forename><surname>Kitaev</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anselm</forename><surname>Levskaya</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Q9xaU4t">International Conference on Learning Representations. OpenReview.net</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,91.98,376.08,7.94;26,127.64,101.94,277.14,7.93" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_by6j6ub">Vector autoregressive models</title>
+		<author>
+			<persName coords=""><forename type="first">Helmut</forename><surname>Lütkepohl</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_wgCTNMz">Handbook of Research Methods and Applications in Empirical Macroeconomics</title>
+				<imprint>
+			<publisher>Edward Elgar Publishing</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="139" to="164" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,119.87,377.57,7.93;26,127.92,129.84,183.07,7.93" xml:id="b35">
+	<monogr>
+		<title level="m" type="main" xml:id="_FwVnv9h">Time series analysis: forecasting and control</title>
+		<author>
+			<persName coords=""><forename type="first">Gwilym</forename><forename type="middle">M</forename><surname>George Ep Box</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gregory</forename><forename type="middle">C</forename><surname>Jenkins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Greta</forename><forename type="middle">M</forename><surname>Reinsel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Ljung</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<publisher>John Wiley &amp; Sons</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,147.93,377.57,7.77;26,127.92,157.73,376.08,7.93;26,127.77,167.70,198.33,7.93" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_fAyh7bE">Convolutional LSTM network: A machine learning approach for precipitation nowcasting</title>
+		<author>
+			<persName coords=""><forename type="first">Xingjian</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhourong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dit-Yan</forename><surname>Yeung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wai-Kin</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wang-Chun</forename><surname>Woo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_NFnRcxn">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="802" to="810" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,185.79,376.08,7.77;26,127.92,195.59,295.16,7.93" xml:id="b37">
+	<monogr>
+		<title level="m" type="main" xml:id="_t3hxBXn">An empirical evaluation of generic convolutional and recurrent networks for sequence modeling</title>
+		<author>
+			<persName coords=""><forename type="first">Shaojie</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zico</forename><surname>Kolter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vladlen</forename><surname>Koltun</surname></persName>
+		</author>
+		<idno>abs/1803.01271</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">ArXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="26,127.92,213.68,376.08,7.77;26,127.92,223.49,376.08,7.93;26,127.70,233.45,120.53,7.93" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_Bfu2SPW">Attention is all you need</title>
+		<author>
+			<persName coords=""><forename type="first">Ashish</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Noam</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Niki</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Llion</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aidan</forename><forename type="middle">N</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Illia</forename><surname>Polosukhin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_jqqr4Gy">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="5998" to="6008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,251.54,377.57,7.77;26,127.92,261.34,377.20,7.93;26,127.92,271.47,20.17,7.77" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_r3frQC5">Transformers in time series: A survey</title>
+		<author>
+			<persName coords=""><forename type="first">Qingsong</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tian</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chaoli</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Weiqi</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ziqing</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Junchi</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Liang</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_SCuHKP8">International Joint Conference on Artificial Intelligence(IJCAI)</title>
+				<imprint>
+			<biblScope unit="page">2023</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,289.40,376.08,7.77;26,127.92,299.20,377.20,7.93;26,127.92,309.33,20.17,7.77" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_uVsCXyV">Predict then propagate: Graph neural networks meet personalized pagerank</title>
+		<author>
+			<persName coords=""><forename type="first">Johannes</forename><surname>Klicpera</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aleksandar</forename><surname>Bojchevski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stephan</forename><surname>Günnemann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_kG6gByc">International Conference on Learning Representations</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,327.26,376.08,7.77;26,127.92,337.06,376.09,7.93;26,127.62,347.02,222.97,7.93" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" xml:id="_WuppZdg">Graph convolutional networks using heat kernel for semi-supervised learning</title>
+		<author>
+			<persName coords=""><forename type="first">Bingbing</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Huawei</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qi</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Keting</forename><surname>Cen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xueqi</forename><surname>Cheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_5WV5Z5H">Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence</title>
+				<meeting>the Twenty-Eighth International Joint Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1928" to="1934" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,365.12,376.08,7.77;26,127.77,374.92,221.24,7.93" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_PpkVKjV">Semi-supervised classification with graph convolutional networks</title>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><forename type="middle">N</forename><surname>Kipf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Max</forename><surname>Welling</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_hcFqaM5">International Conference on Learning Representations</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,393.01,376.24,7.77;26,127.92,402.81,376.08,7.93;26,127.92,412.78,176.80,7.93" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_jJKNNYf">Normalizing flow-based neural process for few-shot knowledge graph completion</title>
+		<author>
+			<persName coords=""><forename type="first">Gholamreza</forename><surname>Haffari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Linhao</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuan-Fang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shirui</forename><surname>Pan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ZPNnCbX">The 46th International ACM SIGIR Conference on Research and Development in Information Retrieval</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,430.71,376.40,7.93;26,127.92,440.83,43.08,7.77" xml:id="b44">
+	<monogr>
+		<title level="m" type="main" xml:id="_Y842Jhd">Convex optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Stephen</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stephen</forename><forename type="middle">P</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lieven</forename><surname>Vandenberghe</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<publisher>Cambridge university press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,458.77,377.65,7.77;26,127.70,468.57,266.51,7.93" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_bPTt88q">Relative-error cur matrix decompositions</title>
+		<author>
+			<persName coords=""><forename type="first">Petros</forename><surname>Drineas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><forename type="middle">W</forename><surname>Mahoney</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shan</forename><surname>Muthukrishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mT7AUfJ">SIAM Journal on Matrix Analysis and Applications</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="844" to="881" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,486.50,376.08,7.93;26,127.92,496.46,167.63,7.93" xml:id="b46">
+	<analytic>
+		<title level="a" type="main" xml:id="_qt32tdB">Polynomial least squares fitting in the bernstein basis</title>
+		<author>
+			<persName coords=""><forename type="first">Ana</forename><surname>Marco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">José-Javier</forename><surname>Martı</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_T8ruxNj">Linear Algebra and its Applications</title>
+		<imprint>
+			<biblScope unit="volume">433</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1254" to="1264" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,514.56,376.08,7.77;26,127.37,524.36,251.07,7.93" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_qTafmgN">Sequence to sequence learning with neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Quoc V</forename><surname>Le</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_HuDeh5v">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="volume">27</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,127.92,542.45,376.39,7.77;26,127.92,552.25,376.08,7.93;26,127.92,562.22,187.44,7.93" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" xml:id="_4Cnczsu">Stock price prediction via discovering multi-frequency trading patterns</title>
+		<author>
+			<persName coords=""><forename type="first">Liheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Charu</forename><surname>Aggarwal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Guo-Jun</forename><surname>Qi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Vcr5jKj">Proceedings of the 23rd ACM SIGKDD international conference on knowledge discovery and data mining</title>
+				<meeting>the 23rd ACM SIGKDD international conference on knowledge discovery and data mining</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="2141" to="2149" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_aKNKjfy">Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiology</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,42.88,177.85,106.86,9.45"><forename type="first">Benjamin</forename><forename type="middle">K</forename><surname>Schneider</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,162.16,177.85,62.66,9.45"><forename type="first">Jessica</forename><surname>Ward</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,237.25,177.85,79.42,9.45"><forename type="first">Samantha</forename><surname>Sotillo</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,329.08,177.85,104.51,9.45"><forename type="first">Catherine</forename><surname>Garelli-Paar</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,446.02,177.85,61.29,9.45"><forename type="first">Emilie</forename><surname>Guillot</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,519.74,177.85,23.34,9.45;1,42.88,190.60,44.94,9.45"><forename type="first">Marc</forename><surname>Prikazsky</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,117.78,190.60,91.50,9.45"><roleName>DVM</roleName><forename type="first">Jonathan</forename><forename type="middle">P</forename><surname>Mochel</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">SMART Pharmacology</orgName>
+								<orgName type="institution">Iowa State University</orgName>
+								<address>
+									<postCode>50011-1250</postCode>
+									<settlement>Ames</settlement>
+									<region>IA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Veterinary Clinical Sciences</orgName>
+								<orgName type="institution">Iowa State University</orgName>
+								<address>
+									<postCode>50011-1250</postCode>
+									<settlement>Ames</settlement>
+									<region>IA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="institution">Ceva Santé Animale</orgName>
+								<address>
+									<postCode>33 500</postCode>
+									<settlement>Libourne</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department" key="dep1">Professor of Systems Pharmacology</orgName>
+								<orgName type="department" key="dep2">European Veterinary Specialist in Pharmacology and Toxicology</orgName>
+								<orgName type="institution">Iowa State University College of Vet. Medicine</orgName>
+								<address>
+									<addrLine>1809 S Riverside Dr</addrLine>
+									<postCode>2448, 50011-1250, 515</postCode>
+									<settlement>Lloyd, Ames, Phone</settlement>
+									<region>IA</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_eBZxBaz">Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiology</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">91464D2B9517D152043616103F071815</idno>
+					<idno type="DOI">10.1101/2022.11.14.516497</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_ZmTnmgn">conceptualization</term>
+					<term xml:id="_Nr67K5F">data curation</term>
+					<term xml:id="_GWRh2Gt">investigation</term>
+					<term xml:id="_QPd9Sum">writing -original draft preparation Sotillo: data curation</term>
+					<term xml:id="_nx8QAKj">investigation</term>
+					<term xml:id="_VgSSWtk">writing -review &amp; editing Garelli-Paar: conceptualization</term>
+					<term xml:id="_VbvrKVa">investigation</term>
+					<term xml:id="_qNyW9QB">writing -review &amp; editing Guillot: conceptualization</term>
+					<term xml:id="_fdzR36N">investigation</term>
+					<term xml:id="_znngxfz">writing -original draft preparation Prikazsky: conceptualization</term>
+					<term xml:id="_rTffYz8">investigation</term>
+					<term xml:id="_Hrwafvy">writing -review &amp; editing Mochel: supervision</term>
+					<term xml:id="_39yyQFy">project administration</term>
+					<term xml:id="_cFS7RZb">conceptualization</term>
+					<term xml:id="_RSyMq27">methodology</term>
+					<term xml:id="_EvAWcDD">investigation</term>
+					<term xml:id="_NUZsSDP">funding acquisition</term>
+					<term xml:id="_HA3Whpg">resources</term>
+					<term xml:id="_NRT7bE8">formal analysis</term>
+					<term xml:id="_FhQtYAF">validation</term>
+					<term xml:id="_KdjMW7f">writing -original draft preparation November 16</term>
+					<term xml:id="_rgyTa83">2022</term>
+					<term xml:id="_tC95QDg">Version 1 Copyright: Authors&apos; contribution: Schneider: methodology</term>
+					<term xml:id="_3hPm37J">investigation</term>
+					<term xml:id="_ZnpU7kf">formal analysis</term>
+					<term xml:id="_hrYqw52">software</term>
+					<term xml:id="_4dhBEkn">validation</term>
+					<term xml:id="_xCeX6kn">visualization</term>
+					<term xml:id="_VrvNDSD">writing -original draft preparation</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_A9v3d4c"><p xml:id="_HSXbu9a">The human and canine renin-angiotensin-aldosterone-systems (RAAS) play a central role in the pathophysiology of congestive heart failure (CHF), justifying the use of angiotensin converting enzyme inhibitors inhibitors (ACEi) in this indication. Seminal studies in canine CHF had suggested that the pharmacological action of benazepril was relatively independent of doses &gt; 0.25 mg/kg P.O, thereby providing a rationale for the European label dose of 0.25 mg/kg P.O q24h in dogs with cardiovascular 1 2 2 3 3 3 1 * 1 2 3 12/5/23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 2/28</p><p xml:id="_99Fnvrj">diseases. However, most of these earlier studies on benazepril pharmacodynamics relied on measures of ACE activity -a sub-optimal endpoint to characterize the effect of benazepril on the RAAS.</p><p xml:id="_VeXMUTW">Nonlinear mixed-effects (NLME) modeling is an established framework for characterizing the effect of therapeutics on complex biological systems, such as the RAAS cascade. Importantly for therapeutic schedule optimization, one can use such a model to predict the outcomes of various hypothetical dosing schedules via simulation.</p><p xml:id="_Vf6BRTk">The objectives of this study were (i) to expand on previous NLME modeling efforts of the dose-exposureresponse relationship of benazepril on biomarkers of the RAAS which are relevant to CHF pathophysiology and disease prognosis {angiotensins I, II, III, IV, (1-7)} by using a quantitative systems pharmacology (QSP) modeling approach; and (ii) to develop a software implementation of the model capable of simulating clinical trials in benazepril in dogs bedside dose optimization.</p><p xml:id="_zWUuD2c">This study expands on previous modeling efforts to characterize the changes in RAAS pharmacodynamics in response to benazepril administration and showcase how QSP modeling can be used for efficient dose optimization of ACEis at the bedside. Our results suggest that 0.5 mg/kg PO q12h of benazepril produced the most robust reduction in AngII and upregulation of RAAS alternative pathway biomarkers. This model will eventually be expanded to include relevant clinical endpoints, which will be evaluated in an upcoming prospective trial in canine patients with CHF.</p><p xml:id="_vjCDyKv">AUTHOR SUMMARY Congestive heart failure (CHF) is a disease of the heart, common to both dogs and humans, where the heart is not healthy enough to pump blood around the body efficiently. Because the blood isn't moving around the body as efficiently, it tends to get congested in various areas of the body and increases strain on the heart. Benazepril is a drug for CHF used in both dogs and humans to reduce congestion and improve the functioning of the cardiovascular system. Although benazepril is effective, there's evidence that suggests the dosing could be improved if the therapeutic was further studied.</p><p xml:id="_SRJwhZC">In this experiment, we tested benazepril at several safe dosages in well-cared for and healthy dogs to collect data on the relationship between dose size, dosing frequency, and effect on the cardiovascular system. Using this data, we built computer models of benazepril to simulate many clinical trials. By studying these simulations, we were able to make several predictions about the optimal dosing schedule of benazepril in dogs. We've also built a web-app version of the computer model for veterinary researchers to use, modify, and study. This work also provides a platform and roadmap for optimizing benazepril dosages in human CHF.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="27" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="28" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_3AmM5j4">INTRODUCTION</head><p xml:id="_WeSajpU">Although the exact pathophysiology of the heart diseases underlying congestive heart failure <ref type="bibr" coords="2,496.25,765.01,29.99,9.93">(CHF)</ref> differ between man and his best friend, overactivation of the renin-angiotensin-aldosterone system (RAAS) plays a key role in the pathogenesis and development of CHF in both humans and dogs. To reduce RAAS activation, there is a substantial history of using ACEis, such as benazepril, to treat CHF in both species <ref type="bibr" coords="3,107.82,76.19,9.60,9.93" target="#b0">(1)</ref><ref type="bibr" coords="3,117.43,76.19,4.80,9.93" target="#b1">(2)</ref><ref type="bibr" coords="3,122.23,76.19,9.60,9.93" target="#b2">(3)</ref>. This makes the use of benazepril to treat CHF in canines and humans an excellent case study for applying the One Health Initiative paradigm. This paradigm recognizes that accumulating data on the effect of therapeutics on CHF in canines has the potential to benefit therapeutic management of CHF in humans and vice versa <ref type="bibr" coords="3,276.28,137.72,12.41,9.93" target="#b3">(4)</ref>.</p><p xml:id="_5Dfybxq">The RAAS is a neurohormonal compensatory system which primarily manages blood volume and pressure by modulating electrolyte transport and vascular tone. The contemporary model of RAAS activation has two main components. The classical RAAS pathway refers to the peptide cascade from angiotensinogen to angiotensin I (AngI), and then from AngI to angiotensin II (AngII). These enzymatic reactions are catalyzed by renin and ACE, respectively, and ultimately lead to increased aldosterone (ALD) production (see Fig. <ref type="figure" coords="3,176.41,272.03,4.60,9.93" target="#fig_1">1</ref>; (4)). Short-term physiologic consequences of classical RAAS activation include vasoconstriction, renal sodium and water retention, and increased blood pressure. Long-term physiological consequences include fluid overload, increased cardiac afterload, and myocardial and vascular fibrosis <ref type="bibr" coords="3,124.95,333.56,9.60,9.93" target="#b4">(5)</ref><ref type="bibr" coords="3,134.55,333.56,4.80,9.93" target="#b5">(6)</ref><ref type="bibr" coords="3,134.55,333.56,4.80,9.93" target="#b6">(7)</ref><ref type="bibr" coords="3,134.55,333.56,4.80,9.93" target="#b7">(8)</ref><ref type="bibr" coords="3,139.35,333.56,9.60,9.93" target="#b8">(9)</ref>. Essentially, chronic long-term classical RAAS activation both contributes to, and is stimulated by, the development of CHF <ref type="bibr" coords="3,246.65,353.82,18.70,9.93" target="#b9">(10,</ref><ref type="bibr" coords="3,265.35,353.82,14.03,9.93" target="#b10">11)</ref>, while classical RAAS pathway downregulation has been associated with improved long-term prognosis in CHF <ref type="bibr" coords="3,335.07,374.83,15.08,9.93" target="#b8">(9,</ref><ref type="bibr" coords="3,350.15,374.83,10.05,9.93" target="#b11">(12)</ref><ref type="bibr" coords="3,360.20,374.83,5.03,9.93" target="#b12">(13)</ref><ref type="bibr" coords="3,360.20,374.83,5.03,9.93" target="#b13">(14)</ref><ref type="bibr" coords="3,365.23,374.83,15.08,9.93" target="#b14">(15)</ref>. The alternative RAAS pathway acts as a counterregulatory mechanism against classical pathway activation. Activation of the alternative RAAS pathway is characterized by catalysis of AngII to angiotensin (1-7) (i.e. Ang(1-7)) by the enzyme ACE2. In turn, Ang(1-7) activates Mas receptors leading to vasodilatation, diuresis, and natriuresis <ref type="bibr" coords="3,523.75,436.35,18.14,9.93" target="#b15">(16)</ref>.</p><p xml:id="_zwpJBCu">Via this physiological effect, chronic alternative RAAS activation in CHF has been associated with reduced risk of heart failure in patients with reduced and preserved ejection fraction. An ideal therapeutic drug candidate for CHF would therefore modulate both pathways at once, downregulating the activity of the classical RAAS while preserving or upregulating the alternative RAAS pathway <ref type="bibr" coords="3,447.82,518.14,18.14,9.93" target="#b12">(13)</ref>. However, little is known about the effect of benazepril on the alternative RAAS in either humans or dogs.</p><p xml:id="_ya5h38r">about:blank 4/28 Benazepril inhibits ACE, therefore activating the alternative RAAS pathway (in green). Activation of the alternative RAAS pathway is characterized by catalysis of Ang II to Ang1-7 by the enzyme ACE2. In turn, Ang1-7 activates Mas receptors leading to vasodilatation, diuresis, and natriuresis. These effects are protective against CHF.</p><p xml:id="_eMFHxsw">Our goal is to use mathematical modeling to determine a dosage which both reduces classical RAAS pathway activation and stimulates alternative RAAS pathway activation. This hypothetical dosage would maximize CHF-protective effects of benazepril.</p><p xml:id="_Qk48e6w">Benazepril hydrochloride is a non-sulfhydryl ACEi commonly used for the management of CHF in both humans and dogs. Like other ACEi, benazepril is a prodrug that is rapidly converted through hydrolysis to its active benazeprilat by esterases, mainly in the liver <ref type="bibr" coords="4,320.98,484.38,18.14,9.93" target="#b16">(17)</ref>. Although frequently prescribed, the recommended dosage range of benazepril is quite broad and there is no clear consensus on the ideal dose to be used in patients with CHF. In humans, benazepril is typically prescribed for hypertension at an initial dose of 2.5-10 mg per day and up titrated to 20 or 40 mg per day, administered either once or twice daily (q24h or q12h) which is roughly equivalent to 0.5 mg/kg q12h for a 60 kg adult <ref type="bibr" coords="4,480.29,566.16,18.14,9.93" target="#b17">(18)</ref>. In dogs, the labeled dose of benazepril in the EU is 0.25-1.0 mg/kg PO q24h, whereas ACVIM veterinary consensus statements recommend a dose of 0.5 mg/kg PO q12h <ref type="bibr" coords="4,363.27,607.43,18.14,9.93" target="#b18">(19)</ref>. Pharmacokinetic (PK) and pharmacodynamic (PD) studies comparing various doses of benazepril in healthy dogs have not provided consistent recommendations to date. The study that was used for registration of benazepril in the EU showed that a single PO dose of benazepril effectively suppressed ACE activity for up to 24 hours, and that ACE inhibition in plasma was independent of dosage ≥ 0.25 mg/kg (2). However, subsequent reanalysis of these data using mathematical modeling suggested that q12h dosing (as opposed to q24h dosing) would achieve greater inhibition of ACE with the same q24h total dose <ref type="bibr" coords="4,511.57,730.49,18.14,9.93" target="#b19">(20)</ref>.</p><p xml:id="_bMcgjM6">Furthermore, a different study of single dose enalapril and benazepril at a dosage of 0.5 mg/kg indicated a much shorter duration of effect, with ACE suppression lasting &lt; 12 hours <ref type="bibr" coords="4,408.09,771.76,18.14,9.93" target="#b20">(21)</ref>, and a recent retrospective study in dogs with valvular heart disease suggested improved outcomes with q12h dosage <ref type="bibr" coords="5,42.88,55.18,18.14,9.93" target="#b21">(22)</ref>.</p><p xml:id="_JYrq6xJ">There are several reasons why developing consistent recommendations for dosing of ACEi has proven challenging in veterinary medicine. Historically, ACE activity was used as a surrogate for RAAS activity.</p><p xml:id="_jyD7Dwh">Recently, however, ACE activity has been shown to be an inefficient measure of RAAS activation.</p><p xml:id="_PnvjJxp">Numerous studies in humans and dogs have shown a lack of correlation between circulating ACE activity and Ang II concentrations <ref type="bibr" coords="5,207.06,169.23,13.66,9.93" target="#b3">(4,</ref><ref type="bibr" coords="5,220.72,169.23,13.66,9.93" target="#b22">23)</ref>. A second challenge in developing scheduling recommendations is the significant chronobiological modulation of the RAAS. Previous experimental models of RAAS activation failed to consider the chronobiology of the RAAS, while contemporary research has shown that biomarkers of the renin pathway are subject to circadian variations in dogs <ref type="bibr" coords="5,429.43,230.76,14.16,9.93" target="#b3">(4,</ref><ref type="bibr" coords="5,443.59,230.76,14.16,9.93" target="#b22">23,</ref><ref type="bibr" coords="5,457.75,230.76,14.16,9.93" target="#b23">24)</ref>. Finally, existing PKPD studies on the effect of various ACEi have not consistently sampled biomarkers of alternative RAAS activation in addition to biomarkers of classical RAAS activation.</p><p xml:id="_EZ9cH4M">Overall, although the effects of ACEi, such as benazepril, on ACE activity have been fairly well characterized, and the benefit of ACE inhibition in CHF has been definitively established in several clinical trials in both humans and dogs (0.25 to 1.0 mg/kg q12h-q24h), little is known about the effect of benazepril on the alternative RAAS pathway in either species. Understanding the dose-dependent effects of benazepril on biomarkers of both the classical and alternative RAAS pathways in dogs would allow exploration of benazepril dosages that produce a downregulation of the classical RAAS while preserving, or upregulating, the alternative RAAS. This would translate into an optimization of the clinical benefit. Accumulating data that inform such a nuanced approach to dose optimization in dogs would provide valuable translational information for similar dose optimization of ACEi in humans. To model and predict the dose-dependent effects of benazepril on the classical and alternative arm of the RAAS, we aimed to build a nonlinear mixed-effects (NLME) model of benazepril PKPD. NLME modeling of benazepril PKPD had already previously been shown to be an efficient method for describing the effect of benazepril on the classical RAAS in canines and is a well-accepted framework for building PKPD models <ref type="bibr" coords="5,81.47,570.67,17.65,9.93" target="#b10">(11)</ref>.</p><p xml:id="_ZPuZ9nj">To produce data for this modeling and simulation effort, nine healthy beagles were intensively sampled while administered benazepril at various dosages and frequencies. After producing the data, our objective was to use a quantitative-systems pharmacology (QSP) model to characterize the PKPD relationship of benazepril(at) on biomarkers of the RAAS which are relevant to CHF pathophysiology and associated with morbidity/mortality {angiotensins I, II, III, IV, (1-7)}. QSP modeling is a subgroup of PKPD models which seeks to describe the behavior of a pharmaceutical in terms of the biology of its mechanism of action. After developing and calibrating the model, we further developed a software implementation of the benazeprilat-RAAS QSP model, which is capable of rapidly simulating the effect of benazepril HCL at various doses in a larger population of virtual dogs. By developing an easy-to-use simulation interface for our model, the objective of this work was to make a first prediction of the optimal dose/time of benazepril administration in dogs in support of future investigations in patients with CHF.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_RZNgm6T">RESULTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_QKYBK6M">Animal Safety</head><p xml:id="_6jSgFa8">All study dogs received all oral doses of benazepril as intended. Dogs were monitored for adverse effects associated with benazepril labeling as well those associated with general animal welfare e.g.</p><p xml:id="_H2GPCby">vomiting, diarrhea, inappetence, weakness/hypotension, fatigue, incordination, hypercreatininemia, etc..</p><p xml:id="_h4BbjNg">No adverse effects were observed in the animals during the course of the study, and serial complete blood counts and chemistry panels performed showed no evidence of hematologic or biochemical abnormalities from benazepril dosing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Gj38M6k">Data Mining</head><p xml:id="_pTxgt9g">Data were collated and standardized for mathematical modeling as instructed in the Monolix documentation <ref type="bibr" coords="6,118.24,344.81,18.14,9.93" target="#b36">(38)</ref>. Except for standardization of units as molar amounts and concentrations, raw data were left untransformed. Doses were transformed using the molecular weight of benazepril HCl, while concentrations were transformed using the molecular weight of the active metabolite -benazeprilat.</p><p xml:id="_TAmhD6m">Data were reviewed for bulk trends and data quality both before, during, and after mathematical modeling.</p><p xml:id="_BPDDErq">Data below the lower limit of quantification (LLOQ) were modeled by adding to the likelihood function a term describing the probability that the true observation lies between zero and the LLOQ, which is equivalent to the M3 method implemented in the NONMEM (Non-linear Mixed Effects Modeling) software.</p><p xml:id="_HzB6MGc">The log time-course of benazeprilat as well as the relevant RAAS biomarkers are reproduced in Fig. <ref type="figure" coords="6,542.75,551.91,4.60,9.93" target="#fig_3">2</ref>.</p><p xml:id="_ufxYtnR">Of note, there was some background experimental noise in pharmacodynamics of some biomarkers that ultimately reduced model prediction quality. The noise was most prominent in the biomarker Angiotensin III (2-8) (i.e. AngIII), where the order of the limit of quantification (2.5 pmol/L) was approximately half of the measurement at the 3 quartile (5.1 pmol/L). Suspected outliers were flagged and tested as model covariates for statistical significance. However, none of the flagged data points were determined to be significant enough outliers to exclude from model building.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_s9YTHZs">RAAS Biomarkers Timecourse</head><p xml:id="_pxFU2X9">An overview of the plasma timecourse of several RAAS biomarkers as well as benazepril's active metabolite, benazeprilat. Each subject's timecourse is indicated with a red line and points. The golden curve is the mean timecourse value.</p><p xml:id="_f9ZpzBt">Following is a summary of the model building process. The base empirical version of the full model was largely an adaption of the benazeprilat PKPD model reported in Mochel et. al <ref type="bibr" coords="7,420.26,386.83,18.14,9.93" target="#b22">(23)</ref>. In all, over 100 different structural modifications were tested, starting from the empirical base model, to produce our final QSP model. To simplify results reporting, the most important modifications tested are summarized in the following two sections. Despite the division of sections into PK and PD, after building a base model to work from, all model fits were performed on the full PKPD dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_qDGqKpu">PK Model Building</head><p xml:id="_NRweJBe">The PK portion of the base model was a conventional Zero-, first-, mixed-, and sequential absorption structures were tested to model drug absorption from the depot compartment (i.e., intestinal lumen). A model largely equivalent to sequential absorption, but made to be continuous, was found to outperform other competitive models. This model substructure uses a series of 1-order absorptions but can be seen as a continuous analog to a sequential 0-/1-order absorption.</p><p xml:id="_p7TKrJY">In this model, the first depot compartment for benazepril after oral administration was called 1abs. Firstorder absorption either occurred immediately at rate ka to the compartment of freely circulating benazeprilat (fr), or absorption was delayed by an absorption rate ka through an intercompartment that was pre-circulatory (pr). As is typical, quantity of benazeprilat passed between compartments is called I , for inhibitor, where indexes m and n represent origin and destination compartments, respectively.</p><p xml:id="_kKWn9Vj">F represents the total bioavailability (Eq. 4). Doses are administered in benazepril hcl, but are measured as the metabolite -benazeprilat. To reduce complexity in modeling, but preserve absorption and benazepril to benazeprilat conversion variance, all bioavailable benazepril is treated as benazeprilat in the model. F , or total bioavailability, is estimated in the model purely to preserve this variance and to reduce numerical instability in estimation. However, without IV data, the final estimated F does not have a firm pharmacological interpretation.</p><p xml:id="_4en3XG9">In summary, the final mammillary model without ACE binding kinetics (Eq. 5) was a 2-compartment PK model with nonspecific protein binding represented by a 3 compartment (I ), and a continuous analog to sequential 0-/1-order absorption from some depot compartment.</p><p xml:id="_kvwW78j">Rate of exchange between compartments were governed by rates k where f and g (f ≠ g) were each one of either free circulation (fr), tissue (ts), or non-specifically bound in circulation (ns). Residual error was best modeled using a normal-proportional error function (Eq. 9). The only exception were rates of elimination which were written as k where clearance represented that the parameter was derived from clearance and d was the compartment of origin.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_U44Q4PW">PKPD Model Building</head><p xml:id="_MerhmqV">Benazeprilat primary mechanism of action is inhibiting ACE to prevent the catalysis of AngI into AngII. To account for this mechanism, a logistic saturation model was first implemented. However, the superior model for predicting benazeprilat ACE inhibition was found to be the differential Michaelis-Menten model of catalysis inhibition with ACE being the enzyme (E), benazeprilat the inhibitor (I), AngI being the substrate (S) and AngII being the product (P) (Eq. 6). The distribution of ACE across tissue (ts) and free circulation (fr) was also considered. The nomenclature used throughout Eq. 6 is consistent with previous descriptions of the Michaelis-Menten model <ref type="bibr" coords="9,257.89,55.18,18.14,9.93" target="#b37">(39)</ref>.</p><p xml:id="_qPpt8HH">Two-compartment mammillary models governed the kinetics of biomarkers AngI, AngII, and Ang(1-7).</p><p xml:id="_uG6YgWD">The amount in these compartments were respectively represented by S (substrate), P (product), and</p><p xml:id="_SAFNPEB">Ang <ref type="bibr" coords="9,58.20,165.48,10.21,9.93" target="#b0">(1)</ref><ref type="bibr" coords="9,68.41,165.48,5.11,9.93" target="#b1">(2)</ref><ref type="bibr" coords="9,68.41,165.48,5.11,9.93" target="#b2">(3)</ref><ref type="bibr" coords="9,68.41,165.48,5.11,9.93" target="#b3">(4)</ref><ref type="bibr" coords="9,68.41,165.48,5.11,9.93" target="#b4">(5)</ref><ref type="bibr" coords="9,68.41,165.48,5.11,9.93" target="#b5">(6)</ref><ref type="bibr" coords="9,73.52,165.48,10.21,9.93" target="#b6">(7)</ref>. The two compartments for these angiotensins were called free circulation (fr) and tissue (ts).</p><p xml:id="_sQmG9kp">Conversion steps in the classical and alternative RAAS pathways were modeled through a series of catalytic steps, as previously described <ref type="bibr" coords="9,236.44,206.75,18.14,9.93" target="#b38">(40)</ref>.</p><p xml:id="_pAZUzmJ">At last, the function f (t) governs the effect of chronobiology on the production rate of the substrate (r ).</p><p xml:id="_xESZyQt">f (t) is a scaled cosine function where the wavelength (or period) is matched to 24 hours, the relative maximum amplitude is the scalar PRA (peak renin amplitude), and the scale of that amplitude is governed by δ . Chronobiology is herein only modeled relative to AngI production (Eq. 7).</p><p xml:id="_DWZBDZW">The catalyses of AngII to AngIII, and AngIII to AngIV were modeled via a series of catalytic conversion models (Eq. 8). Cleavages of AngII to AngIII, and AngIII to IV, are primarily performed by renally-bound aminopeptidases A and N, respectively <ref type="bibr" coords="9,235.24,410.09,15.40,9.93" target="#b39">(41)</ref><ref type="bibr" coords="9,250.64,410.09,5.13,9.93">(42)</ref><ref type="bibr" coords="9,255.78,410.09,15.40,9.93">(43)</ref>. V was subdivided into two circulatory system volumes of distribution; a small renal volume (Vrn) and a larger plasma volume (Vpl). All catabolism of AngII to AngIII, and AngIII to AngIV were linked to the renal volume as this is where aminopeptidases A and N are physiologically located.</p><p xml:id="_Eyk94a3">All analytes residuals were best described by proportional error models (Eq. 9), with the concentration of a given biomarker scaled by ε. ε is a normal distribution distributed with standard deviation b, i.e. ε Ñ(0, b).</p><p xml:id="_dZAanxS">ANOVA tests on covariates indicated that model performance would not be significantly improved by the inclusion of any covariate effects. The full model written in Mlxtran is available in the supplemental files, and a model diagram detailing the full structure is reproduced in Fig. <ref type="figure" coords="9,379.19,692.97,4.60,9.93" target="#fig_6">3</ref>. In S1 Table <ref type="table" coords="9,446.11,692.97,5.17,9.93">,</ref> the reader can find a detailed description of all mathematical symbols defined in the results section.  A Michaelis-Menten kinetic model of inhibitor, substrate, and enzyme interaction was used to describe the competitive inhibition of ACE by benazeprilat. k and k were the parameters governing ACE-benazeprilat (enzyme-inhibitor) association and dissociation, while k and k determined the rate of ACE-angiotensin (enzyme-substrate) association and dissociation. k controlled the production rate of angiotensin II from angiotensin I via ACE. An independent clearance for each metabolite as well as benazeprilat controlled the rate of removal of various molecules from the plasma.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_KaaSR2y">Model Fit Evaluation</head><p xml:id="_jQpHZM9">Inspection of the SAEM search and a sensitivity analysis on initial parameter values revealed a stable and precise search for all parameter estimates. The final selected model had high precision in parameter estimates as evaluated via RSE (majority of estimates &lt;35%). A summary of model parameter estimates, including typical value, RSE (%) and inter-individual variability (IIV) can be found in Table <ref type="table" coords="10,533.33,603.68,4.60,9.93" target="#tab_3">1</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_U8cNAbm">Parameter Estimates</head><p xml:id="_bRhb4Er">The full table of parameter estimates. In the first column, the name of the parameter used in the computer code is given. Then, the variable name for the mathematical equations is given. A description of the parameter and units are given in the next two columns. Finally, the actual value of the estimate along with error estimate, gamma (standard deviation) estimate, and the error of the standard deviation estimate. Low residual error estimates on the table of parameters indicate that the model is not over-parameterized and the identification of parameters is precise.</p><p xml:id="_gzkZp9J">Inspection of goodness-of-fit summary plots (Fig. <ref type="figure" coords="11,285.43,569.92,16.55,9.93" target="#fig_17">3-5</ref>) indicate that benazeprilat predictions from the model are largely in line with experimental measurements. Importantly, the final PKPD model, which enabled the simultaneous fit of all angiotensins, was found to characterize the time-varying changes of the both the classical and alternative arm of the RAAS satisfactorily, as shown by the standard goodness-of-fit diagnostics of observations vs predictions (Fig. <ref type="figure" coords="11,351.61,651.70,4.29,9.93" target="#fig_6">3</ref>), the individual predictions (Fig. <ref type="figure" coords="11,517.62,651.70,4.29,9.93" target="#fig_8">4</ref>), and the simulation-based validation diagnostics (i.e., NPDEs, Fig. <ref type="figure" coords="11,344.86,671.96,4.29,9.93" target="#fig_0">5</ref>).   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_rNmpjQb">Simulation Engine</head><p xml:id="_8Qt4vXF">There are three primary views in this application (Fig. <ref type="figure" coords="12,306.25,713.98,4.29,9.93" target="#fig_11">6</ref>). In all views, the time of first dose of benazepril is specified in a 24-hour clock format. On the left-hand side of the application is a menu for specifying dosing, parameters of the simulation, and modalities for calculating the area under the effect curve (AUEC) that quantifies the effect of the active benazeprilat on the RAAS at various doses vs. placebo control. Note that the application menu can be hidden to increase the size of the plotting area.  For each binning range, if the structural model fits the data well, observed percentiles will be symmetrically distributed across a 50 percentile curve which falls within the 50 percentile band. If the error model is well specified, observed percentiles will fall within prediction bands. Any misspecification is ideally random.</p><p xml:id="_qbXqwbd">The model appears to underpredict angiotensin (1-7) for small measured values slightly, but otherwise there is high agreement between model and data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_YbxNy8m">Application Menu</head><p xml:id="_7PUt8HT">The left-hand menu is split into three tabs which allow the user to define parameters of the simulation.</p><p xml:id="_hWsZJcB">The dosing tab permits the user to define the dosing schedule in terms of time of first dose, number of doses, size of dosage, and interdose interval. The simulation parameters tab gives the user access to the timescale of the simulation, the fineness of the grid used for simulation, and the sample size used to calculate the median and prediction intervals of the simulated PKPD. Finally, the AUEC tab provides a means to compare pharmacodynamic effects between competing dosing scenarios by defining a time period for which to calculate AUEC estimates.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_vnKTuTe">Prediction Distribution View</head><p xml:id="_PpBUxMQ">The first tab gives the user tools for analyzing the distribution of responses after a single schedule of benazepril. The distribution is specified in terms of median effect (blue line), median effect of placebo using same simulated individuals (dashed black line), and 90% prediction interval (blue bands) in steps of 10% i.e., 5% to 95%, 15% to 85%, etc. The AUEC of treatment vs. placebo can be compared for the timespan between the dashed vertical lines. The percent difference between those two AUECs is documented in the hovering label. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_XFxbdFk">Dosage Comparison View</head><p xml:id="_m8gMtjp">The second panel allows the user to compare up to four competitive dosing schedules to placebo. In this panel, the user can see the median response (key at bottom) and the placebo effect (dashed black line),</p><p xml:id="_kBcmfbN">but not the distribution of responses. On the right-hand side of the page, the user can compare the percent difference from placebo in the RAAS components modeled in this study by paging through the various data tables. These comparisons are percentages relative to placebo.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_3ZygPY5">Documentation View</head><p xml:id="_MQc3btd">The last view is simply documentation on the model that powers the simulation engine and general recommendations for using the software. It also provides a brief summary of the design of the application and gives a full reproduction of the R code that makes up the model. In this view, the application menu also gives a brief summary of user warnings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Mqa4pTD">Dosage Comparisons</head><p xml:id="_GVfFPjS">As a final consideration in our study, we directly compared four dosage scenarios in our simulation engine: 0.25 mg/kg q24h in the AM, 0.25 mg/kg q24h in the PM, 0.25 mg/kg q12h, and 0.5 mg/kg q12h.</p><p xml:id="_Su22mSj">In our simulation application, we set the engine to compare the median AUEC of 500 dogs (matched between virtual trials), at a sampling rate of 500 times over a period of 25 virtual days. The median AUEC comparison was made on day 20 over a period of 24 hours. The long virtual time of simulation assured the simulated dogs reached steady state PD of benazeprilat. For 0.25 mg/kg q24h, we saw an approximate 55% decrease compared to placebo for AngII and a 94% increase in Ang(1-7). With a schedule of 0.5 mg/kg q12h, we saw an approximate 80% decrease versus placebo for AngII and 135% increase in Ang(1-7). We saw a greater daily biomarker variance in SID dosing. Summary results are tabulated in Table <ref type="table" coords="14,133.96,509.89,6.13,9.93" target="#tab_4">2</ref> while median time-courses are plotted in Fig. <ref type="figure" coords="14,366.12,509.89,4.60,9.93" target="#fig_15">8</ref>.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_rquMDw4">Simulation Summary</head><p xml:id="_qAJhmhW">Four administration schedules are compared in this simulation scenario.</p><p xml:id="_H9UmqYb">1). 0.25 mg/kg every 24 hours at 8am</p><p xml:id="_RG7x7Qc">2). 0.25 mg/kg every 24 hours at 8pm</p><p xml:id="_g9CfrAb">3). 0.25 mg/kg twice a day at 8am and 8pm 4). 0.5 mg/kg twice a day at 8am and 8pm 500 individuals were simulated for each scenario (for a total of 2500 individuals, with placebo). Curves are the median timecourse of the molecule from this simulated population. Comparisons between schedules are made by calculating the percent difference between the median AUC and placebo (of each schedule). Median timecourses are plotted in Figure <ref type="figure" coords="15,527.10,264.42,3.75,8.10" target="#fig_15">8</ref>.</p><p xml:id="_Mxhrnvx">There was little difference between morning and night dosing at steady-state. Angiotensin (1-7) production and angiotensin II reduction were approximately doubled (vs. placebo) by increasing to twice a day dosing. The effect of increasing the dosage was more marginal, but still significant (approximately 15%).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_bAsXvUC">Figure 7:</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ZhWuVgX">Application Views</head><p xml:id="_5Fbep39">Our application provides a user-friendly way to apply our model of RAAS response to various administration schedules of benazepril. A collapsible left-hand widget allows the user to specify the simulation. The application has 3 separate panels. In the first panel, a single dosage scheme can be applied to a large simulated population of animals. Then the prediction distribution of simulated patient responses is plotted for study.</p><p xml:id="_5DYMkdq">In the second panel, the user can make a comparison between several proposed administration schedules. The plots produced in this panel depict the median timecourse of the various metabolites in response to the proposed schedules. The user also has access to an x-axis zoom and AUC comparison summaries on the right-hand side. The final panel is simply documentation of the simulation engine code and tips for usage.  1). 0.25 mg/kg every 24 hours at 8am</p><p xml:id="_hTSeB6w">2). 0.25 mg/kg every 24 hours at 8pm</p><p xml:id="_WnHA748">3). 0.25 mg/kg twice a day at 8am and 8pm 4). 0.5 mg/kg twice a day at 8am and 8pm 500 individuals were simulated for each scenario (for a total of 2500 individuals, with placebo). Curves are the median timecourse of the molecule from this simulated population. Comparisons between schedules are made by calculating the percent difference between the median AUC and placebo (of each schedule). Summary results are tabulated in table <ref type="table" coords="16,517.60,385.98,3.75,8.10" target="#tab_4">2</ref>.</p><p xml:id="_g2JE9nk">There was little difference between morning and night dosing at steady-state. Angiotensin (1-7) production and angiotensin II reduction were approximately doubled (vs. placebo) by increasing to twice a day dosing. The effect of increasing the dosage was more marginal, but still significant (approximately 15%).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_6Hn9V8T">DISCUSSION</head><p xml:id="_34vgMay">In both canines and humans, classical RAAS overactivation plays a key role in the pathogenesis and development of CHF (4). To modulate classical RAAS overactivation in CHF, there is a substantial history of using ACEi such as benazepril in both species <ref type="bibr" coords="16,319.16,587.17,13.69,9.93" target="#b1">(2,</ref><ref type="bibr" coords="16,332.86,587.17,9.13,9.93" target="#b2">3,</ref><ref type="bibr" coords="16,341.99,587.17,13.69,9.93">44)</ref> well-characterized both in the veterinary and human literature, little is known about the effect of ACEi on the alternative arm of the RAAS. Therefore, any further dose optimization of ACEi is dependent on studying the effect of this therapeutic drug on the alternative pathway. Characterizing this effect in dogs essentially furthers our understanding of how to optimize therapeutic management of canine CHF while providing valuable insight into the molecular effects of ACEi for translation to human CHF (45).</p><p xml:id="_jDc2qWe">Additionally, in humans and in dogs, the recommended dosage range for benazepril is quite broad and there is no clear consensus on the ideal dose in patients with CHF. PKPD studies comparing various doses of benazepril in healthy dogs have not provided consistent recommendations. In King et al.</p><p xml:id="_xs7G6zV">(1995) a single PO dose of benazepril effectively suppressed ACE activity for up to 24 hours, and that ACE inhibition in plasma was independent of dosage ≥ 0.25 mg/kg <ref type="bibr" coords="17,369.96,230.76,18.14,9.93" target="#b16">(17)</ref>. Subsequent reanalysis of these data using PK modeling suggested that q12h dosing would achieve greater inhibition of ACE with the same total q24h dose <ref type="bibr" coords="17,151.32,272.03,18.14,9.93" target="#b19">(20)</ref>. Later, Hamlin &amp; Nakayama (1998) found a single dose of benazepril at 0.5 mg/kg suppressed ACE for &lt; 12 hours <ref type="bibr" coords="17,232.48,292.29,18.14,9.93" target="#b20">(21)</ref>. Lastly, a recent retrospective study in dogs with valvular heart disease suggested improved outcomes with q12h dosage <ref type="bibr" coords="17,354.72,312.55,18.14,9.93" target="#b21">(22)</ref>.</p><p xml:id="_q6YFmYm">In this study, we have attempted to address knowledge gaps in optimal benazepril dosing by describing the dose-dependent effects of benazepril on biomarkers of both the classical and alternative RAAS pathways in dogs. The solution we implemented to address these gaps in knowledge was to build a modeling and simulation platform of the effect of benazepril on both arms of the RAAS. This simulation engine allows for exploration of benazepril dosages that produce both a substantial downregulation of the classical RAAS while preserving or upregulating the alternative RAAS. This allows for side-by-side comparison of several dosage schemes using virtual clinical trials and ultimately optimization of clinical benefits.</p><p xml:id="_VS6zGHY">Several metrics were used in assessing model performance. Population-level goodness-of-fit diagnostic plots like observations vs. predictions and NPDEs indicated that structural misspecification was very low.</p><p xml:id="_dFvFhEF">Focusing on individual predictions, we see a dynamic model capable of fitting complex individual variations without being overly fit to noise and spurious trends in the data. Importantly, for such a large set of parameters, our precision of parameter estimates was very high. Some parameters had to be fixed to exploratory values to achieve that precision, but this is an expected outcome when using enzyme kinematic models. Of note, although the precision of these parameters was high, they should not be overly interpreted without experimental verification.</p><p xml:id="_YKZZQAy">Using our simulation engine, we chose to compare several reasonable dosing schedules, including 0.25 mg/kg PO q24h and 0.5 mg/kg PO q12h -covering the range of dosing schedules most commonly used in the EU and US. Comparisons between dosing schedules were made based on area under the effect curve of the biomarker response (AUEC) relative to placebo. Chronobiology played a modest role in the scheduling of benazepril in this study. While using the simulation engine to explore various dosages, evening dosing appears to produce the lowest variance in the classical RAAS, morning dosing appears to produce the lowest variance in AngIII and AngIV PD.</p><p xml:id="_Q382vYV">Morning and evening administration both produce the same relative AUC improvement over placebo across the biomarker panel.</p><p xml:id="_6JbEQGH">Of the schedules compared, the most robust downregulation of classical RAAS biomarkers and upregulation of alternative RAAS biomarkers was observed with the 0.5 mg/kg PO q12h dose of benazepril. However, this should be put in context because the improvement of 0.5 mg/kg q12h over 0.25 mg/kg q12h is 26.14%, 9.93%, 14.73%, 9.35%, and 10.1% for AngI, AngII, Ang(1-7), AngIII, and AngIV, respectively. Those respective changes in classical and alternative RAAS biomarker concentrations will need to be linked to clinical outcomes in order to inform a clinical dosage selection.</p><p xml:id="_bfWqE8F">An interesting finding from our simulations is that there is generally high agreement between q24h and q12h dosing of benazepril, as long as the total dosage per day is kept constant. For example, 0.5 mg/kg q24h and 0.25 mg/kg q12h produce similar pharmacodynamic effects on the RAAS, although q12h dosing led to fewer fluctuations of the angiotensins in plasma compared to q24h dosing.</p><p xml:id="_j8WU2eh">To the best of the authors' knowledge, this is the first description of a simulation engine designed to optimize dosages of therapeutic drugs in veterinary medicine. Although experimental validation is necessary for bedside application, the model structure readily lends itself to such validation. Many parameters are directly measurable because they have meaningful pharmacological interpretations. For example, the Michaelis-Menten kinetic parameters which govern ACE inhibition could potentially be measured independently -possibly in vitro. Additionally, the kinetics of each individual molecule can be measured separately in IV-PK timecourse studies in vivo. Furthermore, by using a combination of in vitro studies for defining enzyme kinematic parameters, in vivo studies of individual metabolite kinetics, literature values for baseline parameters, and allometric scaling of mammillary compartment parameters, this model can be easily adapted into a bedside tool in both canines and humans.</p><p xml:id="_nK8DhRZ">There are several practical limitations in this study worth recognizing to guide future model refinement.</p><p xml:id="_KQjWycT">First, our results were derived from an experimental model of RAAS activation in response to benazepril, rather than a clinical trial in canine CHF patients. Also, the sample size of the study was quite limited compared to a mature clinical trial design. Lastly, the therapeutic window was not considered when making comparisons between dosing schedules. Specifically, there are high doses of benazepril the user can specify in our simulation engine (max. 2mg/kg q6h) that have not been tested experimentally;</p><p xml:id="_cBWmMt5">although safety up to 1 mg/kg q24h has been established in previous studies <ref type="bibr" coords="18,419.67,716.23,18.14,9.93" target="#b21">(22)</ref>. This extensive QSP model of the RAAS in response to benazepril and the development of that model into a tool for bedside optimization of benazepril for CHF and similar diseases is highly novel. By developing an easy-to-use simulation interface for our model, we are now able to make a first prediction of the optimal dose/time of benazepril administration in dogs in support of future investigations in patients with CHF. Beyond the research presented in this manuscript with our tool, simulation tools can continuously expand the impact of scientific research by being used to test new hypotheses surrounding dose optimization and being improved when new data becomes available to refine parameter estimates.</p><p xml:id="_aapNRNX">The data we measured in an experimental model of RAAS activation has yet to be linked directly to clinical outcomes in CHF, so there is room to expand the model into disease outcomes with a link function. This will be necessary for ultimate application in dosage selection. The most important extension is to experimentally validate a relevant selection of simulations; this option is currently being explored. This model-based approach is now supporting the design of an upcoming prospective multicenter clinical trial in canine patients with CHF to confirm findings from our simulator and refine our model-based predictions with actual clinical information. This clinical trial will help to confirm if the difference observed in PKPD between different dosages is translated into clinical benefits in dogs with naturally occurring CHF.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_9GhZEz7">MATERIALS AND METHODS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_y6XjPKt">Animals</head><p xml:id="_AGC7b5t">All study procedures were approved by the Institutional Animal Care and Use Committee at Iowa State University (Protocol #19-344).</p><p xml:id="_kyUZAAn">Nine purpose-bred beagles (5 castrated males and 4 spayed females), 40-42 months old, weighing 9.0-13.5 kg were randomized based on body weight and sex into three oral dosing groups of benazepril.</p><p xml:id="_MRPx5Zh">Systemic and cardiovascular health of all dogs was confirmed prior to the study with physical examination, routine laboratory screening (complete blood count, serum biochemical analysis), blood pressure measurement, and echocardiography.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Xq8MmRF">Housing Conditions</head><p xml:id="_4c9sU2f">Study dogs were housed in the Laboratory Animal Resources unit at the Iowa State University College of Veterinary Medicine. Dogs were acclimatized to the facility for &gt;1 month prior to the experiment. Dogs were pair-housed in adjoining pens (approximately 2m per dog or 4m per pair) on elevated rubbercoated grated flooring. Housing conditions were standardized with ambient temperatures of 18°C, a 12hour light cycle (07:00 to 19:00), and access to water ad libitum. During intensive sampling days only (D1, D18, and D35), dogs were separated into single housing units and water consumption was quantified every 8 hours for the 24-hour period. After sample collection on baseline sampling days (D-5, D12, and D29), dogs were offered a low-sodium diet (Hill's Prescription Diet h/d, 17 mg sodium per 100 kcal) at 23:00 q24h for five days to attain a steady activation of RAAS <ref type="bibr" coords="20,173.36,76.19,14.17,9.93" target="#b3">(4,</ref><ref type="bibr" coords="20,187.53,76.19,14.17,9.93" target="#b22">23,</ref><ref type="bibr" coords="20,201.69,76.19,14.17,9.93" target="#b23">24)</ref>. After data collection on D2, D35, and D36, dogs began a 10-day wash-out period between cycles during which they were offered their standard diet (Royal Canin Beagle Adult, 110 mg sodium per 100 kcal) q24h at 09:00. Volume of low-sodium diet was calculated so that the dogs received the same caloric intake throughout the study. Venous blood samples were collected from an external jugular or cephalic vein with a 1 inch, 20-gauge or 22-gauge needle attached to a 6 mL syringe. Dogs were kept and maintained in the same position (seated with neck extended) during blood collection. On intensive sampling days, approximately 4 mL of whole blood was collected at each time point with 2 mL transferred to an additive-free collection tube and 2 mL transferred to a lithium heparin tube containing 11.2 μL of dichlorvos prepared as a 6 mg/mL solution in acetonitrile. On baseline days, approximately 6 mL of whole blood was collected with 2 mL placed in an additive-free tube for RAAS analysis, 2 mL placed in an EDTA tube for complete blood count, and 2 mL placed in an additive-free tube for serum chemistry panel. On sparse sampling days, 2 mL of blood was collected and placed in an additive-free tube. All samples intended for pharmacokinetic or RAAS analysis were centrifuged for 15 minutes, after which plasma or serum was transferred into cryovials that were then stored at −80°C for later analysis. Samples for complete blood counts or serum chemistry panels were analyzed by the Iowa State Clinical Pathology Laboratory.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_fFCW7Br">Experimental</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Hnbu8gb">Analytical Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ERXxRnA">Benazeprilat Pharmacokinetics</head><p xml:id="_nQFRqTV">Plasma benazeprilat analysis was performed by the Iowa State University Analytical Chemistry</p><p xml:id="_Nn7y2qF">Laboratory. Benazeprilat and benazeprilat-d5 analytical standards were purchased from Toronto pmol/L (Ang 1-5), respectively <ref type="bibr" coords="22,191.92,157.98,19.00,9.93" target="#b25">(26,</ref><ref type="bibr" coords="22,210.93,157.98,14.25,9.93" target="#b26">27)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ytjNZeb">Data Preparation</head><p xml:id="_j83c7QA">Pharmacokinetic and pharmacodynamic data were imported into R 4.0.2 (28) for model preparation. To maintain consistency across administration units and measurement units, all concentration data were converted to micromoles per liter. Benazepril HCl and benazeprilat molecular weights were obtained from PubChem <ref type="bibr" coords="22,120.05,278.78,19.01,9.93" target="#b27">(29,</ref><ref type="bibr" coords="22,139.06,278.78,14.25,9.93" target="#b28">30)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_4KxUwKz">Placebo</head><p xml:id="_29fknWe">Historical control data from a previous study was used in lieu of a placebo group <ref type="bibr" coords="22,436.16,338.81,18.14,9.93" target="#b22">(23)</ref>. After referencing parameters to this baseline during fit, all placebo simulation response generated was equivalent to the baseline chronobiology function with parameters estimated from the simultaneous modeling of all biomarkers response.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_JKUaKrk">NLME Modeling</head><p xml:id="_qkbwAEF">The recorded data (y ) were imported into Monolix 20120 R1 (Lixoft, France) and used to estimate population parameters (μ) and variance via the stochastic approximation expectation maximization algorithm (SAEM) <ref type="bibr" coords="22,132.90,500.89,18.14,9.93" target="#b29">(31)</ref>. Individual parameters (◻ ) were determined via the modes of the individual posterior distributions -which were estimated using a Markov-Chain Monte-Carlo (MCMC) procedure.</p><p xml:id="_UBeeBV7">NLME models were written as previously described (Eq. 1) <ref type="bibr" coords="22,332.60,541.40,19.01,9.93" target="#b30">(32,</ref><ref type="bibr" coords="22,351.61,541.40,14.25,9.93" target="#b31">33)</ref>.</p><p xml:id="_UHK9nGC">Model predictions (F(ϕ , β , t )) for the i individual at the j timepoint -time (t ) -were parameterized using individual parameters and individual covariates (β ). The residuals were modeled as G(ϕ , t )• ε , where G is an arithmetic combination of proportional and additive error distributions.</p><p xml:id="_54xnJHZ">Individual parameters were modeled as a function of the population parameters, interindividual variability (η ), and individual covariates via the interindividual variation function h(μ, η , β ). Individual variability was modeled with a normal distribution of mean 0, variance-covariance matrix Ω, and variance ω .</p><p xml:id="_Z6prjH2">Typically, h(μ, η , β ) is a log-normal link function (Eq. 2) or a logit-normal link function (Eq. 3) in those cases where ϕ is bounded to be between 0 and 1. </p><formula xml:id="formula_0" coords="22,53.30,466.02,480.19,313.58">ij i i i ij th th ij i i ij ij i i i 2 i i i 12/5/</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_uTZ7H9f">Model Building</head><p xml:id="_YP4VFus">The systems pharmacology model was built in two consecutive phases. First, a largely empirical PKPD model with minimum parameterization was built to capture basic biological variations in the data. In practice, this entailed fitting a basic 1-, 2-, or 3-compartment model to the pharmacokinetics of benazeprilat, and then linking the PK to the RAAS biomarkers concentrations via various indirect and direct response models. Whenever possible we opted for direct over indirect effects models, and fewer compartments, to reduce the number of total estimated parameters during model fit.</p><p xml:id="_64HhTCd">Then, in an iterative fashion, model components were replaced with more mechanistic structures. To do this, we modeled the cascade of peptides which define the alternative and classical RAAS pathways. We also tested whether we could expand the mathematical model to include important biological systems such as the clearance of angiotensins via the liver vs. kidneys, non-specific plasma binding, first-pass metabolism, and site-specific metabolism. Some components and parameters of the model structure were arbitrarily fixed to literature or exploratory values to preserve fidelity to relevant biological systems.</p><p xml:id="_gV6W3xg">For example, our model equations were rewritten so that the production of AngII was always one-to-one proportional with catalysis of AngI via the angiotensin converting enzyme. The final model was refined through various arithmetic simplifications and parameter search optimizations to improve precision of parameter estimates as much as possible without comprising fit to experimental data. The significance of bodyweight, sex, sodium intake, and benazepril dose on parameters estimates was further evaluated using the automated Pearson's correlation test and ANOVA method as implemented in Monolix 2020 R1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_47Xw5B2">Model Evaluation</head><p xml:id="_jmDff8M">Experimental data were collated and imported into the 2020R1 Monolix Suite for data exploration, model development and evaluation. Quality of fit was evaluated using standard goodness-of-fit diagnostics (e.g., observed vs. predictions, scatter plot of residuals), as well as numerical summaries of fit, such as the corrected Bayesian information criteria (BICc). Precision of parameter estimates were determined using residual standard error (RSE%).</p><p xml:id="_RQ89RsW">Normalized prediction distribution errors (NPDEs) are recommended for evaluating model misspecification when study design is heterogenous with respect to dosing groups <ref type="bibr" coords="23,445.98,665.21,18.14,9.93" target="#b32">(34)</ref>. In this study, we had several different study groups under varying dosing schedules; therefore, NPDEs were chosen to determine quality of fit over more conventional visual predictive checks. In practice, NPDEs evaluate the percentage of the distribution of predictions at each mean prediction under the observation, thus forming a heterogenous uniform distribution. Therefore, an inverse cumulative distribution function is applied to each value to obtain a probability density function vs. population prediction.</p><p xml:id="_ZKwAyZw">Programming Tools and Simulations All programming relevant to the simulation application was written in R v4.0.2 (28). Models were translated from Mlxtran (Monolix Suite 2020R1) to the domain specific language, and R package, Odin v1.2.1 <ref type="bibr" coords="24,75.97,76.19,19.61,9.93" target="#b33">(35)</ref> to simulate clinical trials. Odin provides an interface for the ODE solvers, and R packages, deSolve v1.30 <ref type="bibr" coords="24,115.79,96.45,19.61,9.93" target="#b34">(36)</ref> and dde v1.0.1 <ref type="bibr" coords="24,214.44,96.45,18.14,9.93" target="#b35">(37)</ref>. Odin was used because of its superior ability to solve large systems of ODEs over other R packages.</p><p xml:id="_CFpKrVC">Finally, the application for simulating clinical trials was built in Shiny v1.6.0. Shiny is an R package that automatically generates HTML applications from R code. All Shiny applications are designed to <ref type="bibr" coords="24,508.04,169.23,13.49,9.93" target="#b0">(1)</ref> generate an HTML-based graphical user interface (GUI) that allows users to interact with the computer hosting the Shiny application, called the server, and (2) execute R code on the server based on the user's interactions with the GUI. To facilitate the use of our simulator, a user-friendly GUI was developed that allows to specify modalities for a clinical trial simulation in R (i.e., defining parameters such as dosage, dosing interval, size of trial) on a website server. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,26.45,19.13,58.98,4.75;3,115.66,19.13,449.73,4.75;3,26.45,822.13,47.68,4.75;3,550.56,822.13,17.98,4.75"><head>12/ 5 /</head><label>5</label><figDesc xml:id="_rBqjBdu">23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 3/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,50.38,235.16,37.97,8.10;4,50.38,255.42,77.94,8.10;4,50.38,268.17,479.36,8.10;4,50.38,280.18,486.36,8.10;4,50.38,292.94,491.84,8.10;4,50.38,305.69,469.17,8.10;4,50.38,318.45,26.97,8.10;4,133.30,43.26,330.15,182.33"><head>Figure 1 :</head><label>1</label><figDesc xml:id="_gNeshjj">Figure 1: Arms of the RAAS RAAS activation is thought of as having two main pathways which act as counterregulatory mechanisms for one another. The classical RAAS pathway (in red-orange) refers to the peptide cascade from angiotensin I (Ang I) to angiotensin II (Ang II) via ACE. This stimulates aldosterone production which then activates AT receptors (AT R). Physiologic consequences of classical RAAS activation, including vasoconstriction, hypertrophy, and fibrosis, typical worsen congestive heart failure (CHF).</figDesc><graphic coords="4,133.30,43.26,330.15,182.33" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="6,79.65,558.31,9.20,7.44;6,168.47,631.84,7.35,7.44;7,26.45,19.13,58.98,4.75;7,115.66,19.13,449.73,4.75;7,26.45,822.13,47.68,4.75;7,550.56,822.13,17.98,4.75"><head></head><label></label><figDesc xml:id="_KApGHQ5">First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 7/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="7,50.38,286.18,37.97,8.10"><head>Figure 2 :</head><label>2</label><figDesc xml:id="_8jRsFy6">Figure 2:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="8,310.58,175.63,4.60,7.44;8,45.95,237.16,16.08,7.44;8,49.62,257.42,11.03,7.44;8,115.79,318.95,11.03,7.44;8,474.13,339.21,11.03,7.44;8,324.09,441.26,7.35,7.44;8,408.62,449.51,8.73,7.44;8,373.69,502.03,11.49,7.44;8,212.55,563.56,17.00,7.44;9,26.45,19.13,58.98,4.75;9,115.66,19.13,449.73,4.75;9,26.45,822.13,47.68,4.75;9,550.56,822.13,17.98,4.75"><head></head><label></label><figDesc xml:id="_vu7VpXK">First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 9/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="9,142.75,244.66,11.02,7.44;9,538.31,244.66,4.13,7.44;9,45.95,264.92,6.43,7.44;9,112.73,306.19,16.54,7.44;9,286.73,416.49,14.24,7.44;10,26.45,19.13,58.98,4.75;10,115.66,19.13,449.73,4.75;10,26.45,822.13,47.68,4.75;10,545.47,822.13,23.07,4.75"><head></head><label></label><figDesc xml:id="_SWHYzTT">First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 10/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="10,50.38,313.20,37.97,8.10;10,50.38,333.45,101.94,8.10;10,50.38,346.21,490.83,8.10;10,50.38,358.22,490.26,8.10;10,50.38,370.97,485.86,8.10;10,50.38,383.73,453.17,8.10;10,50.38,396.48,487.21,8.10;10,50.38,409.24,153.63,8.10;10,133.30,43.26,330.15,260.37"><head>Figure 3 :</head><label>3</label><figDesc xml:id="_U4qq8X2">Figure 3: Detailed Model Diagram Detailed diagram of the final model structure. Benazeprilat pharmacokinetics were modeled using a 2-compartment model with a mix of 1-order and 1-order delayed by 1-order transfer absorption from the depot compartment. Both volumes of distribution, free and tissue, were modeled with a fixed amount of ACE with which Benazeprilat could act on. Non-specific binding affected the free circulation compartment. A series of direct response models were used to describe the transformation of angiotensin I into its various metabolites. The free volume of distribution was subdivided into plasma and kidney volumes for Ang III and Ang IV.</figDesc><graphic coords="10,133.30,43.26,330.15,260.37" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="12,26.45,19.13,58.98,4.75;12,115.66,19.13,449.73,4.75;12,26.45,822.13,47.68,4.75;12,545.47,822.13,23.07,4.75"><head>12/ 5 /</head><label>5</label><figDesc xml:id="_fDCVvaB">23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 12/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="12,50.38,306.44,37.97,8.10;12,50.38,326.70,121.44,8.10;12,50.38,339.46,470.22,8.10;12,50.38,351.46,466.72,8.10;12,50.38,364.22,485.04,8.10;12,50.38,376.97,435.86,8.10;12,133.30,43.26,330.15,253.62"><head>Figure 4 :</head><label>4</label><figDesc xml:id="_5a3PVfp">Figure 4:Observations vs PredictionsThe observations plotted against the predictions for all metabolites and drug concentration data. This gives a complete picture of model performance. The golden line is the LOESS curve showing the correlation between observations and predictions. The black line plotted diagonally represents an ideal model performance with no misspecification. The general agreement between LOESS and idealized curve indicate that there is little misspecification in model structure.</figDesc><graphic coords="12,133.30,43.26,330.15,253.62" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="12,50.38,593.08,37.97,8.10;12,50.38,613.33,138.91,8.10;12,50.38,625.34,467.70,8.10;12,50.38,638.10,494.88,8.10;12,50.38,650.85,144.29,8.10;12,133.30,419.93,330.15,163.58"><head>Figure 5 :</head><label>5</label><figDesc xml:id="_SX82s2Y">Figure 5: Sample of Individual Predictions A sample of individual observations vs predictions randomly sampled from the concentration and metabolite data. The general agreement between plasma concentration timecourse and individual predictions indicates that the model reproduces the observations with high accuracy.</figDesc><graphic coords="12,133.30,419.93,330.15,163.58" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10" coords="13,26.45,19.13,58.98,4.75;13,115.66,19.13,449.73,4.75;13,26.45,822.13,47.68,4.75;13,545.47,822.13,23.07,4.75"><head>12/ 5 /</head><label>5</label><figDesc xml:id="_pJyWrCT">23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 13/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11" coords="13,50.38,286.93,37.97,8.10;13,50.38,307.19,177.38,8.10;13,50.38,319.95,470.34,8.10;13,50.38,331.95,494.14,8.10;13,50.38,344.71,456.96,8.10;13,50.38,357.47,487.61,8.10;13,50.38,370.22,62.49,8.10;13,133.30,43.26,330.15,234.11"><head>Figure 6 :</head><label>6</label><figDesc xml:id="_PprNBbF">Figure 6: Normalized Prediction Distribution Errors Normalized prediction distribution errors (NPDEs) are an analog to residuals used for diagnosing both model structural misspecifications as well as the performance of the residual error model. The distribution of a well-specified model is normal, ideally. Bands represent the 90% prediction band for the 95 , 50 , and 5 percentiles, respectively. Curves are the observed percentiles for the 95 , 50 , and 5 percentiles, respectively. Data are binned at regular intervals to derive these average trends.</figDesc><graphic coords="13,133.30,43.26,330.15,234.11" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12" coords="13,286.18,343.26,5.62,6.07;13,306.82,343.26,5.62,6.07;13,339.95,343.26,5.62,6.07;13,173.86,356.01,5.62,6.07;13,194.50,356.01,5.62,6.07;13,227.63,356.01,5.62,6.07;13,96.87,401.03,5.62,6.07;13,265.45,401.03,5.62,6.07;14,26.45,19.13,58.98,4.75;14,115.66,19.13,449.73,4.75;14,26.45,822.13,47.68,4.75;14,545.47,822.13,23.07,4.75"><head></head><label></label><figDesc xml:id="_azJ96up">First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 14/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13" coords="15,26.45,19.13,58.98,4.75;15,115.66,19.13,449.73,4.75;15,26.45,822.13,47.68,4.75;15,545.47,822.13,23.07,4.75"><head>12/ 5 /</head><label>5</label><figDesc xml:id="_HqZCQA9">23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 15/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14" coords="16,26.45,19.13,58.98,4.75;16,115.66,19.13,449.73,4.75;16,26.45,822.13,47.68,4.75;16,545.47,822.13,23.07,4.75"><head>12/ 5 /</head><label>5</label><figDesc xml:id="_2zBAnek">23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 16/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15" coords="16,50.38,227.66,37.97,8.10;16,50.38,247.91,89.45,8.10;16,50.38,260.67,285.90,8.10;16,133.30,43.26,330.15,174.83"><head>Figure 8 :</head><label>8</label><figDesc xml:id="_c7cP8vZ">Figure 8: Simulation Summary Four administration schedules are compared in this simulation scenario.</figDesc><graphic coords="16,133.30,43.26,330.15,174.83" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16" coords="18,42.88,765.76,52.98,9.93;19,26.45,19.13,58.98,4.75;19,115.66,19.13,449.73,4.75;19,26.45,822.13,47.68,4.75;19,545.47,822.13,23.07,4.75"><head>CONCLUSION 12 / 5 /</head><label>125</label><figDesc xml:id="_tjXVFg2">23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 19/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_17" coords="20,26.45,19.13,58.98,4.75;20,115.66,19.13,449.73,4.75;20,26.45,822.13,47.68,4.75;20,545.47,822.13,23.07,4.75"><head>12/ 5 /</head><label>5</label><figDesc xml:id="_NqbxPsF">23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 20/28</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_18" coords="20,111.77,167.34,51.96,9.45;20,42.88,196.99,478.25,9.93;20,42.88,217.25,486.38,9.93;20,42.88,238.26,486.97,9.93;20,42.88,258.52,493.74,9.93;20,42.88,278.78,492.53,9.93;20,42.88,299.79,482.13,9.93;20,42.88,331.31,458.23,9.93;20,42.88,351.56,508.83,9.93;20,42.88,372.57,452.08,9.93;20,42.88,392.83,499.90,9.93;20,42.88,413.09,505.22,9.93;20,42.88,434.10,51.45,9.93"><head>Procedure This 35 -</head><label>35</label><figDesc xml:id="_eaGCPt9">day prospective study was divided into three periods with three different benazepril dosing groups: (A) 0.125 mg/kg q12hr PO, (B) 0.25 mg/kg q12hr PO, and (C) 0.5 mg/kg q24hr PO. All dogs received all treatments using a partial crossover (ABC/BCA/CAB) design. Dogs were sampled in the same order at each time point and exact time of sampling was recorded. Blood sample collection was divided into baseline sampling days (D-5, D12, and D29), sparse sampling days (days 0, 17, and 34), and intensive sampling days (D1, D18, and D35). Baseline and sparse sampling occurred at 07:00.On intensive sampling days (D1, D18, and D35), blood was collected starting at 07:00 (0 hour, immediately before oral benazepril dosing) and repeated at + 0.5, 1, 2, 4, 8, 12, 12.5, 13, 14, 16, 20, and 24 hours post-dosing. Benazepril (NELIO 5 mg chewable tablets, Ceva Sante Animale) was administered on intensive sampling days following the 0-hour blood sampling (all dose groups) and the 12-hour sampling (q12hr dose groups only). The benazepril dose was calculated to the nearest 1.25 mg increment.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="11,133.30,43.26,330.15,210.85"><head></head><label></label><figDesc xml:id="_HU4yHdE"></figDesc><graphic coords="11,133.30,43.26,330.15,210.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="11,133.30,267.61,330.15,174.83"><head></head><label></label><figDesc xml:id="_Rue8VZ7"></figDesc><graphic coords="11,133.30,267.61,330.15,174.83" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="11,26.45,19.13,542.09,807.75"><head>Table 1 :</head><label>1</label><figDesc xml:id="_r7Ehd8g"></figDesc><table /><note xml:id="_VQeMGwg">12/5/23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 11/28</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="15,50.38,106.10,33.31,8.10"><head>Table 2 :</head><label>2</label><figDesc xml:id="_XasQvEn"></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="16,42.88,587.17,509.49,205.77"><head></head><label></label><figDesc xml:id="_9dsjhcH">. Improving our understanding of the effect of ACEi on CHF in canines has the potential to benefit therapeutic management of CHF in humans and vice versa<ref type="bibr" coords="16,117.02,628.44,12.41,9.93" target="#b3">(4)</ref>. Activation of the alternative RAAS pathway is characterized by catalysis of AngII to</figDesc><table coords="16,42.88,648.70,501.10,71.46"><row><cell>12/5/23, 21:56</cell><cell>Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog…</cell></row><row><cell cols="2">Ang(1-7) by the enzyme ACE2. In turn, Ang(1-7) activates Mas receptors (Esteban PloS One 2009). In</cell></row><row><cell cols="2">direct contrast to the effect of classical pathway overactivation on CHF, activation of the alternative</cell></row><row><cell cols="2">pathway is associated with improved clinical outcomes via reduced and preserved ejection fraction and</cell></row><row><cell cols="2">reduced risk of heart failure.</cell></row><row><cell>about:blank</cell><cell>17/28</cell></row></table><note xml:id="_cuMjWsR">An ideal therapeutic for CHF would modulate both the classical and alternative RAAS pathways, downregulating the activity of the classical RAAS pathway while preserving or upregulating the alternative RAAS pathway<ref type="bibr" coords="16,173.97,783.01,18.14,9.93" target="#b12">(13)</ref>. Although the effect of ACEi on ACE activity and AngII has been fairly</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7" coords="20,243.82,369.97,6.09,7.44"><head></head><label></label><figDesc xml:id="_9VuBcp8">Research Chemicals (Ontario, Canada). Benazepril and benazepril-d5 analytical standards were purchased from Cayman Chemical (Ann Arbor, Michigan, USA). Benazeprilat and benazeprilat-d5 stock standard solutions were prepared at 0.25 mg/mL in 2:1:1 acetonitrile:water:DMSO. The benazepril and benazepril-d5 stock solutions were prepared at 1 mg/mL in acetonitrile. Control beagle plasma was purchased from Equitech Bio (Kerrville, TX, USA). All solvents used for sample preparation and the chromatography portion of the analytical method were purchased from Fisher Scientific (Waltham MA, All samples were centrifuged at 10,000 rpm for 5 minutes. A 600 μL volume of each sample was transferred to a clean 2 mL flip-top tube. All flip-top tubes were placed in the CentriVap Concentrator system (Labconco Corp., Kansas City, MO, USA) and concentrated to dryness. All samples were reconstituted in 100 μL of 50:50 acetonitrile:water and centrifuged at 10,000 rpm for 5 minutes prior to LC-MS/MS analysis. All samples were analyzed using an injection volume of 2 μL.A Vanquish Flex LC pump interfaced with a TSQ Altis mass spectrometer (Thermo Fisher Scientific, San Jose, CA, USA) were used for the analysis. The source conditions were as follows: spray voltage -3500 V, sheath gas -40.6 Arb, auxiliary gas -23 Arb, sweep gas -0.4 Arb, ion transfer tube temperature -325 °C, and vaporizer temperature -350 °C. The total run time of the method was 3 minutes. The resolution Xevo TQ/S, Milford, MA) in multiple reaction monitoring mode. Internal standards were used to correct for analyte recovery across the sample preparation procedure in each individual sample. Analyte concentrations were calculated from integrated chromatograms considering the corresponding response factors determined in appropriate calibration curves in serum matrix, when integrated signals exceeded a signal-to-noise ratio of 10. The lower limits of quantification for the analytes in canine serum were 3 pmol/L (Ang I), 2 pmol/L (Ang II), 2,5 pmol/L (Ang III), 2 pmol/L (Ang IV), 2,5 pmol/L (Ang 1-7), and 2</figDesc><table coords="20,243.82,369.97,6.09,7.44"><row><cell>12/5/23, 21:56</cell><cell>Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog…</cell></row><row><cell>USA).</cell><cell></cell></row><row><cell cols="2">A sample volume of 150 μL was fortified with 15 μL of a benazeprilat-d5 solution at 0.1 ppm. Plasma</cell></row><row><cell cols="2">samples were precipitated with 600 μL of acetonitrile containing 0.5% formic acid and vortexed by hand</cell></row><row><cell cols="2">® for several seconds. of Q1 and Q3 was 0.7 FWHM. The CID gas was set to 2 mTorr. The chromatographic peak width was 2</cell></row><row><cell cols="2">sec. and the cycle time was 0.2 sec. The mass spectrometer was operated in positive ion electrospray</cell></row><row><cell cols="2">ionization mode. Data was acquired using a multiple reaction monitoring (MRM) method that selected for</cell></row><row><cell cols="2">the benazeprilat ([M+H] 397.2) and benazeprilat-d5 ([M+H] 402.2) precursor ions. + +</cell></row><row><cell cols="2">The column used for the analysis was Hypersilgold Aq 50 × 2.1 mm, 1.9 μm (Thermo Fisher Scientific,</cell></row><row><cell cols="2">Waltham, MA, USA). Mobile Phase A was water + 0.1% formic acid and Mobile Phase B was acetonitrile</cell></row><row><cell cols="2">+ 0.1% formic acid. The column oven temperature was set to 35 °C. The chromatography gradient was</cell></row><row><cell cols="2">as follows: Start at 0% B and linear ramp to 100 %B in 2.0 min, hold at 100% B for 0.4 min, drop to 0% B</cell></row><row><cell cols="2">in 0.01 min, and hold at 0% B for 0.59 min. The flow rate of the method was 0.4 mL/min.</cell></row><row><cell cols="2">Benazeprilat Pharmacodynamics: RAAS Fingerprint</cell></row><row><cell cols="2">Equilibrium concentrations of Ang I, Ang II, Ang III, Ang IV, Ang 1-9, Ang 1-7, and Ang 1-5 were</cell></row><row><cell cols="2">quantified in serum samples by liquid chromatography-mass spectrometry/mass spectroscopy</cell></row><row><cell>about:blank about:blank</cell><cell>21/28 22/28</cell></row></table><note xml:id="_TAn29Hn">performed at a commercial laboratory (Attoquant Diagnostics, Vienna, Austria), as previously described<ref type="bibr" coords="21,42.88,722.99,13.66,9.93" target="#b3">(4,</ref><ref type="bibr" coords="21,56.55,722.99,13.66,9.93" target="#b24">25)</ref>. Briefly, samples were spiked with a stable isotope labelled internal standard for each angiotensin after ex vivo equilibration and analytes were extracted using C18-based solid-phase extraction. Extracts samples were analyzed using mass spectrometry analysis using a reversed-analytical column (Acquity UPLC C18, Waters) operating in line with a XEVO TQ-S triple quadrupole mass spectrometer (Waters</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8" coords="23,26.45,19.13,542.09,807.75"><head></head><label></label><figDesc xml:id="_gnwRFYK">23, 21:56    Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog…</figDesc><table coords="23,26.45,822.13,542.09,4.75"><row><cell>about:blank</cell><cell>23/28</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9" coords="24,26.45,19.13,542.09,807.75"><head></head><label></label><figDesc xml:id="_DTkerwK">12/5/23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog…</figDesc><table coords="24,26.45,822.13,542.09,4.75"><row><cell>about:blank</cell><cell>24/28</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10" coords="28,26.45,19.13,542.09,807.75"><head></head><label></label><figDesc xml:id="_VATfa65">12/5/23, 21:56 Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 28/28 42.Bodineau L, Frugière A, Marc Y, Claperon C, Llorens-Cortes C. Aminopeptidase A inhibitors as centrally acting antihypertensive agents. Heart Fail Rev. 2008 Sep;13(3):311-9. 43.Danziger RS. Aminopeptidase N in arterial hypertension. Heart Fail Rev. 2008 Sep;13(3):293-8. 44.The effect of benazepril on survival times and clinical signs of dogs with congestive heart failure: Results of a multicenter, prospective, randomized, double-blinded, placebo-controlled, long-term clinical trial. Journal of Veterinary Cardiology. 1999 May;1(1):7-18. 45.Schneider B, Balbas-Martinez V, Jergens AE, Troconiz IF, Allenspach K, Mochel JP. Model-Based Reverse Translation Between Veterinary and Human Medicine: The One Health Initiative: Model-Based Reverse Translational Pharmacology. CPT: Pharmacometrics &amp; Systems Pharmacology . 2018 Feb;7(2):65-8.</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_0">−3 1 −1</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_gWhk9CP">ACKNOWLEDGEMENTS</head><p xml:id="_Mye49fH">Agnes Bourgois-Mochel (1) and Oliver Domenig <ref type="bibr" coords="24,279.94,451.36,13.47,9.93" target="#b1">(2)</ref> (1) Veterinary Clinical Sciences, Iowa State University, 50011-1250 Ames, IA (USA); (2) Attoquant Diagnostics, Vienna (Austria)</p><p xml:id="_EBTps83">The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_gdAPUbq">Supporting information S1</head></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="24,57.17,634.78,457.23,8.51;24,52.33,652.04,489.72,8.51;24,52.33,670.05,146.53,8.51" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_79M8r58">The effect of benazepril on survival times and clinical signs of dogs with congestive heart failure: Results of a multicenter, prospective, randomized, double-blinded, placebo-controlled, long-term clinical trial</title>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VSUDwv4">Journal of Veterinary Cardiology</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="7" to="18" />
+			<date type="published" when="1999-05-01">1999 May 1</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,56.85,704.56,466.99,8.51;24,52.33,721.82,491.62,8.51" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_2S7uNdx">Controlled Clinical Evaluation of Enalapril in Dogs With Heart Failure: Results of the Cooperative Veterinary Enalapril Study Group The COVE Study Group</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">A</forename><surname>Woodfield</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_b5jzJ4Q">Journal of Veterinary Internal Medicine</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="243" to="252" />
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="24,57.38,756.34,456.68,8.51;24,52.33,774.35,272.06,8.51;25,26.45,19.13,58.98,4.75;25,115.66,19.13,449.73,4.75;25,26.45,822.13,47.68,4.75;25,545.47,822.13,23.07,4.75" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_bWyE96C">Long-term survival in severe heart failure in patients treated with enalapril; ten year follow-up of CONSENSUS I</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Swedberg</surname></persName>
+		</author>
+		<idno>blank 25/28</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_6CKjsmP">Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about</title>
+				<imprint>
+			<date type="published" when="1999-01">1999 Jan</date>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page">56</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,57.13,36.75,482.00,8.51;25,52.33,54.01,485.16,8.51;25,52.33,72.02,243.72,8.51" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_Vkft4tu">Pharmacokinetic/Pharmacodynamic Modeling of Renin-Angiotensin Aldosterone Biomarkers Following Angiotensin-Converting Enzyme (ACE) Inhibition Therapy with Benazepril in Dogs</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Mochel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Fink</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Peyrou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Soubret</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Giraudel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Danhof</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_G48xn3j">Pharm Res</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1931" to="1946" />
+			<date type="published" when="2015-06">2015 Jun</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,56.38,106.54,486.66,8.51;25,52.33,123.79,490.97,8.51;25,52.33,141.05,363.97,8.51" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_nEbzNRc">Influence of antihypertensive medication on aldosterone and renin concentration in the differential diagnosis of essential hypertension and primary aldosteronism: Antihypertensive medication and primary aldosteronism</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Seifarth</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Trenkel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Schobel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">G</forename><surname>Hahn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Hensen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2nvNhxG">Clinical Endocrinology</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="457" to="465" />
+			<date type="published" when="2002-10">2002 Oct</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,57.20,175.57,478.47,8.51;25,52.33,193.58,455.32,8.51;25,52.33,210.83,83.59,8.51" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_GqfC6mg">Seventh Report of the Joint National Committee on Prevention, Detection, Evaluation, and Treatment of High Blood Pressure</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">V</forename><surname>Chobanian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">L</forename><surname>Bakris</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">R</forename><surname>Black</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">C</forename><surname>Cushman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">A</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Izzo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EGjfGpZ">Hypertension</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1206" to="1252" />
+			<date type="published" when="2003-12">2003 Dec</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,56.64,245.35,451.70,8.51;25,52.33,263.36,360.84,8.51" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_yKF5mnG">The Renin-Angiotensin-Aldosterone System in Vascular Inflammation and Remodeling</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Pacurari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Kafoury</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">B</forename><surname>Tchounwou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ndebele</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nwmKNqd">International Journal of Inflammation</title>
+		<imprint>
+			<biblScope unit="volume">2014</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,57.54,297.87,485.65,8.51;25,52.33,315.13,493.07,8.51;25,52.33,332.39,245.64,8.51" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_wQTY2H5">Angiotensin II Induces Vascular Cell Adhesion Molecule-1 Expression In Rat Vasculature: A Potential Link Between the Renin-Angiotensin System and Atherosclerosis</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">E</forename><surname>Tummala</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">L</forename><surname>Sundell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">B</forename><surname>Laursen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">P</forename><surname>Hammes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">W</forename><surname>Alexander</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ejDaCeB">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1223" to="1229" />
+			<date type="published" when="1999-09-14">1999 Sep 14</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,56.67,366.91,493.38,8.51;25,52.33,384.91,464.74,8.51;25,52.33,402.17,210.09,8.51" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_7AcnNxS">Moderate cardiac-selective overexpression of angiotensin II type 2 receptor protects cardiac functions from ischaemic injury: Cardioprotection by overexpression of AT receptors</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Shenoy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fhcmEhY">Experimental Physiology</title>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="89" to="101" />
+			<date type="published" when="2012-01">2012 Jan</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,61.31,436.69,483.58,8.51;25,52.33,454.70,327.23,8.51" xml:id="b9">
+	<monogr>
+		<title level="m" type="main" xml:id="_g6r7p9F">Chemistry and Pharmacology of Angiotensin-Converting Enzyme Inhibitors. CPD</title>
+		<author>
+			<persName coords=""><forename type="first">Regulski</forename><surname>Mil Osz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Regulska</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Stanisz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Murias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Gieremek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Wzgarda</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015-03-01">2015 Mar 1</date>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="1764" to="1775" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,60.91,489.21,478.01,8.51;25,52.33,506.47,323.88,8.51" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_y4dVPVw">Pharmacokinetics and pharmacokinetic/pharmacodynamic relationships for angiotensinconverting enzyme inhibitors</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">L</forename><surname>Toutain</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">P</forename><surname>Lefebvre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Ttk9m2j">J Vet Pharmacol Ther</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="515" to="525" />
+			<date type="published" when="2004-12">2004 Dec</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,62.99,540.99,458.89,8.51;25,52.33,558.24,82.55,8.51" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_Z8TNyqn">The renin◻giotensin◻aldosterone system and its suppression</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">K</forename><surname>Ames</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">E</forename><surname>Atkins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Pitt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wAUykYC">J Vet Intern Med</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="363" to="382" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,61.84,592.76,462.94,8.51;25,52.33,610.77,495.53,8.51;25,52.33,628.03,119.74,8.51" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_aXcrM2Z">Effect of angiotensin receptor blockers and angiotensin converting enzyme 2 on plasma equilibrium angiotensin peptide concentrations in dogs with heart disease</title>
+		<author>
+			<persName coords=""><forename type="first">É</forename><surname>Larouchel◻lebel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">A</forename><surname>Loughran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Huh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Oyama</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UFMkJ79">J Vet Intern Med</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="22" to="32" />
+			<date type="published" when="2021-01">2021 Jan</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,61.00,662.54,488.67,8.51;25,52.33,679.80,286.28,8.51" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_ny8FY78">Role of the ACE2/Angiotensin 1-7 Axis of the Renin-Angiotensin System in Heart Failure</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">B</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">B</forename><surname>Grant</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">Y</forename><surname>Oudit</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CMNCSdp">Circulation Research</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1313" to="1326" />
+			<date type="published" when="2016-04-15">2016 Apr 15</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,61.61,714.32,484.38,8.51;25,52.33,732.33,71.51,8.51" xml:id="b14">
+	<monogr>
+		<title level="m" type="main" xml:id="_kjuC7qK">Angiotensin II Receptor Blockers in Congestive Heart Failure: Cardiology in Review</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Eisenberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">C</forename><surname>Gioia</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006-01">2006 Jan</date>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="26" to="34" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="25,61.88,766.67,461.70,8.68;25,52.33,784.10,496.74,8.51;26,26.45,19.13,58.98,4.75;26,115.66,19.13,449.73,4.75;26,26.45,822.13,47.68,4.75;26,545.47,822.13,23.07,4.75;26,52.33,33.75,183.84,8.51" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_qzbufj7">Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about:blank 26/28 editor</title>
+		<author>
+			<persName coords=""><forename type="first">Dussaule</forename><surname>Jcsilveira</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">D</forename><surname>Barroso</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">C</forename><surname>Vieira</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">T</forename><surname>Cisalpino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Lima</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">X</forename><surname>Bader</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename></persName>
+		</author>
+		<idno>12/5/23</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PzE5KnC">Dussaule JC</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">e66082</biblScope>
+			<date type="published" when="2013-06-07">2013 Jun 7</date>
+		</imprint>
+	</monogr>
+	<note>PLoS ONE</note>
+</biblStruct>
+
+<biblStruct coords="26,61.49,68.27,490.42,8.51;26,52.33,85.53,492.24,8.51;26,52.33,103.53,83.59,8.51" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_N3k7X3U">Pharmacokinetics of the active metabolite of benazepril, benazeprilat, and inhibition of plasma angiotensin-converting enzyme activity after single and repeated administrations to dogs</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">N</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Mauron</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Kaiser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dkkX5Vh">Am J Vet Res</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1620" to="1628" />
+			<date type="published" when="1995-12">1995 Dec</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,61.37,138.05,474.22,8.51;26,52.33,155.31,485.02,8.51;26,52.33,173.32,453.68,8.51;26,52.33,190.58,489.03,8.51;26,52.33,207.83,335.09,8.51" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_xBkMZaf">ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure 2008: The Task Force for the Diagnosis and Treatment of Acute and Chronic Heart Failure 2008 of the European Society of Cardiology. Developed in collaboration with the Heart Failure Association of the ESC (HFA) and endorsed by the European Society of Intensive Care Medicine (ESICM)</title>
+		<author>
+			<persName coords=""><forename type="first">/Task Force</forename><surname>Authors</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Members</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Dickstein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Cohen-Solal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Filippatos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jjv</forename><surname>Mcmurray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Ponikowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wEc5Ye3">European Heart Journal</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page" from="2388" to="2442" />
+			<date type="published" when="2008-10-01">2008 Oct 1</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,62.45,242.35,483.70,8.51;26,52.33,260.36,474.29,8.51" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_HvFyuqC">ACVIM consensus guidelines for the diagnosis and treatment of myxomatous mitral valve disease in dogs</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">W</forename><surname>Keene</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">E</forename><surname>Atkins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">D</forename><surname>Bonagura</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Fox</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Häggström</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">L</forename><surname>Fuentes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PVQmnbe">J Vet Intern Med</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1127" to="1140" />
+			<date type="published" when="2019-05">2019 May</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,61.05,294.87,391.25,8.51;26,52.33,312.13,448.20,8.51" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_9Q9fSYD">Benazeprilat disposition and effect in dogs revisited with a pharmacokinetic/pharmacodynamic modeling approach</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">L</forename><surname>Toutain</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">P</forename><surname>Lefebvre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">N</forename><surname>King</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tpf4dtW">J Pharmacol Exp Ther</title>
+		<imprint>
+			<biblScope unit="volume">292</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1087" to="1093" />
+			<date type="published" when="2000-03">2000 Mar</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,61.79,346.65,478.87,8.51;26,52.33,364.66,382.01,8.51" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_UFqtvxh">Comparison of Some Pharmacokinetic Parameters of 5 Angiotensin-Converting Enzyme Inhibitors in Normal Beagles</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">L</forename><surname>Hamlin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Nakayama</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FzX7Zwg">Journal of Veterinary Internal Medicine</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="93" to="95" />
+			<date type="published" when="1998-03">1998 Mar</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,62.44,399.17,448.90,8.51;26,52.33,416.43,497.45,8.51;26,52.33,433.69,82.90,8.51" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_weCwVhQ">Retrospective evaluation of a dose◻dependent effect of angiotensin◻converting enzyme inhibitors on long◻term outcome in dogs with cardiac disease</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Ward</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Chou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">S</forename><surname>Dorman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Mochel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_AqNzHFp">J Vet Intern Med</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="2102" to="2111" />
+			<date type="published" when="2021-09">2021 Sep</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,62.02,468.20,485.53,8.51;26,52.33,486.21,483.02,8.51;26,52.33,503.47,71.34,8.51" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_sZ6pwda">Chronobiology of the renin-angiotensinaldosterone system in dogs: relation to blood pressure and renal physiology</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Mochel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Fink</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Peyrou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Desevaux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Deurinck</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Giraudel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zkt3V6k">Chronobiology International</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1144" to="1159" />
+			<date type="published" when="2013-11-01">2013 Nov 1</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,62.02,537.99,434.63,8.51;26,52.33,556.00,473.02,8.51;26,52.33,573.25,76.76,8.51" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_RVeFczM">Influence of feeding schedules on the chronobiology of renin activity, urinary electrolytes and blood pressure in dogs</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Mochel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Fink</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Bon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Peyrou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Bieth</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Desevaux</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ez4cE6b">Chronobiology International</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="715" to="730" />
+			<date type="published" when="2014-06">2014 Jun</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,61.49,607.77,483.82,8.51;26,52.33,625.03,492.10,8.51;26,52.33,643.04,235.46,8.51" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_dUePgUd">Renin◻angiotensin aldosterone profile before and after angiotensin◻converting enzyme◻inhibitor administration in dogs with angiotensin◻converting enzyme gene polymorphism</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Adin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Atkins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Domenig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Defrancesco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Keene</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Tou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mA6tjcV">J Vet Intern Med</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="600" to="606" />
+			<date type="published" when="2020-03">2020 Mar</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,62.67,677.55,443.87,8.51;26,52.33,694.81,441.76,8.51;26,52.33,712.82,163.37,8.51" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_XNCYJ4F">Effects of Ramipril on the Aldosterone/Renin Ratio and the Aldosterone/Angiotensin II Ratio in Patients With Primary Aldosteronism</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Poglitsch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Cowley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Domenig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">C</forename><surname>Mcwhinney</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jpj</forename><surname>Ungerer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_P47X62h">Hypertension</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="488" to="496" />
+			<date type="published" when="2020-08">2020 Aug</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,62.67,747.33,460.35,8.51;26,52.33,764.59,399.70,8.51;27,26.45,19.13,58.98,4.75;27,115.66,19.13,449.73,4.75;27,26.45,822.13,47.68,4.75;27,545.47,822.13,23.07,4.75" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_2sZ4XC3">Measurement of Equilibrium Angiotensin II in the Diagnosis of Primary Aldosteronism</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Poglitsch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">C</forename><surname>Mcwhinney</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jpj</forename><surname>Ungerer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">D</forename><surname>Gordon</surname></persName>
+		</author>
+		<idno>blank 27/28</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_sadYbxR">Breakthrough: A First-In-Class Virtual Simulator for Dose Optimization of ACE Inhibitors in Veterinary Cardiolog… about</title>
+				<imprint>
+			<date type="published" when="2020-03-01">2020 Mar 1</date>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="page">56</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="27,62.84,88.53,346.96,8.51;27,52.33,106.54,224.32,8.51" xml:id="b27">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><surname>Pubchem</surname></persName>
+		</author>
+		<ptr target="https://pubchem.ncbi.nlm.nih.gov/compound/5362123" />
+		<imprint>
+			<date type="published" when="2022-01-31">2022 Jan 31</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="27,62.84,141.05,295.48,8.51;27,52.33,158.31,224.32,8.51" xml:id="b28">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><surname>Pubchem</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Benazeprilat</surname></persName>
+		</author>
+		<ptr target="https://pubchem.ncbi.nlm.nih.gov/compound/5463984" />
+		<imprint>
+			<date type="published" when="2022-01-31">2022 Jan 31</date>
+		</imprint>
+	</monogr>
+	<note>Internet</note>
+</biblStruct>
+
+<biblStruct coords="27,61.47,192.83,487.51,8.51;27,52.33,210.08,372.08,8.51" xml:id="b29">
+	<monogr>
+		<title level="m" type="main" xml:id="_4xXEKf8">Monolix Methodology, a software for the analysis of nonlinear mixed effects models</title>
+		<ptr target="http://lixoft.com/wp-content/uploads/2016/03/monolixMethodology.pdf" />
+		<imprint>
+			<date type="published" when="2014">2014. 2020 May 10</date>
+		</imprint>
+	</monogr>
+	<note>Internet</note>
+</biblStruct>
+
+<biblStruct coords="27,61.00,244.60,466.08,8.51;27,52.33,262.61,449.07,8.51;27,52.33,279.87,272.38,8.51" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_Rrte38g">Modeling of Large Pharmacokinetic Data Using Nonlinear Mixed-Effects: A Paradigm Shift in Veterinary Pharmacology. A Case Study With Robenacoxib in Cats</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Pelligand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Soubret</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">N</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Elliott</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Mochel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Dx5RGD3">CPT: Pharmacometrics &amp; Systems Pharmacology</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="625" to="635" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="27,61.47,314.38,489.28,8.51;27,52.33,331.64,87.80,8.51" xml:id="b31">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">B</forename><surname>Sheiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">M</forename><surname>Ludden</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_C8kxf5P">Population Pharmacokinetics/Dynamics*. Annual Review of Pharmacology and Toxicology</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="185" to="209" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="27,61.79,366.16,430.04,8.51;27,52.33,384.16,230.57,8.51" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_PE5Yf9c">Prediction discrepancies for the evaluation of nonlinear mixed-effects models</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Mentré</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Escolano</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fYnNSs9">J Pharmacokinet Pharmacodyn</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="345" to="367" />
+			<date type="published" when="2006-06">2006 Jun</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="27,61.21,418.68,483.60,8.51;27,52.33,435.94,300.03,8.51" xml:id="b33">
+	<monogr>
+		<title level="m" type="main" xml:id="_AJy6pZD">ODE Generation and Integration</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Fitzjohn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Jombart</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Science Ic Of</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Medicine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Odin</surname></persName>
+		</author>
+		<idno>Internet]. 2021</idno>
+		<ptr target="https://CRAN.R-project.org/package=odin" />
+		<imprint>
+			<date type="published" when="2021-12-10">2021 Dec 10</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="27,61.22,470.45,470.55,8.51;27,52.33,488.46,457.19,8.51;27,52.33,505.72,190.40,8.51" xml:id="b34">
+	<monogr>
+		<title level="m" type="main" xml:id="_uQCN7C7">PNB (files, dvode.f, zvode.f), et al. deSolve: Solvers for Initial Value Problems of Differential Equations</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Soetaert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Petzoldt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">W</forename><surname>Setzer</surname></persName>
+		</author>
+		<idno>Internet]. 2021</idno>
+		<ptr target="https://CRAN.R-project.org/package=deSolve" />
+		<imprint>
+			<date type="published" when="2021-12-10">2021 Dec 10</date>
+		</imprint>
+	</monogr>
+	<note>ODE&quot;, &quot;DAE&quot;, &apos;DDE&apos;</note>
+</biblStruct>
+
+<biblStruct coords="27,61.21,540.24,489.53,8.51;27,52.33,557.49,297.93,8.51" xml:id="b35">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Fitzjohn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Hinsley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">C</forename><surname>Science</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Medicine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Dde</surname></persName>
+		</author>
+		<ptr target="https://CRAN.R-project.org/package=dde" />
+		<title level="m" xml:id="_kZgRgH8">Solve Delay Differential Equations</title>
+				<imprint>
+			<date type="published" when="2020">2020. 2021 Dec 10</date>
+		</imprint>
+	</monogr>
+	<note>Internet</note>
+</biblStruct>
+
+<biblStruct coords="27,61.02,592.01,388.16,8.51;27,52.33,610.02,253.16,8.51" xml:id="b36">
+	<monogr>
+		<title level="m" type="main" xml:id="_XyCQgTf">Defining a data set for Monolix</title>
+		<ptr target="https://monolix.lixoft.com/data-and-models/creating-data-set/" />
+		<imprint>
+			<date type="published" when="2017">2017. 2021 Dec 15</date>
+		</imprint>
+	</monogr>
+	<note>Internet</note>
+</biblStruct>
+
+<biblStruct coords="27,61.79,644.54,456.52,8.51;27,52.33,661.79,102.47,8.51" xml:id="b37">
+	<monogr>
+		<title level="m" type="main" xml:id="_3ZFZAAv">Enzyme Kinetics: Basic Enzyme Reaction</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">D</forename><surname>Murray</surname></persName>
+		</author>
+		<idno>6.1</idno>
+		<imprint>
+			<publisher>Springer</publisher>
+			<biblScope unit="page" from="175" to="178" />
+		</imprint>
+	</monogr>
+	<note>Mathematical biology I An introduction. 3rd ed.</note>
+</biblStruct>
+
+<biblStruct coords="27,61.68,696.31,436.04,8.51;27,52.33,714.32,81.48,8.51" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_2hAcNxd">Mechanism-Based Pharmacodynamic Modeling</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Felmlee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">E</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">E</forename><surname>Mager</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mGrncSJ">Methods Mol Biol</title>
+		<imprint>
+			<biblScope unit="volume">929</biblScope>
+			<biblScope unit="page" from="583" to="600" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="27,63.89,748.08,489.24,8.51;27,52.33,766.09,177.03,8.51" xml:id="b39">
+	<monogr>
+		<ptr target="https://www.genome.jp/pathway/hsa04614" />
+		<title level="m" xml:id="_y7vW262">KEGG PATHWAY: Renin-angiotensin system -Homo sapiens (human)</title>
+				<imprint>
+			<date type="published" when="2022-01-31">2022 Jan 31</date>
+		</imprint>
+	</monogr>
+	<note>Internet</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

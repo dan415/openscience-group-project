@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_kyRTctY">Porcine and human aortic valve endothelial and interstitial cell isolation and characterization</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,42.88,171.84,35.03,9.45;1,95.59,171.84,11.67,9.45"><roleName>PR</roleName><forename type="first">D</forename><surname>Nehl</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,116.02,171.84,30.95,9.45;1,164.66,171.84,4.96,9.45"><forename type="first">K</forename><surname>Goody</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,177.50,171.84,42.50,9.45"><forename type="first">A</forename><surname>Maus</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,227.88,171.84,47.75,9.45"><forename type="first">E</forename><surname>Pfeifer</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,282.94,171.84,50.37,9.45"><forename type="first">F</forename><surname>Aikawa</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,340.31,171.84,61.17,9.45"><forename type="first">S</forename><surname>Bakthiary</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,409.36,171.84,53.56,9.45"><forename type="first">G</forename><surname>Zimmer</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,471.39,171.84,56.79,9.45"><forename type="first">F</forename><surname>Nickenig</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,42.88,184.60,33.87,9.45;1,106.71,184.60,12.84,9.45"><forename type="first">M</forename><forename type="middle">R</forename><surname>Jansen</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,128.88,184.60,30.37,9.45"><surname>Hosen</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,166.03,368.43,155.25,9.45"><roleName>PhD</roleName><forename type="first">Mohammed</forename><surname>Rabiul Hosen</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Heart Center Bonn</orgName>
+								<orgName type="department" key="dep2">Department of Internal Medicine II</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<addrLine>Molecular Cardiology, Venusberg-Campus 1</addrLine>
+									<postCode>53127</postCode>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Institute of Pharmacology and Toxicology</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<addrLine>Venusberg-Campus 1</addrLine>
+									<postCode>53127</postCode>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">Brigham and Women&apos;s Hospital</orgName>
+								<orgName type="institution">Harvard Medical School</orgName>
+								<address>
+									<addrLine>77 Ave Louis Pasteur, NRB 741</addrLine>
+									<postCode>02115</postCode>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department" key="dep1">Heart Center Bonn</orgName>
+								<orgName type="department" key="dep2">Department of Cardiac Surgery</orgName>
+								<orgName type="institution">University Hospital Bonn</orgName>
+								<address>
+									<addrLine>Venusberg-Campus 1</addrLine>
+									<postCode>53127</postCode>
+									<settlement>Bonn</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<address>
+									<addrLine>1 * 1 1 2 3 4 1 1 1 1 † 1 2 3 4</addrLine>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_vDapnGC">Porcine and human aortic valve endothelial and interstitial cell isolation and characterization</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">962E32CC6DBE0F2A19AC03685BF6F351</idno>
+					<idno type="DOI">10.1101/2022.12.01.518669</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_fprt5mg">December 01</term>
+					<term xml:id="_fEf7cmH">2022</term>
+					<term xml:id="_ANyTnrj">Version 1</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_ScC6856"><p xml:id="_dZsrNwN">Background Calcific aortic valve stenosis is defined by pathological changes in the aortic valve and their predominant cell types: valvular interstitial (VICs) and endothelial cells (VECs). Understanding the cellular and molecular mechanisms of this disease is a prerequisite to identify potential pharmacological treatment strategies. In this study, we present a unique aortic valve cell isolation technique to acquire specific human and porcine cell populations and compared VICs and VECs of these species with each other for the first time.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_F7Vhvj5">Methods and Results</head><p xml:id="_xVZNrCK">Aortic valve cells were isolated from human explants from patients undergoing surgical aortic valve replacement or porcine valvular tissue. Pure VEC and VIC populations could be verified by gene expression analysis and immunofluorescence staining showing a highly significant upregulation of endothelial markers in VECs and mesenchymal markers in VICs, respectively. Further analysis and comparison of cells in in vitro experiments revealed that endothelial-to-mesenchymal transition could be induced in hVECs, leading to significant increase of mesenchymal markers. In vitro calcification experiments of VICs induced by osteogenic medium or pro-calcifying medium demonstrated</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_KSz2tmn">Introduction</head><p xml:id="_XAKvzzP">Aortic valve stenosis (AVS) due to calcific aortic valve disease (CAVD) is one of the most common heart valve diseases worldwide, with a 2-year mortality greater than 50% when symptomatic <ref type="bibr" coords="2,466.14,289.29,9.20,9.93" target="#b2">[1]</ref><ref type="bibr" coords="2,475.34,289.29,4.60,9.93" target="#b3">[2]</ref><ref type="bibr" coords="2,479.94,289.29,9.20,9.93" target="#b4">[3]</ref>. CAVD is characterized by fibrous thickening and calcification of the aortic valve cusps, leading to narrowing of the valve orifice. Originally, this disease was described as passive and degenerative but it is now well established that CAVD is a cell-mediated, actively regulated inflammatory disease <ref type="bibr" coords="2,443.90,350.81,9.20,9.93" target="#b5">[4]</ref><ref type="bibr" coords="2,453.10,350.81,4.60,9.93" target="#b6">[5]</ref><ref type="bibr" coords="2,453.10,350.81,4.60,9.93" target="#b7">[6]</ref><ref type="bibr" coords="2,457.69,350.81,9.20,9.93" target="#b8">[7]</ref>. Currently, there are no approved medical therapies to prevent or reverse calcification of the aortic valve. The only treatment options are open heart surgery with aortic valve replacement (SAVR) or transcatheter aortic valve implantation (TAVR) <ref type="bibr" coords="2,172.31,412.34,11.49,9.93" target="#b9">[8]</ref>. It is of upmost importance to better understand the mechanisms underlying this disease in order to identify feasible pharmaceutical and non-surgical/interventional therapies.</p><p xml:id="_jhJZyQe">In healthy humans, the tricuspid aortic valve (AV) consists of three cusps, which are covered by valvular endothelial cells (VECs) on the aortic and ventricular sides. The interstitium of the valve is composed of three main layers with ubiquitously distributed valvular interstitial cells (VICs). During the pathogenesis of AVS, different stimuli, including shear stress and mechanical strain, trigger VEC dysfunction, resulting in lipoprotein/phospholipid infiltration and oxidation <ref type="bibr" coords="2,292.24,567.67,9.46,9.93" target="#b11">[9]</ref><ref type="bibr" coords="2,301.70,567.67,4.73,9.93" target="#b12">[10]</ref><ref type="bibr" coords="2,306.44,567.67,14.19,9.93" target="#b13">[11]</ref>. VECs lose their protective and regulative properties and can transdifferentiate into myofibroblast-like VICs, a process referred to as endothelial to mesenchymal transition (EndMT) <ref type="bibr" coords="2,207.63,608.18,14.95,9.93" target="#b14">[12]</ref><ref type="bibr" coords="2,222.58,608.18,4.98,9.93" target="#b15">[13]</ref><ref type="bibr" coords="2,227.56,608.18,14.95,9.93" target="#b16">[14]</ref>. Disruption of the endothelial layer also enables infiltration of immune cells into the AV, promoting the release of pro-inflammatory stimuli, and driving osteogenic differentiation of VICs <ref type="bibr" coords="2,151.11,649.45,12.27,9.93" target="#b11">[9,</ref><ref type="bibr" coords="2,166.44,649.45,13.79,9.93" target="#b17">15]</ref>. This osteogenic differentiation of VICs, from a fibroblastic to an osteogenic phenotype, induces the formation of calcium nodules, thus leading to AV calcification <ref type="bibr" coords="2,457.43,669.71,12.27,9.93" target="#b11">[9,</ref><ref type="bibr" coords="2,472.76,669.71,13.79,9.93" target="#b18">16]</ref>. It is pivotal to further investigate these molecular and cellular mechanisms of AV cell populations involved in CAVD.</p><p xml:id="_acunZ49">However, isolation and cultivation of VECs and VICs is technically and methodologically highly demanding. Here, we offer a novel AV cell isolation method that can be applied in all cell culture laboratories. A variety of organisms can be used for such cell culture experiments, including human and pigs <ref type="bibr" coords="3,509.68,34.92,14.94,9.93" target="#b19">[17]</ref><ref type="bibr" coords="3,524.62,34.92,4.98,9.93" target="#b20">[18]</ref><ref type="bibr" coords="3,524.62,34.92,4.98,9.93" target="#b21">[19]</ref><ref type="bibr" coords="3,529.60,34.92,14.94,9.93" target="#b22">[20]</ref>.</p><p xml:id="_sdN7KVg">In general, human material is advantageous over animal material when studying potential therapeutic targets involved in disease pathogenesis in humans. While tissue from patients with CAVD can be used for genetic screening, cells from non-stenotic and healthy patients are the most useful and authentic platform to study disease progressions (e.g., induction of osteoblastic differentiation and EndMT).</p><p xml:id="_cG7hSfB">Calcified cusps from diseased human AVs can be obtained from patients undergoing AV replacement surgery due to severe AVS. Control tissues are more difficult to obtain, since non-calcified aortic valves are less often explanted (e.g. in the setting of aortic root or ascending aorta dilatation/aneurysm, when aortic regurgitation occurs as a consequence). It is therefore of importance to investigate whether other organisms, which are genetically comparable to humans, can be used as tissue donors for cell isolation.</p><p xml:id="_vH5utTc">Undoubtedly, acquiring high-quality control samples from healthy or non-stenotic AVs is challenging. In addition to the most obvious problems, individual patients naturally display a high variability in age, sex, congenital, pre-existing, and concomitant diseases <ref type="bibr" coords="3,292.83,281.03,17.17,9.93" target="#b23">[21]</ref>. Thus, the degrees of calcification patterns differ immensely between patients and with respect to sex. Due to these difficulties, the most frequently used AVs tissues for cell isolation are obtained from large animals which resemble humans genetically, such as pigs <ref type="bibr" coords="3,80.86,342.56,14.94,9.93" target="#b24">[22]</ref><ref type="bibr" coords="3,95.81,342.56,4.98,9.93" target="#b25">[23]</ref><ref type="bibr" coords="3,100.79,342.56,14.94,9.93" target="#b26">[24]</ref>. An advantage of porcine tissue over human material is that healthy tissue can be obtained more easily from abattoirs or animal research facilities. The hearts and AVs are healthy without being affected by other diseases, and the cells can therefore be isolated and expanded more efficiently in vitro. The size and the substantial amount of tissue in porcine AVs makes it easier to study the cusps' mechanical properties or to isolate cells. Moreover, the whole heart can be used for research, whereas in humans usually only one valve is explanted <ref type="bibr" coords="3,269.55,445.36,17.16,9.93" target="#b27">[25]</ref>.</p><p xml:id="_Qg49vAa">Although porcine valves appear to be anatomically and genetically similar to humans, there could be differences in specific molecular pathways. To date, no direct comparison of human and porcine VECs and VICs has been undertaken <ref type="bibr" coords="3,197.89,518.14,17.16,9.93" target="#b28">[26]</ref>. In this study, we undertook a major comparison of pig and human AV cells in order to identify a more easily available alternative to human material for cell culture experiments. Cells were isolated in a cell population-specific manner and characterized further. Cell culture experiments, such as in vitro EndMT and calcification induction, were performed in human and porcine cells to analyze and compare their response to these external stimuli.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_68kEVqH">Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_gT4jgVS">Human and porcine aortic valve cell isolation</head><p xml:id="_qvbHkwb">Human AV samples were obtained from patients undergoing AV replacement due to symptomatic AVS, MACS separation was performed according to the manufacturer's protocol. VECs were seeded on fibronectin-coated (Sigma-Aldrich, #F0895) (5 μg/cm ) T25 flasks. To isolate VICs, the remaining valve tissue was minced and further digested using 600 U/mL collagenase II in VIC primary medium for 20h at 37 °C with gentle agitation. The cell suspension was then filtered (100 μm) and centrifuged twice for 15 minutes at 1000 rpm. VICs were seeded on collagen-coated (5 μg/cm ) T75 flasks.</p><formula xml:id="formula_0" coords="3,42.88,727.49,9.80,9.93">or</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_96MxTsA">Cell culture</head><p xml:id="_2jKnyN2">All cells were split with a detach kit from Lonza (Lonza, #CC-5034) and cultured in sterile incubators at 37°C, 5% (v/v) CO and 95% humidity. hVECs and pVECs were cultured in EGM™-2 MV Microvascular Endothelial Cell Growth Medium-2 BulletKit™ (Lonza, #CC-3202). hVICs and pVICs were cultured in VIC medium, consisting of DMEM (Thermo Fisher Scientific, 21885108), 10% FBS (Gibco, #A3160802) and 1% penicillin/streptomycin (pen/strep) (Merck, #516106). All experiments were performed in the fifth or sixth passage at 70% confluency on 12-or 24-well plates.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_uTNGPep">Migration assay</head><p xml:id="_JkqXAE5">Cell migration was analyzed by scratch wound assay <ref type="bibr" coords="4,303.83,646.45,18.40,9.93" target="#b31">[28]</ref> on a 24-well plate. hVECs and pVECs were incubated with starving medium, VEC medium without FBS, for 18 hours and subsequently, a scratch was performed using a sterile 200 μl pipet tip. The medium was changed to normal VEC medium, and the scratch wound closure documented every 2 hours by taking pictures with a Zeiss Axiovert 200M</p><p xml:id="_crXXvGX">Microscope. The remaining cell-free area under the scratch was analyzed by Zen Lite software (Zeiss). In vitro endothelial-to-mesenchymal transition (EndMT) was induced in hVECs and pVECs on a 12-well plate using EGM™-2 MV Microvascular Endothelial Cell Growth Medium-2 BulletKit™ (Lonza, #CC-3202), without VEGF, GA-1000 and hydrocortisone, but supplemented with 30ng/μl tumor necrosis factor alpha (TNFα; R&amp;D systems, #210-TA-020) for 7d. EndMT induction was verified by gene expression analysis by RT-qPCR.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_pCz6guw">In vitro EndMT induction</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_QNsVbtD">In vitro calcification model</head><p xml:id="_2r7qR5A">For in vitro calcification, hVICs and pVICs were seeded onto 12-well plates and cultured with DMEM (Thermo Fisher Scientific, #21885108), 5% FBS (Gibco, #A3160802) and 1% penicillin/ streptomycin  </p><formula xml:id="formula_1" coords="5,42.88,217.25,5.02,9.93">(</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_VDGYMsf">Immunofluorescence staining</head><p xml:id="_SfHfSm8">Cells were fixed in 24-well plates with glass coverslips for 30 minutes with 4% formaldehyde. After three further washing steps with 1x PBS, cells were permeabilized using 0.25% Triton-X in PBS for 10 minutes and then washed again three times with 1x PBS. Cells were blocked with 1% BSA-glycine in PBS with 0.1% Tween for 30 minutes and then incubated for 2 hours with the primary antibodies on a shaker. For </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_7Z5e2Xw">Results</head><p xml:id="_FMXRxQZ">Cell isolation leads to pure hVEC and hVIC populations MACS-sorted hVEC and hVIC were characterized by RT-qPCR to quantify cell specific markers. Our quantification revealed a significant upregulation in endothelial marker expression in hVECs, such as von Willebrand factor (vWF) and platelet endothelial adhesion molecule-1 (PECAM-1) compared to hVICs. Myofibroblastic markers, alpha smooth muscle actin (α-SMA) and vimentin (VIM), were downregulated (Figure <ref type="figure" coords="6,158.66,387.58,9.80,9.93" target="#fig_4">1b</ref>). Immunofluorescence staining demonstrated an increase of intracellularly localized vWF and an expression of the endothelial marker, PECAM-1, whereas no expression of α-SMA and VIM was observed, further providing evidence that isolated cells were hVEC (Figure <ref type="figure" coords="6,477.80,428.85,9.50,9.93" target="#fig_4">1c</ref>). Analysis of hVEC migration capacity via a scratch wound closure revealed only 15% scratch width after 8 hours (Figure <ref type="figure" coords="6,83.30,470.12,9.80,9.93" target="#fig_4">1d</ref>), suggesting these cells maintain endothelial migration capacities, a further confirmation of pure hVEC population. To further assess if hVECs were able to undergo EndMT in vitro, cells were incubated with 30 ng/μl TNFα for 7 days. hVECs displayed increased expression of mesenchymal markers, such as α-SMA and VIM, and decreased expression of endothelial markers, namely vWF and PECAM-1 (Figure <ref type="figure" coords="6,135.36,551.91,9.50,9.93" target="#fig_4">1e</ref>), demonstrating hVEC's mesenchymal transdifferentiation capacity. These data suggest that elevated mesenchymal marker expression represents an effective EndMT induction.  MACS-sorted hVICs were characterized by RT-qPCR to quantify interstitial marker gene expression (Figure <ref type="figure" coords="7,83.30,304.29,9.50,9.93" target="#fig_5">2a</ref>). Whereas α-SMA and VIM expression were significantly upregulated, vWF as well as PECAM-1 showed decreased expression values compared to hVECs (Figure <ref type="figure" coords="7,423.89,324.55,9.80,9.93" target="#fig_4">1b</ref>). In immunofluorescence staining of hVICs a positive staining for intracellularly distributed α-SMA and VIM was observed and expression of vWF and PECAM-1 was not detected (Figure <ref type="figure" coords="7,430.01,365.82,9.80,9.93" target="#fig_5">2b</ref>). To analyze the migration properties of hVICs, a scratch wound was performed, and the closure observed for 8 hours.</p><p xml:id="_rYqGUHb">The remaining scratch area was 87% after 8 hours (Figure <ref type="figure" coords="7,333.23,407.09,9.50,9.93" target="#fig_5">2c</ref>). In vitro calcification, by incubating hVICs with OM or PCM for 7 days revealed an overexpression of alkaline phosphatase (ALPL), a hallmark of calcification, in OM but not in PCM (Figure <ref type="figure" coords="7,254.79,448.36,9.80,9.93" target="#fig_5">2d</ref>). In addition, other calcification-related genes, for instance, osteocalcin (BGLAP) and runt-related factor 2 (RUNX2), were upregulated in both conditions.</p><p xml:id="_7p3R9pW">Alizarin red staining of calcified cells provided a further layer of confirmation that the isolated cells were VICs with osteoblastic differentiation capacity (figure <ref type="figure" coords="7,303.62,509.89,9.50,9.93" target="#fig_5">2e</ref>). These data also confirmed that in vitro calcification of isolated hVICs could be induced successfully. To assess whether porcine cells can be used alternatively for cell culture experiments instead of difficultto-obtain human cells, porcine VECs (pVECs) and porcine VICs (pVICs) were characterized. Cells were isolated using the same protocol as for human cells (Figure <ref type="figure" coords="8,336.91,76.19,9.50,9.93" target="#fig_6">3a</ref>). Analysis of characteristic marker gene expression in isolated pVECs revealed elevated vWF and PECAM-1 levels and a reduction of α-SMA compared to pVICs. VIM was also upregulated in pVECs (Figure <ref type="figure" coords="8,362.64,116.71,9.80,9.93" target="#fig_6">3b</ref>). In immunofluorescence staining, positive staining for vWF was observed but no α-SMA signal was detectable in pVECs (Figure <ref type="figure" coords="8,504.97,137.72,9.50,9.93" target="#fig_6">3c</ref>). To assess the migration behavior of hVECs, a scratch wound assay was performed which revealed a scratch closure to 70% after 8h (Figure <ref type="figure" coords="8,238.27,178.23,9.80,9.93" target="#fig_6">3d</ref>). This data provided evidence that pVECs displayed an endothelial specific phenotype. However, in vitro EndMT induction using TNFα demonstrated a decrease of EndMT markers (Figure <ref type="figure" coords="8,176.79,219.50,9.50,9.93" target="#fig_6">3e</ref>), indicating that cells had not undergone efficient transdifferentiation. To characterize isolated pVICs, using the same protocol as for human cells (Figure <ref type="figure" coords="8,450.83,412.34,9.50,9.93" target="#fig_8">4a</ref>), characteristic interstitial cell markers were analyzed, showing an upregulation of α-SMA in pVICs compared to pVECs (Figure <ref type="figure" coords="8,83.30,452.86,9.80,9.93" target="#fig_6">3b</ref>). Noteworthily, endothelial markers, vWF and PECAM-1 as well as VIM were decreased.</p><p xml:id="_3E6JJmV">Immunofluorescence staining displayed a positive signal for α-SMA and VIM, while vWF and PECAM-1 were undetectable (Figure <ref type="figure" coords="8,176.43,494.13,9.80,9.93" target="#fig_8">4b</ref>). Scratch-wound based functional assays revealed a scratch closure after 8 hours of 87% (Figure <ref type="figure" coords="8,160.49,514.39,9.50,9.93" target="#fig_11">5c</ref>). These data suggest a VIC specific phenotype of the isolated cells. To assess whether calcification can be induced in pVICs in vitro, cells were incubated with OM or PCM for 7 days, showing a significant upregulation of calcification-related genes, namely, ALPL, BMP2, BGLAP and osteopontin (SPP1) in OM and PCM (Figure <ref type="figure" coords="8,284.84,575.92,9.80,9.93" target="#fig_11">5d</ref>). Additionally, alizarin red staining revealed enhanced calcific nodule staining in OM treated and more pronounced staining in PCM treated cells, due to deposition of calcium phosphate (Ca (PO ) ) into the cellular matrix (Figure <ref type="figure" coords="8,427.91,617.19,9.50,9.93" target="#fig_11">5e</ref>). This data provided evidence that pVICs can be utilized for in vitro calcification experiments.   Valvular endothelial cells (VECs), valvular interstitial cells (VICs), human VECs (hVECs), human VICs (hVICs), porcine VECs (pVECs), porcine VICs (pVICs), von Willebrand factor (vWF), platelet adhesion molecule-1 (PECAM-1), alpha smooth muscle actin (α-SMA), vimentin (VIM), alkaline phosphatase (ALPL), osteocalcin (BGLAP), runt-related factor X 2 (RUNX2), bone morphogenic protein 2 (BMP2), osteopontin (SPP1).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_qdCRZSB">Discussion</head><p xml:id="_VMVG96G">Analyzing aortic valve cells is of major relevance for a better understanding of the pathology of aortic valve stenosis, but obtaining, isolating and cultivating these cells is a demanding task. Human aortic valve tissue is difficult to obtain, and the acquisition of non-stenotic control tissues is often especially challenging. In principle, living aortic valve cells can be gained from donor hearts that are unsuitable for transplantation, as long as the aortic valve is not affected by underlying disease <ref type="bibr" coords="9,432.93,461.12,17.16,9.93" target="#b32">[29]</ref>. This is the most suitable source of control tissue, but since there are only few transplant units and a limited number of donors who would be appropriate candidates, this material is difficult to obtain <ref type="bibr" coords="9,424.34,502.39,18.40,9.93" target="#b33">[30,</ref><ref type="bibr" coords="9,445.81,502.39,13.79,9.93" target="#b34">31]</ref>. It is also possible to use valves that were explanted because of aortic dissection, since this is presumed to not affect the aortic valve <ref type="bibr" coords="9,101.68,543.65,17.17,9.93" target="#b35">[32]</ref>. However, these operations are typically performed as emergency operations, with ensuing problems concerning both informed consent and the isolation procedure. The most common source of non-calcified human aortic valve tissue are patients undergoing SAVR due to aortic regurgitation in the context of aortic root or ascending aortic aneurysm.</p><p xml:id="_KaT4rjW">Standardizing the method of aortic valve cell isolation is crucial to ensure optimal data exchange between investigators. In a first attempt to standardize cell isolation from human and porcine aortic valve tissues, we propose a method based on previous publications with some refinements <ref type="bibr" coords="9,460.06,677.97,18.39,9.93" target="#b19">[17,</ref><ref type="bibr" coords="9,481.52,677.97,15.33,9.93" target="#b21">19,</ref><ref type="bibr" coords="9,499.91,677.97,15.33,9.93" target="#b25">23,</ref><ref type="bibr" coords="9,518.31,677.97,15.33,9.93" target="#b36">33,</ref><ref type="bibr" coords="9,42.88,698.23,13.79,9.93" target="#b37">34]</ref>. We removed VECs from AVS cusps via scraping cells from valve tissue by the careful use of a scalpel prior to collecting and affinity-based isolation. This increased the number of VECs gained from the isolation process, when compared to removal with a cotton swab. Moreover, we added a magneticactivated cell sorting (MACS, Miltenyi Biotech) step with the specific endothelial marker endoglin (CD105) in order to ensure a pure VEC isolation <ref type="bibr" coords="9,280.56,780.01,17.17,9.93" target="#b24">[22]</ref>. This endothelial cell separation has previously been described for human vascular endothelial cells. Based on our study, plating VICs on a collagencoated 75 cm culture flask is more appropriate for cell culture-based experiments <ref type="bibr" coords="10,445.04,55.18,18.39,9.93" target="#b19">[17,</ref><ref type="bibr" coords="10,466.50,55.18,13.79,9.93" target="#b22">20]</ref>. Due to the thorough sorting and lesser number of VECs in general, VEC yields are significantly lower than VIC yields and thus, porcine or human cells can be plated on one fibronectin-coated 6-well to enable cell-cell interaction <ref type="bibr" coords="10,96.79,116.71,17.17,9.93" target="#b19">[17]</ref>.</p><p xml:id="_zXEVMPY">The second aim of this manuscript was to compare human and porcine VECs and VICs with each other to assess whether easier-to-obtain porcine aortic valve tissues and their cells can be used for primary in vitro investigations to study human AVS pathologies. We found commensurabilities but also disparities between human and porcine aortic valve cells. Under physiological conditions hVECs and pVECs resemble endothelial cells covering the vasculature displaying a typical cuboid, endothelial cell shape with cell-junctions and expression of specific endothelial markers such as PECAM-1 and vWF <ref type="bibr" coords="10,501.69,251.02,17.17,9.93" target="#b38">[35]</ref>. To test whether the differentiation of VECs to mesenchymal cells by TNFα treatment can be performed successfully, gene expression analysis of EndMT markers, such as α-SMA and VIM were performed after 7 days of TNFα treatment <ref type="bibr" coords="10,196.05,312.55,17.16,9.93">[36]</ref>. In hVECs incubated with TNFα, the expression of mesenchymal cell markers such as α-SMA and VIM was increased, whereas vWF and PECAM-1 were decreased. In pVECs the endothelial makers were also downregulated but surprisingly, this also applies for α-SMA and VIM. During this transition, activated VECs progressively lose their endothelial properties, including cell junctions, and their specific endothelial markers, display increased cellular invasion and acquire a mesenchymal phenotype with improved migratory capabilities <ref type="bibr" coords="10,342.14,415.34,17.88,9.93" target="#b38">[35]</ref>. hVICs and pVICs displayed the typical spindle-shaped VIC morphology with a swirling pattern that start to grow over each other at confluency <ref type="bibr" coords="10,98.63,456.61,17.17,9.93" target="#b25">[23]</ref>. VICs are a heterogenous and highly plastic cell population residing within the tissue matrix of the aortic valve <ref type="bibr" coords="10,165.38,476.87,18.40,9.93" target="#b40">[37,</ref><ref type="bibr" coords="10,186.84,476.87,13.79,9.93" target="#b41">38]</ref>. In healthy human aortic valves, most VICs are considered to be quiescent with a fibroblast-like phenotype, which can be distinguished from VECs by positive expression of VIM and the absence of endothelial markers vWF and PECAM-1 <ref type="bibr" coords="10,373.08,518.14,14.95,9.93" target="#b42">[39]</ref><ref type="bibr" coords="10,388.03,518.14,4.98,9.93" target="#b43">[40]</ref><ref type="bibr" coords="10,393.01,518.14,14.95,9.93" target="#b44">[41]</ref>. Upon activation they can undergo differentiation into activated myofibroblast-like VICs, which are, besides vimentin, also positive for α-SMA <ref type="bibr" coords="10,95.18,559.41,18.39,9.93" target="#b40">[37,</ref><ref type="bibr" coords="10,116.64,559.41,13.79,9.93" target="#b45">42]</ref>. This leads to the conclusion that hVICs display a myofibroblastic-like phenotype.</p><p xml:id="_ZGQusaE">Intriguingly, comprehensive studies identified cellular heterogeneities in aortic valve tissues and identified 234 cell clusters, representing 58 major cell types <ref type="bibr" coords="10,334.47,599.93,17.16,9.93" target="#b46">[43]</ref>. This study also reported endothelial, and interstitial cell heterogeneities, including endothelial phenotype during EndMT via in-depth integrated multi-omics, <ref type="bibr" coords="10,156.80,641.20,17.16,9.93" target="#b46">[43]</ref>. Single-cell RNA sequencing and proteomic analysis from pVECs undergoing EndMT could provide further insight into the potential genetic differences. To this end, our findings are also in line with above-mentioned report, suggesting a higher degree of cellular heterogeneity in the isolated porcine cell population.</p><p xml:id="_QxW4PKQ">Although the isolation, cultivation, and in vitro experiments with aortic valve cells are challenging, many advances have been made in recent years <ref type="bibr" coords="10,253.63,755.25,14.02,9.93" target="#b19">[17]</ref><ref type="bibr" coords="10,272.33,755.25,14.02,9.93" target="#b20">[18]</ref>. Different methods for isolation, EndMT, and calcification have been established around the world <ref type="bibr" coords="10,301.42,775.51,17.17,9.93" target="#b20">[18]</ref>. However, there is currently no reproducible experimental standardization, which would be crucial to ensure optimal comparisons between laboratories and to connect all findings. This manuscript aims to initiate the first step towards standardization of human and porcine aortic valve cell isolation. In vitro experiments with the aortic valve, cells are immensely important to improve our understanding of involved pathomechanisms during the development of CAVD and will undoubtedly lead to the identification of druggable targets.</p><p xml:id="_maQVuqC">Additionally, no direct and detailed comparison between human and porcine aortic valve tissue has been reported.</p><p xml:id="_RMJKEEz">However, our study has some limitations, namely, the patient samples were all collected at the University of Bonn, Germany, thus, the patient-derived data presented is limited to the Caucasian race. Therefore, no information on race-dependent differences and heterogeneities were derivable in isolated cells from AV tissues of AVS patients who underwent SAVR. Although the characteristic gene expression levels of VIC and VEC markers are similar in patient-derived valvular cells there are some differences in cells of porcine origin, as confirmed by RT-qPCR. Due to the technological limitations of valve cell isolations, it is still very challenging to completely confirm that valvular cell populations are absolutely pure and without any other contamination in the isolates. In cardiovascular research, a wide range of studies has reported dynamic alterations in the expression of genes during different cardiovascular conditions, leading to an interest in single-cell resolution investigations <ref type="bibr" coords="11,262.93,353.82,14.21,9.93" target="#b47">[44]</ref><ref type="bibr" coords="11,277.13,353.82,4.74,9.93" target="#b48">[45]</ref><ref type="bibr" coords="11,281.87,353.82,14.21,9.93" target="#b49">[46]</ref>. Regarding patients with AVS, only some patients In conclusion, our findings offer new avenues into alternative cellular model systems that can be used in a wide range of biomedical research. We demonstrated for the first time in detail, that 1) patient-derived AV cells, namely, VICs and VECs, isolated from AV tissue explants from AVS patients can be isolated as a pure population. These cells express typical endothelial-and interstitial cell markers and are comparable morphologically; 2) patient-derived cells can be maintained in culture for a prolonged time porcine cells revealed that both cell types are comparable, although some cellular heterogeneity in VECs of porcine origin (pVECs) exist.</p><p xml:id="_9vfJ78K">In summary, our study has revealed an easy-to-obtain and financially viable alternative cellular model system that can be used in cardiovascular research. Our findings can also help circumvent limitations of</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_d6q6UAM">Figures with legends</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_qrzpKwG">Graphical abstract: Aortic valve cell isolation: a comparative study of endothelial and interstitial cell isolation, and characterization with valvular tissue from porcine and humans.</head><p xml:id="_mWVgD2z">Human aortic valve endothelial cells (hVECs) and interstitial cells (hVICs) as well as porcine aortic valve endothelial cells (pVECs) and interstitial cells (pVICs) were isolated from human explants from patients undergoing surgical aortic valve replacement or porcine valvular tissue, respectively. To ensure specific cell populations, cells were characterized by marker expression analysis, immunofluorescence staining as well as migration assays. Additionally, endothelial-to-mesenchymal transition (EndMT) was induced in vitro in hVECs and pVECs along with in vitro calcification of hVICs and pVICs. Finally, these results were compared from human cells to pig cells. To date, no direct comparison has been performed.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,26.45,19.13,58.98,4.75;3,137.31,19.13,409.55,4.75;3,26.45,822.13,47.68,4.75;3,550.56,822.13,17.98,4.75"><head>12/ 5 /</head><label>5</label><figDesc xml:id="_db4afHK">23, 21:58    Porcine and human aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv about:blank 3/16</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,357.10,225.91,4.60,7.44;4,299.15,360.97,4.60,7.44;4,381.87,422.50,4.60,7.44;4,133.64,511.04,4.60,7.44;5,26.45,19.13,58.98,4.75;5,137.31,19.13,409.55,4.75;5,26.45,822.13,47.68,4.75;5,550.56,822.13,17.98,4.75"><head></head><label></label><figDesc xml:id="_nGTVT3z">aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv about:blank 5/16</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="5,42.88,411.20,325.91,9.45;5,42.88,440.86,461.02,9.93;5,42.88,461.87,471.07,9.93;5,42.88,482.13,459.21,9.93;5,42.88,502.38,500.49,9.93;5,42.88,523.39,498.39,9.93;5,42.88,543.65,474.69,9.93;5,42.88,564.66,494.55,9.93;5,42.88,584.92,471.27,9.93;5,42.88,605.18,505.48,9.93;5,42.88,626.19,509.46,9.93;5,42.88,646.45,464.52,9.93;5,42.88,666.71,323.41,9.93"><head>RNA isolation and real 1 (</head><label>1</label><figDesc xml:id="_eQMFfkj">time PCR-based gene expression profiling RNA of cultured VICs and VECs was extracted using TRIzol reagent (Thermo Fisher Scientific, #15596018) and the following cDNA synthesis was performed with High-Capacity cDNA Reverse Transcription Kit (Thermo Fisher Scientific, # 43-688-13), both according to the manufacturer's instructions. RT PCR-based gene expression profiling was conducted with TaqMan™ Gene expression master mix (Thermo Fisher Scientific, #4370074) and the following human TaqMan™ primers (Thermo Fisher Scientific): GAPDH (Hs02758991_g1), α-SMA (Hs00426835_g1), vWF (Hs01109446_m1), PECAM-1 (Hs01065279_m1), VIM (Hs00418522_m1). The following porcine TaqMan™ Primers were used: GAPDH (Ss03375629_u1), α-SMA (Ss04245588_m1), vWF (Ss04322692_m1), PECAM-Ss04322692_m1), VIM (Ss04330801_gH), ALPL (Ss06879568_m1), BMP2 (Ss03373798_g1), BGLAP (Ss03373655_s1), SPP1 (Ss03391321_m1). ΔCT values were calculated with Microsoft Excel (Microsoft Corp., Redmond, WA, USA) normalizing to GAPDH, and significance tested and visualized with GraphPad Prism (GraphPad Software, Inc., San Diego, CA, USA).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="7,26.45,19.13,58.98,4.75;7,137.31,19.13,409.55,4.75;7,26.45,822.13,47.68,4.75;7,550.56,822.13,17.98,4.75"><head>12/ 5 /</head><label>5</label><figDesc xml:id="_kRcqwEm">23, 21:58    Porcine and human aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv about:blank 7/16</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="7,50.38,52.82,37.97,8.10;7,50.38,73.08,266.35,8.10;7,50.38,85.84,479.02,8.10;7,50.38,97.85,456.30,8.10;7,50.38,110.60,493.83,8.10;7,50.38,123.36,458.83,8.10;7,50.38,136.11,492.87,8.10;7,50.38,148.87,474.38,8.10;7,50.38,160.87,475.84,8.10;7,50.38,173.63,466.94,8.10;7,50.38,186.39,480.28,8.10;7,50.38,199.14,479.53,8.10;7,50.38,211.90,487.39,8.10;7,50.38,223.90,479.23,8.10;7,50.38,236.66,433.15,8.10;7,50.38,249.42,63.98,8.10"><head>Figure 1 :</head><label>1</label><figDesc xml:id="_rCr8pKq">Figure 1: Human valvular endothelial cell isolation and characterization. (a) Workflow of human VEC isolation: (1) The explanted aortic valve cusps were incubated for 10 minutes in collagenase Type II solution.(2) VECs were carefully scratched with a scalpel into a dish filled with VEC medium, which (3) was transferred to a 15 ml tube and washed twice for 15 minutes at 1000 rpm at room temperature. (4) Cells were incubated with CD105 magnetic beads for 15 minutes and (5) the CD105 positive selection was carried out with MACS separator, according to the manufacturer's protocol.<ref type="bibr" coords="7,216.00,136.11,10.99,8.10" target="#b7">(6)</ref> The pure VEC population was seeded in one well of a fibronectin-coated 6-well plate. (b) Gene expression analysis of isolated human valvular endothelial cells (hVECs) displayed elevated endothelial marker expression of von Willebrand factor (vWF) and platelet endothelial adhesion molecule-1 (PECAM-1) and a lower expression of the mesenchymal markers alpha smooth muscle actin (α-SMA) and vimentin (VIM) compared to human valvular interstitial cells (hVICs). (c) Brightfield and immunofluorescence images of VECs positive for vWF and PECAM-1 and negative for α-SMA and VIM. (d) Migration analysis by scratch wound assay showed a scratch closure from 100% to 15% after 8 hours. (e) Inducing EndMT by incubating VECs with tumor necrosis factor alpha (TNFα lead to an upregulation of α-SMA and VIM, and a downregulation of PECAM-1 and vWF. (b) n=5 donors. (c-e) n=3 donors, *P &lt; 0.05, **P &lt; 0.01, ***P &lt; 0.001, ns not-significant, analyzed by Student t-test, 2 tail, unpaired, scale bar 200μm, (a) created with BioRender.com.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="7,50.38,579.57,37.97,8.10;7,50.38,599.83,266.86,8.10;7,50.38,612.58,485.13,8.10;7,50.38,625.34,489.03,8.10;7,50.38,637.35,447.19,8.10;7,50.38,650.10,490.93,8.10;7,50.38,662.86,487.35,8.10;7,50.38,675.61,492.34,8.10;7,50.38,688.37,484.80,8.10;7,50.38,700.38,492.37,8.10;7,50.38,713.13,466.31,8.10;7,50.38,725.89,488.79,8.10;7,50.38,738.64,462.45,8.10;7,50.38,751.40,294.91,8.10"><head>Figure 2 :</head><label>2</label><figDesc xml:id="_gTm7G9r">Figure 2:Human valvular interstitial cells isolation and characterization. (a) Workflow of human VIC isolation:<ref type="bibr" coords="7,198.66,612.58,10.99,8.10" target="#b8">(7)</ref> the remaining aortic valve tissue after VEC removal was minced into small pieces and (8) further digested in collagenase solution for 18 hours. (9) Cell suspension was filtered (100μM nylon mesh filter) and<ref type="bibr" coords="7,50.38,637.35,15.99,8.10" target="#b12">(10)</ref> the pellet washed twice.<ref type="bibr" coords="7,166.85,637.35,15.33,8.10" target="#b13">(11)</ref> VICs were seeded in a collagen-coated 75cm² flask. (b) Brightfield images and immunofluorescence staining of hVICs positive for mesenchymal markers alpha smooth muscle actin (α-SMA) and vimentin (VIM) and negative for von Willebrand factor (vWF) and platelet endothelial adhesion molecule-1 (PECAM-1). (c) Migration analysis by scratch wound assay showed a scratch closure from 100% to 15% in 8h. (d) Gene expression analysis of hVICs incubated with osteogenic medium (OM) or pro-calcifying medium (PCM) for 7 days to induced in vitro calcification. QPCR analysis showed increased alkaline phosphatase (ALPL) expression in OM, but not in PCM. Osteocalcin (BGLAP) and bone morphogenic protein 2 (BMP2) expression was upregulated in OM and PCM, compared to control medium (CTM). (e) Alizarin red staining displayed increased calcium nodule formation in OM and PCM. n=3 donors, *P &lt; 0.05, **P &lt; 0.01, ***P &lt; 0.001, ns not-significant, (b, c) analyzed by Student t-test, 2 tail, unpaired, (d, e) analyzed by one-way ANOVA with Bonferroni's correction, scale bar 200μm, (a) created with BioRender.com.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="8,50.38,268.92,37.97,8.10;8,50.38,289.18,284.34,8.10;8,50.38,301.94,477.19,8.10;8,50.38,314.70,463.45,8.10;8,50.38,327.45,479.84,8.10;8,50.38,339.46,483.55,8.10;8,50.38,352.21,476.32,8.10;8,50.38,364.97,487.12,8.10;8,50.38,377.73,283.59,8.10"><head>Figure 3 :</head><label>3</label><figDesc xml:id="_zrhvb4S">Figure 3: Isolation and characterization of porcine valvular endothelial cells. (a) Workflow of porcine VEC isolation. (b) Gene expression analysis of pVECs revealed a significant upregulation of von Willebrand factor (vWF), PECAM-1 and vimentin (VIM) and a downregulation of alpha smooth muscle actin (α-SMA), compared to pVICs. (c) Brightfield images and immunofluorescence staining of pVECs showing a positive signal for vWF and an absent signal for α-SMA. (d) Analysis of migration properties showed a scratch closure to 70% after 8 hours. (e) In vitro EndMT induction by TNFα lead to a downregulation of endothelial (PECAM-1, vWF) and mesenchymal markers (α-SMA, VIM). (b) n=5 donors. (c-e) n=3 donors, *P &lt; 0.05, **P &lt; 0.01, ***P &lt; 0.001, ns not-significant, analyzed by Student ttest, 2 tail, unpaired, scale bar 200μm, (a) created with BioRender.com.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="8,233.41,623.59,4.60,7.44;8,257.62,623.59,12.89,7.44;9,26.45,19.13,58.98,4.75;9,137.31,19.13,409.55,4.75;9,26.45,822.13,47.68,4.75;9,550.56,822.13,17.98,4.75"><head></head><label></label><figDesc xml:id="_4BukBh8">aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv about:blank 9/16</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="9,50.38,52.82,37.97,8.10;9,50.38,73.08,243.35,8.10;9,50.38,85.84,492.17,8.10;9,50.38,97.85,480.33,8.10;9,50.38,110.60,484.31,8.10;9,50.38,123.36,486.85,8.10;9,50.38,136.11,489.37,8.10;9,50.38,148.87,482.67,8.10;9,50.38,160.87,488.55,8.10;9,50.38,173.63,346.21,8.10"><head>Figure 4 :</head><label>4</label><figDesc xml:id="_EemwQnj">Figure 4: Isolation and characterization of porcine interstitial cells. (a) Workflow of porcine VIC isolation. (b)Brightfield and immunofluorescence images of pVICs displaying a positive staining for a-SMA and VIM and a negative signal for PECAM-1 and vWF. (c) Migration assays revealed a scratch closure to 87% after 8 hours. (d) Gene expression analysis of pVICs were treated with osteogenic medium (OM) or pro-calcifying medium (PCM) for 7 days to induce in vitro calcification. Calcific markers, such as alkaline phosphatase (ALPL), bone morphogenic protein 2 (BMP2), osteocalcin (BGLAP) and osteopontin (SPP1) were significantly upregulated in OM and PCM. (e) Alizarin Red staining showed pronounced calcific nodules in OM and PCM, compared to control medium (CTM). n=3 donors, *P &lt; 0.05, **P &lt; 0.01, ***P &lt; 0.001, ns not-significant, (b, c) analyzed by Student t-test, 2 tail, unpaired, (d) analyzed by one-way ANOVA with Bonferroni's correction, scale bar 200μm, (a) created with BioRender.com.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="9,50.38,226.16,37.97,8.10;9,50.38,246.41,331.46,8.10;9,50.38,259.17,471.10,8.10;9,50.38,271.18,492.27,8.10;9,50.38,283.93,490.97,8.10;9,50.38,296.69,230.44,8.10"><head>Figure 5 :</head><label>5</label><figDesc xml:id="_WREpHmv">Figure 5: A comparison of human and porcine valvular endothelial and interstitial cells.Valvular endothelial cells (VECs), valvular interstitial cells (VICs), human VECs (hVECs), human VICs (hVICs), porcine VECs (pVECs), porcine VICs (pVICs), von Willebrand factor (vWF), platelet adhesion molecule-1 (PECAM-1), alpha smooth muscle actin (α-SMA), vimentin (VIM), alkaline phosphatase (ALPL), osteocalcin (BGLAP), runt-related factor X 2 (RUNX2), bone morphogenic protein 2 (BMP2), osteopontin (SPP1).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10" coords="10,26.45,19.13,58.98,4.75;10,137.31,19.13,409.55,4.75;10,26.45,822.13,47.68,4.75;10,545.47,822.13,23.07,4.75"><head>12/ 5 /</head><label>5</label><figDesc xml:id="_5ggzUNp">23, 21:58    Porcine and human aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv about:blank 10/16</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11" coords="11,42.88,374.83,492.93,9.93;11,42.88,395.09,509.71,9.93;11,42.88,415.34,458.28,9.93;11,42.88,436.35,488.24,9.93;11,42.88,456.61,498.63,9.93;11,42.88,476.87,438.60,9.93"><head>5 .</head><label>5</label><figDesc xml:id="_txu3WV8">display impaired heart function, as evidenced by a reduction in LVEF (left ventricular ejection fraction, indicating the severity of the pathological changes of the failing heart, while other patients remain without LVEF impairment, demonstrating heterogeneity of pathological changes during AVS[47-48]. To enumerate whether human and porcine cells are comparable in terms of cellular and other biological properties of valvular cells, we summarized our findings in figure Such limitations can be accounted for in the case of individual experiments in specific lab settings in cardiovascular research.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12" coords="11,42.88,611.19,503.56,9.93;11,42.88,632.20,505.40,9.93;11,42.88,652.45,491.07,9.93;11,42.88,672.71,507.62,9.93"><head>(passages, 5 - 6 )</head><label>56</label><figDesc xml:id="_wZRPENp">, and possess the potential for usage in downstream experiments; 3) functional analysis demonstrated that isolated cells retain endothelial-and interstitial cell properties/function (for instance in VEC: migration, tube formation, EndMT induction; in VIC: in vitro calcification to facilitate osteoblastic differentiation upon induction with OM or PCM) 4) a comparative and reproducible analysis of human vs.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="3,42.88,727.49,496.20,71.46"><head></head><label></label><figDesc xml:id="_WmbKVXq">aortic regurgitation due to aortic root or ascending aorta dilatation, at Heart Center Bonn, University</figDesc><table coords="3,42.88,747.75,489.49,51.20"><row><cell>12/5/23, 21:58</cell><cell>Porcine and human aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv</cell></row><row><cell cols="2">Harmonization of Good Clinical Practice [27]. After explantation, AV cusps were placed in 1x PBS on ice</cell></row><row><cell cols="2">and transported to the laboratory immediately for cell isolation. Porcine AVs were gathered from an</cell></row><row><cell cols="2">abattoir in Euskirchen, Germany. Freshly slaughtered pigs served as donors and, hearts were directly</cell></row><row><cell cols="2">rinsed with NaCl and placed in 500 mL cold 1 x PBS on ice and supplemented with 2500 U heparin-</cell></row><row><cell cols="2">sodium (B. Brown). Three AV cusps were excised from the aortic root. Directly after explantation, human</cell></row><row><cell cols="2">aortic valve endothelial cells (hVEC), human aortic valve interstitial cells (hVICs), porcine aortic valve</cell></row><row><cell cols="2">endothelial cells (pVECs) and porcine aortic valve interstitial cells (pVICs) were isolated from the three</cell></row><row><cell cols="2">cusps starting with an incubation in 600 U/mL collagenase II in VIC primary medium (DMEM (Thermo</cell></row><row><cell cols="2">Fisher Scientific, 21885108) supplemented with 10% FBS (Gibco, #A3160802), 1% penicillin/</cell></row><row><cell cols="2">streptomycin (pen/ strep) (Merck, #516106), and 44 mM NaHCO (AppliChem, #A1353)) for 10 minutes</cell></row><row><cell cols="2">at 37 °C with gentle agitation. Cusps were placed in a petri dish filled with VEC medium (EGM™-2 MV</cell></row><row><cell cols="2">Microvascular Endothelial Cell Growth Medium-2 BulletKit™ (Lonza, #C-3202)) and VECs were scraped</cell></row><row><cell cols="2">into the medium using a sterile scalpel. Cells were washed twice with VEC medium by centrifugation for</cell></row><row><cell cols="2">15 minutes at 1000 rpm and filtered through a 100 μm cell strainer. To ensure a pure VEC suspension,</cell></row><row><cell cols="2">cells were magnetically labeled with CD105 Magnetic Beats (Miltenyi Biotech, #130-051-201) and a</cell></row><row><cell cols="2">Hospital Bonn, Germany. The study protocol was approved by the ethics committee of the University</cell></row><row><cell cols="2">Hospital Bonn (approval number AZ 078/17). All patients signed informed consent and the study was</cell></row><row><cell cols="2">performed in concordance with the Declaration of Helsinki and International Conference on</cell></row><row><cell>about:blank</cell><cell>4/16</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="5,42.88,217.25,508.28,174.25"><head></head><label></label><figDesc xml:id="_Z7HhSKm">pen/ strep) (Merck, #516106), osteogenic medium (OM) or pro-calcifying medium (PCM). OM consisted of DMEM with 5% FBS, 1% pen/strep, 10 nmol/L β-glycerophosphate (Sigma-Aldrich, #G9422), 10 mmol/L dexamethasone (Sigma-Aldrich, #D4902) and 50 μg/mL L-ascorbic acid (Carl Roth, #3525.2).PCM is composed of DMEM with 5% FBS, 1% pen/ strep, 2 mmol/L sodium dihydrogen phosphate</figDesc><table /><note xml:id="_Q4xqKpv">(NaH PO ; Merck, #71507) and 50 μg/mL L-ascorbic acid (Carl Roth, #3525.2). Cells were incubated for 7 days to analyze gene expression by RT-qPCR and 21 days for calcium deposition staining with 2% alizarin red (Sigma-Aldrich, #A5533). For this purpose, cells were fixed with 4% formaldehyde for 15 minutes and washed twice with distilled water. Calcium nodules were stained with Alizarin red for 15 minutes at room temperature, followed by two further washing steps.</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="5,68.60,305.44,25.14,7.44"><head></head><label></label><figDesc xml:id="_n6sN8RP">#28364) were used. For pVECs and pVICs, the vWF antibody was replaced by vWF (Bio-Rad, #AHP062T). Cells were washed three times with 1x PBS followed by incubation with the secondary antibody on the shaker for an hour: goat IgG anti-mouse IgG Cy3 (Dianova, #115-165-146), goat IgG anti-rabbit IgG Cy2 (Dianova, #111-225-144) or donkey IgG anti-sheep IgG Cy2 (Dianova, #712-225-</figDesc><table coords="5,68.60,305.44,25.14,7.44"><row><cell>12/5/23, 21:58</cell><cell>Porcine and human aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv</cell></row><row><cell cols="2">hVECs and hVICs alpha smooth muscle actin (α-SMA) (Abcam, #ab7817), vimentin (VIM) (Abcam,</cell></row><row><cell cols="2">#8978), von Willebrand Factor (vWF) (Abcam, #ab6994) and platelet adhesion molecule-1 (PECAM-1)</cell></row><row><cell cols="2">(Abcam, 147). Again, cells were washed three times with 1x PBS and embedded with Vectashield® Antifade</cell></row><row><cell cols="2">Mounting Medium with DAPI (Vectashield, #H-1200-10). Fluorescence microscopy was performed with</cell></row><row><cell cols="2">an Axio Observer Inverted Microscope (Carl Zeiss, Jena, Germany).</cell></row><row><cell>2</cell><cell>4</cell></row><row><cell>about:blank</cell><cell>6/16</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_HRd3x56">Acknowledgements</head><p xml:id="_ejFaXz6">The authors would like to thank Anna Flender for technical support and the heart surgeons at the Heart Center of University Hospital Bonn for providing the aortic valve tissue. The graphical images were created with BioRender.com.</p><p xml:id="_Q45CRNW">The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="12,62.38,19.13,23.05,4.75;12,137.31,19.13,409.55,4.75;12,26.45,822.13,47.68,4.75;12,545.47,822.13,23.07,4.75;12,42.88,34.92,498.49,9.93;12,42.88,55.18,192.95,9.93" xml:id="b0">
+	<monogr>
+		<title level="m" type="main" xml:id="_gQ9dg7x">Porcine and human aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv about:blank 12/16 accessibility and challenges in obtaining human AV tissues and provide a viable solution for lab-usable cellular models in aortic valve research</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,42.88,105.45,43.46,9.93;12,42.88,134.71,476.56,9.93;12,42.88,154.97,509.06,9.93;12,42.88,175.23,498.05,9.93;12,42.88,196.24,363.31,9.93" xml:id="b1">
+	<monogr>
+		<title level="m" type="main" xml:id="_H53XSAz">PRG is funded by the Else-Kröner-Fresenius Foundation. KM, MRH, and FJ are funded by the Corona foundation and German Society of Cardiology (DGK)</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">N</forename><surname>Funding</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Are</surname></persName>
+		</author>
+		<idno>SFB TRR259/1</idno>
+		<imprint>
+			<biblScope unit="page" from="R01H" to="L147095" />
+		</imprint>
+	</monogr>
+	<note>EA is supported by National Institute of Health (NIH) grants, R01HL136431</note>
+</biblStruct>
+
+<biblStruct coords="12,57.32,741.33,495.67,8.51;12,52.33,759.34,482.58,8.51;12,52.33,776.60,485.14,8.51;13,26.45,19.13,58.98,4.75;13,137.31,19.13,409.55,4.75;13,26.45,822.13,47.68,4.75;13,545.47,822.13,23.07,4.75" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_tRj3t2W">Aortic stenosis in the elderly: disease prevalence and number of candidates for transcatheter aortic valve replacement: a meta-analysis and modeling study</title>
+		<author>
+			<persName coords=""><forename type="first">Rlj</forename><surname>Osnabrugge</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Mylotte</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Head</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">M</forename><surname>Van Mieghem</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">T</forename><surname>Nkomo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Lereun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ajjc</forename><surname>Bogers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Piazza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">P</forename><surname>Kappetein</surname></persName>
+		</author>
+		<idno>1002-1012 12/5/23</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EuH7Gju">Journal of the American College of Cardiology</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">58</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note>Porcine and human aortic valve endothelial and interstitial cell isolation and characterization. bioRxiv about:blank 13/16</note>
+</biblStruct>
+
+<biblStruct coords="13,56.60,36.75,473.61,8.51;13,52.33,54.01,495.93,8.51;13,52.33,72.02,481.90,8.51;13,52.33,89.28,359.60,8.51" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_Ws5rY2Z">Two-Year Outcomes after Transcatheter or Surgical Aortic-Valve Replacement</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">K</forename><surname>Kodali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">R</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">R</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">G</forename><surname>Svensson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">G</forename><surname>Webb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Makkar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">P</forename><surname>Fontana</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">M</forename><surname>Dewey</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">H</forename><surname>Thourani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">D</forename><surname>Pichard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Fischbein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">Y</forename><surname>Szeto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">L</forename><surname>Greason</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">S</forename><surname>Teirstein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">C</forename><surname>Malaisrie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">S</forename><surname>Douglas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">T</forename><surname>Hahn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Whisenant</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zajarias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Akin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">N</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">B</forename><surname>Leon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ZbPNbfM">The New England Journal of Medicine</title>
+		<imprint>
+			<biblScope unit="volume">366</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page" from="1686" to="1695" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,57.73,123.79,473.01,8.51;13,52.33,141.05,295.91,8.51" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_H6NrCs5">Burden of valvular heart diseases: a population-based study</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">T</forename><surname>Nkomo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Gardin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">N</forename><surname>Skelton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Gottdiener</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">G</forename><surname>Scott</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Enriquez-Sarano</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bUJJHuV">The Lancet</title>
+		<imprint>
+			<biblScope unit="volume">368</biblScope>
+			<biblScope unit="issue">9540</biblScope>
+			<biblScope unit="page" from="1005" to="1011" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,57.32,175.57,468.84,8.51;13,52.33,193.57,337.88,8.51" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_uBvvYaP">Der normale histologische Bau und die Sklerose der Aortenklappen</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">G</forename><surname>Mönckeberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_aDNy9mu">Virchows Archiv für pathologische Anatomie und Physiologie und für klinische Medizin</title>
+		<imprint>
+			<biblScope unit="volume">176</biblScope>
+			<biblScope unit="page" from="472" to="514" />
+			<date type="published" when="1904">1904</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,56.67,228.09,496.13,8.51;13,52.33,245.35,47.82,8.51" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_UTwmTCY">Changing Aspects of the Natural History of Valvular Aortic Stenosis</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Selzer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PuHEdQ3">New England Journal of Medicine</title>
+		<imprint>
+			<biblScope unit="volume">317</biblScope>
+			<biblScope unit="page" from="91" to="98" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,57.13,279.86,472.22,8.51;13,52.33,297.87,481.68,8.51;13,52.33,315.13,152.30,8.51" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_H2yG6Uf">Osteogenesis associates with inflammation in early-stage atherosclerosis evaluated by molecular imaging in vivo</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Aikawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Nahrendorf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J-L</forename><surname>Figueiredo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">K</forename><surname>Swirski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Shtatland</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Kohler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">A</forename><surname>Jaffer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Aikawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Weissleder</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FZnZYGU">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">116</biblScope>
+			<biblScope unit="issue">24</biblScope>
+			<biblScope unit="page" from="2841" to="2850" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,57.45,349.65,490.79,8.51;13,52.33,366.91,469.00,8.51;13,52.33,384.91,485.91,8.51;13,52.33,402.17,481.24,8.51;13,52.33,420.18,21.02,8.51" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_SNQNGXC">Calcific aortic valve disease: not simply a degenerative process: A review and agenda for research from the National Heart and Lung and Blood Institute Aortic Stenosis Working Group. Executive summary: Calcific aortic valve disease-2011 update</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">M</forename><surname>Rajamannan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">J</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Aikawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">J</forename><surname>Grande-Allen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">L</forename><surname>Demer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">D</forename><surname>Heistad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">A</forename><surname>Simmons</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">S</forename><surname>Masters</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Mathieu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>'brien</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">D</forename><surname>Schoen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">J</forename><surname>Towler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Yoganathan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">P</forename><surname>Otto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_3g3gJMC">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">124</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="1783" to="1791" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,57.19,454.70,462.50,8.51;13,52.33,471.95,480.12,8.51;13,52.33,489.21,492.36,8.51;13,52.33,507.22,452.82,8.51" xml:id="b9">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Makkar</forename><surname>Raj</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Fontana Gregory</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jilaihawi</forename><surname>Hasan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kapadia</forename><surname>Samir</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pichard</forename><surname>Augusto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Douglas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pamela</forename><forename type="middle">S</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thourani</forename><surname>Vinod</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Babaliaros</forename><surname>Vasilis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Webb</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Herrmann</forename><surname>Howard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Bavaria</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joseph</forename><forename type="middle">E</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kodali</forename><surname>Susheel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Brown</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Bowers Bruce</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dewey</forename><surname>Todd</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Svensson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lars</forename><forename type="middle">G</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tuzcu</forename><surname>Murat</surname></persName>
+		</author>
+		<editor>Moses Jeffrey W., Williams Matthew R., Siegel Robert J., Akin Jodi J., Anderson William N., Pocock Stuart, Smith Craig R., Leon Martin B.</editor>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,52.33,524.48,473.27,8.51;13,52.33,542.49,82.54,8.51" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_rgJjnQh">Transcatheter Aortic-Valve Replacement for Inoperable Severe Aortic Stenosis</title>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_sBfdKTT">New England Journal of Medicine</title>
+		<imprint>
+			<biblScope unit="volume">366</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page" from="1696" to="1704" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,56.62,577.00,451.70,8.51;13,52.33,594.26,461.28,8.51" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_PzWtRpd">Characterization of the early lesion of &apos;degenerative&apos; valvular aortic stenosis. Histological and immunohistochemical studies</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Otto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kuusisto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">D</forename><surname>Reichenbach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Gown</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Brien</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">D</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_HF2PpMe">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="844" to="853" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.30,628.78,473.37,8.51;13,52.33,646.03,290.73,8.51" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_Et7TXPG">Experimental fluid dynamics of aortic stenosis in a model of the human aorta</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">L</forename><surname>Yearwood</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">A</forename><surname>Misbach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">B</forename><surname>Chandran</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MpmA4GJ">Clinical Physicy and Physiological Measurement</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.78,680.55,467.57,8.51;13,52.33,698.56,223.55,8.51" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_YKEha26">Molecular imaging insights into early inflammatory stages of arterial and aortic valve calcification</title>
+		<author>
+			<persName coords=""><forename type="first">Sep</forename><surname>New</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Aikawa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nH6RR54">Circulation research</title>
+		<imprint>
+			<biblScope unit="volume">108</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1381" to="1391" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.86,733.08,487.09,8.51;13,52.33,750.33,464.55,8.51;13,52.33,768.34,339.14,8.51;14,26.45,19.13,58.98,4.75;14,137.31,19.13,409.55,4.75;14,26.45,822.13,47.68,4.75;14,545.47,822.13,23.07,4.75" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_jvYMPf7">Notch promotes epithelial-mesenchymal transition during cardiac development and oncogenic transformation</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">A</forename><surname>Timmerman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Grego-Bessa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Raya</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Bertrán</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Pérez-Pomares</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Díez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Aranda</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Palomo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Mccormick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Izpisúa-Belmonte</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">La</forename><surname>Pompa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>De</surname></persName>
+		</author>
+		<idno>12/5/23</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_6Gees4J">Porcine and human aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv about</title>
+				<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="14" to="16" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,60.73,36.75,468.93,8.51;14,52.33,54.01,310.37,8.51" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_etxwdu9">Conserved transcriptional regulatory mechanisms in aortic valve development and disease</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">E</forename><surname>Wirrig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">E</forename><surname>Yutzey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_kwuu8Gn">Arteriosclerosis, thrombosis, and vascular biology</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="737" to="741" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.58,88.53,486.33,8.51;14,52.33,106.53,481.45,8.51;14,52.33,123.79,61.52,8.51" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_wK8KNVf">Endothelial to Mesenchymal Transition in Cardiovascular Disease: JACC State-of-the-Art Review</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Kovacic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Dimmeler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">P</forename><surname>Harvey</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Finkel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Aikawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Krenning</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Baker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_77g5MkX">Journal of the American College of Cardiology</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="190" to="209" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.79,158.31,489.26,8.51;14,52.33,175.57,496.36,8.51;14,52.33,193.57,301.82,8.51" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_BvTjkup">Accumulation of T lymphocytes and expression of interleukin-2 receptors in nonrheumatic stenotic aortic valves. Histological and immunohistochemical studies</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Olsson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C-J</forename><surname>Dalsgaard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Haegerstrand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Rosenqvist</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Rydén</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Nilsson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bq467FK">Journal of the American College of Cardiology</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1162" to="1170" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,62.58,228.09,488.80,8.51;14,52.33,245.35,492.14,8.51;14,52.33,263.36,132.85,8.51" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_gTKceXX">Aortic Valve Stenosis: From Basic Mechanisms to Novel Therapeutic Targets</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Goody</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">R</forename><surname>Hosen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Christmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">T</forename><surname>Niepmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zietzer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Adam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Bönner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Zimmer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Nickenig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Jansen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_6TtVuuc">Arteriosclerosis, thrombosis, and vascular biology</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="885" to="900" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.92,297.87,471.33,8.51" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_vj6FQqx">Isolation of valvular endothelial cells</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Gould</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">T</forename><surname>Butcher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7EvyCrB">Journal of visualized experiments</title>
+		<imprint>
+			<date type="published" when="2010">2010. JoVE 46</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,62.11,331.64,487.87,8.51;14,52.33,349.65,433.31,8.51" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_kdsd6zj">Porcine cardiac valvular endothelial cells in culture. A relative deficiency of fibronectin synthesis in vitro</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">N</forename><surname>Fass</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bCWc328">Laboratory investigation; a journal of technical methods and pathology</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="589" to="598" />
+			<date type="published" when="1983">1983</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,60.95,384.16,485.23,8.51;14,52.33,401.42,498.46,8.51;14,52.33,419.43,276.24,8.51" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_tqgjA4Q">P2Y2 receptor represses IL-6 expression by valve interstitial cells through Akt: implication for calcific aortic valve disease</title>
+		<author>
+			<persName coords=""><forename type="first">El</forename><surname>Husseini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Boulanger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-C</forename><surname>Mahmut</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bouchareb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Laflamme</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-H</forename><surname>Fournier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Pibarot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Bossé</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Mathieu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mrpyR8t">Journal of molecular and cellular cardiology</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="page" from="146" to="156" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.94,453.95,473.76,8.51;14,52.33,471.20,484.10,8.51;14,52.33,489.21,176.39,8.51" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_56sYhMd">Standardization of Human Calcific Aortic Valve Disease in vitro Modeling Reveals Passage-Dependent Calcification</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Goto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Rogers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">C</forename><surname>Blaser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Higashi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">H</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Schlotter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">C</forename><surname>Body</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Aikawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">A</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Aikawa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_P5gA489">Frontiers in cardiovascular medicine</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">49</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.26,522.98,486.97,8.51;14,52.33,540.99,345.73,8.51" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_f4NmFWx">Epidemiology and genetics of calcific aortic valve disease</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">D</forename><surname>O'brien</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dy4UBxy">Journal of investigative medicine : the official publication of the American Federation for Clinical Research</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="284" to="291" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,63.04,575.50,478.61,8.51;14,52.33,592.76,255.21,8.51" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_vzdnVpy">Characterization of cell subpopulations expressing progenitor cell markers in porcine cardiac valves</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Sridhar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">A</forename><surname>Leinwand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">S</forename><surname>Anseth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zj7FkTb">PloS one</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">e69667</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,62.11,627.28,490.34,8.51;14,52.33,645.28,254.85,8.51" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_urFF342">Porcine cardiac valvular subendothelial cells in culture: Cell isolation and growth characteristics</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">N</forename><surname>Hanson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">C</forename><surname>Helgeson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pvrSqbP">J Mol Cell Cardiol</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="1158" to="1193" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,62.00,679.80,469.42,8.51;14,52.33,697.06,330.80,8.51" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_aRPtVXb">Correlation of structure and viscoelastic properties in the pericardia of four mammalian species</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">A</forename><surname>Naimark</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Limeback</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">T</forename><surname>Cheung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dHy29up">Heart and Circulatory Physiology</title>
+		<imprint>
+			<biblScope unit="volume">263</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,62.45,731.57,481.94,8.51;14,52.33,748.83,479.89,8.51;14,52.33,766.84,255.57,8.51;15,26.45,19.13,58.98,4.75;15,137.31,19.13,409.55,4.75;15,26.45,822.13,47.68,4.75;15,545.47,822.13,23.07,4.75" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_JTt3hAm">Correlation between heart valve interstitial cell stiffness and transvalvular pressure: implications for collagen biosynthesis</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">D</forename><surname>Merryman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Youn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">D</forename><surname>Lukoff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">M</forename><surname>Krueger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Guilak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Hopkins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Sacks</surname></persName>
+		</author>
+		<idno>blank 15/16</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JG5qU2c">American journal of physiology. Heart and circulatory physiology</title>
+		<imprint>
+			<biblScope unit="volume">290</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">58</biblScope>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+	<note>Porcine and human aortic valve endothelial and interstitial cell isolation and characterization</note>
+</biblStruct>
+
+<biblStruct coords="15,61.38,36.75,480.97,8.51" xml:id="b28">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Rutkovskiy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Malashicheva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Sullivan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Bogdanova</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kostareva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K-O</forename><surname>Stensløkken</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Fiane</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Vaage</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,52.33,54.01,470.12,8.51;15,52.33,72.02,136.64,8.51" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_4v4U8j8">Valve Interstitial Cells: The Key to Understanding the Pathophysiology of Heart Valve Calcification</title>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_np7ZFBH">Journal of the American Heart Association</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">9</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,61.74,106.53,486.43,8.51;15,52.33,123.79,477.40,8.51" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_umgZCsC">Declaration of Helsinki. World Medical Association Declaration of Helsinki. Ethical principles for medical research involving human subjects</title>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ak3WsjW">Bulletin of the World Health Organization</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="373" to="374" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+	<note>World Medical Association</note>
+</biblStruct>
+
+<biblStruct coords="15,61.40,158.31,490.89,8.51;15,52.33,175.57,203.74,8.51" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_3gUCN5U">In vitro scratch assay: a convenient and inexpensive method for analysis of cell migration in vitro</title>
+		<author>
+			<persName coords=""><forename type="first">C-C</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">Y</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J-L</forename><surname>Guan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_aTE2Fzt">Nature protocols</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="329" to="333" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,62.14,210.08,462.14,8.51;15,52.33,228.09,470.07,8.51;15,52.33,245.35,497.48,8.51;15,52.33,263.36,397.43,8.51" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_49kr2WR">Functional assessment and transplantation of the donor heart after circulatory death. The Journal of heart and lung transplantation : the official publication of</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Messer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">G</forename><surname>Axell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Colah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">A</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Page</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Parizkova</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Valchanov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">W</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">H</forename><surname>Freed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Ashley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Dunning</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Goddard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Parameshwar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">J</forename><surname>Watson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Krieg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Tsui</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">R</forename><surname>Large</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s" xml:id="_tgGFX5a">the International Society for Heart Transplantation</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1443" to="1452" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,61.89,297.87,460.77,8.51;15,52.33,315.13,163.14,8.51" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_qYtsPZC">Differences in valvular and vascular cell responses to strain in osteogenic media</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Ferdous</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Jo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">M</forename><surname>Nerem</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_QHSbBM4">Biomaterials</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="2885" to="2893" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,62.19,349.65,475.97,8.51;15,52.33,366.91,459.45,8.51;15,52.33,384.91,364.68,8.51" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_5uJx5k2">Pro-osteogenic phenotype of human aortic valve interstitial cells is associated with higher levels of Toll-like receptors 2 and 4 and enhanced expression of bone morphogenetic protein 2</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Fullerton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Ao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Cleveland</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Meng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TrZHDg2">Journal of the American College of Cardiology</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="491" to="500" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,63.04,419.43,451.98,8.51;15,52.33,436.69,494.76,8.51" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_dT9CbET">High-mobility group box-1 protein induces osteogenic phenotype changes in aortic valve interstitial cells</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Dong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CBAVmky">The Journal of thoracic and cardiovascular surgery</title>
+		<imprint>
+			<biblScope unit="volume">151</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="255" to="262" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,62.39,471.20,486.86,8.51;15,52.33,489.21,144.38,8.51" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_9YxUCjD">Surface chemistry regulates valvular interstitial cell differentiation in vitro</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">N</forename><surname>Rush</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">E</forename><surname>Coombs</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hedberg-Dirk</forename><surname>El</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7WkA5Sj">Acta biomaterialia</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="76" to="85" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,62.61,522.98,487.07,8.51;15,52.33,540.99,231.75,8.51" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" xml:id="_fNyHkRe">Techniques for Isolating and Purifying Porcine AorticValve Endothelial Cells</title>
+		<author>
+			<persName coords=""><forename type="first">W-Y</forename><surname>Cheung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">W</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">A</forename><surname>Simmons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_kZv9PDV">The Journal of Heart Valve Disease</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="647" to="681" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,62.84,575.50,482.30,8.51;15,52.33,592.76,473.80,8.51;15,52.33,610.77,8.83,8.51" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_arwHUqS">Endothelial-to-Mesenchymal Transition in Calcific Aortic Valve Disease</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Haiuhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zWe8efq">Acta Cardiol Sin</title>
+		<imprint>
+			<biblScope unit="page">23</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,61.91,645.28,474.41,8.51;15,52.33,662.54,37.32,8.51" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_6Fqr8xY">The molecular basis of endothelial cell plasticity</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Dejana</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">K</forename><surname>Hirschi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Simons</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2fdWX98">Nature communications</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">14361</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,61.26,697.06,463.23,8.51;15,52.33,714.32,445.70,8.51" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_TJwwCX3">Valvular interstitial cells suppress calcification of valvular endothelial cells</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Hjortnaes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Shapero</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Goettsch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">D</forename><surname>Hutcheson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Keegan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kluin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">E</forename><surname>Mayer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bischoff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Aikawa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JM9q6YV">Atherosclerosis</title>
+		<imprint>
+			<biblScope unit="volume">242</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="251" to="260" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,60.92,748.83,478.25,8.51;15,52.33,766.84,286.26,8.51;16,26.45,19.13,58.98,4.75;16,137.31,19.13,409.55,4.75;16,26.45,822.13,47.68,4.75;16,545.47,822.13,23.07,4.75" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" xml:id="_swHeefH">12/5/23, 21:58 Porcine and human aortic valve endothelial and interstitial cell isolation and characterization | bioRxiv about</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">R</forename><surname>Joag</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">I</forename><surname>Gotlieb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wy8STHy">The American Journal of Pathology</title>
+		<imprint>
+			<biblScope unit="volume">171</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="16" to="16" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+	<note>The emerging role of valve interstitial cell phenotypes in regulating heart valve pathobiology</note>
+</biblStruct>
+
+<biblStruct coords="16,61.58,36.75,463.71,8.51;16,52.33,54.01,472.23,8.51;16,52.33,72.02,156.98,8.51" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_7wPqgHs">Dual structural and functional phenotypes of the porcine aortic valve interstitial population: characteristics of the leaflet myofibroblast</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Messier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">L</forename><surname>Bass</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">M</forename><surname>Aly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">W</forename><surname>Domkowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">B</forename><surname>Wallace</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Hopkins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_6vYwfdC">Journal of surgical research</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="1" to="21" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,60.97,106.53,487.60,8.51;16,52.33,123.79,295.20,8.51" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_V8AASVE">Heterogeneous susceptibility of valve endothelial cells to mesenchymal transformation in response to TNFα</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">J</forename><surname>Farrar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">T</forename><surname>Butcher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_K3rj2tb">Annals of biomedical engineering</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="149" to="161" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,61.44,158.31,461.77,8.51;16,52.33,175.57,465.92,8.51;16,52.33,193.57,68.72,8.51" xml:id="b44">
+	<analytic>
+		<title level="a" type="main" xml:id="_h3mBK9d">Robust Generation of Quiescent Porcine Valvular Interstitial Cell Cultures</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Porras</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nca</forename><surname>Van Engeland</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Marchbanks</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Mccormack</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cvc</forename><surname>Bouten</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">H</forename><surname>Yacoub</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Latif</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">S</forename><surname>Masters</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_hkePqGy">Journal of the American Heart Association</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,61.79,228.09,485.44,8.51;16,52.33,245.35,465.85,8.51" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_z2Esc3c">Activated interstitial myofibroblasts express catabolic enzymes and mediate matrix remodeling in myxomatous heart valves</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Rabkin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Aikawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">R</forename><surname>Stone</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Fukumoto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Libby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">J</forename><surname>Schoen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ktgpbtr">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page" from="2525" to="2532" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,62.36,279.86,476.87,8.51;16,52.33,297.87,498.55,8.51;16,52.33,315.13,169.60,8.51" xml:id="b46">
+	<analytic>
+		<title level="a" type="main" xml:id="_gjT5YDU">Endothelial cell heterogeneity and microglia regulons revealed by a pig cell landscape at single-cell level</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">B</forename><surname>Brandt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Sjöstedt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Bolund</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">P</forename><surname>De Rooij</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Luo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_sJb8nUA">Nature communications</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,61.96,349.65,470.05,8.51;16,52.33,366.91,480.09,8.51;16,52.33,384.91,426.47,8.51" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_jCbpnby">Decreased miR-181a expression in monocytes of obese patients is associated with the occurrence of metabolic syndrome and coronary artery disease</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hulsmans</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Sinnaeve</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Van Der Schueren</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Mathieu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Janssens</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Holvoet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_X5UBMun">The Journal of Clinical Endocrinology &amp; Metabolism</title>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="E1213" to="E1218" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,60.74,419.43,463.85,8.51;16,52.33,436.69,207.78,8.51" xml:id="b48">
+	<monogr>
+		<title level="m" type="main" xml:id="_uVx3ruJ">Aortic sclerosis: not an innocent murmur but a marker of increased cardiovascular risk</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">K</forename><surname>Nightingale</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">D</forename><surname>Horowitz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="page" from="1389" to="1393" />
+			<pubPlace>Heart</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,60.74,471.20,483.26,8.51;16,52.33,489.21,208.48,8.51" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" xml:id="_KAe3QdS">Aortic-valve stenosis-from patients at risk to severe valve obstruction</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Otto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Prendergast</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pcGk3Cd">New England Journal of Medicine</title>
+		<imprint>
+			<biblScope unit="volume">371</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="744" to="756" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,61.58,522.98,471.13,8.51;16,52.33,540.99,397.46,8.51" xml:id="b50">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Makkar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">P</forename><surname>Fontana</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Jilaihawi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kapadia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">D</forename><surname>Pichard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">S</forename><surname>Douglas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">H</forename><surname>Thourani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">C</forename><surname>Babaliaros</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">G</forename><surname>Webb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">C</forename><surname>Herrmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">E</forename><surname>Bavaria</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+	<note>Transcatheter aortic-valve replacem</note>
+</biblStruct>
+
+<biblStruct coords="16,60.42,575.50,480.62,8.51;16,52.33,592.76,347.14,8.51" xml:id="b51">
+	<analytic>
+		<title level="a" type="main" xml:id="_F8Yb4Xp">Conserved transcriptional regulatory mechanisms in aortic valve development and disease</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">E</forename><surname>Wirrig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">E</forename><surname>Yutzey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4UFNJVy">Arteriosclerosis, thrombosis, and vascular biology</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="737" to="741" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

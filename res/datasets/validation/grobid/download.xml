@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_5ppZDxK">Multimodal Integration -A Statistical View</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="2,176.64,100.08,58.32,6.72"><forename type="first">Lizhong</forename><surname>Wu</surname></persName>
+						</author>
+						<author>
+							<persName coords="2,245.52,100.08,85.92,6.72"><forename type="first">Sharon</forename><forename type="middle">L</forename><surname>Oviatt</surname></persName>
+						</author>
+						<author>
+							<persName coords="2,340.31,100.08,82.80,6.72"><forename type="first">Philip</forename><forename type="middle">R</forename><surname>Cohen</surname></persName>
+						</author>
+						<title level="a" type="main" xml:id="_Uw2gngk">Multimodal Integration -A Statistical View</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">81233D80CBBA6DB9C805A61DB3740283</idno>
+					<idno type="DOI">10.1109/6046.807953</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_zj6FdH2">| Multimodal integration</term>
+					<term xml:id="_yHYAugj">Speech recognition</term>
+					<term xml:id="_yyJYtje">Gesture recognition</term>
+					<term xml:id="_4XPXgqS">Combination of multiple classi ers</term>
+					<term xml:id="_9j4pYGJ">Learning</term>
+					<term xml:id="_BDEVzHn">Uncertainty</term>
+					<term xml:id="_eUhqCUD">Decision making</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_TECCnbz"><p xml:id="_843u5ZF">Abstract|This paper presents a statistical approach to developing multimodal recognition systems and, in particular, to integrating the posterior probabilities of parallel input signals involved in the multimodal system. We rst identify the primary factors that in uence multimodal recognition performance by evaluating the multimodal recognition probabilities. We then develop two techniques, an estimate approach and a learning approach, which are designed to optimize accurate recognition during the multimodal integration process. We evaluate these methods using Quickset, a speech/gesture multimodal system, and report evaluation results based on an empirical corpus collected with Quickset. From an architectural perspective, the integration technique presented here o ers enhanced robustness. It also is premised on more realistic assumptions than previous multimodal systems using semantic fusion. From a methodological standpoint, the evaluation techniques that we describe provide a valuable tool for evaluating multimodal systems.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_vGe7hJc">I. Introduction</head><p xml:id="_H6Ayhfg">T HERE are two main types of multimodal systems, one of which integrates signals at the feature level and the other at a semantic level. Systems that utilize feature fusion generally are based on multiple HMMs or temporal neural networks. In a feature fusion architecture, the correlation structure between modes can be taken into account automatically via learning. Feature fusion generally is considered more appropriate for closely coupled and synchronized modalities, such as speech and lip movements. However, such a system tends not to generalize as well if it consists of modes that di er substantially in the time scale characteristics of their features, as is the case with speech and gesture input. Modeling complexity, computational intensity, and training di culty typically are other problems associated with the feature fusion integration approach. Due to the high dimensionality of input features and high degree of freedom of system models, a large amount of training data also is required for building this type of system. Of course, multimodal corpora rarely have been collected and labeled for training purposes, and they tend not to be publicly available so therefore are at a high premium.</p><p xml:id="_rcJVCYC">Generally, multimodal systems using semantic fusion include individual recognizers and a sequential integration process. These individual recognizers can be trained using unimodal data, which are relatively easy to collect or are already publicly available for modalities like speech and handwriting. The architecture of this type of system also can leverage from existing and relatively mature unimodal recognition techniques. Such unimodal systems can be integrated directly without re-training. Compared with systems based on feature fusion, in this respect systems using semantic fusion scale up easier, whether in number of modes or size of command set.</p><p xml:id="_yfpMgnn">Multimodal systems with fusion at the semantic level include Bolt's seminal work \Put-That-There" 1], ShopTalk 2], <ref type="bibr" coords="2,322.80,210.96,68.64,14.40">CUBRICON 3]</ref>, Virtual World 4], Finger-Pointer 5], VisualMan 6], <ref type="bibr" coords="2,375.12,222.72,41.52,14.40">Jeanie 7]</ref>, and others as described in 8], 9], 10]. All these previous e orts on multimodal integration have concentrated primarily on semantic representations and incorporation of new input technologies, rather than on the statistical integration process that de nes a multimodal system architecture. Such systems typically also have assumed that the individual modes in a multimodal interaction function independently of each other. As a result, a multimodal command's posterior probability has been the cross product of the posterior probabilities of the associated constituents. Although this independence assumption has provided a starting point and it simpli es the integration process, it nonetheless is a naive assumption since speech and lip movements or speech and manual gestures are known to be highly <ref type="bibr" coords="2,448.32,388.80,61.32,14.40">correlated 11]</ref>.</p><p xml:id="_WhKt7fx">It also is known that a constituent in one mode typically associates with only a limited number of constituents in another mode, and that input modes di er in both their information content and recognition accuracy. An additional problem with past multimodal architectures is that the overall recognition accuracy of di erent input modes has been assumed to be equally reliable, although this is rarely the case. Even within the same mode, recognition accuracy varies considerably from one constituent to another. By re ning the multimodal integration process so that di erent weights are assigned to di erent modes and di erent constituents, recognition errors potentially could be avoided so that overall system robustness is enhanced. For example, the study in 12] has shown the potential for improving continuous gesture recognition results based on a co-occurrence analysis of di erent gestures with spoken keywords. Performance improvement also has been found in audiovisual speech recognition systems by adaptively weighting both the audio and visual recognition channels 13], 14], 15].</p><p xml:id="_yw7zD33">In theory, the optimal weights for combining the posterior probabilities from di erent modes can be determined by the mode-conditional input feature density functions, as will be described in section IV of this paper. In practice, it is di cult or even impossible to evaluate these conditional density functions because of the high dimensional input features. In this paper, we have developed two modeling techniques to approximate these conditional densities and to obtain the class-dependent weighting parameters for the posterior probabilities.</p><p xml:id="_cAx2wkp">Another critical issue involved in the multimodal integration process is to identify the primary factors that inuence multimodal recognition performance and to evaluate and estimate system recognition performance. Given a set of individual recognizers with known accuracies, is the multimodal system's performance bounded? If so, what are the theoretical lower and upper performance bounds? By estimating performance bounds, it becomes possible to evaluate the performance of alternative integration techniques in comparison with a theoretical optimum. From a diagnostic perspective, it also becomes possible to identify key factors that in uence multimodal performance. To our knowledge, past research has not estimated performance bounds for guiding the development of multimodal systems <ref type="foot" coords="3,40.80,232.68,4.08,12.00" target="#foot_0">1</ref> . In this paper, we have derived a lower and upper bound of multimodal recognition performance, and we identify the factors that in uence multimodal recognition performance.</p><p xml:id="_WYRfDVz">The outline of this paper is as follows. Section II brie y introduces Quickset 16], a multimodal system developed at OGI that has been a testbed for our research. Section III derives the multimodal recognition probability, and identies the primary factors that in uence multimodal recognition performance. Section IV provides a theoretical solution for combining the multimodal posterior probabilities and discusses the problems in realizing this theoretical optimum. Section V and Section VI develop two practical techniques, an estimate approach and a learning approach, designed to integrate and optimize the multimodal posterior probabilities. Empirical evaluation and performance comparisons are reported in Section VII. We summarize our ndings in Section VIII.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_JFBYwEU">II. A Multimodal System</head><p xml:id="_FKzRZeJ">Our multimodalsystem, called Quickset 16], consists of parallel recognizers for the speech and gesture input modalities, which are fused at the semantic level. A command in this multimodal system is represented by constituents that are joined from the two di erent input modes. Each constituent is a target of an individual mode's recognizer. During the recognition process, an individual recognizer analyzes a set of input features and then produces the constituents as an N-best list of alternatives, along with posterior probabilities. Quickset integrates multimodal input in the following three sequential steps:</p><p xml:id="_qD8QVQf">1. Temporally, Quickset combines speech and gesture input that is overlapped, or that falls within a certain lag relation when signals arrive sequentially. The temporal constraints of Quickset's integration were determined by empirical research with users 11]. It was found that when users speak and gesture in a sequential manner, they gesture rst, then speak within a relatively short time window; speech rarely precedes gesture. As a consequence, the multimodal synchronizer in Quickset prefers to integrate a gesture with speech that follows within a 4-second interval 2 , rather than integrating it with preceding speech. If speech arrives after that interval, the gesture is interpreted unimodally. The precise lag threshold adopted when signals arrive sequentially can be learned by the system using training data, or pre-set by the system developer for a particular domain.</p><p xml:id="_WcYakNW">2. Statistically, Quickset integrates the posterior probabilities of constituents from individual modes, and then generates an N-best list for a multimodal command that includes posterior probabilities for each nal interpretation. The original version of Quickset relied on the independence assumption. It took the cross product of the probabilities of individual modes to derive the multimodal probability for each item in the nal multimodal N-best list. One goal of the present work is to supersede the independence assumption by developing a more powerful statistical integrator based on the realities of empirical data.</p><p xml:id="_bsWeaSC">3. Semantically, Quickset determines whether a given gestural and spoken element in the N-best lists can be combined legally into a coherent multimodal interpretation that is executable by the system. The semantic information contained within the two modes in Quickset is represented as typed feature structures 17], which can be uni ed if the elements are compatible semantically. The uni cation of typed feature structures in Quickset has been detailed elsewhere 18].</p><p xml:id="_qdUgKBf">Quickset has supported various map-based applications that enable users to set up and control distributed interactive simulations. The research and evaluations presented in this paper are based on Quickset's re/ ood management corpus. Figure <ref type="figure" coords="3,396.72,446.88,5.04,14.40" target="#fig_1">1</ref> shows some examples of multimodal commands from this corpus. Using a \Wizard-of-Oz" research paradigm, it was demonstrated that a multimodal interface parallel to Quickset supported 36% fewer task errors, 50% less disuent input, and 10% faster task completion time than a unimodal spoken interface 19]. Further information 2 We have found that, from about 1539 Quickset command patterns, more than 99% commands lie within this 4-second interval.</p><p xml:id="_fuS7qxB">and videotape examples of Quickset can be found at http://www.cse.ogi.edu/CHCC.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_NmthGPF">III. Primary Factors of Multimodal Recognition Performance</head><p xml:id="_2QW4r8v">In a speech/gesture multimodal system, assume that S i ; i = 1; : : :; M is the output from the speech mode, and G j ; j = 1; : : :; N is the output from the gesture mode. The system is designed to recognize C k ; k = 1; : : :; K multimodal classes. The number of multimodalclasses K cannot be larger than the number of attainable integrated classes (M +1)(N +1)?1, but will at least equal the larger number of the two output modes max M; N].</p><p xml:id="_hPVPkHN">We de ne the projection between the index of multimodal classes and the indices of the individual modal output as a multimodal associative map, as depicted by Table I. For a given corpus, the associative map de nes all meaningful relations that exist between the set of speech constituents and the set of gesture constituents for each multimodal command. In the present corpus, there were 17 feature structure types for speech input (e.g. create feature object, zoom to point), 8 feature structure types for pen input (e.g. line, area), and 20 feature structure types representing di erent types of multimodal commands (e.g. see Figure <ref type="figure" coords="4,72.00,359.28,3.92,14.40" target="#fig_1">1</ref>). In our work, we have used the feature structure type as the basic unit for statistical integration. During multimodal recognition, the de ned associative map between speech and gesture feature structure types supports a simple process of table lookups. This table can be de ned directly by a user, or it can be built automatically using labeled data.</p><p xml:id="_Gh2a3d6">From the structure of an associative map, it is clear that the integration of this type of multimodal recognizer di ers from the combination of multiple classi ers 20] or traditional data fusion 21]. The latter two are a special case of the former in which the component classi ers and the combined classi er share the same set of targets, K = M = N, typically displayed as a diagonal matrix.</p><p xml:id="_wgghpZj">The multimodal system can avoid some recognition errors that otherwise would occur in a unimodal system simply by checking whether recognized speech and gesture pieces can be integrated legally or not, given the system's semantic constraints. This type of error avoidance occurs as long as the number of multimodal classes is less than the maximumnumber of potentially attainable multimodal classes, i.e. K &lt; (M + 1)(N + 1) ? 1. Evidence for the error compensation that results during uni cation of typed feature structures has been detailed previously 22]. In the following, we discuss multimodal performance and establish its bound from a statistical point of view.</p><p xml:id="_SCvWg99">Assume that X represents a multimodal input feature vector, which is a combination of gesture input feature X G and and speech input feature X S . A system designed to recognize K classes of commands will partition the input feature space into K disjoint decision regions R k ; k = 1; : : :; K. The probability of correct recognition TABLE I Multimodal associative map for the re/ ood management corpus, representing the complete set of legitimate semantic combinations possible between all types of spoken and pen-based input for the 20 multimodal feature types in this corpus. For example, the rst type represents a combination between the rst speech class and the fourth gesture class. <ref type="table" coords="4,378.48,169.92,5.04,14.40;4,400.32,169.92,5.04,14.40;4,422.40,169.92,5.04,14.40;4,444.24,169.92,5.04,14.40;4,466.08,169.92,5.04,14.40;4,488.16,169.92,5.04,14.40;4,510.00,169.92,5.04,14.40;4,531.84,169.92,5.04,14.40">1 2 3 4 5 6 7 8</ref> 1 0 0 0 1 0 0 0 2 S 2 0 0 0 3 0 0 0 0 P 3 4 0 0 0 0 0 0 0 E 4 0 0 0 5 0 0 0 0 E 5 0 6 7 0 0 0 0 0 C 6 8 0 0 0 0 0 0 0 H 7 0 0 0 0 9 0 0 0 8 0 0 0 0 0 10 0 0 9 0 11 12 0 0 0 0 0 10 0 0 0 0 0 0 13 0 C 11 0 0 0 0 0 14 0 0 L 12 0 0 0 0 0 15 0 0 A 13 0 0 0 0 0 0 0 16 S 14 0 0 0 17 0 0 0 0 S 15 0 0 0 0 18 0 0 0 16 19 0 0 0 0 0 0 0 17 20 0 0 0 0 0 0 0 for X is thus:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_8rcB9cr">MULTI GESTURE CLASS MODAL</head><formula xml:id="formula_0" coords="4,332.64,426.48,226.80,40.10">P c = K X k=1 P(X 2 R k ; C k ) = K X k=1 P Xk P(C k )<label>(1)</label></formula><p xml:id="_7S4wGmt">where</p><formula xml:id="formula_1" coords="4,344.16,478.08,215.28,41.30">P Xk = P(X 2 R k jC k ) = Z Rk p(XjC k )dX<label>(2)</label></formula><p xml:id="_mfM3waB">is the probability of correct recognition for the k th class, p(XjC k ) is its class-conditional density and P(C k ) is its prior probability. By expressing the multimodalrecognition probability using the recognition probabilities of its associated modes, we have obtained the following multimodal recognition probability bound (see Appendix IX-A):</p><formula xml:id="formula_2" coords="4,317.04,614.88,242.40,50.40">K X k=1 P X G j P X S i P(C k ) P c K X k=1 max P X G j ; P X S i ]P(C k )<label>(3)</label></formula><p xml:id="_3harU8x">where P X G j and P X S i are respectively the correct recognition probabilities of the associated gesture, and speech constituents for the k th multimodal class.</p><p xml:id="_zG2NAaa">Equation (3) reveals that a multimodal system performs at its lower bound if individual modes are assumed to be independent, and a simple joint probability estimate is calculated during integration. In contrast, a multimodal system performs at its upper bound when the information in one mode is completely redundant with that in the other mode. In general, we would summarize that multimodal recognition performance is determined by the following factors:</p><p xml:id="_YZrjhYv">(1) recognition accuracy of the individual modes, (2) the structure of the associative map, (3) the manner of combining posterior probabilities, and (4) the prior distribution of multimodal commands.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_tRUWFKV">IV. Integration of Multimodal Posterior Probabilities</head><p xml:id="_uXrSRsU">During recognition, our goal is to evaluate the posterior probabilities of all multimodal classes, given an unknown input feature set. Combining the posterior probabilities involves combining the class-conditional density function p(XjC k ). As shown in Appendix IX-B, we have found that:</p><formula xml:id="formula_3" coords="5,77.52,252.00,216.96,41.54">p(XjC k ) = 1 2 p(X S jC k ; X G )p(X G jC k ) +p(X G jC k ; X S )p(X S jC k )] (4)</formula><p xml:id="_K6QD57t">where p(X S jC k ) and p(X G jC k ) are the class-conditional densities estimated by the speech recognizer and gesture recognizer, and p(X G jC k ; X S ) and p(X S jC k ; X G ) are the mode-conditional input feature densities for the k th class.</p><p xml:id="_fzBwj5m">Equation ( <ref type="formula" coords="5,97.60,345.60,4.24,14.40">4</ref>) provides a theoretical solution for integrating multimodal class-conditional density functions. However, due to the high dimensional input features, a large amount of training data is required to evaluate the modeconditional input feature densities directly. A conventional input representation in acoustic modeling uses a 39dimensional vector (i.e., the signal energy and rst 12 cepstral coe cients and their rst-and second-order di erentials 23]) for each 10 msecs speech block. This means that the speech input dimension will increase to 3900, even if a voice command lasts for only 1 sec. An example of pen input feature representations is Apple Computer's Newton handwriting recognizer, in which the input dimension is 382 (i.e., 14 14 image, 20 9 stroke features, 5dimensional stroke count, and single-dimension aspect ratio 24]). Based on these examples, a multimodal input feature dimension could easily be as large as 4282. Considering the \curse of dimensionality" in data modeling 3 , if the data for a given sampling density in one dimension total 30, then the total required for multimodal input feature modeling would be 30 4282 .</p><p xml:id="_yHya7gz">The above calculations reveal why it is hard to obtain an estimate of mode-conditional input feature density functions. Accurate estimates also are di cult to obtain because few actual multimodal corpora are available. Therefore, evaluation of Equation (4) requires approximation. By letting k = 1 2 p(X S jC k ; X G ) (5) 3 The curse of dimensionality 25], 26] refers to the exponential growth of hypervolume as a function of dimensionality. If N is the total data for a given sampling density in one dimension, then when the dimensionality is increased to m the total data must also increase to N m to keep the same sampling density. k = 1 2 p(X G jC k ; X S ); ( <ref type="formula" coords="5,550.96,58.80,4.24,14.40">6</ref>) Equation ( <ref type="formula" coords="5,353.20,79.68,4.24,14.40">4</ref>) can be rewritten as p(XjC k ) = k p(X G jC k ) + k p(X S jC k ): <ref type="bibr" coords="5,546.72,97.44,12.72,14.40" target="#b6">(7)</ref> k and k become the weighting parameters to the modal class-conditional densities. They are still class-conditional, but independent of individual input features. In the next two sections, we develop two techniques to evaluate these parameters.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_DFMZevd">V. Estimate Approach</head><p xml:id="_ytHVTVG">Here, the normalized mode-conditional recognition probabilities <ref type="foot" coords="5,345.12,208.20,4.08,12.00" target="#foot_2">4</ref> are taken as an approximation of the modeconditional input feature densities. That is</p><formula xml:id="formula_4" coords="5,354.48,236.88,204.96,28.68">k 1 P 0 P(X S 2 R S i jC k ; X G 2 R G j )<label>(8)</label></formula><formula xml:id="formula_5" coords="5,354.24,262.32,205.20,28.92">k 1 P 0 P(X G 2 R G j jC k ; X S 2 R S i )<label>(9)</label></formula><p xml:id="_QmSph7w">where P 0 is a normalization factor and</p><formula xml:id="formula_6" coords="5,349.44,306.42,205.80,34.88">P 0 = P(X S 2 R S i jC k ; X G 2 R G j ) +P(X G 2 R G j jC k ; X S 2 R S i ):<label>(10</label></formula><p xml:id="_d3sYVer">) It is much easier to evaluate the mode-conditional recognition probabilities than to evaluate the mode-conditional input feature density functions. Therefore, two methods are developed to estimate the mode-conditional recognition probabilities, with the preferred method depending on the availability of training data. Method-I estimates the conditional probabilities by simply counting the number of non-zero entries in each column and row of the associative map. For example, for the rst multimodal class shown in Table <ref type="table" coords="5,334.56,449.52,3.24,14.40">I</ref>, which associates with the rst speech class and the fourth gesture class, there are two non-zero entries in the corresponding row and four non-zero entries in the corresponding column, or P(X S 2 R S 1 jC 1 ; X G 2 R G 4 ) = 1   4   and P(X G 2 R G 4 jC 1 ; X S 2 R S 1 ) = 1 2 . After normalization, ^ 1 = 0:33 and ^ 1 = 0:67. The advantage of this particular method is that it does not require any training data.</p><p xml:id="_Bh7cF8f">When training data are available, Method-II provides a more accurate estimate of the mode-conditional recognition probabilities. Method-II is a bin-counting process. For the k th multimodal class, the patterns labeled as the k th multimodal class in the training data are located rst. Among these multimodal patterns, it is assumed that there are N G k patterns having correct gesture output, N S k patterns having correct speech output, and N k patterns having both correct gesture and speech output. The estimates of modeconditional recognition probabilities then are</p><formula xml:id="formula_7" coords="5,349.68,658.56,210.00,58.34">P(X S 2 R S i jC k ; X G 2 R G j ) = N k N G k (11) P(X G 2 R G j jC k ; X S 2 R S i ) = N k N S k ; (<label>12</label></formula><formula xml:id="formula_8" coords="5,555.24,693.12,4.44,14.40">)</formula><p xml:id="_8d7TUMW">and the estimates of the weighting parameters are:</p><formula xml:id="formula_9" coords="6,123.12,74.82,171.36,61.28">^ k = N S k N G k + N S k (13) ^ k = N G k N G k + N S k :<label>(14)</label></formula><p xml:id="_Mc4Npe3">From Equations ( <ref type="formula" coords="6,126.84,140.16,8.88,14.40">13</ref>) and ( <ref type="formula" coords="6,165.17,140.16,8.26,14.40" target="#formula_9">14</ref>), it is clear that the weighting parameters and depend only on the ratio of recognition rates of for the individual modes. If the ratio between the gesture and speech recognition probabilities for the k th multimodal class is de ned as</p><formula xml:id="formula_10" coords="6,133.20,204.48,156.84,35.04">k = P X G j P X S i = N G k N S k ; (<label>15</label></formula><formula xml:id="formula_11" coords="6,290.04,214.32,4.44,14.40">)</formula><p xml:id="_qPYCCSC">then</p><formula xml:id="formula_12" coords="6,132.24,259.92,157.80,28.82">^ k = 1 1 + k (<label>16</label></formula><formula xml:id="formula_13" coords="6,290.04,266.64,4.44,14.40">)</formula><formula xml:id="formula_14" coords="6,130.56,289.62,159.48,25.04">^ k = k 1 + k : (<label>17</label></formula><formula xml:id="formula_15" coords="6,290.04,292.80,4.44,14.40">)</formula><p xml:id="_mtcm9Fp">As shown, if both modes perform equally well and the ratio is about 1, then both modes will be equally weighted. If one mode's output is signi cantly biased toward low performance, then it will be given a larger weight to correct this bias.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_GMCSp4E">VI. Members to Teams to Committee: the MTC Approach</head><p xml:id="_Kh922KH">MTC is a novel recognition technique developed to build a complex pattern recognition system with highdimensional input features 27]. In this section, we rst provide an introduction of the MTC technique by presenting its overall architecture, the functionalities of each component, and its learning algorithms. We then describe the application of the MTC approach to integrating a multimodal system.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_4HcpJ5z">A. MTC Architecture</head><p xml:id="_KEC63cd">The MTC architecture consists of three layers. The bottom layer is formed by multiple recognizer members. Each member is a local posterior estimator with an assigned input variable subset, a speci ed model type and complexity, and a given training and validation data set. The members cooperate with each other via the multiple teams built at the mid-layer. Di erent teams observe di erent training data, and are initialized and trained di erently. The team integrates the members. Multiple teams are built to reduce integration uncertainty. Output from the teams forms an empirical posterior distribution that then is sent to the committee at the upper layer. The committee makes a nal decision after comparing the empirical posterior distributions of di erent targets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_uPVmdy6">B. MTC Recognition Algorithm</head><p xml:id="_HjkNWrU">In general, we de ne the input feature set I = fI 1 ; I 2 ; : : :; I n g and the recognition target set T = fT 1 ; T 2 ; : : :; T m g. The input feature I is formed by nstreams, whose dimensions may di er. The target T consists of m di erent classes, for example of di erent multimodal commands. The MTC recognition algorithm goes through three bottom-up steps:</p><p xml:id="_GFBpDvE">1. Estimating the local posteriors of members: Each member computes a local posterior estimate under the speci ed modeling condition. The modeling speci cations include the model type, the model complexity, the extraction of input features, the training and validation data, and the learning algorithm. If there is a total of M combinations of modeling speci cations in which we are interested, then we would compute M local posterior estimates from the M members as follows: P(T k jI; S i ); with k = 1; : : :; m and i = 1; : : :; M <ref type="bibr" coords="6,541.91,230.40,17.76,14.40" target="#b17">(18)</ref> where S i stands for the i th combination of modeling speci cations.</p><p xml:id="_HBCM9wT">2. Coordinating the local posteriors into teams: The team integrates the local posterior estimates of di erent speci cations. We have P(T k jI) = M X i=1 P(T k jI; S i )P k (S i ); for k = 1; : : :; m <ref type="bibr" coords="6,541.92,328.80,17.76,14.40" target="#b18">(19)</ref> where P k (S i ) is the mode probability of the k th target associated by the i th combination of modeling speci cations. The team is trained to learn the mode probability matrix. Di erent training data and approaches will result in di erent mode probability estimates. Subsequently, the multiple team posteriors are obtained: P(l) (T k jI); with k = 1; : : :; m and l = 1; : : :; L <ref type="bibr" coords="6,541.91,439.92,17.76,14.40" target="#b19">(20)</ref> where l is the index of ways of estimating the mode probability, and L is the total number of ways that we are interested in.</p><p xml:id="_6PpBGJp">3. Making a recognition decision via committee: The output from multiple teams forms an empirical distribution of posterior P(T k jI), which is approximated by a normal or t-student distribution, depending on the size of the samples. Given a con dence level, the committee runs through a series of pair-by-pair hypothesis tests and obtains a signi cance matrix H. H is an m m square matrix, where m is the number of recognition targets. The element of H, h ij , is either 1 when the posterior estimate f P(l) (T i jI); l = 1; : : :; Lg is signi cantly greater than f P(l) (T j jI); l = 1; : : :; Lg within the given con dence level, ?1 when it is signi cantly less, or otherwise 0. By de nition, the diagonal elements of H are all zeros, if h ij = 1 then h ji = ?1; if h ij = 0 then h ji = 0; and P i P j h ij = 0. The recognition targets then are ranked by summing over each row in H, and this summary value is called a signi cance number. All signi cance numbers form an mdimensional signi cance vector V . The maximal signicance number is m ? 1. If there is a signi cance number that equals m?1, the input is recognized as the target corresponding to the row index of this maximal signi cance number. If all signi cance numbers are smaller than m?1, then the current input cannot be recognized with condence, and further external information is required.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_3UKWVwK">C. MTC Training Procedure</head><p xml:id="_QzxwjeW">The goal of the rst tier involving the MTC's members is to learn a set of local posterior estimates, as indicated in Equation <ref type="bibr" coords="7,96.24,139.44,16.51,14.40" target="#b17">(18)</ref>. The key of this rst layer is to identify the modeling speci cations and their combinations. The members within the MTC can represent di erent types of models, with the training algorithm for the members being model-dependent. Among the various modeling speci cations, the most important one is the extraction of input features via exploratory data analyses. Once the input features have been extracted, the model type is selected to t the characteristics of these input features. In the MTC, a variety of input features can be extracted, and di erent types of models can be selected to t di erent types of input features.</p><p xml:id="_KwKuZ8t">With respect to the training procedure for teams, the goal of this second layer is to learn the mode probability matrix in Equation <ref type="bibr" coords="7,131.04,305.28,16.51,14.40" target="#b18">(19)</ref>. By adjusting the mode probability matrix fP k (S i )g, we maximize (i.e., reward) the k th posterior P(T k jI) and simultaneously reduce (i.e., penalize) the other posteriors P(T j jI); for j = 1; : : :; m and j 6 = k, when the k th -class pattern is applied. In order to meet the constraint that the sum of all posteriors must equal one, we impose a softmax function 28] on the output. The detailed learning algorithm is given <ref type="bibr" coords="7,160.56,390.48,26.28,14.40">in 27]</ref>.</p><p xml:id="_uAvhhsp">The team integrates the members' posterior estimates. Multiple teams are built to reduce integration uncertainty. The goal of the committee is to compare the empirical posterior distribution formed by the teams and make a nal recognition decision. To train the committee, no free system parameter is needed. The con dence level for recognition is pre-determined, and di erent con dence levels will result in a di erent system error rate/rejection rate tradeo . The higher the con dence level, the lower the error rate but the higher the rejection rate.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_granJvK">D. MTC Multimodal Statistical Integration</head><p xml:id="_fcwQFwT">Our proposed MTC technique is well suited to experimenting with ways to integrate multiple modes on the basis of posterior probabilities and other factors. Using this technique, the recognizers of di erent modes become the members of an MTC statistical integrator. Multiple teams built in the MTC integrator are trained to coordinate and weight the output from di erent modes. Each team establishes the posterior estimate for a multimodal command, given the current multimodal input received. The committee of the MTC integrator analyzes the empirical distribution of the posteriors and establishes the N-best ranking for each multimodal command.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_2BVQjkw">VII. Empirical Results</head><p xml:id="_kw63VAh">Our Quickset system was the testbed used to formulate and evaluate the derived performance bounds and the proposed integration concepts. As mentioned earlier, the data corpus used in the present work was collected using Quickset while users performed community re and ood management tasks. All commands were multimodal, involving both speech and gesture input. This corpus consisted of 1539 labeled commands collected from sixteen users, eight native speakers of English and eight accented non-native speakers. We randomly assigned the data from the rst eight users for development, and the rest for test purposes. As illustrated in Table <ref type="table" coords="7,410.88,150.48,3.24,14.40">I</ref>, there were 17 feature structure types for speech, 8 for pen, and 20 representing all types of multimodal commands. With this arrangement, each of the 20 basic units had an average of 40 training patterns. More detailed description and data analyses on this corpus have been described <ref type="bibr" coords="7,396.48,209.76,59.16,14.40">elsewhere 22]</ref>.</p><p xml:id="_nEn7NkS">Table <ref type="table" coords="7,343.92,228.72,7.44,14.40">II</ref> summarizes our empirical evaluation based on this corpus. The recognition performance ranged from 78:91% correct at the lower bound, to 96:65% correct at the upper bound. The columns Estimate I &amp; II correspond to Method I &amp; II of the estimate approach described in Section V, and the MTC column corresponds to the learning approach described in Section VI. As expected, all performance lies within the theoretical lower and upper bounds. Estimate II performs only slightly better than Estimate I, and both are signi cantly worse than the MTC approach -which only departs 1:4% from the system's established theoretical optimum. The favorable performance of the MTC approach can be attributed to several factors. First, the MTC approach adopted a discriminative training scheme, which maximizes or rewards the correct class-conditional density and simultaneously reduces or penalizes others. Secondly, with the MTC approach, multiple sets of weighting parameters were trained, with each set providing an estimate of the classconditional density function. A committee of multiple sets provides a smoother estimate function than any individual one, which leads to better robustness and generalization. Thirdly, the MTC approach takes into account the fact that the class-conditional densities of individual modalities may be normalized di erently, which is a pragmatic reality when the recognizers are developed by di erent sources. Through training that enables the learning of weighting parameters, the MTC approach is able to normalize the output from di erent recognizers to the same scale.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_bQAZejg">VIII. Conclusions</head><p xml:id="_jVkYqmp">The development of an architecture for integrating different input modes and for evaluating multimodal recognition performance are two critical issues for the development of next-generation multimodal systems. In this paper, we have evaluated the multimodal recognition probabilities. It was revealed that the multimodal recognition performance, in general, is determined by the recognition accuracy of individual modes, the structure of the associative map, the manner of combining posterior probabilities, and the prior distribution of multimodal classes.</p><p xml:id="_gx5TP3K">In theory, the optimal weights for combining multimodal posterior probabilities can be determined by the modeconditional input feature density functions. In practice, it is di cult or even impossible to evaluate these conditional density functions because of the high dimensional input features. Therefore, we have developed two techniques to approximate these conditional densities, and obtained the class-dependent weighting parameters for the posterior probabilities. The rst technique is an estimate approach in which the mode-conditional input feature density is approximated by the normalized mode-conditional recognition probability. The latter then can be estimated based on the structure of the associative map, or using the labeled training data. The second technique is a learning approach in which the weighting parameters are trained to maximize the correct posterior probability and minimize the wrong ones. Several key learning techniques also have been incorporated into this mechanism to improve the robustness and generalization of its performance.</p><p xml:id="_3zyZAvR">The integration techniques and evaluation tools presented in this paper provide a statistical approach to developing multimodal recognition systems. We have evaluated these new methods using Quickset and an empirical corpus collected with Quickset. Although the current version of Quickset is a speech/gesture bimodal system, our proposed techniques o er a general architectural approach that could be extended to multimodal systems involving other modes or more than two modes. By expressing the joint probability in conditional probabilities, Equation ( <ref type="formula" coords="8,128.08,578.64,4.24,14.40" target="#formula_1">2</ref>) can be re-written as P Xk = P(X G 2 R G j ; X S 2 R S i jC k )</p><p xml:id="_cC6C9ps">= P(X G 2 R G j jC k ; X S 2 R S i )P X S i <ref type="bibr" coords="8,276.72,617.76,17.76,14.40" target="#b21">(22)</ref> = P(X S 2 R S i jC k ; X G 2 R G j )P X G j : (23) Where, R G j and R S i are the partitioned decision rejoins in the gestural feature space and the spoken feature space. They are associated to the k th multimodal class. P X G j and P X S i are respectively the correct recognition probabilities of the gesture recognizer and the speech recognizer for the k th multimodal class. P(X G 2 R G j jC k ; X S 2 R S i ) and P(X S 2 R S i jC k ; X G 2 R G j ) are the conditional probabil-ities for recognizing one mode, given information on the other.</p><p xml:id="_P3VCXf7">Since the conditional probability will not be less than the probability with the condition being removed, from Equation <ref type="bibr" coords="8,326.40,102.96,17.76,14.40" target="#b21">(22)</ref> or ( <ref type="formula" coords="8,363.89,102.96,8.26,14.40">23</ref>), we have P Xk P X G j P X S i : <ref type="bibr" coords="8,541.92,124.32,17.76,14.40" target="#b23">(24)</ref> It is clear that the lower bound will be obtained when the gesture and speech recognition modes are independent of each other. Since any probability is upper bounded by one, the upper bound of P Xk is P Xk max P X G j ; P X S i ]: <ref type="bibr" coords="8,541.92,216.24,17.76,14.40" target="#b24">(25)</ref> This upper bound will be obtained when one mode is completely redundant with another. Substituting the above inequalities ( <ref type="formula" coords="8,481.08,263.28,8.88,14.40">24</ref>) and ( <ref type="formula" coords="8,524.52,263.28,8.88,14.40">25</ref>) into Equation (1), we obtain Equation (3).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_2QEU5YD">B. Derivation of Equation (4)</head><p xml:id="_V4pQujR">Analogously to Equations ( <ref type="formula" coords="8,435.96,311.52,8.88,14.40">22</ref>) and ( <ref type="formula" coords="8,476.21,311.52,8.26,14.40">23</ref>), we have p(XjC k ) = p(X G ; X S jC k ) <ref type="bibr" coords="8,541.92,332.88,17.76,14.40" target="#b25">(26)</ref> = p(X G jC k ; X S )p(X S jC k ) <ref type="bibr" coords="8,541.92,347.76,17.76,14.40" target="#b26">(27)</ref> = p(X S jC k ; X G )p(X G jC k ): <ref type="bibr" coords="8,541.92,362.64,17.76,14.40" target="#b27">(28)</ref> Summingover Equations ( <ref type="formula" coords="8,419.64,384.00,8.88,14.40">27</ref>) and ( <ref type="formula" coords="8,457.49,384.00,8.26,14.40">28</ref>), we obtain Equation (4).</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,48.00,711.48,246.47,12.00;2,40.80,720.12,253.92,12.00;2,40.80,729.00,253.92,12.00;2,40.80,737.64,102.72,12.00"><head>Wu,</head><label></label><figDesc xml:id="_aNTAc5V">Oviatt and Cohen are with the Center for Human and Computer Communication, Department of Computer Science and Engineering, Oregon Graduate Institute of Science and Technology, Portland, OR 97291-1000, USA.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,306.00,631.56,253.91,12.00;3,321.12,640.92,212.64,12.00"><head>Fig. 1 .</head><label>1</label><figDesc xml:id="_4CcSPCP">Fig. 1. Examples of multimodal commands composed of spoken and pen-based elements in the re/ ood management corpus.</figDesc></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0">Multimodal integration is related to, but di erent from previous studies on combining multiple classi ers. In multimodal integration, each individualmode recognizes a semantic constituentof commands. Di erent modal classi ers have di erent recognition targets. In combination of multiple classi ers, all classi ers share the same set of targets. This di erence will be elaborated in Section III.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1">''burn line'' ''hot spot zone'' ''zoom out'' ''show number of gallons'' ''windspeed 40 miles per hour'' .</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_2">A mode-conditional recognition probability is a conditional probability for recognizing one mode, given information about the other. Further description is available in Appendix IX-A.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_fUFphxh">Acknowledgements</head><p xml:id="_JbqEwmh">This research is supported in part by DARPA under contract numbers DABT63-95-C-007 and N66001-99-D-8503, and in part by ONR grant number N00014-95-1-1164. The views and conclusions contained in this paper are those of the authors and should not be interpreted as necessarily representing DARPA or ONR. We would like to thank David McGee for his valuable comments, as well as other members of the CHCC at OGI for their suggestions. We would also like to thank the reviewers for their comments.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="8,324.24,562.44,235.92,12.00;8,324.24,571.08,235.68,12.00" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_dHnNbMN">\Put that there: Voice and gesture at the graphics interface</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Bolt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rawaQmA">Computer Graphics</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="262" to="270" />
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,324.24,579.96,235.44,12.00;8,324.24,588.60,235.68,12.00;8,324.24,597.48,235.44,12.00;8,324.24,606.42,234.96,11.60;8,324.24,615.00,235.44,12.00;8,324.24,623.64,236.15,12.00;8,324.24,632.52,235.44,12.00;8,324.24,641.16,142.80,12.00" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_5GnhnDM">\Syn-ergistic use of direct manipulation and natural language</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Dalrymple</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">B</forename><surname>Moran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">C N</forename><surname>Pereira</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">W</forename><surname>Sullivan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Gargan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Schlossberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">W</forename><surname>Tyler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_tGKDEbM">Human Factors in Computing Systems: CHI&apos;89 Conference Proceedings, ACM</title>
+				<meeting><address><addrLine>New York; San Francisco</addrLine></address></meeting>
+		<imprint>
+			<publisher>Morgan Kaufmann Publishers</publisher>
+			<date type="published" when="1989-04">April 1989. 1998</date>
+		</imprint>
+	</monogr>
+	<note>Readings in Intelligent User Interfaces, Maybury and Wahlster</note>
+</biblStruct>
+
+<biblStruct coords="8,324.24,650.04,235.68,12.00;8,324.24,658.68,235.67,12.00;8,324.24,667.56,203.28,12.00" xml:id="b2">
+	<monogr>
+		<title level="m" type="main" xml:id="_YNESnbF">\Intelligent multimedia interface technology</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">G</forename><surname>Neal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">C</forename><surname>Shapiro</surname></persName>
+		</author>
+		<editor>Intelligent User Interfaces, J.Sullivan and S.Tyler</editor>
+		<imprint>
+			<date type="published" when="1991">1991</date>
+			<publisher>ACM Press</publisher>
+			<biblScope unit="page" from="11" to="43" />
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,324.24,676.44,235.91,12.00;8,324.24,685.08,235.43,12.00;8,324.24,693.96,235.44,12.00;8,324.24,702.90,235.68,11.60;8,324.24,711.48,69.36,12.00" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_dE3AuqP">\Interactivesimulation in a multi-personvirtual world</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Codella</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Jalili</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Koved</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Ling</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lipscomb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Rabenhorst</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Norton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Sweeney</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Turk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_FpVqcB9">ACM Conference on Human Factors in Computing Systems (CHI&apos;92</title>
+				<imprint>
+			<date type="published" when="1992">1992</date>
+			<biblScope unit="page" from="329" to="334" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,324.24,720.12,235.68,12.00;8,324.24,729.00,235.44,12.00;8,324.24,737.64,92.40,12.00" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_KnJUSzA">\Finger-pointer: pointing interface by image processing</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Fukumoto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Suenaga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Mase</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WSuPEE4">Computer Graphics</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="633" to="642" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,57.48,235.92,12.00;9,59.04,66.12,235.44,12.00;9,59.04,75.00,235.68,12.00;9,59.04,83.64,41.28,12.00" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_PexNvEG">\Integration of eye-gaze, voice and manual response in multimodal user interface</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_vcJ66kR">Proceedings of IEEE International Conference on Systems, Man and Cybernetics</title>
+				<meeting>IEEE International Conference on Systems, Man and Cybernetics</meeting>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<biblScope unit="page" from="3938" to="3942" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,92.76,235.92,12.00;9,59.04,101.64,235.43,12.00;9,59.04,110.28,235.20,12.00;9,59.04,119.16,235.68,12.00;9,59.04,127.80,41.28,12.00" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_Yce7Deh">\Building an application framework for speech and pen input integration in multimodal learning interfaces</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">T</forename><surname>Vo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Wood</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_64ZHXXc">Proceedings of IEEE International Conference of Acoustic, Speech and Signal Processing</title>
+				<meeting>IEEE International Conference of Acoustic, Speech and Signal Processing<address><addrLine>Atlanta, GA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1996">1996</date>
+			<biblScope unit="page" from="3545" to="3548" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,136.92,236.16,12.00;9,59.04,145.56,235.44,12.00;9,59.04,154.44,235.67,12.00;9,59.04,163.08,147.84,12.00" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_rDnJkQC">\Integrating simultaneous input from speech, gaze and hand gestures</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">B</forename><surname>Koons</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">J</forename><surname>Sparrell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">R</forename><surname>Thorisson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_vVxtG9y">Intelligent Multimedia Interfaces</title>
+				<editor>
+			<persName><forename type="first">M</forename><surname>Maybury</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Menlo Park, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="1993">1993</date>
+			<biblScope unit="page" from="257" to="276" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,172.20,235.68,12.00;9,59.04,181.08,235.92,12.00;9,59.04,189.72,235.44,12.00;9,59.04,198.60,235.44,12.00;9,59.04,207.24,200.40,12.00" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_Ct3DQXN">\Speech/gesture interface to a visual computing environmentfor molecular biologists</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">I</forename><surname>Pavlovi C</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Schulten</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dalke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Zeller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Humphrey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_VX7MXcG">Proceedings of International Conference on Pattern Recognition</title>
+				<meeting>International Conference on Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="1996-08">Aug. 1996</date>
+			<biblScope unit="page" from="964" to="968" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,216.36,236.16,12.00;9,59.04,225.00,234.96,12.00;9,59.04,233.88,235.68,12.00;9,59.04,242.52,56.64,12.00" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_UjgC6bm">\Toward multimodal human-computer interface</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">I</forename><surname>Pavlovi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">S</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_7246YrS">Proceedings of the IEEE, Special Issue on Multimedia Signal Processing</title>
+				<meeting>the IEEE, Special Issue on Multimedia Signal Processing</meeting>
+		<imprint>
+			<date type="published" when="1998-05">May 1998</date>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="853" to="869" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,251.64,235.92,12.00;9,59.04,260.52,235.43,12.00;9,59.04,269.16,235.20,12.00;9,59.04,278.04,235.44,12.00;9,59.04,286.68,77.28,12.00" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_JzGKxd5">\Integration and synchronization of input modes during multimodal human-computer interaction</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Oviatt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Deangeli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Kuhn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_sXGKbaa">Proceedings of the Conference on Human Factors in Computing Systems: CHI&apos;97</title>
+				<meeting>the Conference on Human Factors in Computing Systems: CHI&apos;97<address><addrLine>Georgia</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="1997">1997</date>
+			<biblScope unit="page" from="415" to="422" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,295.80,235.67,12.00;9,59.04,304.44,236.15,12.00;9,59.04,313.32,235.20,12.00;9,59.04,321.96,235.67,12.00" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_G4uDge7">\Toward natural gesture/speech HCI: A case study of weather narration</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Poddar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Sethi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Ozyildiz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Sharma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PcDmBbs">Proceedings 1998 Workshop on Perceptual User Interfaces (PUI&apos;98</title>
+				<editor>
+			<persName><forename type="first">M</forename><surname>Turk</surname></persName>
+		</editor>
+		<meeting>1998 Workshop on Perceptual User Interfaces (PUI&apos;98<address><addrLine>San Francisco, CA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1998-11">Nov. 1998</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,331.08,235.92,12.00;9,59.04,339.96,235.20,12.00;9,59.04,348.90,235.20,11.60;9,59.04,357.48,100.32,12.00" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_KNH7PNj">\Adaptive bimodal sensor fusion for automatic speechreading</title>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Meier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Hurst</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Duchnowski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_T2Uwb9R">Proceedings of International Conference on Acoustic, Speech and Signal Processing</title>
+				<meeting>International Conference on Acoustic, Speech and Signal Processing</meeting>
+		<imprint>
+			<date type="published" when="1996">1996</date>
+			<biblScope unit="page" from="833" to="836" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,366.36,235.67,12.00;9,59.04,375.24,235.67,12.00;9,59.04,383.88,235.20,12.00;9,59.04,392.76,235.68,12.00;9,59.04,401.64,36.96,12.00" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_bjezEyE">\Com-bining visual and acoustic speech signal with a neural network improvesintelligibility</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Sejnowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Yuhas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Goldstein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Jenkins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_FrHycmR">Advances in Neural Information Processing Systems</title>
+				<editor>
+			<persName><forename type="first">D</forename><surname>Touretzky</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Morgan Kaufman</publisher>
+			<date type="published" when="1990">1990</date>
+			<biblScope unit="page" from="232" to="239" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,410.52,236.15,12.00;9,59.04,419.40,235.20,12.00;9,59.04,428.04,235.44,12.00;9,59.04,436.92,120.00,12.00" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_RmFC3kG">\Multimodal interfaces</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Waibel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">T</forename><surname>Vo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Duchnowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Manke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_jgtkzmj">Special Volume on Integration of Natural Language and Vision Processing</title>
+				<imprint>
+			<date type="published" when="1995-08">Aug. 1995</date>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="299" to="319" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,445.80,235.91,12.00;9,59.04,454.68,235.68,12.00;9,59.04,463.56,235.20,12.00;9,59.04,472.20,235.68,12.00;9,59.04,481.08,85.68,12.00" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_GUT8Ekk">\Quickset: Multimodal interaction for distributed applications</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Johnston</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Mcgee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Oviatt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Pittman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Clow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_ZySCnqQ">Proceedings of the Fifth ACM International Multimedia Conference</title>
+				<meeting>the Fifth ACM International Multimedia Conference<address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="1997">1997</date>
+			<biblScope unit="page" from="31" to="40" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,489.96,235.92,12.00;9,59.04,498.84,166.32,12.00" xml:id="b16">
+	<monogr>
+		<title level="m" type="main" xml:id="_FFQqCS5">The logic of typed feature structures</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Carpenter</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+			<publisher>Cambridge University Press</publisher>
+			<pubPlace>Cambridge, England</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,507.72,235.67,12.00;9,59.04,516.60,235.20,12.00;9,59.04,525.78,235.44,11.60;9,59.04,534.12,235.92,12.00;9,59.04,543.00,68.16,12.00" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_GVwFmkZ">\Uni cation-based multimodal integration</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Johnston</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Mcgee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Oviatt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Pittman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Smith</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_srju6Tv">Proceedings of the 35th Annual Meeting of the Association for Computational Linguistics</title>
+				<meeting>the 35th Annual Meeting of the Association for Computational Linguistics<address><addrLine>San Francisco, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Morgan Kaufman</publisher>
+			<date type="published" when="1997">1997</date>
+			<biblScope unit="page" from="281" to="288" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,551.88,236.16,12.00;9,59.04,560.76,235.20,12.00;9,59.04,569.40,235.43,12.00;9,59.04,578.28,82.08,12.00" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_N7xx5pP">\Multimodal interfaces for dynamic interactive maps</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Oviatt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_jvQnSY2">Proceedings of the Conference on Human Factors in Computing Systems: CHI&apos;96</title>
+				<meeting>the Conference on Human Factors in Computing Systems: CHI&apos;96<address><addrLine>Vancouver, Canada</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="1996">1996</date>
+			<biblScope unit="page" from="95" to="102" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,587.40,235.68,12.00;9,59.04,596.04,234.96,12.00;9,59.04,604.92,196.08,12.00" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_twd8SXz">\On combining classi ers</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kittler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hatef</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Duin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Matas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_H6XJAsA">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="226" to="239" />
+			<date type="published" when="1998-03">March 1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,613.80,235.20,12.00;9,59.04,622.68,192.96,12.00" xml:id="b20">
+	<monogr>
+		<title level="m" type="main" xml:id="_PfZNetx">Data fusion in robotics and machine intelligence, Academic</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Abidi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">C</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1992">1992</date>
+			<pubPlace>Boston. MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,631.56,235.43,12.00;9,59.04,640.44,235.20,12.00;9,59.04,649.32,235.92,12.00;9,59.04,657.96,128.64,12.00" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_HgcZXJV">\Mutual disambiguation of recognition errors in a multimodal architecture</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Oviatt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_dSZPRmG">Proceedings of the Conference on Human Factors in Computing Systems: CHI&apos;99</title>
+				<meeting>the Conference on Human Factors in Computing Systems: CHI&apos;99<address><addrLine>Pittsburgh, PA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="1999">1999</date>
+			<biblScope unit="page" from="576" to="583" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,667.08,235.44,12.00;9,59.04,675.72,236.16,12.00;9,59.04,684.60,132.72,12.00" xml:id="b22">
+	<monogr>
+		<title level="m" type="main" xml:id="_FeJeDYj">\Large vocabulary continuous speech recognition: a review</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Young</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996">1996</date>
+			<pubPlace>Cambridge, UK</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Cambridge University Engineering Department</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct coords="9,59.04,693.48,235.68,12.00;9,59.04,702.36,235.92,12.00;9,59.04,711.00,235.67,12.00;9,59.04,719.88,72.72,12.00" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_A648TjT">\Combining neural networks and context-driven search for online, printed handwriting recognition in the Newton</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">S</forename><surname>Yaeger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">J</forename><surname>Webb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">F</forename><surname>Lyon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KY6BRWe">AI Magazine</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="73" to="89" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.04,729.00,235.20,12.00;9,59.04,737.64,158.16,12.00" xml:id="b24">
+	<monogr>
+		<title level="m" type="main" xml:id="_4V3MB55">Pattern classi cation and scene analysis</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">O</forename><surname>Duda</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">E</forename><surname>Hart</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1973">1973</date>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,324.24,57.48,235.92,12.00;9,324.24,66.12,235.20,12.00;9,324.24,75.00,235.20,12.00;9,324.24,83.64,235.44,12.00;9,324.24,92.52,55.92,12.00" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_tYw2Fu3">\An overview of predictive learning and function approximation</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Friedman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_s3ft4Zf">From Statistics to Neural Networks, Theory and Pattern Recognition Applications</title>
+				<editor>
+			<persName><forename type="first">V</forename><surname>Cherkassky</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><forename type="middle">H</forename><surname>Friedman</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1994">1994</date>
+			<biblScope unit="volume">136</biblScope>
+			<biblScope unit="page" from="1" to="61" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,324.24,101.16,235.67,12.00;9,324.24,110.04,236.15,12.00;9,324.24,118.68,198.96,12.00" xml:id="b26">
+	<monogr>
+		<title level="m" type="main" xml:id="_TevRZ9z">\From members to teams to committee -a robust approach to gestural and multimodal recognition</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Oviatt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Cohen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+	<note>manuscript in submission</note>
+</biblStruct>
+
+<biblStruct coords="9,324.24,127.56,235.68,12.00;9,324.24,136.44,235.92,12.00;9,324.24,145.08,235.20,12.00;9,324.24,153.96,235.68,12.00;9,324.24,162.60,142.80,12.00;9,388.32,197.10,171.36,14.00;9,388.32,207.48,171.36,12.00;9,388.32,216.36,171.60,12.00;9,388.32,225.00,171.84,12.00;9,388.32,233.88,171.12,12.00;9,388.32,242.52,171.36,12.00;9,388.32,251.40,171.84,12.00;9,388.32,260.04,171.60,12.00;9,388.32,268.92,171.84,12.00;9,388.32,277.56,171.36,12.00;9,388.32,286.44,171.84,12.00;9,306.00,295.08,253.92,12.00;9,306.00,303.96,254.16,12.00;9,306.00,312.60,253.92,12.00;9,306.00,321.48,24.48,12.00;9,388.32,355.26,171.36,14.00;9,388.32,365.64,172.08,12.00;9,388.32,374.28,172.08,12.00;9,388.32,383.16,171.84,12.00;9,388.32,391.80,171.60,12.00;9,388.32,400.68,171.60,12.00;9,388.32,409.56,171.36,12.00;9,388.32,418.20,171.36,12.00;9,388.32,427.08,171.36,12.00;9,388.32,435.72,172.08,12.00;9,388.32,444.60,171.60,12.00;9,306.00,453.24,253.68,12.00;9,306.00,462.12,253.92,12.00;9,306.00,470.76,253.91,12.00;9,306.00,479.64,253.92,12.00;9,306.00,488.28,253.68,12.00;9,306.00,497.16,254.16,12.00;9,306.00,505.80,253.91,12.00;9,306.00,514.68,253.68,12.00;9,306.00,523.32,253.91,12.00;9,306.00,532.20,253.68,12.00;9,306.00,540.84,253.68,12.00;9,306.00,549.72,253.91,12.00;9,306.00,558.60,146.64,12.00;9,388.32,594.30,171.60,14.00;9,388.32,604.68,171.60,12.00;9,388.32,613.32,171.84,12.00;9,388.32,622.20,171.36,12.00;9,388.32,630.84,171.60,12.00;9,388.32,639.72,171.36,12.00;9,388.32,648.36,171.84,12.00;9,388.32,657.24,172.08,12.00;9,388.32,666.12,171.60,12.00;9,388.32,674.76,171.60,12.00;9,388.32,683.64,171.36,12.00" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_BGTTmj9">She received her B.A. with Highest Honors from Oberlin College, and her Ph.D. from the University of Toronto in 1979. She previously has taught and conducted research at the Articial Intelligence Center at SRI International, and the Universities of Illinois, California, and Oregon State. Her current research focuses on human-computer interaction, interface design for multimodal/multimedia systems and speech systems, portable &amp; telecommunication devices, and highly interactive systems. This work is funded primarily by grants and contracts from the National Science Foundation, DARPA, Intel, Microsoft, Boeing, and other corporate sources. She is an active member of the international HCI and speech communities, has published over 60 scienti c articles, and has served on numerous government advisory panels and editorial boards. Her work is featured in recent special issues on &quot;Multimodal Interfaces&quot; appearing in IEEE Multimedia</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Bridle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Sc</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Sc</surname></persName>
+		</author>
+		<ptr target="http://www.cse.ogi.edu/CHCC" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_cTADqjb">electrical engineering from South China University of Science and Technology in 1983 and 1986, and his Ph.D in information engineering from Cambridge University in 1992</title>
+				<editor>
+			<persName><forename type="first">F</forename></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Fogelman</forename><surname>Souli E</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Erault</surname></persName>
+		</editor>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Philip R. Cohen received his B. A. degree in mathematics from Cornell University, and his M. Sc. and Ph.D. degrees in computer science from the University of Toronto. Dr. Cohen has been a researcher or faculty member at Bolt Beranek and Newman, Inc</publisher>
+			<date type="published" when="1990">1990</date>
+			<biblScope unit="page" from="227" to="236" />
+		</imprint>
+		<respStmt>
+			<orgName>Oregon State University, the University of Illinois, Fairchild Laboratory for Arti cial Intelligence Research</orgName>
+		</respStmt>
+	</monogr>
+	<note>He was a post-doctoral fellow at Cambridge University from 1992 to 1993, a senior research associate at Oregon Graduate Institute from 1994 to 1995, and a senior research scientist at Nonlinear Prediction Systems from 1996 to 1997. He is now a principal project scientist at the Center for Human and Computer Communication of Oregon Graduate Institute. Wu&apos;s research interests include machine learning, multimedia signal processing, multimodal speech and gesture recognition. Sharon L. Oviatt is a Professor and Co-Director of the Center for Human-Computer Communication (CHCC) in the Department of Computer Science at the Oregon Graduate Institute of Science &amp; Technology (OGI). and SRI International. He is currently a professor and co-director of the Center for Human-Computer Communication in the</note>
+</biblStruct>
+
+<biblStruct coords="9,306.00,692.28,253.92,12.00;9,306.00,701.16,253.68,12.00;9,306.00,709.80,254.16,12.00;9,306.00,718.68,254.16,12.00;9,306.00,727.32,253.91,12.00;9,306.00,736.20,243.11,12.00" xml:id="b28">
+	<monogr>
+		<title level="m" type="main" xml:id="_vtN76f9">Computer Science at the Oregon Graduate Institute of Science and Technology. His research interests include multimodal interaction, multiagent systems, dialogue, natural language processing, and theories of collaboration and communication. Cohen is currently the President of the</title>
+		<author>
+			<persName coords=""><surname>Dept</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Of</surname></persName>
+		</author>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+		</imprint>
+	</monogr>
+	<note>and is a Fellow of the American Association for Arti cial Intelligence</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

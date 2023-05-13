@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_SGdGpnA">NUBO: A Transparent Python Package for Bayesian Optimisation</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2023-05-11">11 May 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,148.99,148.78,71.45,8.77"><forename type="first">Mike</forename><surname>Diessner</surname></persName>
+							<email>m.diessner2@newcastle.ac.uk</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computing</orgName>
+								<orgName type="institution">Newcastle University Newcastle upon Tyne</orgName>
+								<address>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,365.46,148.78,68.47,8.77"><forename type="first">Kevin</forename><surname>Wilson</surname></persName>
+							<email>kevin.wilson@newcastle.ac.uk</email>
+							<affiliation key="aff1">
+								<orgName type="department">School of Mathematics, Statistics and Physics</orgName>
+								<orgName type="institution">Newcastle University Newcastle upon Tyne</orgName>
+								<address>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,255.69,220.60,100.62,8.77"><forename type="first">Richard</forename><forename type="middle">D</forename><surname>Whalley</surname></persName>
+							<email>richard.whalley@newcastle.ac.uk</email>
+							<affiliation key="aff2">
+								<orgName type="department">School of Engineering</orgName>
+								<orgName type="institution">Newcastle University Newcastle upon Tyne</orgName>
+								<address>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_FtFU8w5">NUBO: A Transparent Python Package for Bayesian Optimisation</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-05-11">11 May 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">7A673F4F7DA58442FEFBC24CBB99B288</idno>
+					<idno type="arXiv">arXiv:2305.06709v1[cs.LG]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_zQtnDYX"><p xml:id="_SdefGJZ">NUBO, short for Newcastle University Bayesian Optimisation, is a Bayesian optimisation framework for the optimisation of expensive-to-evaluate black-box functions, such as physical experiments and computer simulators. Bayesian optimisation is a cost-efficient optimisation strategy that uses surrogate modelling via Gaussian processes to represent an objective function and acquisition functions to guide the selection of candidate points to approximate the global optimum of the objective function. NUBO itself focuses on transparency and user experience to make Bayesian optimisation easily accessible to researchers from all disciplines. Clean and understandable code, precise references, and thorough documentation ensure transparency, while user experience is ensured by a modular and flexible design, easy-to-write syntax, and careful selection of Bayesian optimisation algorithms. NUBO allows users to tailor Bayesian optimisation to their specific problem by writing the optimisation loop themselves using the provided building blocks. It supports sequential single-point, parallel multi-point, and asynchronous optimisation of bounded, constrained, and/or mixed (discrete and continuous) parameter input spaces. Only algorithms and methods that are extensively tested and validated to perform well are included in NUBO. This ensures that the package remains compact and does not overwhelm the user with an unnecessarily large number of options. The package is written in Python but does not require expert knowledge of Python to optimise your simulators and experiments. NUBO is distributed as open-source software under the BSD 3-Clause licence.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_EM5J6Vj">K eywords</head><p xml:id="_5r26X4S">Bayesian optimisation • black-box optimisation • surrogate model • Gaussian process • Monte Carlo • design of experiments • Python</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" xml:id="_ybTj2aT">Introduction</head><p xml:id="_bFDDSRC">The optimisation of expensive black-box functions is a common problem encountered by researchers in a wide range of disciplines, such as engineering, computing, and natural sciences. These functions are characterised by an unknown or not analytically solvable mathematical expression and high costs of evaluation. The principal way to gather information about a black-box function is to provide it with some inputs and observe its corresponding output. However, this process produces high costs, for example, material costs for physical experiments, computing costs for simulators, or time costs in general <ref type="bibr" coords="1,368.96,666.23,9.84,8.80" target="#b0">[1]</ref>. Many optimisation algorithms, such as Adam <ref type="bibr" coords="1,114.61,677.14,10.09,8.80" target="#b1">[2]</ref>, L-BFGS-B <ref type="bibr" coords="1,182.58,677.14,10.09,8.80" target="#b2">[3]</ref>, and differential evolution <ref type="bibr" coords="1,314.52,677.14,10.09,8.80" target="#b3">[4]</ref>, rely either on derivative information about the objective function or large numbers of function evaluations. Neither is typically feasible when working with an expensive black-box function, requiring us to search elsewhere for a cost-effective and sample-efficient alternative.</p><p xml:id="_yE2u8dB">Bayesian optimisation takes a surrogate model-based approach with the aim of optimising expensive black-box functions in a minimum number of function evaluations. Although the genesis of Bayesian optimisation can be traced back to the middle of the 20 th century <ref type="bibr" coords="2,284.05,267.97,10.42,8.80" target="#b4">[5,</ref><ref type="bibr" coords="2,297.79,267.97,7.70,8.80" target="#b5">6,</ref><ref type="bibr" coords="2,308.81,267.97,7.70,8.80" target="#b6">7,</ref><ref type="bibr" coords="2,319.82,267.97,6.95,8.80" target="#b7">8]</ref>, it gained considerable popularity in the last two decades <ref type="bibr" coords="2,108.02,278.88,10.43,8.80" target="#b8">[9,</ref><ref type="bibr" coords="2,121.77,278.88,12.68,8.80" target="#b9">10,</ref><ref type="bibr" coords="2,137.78,278.88,12.68,8.80" target="#b10">11,</ref><ref type="bibr" coords="2,153.79,278.88,6.95,8.80" target="#b0">1]</ref>. In recent years, it was applied to simulators and experiments in various research areas. For example, Bayesian optimisation was used in the field of computational fluid dynamics to maximise the drag reduction via the active control of blowing actuators <ref type="bibr" coords="2,325.31,300.70,15.47,8.80" target="#b11">[12,</ref><ref type="bibr" coords="2,344.09,300.70,12.71,8.80" target="#b12">13,</ref><ref type="bibr" coords="2,360.11,300.70,11.60,8.80" target="#b13">14]</ref>, in chemical engineering for molecular design, drug discovery, molecular modelling, electrolyte design, and additive manufacturing <ref type="bibr" coords="2,488.50,311.61,14.74,8.80" target="#b14">[15]</ref>, and in computer science to fine-tune hyper-parameters of machine learning models <ref type="bibr" coords="2,404.63,322.52,15.49,8.80" target="#b15">[16]</ref> and for architecture search of neural networks <ref type="bibr" coords="2,155.69,333.42,14.61,8.80" target="#b16">[17]</ref>.</p><p xml:id="_GD4DGSK">With NUBO we provide an open-source implementation of Bayesian optimisation aimed at researchers with expertise in disciplines other than statistics and computer science. To ensure that our target audience can understand and use Bayesian optimisation to its full potential, NUBO focuses particularly on (a) transparency through clean and understandable code, precise references, and thorough documentation and (b) user experience through a modular and flexible design, easy syntax, and a careful selection of implemented algorithms. There exist various Python packages for Bayesian optimisation as listed in Table <ref type="table" coords="2,492.21,404.36,3.95,8.80">1</ref>. Most of them only support sequential single-point optimisation, i.e., every point suggested by the algorithm has to be evaluated by the objective function before moving on to the next iteration. However, in many cases, parallelism can be exploited to speed up the optimisation process. For example, consider a simulator that can be run in parallel. Evaluating all points in parallel would save time as it would only take as long as evaluating a single point sequentially. pyGPGO <ref type="bibr" coords="2,288.14,458.90,14.74,8.80" target="#b17">[18]</ref>, bayes_opt <ref type="bibr" coords="2,359.31,458.90,14.75,8.80" target="#b18">[19]</ref>, Spearmint <ref type="bibr" coords="2,430.20,458.90,14.74,8.80" target="#b19">[20]</ref>, and SMAC3 <ref type="bibr" coords="2,510.12,458.90,15.61,8.80" target="#b20">[21]</ref> do not allow parallel multi-point optimisation. Furthermore, Spearmint and SMAC3 are not modular, resulting in less flexible implementations and giving the user less control when tailoring Bayesian optimisation to unique research problems. To our knowledge, the closest available package to NUBO is BoTorch <ref type="bibr" coords="2,502.17,491.63,15.60,8.80" target="#b21">[22]</ref> as it also supports parallel and asynchronous optimisation through the use of Monte Carlo approximations of the acquisition functions. However, compared to the lightweight implementation of NUBO, BoTorch uses a very large code base that makes code comprehension difficult, as it often requires retracing various functions and objects through a large number of files. This can be quantified by the huge codebase represented in Table <ref type="table" coords="2,536.03,535.27,4.97,8.80">1</ref> as the total number of lines of code: NUBO implements Bayesian optimisation in only 826 lines of code, while BoTorch uses 27, 100 lines of code, roughly 32 times more than NUBO. It also provides a large number of functions and methods that enforce decisions non-expert users do not have the knowledge and experience to make. NUBO lightens this burden of the user by limiting itself to the most important methods. Table <ref type="table" coords="2,535.99,578.90,5.00,8.80">1</ref> also includes GPyOpt <ref type="bibr" coords="2,170.34,589.81,14.61,8.80" target="#b22">[23]</ref>, however, it is no longer maintained and has recently been archived.</p><p xml:id="_fJdtfX5">Besides implementations in Python there are also some implementations in other programming languages. For example, rBayesianOptimization <ref type="bibr" coords="2,216.39,617.11,15.43,8.80" target="#b23">[24]</ref> and ParBayesianOptimization <ref type="bibr" coords="2,368.76,617.11,15.43,8.80" target="#b24">[25]</ref> implement basic Bayesian optimisation algorithms for hyper-parameter tuning similar to bayes_opt and pyGPGO in R. ParBayesianOptimization provides additional support for parallel optimisation and follows <ref type="bibr" coords="2,355.72,638.93,14.60,8.80" target="#b25">[26]</ref>.</p><p xml:id="_HKDFBNv">The remainder of this paper is structured as follows. In Section 2 we introduce the Bayesian optimisation algorithm, including Gaussian processes that form the surrogate model and acquisition functions that guide the optimisation. The implementation of Bayesian optimisation in NUBO is discussed in Section 3 before we illustrate how NUBO can be used to optimise expensive black-box functions through a non-trivial case study in Section 4. Finally, we draw conclusions and give an outlook on future work in Section 5.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" xml:id="_5R6MjQd">Bayesian optimisation</head><p xml:id="_cf4eavW">Bayesian optimisation aims to solve the d-dimensional maximisation problem</p><formula xml:id="formula_0" coords="3,264.26,111.83,275.74,16.66">x * = arg max x∈X f (x),<label>(1)</label></formula><p xml:id="_BRtRKBy">where the input space is usually continuous and bounded by a hyper-rectangle X ∈ [a, b] d with a, b ∈ R. The function f (x) is most commonly a derivative-free expensive-to-evaluate black-box function that allows inputs x i to be queried and outputs y i to be observed without gaining any further insights into the underlying system <ref type="bibr" coords="3,104.85,167.32,9.92,8.80" target="#b0">[1]</ref>. We assume any noise introduced when taking measurements to be independent and identically distributed Gaussian noise ∼ N (0, σ 2 ) such that y i = f (x i ) + . Hence, a set of n pairs of input data points and corresponding observations is defined as</p><formula xml:id="formula_1" coords="3,265.99,201.38,79.52,12.69">D n = {(x i , y i )} n i=1</formula><p xml:id="_My6hQHE">(2) and we further define training inputs as the matrix X n = {x i } n i=1 and their training outputs as the vector y n = {y i } n i=1 . Simulators and experiments in various disciplines can be formulated to fit this description including but not limited to the examples given in the introduction.</p><p xml:id="_TCv9uGU">Bayesian optimisation <ref type="bibr" coords="3,174.80,255.86,10.63,8.80" target="#b0">[1,</ref><ref type="bibr" coords="3,189.57,255.86,12.79,8.80" target="#b26">27,</ref><ref type="bibr" coords="3,206.48,255.86,7.81,8.80" target="#b8">9,</ref><ref type="bibr" coords="3,218.42,255.86,12.79,8.80" target="#b10">11,</ref><ref type="bibr" coords="3,235.34,255.86,8.52,8.80" target="#b9">10</ref>] is a surrogate model-based optimisation algorithm that aims to maximise the objective function f (x) in a minimum number of function evaluations. Typically, the objective function does not have a known or analytical solvable mathematical expression and every function evaluation is expensive. Such problems require a cost-effective and sample-efficient optimisation strategy. Bayesian optimisation meets these criteria by representing the objective function through a surrogate model M, often a Gaussian process. This representation can be used to find the input points to be evaluated sequentially by maximising a criterion specified through an acquisition function α(•). A popular criterion is the upper confidence bound (UCB). This acquisition function can be classed as an optimistic acquisition function that considers the upper bound of the uncertainty around the surrogate model's prediction to be true <ref type="bibr" coords="3,523.57,343.13,14.69,8.80" target="#b10">[11]</ref>. Bayesian optimisation is performed in a loop, where training data is used to fit the surrogate model before the next point suggested by the acquisition function is evaluated and added to the training data (see the Algorithm 1 below). The process then restarts and gathers more information about the objective function with each iteration. Bayesian optimisation is run for as many iterations as the evaluation budget N allows as shown in Algorithm 1, until a satisfactory solution is found, or until a predefined stopping criterion is met.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_FaUjknX">Algorithm 1 Bayesian optimisation algorithm</head><p xml:id="_8VKtx8x">Require: Evaluation budget N , number of initial points n 0 , surrogate model M, acquisition function α.</p><p xml:id="_HFSzZAq">Sample n 0 initial training data points X 0 via a space-filling design <ref type="bibr" coords="3,377.11,444.07,15.50,8.80" target="#b27">[28]</ref>  Figure <ref type="figure" coords="3,103.36,557.14,4.97,8.80" target="#fig_1">2</ref> illustrates how the Bayesian optimisation algorithm works for an optimisation loop that runs for 8 iterations and starts with 2 initial training points. In this example, NUBO finds an approximation of the global optimum (x = 8) for a simple 1-dimensional problem on iteration 7. The surrogate model uses the available observations to provide a prediction and associated uncertainty (here shown as 95% confidence intervals around the prediction). This is our best estimate of the underlying objective function. This estimate is then used in the acquisition function to evaluate which input value is likely to return a high output. Maximising the acquisition function provides the next candidate point to be observed from the objective function before it is added to the training data and the whole process is repeated. Figure <ref type="figure" coords="3,468.03,633.50,5.02,8.80" target="#fig_1">2</ref> shows how the surrogate model converges to the true objective function with each iteration. The acquisition function covers the input space by exploring regions with high uncertainty and exploiting regions with a high prediction. This property known as the exploration-exploitation trade-off, is a cornerstone of the acquisition functions provided in NUBO. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1" xml:id="_rea6CUu">Gaussian processes</head><p xml:id="_6PM5U9k">A popular choice for the surrogate model M that acts as a representation of the objective function f (x) is a Gaussian process <ref type="bibr" coords="5,170.91,69.83,15.60,8.80" target="#b26">[27,</ref><ref type="bibr" coords="5,190.19,69.83,11.71,8.80" target="#b28">29]</ref>, a flexible non-parametric regression model. A Gaussian process is a finite collection of random variables that has a joint Gaussian distribution and is defined by a prior mean function µ 0 (x) : X → R and a prior covariance kernel Σ 0 (x, x ) : X × X → R resulting in the prior distribution</p><formula xml:id="formula_2" coords="5,230.02,109.15,309.98,9.71">f (X n ) ∼ N (m(X n ), K(X n , X n )),<label>(3)</label></formula><p xml:id="_wsTXVCu">where m(X n ) = µ 0 (X n ) is the mean vector of length n over all training inputs and K(X n , X n ) = Σ 0 (X n , X n ) is the n × n covariance matrix between all training inputs.</p><p xml:id="_FzGAmeC">Popular choices for the prior mean function µ 0 (•) are the zero and constant mean functions given in Equations 4 and 5. For the prior covariance function Σ 0 (•, •), the squared exponential kernel, also called the radial basis function (RBF) kernel, and the Matérn 5 2 kernel are popular options. The covariance kernels in Equations 6 and 7 are based on the distance r =|x − x | and have two parameters: the signal variance σ 2 f , sometimes also referred to as the output-scale, and the characteristic length-scale l. The former will scale the function with larger values resulting in a larger deviation from its mean, while the latter indicates for how long function values are correlated along the input axes, the smaller the length-scale l the shorter the correlation <ref type="bibr" coords="5,501.42,222.23,15.41,8.80" target="#b26">[27,</ref><ref type="bibr" coords="5,520.16,222.23,11.56,8.80" target="#b28">29]</ref>.</p><formula xml:id="formula_3" coords="5,191.32,239.74,348.69,105.93">µ zero (x) = 0 (4) µ constant (x) = c (5) Σ RBF (x, x ) = σ 2 f exp − r 2 2l 2 (6) Σ Matérn (x, x ) = σ 2 f 1 + √ 5r l + 5r 2 3l 2 exp − √ 5r l<label>(7)</label></formula><p xml:id="_TNxE99D">Covariance functions can be extended to include one characteristic length-scale l d for each input dimension d. In this case, input dimensions with large length-scales are correlated for longer distances and are less relevant for changes in the prediction. This means that varying the values of the input dimension affects the prediction little. Input dimensions with small length-scales are correlated for shorter distances and even small changes in the input values can affect the prediction significantly. Gaussian processes with covariance functions that include multiple length-scales are characterised by automatic relevance determination (ARD) of the input dimensions <ref type="bibr" coords="5,180.95,416.63,14.75,8.80" target="#b29">[30]</ref>. Here, the inverse of the length-scales can be interpreted as the relevance of the corresponding dimensions <ref type="bibr" coords="5,208.75,427.54,14.75,8.80" target="#b28">[29]</ref>. The Gaussian process will estimate large length-scales for irrelevant dimensions, automatically assigning them less importance.</p><p xml:id="_cYgkAGY">The posterior distribution for n * test points X * can be computed as the multivariate Gaussian distribution conditional on training data</p><formula xml:id="formula_4" coords="5,146.42,465.81,393.58,82.12">D n f (X * ) | D n , X * ∼ N µ n (X * ), σ 2 n (X * ) (8) µ n (X * ) = K(X * , X n ) K(X n , X n ) + σ 2 y I −1 (y − m(X n )) + m(X * ) (9) σ 2 n (X * ) = K(X * , X * ) − K(X * , X n ) K(X n , X n ) + σ 2 y I −1 K(X n , X * ),<label>(10)</label></formula><p xml:id="_ZTzV7CZ">where m(X * ) is the mean vector of length n * over all test inputs, K</p><formula xml:id="formula_5" coords="5,72.00,553.30,469.38,20.62">(X * , X n ) is the n * × n covariance matrix, K(X n , X * ) is the n × n * covariance matrix, K(X * , X * ) is the n * × n * covariance matrix between training</formula><p xml:id="_JAFQTQA">inputs X n and test inputs X * respectively, and σ 2 y is the noise variance of the Gaussian process. The hyper-parameters θ of the Gaussian process, for example, the constant c in the mean function, the signal variance σ 2 f and characteristic length-scales l in the covariance kernel, and the noise variance σ 2 y , can be estimated by maximising the log-marginal likelihood in Equation 11 via maximum likelihood estimation (MLE) <ref type="bibr" coords="5,104.04,625.36,14.61,8.80" target="#b28">[29]</ref>.</p><formula xml:id="formula_6" coords="5,83.62,644.71,456.38,46.20">log p(y n | X n ) = − 1 2 (y n − m(X n )) [K(X n , X n ) + σ 2 y I] −1 (y n − m(X n )) − 1 2 log|K(X n , X n ) + σ 2 y I| − n 2 log 2π (11)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2" xml:id="_9rrcMmv">Acquisition functions</head><p xml:id="_KpSvw42">Acquisition functions use the posterior distribution of the Gaussian process to compute a criterion that assesses if a test point is a good potential candidate point to evaluate via the objective function f (x). Thus, maximising the acquisition function suggests the test point that, based on the current training data D n , has the highest potential and information gain to get closer to the global optimum while exploring the input space.</p><p xml:id="_6NmackH">To do this, an acquisition function α(•) balances exploration and exploitation. The former is characterised by areas with no or only a few observed data points where the uncertainty of the Gaussian process is high, and the latter by areas where the posterior mean of the Gaussian process is large. This exploration-exploitation trade-off ensures that Bayesian optimisation does not converge to the first (potentially local) maximum it encounters, but efficiently explores the full input space.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.1" xml:id="_y6ZBCNc">Analytical acquisition functions</head><p xml:id="_nxPS3rp">NUBO supports two of the most popular acquisition functions whose performance has been demonstrated in both theoretical and empirical research. Expected improvement (EI) <ref type="bibr" coords="6,392.47,198.28,10.63,8.80" target="#b8">[9]</ref> selects points with the biggest potential to improve on the current best observation, while upper confidence bound (UCB) <ref type="bibr" coords="6,483.84,209.19,15.61,8.80" target="#b30">[31]</ref> takes an optimistic view of the posterior uncertainty and assumes it to be true to a user-defined level. Expected improvement (EI) is defined as</p><formula xml:id="formula_7" coords="6,198.49,247.42,341.51,11.72">α EI (X * ) = µ n (X * ) − y best Φ(z) + σ n (X * )φ(z),<label>(12)</label></formula><p xml:id="_D2Vh44f">where z = µn(X * )−y best σn(X * )</p><p xml:id="_UyAgrH4">, µ n (•) and σ n (•) are the mean and the standard deviation of the posterior distribution of the Gaussian process, y best is the current best observation, and Φ(•) and φ(•) are the cumulative distribution function and probability density function of the standard normal distribution N (0, 1).</p><p xml:id="_WgxhwN2">The upper confidence bound (UCB) acquisition function can be computed as</p><formula xml:id="formula_8" coords="6,226.74,332.39,308.83,9.71">α UCB (X * ) = µ n (X * ) + βσ n (X * ), (<label>13</label></formula><formula xml:id="formula_9" coords="6,535.57,332.39,4.43,8.80">)</formula><p xml:id="_8mYwdhc">where β is a predefined trade-off parameter, and µ n (•) and σ n (•) are the mean and the standard deviation of the posterior distribution of the Gaussian process. For guidance on the choice of β consult the theoretical properties in <ref type="bibr" coords="6,130.50,371.10,15.50,8.80" target="#b30">[31]</ref> or empirical conclusions in <ref type="bibr" coords="6,268.49,371.10,14.61,8.80" target="#b11">[12]</ref>.</p><p xml:id="_ZjuhFvt">Both of these acquisition functions can be maximised with a deterministic optimiser, such as L-BFGS-B <ref type="bibr" coords="6,72.00,398.40,10.63,8.80" target="#b2">[3]</ref> for bounded unconstrained problems or SLSQP <ref type="bibr" coords="6,302.15,398.40,15.61,8.80" target="#b31">[32]</ref> for bounded constrained problems. However, the use of analytical acquisition functions is restricted to sequential single-point problems for which every point suggested by Bayesian optimisation is observed via the objective function f (x) immediately before the optimisation loop is repeated.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.2" xml:id="_WQufzKV">Monte Carlo acquisition functions</head><p xml:id="_q5DQKUz">For parallel multi-point batches or asynchronous optimisation, the analytical acquisition functions are in general intractable. To use Bayesian optimisation in these cases, NUBO supports the approximation of the analytical acquisition function through Monte Carlo sampling <ref type="bibr" coords="6,344.75,494.13,15.50,8.80" target="#b9">[10,</ref><ref type="bibr" coords="6,363.58,494.13,11.62,8.80" target="#b25">26]</ref>.</p><p xml:id="_4PnTz6G">The idea is to draw a large number of samples directly from the posterior distribution and then approximate the acquisition functions by averaging these Monte Carlo samples. This method is made viable by the reparameterisation of the acquisition functions and the computation of samples from the posterior distribution via base samples randomly drawn from a standard normal distribution z ∼ N (0, 1). Thus, the analytical acquisition functions from in Equations 12 and 13 can be approximated as</p><formula xml:id="formula_10" coords="6,200.32,568.99,339.68,53.00">α MC EI (X * ) = max ReLU (µ n (X * ) + Lz − y best ) (14) α MC UCB (X * ) = max µ n (X * ) + βπ 2 |Lz| , (<label>15</label></formula><formula xml:id="formula_11" coords="6,535.57,606.36,4.43,8.80">)</formula><p xml:id="_rrbarsm">where µ n (•) is the mean of the posterior distribution of the Gaussian process, L is the lower triangular matrix of the Cholesky decomposition of the covariance matrix LL = K(X n , X n ), z are samples from the multivariate standard normal distribution N (0, I), y best is the current best observation, β is the user-defined trade-off parameter, and ReLU (•) is the rectified linear unit function that zeros all values below 0 and leaves the rest unchanged.</p><p xml:id="_6zpfRG7">Due to the randomness in the Monte Carlo samples, these acquisition functions can only be optimised by stochastic optimisers, such as Adam <ref type="bibr" coords="7,238.50,50.01,10.08,8.80" target="#b1">[2]</ref>. However, there is some empirical evidence that fixing the base samples for individual Bayesian optimisation loops does not affect the performance negatively <ref type="bibr" coords="7,496.33,60.92,14.74,8.80" target="#b21">[22]</ref>. This method would allow deterministic optimisers, such as L-BFGS-B <ref type="bibr" coords="7,359.33,71.83,10.55,8.80" target="#b2">[3]</ref> and SLSQP <ref type="bibr" coords="7,427.97,71.83,15.53,8.80" target="#b31">[32]</ref> to be used, but could potentially introduce bias due to sampling randomness.</p><p xml:id="_jkCBk6Q">Two optimisation strategies for multi-point batches are proposed in the literature <ref type="bibr" coords="7,436.75,99.12,14.75,8.80" target="#b25">[26]</ref>: The first is a joint optimisation approach, where the acquisition functions are optimised over all points of the batch simultaneously.</p><p xml:id="_CD9gab5">The second option is a greedy sequential approach where one point after another is selected, holding all previous points fixed until the batch is full. Empirical evidence shows that both methods approximate the acquisition successfully. However, the greedy approach seems to have a slight edge over the joint strategy for some examples <ref type="bibr" coords="7,139.91,153.67,14.61,8.80" target="#b25">[26]</ref>. It is also faster to compute for larger batches.</p><p xml:id="_m5n2ECZ">Asynchronous optimisation <ref type="bibr" coords="7,193.05,170.06,15.48,8.80" target="#b9">[10]</ref> leverages the same property as sequential greedy optimisation: the pending points that have not yet been evaluated can be added to the test points but are treated as fixed. In this way, they affect the joint multivariate normal distribution but are not considered directly in the optimisation. Asynchronous optimisation is particularly beneficial for objective functions for which the evaluation time varies. In these cases, the optimisation can be continued while some points are still being evaluated.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3" xml:id="_Y4GnY4q">NUBO</head><p xml:id="_nQZ4xX5">NUBO is a Bayesian optimisation package in Python that focuses on transparency and user experience to make Bayesian optimisation accessible to researchers from a wide range of disciplines whose area of expertise is not necessarily statistics or computer science. With this overall goal in mind, NUBO ensures transparency by implementing clean and comprehensible code, precise references and thorough documentation, within this research article and on our website at www.nubopy.com. We avoid implementations of overly complex and convoluted functions and objects that require the retracing of individual elements through multiple files to be fully understood. We prioritise user experience defined by a modular and flexible design that can be intuitively tailored to unique problems, easy-to-read and write syntax, and a careful selection of Bayesian optimisation algorithms. The latter is important as we try not to overwhelm the user with a larger number of options but rather focus on what is essential to optimise computer simulators and physical experiments successfully.</p><p xml:id="_6j3Dw2C">To create a powerful package with good longevity, it is important to start with a strong foundation. NUBO is built upon the Torch ecosystem <ref type="bibr" coords="7,258.29,405.57,15.57,8.80" target="#b32">[33]</ref> that provides a strong scientific computation framework for working with tensors, a selection of powerful optimisation algorithms, such as torch.Adam <ref type="bibr" coords="7,478.34,416.47,10.09,8.80" target="#b1">[2]</ref>, automatic differentiation capabilities to compute gradients of acquisition functions via torch.autograd, and GPU acceleration. Furthermore, GPyTorch <ref type="bibr" coords="7,244.66,438.29,14.74,8.80" target="#b33">[34]</ref>, the package we use to implement Gaussian processes for our surrogate modelling, is also based in Torch and combines seamlessly with NUBO. We borrow the L-BFGS-B <ref type="bibr" coords="7,72.00,460.11,10.47,8.80" target="#b2">[3]</ref> and SLSQP <ref type="bibr" coords="7,139.94,460.11,15.46,8.80" target="#b31">[32]</ref> optimisation algorithms from SciPy for the deterministic optimisation of the acquisition functions.</p><p xml:id="_grMaEu9">NUBO and all its required dependencies can be installed from the Python Package Index (PyPi) <ref type="bibr" coords="7,491.64,487.41,15.40,8.80" target="#b34">[35]</ref> via the packet installer pip <ref type="bibr" coords="7,158.70,498.32,14.61,8.80" target="#b35">[36]</ref>:</p><p xml:id="_S84VbXX">$ pip install nubopy</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" xml:id="_Fcf63Sg">Gaussian processes</head><p xml:id="_dGpCpAr">NUBO uses the GPyTorch <ref type="bibr" coords="7,193.50,568.04,15.61,8.80" target="#b33">[34]</ref> package to implement Gaussian processes for surrogate modelling. While GPyTorch allows the definition of many different Gaussian processes through its various mean functions, covariance kernels, and methods for hyper-parameter estimation, we provide a predefined Gaussian process in the nubo.models module that follows the work of <ref type="bibr" coords="7,296.47,600.77,14.75,8.80" target="#b9">[10]</ref>. The 'GaussianProcess' is specified by a constant mean function and the Matérn 5 2 ARD kernel that, due to its flexibility, is well suited for practical optimisation as it can represent a wide variety of real-world objective functions. The code below implements a Gaussian process and estimates its hyper-parameters from some training inputs x_train and training outputs y_train, by maximising the log-marginal likelihood in Equation 11 with the fit_gp() function. The hyper-parameters include the constant in the mean function, the output-scale and length-scales in the covariance kernel, and the noise in the Gaussian likelihood. The training inputs and training outputs are specified as a torch.Tensor of size n × d and length n respectively, where n is the number of points and d is the number of input dimensions. Calling the function fit_gp() results in a trained Gaussian process that can subsequently be used for Bayesian optimisation.</p><p xml:id="_QjkfTga">&gt;&gt;&gt; from nubo.models import GaussianProcess, fit_gp &gt;&gt;&gt; from gpytorch.likelihoods import GaussianLikelihood &gt;&gt;&gt; likelihood = GaussianLikelihood() &gt;&gt;&gt; gp = GaussianProcess(x_train, y_train, likelihood=likelihood) &gt;&gt;&gt; fit_gp(x_train, y_train, gp=gp, likelihood=likelihood) While Gaussian processes are capable of estimating noise, for example, observational noise occurring when taking measurements, from the data, we might prefer specifying the noise explicitly if it is known. In these cases, we can exchange the 'GaussianLikelihood' for the 'FixedNoiseGaussianLikelihood' and specify the noise for each training point. The 'FixedNoiseGaussianLikelihood' allows us to decide if any additional noise should be estimated by setting the learn_additional_noise attribute to True or False. The snippet below fixes the observational noise of each training point at 2.5% and estimates any additional noise.</p><p xml:id="_ut4hn3k">&gt;&gt;&gt; from nubo.models import GaussianProcess, fit_gp &gt;&gt;&gt; from gpytorch.likelihoods import FixedNoiseGaussianLikelihood &gt;&gt;&gt; noise = torch.ones(x_train.size(0)) * 0.025 &gt;&gt;&gt; likelihood = FixedNoiseGaussianLikelihood(noise=noise, \ ... learn_additional_noise=True) &gt;&gt;&gt; gp = GaussianProcess(x_train, y_train, likelihood=likelihood) &gt;&gt;&gt; fit_gp(x_train, y_train, gp=gp, likelihood=likelihood)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" xml:id="_NrrSPPt">Bayesian optimisation</head><p xml:id="_UGaa2Wp">Before describing the individual optimisation options in detail, we want to illustrate NUBO's user experience, that is its easy-to-read and write syntax, flexibility, and modularity, on a simple Bayesian optimisation step that can be further divided into four substeps.</p><p xml:id="_ugNDfja">First, we define the input space. Here, we want to optimise a six-dimensional objective function that is bounded by the hyper-rectangle [0, 1] 6 specified as bounds, a 2 × 6 torch.Tensor, where the first row provides the lower bounds and the second row the upper bounds for all 6 input dimensions. Second, we load the training inputs x_train and the training outputs y_train. This training data can be selected manually or generated by using a space-filling design, such as Latin hypercube sampling introduced in Section 3.3. Third, we define and train the Gaussian process implemented in NUBO as discussed in Section 3.1, or set up a custom Gaussian process with GPyTorch. Fourth, we specify an acquisition function that takes the fitted Gaussian process as an argument and choose an optimisation method. In this case, we use the upper confidence bound introduced in Equation 13 and optimise it with the L-BFGS-B algorithm <ref type="bibr" coords="8,484.72,491.91,10.63,8.80" target="#b2">[3]</ref>  NUBO is very flexible and allows the user to swap out individual elements for other options. For example, we can substitute the 'UpperConfidenceBound' acquisition function or the single() optimisation strategy without changing any of the other lines of code. This makes it easy and fast to tailor Bayesian optimisation to specific problems.</p><p xml:id="_YS4XTBf">The remainder of this section introduces NUBO's optimisation strategies. Figure <ref type="figure" coords="9,426.83,140.90,4.21,8.80" target="#fig_4">3</ref>.2 shows a flowchart that helps users decide on the right acquisition function and optimiser for their specific problem.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.1" xml:id="_32ae9SH">Sequential single-point optimisation</head><p xml:id="_fpma3Ps">In NUBO we differentiate between two optimisation strategies: single-point and multi-point optimisation.</p><p xml:id="_x6vvQSm">When using the single-point strategy via the single() function, NUBO uses the analytical acquisition functions discussed in Section 2.2 to find the next point to be evaluated by the objective function. The corresponding observation must be gathered before the next iteration of the optimisation loop can begin.</p><p xml:id="_r7Z3WTN">The code below shows how the analytical expected improvement (EI) and the analytical upper confidence bound (UCB) can be specified with NUBO. The former takes the best training output to date as the argument y_best, while the latter accepts the trade-off hyper-parameter β as the beta argument. For bounded optimisation problems with analytical acquisition functions, the optimisation method of the single() function should be set to method="L-BFGS-B" and the arguments num_starts (default 10) and num_samples (default 100) can be set to enable multi-start optimisation, where the selected optimisation algorithm is run multiple times and each start is initialised at the best points from a large number of points sampled from a Latin hypercube. This reduces the risk of getting stuck in a local optimum. Section 3.3 introduces Latin hypercube sampling in more detail. The single() function only returns the best start and its acquisition value. Sequential single-point optimisation can be paired with constrained and mixed optimisation, all detailed in this section.</p><p xml:id="_Tz2G9h7">&gt;&gt;&gt; from nubo.acquisition import ExpectedImprovement, UpperConfidenceBound &gt;&gt;&gt; from nubo.optimisation import single &gt;&gt;&gt; acq = ExpectedImprovement(gp=gp, y_best=torch.max(y_train)) &gt;&gt;&gt; acq = UpperConfidenceBound(gp=gp, beta=4) &gt;&gt;&gt; x_new, _ = single(func=acq, method="L-BFGS-B", bounds=bounds, \ ... num_starts=5, num_samples=50)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.2" xml:id="_NRhfWCa">Parallel multi-point optimisation</head><p xml:id="_uRhnSAK">The second optimisation strategy is multi-point optimisation. This strategy uses the Monte Carlo acquisition functions outlined in Section 2.2 to find multiple points, also called batches, in each iteration of the Bayesian optimisation loop. This strategy is particularly beneficial for objective functions that support parallel evaluations as points can be queried simultaneously speeding up the optimisation process.</p><p xml:id="_FnFry5B">NUBO uses the Monte Carlo versions of expected improvement 'MCExpectedImprovement' and upper confidence bound 'MCUpperConfidenceBound' in unison with either the multi_joint() or multi_sequential() function to compute batches. The two different options for the multi-point optimisation strategy are discussed in Section 2.2. In addition to the arguments of the analytical acquisition functions, both Monte Carlo acquisition functions accept the number of Monte Carlo samples to be used to approximate the acquisition function as the samples argument (default 512). For the optimisation functions, the number of points to be computed can be passed to the batch_size argument, while the method should be set to "Adam" to enable stochastic optimisation via the Adam algorithm <ref type="bibr" coords="9,285.74,613.54,10.03,8.80" target="#b1">[2]</ref>. The Adam algorithm can be fine-tuned by setting the learning rate lr (default 0.1) and the number of optimisation steps steps (default 100). Parallel multi-point optimisation can be paired with asynchronous, constrained and mixed optimisation, all detailed in this section.</p><p xml:id="_uUv9hCq">&gt;&gt;&gt; from nubo.acquisition import MCExpectedImprovement, \ ... MCUpperConfidenceBound &gt;&gt;&gt; from nubo.optimisation import multi_joint, multi_sequential &gt;&gt;&gt; acq = MCExpectedImprovement(gp=gp, y_best=torch.max(y_train), \ ... samples=256) &gt;&gt;&gt; acq = MCUpperConfidenceBound(gp=gp, beta=4, samples=256) &gt;&gt;&gt; x_new, _ = multi_joint(func=acq, method="Adam", lr=0.1, \ ... steps=100, batch_size=4, bounds=bounds) &gt;&gt;&gt; x_new, _ = multi_sequential(func=acq, method="Adam", lr=0.1, \ ... steps=100, batch_size=4, bounds=bounds)</p><p xml:id="_5Ps9X8M">To enable the use of deterministic optimisers, such as L-BFGS-B <ref type="bibr" coords="11,355.51,158.30,10.46,8.80" target="#b2">[3]</ref> and SLSQP <ref type="bibr" coords="11,423.35,158.30,14.55,8.80" target="#b31">[32]</ref>, the base samples used to compute the Monte Carlo samples can be fixed by setting fix_base_samples=True (default False).</p><p xml:id="_fnUYDFD">&gt;&gt;&gt; While Monte Carlo acquisition functions are approximations of the analytical functions, they are mainly used for computing multiple points, where analytical functions are generally intractable. The Monte Carlo approach can also be used for single-point asynchronous optimisation by setting batch_size=1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.4" xml:id="_4J2QUF3">Constrained optimisation</head><p xml:id="_6U5G9eZ">The simple maximisation problem in Equation 1 can be extended by including one or more input constraints</p><formula xml:id="formula_12" coords="11,144.74,613.23,395.26,45.19">x * = arg max x∈X f (x), subject to g i (x) = 0 ∀i = 1, . . . , I [Equality constraint] h j (x) ≥ 0 ∀j = 1, . . . , J [Inequality constraint].<label>(16)</label></formula><p xml:id="_7Uzvbrq">In these instances, NUBO allows constrained Bayesian optimisation by using the SLSQP algorithm to optimise the acquisition function. Implementing this method requires the additional step of specifying the constraints cons as a dictionary for one constraint or a list of dictionaries for multiple constraints. Each constraint requires two entries. The first is "type" and can either be set to "ineq" for inequality constraints or "eq" for equality constraints. The second is "fun" which takes a function representing the constraint. The optimiser only selects points for which the constraint functions are greater than or equal to 0 for inequality constraints and exactly 0 for equality constraints. The code snippet below specifies two constraints: The first is an inequality constraint that requires the first two input dimensions to be smaller than or equal to 0.5. The second is an equality constraint that requires dimensions 4, 5, and 6 to sum to 1.2442.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_UgvYRmh">&gt;&gt;&gt; import torch</head><p xml:id="_Qte28mS">&gt;&gt;&gt; bounds = torch.tensor([[0., 0., 0., 0., 0., 0.], \ ... [1., 1., 1., 1., 1., 1.]]) &gt;&gt;&gt; cons = [{"type": "ineq", "fun": lambda x: 0.5 -x[0] -x[1]}, \ ... {"type": "eq", "fun": lambda x:</p><formula xml:id="formula_13" coords="12,323.06,191.50,151.68,8.18">1.2442 -x[3] -x[4] -x[5]}]</formula><p xml:id="_TXAZDKe">After setting up the input space using the bounds and constraints, the Bayesian optimisation loop is similar to before. We need to set the method argument of the optimisation function to "SLSQP" and provide the function with the constraints cons.</p><p xml:id="_GMbQCUX">&gt;&gt;&gt; from nubo.acquisition import UpperConfidenceBound &gt;&gt;&gt; from nubo.optimisation import single &gt;&gt;&gt; acq = UpperConfidenceBound(gp=gp, beta=4) &gt;&gt;&gt; x_new, _ = single(func=acq, method="SLSQP", \ ... bounds=bounds, constraints=cons)</p><p xml:id="_K8f9aBZ">Constrained Bayesian optimisation can be used with analytical and Monte Carlo acquisition functions as well as single-point, multi-point, asynchronous, and mixed optimisation, all detailed in this section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.5" xml:id="_b9EtxUV">Mixed optimisation</head><p xml:id="_MwDGHAA">Bayesian optimisation is predominantly focused on problems with continuous input parameters since the Gaussian process models all input dimensions as continuous variables. However, NUBO supports the optimisation of mixed input parameter spaces via a workaround. To do this, NUBO first computes all possible combinations of the discrete parameters. Then, it maximises the acquisition function for all continuous parameters while holding one combination of the discrete parameters fixed. Once the acquisition function is maximised for each of the possible discrete combinations, the best overall solution is returned. Note that this can be very time-consuming for many discrete dimensions or discrete values.</p><p xml:id="_7RF4HmT">To implement mixed optimisation in NUBO, bounds are specified as before but the discrete dimensions are additionally defined in a dictionary where the keys are the dimensions (starting from 0) and the values are a list of all possible values for the discrete inputs. The code below specifies dimensions 1 and 5 as disc.</p><p xml:id="_5ef9D63">&gt;&gt;&gt; import torch &gt;&gt;&gt; bounds = torch.tensor([[0., 0., 0., 0., 0., 0.], \ ... [1., 1., 1., 1., 1., 1.]]) &gt;&gt;&gt; disc = {0: [0.2, 0.4, 0.6, 0.8], \ ... 4: [0.3, 0.6, 0.9]} After setting up the input space specified by the bounds and discrete values, the Bayesian optimisation loop is similar to before. We only need to provide the function with the dictionary specifying the discrete dimensions discrete=disc.</p><p xml:id="_yZ9HmdC">&gt;&gt;&gt; from nubo.acquisition import UpperConfidenceBound &gt;&gt;&gt; from nubo.optimisation import single &gt;&gt;&gt; acq = UpperConfidenceBound(gp=gp, beta=4) &gt;&gt;&gt; x_new, _ = single(func=acq, method="L-BFGS-B", \ ... bounds=bounds, discrete=disc)</p><p xml:id="_XA9853z">Mixed Bayesian optimisation can be used in unison with analytical and Monte Carlo acquisition functions as well as single-point, multi-point, asynchronous, and constrained optimisation, all detailed in this section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3" xml:id="_ytPdfxu">Test functions and utilities</head><p xml:id="_k84Y3DY">NUBO provides a selection of test functions and utilities to make implementing and testing Bayesian optimisation algorithms more convenient. The ten test functions were selected from the virtual library of <ref type="bibr" coords="13,72.00,159.09,15.61,8.80" target="#b36">[37]</ref> and represent a variety of challenges, such as bowl-shaped, plate-shaped, valley-shaped, uni-modal, and multi-modal functions. The functions can be imported from the nubo.test_functions module and instantiated by providing the number of dimensions (except for the Hartmann function that comes in 3D and 6D versions), the standard deviation of any noise that should be added, and whether the function should be minimised or maximised. These functions are equipped with the following attributes: the number of dimensions dims, the bounds bounds, and the inputs and outputs of the global optimum optimum.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_NAaGdU2">&gt;&gt;&gt; from nubo.test_functions import Ackley, Hartmann6D</head><p xml:id="_cESVty3">&gt;&gt;&gt; func = Ackley(dims=5, noise_std=0.1, minimise=False) &gt;&gt;&gt; func = Hartmann6D(minimise=False) &gt;&gt;&gt; dims = func.dims &gt;&gt;&gt; bounds = func.bounds</p><p xml:id="_nsatzT7">The gen_inputs() function from the nubo.utils module allows us to generate input data that covers the input space efficiently by sampling a larger number of random Latin hypercube designs <ref type="bibr" coords="13,446.37,332.84,15.39,8.80" target="#b27">[28]</ref> and returning the design with the largest minimal distance between all points. Finally, we discuss three convenience functions that can be used for data transformation. normalise() and unnormalise() can be used to scale input data to the unit cube [0, 1] d and back to its original domain by providing the bounds of the input space. Furthermore, the outputs can be centred at 0 with a standard deviation of 1 with the standardise() function. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4" xml:id="_EzVjew7">Case study</head><p xml:id="_6Fm88qw">We present the general workflow for optimising an expensive-to-evaluate black-box function with NUBO by providing a detailed case study, in which a test function with 6 input dimensions is optimised. This case So that the case study is reproducible, we set the seed for the pseudo-number generator within Torch to 123. We set some format options for the print() function such that values are rounded to the fourth decimal place and are not formatted in scientific notation to increase readability.</p><p xml:id="_bwdaNSX">&gt;&gt;&gt; import torch &gt;&gt;&gt; torch.manual_seed(123) &gt;&gt;&gt; torch.set_printoptions(precision=4, sci_mode=False)</p><p xml:id="_43pVy4n">A typical objective function optimised with Bayesian optimisation is expensive to evaluate and thus not feasible to use in a case study that aims to illustrate how NUBO can be applied. Hence, we will use one of the synthetic test functions provided by NUBO as a surrogate expensive-to-evaluate black-box function. We use the 6-dimensional Hartmann function that possesses multiple local and one global minimum. Its input space is bounded by the hyper-rectangle [0, 1] 6 . Observational noise, such as measurement error, is represented by adding a small amount of random Gaussian noise to the function output by setting noise_std=0.1. minimise is set to False to transform the minimisation into a maximisation problem as required for Bayesian optimisation with NUBO.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_unap5FM">&gt;&gt;&gt; from nubo.test_functions import Hartmann6D</head><p xml:id="_3zc2eex">&gt;&gt;&gt; black_box = Hartmann6D(noise_std=0.1, minimise=False)</p><p xml:id="_24bgCR2">With our objective function specified, we can focus on defining the input space. We know that our objective function has 6 inputs that are all bounded by [0, 1]. As introduced in Section 3.2, the bounds are defined as a 2 × d torch.tensor, where the first row specifies the lower bounds and the second row specifies the upper bounds. This case study also highlights the mixed parameter optimisation capabilities of NUBO (see Section 3.2) by assuming that the first input is a discrete parameter restricted to 0.2, 0.4, 0.6, and 0.8. We can implement this by specifying a dictionary, where the key is the input dimension and the value is a list of possible values the input can take, that is {0: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]}. Note that indexing starts at 0 in Python.</p><p xml:id="_WurTQDz">&gt;&gt;&gt; dims = 6 &gt;&gt;&gt; bounds = torch.tensor([[0., 0., 0., 0., 0., 0.], \ ...</p><p xml:id="_K5GAjwU">[1., 1., 1., 1., 1., 1.]]) &gt;&gt;&gt; discrete = {0: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, \ ... 0.6, 0.7, 0.8, 0.9, 1.0]}</p><p xml:id="_jU8FA25">The Bayesian optimisation loop requires initial training data. This is important to train the Gaussian process that tries to emulate the objective function. This case study uses the gen_inputs() function introduced in Section 3. Next, we specify the Bayesian optimisation algorithm we plan to use in our optimisation loop. We define the bo() function that takes our training pairs (x_train, y_train) and returns the next candidate point x_new which is evaluated by the objective function in four steps. First, we set up our surrogate model as the Gaussian process provided by NUBO with a Gaussian likelihood as discussed in Section 3.1. Second, we train the Gaussian process gp with our training data by maximising the likelihood with the Adam algorithm <ref type="bibr" coords="15,497.09,394.62,10.41,8.80" target="#b1">[2]</ref> via the fit_gp() function. Here we set a custom learning rate lr and the number of optimisation steps steps. Third, we define an acquisition function that will guide our optimisation. As we assume that our objective function allows parallel function evaluations, we decide to compute multi-point batches at each iteration and choose a Monte Carlo acquisition function, in this case 'MCUpperConfidenceBound'. The acquisition function acq is instantiated by providing it with the fitted Gaussian process gp, a value for the trade-off hyper-parameter beta, and the number of Monte Carlo samples used to approximate the acquisition function. For further details, refer to Section 2.2. Fourth, we maximise the acquisition function acq with the multi_sequential() function that uses the sequential strategy for computing multiple candidate points. We decide to compute four candidate points at each iteration by setting batch_size=4 and providing the previously specified bounds and discrete values. The Adam optimiser is used as Monte Carlo acquisition functions require a stochastic optimiser due to their inherent randomness introduced by drawing the Monte Carlo samples. The optimiser is initialised at 2 different initial points chosen as the 2 points with the highest acquisition value out of 100 potential points sampled from a Latin hypercube design. We chose 2 initialisations to keep the computational overhead within the replication script low. In practice, a higher number of initialisations might be beneficial.  We compare the results provided by NUBO with the results from random sampling and using a space-filling design, in this case, Latin hypercube sampling (LHS). The code below generates results for the full budget of 70 evaluations for both sampling methods and plots the results against each other, with the number of evaluations on the x-axis and the accumulative best output for each method on the y-axis. Figure <ref type="figure" coords="18,506.19,526.18,5.02,8.80" target="#fig_5">4</ref> shows that NUBO (green line) provides a better solution than either alternative approach and is very close to the true maximum of 3.32237. NUBO succeeds in accurately approximating the true optimum. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_3k8AjEF">&gt;&gt;&gt; from nubo.acquisition import</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_94j4sPG">&gt;&gt;&gt;</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5" xml:id="_rQtrbAr">Conclusion</head><p xml:id="_BDMBKEE">This article introduces NUBO, a Python package for Bayesian optimisation to optimise expensive-to-evaluate black-box functions, for example, computer simulators and physical experiments. The main objective of NUBO is to make Bayesian optimisation accessible to researchers from all disciplines by providing a transparent and user-friendly implementation.</p><p xml:id="_SHYhqqV">NUBO includes five sub-modules that implement Gaussian processes, acquisition functions, optimisers, test functions, and utilities. These modules provide all necessities for sequential single-point, parallel multi-point, and asynchronous optimisation of expensive-to-evaluate black-box functions for bounded, constrained, and/or mixed (discrete and continuous) input parameter spaces. We have introduced and explained each of these functionalities with individual code snippets and illustrated NUBO's general workflow using a detailed case study that takes a hypothetical 6-dimensional expensive-to-evaluate black-box function and approximates its global optimum with a parallel multi-point Bayesian optimisation algorithm.</p><p xml:id="_f84PtMP">In the future, we plan to extend NUBO to include optimisation strategies for multi-fidelity, multi-objective, and high-dimensional problems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_qaD75Vt">Computational details</head><p xml:id="_Jy3Frr2">The results in this paper were obtained using Python 3.11.2 with the following packages: NUBO 1.0.3, Torch 2.0.0, GPyTorch 1.10.0 , SciPy 1.10.1, NumPy 1.24.2, and Matplotlib 3.7.1. Python itself is available from the Python website at https://www.python.org/ and all packages used are available from the Python Package Index (PyPI) at https://www.pypi.org/.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,72.00,738.78,469.93,8.80;4,72.00,749.69,430.46,8.80;4,83.70,532.55,210.60,157.95"><head>Figure 1 :</head><label>1</label><figDesc xml:id="_yAbRGvT">Figure 1: Bayesian optimisation applied to a 1-dimensional function with one local and one global maximum. Upper confidence bound is used as the acquisition function. The input space is bounded by [0, 10].</figDesc><graphic coords="4,83.70,532.55,210.60,157.95" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="10,72.00,642.09,469.38,8.80;10,72.00,653.00,243.17,8.80;10,72.00,58.20,468.02,561.96"><head>Figure 2 :</head><label>2</label><figDesc xml:id="_Kxx7pfk">Figure 2: NUBO flowchart. Overview of the recommended algorithms for specific problems. Start in yellow, decisions in blue, and recommended algorithm in green.</figDesc><graphic coords="10,72.00,58.20,468.02,561.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="13,336.46,343.75,203.53,8.80;13,72.00,354.66,468.00,8.80;13,72.00,365.57,468.00,8.80;13,72.00,376.48,468.00,8.80;13,72.00,387.39,468.00,8.80;13,72.00,398.30,245.02,9.08;13,92.92,420.61,193.52,8.18;13,92.92,453.34,245.83,8.18;13,92.92,464.25,15.69,8.18;13,223.68,464.25,83.69,8.18;13,92.92,475.16,15.69,8.18;13,223.68,475.16,73.23,8.18;13,92.92,486.07,141.22,8.18"><head>Figure 3 . 3 compares</head><label>33</label><figDesc xml:id="_M6wkdyn">Latin hypercube sampling to random sampling for two input dimensions. While many random points are in close proximity to each other, points from the Latin hypercube design cover the whole input space effectively by only placing one point in each row and column. The exact position of the point within the selected square is random. The code snippet below generates five points for each input dimension of the Hartmann function initiated above and uses func() to compute the corresponding outputs. &gt;&gt;&gt; from nubo.utils import gen_inputs &gt;&gt;&gt; x_train = gen_inputs(num_points=dims * 5, \ ... num_dims=dims, \ ... bounds=bounds) &gt;&gt;&gt; y_train = func(x_train)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="13,92.92,561.63,324.28,8.18;13,92.92,594.36,240.60,8.18;13,92.92,605.27,251.06,8.18;13,92.92,616.18,177.83,8.18"><head></head><label></label><figDesc xml:id="_G6cj4eQ">&gt;&gt;&gt; from nubo.utils import standardise, normalise, unnormalise &gt;&gt;&gt; x_norm = normalise(x_train, bounds=bounds) &gt;&gt;&gt; x_train = unnormalise(x_norm, bounds=bounds) &gt;&gt;&gt; y_stand = standardise(y_train)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="14,157.83,351.24,296.33,8.80;14,163.94,36.00,280.82,304.22"><head>Figure 3 :</head><label>3</label><figDesc xml:id="_9Kscwj8">Figure 3: Latin hypercube sampling compared to random sampling.</figDesc><graphic coords="14,163.94,36.00,280.82,304.22" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="18,72.00,292.63,468.00,8.90;18,72.00,303.64,299.54,8.80;18,140.54,36.00,327.62,245.71"><head>Figure 4 :</head><label>4</label><figDesc xml:id="_PhfCBx4">Figure 4: Results of the Bayesian optimisation algorithm implemented with NUBO as defined in this case study compared to random sampling and Latin hypercube sampling.</figDesc><graphic coords="18,140.54,36.00,327.62,245.71" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="11,70.62,191.13,469.39,332.26"><head></head><label></label><figDesc xml:id="_wvqJUDK">NUBO supports asynchronous optimisation, that is the continuation of the optimisation loop while some points are being evaluated by the objective function. In this case, the Monte Carlo acquisition functions 'MCExpectedImprovement' or 'MCUpperConfidenceBound' are used as outlined in Section 2.2. The code snippet below assumes that the two points x_pend are currently in the evaluation process. To continue the optimisation, these points can be fed into the acquisition function by setting x_pending=x_pend and NUBO will take them into account for the subsequent iteration.</figDesc><table coords="11,72.00,191.13,387.05,332.26"><row><cell cols="2">from nubo.acquisition import MCUpperConfidenceBound</cell></row><row><cell cols="2">&gt;&gt;&gt; from nubo.optimisation import multi_joint, multi_sequential</cell></row><row><cell cols="2">&gt;&gt;&gt; acq = MCUpperConfidenceBound(gp=gp, beta=4, fix_base_samples=True)</cell></row><row><cell cols="2">&gt;&gt;&gt; x_new, _ = multi_joint(func=acq, method="L-BFGS-B", \</cell></row><row><cell>...</cell><cell>batch_size=4, bounds=bounds)</cell></row><row><cell cols="2">&gt;&gt;&gt; x_new, _ = multi_sequential(func=acq, method="L-BFGS-B", \</cell></row><row><cell>...</cell><cell>batch_size=4, bounds=bounds)</cell></row><row><cell cols="2">3.2.3 Asynchronous optimisation</cell></row><row><cell>&gt;&gt;&gt; import torch</cell><cell></cell></row><row><cell cols="2">&gt;&gt;&gt; from nubo.acquisition import MCUpperConfidenceBound</cell></row><row><cell cols="2">&gt;&gt;&gt; from nubo.optimisation import multi_joint, multi_sequential</cell></row><row><cell cols="2">&gt;&gt;&gt; x_pend = torch.tensor([[0.2, 0.9, 0.8], \</cell></row><row><cell>...</cell><cell>[0.1, 0.3, .07]])</cell></row><row><cell cols="2">&gt;&gt;&gt; acq = MCUpperConfidenceBound(gp=gp, beta=4, x_pending=x_pend)</cell></row><row><cell cols="2">&gt;&gt;&gt; x_new, _ = multi_joint(func=acq, method="Adam", \</cell></row><row><cell>...</cell><cell>batch_size=4, bounds=bounds)</cell></row><row><cell cols="2">&gt;&gt;&gt; x_new, _ = multi_sequential(func=acq, method="Adam", \</cell></row><row><cell>...</cell><cell>batch_size=4, bounds=bounds)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="15,71.64,200.49,470.29,138.87"><head></head><label></label><figDesc xml:id="_fmxVp6g">3 to generate 30 initial data points from a Latin hypercube design. We round the first input dimension to fit the discrete values specified above as Latin hypercube designs return continuous values. These points are evaluated by the objective function to complete our training data pairs consisting of input parameters x_train and observations y_train.</figDesc><table coords="15,92.92,254.82,303.36,84.54"><row><cell cols="2">&gt;&gt;&gt; from nubo.utils import gen_inputs</cell></row><row><cell cols="2">&gt;&gt;&gt; x_train = gen_inputs(num_points=dims * 5, \</cell></row><row><cell>...</cell><cell>num_dims=dims, \</cell></row><row><cell>...</cell><cell>bounds=bounds)</cell></row><row><cell cols="2">&gt;&gt;&gt; x_train[:, 0] = torch.round(x_train[:, 0], decimals=1)</cell></row><row><cell cols="2">&gt;&gt;&gt; y_train = black_box(x_train)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="15,92.92,568.94,360.90,106.36"><head></head><label></label><figDesc xml:id="_c7dpzHS">Finally, we specify the entire optimisation loop, that is a simple for-loop that computes the next batch of candidate points using the defined Bayesian optimisation algorithm bo(), evaluates the candidate points by the objective function black_box(), and adds the new data pairs (x_new, y_new) to the training data. We let the optimisation loop run for 10 iterations and print all evaluations, where the first six columns are the inputs and the final column is the output from the objective function. The first 30 rows give the training data generated by the Latin hypercube design, while the last 40 rows were chosen by the Bayesian optimisation algorithm. The results clearly show that NUBO improves upon the initial space-filling design and produces points which are consistent with the bounds and discrete values that specify the parameter input space.</figDesc><table coords="15,92.92,568.94,360.90,106.36"><row><cell>&gt;&gt;&gt;</cell><cell>fit_gp(x_train, y_train, gp=gp, likelihood=likelihood, \</cell></row><row><cell>...</cell><cell>lr=0.1, steps=200)</cell></row><row><cell>&gt;&gt;&gt;</cell><cell>acq = MCUpperConfidenceBound(gp=gp, beta=4, samples=128)</cell></row><row><cell>&gt;&gt;&gt;</cell><cell>x_new, _ = multi_sequential(func=acq, \</cell></row><row><cell>...</cell><cell>method="Adam", \</cell></row><row><cell>...</cell><cell>batch_size=4, \</cell></row><row><cell>...</cell><cell>bounds=bounds, \</cell></row><row><cell>...</cell><cell>discrete=discrete, \</cell></row><row><cell>...</cell><cell>lr=0.1, \</cell></row><row><cell>...</cell><cell>steps=200, \</cell></row><row><cell>...</cell><cell>num_starts=2, \</cell></row><row><cell>...</cell><cell>num_samples=100)</cell></row><row><cell>...</cell><cell></cell></row><row><cell>...</cell><cell>return x_new</cell></row><row><cell cols="2">&gt;&gt;&gt; iters = 10</cell></row><row><cell cols="2">&gt;&gt;&gt; for iter in range(iters):</cell></row><row><cell>&gt;&gt;&gt;</cell><cell>x_new = bo(x_train, y_train)</cell></row><row><cell>&gt;&gt;&gt;</cell><cell>y_new = black_box(x_new)</cell></row><row><cell>&gt;&gt;&gt;</cell><cell>x_train = torch.vstack((x_train, x_new))</cell></row><row><cell>&gt;&gt;&gt;</cell><cell>y_train = torch.hstack((y_train, y_new))</cell></row><row><cell cols="2">&gt;&gt;&gt; print(torch.hstack([x_train, y_train.reshape(-1, 1)]))</cell></row><row><cell></cell><cell>MCUpperConfidenceBound</cell></row><row><cell cols="2">&gt;&gt;&gt; from nubo.models import GaussianProcess, fit_gp</cell></row><row><cell cols="2">&gt;&gt;&gt; from nubo.optimisation import multi_sequential</cell></row><row><cell cols="2">&gt;&gt;&gt; from gpytorch.likelihoods import GaussianLikelihood</cell></row><row><cell cols="2">&gt;&gt;&gt; def bo(x_train, y_train):</cell></row><row><cell>&gt;&gt;&gt;</cell><cell>likelihood = GaussianLikelihood()</cell></row><row><cell>&gt;&gt;&gt;</cell><cell>gp = GaussianProcess(x_train, y_train, likelihood=likelihood)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="18,92.92,568.94,381.82,117.27"><head></head><label></label><figDesc xml:id="_PZqWk9M">import matplotlib.pyplot as plt &gt;&gt;&gt; import numpy as np &gt;&gt;&gt; plt.plot(range<ref type="bibr" coords="19,187.07,40.00,15.69,8.18" target="#b0">(1,</ref> 71), np.maximum.accumulate(lhs), label="LHS") &gt;&gt;&gt; plt.plot(range(1, 71), np.maximum.accumulate(y_train), label="NUBO") &gt;&gt;&gt; plt.hlines(3.32237, 0, 71, colors="red", linestyles="dashed", \ ... label="Maximum") &gt;&gt;&gt; plt.title("Comparison against random designs") &gt;&gt;&gt; plt.xlabel("Evaluations") &gt;&gt;&gt; plt.ylabel("Output") &gt;&gt;&gt; plt.legend(loc='lower center', ncol=4, bbox_to_anchor=(0.5, -0.275)) &gt;&gt;&gt; plt.xlim(0, 71) &gt;&gt;&gt; plt.tight_layout()</figDesc><table coords="18,92.92,612.58,245.83,51.82"><row><cell>&gt;&gt;&gt; torch.manual_seed(123)</cell><cell></cell></row><row><cell cols="2">&gt;&gt;&gt; random = black_box(torch.rand((70, dims)))</cell></row><row><cell cols="2">&gt;&gt;&gt; lhs = black_box(gen_inputs(num_points=70, \</cell></row><row><cell>...</cell><cell>num_dims=dims, \</cell></row><row><cell>...</cell><cell>bounds=bounds))</cell></row></table><note xml:id="_gJ27AnS">&gt;&gt;&gt; plt.plot(range(1, 71), np.maximum.accumulate(random), label="Random")</note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_VHu5Bng">Acknowledgments</head><p xml:id="_y3s9QXg">The work has been supported by the Engineering and Physical Sciences Research Council (EPSRC) under grant number EP/T020946/1, and the EPSRC Centre for Doctoral Training in Cloud Computing for Big Data under grant number EP/L015358/1.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="19,92.48,534.05,404.58,8.80" xml:id="b0">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Frazier</forename><surname>Peter</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1807.02811</idno>
+		<title level="m" xml:id="_Bag4hCm">A tutorial on bayesian optimization</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="19,92.48,549.31,447.49,8.80;19,91.72,560.22,99.96,8.80" xml:id="b1">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Diederik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jimmy</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Ba</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.6980</idno>
+		<title level="m" xml:id="_JaSUR9T">Adam: A method for stochastic optimization</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="19,92.48,575.43,447.52,8.85;19,92.48,586.39,447.52,8.80;19,91.26,597.30,132.65,8.80" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_cY62h3T">Algorithm 778: L-bfgs-b: Fortran subroutines for large-scale bound-constrained optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Ciyou</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><forename type="middle">H</forename><surname>Byrd</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peihuang</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jorge</forename><surname>Nocedal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_sZVaAsP">ACM Transactions on Mathematical Software (TOMS)</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="550" to="560" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="19,92.48,612.56,447.52,8.80;19,92.48,623.47,394.46,8.80" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_jPDXYW8">Differential evolution-a simple and efficient heuristic for global optimization over continuous spaces</title>
+		<author>
+			<persName coords=""><forename type="first">Rainer</forename><surname>Storn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kenneth</forename><surname>Price</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_f5gx9xk">Journal of Global Optimization</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="341" to="359" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="19,92.48,638.73,447.52,8.80;19,92.48,649.64,297.79,8.80" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_gRJagG2">A new method of locating the maximum point of an arbitrary multipeak curve in the presence of noise</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Harold</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Kushner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ekEmB7r">Journal of Basic Engineering</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="97" to="106" />
+			<date type="published" when="1964">1964</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="19,92.48,666.23,449.45,8.80;19,91.30,677.14,145.23,8.80" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_p9UuRvh">Single-step bayesian search method for an extremum of functions of a single variable</title>
+		<author>
+			<persName coords=""><surname>Ag Žilinskas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_aC74A5e">Cybernetics</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="160" to="166" />
+			<date type="published" when="1975">1975</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,39.10,447.18,8.80;20,90.91,50.01,390.48,8.80" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_Y7HyGWh">On bayesian methods for seeking the extremum</title>
+		<author>
+			<persName coords=""><forename type="first">Jonas</forename><surname>Močkus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_TdBs4En">Optimization Techniques IFIP Technical Conference</title>
+				<meeting><address><addrLine>Novosibirsk</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer-Verlag</publisher>
+			<date type="published" when="1974">July 1-7, 1974. 1975</date>
+			<biblScope unit="page" from="400" to="404" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,64.81,447.52,8.80;20,91.74,75.71,326.62,8.80" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_Vq6wEhN">The Bayesian Approach to Local Optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Jonas</forename><surname>Močkus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_uVvkRCC">Mathematics and Its Applications</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="125" to="156" />
+			<date type="published" when="1989">1989</date>
+			<publisher>Springer-Verlag</publisher>
+		</imprint>
+	</monogr>
+	<note>1st edition</note>
+</biblStruct>
+
+<biblStruct coords="20,92.48,90.51,447.52,8.80;20,92.48,101.42,302.73,8.80" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_64U8dJU">Efficient global optimization of expensive black-box functions</title>
+		<author>
+			<persName coords=""><forename type="first">Matthias</forename><surname>Donald R Jones</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">William</forename><forename type="middle">J</forename><surname>Schonlau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Welch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_GfH3MDr">Journal of Global Optimization</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">455</biblScope>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,116.22,447.52,8.80;20,92.48,127.13,324.97,8.80" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_Y6DXDSu">Practical bayesian optimization of machine learning algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">Jasper</forename><surname>Snoek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hugo</forename><surname>Larochelle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ryan</forename><forename type="middle">P</forename><surname>Adams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_27QJESx">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<biblScope unit="page">25</biblScope>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,141.93,447.52,8.80;20,92.48,152.84,433.33,8.80" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_CrTWjMA">Taking the human out of the loop: A review of bayesian optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Bobak</forename><surname>Shahriari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kevin</forename><surname>Swersky</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ziyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ryan</forename><forename type="middle">P</forename><surname>Adams</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nando</forename><forename type="middle">De</forename><surname>Freitas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Z2wmF4W">Proceedings of the IEEE</title>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="148" to="175" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,167.64,447.52,8.80;20,91.97,178.54,448.03,8.80;20,92.48,189.45,319.33,8.80" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_zBYpWSW">Investigating bayesian optimization for expensive-to-evaluate black box functions: Application in fluid dynamics</title>
+		<author>
+			<persName coords=""><forename type="first">Mike</forename><surname>Diessner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O'</forename><surname>Joseph</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Connor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sylvain</forename><surname>Wynn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yu</forename><surname>Laizet</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kevin</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><forename type="middle">D</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Whalley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XWVxk4U">Frontiers in Applied Mathematics and Statistics</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,204.25,449.45,8.80;20,92.48,215.16,449.45,8.80;20,91.93,226.07,230.92,8.80" xml:id="b12">
+	<monogr>
+		<title level="m" type="main" xml:id="_zyscFU7">Optimisation and analysis of streamwise-varying wall-normal blowing in a turbulent boundary layer. Flow, Turbulence and Combustion</title>
+		<author>
+			<persName coords=""><forename type="first">O'</forename><surname>Joseph</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mike</forename><surname>Connor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kevin</forename><surname>Diessner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><forename type="middle">D</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Whalley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sylvain</forename><surname>Wynn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Laizet</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1" to="29" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,240.87,447.52,8.80;20,92.48,251.78,447.52,8.80;20,92.48,262.69,237.60,8.80" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_Vk6nsZg">Reducing the skin-friction drag of a turbulent boundary-layer flow with low-amplitude wall-normal blowing within a bayesian optimization framework</title>
+		<author>
+			<persName coords=""><surname>O A Mahfoze</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Moody</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R D</forename><surname>Wynn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Whalley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Laizet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_M44xkYa">Physical Review Fluids</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">94601</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,277.48,447.52,8.80;20,92.48,288.39,307.93,8.80" xml:id="b14">
+	<monogr>
+		<title level="m" type="main" xml:id="_XaxDeNb">Bayesian optimization for chemical products and functional materials. Current Opinion in Chemical Engineering</title>
+		<author>
+			<persName coords=""><forename type="first">Ke</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><forename type="middle">W</forename><surname>Dowling</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page">100728</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,303.19,447.72,8.80;20,92.48,314.10,447.52,8.80;20,91.72,325.01,151.94,8.80" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_p6QQ2c7">Hyperparameter optimization for machine learning models based on bayesian optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Jia</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiu-Yun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Li-Dong</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hang</forename><surname>Lei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Si-Hao</forename><surname>Deng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_C4JCs45">Journal of Electronic Science and Technology</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="26" to="40" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,339.81,447.52,8.80;20,92.48,350.72,447.25,8.80;20,91.94,361.63,78.45,8.80" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_fHNGmxs">Bananas: Bayesian optimization with neural architectures for neural architecture search</title>
+		<author>
+			<persName coords=""><forename type="first">Colin</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Willie</forename><surname>Neiswanger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yash</forename><surname>Savani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_4dZFqrD">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+				<meeting>the AAAI Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,376.33,447.52,8.90;20,91.98,387.33,112.32,8.80" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_dt8ENWT">pyGPGO: Bayesian optimization for Python</title>
+		<author>
+			<persName coords=""><forename type="first">José</forename><surname>Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Josep</forename><surname>Ginebra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_9VGZn62">Journal of Open Source Software</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page">431</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,402.03,449.45,8.90;20,92.10,413.04,94.75,8.80" xml:id="b18">
+	<monogr>
+		<title level="m" type="main" xml:id="_cm9jE3q">bayes_opt: Open Source Constrained Global Optimization Tool for Python</title>
+		<author>
+			<persName coords=""><forename type="first">Fernando</forename><surname>Nogueira</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="2023" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,427.74,448.91,8.90;20,92.23,438.75,49.26,8.80" xml:id="b19">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Ryan P Adam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jasper</forename><surname>Gelbart</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hugo</forename><surname>Snoek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Larochelle</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="2023" to="2025" />
+		</imprint>
+	</monogr>
+	<note>Spearmint Software</note>
+</biblStruct>
+
+<biblStruct coords="20,92.48,453.55,447.52,8.80;20,92.48,464.36,447.52,8.90;20,92.48,475.37,435.78,8.80" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_wP4wN4E">SMAC3: A versatile bayesian optimization package for hyperparameter optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Marius</forename><surname>Lindauer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Katharina</forename><surname>Eggensperger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthias</forename><surname>Feurer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">André</forename><surname>Biedenkapp</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Difan</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Carolin</forename><surname>Benjamins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tim</forename><surname>Ruhkopf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">René</forename><surname>Sass</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Frank</forename><surname>Hutter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Nb4Rvw3">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">54</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,490.16,447.52,8.80;20,91.97,500.97,449.96,8.90;20,91.74,511.98,329.32,8.80" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_em99NqN">BoTorch: A framework for efficient monte-carlo bayesian optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Maximilian</forename><surname>Balandat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Brian</forename><surname>Karrer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Samuel</forename><surname>Daniel R Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Benjamin</forename><surname>Daulton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">G</forename><surname>Letham</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Eytan</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bakshy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_gJyXGPU">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="21524" to="21538" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,526.68,448.90,8.90;20,92.23,537.69,49.26,8.80" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_e4ySDZs">GPyOpt: A Bayesian Optimization Framework in Python</title>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_aPGmjUx">The GPyOpt authors</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="2023" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,552.39,396.44,8.90" xml:id="b23">
+	<monogr>
+		<title level="m" type="main" xml:id="_NnAA4DZ">rBayesianOptimization: Bayesian Optimization of Hyperparameters</title>
+		<author>
+			<persName coords=""><forename type="first">Yachen</forename><surname>Yan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,567.19,449.45,8.90;20,92.48,578.15,9.20,8.85" xml:id="b24">
+	<monogr>
+		<title level="m" type="main" xml:id="_ypxMsRT">ParBayesianOptimization: Parallel Bayesian Optimization of Hyperparameters</title>
+		<author>
+			<persName coords=""><forename type="first">Samuel</forename><surname>Wilson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,592.99,447.52,8.80;20,92.48,603.90,333.74,8.80" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_fz4SJy9">Maximizing acquisition functions for bayesian optimization</title>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Frank</forename><surname>Hutter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc</forename><surname>Deisenroth</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_fkuRRaZ">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page">31</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,92.48,618.70,447.24,8.80;20,91.98,629.61,449.07,9.08;20,92.48,641.42,60.30,8.18" xml:id="b26">
+	<monogr>
+		<title level="m" type="main" xml:id="_HfGmqND">Surrogates: Gaussian Process Modeling, Design and Optimization for the Applied Sciences</title>
+		<author>
+			<persName coords=""><forename type="first">Robert</forename><forename type="middle">B</forename><surname>Gramacy</surname></persName>
+		</author>
+		<ptr target="http://bobby.gramacy.com/surrogates/" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<publisher>Chapman Hall/CRC</publisher>
+			<pubPlace>Boca Raton, Florida</pubPlace>
+		</imprint>
+	</monogr>
+	<note>1st edition</note>
+</biblStruct>
+
+<biblStruct coords="20,92.48,655.32,447.72,8.80;20,92.48,666.23,448.91,8.80;20,92.23,677.14,89.11,8.80" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZN8b9dd">A comparison of three methods for selecting values of input variables in the analysis of output from a computer code</title>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Michael D Mckay</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">William</forename><forename type="middle">J</forename><surname>Beckman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Conover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_vRwsYpE">Technometrics</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="239" to="245" />
+			<date type="published" when="1979">1979</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,92.48,39.10,447.52,8.80;21,92.48,50.01,148.36,8.80" xml:id="b28">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Carl</forename><surname>Edward</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rasmussen</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christopher K I</forename><surname>Williams</surname></persName>
+		</author>
+		<title level="m" xml:id="_3hAfcT8">Gaussian Processes for Machine Learning</title>
+				<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>The MIT Press</publisher>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,92.48,64.90,449.45,8.80;21,92.48,75.81,197.75,8.80" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_wuxJyVM">Bayesian Learning for Neural Networks</title>
+		<author>
+			<persName coords=""><forename type="first">Neal</forename><surname>Radford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s" xml:id="_gWapqU4">Lecture Notes in Statistics</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<date type="published" when="1996">1996</date>
+			<publisher>Springer-Verlag</publisher>
+		</imprint>
+	</monogr>
+	<note>1st edition</note>
+</biblStruct>
+
+<biblStruct coords="21,92.48,90.70,447.52,8.80;21,92.48,101.61,447.52,8.80;21,91.70,112.52,148.47,8.80" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_arBXPsw">Gaussian process optimization in the bandit setting: No regret and experimental design</title>
+		<author>
+			<persName coords=""><forename type="first">Niranjan</forename><surname>Srinivas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andreas</forename><surname>Krause</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sham</forename><surname>Kakade</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthias</forename><surname>Seegre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_DrxAjFM">Proceedings of the International Conference on Machine Learning</title>
+				<meeting>the International Conference on Machine Learning</meeting>
+		<imprint>
+			<date type="published" when="2010">2010. 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,92.48,127.42,447.52,8.80;21,91.70,138.33,249.41,8.80" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_dNhfGeC">Algorithm 733: Tomp-Fortran modules for optimal control calculations</title>
+		<author>
+			<persName coords=""><forename type="first">Dieter</forename><surname>Kraft</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5eewwvW">ACM Transactions on Mathematical Software (TOMS)</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="262" to="281" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,92.48,153.22,447.72,8.80;21,92.48,164.03,449.19,8.90;21,92.48,175.04,425.75,8.80" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_ekEjWq6">PyTorch: An imperative style, highperformance deep learning library</title>
+		<author>
+			<persName coords=""><forename type="first">Adam</forename><surname>Paszke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sam</forename><surname>Gross</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Francisco</forename><surname>Massa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Adam</forename><surname>Lerer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Bradbury</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gregory</forename><surname>Chanan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Trevor</forename><surname>Killeen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zeming</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Natalia</forename><surname>Gimelshein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Luca</forename><surname>Antiga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_xJdEHFm">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">32</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,92.48,189.83,448.91,8.90;21,92.48,200.84,447.52,8.80;21,91.93,211.75,128.10,8.80" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_S7UDk8D">GPyTorch: Blackbox matrix-matrix gaussian process inference with gpu acceleration</title>
+		<author>
+			<persName coords=""><forename type="first">Jacob</forename><surname>Gardner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Geoff</forename><surname>Pleiss</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Kilian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Weinberger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">G</forename><surname>Bindel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Wilson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8Qyy42Z">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<biblScope unit="page">31</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,92.48,226.64,379.67,8.80" xml:id="b34">
+	<monogr>
+		<title level="m" type="main" xml:id="_RaA7KDR">Python Software Foundation. Python package index -pypi</title>
+		<imprint>
+			<biblScope unit="page" from="2023" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,92.48,241.44,364.14,8.90" xml:id="b35">
+	<monogr>
+		<title level="m" type="main" xml:id="_M7XWKC4">The pip developers. pip: Package Installer for Python</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="2023" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,92.48,256.43,447.52,8.80;21,92.48,267.34,157.40,8.80" xml:id="b36">
+	<monogr>
+		<title level="m" type="main" xml:id="_zJ8td3Z">Virtual library of simulation experiments: Test functions and datasets</title>
+		<author>
+			<persName coords=""><forename type="first">Sonja</forename><surname>Surjanovic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Derek</forename><surname>Bingham</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page" from="2023" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

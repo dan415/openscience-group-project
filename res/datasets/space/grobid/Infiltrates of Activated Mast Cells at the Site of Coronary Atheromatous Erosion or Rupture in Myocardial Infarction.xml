@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_nFsKFC2">Infiltrates of Activated Mast Cells at the Site of Coronary Atheromatous Erosion or Rupture in Myocardial Infarction</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="1995-09-01">September 1, 1995.</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,36.50,220.33,90.00,10.80"><roleName>MD</roleName><forename type="first">Petri</forename><forename type="middle">T</forename><surname>Kovanen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Wihuri Research Institute</orgName>
+								<address>
+									<addrLine>Kalliolinnantie 4</addrLine>
+									<postCode>00140</postCode>
+									<settlement>Helsinki</settlement>
+									<country key="FI">Finland</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Pathology</orgName>
+								<orgName type="institution">University of Helsinki</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,136.59,220.33,86.21,10.80"><forename type="first">Maija</forename><surname>Kaartinen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Wihuri Research Institute</orgName>
+								<address>
+									<addrLine>Kalliolinnantie 4</addrLine>
+									<postCode>00140</postCode>
+									<settlement>Helsinki</settlement>
+									<country key="FI">Finland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,256.68,220.33,88.52,10.80"><forename type="first">Timo</forename><surname>Paavonen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Wihuri Research Institute</orgName>
+								<address>
+									<addrLine>Kalliolinnantie 4</addrLine>
+									<postCode>00140</postCode>
+									<settlement>Helsinki</settlement>
+									<country key="FI">Finland</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_bFXxnYr">Infiltrates of Activated Mast Cells at the Site of Coronary Atheromatous Erosion or Rupture in Myocardial Infarction</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="1995-09-01">September 1, 1995.</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">870BD0A1D5602F18051D5E8F6BBE3596</idno>
+					<idno type="DOI">10.1161/01.CIR.92.5.1084</idno>
+					<note type="submission">Received April 17, 1995; revision received June 15, 1995; accepted June 17, 1995;</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_gmZXtC5">atherosclerosis</term>
+					<term xml:id="_9RmJt6s">chymase</term>
+					<term xml:id="_EGjkH6t">tryptase</term>
+					<term xml:id="_wAQc7n2">mast cells</term>
+					<term xml:id="_haCDrvg">atherosclerosis</term>
+					<term xml:id="_ZxbYkw4">myocardial infarction</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_dMQfsq3"><p xml:id="_zANBaWc">Background Erosion and rupture of coronary atheromas are the events preceding the vast majority of acute coronary syndromes. The shoulder regions of atheromas, the sites at which erosion or rupture is most likely to occur, are the sites at which mast cells accumulate. These cells are filled with neutral proteases capable of triggering extracellular matrix degradation via activation of matrix metalloproteinases. To obtain more direct evidence for the participation of mast cells in the acute coronary syndromes, we quantified the numbers of mast cells at eroded or ruptured sites of coronary atheromas in patients who died of myocardial infarction. Methods and Results In specimens of coronary arteries from 20 patients who had died of acute myocardial infarction, the site of atheromatous erosion or rupture was identified. The specimens were stained with monoclonal antibodies against the two major proteases of mast cells, tryptase and chymase, and against macrophages, T lymphocytes, and smooth muscle cells. At the immediate site of erosion or rupture, mast cells amounted to 6% of all nucleated cells, in the adjacent atheromatous area to 1%, and in the unaffected intimal area to 0.1%. The proportions of these mast cells that were activated, ie, had been stimulated to degranulate and release some of their tryptase and chymase contents, were 86% at the site of erosion or rupture, 63% in the adjacent atheromatous area, and 27% in the unaffected intima. At the site of erosion or rupture, the numbers of macrophages and T lymphocytes were also increased, but the number of smooth muscle cells was decreased. Conclusions The accumulation of activated mast cells (200-fold more than in the unaffected coronary intima) at the site of atheromatous erosion or rupture suggests that in thrombotic coronary occlusion the role played by mast cells is significant.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_muSWq5Y"><p xml:id="_6PkB8pB">triggering degradation of the extracellular matrix via activation of matrix metalloproteinases (MMPs). <ref type="bibr" coords="2,81.85,47.38,18.86,9.00">5 6</ref> Indeed, the presence of mast cells in areas of excessive degradation of the extracellular matrix is well documented in diseases affecting the connective tissue. <ref type="bibr" coords="2,477.83,64.64,14.92,9.00">7 8</ref> Thus, these cells could participate in the weakening of the fibrous cap and subsequent erosion or rupture of the coronary atheroma. In the present study, we measured the mast cell densities at and around the immediate sites of atheromatous erosion or rupture in coronary arteries obtained from patients who had died of myocardial infarction. We also determined the relative contribution of mast cells to the overall cellular composition at the erosion or rupture sites and the proportion of these mast cells that were activated, ie, had degranulated and secreted some of their neutral protease contents.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_HVA3Med">METHODS Autopsy Material and Treatment of Tissue</head><p xml:id="_Ux2mv8K">The autopsy series comprised coronary specimens of 26 patients who died of acute myocardial infarction. From this series, we selected 20 patients (12 men, 8 women) in whom we found a thrombosed coronary artery with local erosion or rupture. The ages of the patients ranged from 50 to 82 years (mean, 63 years). The time interval between the onset of cardiac symptoms and death varied from 3 hours to 7 days (mean interval, 2 days; in 15 patients within 2 days), and the autopsy material was obtained within 5 days of death (range, 0 to 5 days; mean, 2 days). Infarcted myocardium was identified at autopsy with nitro blue tetrazolium enzyme staining and confirmed by histology. The involved coronary artery was fixed in Carnoy's fluid (60% ethanol, 30% chloroform, and 10% glacial acetic acid) for 24 hours and then cut (unopened) into 2-mm pieces, which were embedded in paraffin, sectioned, and stained with elastica-van Gieson stain (for collagen and elastin) until the site of the erosion or rupture with the thrombus was found. In 13 patients an occlusive thrombus and in 7 a nonocclusive thrombus was found. Thrombolytic treatment had been given to 1 patient with an occlusive thrombus (death 1 day after treatment) and 1 with a nonocclusive thrombus (death 5 days after treatment).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Y52JzKh">Immunocytochemistry</head><p xml:id="_ccbSqh2">For immunocytochemistry, fixed serial sections (2 to 4 μm) were dewaxed in xylene and rehydrated in a graded series of ethanol solutions, and endogenous peroxide activity was inhibited by incubation with 0.6% H 2 O 2 in methanol. The sections were then incubated with one of the following: anti-tryptase monoclonal antibody G3 (1.5 μg/mL) for mast cells <ref type="bibr" coords="2,433.82,600.39,5.56,9.00" target="#b12">9</ref> (kind gift from Dr L.B. Schwartz, Medical College of Virginia, Richmond); HAM 56, a monoclonal antibody for macrophages (1:50); UCHL 1, a monoclonal antibody for T lymphocytes (1:50) (both from Dakopatts); and a monoclonal antibody for α-smooth muscle actin against smooth muscle cells (1:12 000) (Sigma Chemical Co). Mast cells and smooth muscle cells were stained according to the indirect immunoperoxidase method, and macrophages and T lymphocytes were stained by the avidin-biotin complex method, as recently described. <ref type="bibr" coords="2,357.98,702.44,28.55,9.00">4 10</ref> Immunopositive mast cells, macrophages, T lymphocytes, and smooth muscle cells were counted at a magnification of ×100. Mast cell degranulation, ie, activation, was detected by observing extracellularly located mast cell granules at a magnification of ×1000. Counts of various cell types were examined with ANOVA, with the cell count at the site of erosion or rupture as the explanatory variable and with the F test for determination of the significance of differences, which were considered to be statistically significant when P&lt;.05. The proportions of the various cell types in relation to the total number of cells were analyzed with logistic regression, with the proportion at the site of erosion or rupture as the explanatory variable. Results are presented as odds ratios (ORs), considering the result at the unaffected site as the reference (OR=1). All ORs are reported with 95% CIs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_mm3ymer">RESULTS</head><p xml:id="_3Q2teBU">Of the 20 coronary atherosclerotic plaques underlying the coronary thromboses, 10 showed erosions (superficial ruptures) and 10 showed deep ruptures. Seven of the plaques had eroded or ruptured at the junction of the cap with the more normal intima (the shoulder region), and 6 had eroded or ruptured at more central areas of the cap. In the remaining 7 cases, the anatomic location (cap versus shoulder) of the erosion or rupture could not be unequivocally determined.</p><p xml:id="_GzuvqjD">With regard to mast cells, neither the type (erosion versus rupture) nor the location (shoulder versus more central area of the cap) at the lesion had a significant influence on the results. Therefore, the cytochemical results are presented without reference to the type of lesion or its location in the coronary atheroma ("erosion/rupture" in Tables <ref type="table" coords="3,364.61,344.14,18.35,10.80" target="#tab_3">1, 2</ref>, and 3).</p><p xml:id="_DC23dHs">Fig <ref type="figure" coords="3,73.73,360.65,6.68,10.80" target="#fig_0">1</ref> shows immunostaining of mast cells (tryptase) in a highly atherosclerotic coronary artery. The severely narrowed lumen was totally occluded with a thrombus, and the endothelial layer was eroded. Accumulations of mast cells (red-brown) can be clearly discerned. Numerous macrophages and T lymphocytes had also accumulated in this area (not shown).</p><p xml:id="_GKjWJM6">Fig <ref type="figure" coords="3,75.35,428.18,6.68,10.80" target="#fig_1">2</ref> compares the densities of mast cells (ie, tryptase-positive cells) in the 20 sections of coronary plaque in which the erosion or rupture was identified. Three different areas in each case were examined: the immediate site of erosion or rupture, an adjacent area, and a more distant unaffected area. The average density of mast cells was far higher (28-fold higher) at the sites of erosion or rupture than in the unaffected areas. In the area adjacent to the eroded or ruptured site, the densities of mast cells were 10-fold higher than in the unaffected area and were thus intermediate between the affected and unaffected areas. Table <ref type="table" coords="3,374.08,528.73,6.68,10.80" target="#tab_2">1</ref> shows numerical comparisons of the densities of mast cells (Fig 2 <ref type="figure" coords="3,211.43,545.23,4.67,10.80">)</ref>, macrophages, T lymphocytes, and smooth muscle cells in the three areas examined. Like the average densities of mast cells, the average densities of macrophages and T lymphocytes were higher (by 4-fold and 3-fold, respectively) at the eroded or ruptured sites. In sharp contrast, the average density of smooth muscle cells at the eroded or ruptured sites was markedly decreased (4-fold).</p><p xml:id="_X55rYxU">Table <ref type="table" coords="3,86.45,629.27,6.68,10.80" target="#tab_3">2</ref> shows the numbers of the individual cell types as percentages of the total number of cells in the three intimal areas considered. At the immediate site of erosion or rupture, mast cells amounted to 6% of all nucleated cells, and in the adjacent atheromatous area, they amounted to 1%. In the unaffected intimal areas, the proportion of mast cells was very low (0.1%). Notably, the predominant cell type at the erosion or rupture site was macrophages, the second most frequent cell type being the smooth muscle cells, and T lymphocytes equaling the mast cells in number.</p><p xml:id="_WtUV25e">Activated, ie, degranulated, mast cells were found in all the areas studied (Table <ref type="table" coords="3,503.93,730.57,4.67,10.80" target="#tab_4">3</ref>). Fig 3A shows a degranulated mast cell with clearly visible extracellular granules. For comparison, a resting mast cell is shown in Fig 3B <ref type="figure" coords="3,222.50,763.59,6.01,10.80">.</ref> At the site of intimal erosion or rupture, the proportion of mast cells that were activated was far higher (86%) than in the area adjacent to it (63%) or in the unaffected area (27%) (Table <ref type="table" coords="3,207.20,797.35,4.67,10.80" target="#tab_4">3</ref>). Taken together, Tables <ref type="table" coords="3,360.32,797.35,46.43,10.80" target="#tab_4">2 and 3</ref>  activated mast cells in relation to the total number of cells was 0.027% (0.001×0.27) in the uninvolved area and 5.2% (0.06×0.86) at the erosion or rupture site, ie, about 200-fold higher.</p><p xml:id="_UpbADgD">All mast cells in the human arterial intima contain tryptase, and a fraction of them contain chymase as well. <ref type="bibr" coords="4,128.36,81.15,20.26,9.00">4 10</ref> To determine the proportion of mast cells that contained chymase in addition to tryptase, adjacent sections were stained for tryptase and chymase. In the sections stained for chymase, the proportion of mast cells containing chymase averaged 37% (11% to 74%) at the sites of erosion or rupture, 42% (0% to 100%) in the adjacent areas, and 35% (0% to 100%) in the more distant unaffected areas. Some of the extruded granules also contained chymase; in the three areas compared above, the proportions of mast cells that had extruded such granules were 87%, 76%, and 38%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_8CkBVUe">DISCUSSION</head><p xml:id="_q2TnVxB">In the present study, we observed a striking increase (200-fold) in the number of activated mast cells at sites of thrombotic atheromatous erosion/rupture in coronary arteries of subjects who had died of myocardial infarction. Previously, in a medicolegal series, we found that mast cells in coronary atheromas were present both in the shoulder and in the more central areas of the cap, although preferentially in the shoulder region. <ref type="bibr" coords="4,281.30,325.76,5.56,9.00" target="#b7">4</ref> This result agrees with the findings of Richardson et al <ref type="bibr" coords="4,60.28,343.77,10.38,9.00" target="#b14">11</ref> that plaque ruptures occur both in the shoulder and in the more central areas of the cap, though preferentially in the shoulder region. In the present study plaque ruptures had also occurred in both the cap and shoulder regions. The distribution between these two locations could not be determined, however, since in seven cases the borders of the cap and the shoulder regions could not be identified unequivocally (see the severely narrowed coronary lumen in Fig 1).</p><p xml:id="_HdQ8rag">The important question arises of whether mast cells enter the lesion before or after the plaque rupture. Circulating blood contains only mast cell precursors, and these precursors take several days to weeks to differentiate into morphologically identifiable mast cells filled with cytoplasmic secretory granules. <ref type="bibr" coords="4,140.88,478.83,27.88,9.00">12 13</ref> Since most of the patients had died within 2 days after the ischemic episode, the mast cells must already have been present at the erosion/rupture sites before the episode. In fact, the number of mast cells was highest (158/mm 2 , Fig 2 <ref type="figure" coords="4,429.43,516.97,5.34,10.80">)</ref> in the patient with the shortest interval between the onset of symptoms and death (3 hours). Macrophages, another blood-borne inflammatory cell type, and T lymphocytes infiltrate not only the sites of coronary arteries at which erosion or rupture has occurred (with ensuing unstable angina <ref type="bibr" coords="4,470.51,565.12,11.12,9.00" target="#b17">14</ref> or myocardial infarction <ref type="bibr" coords="4,85.22,582.38,11.12,9.00" target="#b18">15</ref> ) but also sites of coronary plaques susceptible to erosion or rupture; ie, they invade before an actual intimal event. <ref type="bibr" coords="4,196.68,600.39,5.56,9.00" target="#b7">4</ref> We found that the degree of mast cell degranulation was much higher at the sites of erosion or rupture than in adjacent areas or in the more distant unaffected areas. To degranulate, the mast cells have to be stimulated. In addition to the classic IgE-mediated stimulation of mast cells, <ref type="bibr" coords="4,533.08,652.17,26.41,9.00">16 17</ref> several "histamine-releasing factors" have been described. These factors are secreted by activated T lymphocytes <ref type="bibr" coords="4,167.63,686.68,11.12,9.00" target="#b21">18</ref> and activated macrophages, <ref type="bibr" coords="4,337.09,686.68,11.12,9.00" target="#b22">19</ref> two cell types that were also found at the erosion or rupture sites. Thus, several agents that stimulate mast cells appear to be present in the inflamed atherosclerotic lesions and could be responsible for the observed high proportion of degranulated mast cells.</p><p xml:id="_jTvNTc7">Mast cells, when stimulated, degranulate and release their neutral proteases (tryptase and chymase) into the surrounding microenvironment. Every mast cell at the erosion or rupture site was found to contain tryptase, and a significant fraction of them also contained chymase.</p><p xml:id="_r2FDSAW">https://www.ahajournals.org/doi/epub/10.1161/01.CIR.92.5.1084 5/9</p><p xml:id="_H4U74g6">Moreover, the proportion of mast cells that had released at least some of their tryptase (and chymase) contents was highest at the site of erosion or rupture. Even though tryptase and chymase have limited activity against the various components of the extracellular matrix, they have both been shown to effectively activate the zymogen forms of metalloproteinases (the pro-MMPs), tryptase activating prostromelysin (pro-MMP-3) <ref type="bibr" coords="5,340.64,97.66,5.56,9.00" target="#b9">6</ref> and chymase activating the zymogen form of interstitial collagenase (pro-MMP-1). <ref type="bibr" coords="5,281.16,115.67,5.56,9.00" target="#b8">5</ref> Thus, rapidly increasing evidence suggests that when stimulated to release their neutral proteases, mast cells can activate various MMPs. Immunocytochemical and in situ hybridization studies of human atherosclerotic plaques have revealed active synthesis of MMP-1, MMP-3, and MMP-9 in macrophages and smooth muscle cells of the plaques. <ref type="bibr" coords="5,147.60,183.95,43.39,9.00">20 21 22</ref> Interestingly, with the aid of zymographic techniques, Galis et al <ref type="bibr" coords="5,548.38,183.95,11.12,9.00" target="#b24">21</ref> demonstrated that the plaques contain MMP-9 and MMP-3 in activated form. However, the mechanism of pro-MMP activation in vivo has remained unknown. Tryptase and chymase, the neutral proteases released from stimulated mast cells at the site of erosion or rupture, could be among the agents that activate these pro-MMPs. In summary, the present observation of a dramatic increase in activated mast cells at the erosion or rupture sites of coronary atheromas, which are heavily populated with macrophages and T lymphocytes, provides evidence that mast cells are an integral component of the inflammatory infiltrate of the eroded or ruptured coronary plaques. Moreover, the ability of activated mast cells to initiate matrix degradation suggests that mast cells actively participate in the local weakening of inflamed atherosclerotic lesions that ultimately leads to erosion or rupture of the plaque. These considerations also lead us to suggest a new possibility for the prevention of myocardial infarction, namely, inhibition of mast cell degranulation in the unstable atherosclerotic plaques of coronary arteries.    For methods, see legend to Table <ref type="table" coords="7,184.26,200.14,4.05,8.75" target="#tab_2">1</ref>. Values (%) are means and ranges. Results were analyzed by logistic regression and presented as odds ratios (ORs) with 95% confidence intervals, taking the unaffected site as reference (OR=1). </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="5,36.50,558.82,522.99,9.72;5,36.50,572.32,522.99,9.72;5,36.50,585.08,522.99,9.72;5,36.50,597.83,522.99,9.72;5,36.50,611.34,209.58,9.72;5,229.34,436.44,137.31,103.55"><head>Figure 1 .</head><label>1</label><figDesc xml:id="_e9c35Kz">Figure1. Histological cross section of an eroded coronary artery with thrombotic occlusion. The specimen was from a 78-year-old man who died of myocardial infarction. In this particular case, death occurred 3 hours after the onset of symptoms of an acute coronary event. The mast cells were stained with monoclonal antibody G3 for tryptase (red-brown). A, Original magnification ×20. B, Detail of the erosion site; original magnification ×200. Thr indicates thrombus.</figDesc><graphic coords="5,229.34,436.44,137.31,103.55" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="6,36.50,412.50,522.99,9.72;6,36.50,425.25,522.99,9.72;6,36.50,438.01,522.99,9.72;6,36.50,451.52,522.99,9.72;6,36.50,464.27,111.97,9.72;6,171.57,35.00,252.87,357.92"><head>Figure 2 .</head><label>2</label><figDesc xml:id="_VaD9ftk">Figure 2. Bar graph showing the density of mast cells in coronary specimens from patients who died of acute myocardial infarction. Individual data and means of mast cell densities at the site of erosion or rupture, in an adjacent area, and in an unaffected area are shown. Each point represents one patient (n=20). The probability values for the differences between the eroded or ruptured sites and the adjacent or unaffected areas were both P&lt;.05.</figDesc><graphic coords="6,171.57,35.00,252.87,357.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="6,36.50,607.59,522.98,9.72;6,36.50,621.09,523.00,9.72;6,36.50,633.85,424.85,9.72;6,229.34,485.21,137.31,103.55"><head>Figure 3 .</head><label>3</label><figDesc xml:id="_Vrgwx7d">Figure 3. Light microscopic views of (A) a degranulated and (B) a resting mast cell in the human coronary intima. The degranulated cell was from the eroded site of an atheroma, and the resting cell was from the unaffected intima. The mast cells were stained for tryptase. Original magnification ×1000.</figDesc><graphic coords="6,229.34,485.21,137.31,103.55" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="2,36.50,754.21,202.79,45.32"><head>4 Statistical Analysis</head><label></label><figDesc xml:id="_UQd3zpm"></figDesc><table coords="3,26.45,19.13,542.09,807.75"><row><cell>11/5/23, 16:43</cell><cell cols="2">Infiltrates of Activated Mast Cells at the Site of Coronary Atheromatous Erosion or Rupture in Myocardial Infarc…</cell></row><row><cell cols="2">https://www.ahajournals.org/doi/epub/10.1161/01.CIR.92.5.1084</cell><cell>3/9</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="6,36.50,657.86,522.99,22.48"><head>Table 1 .</head><label>1</label><figDesc xml:id="_AFXxVC2">Densities of Mast Cells, Macrophages, T Lymphocytes, and Smooth Muscle Cells in Coronary Intimas From Patients Who Died of Myocardial Infarction (Table view)</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="7,36.50,31.32,522.99,146.28"><head>Table 2 .</head><label>2</label><figDesc xml:id="_aPYpURX">Percentages of Mast Cells, Macrophages, T Lymphocytes, and Smooth Muscle Cells in Relation to the Total Number of Cells in Coronary Intimas of Patients Who Died of Myocardial Infarction (Table view)</figDesc><table coords="7,41.56,66.62,504.29,110.98"><row><cell>Intimal Area</cell><cell>Mast Cells</cell><cell>Macrophages</cell><cell>T Lymphocytes</cell><cell>Smooth Muscle Cells</cell></row><row><cell>Erosion/rupture (n=20), %</cell><cell>6.1 (0-36)</cell><cell>51 (9-85)</cell><cell>7.1 (0-16)</cell><cell>321 (1-86)</cell></row><row><cell>OR</cell><cell>50 (33-75)</cell><cell>15 (14-16)</cell><cell>7.1 (6.0-8.5)</cell><cell>0.094 (0.089-0.10)</cell></row><row><cell>Adjacent area (n=20), %</cell><cell>1.1 (0-7)</cell><cell>29 (1-67)</cell><cell>5.1 (0.1-22)</cell><cell>62 (6-96)</cell></row><row><cell>OR</cell><cell>3.6 (2.2-6.1)</cell><cell>5.9 (5.4-6.4)</cell><cell>3.9 (3.2-4.7)</cell><cell>0.31 (0.28-0.32)</cell></row><row><cell>Unaffected area (n=20), %</cell><cell>0.1 (0-0.6)</cell><cell>7.1 (2-24)</cell><cell>1.1 (0.1-6)</cell><cell>88 (70-96)</cell></row><row><cell>OR</cell><cell>1</cell><cell>1</cell><cell>1</cell><cell>1</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="7,36.50,233.92,522.99,110.04"><head>Table 3 .</head><label>3</label><figDesc xml:id="_BrFa6Ug">Number of Activated Mast Cells in Relation to the Total Number of Mast Cells (Tableview) Mast cell activation was detected by examining signs of mast cell degranulation (see "Methods"). Total number of mast cells denotes the sum of mast cells with and without signs of activation.</figDesc><table coords="7,36.50,255.71,500.74,73.65"><row><cell>Mast Cells</cell><cell>Erosion/Rupture (n=20)</cell><cell>Adjacent Area (n=20)</cell><cell>Unaffected Area (n=20)</cell></row><row><cell>Activated/total 1</cell><cell>486/566</cell><cell>27/43</cell><cell>4/15</cell></row><row><cell>Percent activated</cell><cell>86</cell><cell>63</cell><cell>27</cell></row><row><cell>1</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_yvmUPY8"><p xml:id="_nqDBPGe">11/5/23, 16:43 Infiltrates of Activated Mast Cells at the Site of Coronary Atheromatous Erosion or Rupture in Myocardial Infarc… https://www.ahajournals.org/doi/epub/10.1161/01.CIR.92.5.1084 7/9</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_fkaur7K">Acknowledgments</head><p xml:id="_Pzvttwz">This study was supported by the Aarne Koskelo Foundation. The authors thank the staff of the Department of Forensic Medicine, University of Helsinki, for their excellent technical assistance.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_a6Tb98e">ARTICLE INFORMATION</head></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="6,253.83,692.41,65.15,9.68;6,341.91,692.41,72.31,9.68;6,438.43,692.41,100.98,9.68;6,41.56,709.67,107.87,9.68;6,183.44,709.67,49.61,9.68;6,253.83,709.67,61.56,9.68;6,341.91,709.67,49.61,9.68;6,438.43,709.67,61.56,9.68" xml:id="b0">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Macrophages</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Lymphocytes</surname></persName>
+		</author>
+		<idno>n=20) 28 (0-158) 217 (31-590) 31 (0-127) 191 (2-1300</idno>
+		<title level="m" xml:id="_sDzXVmE">Smooth Muscle Cells Erosion/rupture</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,41.56,726.17,100.71,9.68;6,183.44,726.17,37.65,9.68;6,253.83,726.17,54.79,9.68;6,341.91,726.17,43.63,9.68;6,438.43,726.17,61.56,9.68" xml:id="b1">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Adjacent</forename><surname>Area</surname></persName>
+		</author>
+		<idno>n=20) 2 (0-20) 112 (4-460) 17 (0-39</idno>
+		<imprint>
+			<biblScope unit="volume">306</biblScope>
+			<biblScope unit="page" from="7" to="1566" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,41.56,743.43,110.67,9.68;6,183.44,743.43,37.65,9.68;6,253.83,743.43,49.61,9.68;6,341.91,743.43,37.65,9.68;6,438.43,743.43,67.54,9.68" xml:id="b2">
+	<monogr>
+		<title level="m" type="main" xml:id="_8yMr9TC">Unaffected area (n=20)</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page" from="92" to="1700" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,36.50,775.66,522.99,8.75;6,36.50,788.65,62.47,8.75" xml:id="b3">
+	<monogr>
+		<title level="m" type="main" xml:id="_9dQw2e4">Values are means and ranges. Three intimal areas were measured from the cross section in which erosion or rupture was found, and the</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,47.01,662.36,512.48,9.72;7,56.92,677.37,387.78,9.72" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_rzcs9hB">The pathogenesis of coronary artery disease and the acute coronary syndromes</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Fuster</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Badimon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Badimon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Chesebro</surname></persName>
+		</author>
+		<idno type="DOI">10.1056/NEJM199201233260406</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tfDmDz5">N Engl J Med</title>
+		<imprint>
+			<biblScope unit="volume">326</biblScope>
+			<biblScope unit="page" from="242" to="250" />
+			<date type="published" when="1992">1992</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,47.01,696.88,370.02,9.72" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_bV4YUyw">Why do plaques rupture?</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Falk</surname></persName>
+		</author>
+		<idno>III-30-III-42</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7h2HrQG">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+	<note>suppl III</note>
+</biblStruct>
+
+<biblStruct coords="7,47.01,716.39,512.50,9.72;7,56.92,731.40,90.03,9.72" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_GRqX5uP">Role of inflammation in coronary plaque disruption</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">M</forename><surname>Buja</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">T</forename><surname>Willerson</surname></persName>
+		</author>
+		<idno type="DOI">10.1161/circ.89.1.8281687</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_hfWzA79">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page" from="503" to="505" />
+			<date type="published" when="1994">1994</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,47.01,750.91,512.48,9.72;7,56.92,765.91,502.59,9.72;7,56.92,780.92,120.06,9.72;8,26.45,822.13,257.76,4.75;8,555.66,822.13,12.89,4.75" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_V28qvGS">Accumulation of activated mast cells in the shoulder region of human coronary atheroma, the predilection site of atheromatous rupture</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kaartinen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Penttilä</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">T</forename><surname>Kovanen</surname></persName>
+		</author>
+		<idno type="DOI">10.1161/circ.90.4.7923651</idno>
+		<ptr target="https://www.ahajournals.org/doi/epub/10.1161/01.CIR.92.5.10848/9" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MTtB38G">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="1669" to="1678" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,47.01,32.82,512.48,9.72;8,56.92,48.58,168.40,9.72;8,225.32,45.47,10.02,8.10;8,235.35,48.58,19.80,9.72;8,255.15,45.47,10.02,8.10;8,269.20,48.58,290.31,9.72;8,56.92,63.59,79.26,9.72" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_VWKmPTm">Activation of human interstitial procollagenase through direct cleavage of the Leu 83 -Thr 84 bond by mast cell chymase</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Saarinen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Kalkkinen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">G</forename><surname>Welgus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">T</forename><surname>Kovanen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TqYyQtT">J Biol Chem</title>
+		<imprint>
+			<biblScope unit="volume">269</biblScope>
+			<biblScope unit="page" from="18134" to="18140" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+	<note>PubMed</note>
+</biblStruct>
+
+<biblStruct coords="8,47.01,83.09,512.48,9.72;8,56.92,98.10,502.58,9.72;8,56.92,113.11,306.17,9.72" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_SqCADXE">Synovial procollagenase activation by human mast cell tryptase: dependence upon matrix metalloproteinase 3 activation</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">L</forename><surname>Gruber</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Marchese</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Suzuki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">B</forename><surname>Schwartz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Okada</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Nagase</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">S</forename><surname>Ramamurthy</surname></persName>
+		</author>
+		<idno type="DOI">10.1172/JCI114344</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TGfMr2A">J Clin Invest</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="1657" to="1662" />
+			<date type="published" when="1989">1989</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,47.01,132.62,512.49,9.72;8,56.92,147.62,225.12,9.72" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_S5WHBjN">Mast cells at site of cartilage erosion in the rheumatoid joint</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Bromley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">D</forename><surname>Fisher</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">E</forename><surname>Woolley</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/ard.43.1.76</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WTBUPJK">Ann Rheum Dis</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="76" to="79" />
+			<date type="published" when="1984">1984</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,47.01,167.13,512.48,9.72;8,56.92,182.14,502.58,9.72;8,56.92,197.90,90.03,9.72" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_QPC9J8W">Mast cells and matrix degradation at sites of tumour invasion in rat mammary adenocarcinoma</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">K</forename><surname>Dabbous</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Haney</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">M</forename><surname>Carter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">L</forename><surname>Nicolson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">E</forename><surname>Woolley</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/bjc.1986.198</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_E3r8QhU">Br J Cancer</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="459" to="465" />
+			<date type="published" when="1986">1986</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,47.01,217.41,409.49,9.72;8,456.50,221.55,5.50,8.10;8,465.97,217.41,38.77,9.72;8,504.74,221.55,12.00,8.10;8,520.71,217.41,38.78,9.72;8,56.92,232.41,502.58,9.72;8,56.92,248.17,361.97,9.72" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_yQk2c7F">Detection of MC T and MC TC types of human mast cells by immunohistochemistry using new monoclonal anti-tryptase and anti-chymase antibodies</title>
+		<author>
+			<persName coords=""><forename type="first">A-M</forename><surname>Irani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">R</forename><surname>Bradford</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">L</forename><surname>Kepley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">M</forename><surname>Schechter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">B</forename><surname>Schwartz</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/37.10.2674273</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2mxUmzU">J Histochem Cytochem</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="1509" to="1515" />
+			<date type="published" when="1989">1989</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,46.51,266.93,512.98,9.72;8,56.92,282.69,502.58,9.72;8,56.92,297.69,502.57,9.72;8,56.92,312.70,114.05,9.72" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_wjmWcZd">Mast cells of two types differing in neutral protease composition in the human aortic intima: demonstration of tryptase-and tryptase/chymase-containing mast cells in normal intimas, fatty streaks, and the shoulder regions of atheromas</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kaartinen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Penttilä</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">T</forename><surname>Kovanen</surname></persName>
+		</author>
+		<idno type="DOI">10.1161/atv91.14.6.7515278</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UjFrM4a">Arterioscler Thromb</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="966" to="972" />
+			<date type="published" when="1994">1994</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,46.79,332.21,512.71,9.72;8,56.92,347.22,422.01,9.72" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_jkz94MX">Influence of plaque configuration and stress distribution on fissuring of coronary atherosclerotic plaque</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">D</forename><surname>Richardson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Davies</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gvr</forename><surname>Born</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S0140-6736(89)90953-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gwyKN5w">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="941" to="944" />
+			<date type="published" when="1989">1989</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,46.51,366.73,512.98,9.72;8,56.92,381.73,502.58,9.72;8,56.92,396.74,226.95,9.72" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_XzcEkYz">Recombinant human stem cell factor stimulates differentiation of mast cells from dispersed human fetal liver cells</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Irani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Nilsson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Miettinen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">S</forename><surname>Craig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">K</forename><surname>Ashman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Ishizaka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">M</forename><surname>Zsebo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">B</forename><surname>Schwartz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VcYXAaX">Blood</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="3009" to="3021" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+	<note>PubMed</note>
+</biblStruct>
+
+<biblStruct coords="8,46.51,416.25,512.98,9.72;8,56.92,431.26,502.58,9.72;8,56.92,446.26,502.58,9.72;8,56.92,462.02,142.92,9.72" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_WMb3vUp">Induction of differentiation of human mast cells from bone marrow and peripheral blood mononuclear cells by recombinant human stem cell factor (SCF)/kit ligand (KL) in long-term culture</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Valent</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Spanblöchl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">R</forename><surname>Sperr</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Sillaber</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">M</forename><surname>Zsebo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Strobl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Geissler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Bettelheim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Lechner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_NWKKepd">Blood</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="2237" to="2245" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+	<note>PubMed</note>
+</biblStruct>
+
+<biblStruct coords="8,46.51,480.78,512.98,9.72;8,56.92,496.54,444.18,9.72" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_8rbG2nb">Macrophage infiltration in acute coronary syndromes: implications for plaque rupture</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Falk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">F</forename><surname>Palacios</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">B</forename><surname>Newell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Fuster</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">T</forename><surname>Fallon</surname></persName>
+		</author>
+		<idno type="DOI">10.1161/circ.90.2.8044947</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_qXTMdND">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="775" to="778" />
+			<date type="published" when="1994">1994</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,46.51,516.05,512.99,9.72;8,56.92,531.05,502.58,9.72;8,56.92,546.06,367.18,9.72" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_Ym2ECMY">Site of intimal rupture or erosion of thrombosed coronary atherosclerotic plaques is characterized by an inflammatory process irrespective of the dominant plaque morphology</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">C</forename><surname>Van Der Wal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">E</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Van Der Loos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">K</forename><surname>Das</surname></persName>
+		</author>
+		<idno type="DOI">10.1161/circ.89.1.8281670</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cPmSDap">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page" from="36" to="44" />
+			<date type="published" when="1994">1994</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,46.51,565.57,512.98,9.72;8,56.92,580.58,130.90,9.72" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_BMMhDDJ">Activation of mast cells for mediator release through IgE receptors</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Ishizaka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ishizaka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ctcMqjz">Prog Allergy</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="188" to="235" />
+			<date type="published" when="1984">1984</date>
+		</imprint>
+	</monogr>
+	<note>PubMed</note>
+</biblStruct>
+
+<biblStruct coords="8,46.51,600.09,456.81,9.72" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_bQCwn4s">The human IgE network</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">J</forename><surname>Sutton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">J</forename><surname>Gould</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/366421a0</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UwxXwJp">Nature</title>
+		<imprint>
+			<biblScope unit="volume">366</biblScope>
+			<biblScope unit="page" from="421" to="428" />
+			<date type="published" when="1993">1993</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,46.51,619.59,512.98,9.72;8,56.92,634.60,439.59,9.72" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_S9eAAAs">Production of a histamine-releasing lymphokine by antigen-or mitogen-stimulated human peripheral T cells</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">D</forename><surname>Sedgwick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">G</forename><surname>Holt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">J</forename><surname>Turner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7MMw8Rd">Clin Exp Immunol</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="409" to="418" />
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+	<note>PubMed</note>
+</biblStruct>
+
+<biblStruct coords="8,46.51,654.11,512.98,9.72;8,56.92,669.12,502.57,9.72;8,56.92,684.12,297.19,9.72" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_UpDUxdj">Human lung macrophage-derived histamine-releasing activity is due to IgEdependent factors</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Proud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">M</forename><surname>Lichtenstein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">W</forename><surname>Macglashan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">P</forename><surname>Schleimer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">F</forename><surname>Adkinson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kagey-Sobotka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">S</forename><surname>Schulman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Plaut</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MycM3ee">J Immunol</title>
+		<imprint>
+			<biblScope unit="volume">136</biblScope>
+			<biblScope unit="page" from="2588" to="2595" />
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+	<note>PubMed</note>
+</biblStruct>
+
+<biblStruct coords="8,46.51,703.63,512.98,9.72;8,56.92,718.64,502.58,9.72;8,56.92,733.65,189.72,9.72" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_sVVx3MM">Localization of stromelysin gene expression in atherosclerotic plaques by in situ hybridization</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Henney</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Wakeley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Davies</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Foster</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Hembry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Murphy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Humphries</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.88.18.8154</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_R9zsj9E">Proc Natl Acad Sci</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="page" from="8154" to="8158" />
+			<date type="published" when="1991">1991</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,46.51,753.16,512.98,9.72;8,56.92,768.16,502.57,9.72;8,56.92,783.92,120.06,9.72;9,26.45,19.13,58.98,4.75;9,115.66,19.13,450.45,4.75;9,26.45,822.13,257.76,4.75;9,555.66,822.13,12.89,4.75" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_HqgWva5">Increased expression of matrix metalloproteinases and matrix degrading activity in vulnerable regions of human atherosclerotic plaques</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">S</forename><surname>Galis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">K</forename><surname>Sukhova</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">W</forename><surname>Lark</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Libby</surname></persName>
+		</author>
+		<idno type="DOI">10.1172/JCI117619</idno>
+		<idno>11/5/23</idno>
+		<ptr target="https://www.ahajournals.org/doi/epub/10.1161/01.CIR.92.5.10849/9" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_KvwCVnN">Infiltrates of Activated Mast Cells at the Site of Coronary Atheromatous Erosion or Rupture in Myocardial Infarc…</title>
+				<imprint>
+			<date type="published" when="1994">1994</date>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page">43</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,46.51,32.82,512.98,9.72;9,56.92,47.83,502.57,9.72;9,56.92,62.84,246.74,9.72" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_p9DT2nZ">Identification of 92-kD gelatinase in human coronary atherosclerotic lesions: association of active enzyme synthesis with unstable angina</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">L</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Hibbs</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kearney</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Loushin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Isner</surname></persName>
+		</author>
+		<idno type="DOI">10.1161/circ.91.8.2125</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_AdKmvyB">Circulation</title>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="page" from="2125" to="2131" />
+			<date type="published" when="1995">1995</date>
+			<publisher>Crossref. PubMed</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

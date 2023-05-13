@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_g75MF9P">Cascaded Cross-Attention Networks for Data-Efficient Whole-Slide Image Classification Using Transformers</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2023-05-11">11 May 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,153.63,189.49,57.53,8.74"><forename type="first">Firas</forename><surname>Khader</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Diagnostic and Interventional Radiology</orgName>
+								<orgName type="institution">University Hospital Aachen</orgName>
+								<address>
+									<settlement>Aachen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,221.72,189.49,94.59,8.74"><forename type="first">Jakob</forename><surname>Nikolas Kather</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Physics of Molecular Imaging Systems</orgName>
+								<orgName type="department" key="dep2">Experimental Molecular Imaging</orgName>
+								<orgName type="department" key="dep3">Medical Faculty Carl Gustav Carus</orgName>
+								<orgName type="department" key="dep4">Institute of Imaging and Computer Vision</orgName>
+								<orgName type="institution" key="instit1">RWTH Aachen Else Kroener Fresenius Center for Digital Health</orgName>
+								<orgName type="institution" key="instit2">RWTH Aachen University</orgName>
+								<address>
+									<settlement>Aachen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,326.87,189.49,52.31,8.74"><forename type="first">Tianyu</forename><surname>Han</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,389.73,189.49,64.76,8.74"><forename type="first">Sven</forename><surname>Nebelung</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Diagnostic and Interventional Radiology</orgName>
+								<orgName type="institution">University Hospital Aachen</orgName>
+								<address>
+									<settlement>Aachen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,177.87,201.45,69.82,8.74"><forename type="first">Christiane</forename><surname>Kuhl</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Diagnostic and Interventional Radiology</orgName>
+								<orgName type="institution">University Hospital Aachen</orgName>
+								<address>
+									<settlement>Aachen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,258.24,201.45,86.57,8.74"><forename type="first">Johannes</forename><surname>Stegmaier</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,374.74,201.45,58.27,8.74"><forename type="first">Daniel</forename><surname>Truhn</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Diagnostic and Interventional Radiology</orgName>
+								<orgName type="institution">University Hospital Aachen</orgName>
+								<address>
+									<settlement>Aachen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_V9wwZad">Cascaded Cross-Attention Networks for Data-Efficient Whole-Slide Image Classification Using Transformers</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-05-11">11 May 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">37115A9A4CB17CC657B2C0E6C55300FD</idno>
+					<idno type="arXiv">arXiv:2305.06963v1[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term xml:id="_KTJkzpX">Computational Pathology</term>
+					<term xml:id="_FauxcHE">Transformers</term>
+					<term xml:id="_FvsfudW">Whole-Slide Images</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_QQEqdDn"><p xml:id="_xH7YfK6">Whole-Slide Imaging allows for the capturing and digitization of high-resolution images of histological specimen. An automated analysis of such images using deep learning models is therefore of high demand. The transformer architecture has been proposed as a possible candidate for effectively leveraging the high-resolution information.</p><p xml:id="_NTmWSkQ">Here, the whole-slide image is partitioned into smaller image patches and feature tokens are extracted from these image patches. However, while the conventional transformer allows for a simultaneous processing of a large set of input tokens, the computational demand scales quadratically with the number of input tokens and thus quadratically with the number of image patches. To address this problem we propose a novel cascaded cross-attention network (CCAN) based on the cross-attention mechanism that scales linearly with the number of extracted patches. Our experiments demonstrate that this architecture is at least on-par with and even outperforms other attention-based state-of-the-art methods on two public datasets: On the use-case of lung cancer (TCGA NSCLC) our model reaches a mean area under the receiver operating characteristic (AUC) of 0.970 ± 0.008 and on renal cancer (TCGA RCC) reaches a mean AUC of 0.985 ± 0.004. Furthermore, we show that our proposed model is efficient in low-data regimes, making it a promising approach for analyzing whole-slide images in resource-limited settings. To foster research in this direction, we make our code publicly available on GitHub: XXX.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" xml:id="_RbkJeBS">Introduction</head><p xml:id="_mkPmmaY">Computational pathology is an emerging interdisciplinary field that synergizes knowledge from pathology and computer science to aid the diagnoses and treatment of diseases <ref type="bibr" coords="1,209.18,656.12,9.96,8.74" target="#b2">[3]</ref>. With the number of digitized pathology images increasing over the years, novel machine learning algorithms are required to analyse the images in a timely manner <ref type="bibr" coords="2,244.16,130.95,14.61,8.74" target="#b14">[15]</ref>. Deep learning-based methods have demonstrated a promising potential in handling image classification tasks in computational pathology <ref type="bibr" coords="2,181.88,154.86,14.60,8.74" target="#b9">[10]</ref>. A prevalent procedure for employing deep learning techniques to the analysis of whole-slide images (WSI) is multiple instance learning (MIL), where a training sample comprises a set of instances and a label for the whole set. The set of instances is commonly chosen to be the set of feature tokens pertaining to one WSI. These feature tokens are constructed by an initial extraction of patches contained in a single WSI and a subsequent utilization of pre-trained feature extractors to capture meaningful feature representations of these patches. This is followed by a feature aggregation, in which the feature representations of each WSI are combined to arrive at a final prediction. Naive approaches for aggregating the features consist of mean or max pooling but only achieve limited performances <ref type="bibr" coords="2,266.69,274.41,14.87,8.74" target="#b21">[22,</ref><ref type="bibr" coords="2,281.56,274.41,7.43,8.74" target="#b8">9]</ref>. This has given rise to more sophisticated feature aggregation techniques specifically tuned to the field of computational pathology <ref type="bibr" coords="2,180.02,298.32,15.50,8.74" target="#b18">[19,</ref><ref type="bibr" coords="2,195.52,298.32,7.75,8.74" target="#b4">5,</ref><ref type="bibr" coords="2,203.27,298.32,11.62,8.74" target="#b13">14,</ref><ref type="bibr" coords="2,214.89,298.32,7.75,8.74" target="#b6">7]</ref>. These are largely based on an attention operation, in which trainable parameters are used to compute the contribution of each instance to the final prediction <ref type="bibr" coords="2,218.17,322.23,11.15,8.74" target="#b6">[7,</ref><ref type="bibr" coords="2,229.32,322.23,11.15,8.74" target="#b18">19]</ref>. Other approaches employ graph neural networks to the task of MSI classification <ref type="bibr" coords="2,249.03,334.19,16.13,8.74" target="#b19">[20,</ref><ref type="bibr" coords="2,265.16,334.19,12.10,8.74" target="#b10">11]</ref> or frameworks that use clustering approaches on the patches of WSI <ref type="bibr" coords="2,235.56,346.14,14.61,8.74" target="#b17">[18]</ref>.</p><p xml:id="_FSxWJrb">More recently, the transformer architecture <ref type="bibr" coords="2,335.58,370.05,15.50,8.74" target="#b20">[21]</ref> has been introduced to the field of computational pathology <ref type="bibr" coords="2,284.03,382.01,14.61,8.74" target="#b16">[17]</ref>. Transformer architectures have demonstrated state-of-the-art performance in the fields of natural language processing and computer vision <ref type="bibr" coords="2,226.76,405.92,9.96,8.74" target="#b3">[4]</ref>. The transformer model can be seen as an input agnostic method, that leverages the self-attention mechanism in order to aggregate its input tokens. However, one notable short-coming is the quadratic scaling of the self-attention mechanism with respect to the sequence length <ref type="bibr" coords="2,426.55,441.78,9.96,8.74" target="#b7">[8]</ref>. This becomes particularly problematic in the context of computational pathology, where whole-slide images are often several gigapixels large <ref type="bibr" coords="2,366.40,465.69,14.61,8.74" target="#b14">[15]</ref>, therefore resulting in thousands of image patches that have to be input into the transformer model. As a result, bigger GPUs are necessary to store the attention matrix in memory and the increasing number of compute operations limits training and inference speeds as well as model complexity. To overcome this problem, we present a novel neural network architecture that is based on the cross-attention mechanism <ref type="bibr" coords="2,158.85,537.42,11.62,8.74" target="#b7">[8,</ref><ref type="bibr" coords="2,170.47,537.42,11.62,8.74" target="#b20">21]</ref> and show that it is capable of efficiently aggregating feature tokens of whole-slide images while demonstrating state-of-the-art performance on two publicly available datasets. Furthermore, we show how attention maps can be extracted for our network and therefore allow for an increased interpretability. Finally, we demonstrate that our model is superior to the previous state of the art in situations where only a small number of training samples is available. Fig. <ref type="figure" coords="3,154.40,308.57,4.13,7.89">1</ref>. Model architecture and pre-processing steps. In a first step, we extract a set of N patches from each WSI and subsequently derive feature tokens based on a pretrained ResNet-50 model <ref type="bibr" coords="3,208.63,330.51,14.34,7.86" target="#b22">[23]</ref> The resulting feature tokens are used as input to our model, where the cross attention mechanism is used to distil the information at each stage into a compressed representation that allows for efficient attention computation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2" xml:id="_EQFKDtj">Materials &amp; Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1" xml:id="_JEe9jwu">Dataset</head><p xml:id="_sdjRZyA">We demonstrate the performance of our model on two publicly available datasets: (1) First, the TCGA-NSCLC (non-small-cell lung cancer) dataset, which is constructed by merging the lung cancer datasets TCGA-LUSC and TCGA-LUAD. This results in a total of n=1,042 whole-slide images, of which 530 are labeled as LUAD (Lung adenocarcinoma) and 512 are labeled as LUSC (Lung squamous cell carcinoma). We proceed by splitting the dataset into training (60%, n=627), validation (15%, n=145) and testing sets (25%, n=270) using a 4-fold cross validation scheme, while ensuring that images of the same patient only occur in the same set. (2) Additionally, we evaluate our model on the TCGA-RCC (renal cell carcinoma) dataset, which is composed of three other datasets: TCGA-KIRC, TCGA-KIRP and TCGA-KICH. This results in a dataset comprising n=937 whole-slide images, out of which 519 are labeled as KIRC (Kidney renal clear cell carcinoma), 297 labeled as KIRP (Kidney renal papillary cell carcinoma) and 121 labeled as KICH (Kidney Chromophobe). Similarly, we split the data into training (60%, n=561), validation (15%, n=141), and test sets (25%, n=235) following a 4-fold cross validation scheme.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2" xml:id="_EqwkaGH">Preprocessing</head><p xml:id="_7UvrUvC">Prior to inputting the WSIs into the neural network, various pre-processings steps are executed on each image: First, the whole-slide image is tesselated by extracting non-overlapping square patches with a 256 µm edge length. These are then further resized to 256 × 256 pixels. Patches that possess a predominantly white color are removed by filtering out patches with a mean grayscale pixel value greater than 224. Furthermore, blurry images are excluded by assessing the fraction of pixels that belong to an edge within the patch using a Canny Edge Detector <ref type="bibr" coords="4,200.17,178.77,10.52,8.74" target="#b1">[2]</ref> and rejecting patches in which this fraction is below 2%. This results in a mean number of 3,091 patches per WSI (min: 38; max: 11,039) for TCGA-NSCLC, and a mean number of 3,400 patches per WSI (min: 90; max: 10,037) for TCGA-RCC. In a second step, feature tokens are obtained from each patch using the RetCCL <ref type="bibr" coords="4,246.44,226.59,15.50,8.74" target="#b22">[23]</ref> feature extractor, which is based on a ResNet-50 architecture <ref type="bibr" coords="4,189.90,238.55,9.96,8.74" target="#b5">[6]</ref>. The output feature tokens have a dimension of 2,048.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3" xml:id="_DyhH5hP">Architecture</head><p xml:id="_8HYnumk">One of the key limitations of the conventional transformer model when applied to pathology images is the quadratic scaling of the number of compute operations and the GPU memory footprint with respect to the number of input tokens <ref type="bibr" coords="4,134.77,322.85,14.61,8.74" target="#b20">[21]</ref>. In order to overcome this problem of quadratic scaling, we base our CCAN architecture (see Figure <ref type="figure" coords="4,239.66,334.81,4.43,8.74">1</ref>) on the cross-attention mechanism proposed by Jaegle et al. <ref type="bibr" coords="4,159.89,346.76,9.96,8.74" target="#b7">[8]</ref>. The idea is to distil the information contained in the feature tokens of each MSI into a smaller set of latent tokens. More precisely, let N ∈ R D f , denote the number of feature tokens of dimension D f extracted from each patch of the WSI and let M ∈ R D l denote a pre-defined set of learnable latent tokens with dimensionality D l . To provide the neural network with information about the position of each patch in the WSI, we first concatenate to each feacture token a positional encoding based on Fourier features <ref type="bibr" coords="4,335.79,418.49,9.96,8.74" target="#b7">[8]</ref>:</p><formula xml:id="formula_0" coords="4,250.26,437.04,230.33,12.17">p = [sin(f i π D), cos(f i π D)]<label>(1)</label></formula><p xml:id="_jXs4PTW">Here f i denotes the i th frequency term contained in a set of I equidistant frequencies between 1 and f max and D denotes the location of the feature token, normalized between -1 and 1, thereby mapping the top left feature token in the WSI to -1 and the bottom right token to 1. We motivate the use of Fourier features for positional encoding over the use of learnable encodings because they enable scaling to arbitrary sequence lengths. This property is particularly useful when dealing with WSI, which often present in varying sizes. We proceed by computing a key K f ∈ R N ×D l and value V f ∈ R N ×D l vector for each of the N input tokens, and a query Q l ∈ R M ×D l vector for each of the M latent tokens, such that each latent token can attend to all of the feature tokens of the input image:</p><formula xml:id="formula_1" coords="4,199.51,599.93,281.08,26.51">f Cross-Attention (Q l , K f , V f ) = sof tmax Q l K T f √ M V f<label>(2)</label></formula><p xml:id="_VDprtUv">Provided that M N , the network learns a compressed representation of the information contained in the large set of input tokens. In addition the number of computation steps reduces to O(M N ), compared to O(N 2 ) as is the case when self-attention is applied directly to the input tokens. Thus, by choosing M to be much smaller than N , the computational requirements for processing a whole-slide image can be significantly reduced. The information in the M latent tokens is then further processed through self-attention layers that scale with O(M 2 ). The cross-attention and self-attention blocks are then repeated Z times.</p><p xml:id="_Zx78h8x">When training neural networks, it is often beneficial to gradually change the input dimension opposed to abruptly reducing it (in convolutional neural networks the kernel size and stride are chosen in a way that gradually reduces the feature map dimensions at each stage). Based on this intuition, we propose to use a multi-stage approach in which the set of M tokens is further distilled by adding additional stages with a reduced set of M C latent tokens. C denotes an arbitrary compression factor and is chosen to be 2 in our model. Similar to the previous stage, cross-attention is used to distil the information, followed by self-attention blocks to process the compressed representation. Subsequently, we add the output of stage 1 to the output of stage 2, thereby serving as a skipconnection which allows for improved gradient flow when the number of stages J is chosen to be large <ref type="bibr" coords="5,227.28,322.23,9.96,8.74" target="#b5">[6]</ref>. To overcome the dimensionality mismatch that occurs when adding the M tokens of stage 1 to the M C tokens of stage 2, we aggregate the output tokens of stage 1 by means of an average pooling that is performed on each set of C consecutive tokens. This multi-stage approach is repeated for J stages, whereby in each stage the number of tokens of the previous stage is compressed by the factor C.</p><p xml:id="_5WGvrxz">One limitation of the multi-stage approach and the repeated cross-and self attention blocks is that the computation of attention maps (using e.g. the attention rollout mechanism) becomes unintuitive. To overcome this limitation, we add a class token to each of the stages j ∈ J (resuling in M C j latent tokens and 1 class token), and feed it into a shared multi-layer perceptron, resulting in a prediction p j and loss term L j for each of the J stages. Additionally, in each stage we add a final cross-attention layer that takes as input the original set of N feature tokens, followed by a self-attention block. This allows us to visualize what regions in the WSI the class token is attending to at each stage. The final prediction is computed by averaging all the individual contributions p j of each stage. Similarly, we backpropagate and compute the total loss L total by summing over all individual loss terms:</p><formula xml:id="formula_2" coords="5,272.67,552.86,207.92,12.69">L total = Σ J j=1 L j<label>(3)</label></formula><p xml:id="_EmRSpw6">In our experiments, we chose the binary cross entropy loss as our loss function. Furthermore, to prevent the neural networks from overfitting, we randomly dropout a fraction p do of the input feature tokens. All models are trained on an NVIDIA RTX A6000 GPU for a total of 100 epochs and were implemented using PyTorch 1.13.1. We chose the best model of each run in terms of the highest area under the receiver operating characteristic (AUC) reached on the validation set. Further details regarding the hyperparameters used can be found in Supplementary Table <ref type="table" coords="5,230.82,656.12,8.86,8.74">S2</ref>.</p><p xml:id="_rkvbvsG">3 Results</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" xml:id="_D8Cx64e">Baseline</head><p xml:id="_cgTqEA6">To assess the performance of our model, we compare its performance to Trans-MIL <ref type="bibr" coords="6,156.54,174.50,14.61,8.74" target="#b16">[17]</ref>, a popular transformed-based method proposed for aggregating feature tokens in a MIL setting. TransMIL has demonstrated state-of-the-art performance on a number of datasets, outperforming other popular MIL techniques by a notable margin (see Supplementary Table <ref type="table" coords="6,350.02,210.36,10.52,8.74">S1</ref> for a comparison to other methods). In essence, feature tokens are extracted from a set of patches pertaining to each WSI, and then fed through two transformer encoder layers. To handle the quadratic scaling of the self-attention mechanism with respect to the number of input tokens, they make use of Nystrm attention <ref type="bibr" coords="6,377.63,258.18,15.50,8.74" target="#b23">[24]</ref> in each transformer layer. The low-rank matrix approximation thereby allows for a linear scaling of the attention mechanism. In addition, the authors of the architecture propose the use of a convolutional neural network-based pyramid position encoding generator to encode the positional information of each feature token.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" xml:id="_ahG4GNJ">WSI classification</head><p xml:id="_ZDc65Fa">We compare the performance of the models on two publicly available datasets, comprising cancer subtype classification tasks, TCGA NSCLC and TCGA RCC (https://portal.gdc.cancer.gov/projects/). For the binary classification task (i.e., LUSC vs. LUAD in TCGA NSCLC), we use the AUC, to assess the model performance. For the multiclass classification problem (i.e., KICH vs. KIRC vs. KIRP in TCGA RCC), we assess the performance by computing the (macroaveraged) one vs. rest AUC. To guarantee a fair comparison, we train all models on the exact same data splits of the 4-fold cross validation. For TCGA NSCLC, we find that our model outperforms the TransMIL baseline (AUC: 0.970 ± 0.008 [standard deviation -SD] vs. 0.957 ± 0.013 [SD]) thereby demonstrating a strong performance. Similarly, we find that on the TCGA RCC dataset our model is on par with the state-of-the-art results set by TransMIL (both reach an AUC of 0.985 [SD CCAN: 0.004, SD TransMIL: 0.002], see Figure <ref type="figure" coords="6,389.50,498.99,4.98,8.74" target="#fig_0">2</ref> for a more detailed comparison).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3" xml:id="_64WhuZk">Data Efficiency</head><p xml:id="_dFrkgj2">A key obstacle in the field of medical artificial intelligence is the restricted access to large datasets. Therefore, neural network architectures need to be developed that can attain a high performance, even under conditions of limited available data. To simulate the performance in limited data settings, we train our model multiple times and restrict the amount of data seen during training to 2%, 5%, 10%, 25%, 50%, 75% and 100%. For comparison, we similarly train the baseline method on the same training data. For the TCGA NSCLC dataset, we find that with only 2% of data, our model (AUC: 0.756 ± 0.095 [SD]) outperforms the previous state-of-the-art method by 12% (AUC: 0.639 ± 0.149 [SD]). Similar results were found for other dataset sizes (see Figure <ref type="figure" coords="7,376.40,435.31,3.87,8.74" target="#fig_0">2</ref>). Accordingly, for the TCGA RCC dataset, our model (AUC: 0.808 ± 0.096 [SD]) outperforms the baseline (AUC: 0.792 ± 0.109 [SD]) at only 2% of training data by 1.6%. Again, this trend of a superior performance can be seen for all other percentages of the training data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4" xml:id="_Ux3nvFZ">Explainability</head><p xml:id="_auJpBQ8">In order to gain a deeper understanding of the inner workings of the neural network, attention maps were extracted. Since the class tokens are used as input in the final MLP and the output thereof is used to arrive at the final prediction, we propose to compute the attention map of the class token with respect to the input patches. More precisely, in each stage we perform attention-rollout <ref type="bibr" coords="7,470.08,584.39,10.52,8.74" target="#b0">[1]</ref> using the last self-attention layers and the last cross-attention layer. We then use computed attention values to visualize the attention map of each class token, thereby providing insights into the decision making process of the model at each stage (see Supplementary Figure <ref type="figure" coords="7,284.24,632.21,8.58,8.74">S1</ref>). To arrive at a single attention map for the whole model, we take the mean attention over all stages. We find that these attention maps largely coincide with regions containing the tumor (see Figure <ref type="figure" coords="8,134.77,118.99,3.87,8.74" target="#fig_1">3</ref>). Additionally, we display regions of the model with low and high attention values. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4" xml:id="_KN6UZz5">Conclusion</head><p xml:id="_nH2X5y6">In this work we developed and presented a novel neural network architecture, based on the cross-attention mechanism, that is capable of aggregating a large set of input feature vectors previously extracted from whole-slide images. We demonstrate that this method outperforms the previous state-of-the-art methods on two publicly available datasets. In particular we show that our model architecture is more data efficient when training data is limited. Furthermore, we provide insights into the models decision-making process by showing how attention maps of each stage in the model can be aggregated. This allows for an interpretable visualization of which regions of the image the neural networks looks at to arrive at a final prediction. The model design lends itself to be extended to support multimodal inputs such as WSI in combination with genomics, which we will explore in future work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5" xml:id="_5g95GDM">Acknowledgement</head><p xml:id="_Y9X4d4U">The results published here are in whole or part based upon data generated by the TCGA Research Network: https://www.cancer.gov/tcga.</p><p xml:id="_qaWHH7x">6 Supplemental Material Fig. <ref type="figure" coords="11,154.40,473.63,9.43,7.89">S1</ref>. Individual attention maps for each stage. The multi-stage approach of CCAN allows to display the attention of the class token with respect to the input image at each stage. We find that at each stage, the neural network focuses on different parts of the image.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="7,134.77,324.14,345.83,7.89;7,134.77,335.13,345.83,7.86;7,134.77,346.09,345.83,7.86;7,134.77,357.04,345.82,7.86;7,134.77,368.00,345.83,7.86;7,134.77,378.96,345.82,7.86;7,134.77,389.92,345.83,7.86;7,134.77,400.88,117.27,7.86;7,143.41,115.84,328.50,193.53"><head>Fig. 2 .</head><label>2</label><figDesc xml:id="_8HaAFBt">Fig. 2. Results of the CCAN and TransMIL models when trained on the TCGA NSCLC (A) and TCGA RCC (B) datasets. Boxplots show the results of the 4-fold cross validation for each fraction of the used training dataset. (C) and (D) thereby visualize the difference in the mean AUC between the two models, showing that CCAN is more data efficient when a small portion of training data is used. Finally, UMAP [16] projections of the class token of CCAN are visualized at each stage for TCGA NSCLC (E) and TCGA RCC (F), demonstrating separable clusters for all stages that contribute to the final prediction of the model.</figDesc><graphic coords="7,143.41,115.84,328.50,193.53" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="8,134.77,360.00,345.83,7.89;8,134.77,370.99,345.83,7.86;8,134.77,381.94,345.83,7.86;8,134.77,392.90,247.86,7.86;8,181.45,158.65,252.44,186.58"><head>Fig. 3 .</head><label>3</label><figDesc xml:id="_VAzN38v">Fig. 3. Attention visualization for four different WSI contained in the TCGA NSCLC dataset. (A) shows the original WSI and (B) displays the aggregated attention map over all stages. Additionally, the top-5 patches with the lowest attention value (C) and top-5 patches with highest attention value (D) are visualized.</figDesc><graphic coords="8,181.45,158.65,252.44,186.58" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="3,160.70,115.84,293.93,177.96"><head></head><label></label><figDesc xml:id="_K42pE7T"></figDesc><graphic coords="3,160.70,115.84,293.93,177.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="11,134.77,162.76,345.83,296.11"><head></head><label></label><figDesc xml:id="_mraXTNk"></figDesc><graphic coords="11,134.77,162.76,345.83,296.11" type="bitmap" /></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_GRNwwQS"><p xml:id="_aWMDYEs">Table <ref type="table" coords="12,165.08,141.10,9.43,7.89">S1</ref>. Comparison of TransMIL to other methods in terms of area under the receiver operating characteristic (taken from <ref type="bibr" coords="12,318.87,152.09,13.65,7.86" target="#b16">[17]</ref>). For completeness, we also provide the results of TransMIL as well as CCAN on our data splits. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="9,142.96,142.34,337.64,7.86;9,151.52,153.29,236.61,8.11" xml:id="b0">
+	<monogr>
+		<title level="m" type="main" xml:id="_U5zRbpM">Quantifying Attention Flow in Transformers</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Abnar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Zuidema</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2005.00928</idno>
+		<ptr target="http://arxiv.org/abs/2005.00928" />
+		<imprint>
+			<date type="published" when="2020-05">May 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,142.96,164.20,337.63,7.86;9,151.52,175.14,329.07,7.89;9,151.52,186.12,323.08,7.86" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_sZsNwwC">A Computational Approach to Edge Detection</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Canny</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_BJrSuzZ">conference Name: IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+				<imprint>
+			<date type="published" when="1986-11">Nov 1986</date>
+			<biblScope unit="page" from="679" to="698" />
+		</imprint>
+	</monogr>
+	<note>IEEE Transactions on Pattern Analysis and Machine Intelligence PAMI-8(6)</note>
+</biblStruct>
+
+<biblStruct coords="9,142.96,197.03,337.64,7.86;9,151.52,207.96,329.07,8.14;9,151.52,218.95,324.16,8.12" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_wH27SyW">Artificial intelligence and computational pathology</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<ptr target="https://www.nature.com/articles/s41374-020-00514-0" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_fB9Nh7Z">Laboratory Investigation</title>
+				<imprint>
+			<publisher>Nature Publishing Group</publisher>
+			<date type="published" when="2021-04">Apr 2021</date>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="page" from="412" to="422" />
+		</imprint>
+	</monogr>
+	<note>number: 4 Publisher</note>
+</biblStruct>
+
+<biblStruct coords="9,142.96,229.86,337.64,7.86;9,151.52,240.81,329.07,7.86;9,151.52,251.77,329.07,7.86;9,151.52,262.73,329.07,8.12;9,151.52,273.69,44.03,7.86" xml:id="b3">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Beyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kolesnikov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Weissenborn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zhai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Minderer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Heigold</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Gelly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Houlsby</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2010.11929</idno>
+		<idno>arXiv: 2010.11929</idno>
+		<ptr target="http://arxiv.org/abs/2010.11929" />
+		<title level="m" xml:id="_6JaRfwf">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</title>
+				<imprint>
+			<date type="published" when="2020-10">Oct 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,142.96,284.60,337.63,7.86;9,151.52,295.56,329.07,7.86;9,151.52,306.52,329.07,7.86;9,151.52,317.48,329.07,7.86;9,151.52,328.43,329.07,7.86;9,151.52,339.39,239.48,8.12" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_ufzMmWE">Multi-scale Domain-adversarial Multiple-instance CNN for Cancer Subtype Classification with Unannotated Histopathological Images</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Hashimoto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Fukushima</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Koga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Takagi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ko</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Kohno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Nakaguro</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Nakamura</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Hontani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Takeuchi</surname></persName>
+		</author>
+		<ptr target="https://ieeexplore.ieee.org/document/9157776/" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_CMQ5eTJ">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+				<meeting><address><addrLine>Seattle, WA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06">2020. Jun 2020</date>
+			<biblScope unit="page" from="3851" to="3860" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,142.96,350.30,337.63,7.86;9,151.52,361.26,329.08,7.86;9,151.52,372.22,329.07,7.86" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_8YRNhyH">Deep Residual Learning for Image Recognition</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/CVPR.2016.90</idno>
+		<ptr target="https://doi.org/10.1109/CVPR.2016.90" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_qqswNXS">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+				<imprint>
+			<date type="published" when="2016-06">Jun 2016</date>
+			<biblScope unit="page" from="770" to="778" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,142.96,383.13,337.64,7.86;9,151.52,394.09,329.07,7.86;9,151.52,405.05,329.07,8.11;9,151.52,416.00,89.73,8.11" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_s7NEtqW">Attention-based Deep Multiple Instance Learning</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Ilse</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Tomczak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Welling</surname></persName>
+		</author>
+		<ptr target="https://proceedings.mlr.press/v80/ilse18a.html" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_AKJ9HCf">Proceedings of the 35th International Conference on Machine Learning</title>
+				<meeting>the 35th International Conference on Machine Learning</meeting>
+		<imprint>
+			<date type="published" when="2018-07">Jul 2018</date>
+			<biblScope unit="page" from="2127" to="2136" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,142.96,426.91,337.64,7.86;9,151.52,437.87,329.07,7.86;9,151.52,448.83,329.07,8.12;9,151.52,459.79,106.16,7.86" xml:id="b7">
+	<monogr>
+		<title level="m" type="main" xml:id="_nq7ueFU">Perceiver: General Perception with Iterative Attention</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Jaegle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Gimeno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Brock</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zisserman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Carreira</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2103.03206</idno>
+		<idno type="arXiv">arXiv:2103.03206</idno>
+		<ptr target="http://arxiv.org/abs/2103.03206" />
+		<imprint>
+			<date type="published" when="2021-06">Jun 2021</date>
+		</imprint>
+	</monogr>
+	<note>cs, eess</note>
+</biblStruct>
+
+<biblStruct coords="9,142.96,470.70,337.63,7.86;9,151.52,481.66,329.07,7.86;9,151.52,492.59,329.07,7.89;9,151.52,503.58,329.07,8.12;9,151.52,514.53,146.14,7.86" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_ape5cvS">Weakly-supervised learning for lung carcinoma classification using deep learning</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Kanavati</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Toyokawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Momosaki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Rambeau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Kozuma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Shoji</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Yamazaki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Takeo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Iizuka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Tsuneki</surname></persName>
+		</author>
+		<ptr target="https://www.nature.com/articles/s41598-020-66333-x" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eZ5adCq">Scientific Reports</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">9297</biblScope>
+			<date type="published" when="2020-06">Jun 2020</date>
+			<publisher>Nature Publishing Group</publisher>
+		</imprint>
+	</monogr>
+	<note>number: 1 Publisher</note>
+</biblStruct>
+
+<biblStruct coords="9,142.61,525.44,337.98,7.86;9,151.52,536.40,329.07,7.86;9,151.52,547.36,329.07,7.86;9,151.52,558.32,329.07,7.86;9,151.52,569.25,329.07,8.14;9,151.52,580.24,319.45,8.12" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_FRasaW2">Deep learning can predict microsatellite instability directly from histology in gastrointestinal cancer</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">N</forename><surname>Kather</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">T</forename><surname>Pearson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Halama</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Jger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Krause</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">H</forename><surname>Loosen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Marx</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Boor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Tacke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><forename type="middle">P</forename><surname>Neumann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">I</forename><surname>Grabsch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Yoshikawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Brenner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Chang-Claude</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hoffmeister</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Trautwein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Luedde</surname></persName>
+		</author>
+		<ptr target="https://www.nature.com/articles/s41591-019-0462-y" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_46B5zNZ">Nature Medicine</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1054" to="1056" />
+			<date type="published" when="2019-07">Jul 2019</date>
+			<publisher>Nature Publishing Group</publisher>
+		</imprint>
+	</monogr>
+	<note>number: 7 Publisher</note>
+</biblStruct>
+
+<biblStruct coords="9,142.61,591.15,337.98,7.86;9,151.52,602.10,329.07,7.86;9,151.52,613.06,318.67,7.86" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_jkkQjEg">Graph Convolutional Neural Networks to Classify Whole Slide Images</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Konda</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">D</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Cje3caP">ICASSP 2020 -2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</title>
+				<imprint>
+			<date type="published" when="2020-05">May 2020</date>
+			<biblScope unit="page" from="1334" to="1338" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,142.61,623.97,337.98,7.86;9,151.52,634.93,315.20,8.12" xml:id="b11">
+	<monogr>
+		<title level="m" type="main" xml:id="_6UszTfM">SGDR: Stochastic Gradient Descent with Warm Restarts</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Loshchilov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Hutter</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1608.03983</idno>
+		<ptr target="http://arxiv.org/abs/1608.03983" />
+		<imprint>
+			<date type="published" when="2017-05">May 2017</date>
+		</imprint>
+	</monogr>
+	<note>cs, math</note>
+</biblStruct>
+
+<biblStruct coords="9,142.61,645.84,337.98,7.86;9,151.52,656.80,223.76,8.12" xml:id="b12">
+	<monogr>
+		<title level="m" type="main" xml:id="_bkrRabf">Decoupled Weight Decay Regularization</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Loshchilov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Hutter</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1711.05101</idno>
+		<ptr target="http://arxiv.org/abs/1711.05101" />
+		<imprint>
+			<date type="published" when="2019-01">Jan 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,142.62,119.67,337.98,7.86;10,151.52,130.63,329.07,7.86;10,151.52,141.57,329.07,8.14;10,151.52,152.55,329.07,8.11;10,151.52,163.51,54.91,7.86" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_w5rAfje">Data-efficient and weakly supervised computational pathology on whole-slide images</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Barbieri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Mahmood</surname></persName>
+		</author>
+		<ptr target="https://www.nature.com/articles/s41551-020-00682-w" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_HWYCRPm">Nature Biomedical Engineering</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="555" to="570" />
+			<date type="published" when="2021-06">Jun 2021</date>
+		</imprint>
+	</monogr>
+	<note>number: 6 Publisher: Nature Publishing Group</note>
+</biblStruct>
+
+<biblStruct coords="10,142.62,174.47,337.97,7.86;10,151.52,185.43,329.07,7.86;10,151.52,196.39,329.07,7.86;10,151.52,207.34,329.07,7.86;10,151.52,218.30,329.07,7.86;10,151.52,229.24,329.07,8.14;10,151.52,240.22,281.79,8.11" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_vMGCPws">Unleashing the potential of digital pathology data by training computer-aided diagnosis models without human annotations</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Marini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Marchesin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Otlora</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wodzinski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Caputo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Van Rijthoven</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Aswolinskiy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Bokhorst</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Podareanu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Petters</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Boytcheva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Buttafuoco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Vatrano</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Fraggetta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Van Der Laak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Agosti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Ciompi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Silvello</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Muller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Atzori</surname></persName>
+		</author>
+		<ptr target="https://www.nature.com/articles/s41746-022-00635-4,number:1Publisher" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bdz5je8">Digital Medicine</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2022-07">Jul 2022</date>
+			<publisher>Nature Publishing Group</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,142.62,251.18,337.98,7.86;10,151.52,262.11,329.07,7.89;10,151.52,273.74,230.66,7.47" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_vGFGWmZ">UMAP: Uniform Manifold Approximation and Projection</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Mcinnes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Healy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Saul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Groberger</surname></persName>
+		</author>
+		<idno type="DOI">10.21105/joss.00861</idno>
+		<ptr target="https://joss.theoj.org/papers/10.21105/joss.00861" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_C9PbQTT">Journal of Open Source Software</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">29</biblScope>
+			<biblScope unit="page">861</biblScope>
+			<date type="published" when="2018-09">Sep 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,142.62,284.06,337.98,7.86;10,151.52,295.02,329.07,7.86;10,151.52,305.98,329.07,7.86;10,151.52,316.93,329.07,8.11;10,151.52,328.54,306.47,7.47" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_ZSpXjQG">TransMIL: Transformer based Correlated Multiple Instance Learning for Whole Slide Image Classification</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Bian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Zhang</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper/2021/hash/10c272d06794d3e5785d5e7c5356e9ff-Abstract.html" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_R43dP8z">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="2136" to="2147" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,142.62,338.85,337.97,7.86;10,151.52,349.81,329.07,7.86;10,151.52,360.77,329.07,7.86;10,151.52,371.73,329.07,8.12;10,151.52,382.69,273.32,8.12" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_pKkUtsW">Cluster-to-Conquer: A Framework for End-to-End Multi-Instance Learning for Whole Slide Image Classification</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Shrivastava</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Ehsan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">A</forename><surname>Moskaluk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Syed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Brown</surname></persName>
+		</author>
+		<ptr target="https://proceedings.mlr.press/v143/sharma21a.html" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_3JxWdgA">Proceedings of the Fourth Conference on Medical Imaging with Deep Learning</title>
+				<meeting>the Fourth Conference on Medical Imaging with Deep Learning</meeting>
+		<imprint>
+			<date type="published" when="2021-08">Aug 2021</date>
+			<biblScope unit="page" from="682" to="698" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,142.62,393.65,337.97,7.86;10,151.52,404.61,329.07,7.86;10,151.52,415.54,329.07,7.89;10,151.52,426.52,84.22,7.86" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_zGgdpYd">Attention-Based Deep Neural Networks for Detection of Cancerous and Precancerous Esophagus Tissue on Histopathological Slides</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Tomita</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Abdollahi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Suriawinata</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Hassanpour</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xvRVSVc">JAMA Network Open</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">e1914645</biblScope>
+			<date type="published" when="2019-11">Nov 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,142.62,437.48,337.98,7.86;10,151.52,448.44,329.07,8.12;10,151.52,459.40,17.97,7.86" xml:id="b19">
+	<monogr>
+		<title level="m" type="main" xml:id="_zd5SVTK">Multiple instance learning with graph neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Zhou</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1906.04881</idno>
+		<ptr target="http://arxiv.org/abs/1906.04881" />
+		<imprint>
+			<date type="published" when="2019-06">Jun 2019</date>
+		</imprint>
+	</monogr>
+	<note>cs, stat</note>
+</biblStruct>
+
+<biblStruct coords="10,142.62,470.36,337.98,7.86;10,151.52,481.32,329.07,7.86;10,151.52,492.28,329.07,7.86;10,151.52,503.24,329.07,8.11;10,151.52,514.84,217.03,7.47" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_brEWmhY">Attention is All you Need</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">N</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">,</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Polosukhin</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_W9hPQqW">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">30</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,142.62,525.15,337.97,7.86;10,151.52,536.09,329.07,8.14;10,151.52,547.07,158.81,8.12" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_ubfccgA">Revisiting Multiple Instance Neural Networks</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1610.02501</idno>
+		<ptr target="http://arxiv.org/abs/1610.02501" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TNKjxhA">Pattern Recognition</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page" from="15" to="24" />
+			<date type="published" when="2018-02">Feb 2018</date>
+		</imprint>
+	</monogr>
+	<note>cs, stat</note>
+</biblStruct>
+
+<biblStruct coords="10,142.62,558.03,337.98,7.86;10,151.52,568.99,329.07,7.86;10,151.52,579.92,329.07,8.14;10,151.52,591.55,258.90,7.47" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_jHewyfw">RetCCL: Clustering-guided contrastive learning for whole-slide image retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Han</surname></persName>
+		</author>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S1361841522002730" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_3rcDsVy">Medical Image Analysis</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page">102645</biblScope>
+			<date type="published" when="2023-01">Jan 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,142.62,601.87,337.98,7.86;10,151.52,612.82,329.07,7.86;10,151.52,623.78,236.61,8.12" xml:id="b23">
+	<monogr>
+		<title level="m" type="main" xml:id="_NNkrJqk">Nystrmformer: A Nystrm-Based Algorithm for Approximating Self-Attention</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Chakraborty</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Fung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Singh</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2102.03902</idno>
+		<ptr target="http://arxiv.org/abs/2102.03902" />
+		<imprint>
+			<date type="published" when="2021-03">Mar 2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

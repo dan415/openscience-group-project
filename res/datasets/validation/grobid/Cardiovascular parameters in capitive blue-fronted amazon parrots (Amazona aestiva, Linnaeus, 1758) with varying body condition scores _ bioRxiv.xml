@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_uEAcx6Q">Cardiovascular parameters in capitive blue-fronted amazon parrots (Amazona aestiva, Linnaeus, 1758) with varying body condition scores</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,42.88,192.10,78.83,9.45"><forename type="first">Gisele</forename><surname>Junqueira</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,144.49,192.10,32.70,9.45;1,194.30,192.10,39.13,9.45"><forename type="first">Amanda</forename><surname>Santos</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,236.34,192.10,52.54,9.45"><forename type="first">Cruz</forename><surname>Sarita</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,291.22,192.10,69.66,9.45"><forename type="first">Jeana</forename><surname>Aleixo</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,363.80,192.10,50.21,9.45"><forename type="first">Da</forename><surname>Pereira</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,416.93,192.10,87.74,9.45"><forename type="first">Alícia</forename><forename type="middle">Giolo</forename><surname>Silva</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,507.59,192.10,40.88,9.45"><surname>Hippólito</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,53.10,204.11,76.50,9.45"><forename type="first">Sardela</forename><surname>Bárbara</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,132.52,204.11,61.46,9.45"><forename type="first">Elton</forename><surname>Ferro</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,196.90,204.11,40.86,9.45"><forename type="first">Ritir</forename><surname>Luis</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,240.68,204.11,123.74,9.45"><roleName>Priscylla</roleName><forename type="first">Tatiana</forename><surname>Oliveira</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,367.34,204.11,90.50,9.45"><forename type="first">Guimarães</forename><surname>Chalfun</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,460.76,204.11,81.31,9.45;1,42.88,216.86,25.11,9.45"><forename type="first">Maria</forename><forename type="middle">Lucia</forename><surname>Okamoto</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,70.91,216.86,119.10,9.45"><forename type="first">Vania</forename><surname>Gomes Lourenço</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,192.93,216.86,26.27,9.45"><surname>Maria</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,236.72,216.86,104.92,9.45"><forename type="first">Vasconcelos</forename><surname>Machado</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,371.01,216.86,95.75,9.45"><forename type="first">Alessandra</forename><surname>Melchert</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Graduate Program in Wild Animals</orgName>
+								<orgName type="department" key="dep2">School of Veterinary Medicine and Animal Science</orgName>
+								<orgName type="institution">Univ Estadual Paulista (Unesp)</orgName>
+								<address>
+									<settlement>Botucatu</settlement>
+									<region>SP</region>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Graduate Program in Veterinary Medicine</orgName>
+								<orgName type="department" key="dep2">School of Veterinary Medicine and Animal Science</orgName>
+								<orgName type="institution">Univ Estadual Paulista (Unesp)</orgName>
+								<address>
+									<settlement>Botucatu</settlement>
+									<region>SP</region>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department" key="dep1">Department of Veterinary Clinic</orgName>
+								<orgName type="department" key="dep2">School of Veterinary Medicine and Animal Science</orgName>
+								<orgName type="institution">Univ Estadual Paulista (Unesp)</orgName>
+								<address>
+									<settlement>Botucatu</settlement>
+									<region>SP</region>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department" key="dep1">Department of Animal Reproduction and Veterinary Radiology</orgName>
+								<orgName type="department" key="dep2">School of Veterinary Medicine and Animal Science</orgName>
+								<orgName type="institution">Univ Estadual Paulista (Unesp)</orgName>
+								<address>
+									<settlement>Botucatu</settlement>
+									<region>SP</region>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<address>
+									<addrLine>2 1 1 1 1 3 3 4 3 1 2 3 4</addrLine>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_FKrz5mK">Cardiovascular parameters in capitive blue-fronted amazon parrots (Amazona aestiva, Linnaeus, 1758) with varying body condition scores</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">2BE65BCD0E0C5B8234EDE66A62C7945F</idno>
+					<idno type="DOI">10.1101/712273</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_asqH8HW"><p xml:id="_J9A3GQj">This study aims at determining the echocardiographic, radiographic and tomographic parameters of blue-fronted Amazon parrots (Amazona aestiva) with varying body condition scores. Thirty-five birds grown in captivity were included in the study and allocated into groups according to their respective body condition scores: Lean, Ideal and Obese. The echocardiographic evaluation revealed that obese parrots presented lower right ventricle dimensions in diastole than lean parrots. The fractional shortening was considerably lower in obese parrots than in parrots with lean and ideal body condition scores, but without statistical significance. The flow rate and the aortic pressure gradient were lower in the lean group than in the ideal group. No differences were observed between the groups when comparing the radiographic and tomographic measurements. Therefore, as is the case in mammals, we can conclude that alterations in the nutritional state of blue-fronted amazon parrots lead to cardiovascular dysfunctions detected only through an echocardiographic evaluation, which represents an important diagnostic tool for these animals. Computed tomography scans allowed a better identification of the structures of the cardiovascular system without the overlaying structures of the celomatic cavity observed in radiographic 1 *</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="594.96" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_dDbk88u">Introduction</head><p xml:id="_GHx9Sm4">Blue-fronted Amazon parrots (Amazona aestiva, Linnaeus, 1758) are popular pets and are often kept in captivity <ref type="bibr" coords="2,85.75,179.73,12.26,9.93" target="#b0">[1,</ref><ref type="bibr" coords="2,98.02,179.73,8.17,9.93" target="#b1">2]</ref>, with characteristics such as an attractive appearance, interaction with the owner and a long lifespan helping to explain such popularity <ref type="bibr" coords="2,273.86,199.99,11.50,9.93" target="#b2">[3]</ref>. In captivity, it is common for these birds to have diets based on oilseeds, which are rich in fat and low in minerals and vitamins, and may potentially lead to nutritional and cardiovascular disorders, compromising the quality of life of the birds <ref type="bibr" coords="2,452.69,241.26,12.27,9.93" target="#b3">[4,</ref><ref type="bibr" coords="2,464.95,241.26,8.18,9.93" target="#b4">5]</ref>.</p><p xml:id="_H8nHM7Y">Cardiovascular diseases are common in birds <ref type="bibr" coords="2,268.90,272.78,11.50,9.93" target="#b5">[6]</ref>, representing a diagnostic challenge <ref type="bibr" coords="2,463.74,272.78,12.26,9.93" target="#b6">[7]</ref> because the physical examination may be difficult to interpret correctly <ref type="bibr" coords="2,325.06,293.04,11.49,9.93" target="#b7">[8]</ref>. Straub et al. <ref type="bibr" coords="2,405.92,293.04,12.27,9.93" target="#b8">[9]</ref> have reported heart injuries in over 30% of the necroscopic examinations conducted on psittacidae. In addition, these diseases may present signs that go undetected by the owners, leading to a dependency on complementary examinations for the diagnosis <ref type="bibr" coords="2,273.21,354.57,17.17,9.93" target="#b9">[10]</ref>.</p><p xml:id="_8htMMnv">It is important to considered that wild birds kept in captivity often have inadequate intakes of vitamins and calcium, with excessive fat intake or low protein and energy intake, which lead to nutritional alterations that may go unnoticed and predispose the animals to cardiac diseases <ref type="bibr" coords="2,443.54,428.10,11.49,9.93" target="#b3">[4]</ref>. Heart diseases in pet birds are more significant than previously believed and a cardiac evaluation should be included in the routine clinical examination <ref type="bibr" coords="2,196.64,468.62,16.68,9.93" target="#b10">[11]</ref>. The advanced technologies available nowadays, the improvement of anesthetic techniques, the behavioral conditioning and the better understanding of the physiology of these animals have resulted in a fast expansion of the imaging diagnosis methods available to wild animals <ref type="bibr" coords="2,83.92,530.15,17.17,9.93" target="#b11">[12]</ref>.</p><p xml:id="_f57JejK">Considering that parrots are often taken as pets and receive inadequate diets, which represents a risk factor for cardiovascular diseases, this study aims at describing the echocardiographic, radiographic and tomographic cardiovascular parameters in captive blue-fronted Amazon parrots (A. aestiva) with varying body condition scores. As far as the authors know, there are no studies describing the influence of body condition score on the echocardiographic, radiographic and tomographic examinations for this species.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_pzTtn3b">Materials and Methods</head><p xml:id="_6j7FY6a">The study was approved by the Ethics Committee on Animal Use (CEUA, Comitê de Ética em Uso Animal) at FMVZ, UNESP, Botucatu, Brazil, under protocol number 183/2015 and also by the Chico Mendes Institute of Biodiversity Conservation (ICMBio, Instituto Chico Mendes de Conservação da Biodiversidade), by the Biodiversity Authorization and Information System (SISBIO, Sistema de A score system with five tiers was used to establish the body condition scores (BCS) based on the pectoral musculature <ref type="bibr" coords="3,148.24,230.76,18.40,9.93" target="#b12">[13,</ref><ref type="bibr" coords="3,166.64,230.76,13.80,9.93" target="#b13">14]</ref>: Score 1: animals with concave musculature over the keel apex, representing malnutrition and thinness; Score 2: moderate muscle mass with the keel apex easily palpable, corresponding to mild thinness; Score 3: attributed to parrots with convex pectoral muscles; Score 4: muscle mass level with the keel apex (scores 3 and 4 are considered ideal); score 5: muscle extend beyond the keel, representing obesity. The accumulation of subcutaneous fat may be felt over the pectoral area, sternum and abdomen, indicating obesity <ref type="bibr" coords="3,335.72,333.56,17.16,9.93" target="#b12">[13]</ref>. The birds had their weights measured on digital scales and their lengths measured from the occipital bone until the tip of the tail.</p><p xml:id="_trSrjQg">After determining the BCS, each bird was allocated into three distinct groups: Lean Group (n=11), BCS below the ideal for the species (scores 1 and 2); Ideal Group (n=14), ideal BCS for the species (scores 3 and 4); Obese Group (n=10), BCS above the ideal for the species (score 5). During the experiment, the birds received drinkable water and their usual diets (bananas, apples, papayas and pelletized feed for psittacidae, Psita Sticks, Alcon ). The parrots did not eat or drink for four hours before the examinations <ref type="bibr" coords="3,42.88,488.13,18.40,9.93" target="#b14">[15]</ref> and were anesthetized with intravenous midazolam (Dormonid ) 1 mg/Kg, and ketamine (Dopalen ) 20 mg/Kg through the jugular vein.</p><p xml:id="_CcZV6ss">The echocardiographic examination was conducted with a SonoSite device (European Heardquarters, United Kingdom), model M Turbo, with a sectorial transducer, frequency of 7.5 MHz, B-Mode, and Spectral and Color Doppler functions. The examination was conducted with electrocardiographic monitoring, allowing a precise determination of the cardiac cycle. The animals were kept in erect position with a suitable device (Fig 1A <ref type="figure" coords="3,185.81,622.44,5.92,9.93">)</ref> and a four-hour fast was adopted to improve the accuracy of the images since the gastrointestinal tract may compromise the penetration of ultrasound waves <ref type="bibr" coords="3,456.37,643.45,17.17,9.93" target="#b15">[16]</ref>. The examination was conducted through the ventromedial approach, with the transducer positioned medially, directly behind the sternum (Fig 1B <ref type="figure" coords="3,218.69,683.97,31.87,9.93" target="#fig_1">and 1C</ref>). The measurements, including flow rate (m/sec) and aortic pressure gradient (mmHg) were taken through this window.  Positioning of bird and echocardiographic sections: A) Positioning of the bird for the echocardiographic examination with the aid of fixation device; B) Vertical echocardiographic section for visualization of two chambers; C) Horizontal echocardiographic section for visualization of all four chambers.</p><p xml:id="_xG7dCWv">The ultrasound beam was directed craniodorsally, using the liver as an acoustic window. The heart was evaluated through two image planes <ref type="bibr" coords="4,223.01,153.47,17.16,9.93" target="#b16">[17]</ref>: the horizontal plane, used to assess the right and left atrial and ventricular chambers; and the vertical plane, used to assess the left atrial and ventricular chambers (Fig. <ref type="figure" coords="4,69.21,193.99,49.02,9.93" target="#fig_2">2A and 2B</ref>). The echocardiographic measurements were taken on the horizontal section, with the transducer positioned in such a way as to allow the visualization of the maximum expansion of the cardiac chambers, employing the inner border method at the end of diastole and systole. The computed tomography (CT) scan was conducted with a helicoidal SCT-7800 TC tomograph (Shimadzu; Kyoto, Japan). The acquisition protocol was 120kVp, 100mA (pitch of 1.5 with 1 mm increments and tube rotation time of 1 second), with a field of view (FoV) of 350×350 mm using a soft tissue window. The thickness of the sections was 3 mm <ref type="bibr" coords="4,315.26,622.44,17.17,9.93" target="#b17">[18]</ref>. The birds were positioned in dorsal decubitus with the pelvic limbs relaxed and the wings extended laterally. The scout view was used to locate the sections, demarcating the cranial and caudal limits for acquisition of the definitive axial images. Image acquisition was done in the rostrocaudal direction. The images were transferred to the software Voxar-3D (Barco; Edinburgh, Scotland) for multiplanar reconstruction (MPR) in the sagittal and dorsal planes, and then analyzed with the PACS system (Synapse, Fuji Medical System, Tokyo, Japan).</p><p xml:id="_3THVduN">The radiographic examination was conducted using a direct digital radiography device (DR-F; GE Health Care Unit, Brazil), with the settings configured at 45 kV, 200mA and 5 mA with 250ms, broad focus, focal-film distance of 100 cm and collimation on the focal region for all projections. Image acquisition was conducted in the following projections: right lateral, with the wings overlaid and extended dorsally, and the legs extended caudally with the femoral heads overlaid; ventrodorsal, with the wings extended laterally and the legs extended caudally symmetrically. The images were analyzed with the PACS system (Synapse, Fuji Medical System, Tokyo, Japan).</p><p xml:id="_wQ3ey3s">The following measurements were evaluated in the radiography and CT scan: length of the heart (mm), from the base to the apex (lateral projection for radiography and sagittal section for the CT scan) (  A) length of the cardiac silhouette between points 1 and 2, right lateral projection; B) width of the cardiac silhouette between points 1 and 2; width of the coelom between points 3 and 4, ventrodorsal projection. The comparison of the cardiac and biometric data between the three groups (Lean, Ideal and Obese)</p><p xml:id="_kvjKwYN">was performed with the one-way analysis of variance (One-way ANOVA) followed by Tukey-Kramer post-hoc test. Data normality was verified through the Kolmogorov and Smirnov test. For parameters without any significant differences between the groups, the data was grouped (Lean + Ideal + Obese).</p><p xml:id="_2RfMnNq">The significance level was defined at 5%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_W9BKV3n">Results</head><p xml:id="_dWSdtUT">The heart exams of 35 parrots (A. aestiva) were assessed in this study. Among the animals included in the study, 14 (40%) presented normal BCS (BCS = 3 and 4), 11 (31.4%) were lean (BCS = 1) and 10 (28.6%) were obese (BCS = 5). The average body weight (g) were 337.8 ± 23.3g, 404.2 ± 227.4 and 465.6 ± 32.6 for the lean, ideal and obese groups, respectively, and was significantly different between the three BCS. The average length (cm) of the birds in the lean, ideal and obese groups were 32.9 ± 3.3, 33.1 ± 3.0 and 34.8 ± 1.6 respectively, with no statistically significant difference between the groups. The anesthetic protocol adopted immobilized the animals for about 60 minutes, which was enough time to conduct all three examinations. With the echocardiographic technique employed, it was possible to conduct all proposed measurements in the 35 parrots included in the study through the horizontal plane. There were no significant different between the groups in the measurements conducted on the horizontal section for the following parameters: length and width of the left ventricle in systole and diastole; length and width of the left atrium in systole and diastole; length of the right ventricle in systole; width of the right ventricle in systole and diastole. However, obese parrots presented shorter diastolic lengths in the right ventricle (6.9 ± 1.6) than lean parrots (9.1 ± 2.1) (p=0.03).</p><p xml:id="_aPx3jQr">For measurements that did not present significant differences between the groups, the data was grouped and compared with the literature. Therefore, the values obtained in the echocardiogram through the horizontal section in this study were in line with those observed in psittacidae <ref type="bibr" coords="6,438.62,230.76,19.28,9.93" target="#b16">[17,</ref><ref type="bibr" coords="6,457.90,230.76,14.46,9.93" target="#b18">19]</ref> and pigeons <ref type="bibr" coords="6,42.88,251.02,17.17,9.93" target="#b19">[20]</ref>, except for the systolic and diastolic lengths of the left ventricle, which were lower than the ones reported in the literature (Table <ref type="table" coords="6,197.66,272.03,4.29,9.93">1</ref>). It is important to note that these differences may be caused by the difference in species/subspecies studied and that the number of animals included in this study (n=35) is significant in comparison with the other studies on psittacidae (n=10) <ref type="bibr" coords="6,380.12,312.55,18.40,9.93" target="#b16">[17,</ref><ref type="bibr" coords="6,398.51,312.55,13.80,9.93" target="#b18">19]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_AKEgHbv">Table 1:</head><p xml:id="_ZDN8Pqd">Echocardiographic values obtained through the horizontal section in parrots and pigeons, both in the literature and in this study.</p><p xml:id="_eEnpk2e">It was possible to evaluate only the aortic flow in the parrots due to high heart rate that is characteristic to the species, image overlaying and hyperechogenicity. When assessing the echocardiographic variables related to flow, the aortic speed (p= 0.002) and the aortic pressure gradient (p=0.02) were lower in the lean group than in animals with ideal scores. The values observed for aortic speed (m/s) aortic pressure gradient (mmHg) were, respectively, 0.8 ± 0.1 and 2.6 ± 0.8 in the lean group; 1.0 ± 0.1 and 4.0 ± 1.1 in the ideal group; and 0.9 ± 0.1 and 3.3 ± 0.5 in the obese group.</p><p xml:id="_vkyhRJZ">The fractional shortening (FS) of the right ventricle (RVFS) and left ventricle (LVFS) did not present differences between the three groups studied. However, the values for FS of the transverse axis of the LV, FS of the longitudinal axis of the LV and FS of the longitudinal axis of the RV were considerably lower in obese parrots, although without any statistical significance (Table <ref type="table" coords="6,405.33,611.94,4.29,9.93">2</ref>). The transverse RVFS did not present such reduction in the obese group.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_c8TuYnF">Table 2:</head><p xml:id="_NZc42bc">Fractional shortening of the right and left ventricles, according to length and width, in the different body condition score groups.</p><p xml:id="_Sh4gcFT">The radiographic examination showed an overlap of the apex of the heart with the cranial portion of the liver silhouette, which presented a difficulty for taking the measurements of the heart in the lateral projection and made it impossible in the ventrodorsal projection due to a higher degree of overlap.</p><p xml:id="_mwSgvvh">Therefore, the length of the heart in the radiographic images was measured only in the lateral projection. On the other hand, the width of the heart and the width of the coelom were measured in the ventrodorsal projection.</p><p xml:id="_bbaG2mj">No significant differences were observed when comparing the measurements between the groups, both in the radiography and in the tomography. Therefore, the values for all three groups were grouped together and are presented on Table <ref type="table" coords="7,225.26,127.96,4.60,9.93">3</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_TCXh69F">Table 3:</head><p xml:id="_sqXhGGT">Mean, standard deviation (SD) and minimal and maximal confidence interval (CI 95%) for the radiographic and tomographic parameters for the grouped parrots (n=35).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_EtJR9gc">Discussion</head><p xml:id="_hu524GH">The anesthetic protocol employed in this study, with intravenous ketamine and midazolam, was efficient and immobilized the birds for a period of 60 to 80 minutes, which was enough time to conduct the echocardiographic, tomographic and radiographic examinations. The average duration of the examinations after sedation was 30 to 40 minutes for the echocardiogram, 20 minutes for the x-ray and 10 minutes for the tomography. The parrots presented a stable clinical profile, without any arrhythmias or alterations in the clinical parameters during anesthesia. The use of a sedation protocol that is safe and efficient is important to restrain the birds during clinical and diagnostic procedures because it reduces stress and facilitates handling <ref type="bibr" coords="7,190.52,423.60,17.16,9.93" target="#b20">[21]</ref>.</p><p xml:id="_DABE8Ba">Massone <ref type="bibr" coords="7,90.66,455.11,18.40,9.93" target="#b21">[22]</ref> reports that ketamine induces minimal events in the electrical conduction system of the heart, with the possibility of arrhythmias due to the increased sensitivity in the myocardium caused by the increased number of circulating catecholamines. According to the author, ketamine may lower myocardial contractility by interfering with the availability of intracellular calcium. However, the same anesthetic protocol was used in the three groups studied, which means the differences observed between groups may not be attributed to the anesthesia.</p><p xml:id="_ta5gMQE">This anesthetic protocol allowed all birds to relax enough to be positioned correctly during the echocardiographic, radiographic and tomographic examinations. When conducting a radiographic examination it is extremely important to avoid overlapping the wings and pelvic limbs with the region of the heart <ref type="bibr" coords="7,89.45,650.95,17.16,9.93" target="#b22">[23]</ref>. The acetabula and humeroscapular joints should be overlapped in the lateral projection, while the sternum and the spine should be overlapped in the ventrodorsal projection, both of which were possible in this study. For birds, the optimal positions for radiographic examinations are the lateral and ventrodorsal positions <ref type="bibr" coords="7,153.15,712.48,17.17,9.93" target="#b22">[23]</ref>.</p><p xml:id="_7qm5Zw5">Regarding the technique employed to acquire the echocardiographic images, physically restraining the animals with a wooden device allowed us to obtain the images with ease. Pees et al. <ref type="bibr" coords="7,457.62,765.01,18.40,9.93" target="#b16">[17]</ref> have suggested the use of a restraining device in psittacidae in order to position the birds without affecting the circulatory system and allow access to the contact area with the transducer. A similar device was employed in this study (Fig <ref type="figure" coords="8,178.25,55.18,4.29,9.93" target="#fig_2">2</ref>), which enabled the examination to be conducted more easily and allowed the transducer to be positioned horizontally and vertically.</p><p xml:id="_pQ5FARF">The echocardiographic examination is one of the most important diagnostic tools in aviary cardiology <ref type="bibr" coords="8,42.88,127.96,17.17,9.93" target="#b18">[19]</ref>. According to Augusto <ref type="bibr" coords="8,174.01,127.96,17.17,9.93" target="#b23">[24]</ref>, echocardiographic examinations in birds may be hampered by anatomical particularities, such as feathers, scales, air sacs and the thickness of the skin. The transducer was positioned at the ventromedial region, immediately posterior to the sternum, and it was possible to conduct the examination only by holding the feathers away from the device.</p><p xml:id="_8HXnEf6">In the doppler echocardiogram, the size of the chambers and the contractility of the ventricles were assessed subjectively and through measurements. The morphology and function of the left and right atrioventricular valves, aortic valve and pulmonary valve presented alterations in the quality of the image, which, together with the elevated heart rate of psittacidae, did not allow the evaluation of the structures. In addition, the study was conducted with parrots of varying body scores. Fat deposits and the size of the animal may interfere with the positioning of the transducer, hindering the passage of the sound waves or the return of the echoes, which may lead to difficulties in obtaining the images <ref type="bibr" coords="8,504.59,344.81,17.16,9.93" target="#b23">[24]</ref>. In this line, we observed that obesity limited the accuracy of the images, but it was still possible to assess the proposed echocardiographic measurements in all parrots through the horizontal view.</p><p xml:id="_UG8jjJA">In birds, the echocardiographic evaluation has been limited to the B-mode cardiac measurements because the M-mode, which allows the assessment of the fractional shortening and is routinely used in cats and dogs, cannot be reproduced in the species <ref type="bibr" coords="8,298.37,458.86,17.17,9.93" target="#b24">[25]</ref>. These limitations are caused primarily by the position of the heart in birds, withdrawn from the sternum and laterally surrounded by a system of air sacs, which does not provide an adequate window for the examination <ref type="bibr" coords="8,388.41,499.38,17.17,9.93" target="#b24">[25]</ref>. In addition, the ejection fraction was not assessed in the B-mode, as it would require a more precise image and a longer examination time, which would, in turn, require the animals to be restrained for longer periods.</p><p xml:id="_dKnp8dg">Alternatively, transesophageal echocardiography improves the accuracy of the examination in M-mode <ref type="bibr" coords="8,42.88,593.18,18.40,9.93" target="#b24">[25]</ref> and in the detection of conditions such as endocarditis, intracardiac masses, thrombi and some heart diseases <ref type="bibr" coords="8,117.62,613.44,17.16,9.93" target="#b25">[26]</ref>. In birds, this modality improves the assessment of the structure and function of the heart, including the transverse transventricular view, which cannot be obtained with transcoelomic echocardiography. However, the technique should be employed with caution in psittacidae <ref type="bibr" coords="8,484.39,654.71,17.17,9.93" target="#b24">[25]</ref>.</p><p xml:id="_FGzHS2f">According to the echocardiographic data obtained in this study, we observed interference of the nutritional condition on the cardiac parameters. Obese parrots presented reduced right ventricle (RV) length in diastole and fractional shortening (FS). In obese humans, the function of the right ventricle has been associated with the dilation of the right atrium and ventricle, as well as increased thickness of the right ventricle free wall <ref type="bibr" coords="8,155.58,768.01,17.16,9.93" target="#b26">[27]</ref>.</p><p xml:id="_WZH8bGr">12/5/23, 21:55</p><p xml:id="_6rhG3Ux">Cardiovascular parameters in capitive blue-fronted amazon parrots (Amazona aestiva, Linnaeus, 1758) with v… about:blank 9/15</p><p xml:id="_3rg7hQP">However, in this study the obese parrots presented lower dimensions in the diastolic length of the right ventricle than lean animals. It is important to note that the assessment of the right ventricle in other species is still the subject of many studies due to the difficulty in evaluating the chamber. In addition, the evaluation of the diastolic function is determined by parameters such as the E/A ratio, E-wave deceleration time (EDT) and isovolumetric relaxation time (IVRT), in addition to being influenced by the preload and presenting negative correlation with the heart rate (HR) <ref type="bibr" coords="9,375.53,137.72,17.16,9.93" target="#b27">[28]</ref>. Since these parameters were not assessed in the study, it is not possible to infer that the obese parrots suffered from diastolic dysfunction.</p><p xml:id="_vExmA8N">Obese parrots presented an apparent systolic dysfunction evidenced by the lower FS in the left ventricle, with values below <ref type="bibr" coords="9,132.32,230.76,18.40,9.93" target="#b16">[17]</ref> and also in line <ref type="bibr" coords="9,230.36,230.76,18.39,9.93" target="#b18">[19]</ref> with the standards for the species. Obesity in humans, cats and dogs is a volume-expansion disease with increased cardiac output, increased volume of plasmatic and extracellular fluids, increased cardiac chronotropism, systolic and diastolic dysfunction in the ventricles and increased arterial blood pressure <ref type="bibr" coords="9,277.50,292.29,17.16,9.93" target="#b28">[29]</ref>.</p><p xml:id="_98QDQsA">The reduction of the fractional shortening (FS) in obese individuals in comparison with the other groups, although not statistically significant, clearly shows that the longitudinal FS of the left ventricle (LV) in the obese group (14.98 ± 6.88) was about half of the value observed in the lean (28.82 ± 10.59) and ideal score groups (28.12 ± 15.76) (p=0.057). These results are controversial, considering that in humans it has been recently described the preservation of the ejection fraction in obese patients with heart failure, known as the obesity paradox <ref type="bibr" coords="9,191.75,426.60,17.16,9.93" target="#b29">[30]</ref>. However, echocardiographic studies on birds are scarce and the values described in the literature for the LVFS (%) in Amazona sp. parrots are variable <ref type="bibr" coords="9,465.97,447.61,19.27,9.93" target="#b16">[17,</ref><ref type="bibr" coords="9,485.24,447.61,14.45,9.93" target="#b18">19]</ref> (Table <ref type="table" coords="9,537.46,447.61,4.29,9.93">1</ref>).</p><p xml:id="_EN9fCek">It is also important to note that given the anatomical particularities in the heart and the differences in the standardized echocardiographic sections in birds, the comparison with humans and other mammals is not entirely valid. The reduced FS may be explained by factors such as increased afterload, reduced preload and low contractility, while increased FS may be explained by increased preload, reduced afterload and increased contractility <ref type="bibr" coords="9,219.31,549.66,17.17,9.93" target="#b27">[28]</ref>.</p><p xml:id="_dDDn28V">Obesity increases the workload of the heart by increasing the total volume of blood and the cardiac debt <ref type="bibr" coords="9,42.88,602.18,17.17,9.93" target="#b30">[31]</ref>. The excess of fat tissue imposes an increase on the metabolic demand of the body, leading to a hyperdynamic circulation, structural changes (remodeling) in the right and left ventricles and, therefore, increased ventricular mass and cavity dilation. Obesity is associated with hypertrophy, dilation and diastolic dysfunction of the left ventricle and occasionally systolic dysfunction of the left ventricle <ref type="bibr" coords="9,512.11,663.71,17.16,9.93" target="#b26">[27]</ref>.</p><p xml:id="_jkzJCMq">In addition to the effects of obesity observed in this study, we also noted that weight loss and malnutrition in parrots also had an impact on the cardiac flow. We observed a reduction in aortic speed and pressure gradient in the Lean group, while the FS was equal or slightly higher than in the Ideal group. In dogs, inducting caloric and protein malnutrition promoted the reduction of the cardiac mass, reduction of the FS and reduction of the cardiac output. The output reduction was attributed to a decrease on the metabolic demands that happened in malnourished individuals <ref type="bibr" coords="10,432.54,34.92,17.17,9.93" target="#b31">[32]</ref>. However, there is a lack of studies assessing the influence of nutritional condition over the cardiac function of birds.</p><p xml:id="_UmwVejk">In this study, when the data obtained on the echocardiogram that did not show an influence of the body condition score were grouped (horizontal plane), the values were similar to those observed for psittacidae <ref type="bibr" coords="10,98.63,127.96,19.28,9.93" target="#b16">[17,</ref><ref type="bibr" coords="10,117.91,127.96,14.46,9.93" target="#b18">19]</ref> and pigeons <ref type="bibr" coords="10,198.54,127.96,17.16,9.93" target="#b19">[20]</ref>, except for the length of the left ventricle in systole and diastole, which were lower than the reference values (Table <ref type="table" coords="10,292.60,148.97,4.29,9.93">1</ref>). This may be explained by the inconsistent size of the animals and by the different species and subspecies included in the studies.</p><p xml:id="_52WqBcq">In the radiographic examination, an 'hourglass' shape was observed at the area of the heat on the ventrodorsal projection (Fig <ref type="figure" coords="10,180.70,221.75,4.29,9.93" target="#fig_6">5</ref>). This is common in psittacidae <ref type="bibr" coords="10,344.04,221.75,12.26,9.93" target="#b7">[8]</ref> and is caused by the overlap of the heart and the liver due to the missing diaphragm in birds, which contributes to the formation of this 'cardio-hepatic waist' <ref type="bibr" coords="10,147.83,262.27,17.17,9.93" target="#b32">[33]</ref>. Alterations such as cardiomegaly, microcardia and microhepatia deform this silhouette and, therefore, the cardio-hepatic waist <ref type="bibr" coords="10,286.70,283.28,11.49,9.93" target="#b7">[8]</ref>. This overlap between heart and liver complicated the measurement of the length of the heart, which was ultimately measured only in the lateral projection and required adjusting the contrast of the images with the software. Different from radiography, computed tomography provides images in sections, without tissue overlaps since the images are obtained initially through axial sections and from these it is possible to create multiplanar reconstructions, such as the sagittal and dorsal planes <ref type="bibr" coords="10,414.12,494.88,17.17,9.93" target="#b33">[34]</ref>. Such reconstructions were used in this study to measure the length and width of the heart in the sagittal and dorsal sections, respectively. The measurements of the cardiac silhouette obtained through the CT scan were one of the pieces of information provided by this examination, which represents an additional tool for detecting possible alterations involving the heart.</p><p xml:id="_8qKFzVC">The ratio between width of the heart and width of the thorax is considered normal for parrots (A. aestiva) at the range of 51 to 61% <ref type="bibr" coords="10,169.71,629.19,17.16,9.93" target="#b34">[35]</ref>. However, this study observed lower and higher values in all groups. Two lean animals (18.2%), one animal with ideal score (7.1%) and two obese animals (20%) presented results below the reference values, while one lean animal (9.1%), two animals with ideal scores (14.2%) and four obese animals (40%) presented results above the reference. Therefore, caution should be exercised when interpreting this ratio based on the data described in the literature.</p><p xml:id="_6qnQNK4">The CT scan also measured this ration and the results did not diverge according to the body condition scores. When the animals were grouped together, the ratio varied between 43 and 62%, with a mean value of 53±6%. A review of the literature revealed no data regarding this ratio on tomography. While it was possible to assess the cardiac silhouette through the CT scan, the atrial and ventricular chambers were not visible. According to VELADIANO et al. <ref type="bibr" coords="11,281.78,55.18,11.50,9.93" target="#b2">[3]</ref>, it was possible to view all four chambers in macaws, but intravenous contrast was used, which did not occur in the present study. When comparing the width of the cardiac silhouette, the width of the coelom and the ratio between the two in the radiographic and tomographic images, we noted that the values were higher in the radiography.</p><p xml:id="_pG7WfdF">However, this difference was expected considering that the image formation methods are different in both examinations, with radiography images being bidimensional and CT images tridimensional <ref type="bibr" coords="11,510.09,157.98,18.40,9.93" target="#b35">[36]</ref> One of the limitations of this study was the non-use of iodized contrasts during the tomography of the chart. In humans, cardiac CT scans involve the use ionizing radiation and iodized contrasts, representing an important non-invasive method for the diagnosis of atherosclerotic disease <ref type="bibr" coords="11,423.92,230.76,17.17,9.93" target="#b36">[37]</ref>. Psittacidae present a high incidence of atherosclerosis <ref type="bibr" coords="11,205.84,251.02,17.17,9.93" target="#b37">[38]</ref>, a common cardiac disease that is often associated with sudden death to which birds appear to be more susceptible than mammals <ref type="bibr" coords="11,370.61,272.03,17.16,9.93" target="#b38">[39]</ref>. This fact helps illustrate the importance of contrasted tomography for the species.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_fJHEbeY">Conclusions</head><p xml:id="_KZCapjZ">Therefore, we may conclude that changes in the nutritional condition of blue-fronted Amazon parrots (A.</p><p xml:id="_YkzTvpX">aestiva) may lead to cardiovascular dysfunctions detectable only through echocardiographic examination, which represents an important diagnostic tool for the species. Although the CT scan allowed a better assessment of the structures of the cardiovascular system, the radiographic examination still should be considered the standard screening test to identify cardiac alterations such as increased or reduced dimensions. Describing the techniques used and the measurements obtained in this study may contribute towards further research in the area.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,50.38,52.82,23.98,8.10"><head>Fig 1 :</head><label>1</label><figDesc xml:id="_XKrtZYg">Fig 1:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="4,50.38,284.68,23.98,8.10;4,50.38,304.94,368.28,8.10;4,50.38,317.70,468.14,8.10;4,50.38,330.45,426.69,8.10"><head>Fig 2 :</head><label>2</label><figDesc xml:id="_k4EnJvr">Fig 2: Echocardiographic horizontal plane and schematic echocardiographic representation. A) Echocardiographic section, horizontal plane showing: 1-left atrium (LA); 2-left ventricle (LV); 3-aorta (AO); 4-right ventricle (RV); B) Schematic echocardiographic representation, horizontal plane: 1-LA; 2-LV; 3-AO; 4-RV.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="5,520.04,148.97,32.31,9.93;5,42.88,169.23,498.64,9.93;5,42.88,189.49,496.60,9.93;5,42.88,210.50,501.07,9.93;5,42.88,230.76,510.04,9.93;5,42.88,251.02,369.41,9.93"><head></head><label></label><figDesc xml:id="_2JeNpWs">Fig 3A and 4A, respectively); width of the heart (mm) at the broadest part of the heart (ventrodorsal projection for radiography and dorsal section for the CT scan) (Fig 3B and 4B, respectively); width of the coelom (mm), from one rib to the other at the same level as the width of the heart for radiography (ventrodorsal projection) (Fig 3B) and at the largest width of the coelom for the CT scan (dorsal section) (Fig 4C); ratio between the width of the cardiac silhouette and the width of the coelom (%).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="5,50.38,301.19,23.98,8.10;5,50.38,321.45,88.45,8.10;5,50.38,333.45,491.39,8.10;5,50.38,346.21,332.93,8.10"><head>Fig 3 :</head><label>3</label><figDesc xml:id="_9Ztxgcg">Fig 3:Radiographic image. A) length of the cardiac silhouette between points 1 and 2, right lateral projection; B) width of the cardiac silhouette between points 1 and 2; width of the coelom between points 3 and 4, ventrodorsal projection.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="5,50.38,398.74,23.98,8.10;5,50.38,418.99,87.27,8.10;5,50.38,431.75,475.40,8.10;5,50.38,443.76,390.91,8.10"><head>Fig 4 :</head><label>4</label><figDesc xml:id="_32ERdQE">Fig 4:Tomographic image. A) length of the cardiac silhouette between points 1 and 2, sagittal projection; B) width of the cardiac silhouette between points 1 and 2, dorsal projection; C) width of the coelom between points 3 and 4, dorsal projection.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="10,50.38,332.70,23.98,8.10;10,50.38,352.96,88.45,8.10;10,50.38,365.72,478.93,8.10;10,50.38,378.48,153.97,8.10"><head>Fig 5 :</head><label>5</label><figDesc xml:id="_veFYnqB">Fig 5: Radiographic image. Showing the hourglass shape created by the overlap between the apex of the heart and the cranial portion of the hepatic silhouette on the ventrodorsal position.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="3,26.45,19.13,542.09,807.75"><head></head><label></label><figDesc xml:id="_W7CaFBU">Autorização e Informação em Biodiversidade), under protocol number 81121252. A total of 35 adult bluefronted Amazon parrots (A. aestiva) without sex distinction were included in the study, all of which were kept in captivity for at least two years at the Wildlife Medicine and Research Center (CEMPAS, Centro de Medicina e Pesquisa em Animais Selvagens) at the School of Veterinary Medicine and Animal Science, UNESP, Botucatu-SP, Brazil. The study was conducted from September 2017 to December 2017 and the birds came from seizures conducted by the Brazilian Environmental Police and donations, which means there are no prior history of the health state of these animals. The animals were kept in a room of approximately 40 m² with access to indoors and outdoors areas.</figDesc><table coords="3,26.45,19.13,542.09,807.75"><row><cell>12/5/23, 21:55</cell><cell>Cardiovascular parameters in capitive blue-fronted amazon parrots (Amazona aestiva, Linnaeus, 1758) with v…</cell></row><row><cell>about:blank</cell><cell>3/15</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" coords="11,26.45,19.13,542.09,807.75"><head></head><label></label><figDesc xml:id="_kukSEXe">12/5/23, 21:55 Cardiovascular parameters in capitive blue-fronted amazon parrots (Amazona aestiva, Linnaeus, 1758) with v…</figDesc><table coords="11,26.45,822.13,542.09,4.75"><row><cell>about:blank</cell><cell>11/15</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_9dEPADc">Acknowledgements</head><p xml:id="_PVgFt9b">The authors thank everyone involved in this study and specifically the Wildlife Medicine and Research Center (CEMPAS, Centro de Medicina e Pesquisa em Animais Selvagens) and School of Veterinary Medicine and Animal Science, UNESP, Botucatu, Brazil.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_8spQm4z">Author Contributions</head><p xml:id="_B2wtqs4">Conceptualization: Gisele Junqueira dos Santos, Amanda Sarita Cruz Aleixo, Jeana Pereira da Silva; </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="12,56.62,403.50,474.63,8.68;12,52.33,421.68,185.49,8.51" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_6yNR52Y">Famílias e espécies: Ordem Psittaciformes</title>
+		<author>
+			<persName coords=""><forename type="first">Sick</forename><surname>Hsick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_FBK4FfW">Ornitologia Brasileira</title>
+				<editor>
+			<persName><forename type="first">H</forename><surname>Sick</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Rio de Janeiro</addrLine></address></meeting>
+		<imprint>
+			<publisher>Nova Fronteira</publisher>
+			<date type="published" when="1997">1997</date>
+			<biblScope unit="page" from="351" to="382" />
+		</imprint>
+	</monogr>
+	<note>1st ed.</note>
+</biblStruct>
+
+<biblStruct coords="12,56.57,456.20,469.56,8.51;12,52.33,473.45,365.43,8.51" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_NcfnQxt">Nutritional levels of diets fed to captive Amazon parrots: does mixing seed, produce, and pellets provide a healthy diet?</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Brightsmith</surname></persName>
+		</author>
+		<idno type="DOI">10.1647/2011-025R.1</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_e7cPexp">J Avian Med Surg</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="149" to="160" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,56.82,507.97,457.69,8.51;12,52.33,525.23,498.04,8.51;12,52.33,543.24,133.81,8.51" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_FNq4NFg">Normal computed tomographic features and reference values for the coelomic cavity in pet parrots</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">A</forename><surname>Veladiano</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Banzato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Bellini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Montani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Catania</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zotti</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12917-016-0821-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2MY9VVf">BioMed Cent Vet Res. BMC Veterinary Research</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.06,577.75,483.44,8.51;12,52.33,595.01,202.22,8.51" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_RQRDGXF">The diet of adult psittacids: Veterinarian and ethological approaches</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Péron</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Grosset</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/jpn.12103</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wTp5Ggv">J Anim Physiol Anim Nutr (Berl)</title>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="page" from="403" to="416" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,57.36,629.35,483.51,8.68;12,52.33,647.54,434.38,8.51" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_26tzn39">Fisiopatologia do estresse</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">S</forename><surname>Cubas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jcr</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Catão-Dias</forename><surname>Jlorsini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Bondan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Fernandes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_c3PeXCG">Tratado de Animais Selvagens</title>
+				<editor>
+			<persName><forename type="first">Z</forename><forename type="middle">S</forename><surname>Cubas</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Jcr</forename><surname>Silva</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Catão-Dias</forename><surname>Jl</surname></persName>
+		</editor>
+		<meeting><address><addrLine>São Paulo</addrLine></address></meeting>
+		<imprint>
+			<publisher>Roca</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="35" to="45" />
+		</imprint>
+	</monogr>
+	<note>1st ed</note>
+</biblStruct>
+
+<biblStruct coords="12,56.82,682.05,484.19,8.51;12,52.33,699.31,120.87,8.51" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_9uDD4Qy">Avian vascular imaging: A review</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Beaufrère</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Pariaut</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">N</forename><surname>Tully</surname></persName>
+		</author>
+		<idno type="DOI">10.1647/2009-052.1</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_QbvdxeA">J Avian Med Surg</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="174" to="184" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,56.73,733.83,467.97,8.51;12,52.33,751.08,72.51,8.51;13,26.45,19.13,58.98,4.75;13,115.66,19.13,448.27,4.75;13,26.45,822.13,47.68,4.75;13,545.47,822.13,23.07,4.75" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_AsNZdHv">Avian cardiology</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Strunk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">H</forename><surname>Wilson</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/S1094-9194(02)00031-212/5/23</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bnxTBGc">Vet Clin North Am -Exot Anim Pract</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="1" to="28" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+	<note>21:55 Cardiovascular parameters in capitive blue-fronted amazon parrots (Amazona aestiva, Linnaeus, 1758) with v… about:blank 13/15</note>
+</biblStruct>
+
+<biblStruct coords="13,56.69,36.58,465.09,8.68;13,52.33,54.01,457.84,8.51;13,52.33,72.02,83.56,8.51" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_XP7bcWh">Cardiovascular system</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">J</forename><surname>Harrison</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lightfoot</forename><surname>Tpees</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Krautwald-Junghanns M-E</forename><surname>Straub</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename></persName>
+		</author>
+		<idno type="DOI">10.1201/b17486</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_dCkhSZm">Clinical Avian Medicine</title>
+				<editor>
+			<persName><forename type="first">G</forename><forename type="middle">J</forename><surname>Harrison</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><surname>Lightfoot</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Palm Beach, Florida</addrLine></address></meeting>
+		<imprint>
+			<publisher>Spix Publishing</publisher>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="page" from="305" to="355" />
+		</imprint>
+	</monogr>
+	<note>1st ed</note>
+</biblStruct>
+
+<biblStruct coords="13,56.80,106.53,478.13,8.51;13,52.33,123.79,257.74,8.51" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_hx93WVh">Pulsed-wave Doppler echocardiography in birds of prey</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Straub</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">A</forename><surname>Forbes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Thielebein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-E</forename><surname>Krautwald-Junghanns</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/vr.153.24.742</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bDJshr8">Vet Rec</title>
+		<imprint>
+			<biblScope unit="volume">153</biblScope>
+			<biblScope unit="page" from="742" to="746" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.60,158.13,466.28,8.68;13,52.33,175.57,55.19,8.51" xml:id="b9">
+	<monogr>
+		<title level="m" type="main" xml:id="_vdhYBQp">The clinical examination</title>
+		<author>
+			<persName coords=""><forename type="first">Samour</forename><surname>Jdoneley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename></persName>
+		</author>
+		<editor>Samour J, editor. Avian Medicine .</editor>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Elsevier</publisher>
+			<biblScope unit="page">699</biblScope>
+			<pubPlace>St. Louis</pubPlace>
+		</imprint>
+	</monogr>
+	<note>3rd ed.</note>
+</biblStruct>
+
+<biblStruct coords="13,62.04,210.08,482.14,8.51;13,52.33,228.09,311.46,8.51" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_qQxgqvb">Cardiovascular physiology and diseases of pet birds</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Pees</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-E</forename><surname>Krautwald-Junghanns</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cvex.2008.08.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TWu9phE">Vet Clin North Am -Exot Anim Pract</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="81" to="97" />
+			<date type="published" when="2009">2009</date>
+			<publisher>Elsevier Inc</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.51,262.61,474.04,8.51;13,52.33,279.86,163.97,8.51" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_AZRuebH">Electrocardiograms in selected species</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">J</forename><surname>Schoemaker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mmjm</forename><surname>Zandvliet</surname></persName>
+		</author>
+		<idno type="DOI">10.1053/j.saep.2005.12.007</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ezvBkNk">Semin Avian Exot Pet Med</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="26" to="33" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.45,314.21,452.86,8.68;13,52.33,331.64,477.46,8.51;13,52.33,349.65,379.74,8.51" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_A4Jyaxr">Calopsitas e Cacatuas</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">S</forename><surname>Cubas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jcr</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Catão-Dias</forename><surname>Jlgrespan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Raso</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>De</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Psitaciformes</surname></persName>
+		</author>
+		<ptr target="www.kaytee.com" />
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_NhsmJ4P">Tratado de Animais Selvagens-Medicina Veterinária</title>
+				<editor>
+			<persName><forename type="first">Z</forename><forename type="middle">S</forename><surname>Cubas</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Jcr</forename><surname>Silva</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Catão-Dias</forename><surname>Jl</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Araras, Papagaios, Periquitos; Brazil</addrLine></address></meeting>
+		<imprint>
+			<publisher>Roca</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="550" to="589" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,61.37,384.16,431.58,8.51;13,52.33,401.42,31.51,8.51" xml:id="b13">
+	<monogr>
+		<title level="m" type="main" xml:id="_4E76ZSB">Education Reference Guide</title>
+		<author>
+			<persName coords=""><surname>Kaytee</surname></persName>
+		</author>
+		<ptr target="http://" />
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Kaytee Products</publisher>
+			<pubPlace>Chilton, EUA</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Internet. 1st ed.</note>
+</biblStruct>
+
+<biblStruct coords="13,62.24,435.94,448.85,8.51;13,52.33,453.95,132.42,8.51" xml:id="b14">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Pees</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-E. Avian</forename><surname>Krautwald-Junghanns</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Echocardiography</surname></persName>
+		</author>
+		<idno type="DOI">10.1053/j.saep.2005.12.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8dsEC3R">Semin Avian Exot Pet Med</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="14" to="21" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.05,488.46,488.63,8.51;13,52.33,505.72,273.67,8.51" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_bq2RPea">Use of ultrasonography to characterize ovarian status in chicken</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">L</forename><surname>Melnychuk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">W</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">D</forename><surname>Kirby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">W</forename><surname>Rorie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">B</forename><surname>Anthony</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/ps/81.6.892</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jxnRKHX">Poult Sci</title>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="page" from="892" to="895" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.24,540.24,473.91,8.51;13,52.33,557.49,306.24,8.51" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_jd9xnAG">Echocardiographic examinations of 60 African grey parrots and 30 other psittacine birds</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Pees</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Straub</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-E</forename><surname>Krautwald-Junghanns</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/vr.155.3.73</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_R47rdR4">Vet Rec</title>
+		<imprint>
+			<biblScope unit="volume">155</biblScope>
+			<biblScope unit="page" from="73" to="77" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.42,592.01,472.68,8.51;13,52.33,610.02,419.63,8.51;13,52.33,627.28,171.84,8.51" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_dRtWFKy">Radiation dose optimization in routine computed tomography: a study of feasibility in a University Hospital</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Dalmazo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">E</forename><surname>Júnior</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mac</forename><surname>Brocchi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Costa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Azevedo-Marques Pm</forename><surname>De</surname></persName>
+		</author>
+		<idno type="DOI">10.1590/S0100-39842010000400008</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_htg6cnT">Radiol Bras</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="241" to="248" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,61.44,661.79,457.78,8.51;13,52.33,679.80,160.79,8.51" xml:id="b18">
+	<monogr>
+		<title level="m" type="main" xml:id="_kGSQBpw">Cardiovascular system. Current therapy in exotic pet practice</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Beaufrère</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Schilleger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Pariaut</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Elsevier</publisher>
+			<biblScope unit="page" from="151" to="220" />
+			<pubPlace>St. Louis Missouri</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,61.84,714.32,432.13,8.51;13,52.33,731.57,348.59,8.51;13,52.33,748.83,152.34,8.51;14,26.45,19.13,58.98,4.75;14,115.66,19.13,448.27,4.75;14,26.45,822.13,47.68,4.75;14,545.47,822.13,23.07,4.75" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_gGmrtjy">Transcoelomic two-dimensional echocardiography in the avian patient</title>
+		<author>
+			<persName coords=""><forename type="first">Krautwald-Junghanns M-E</forename><surname>Schulz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hagner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Failing</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Redman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename></persName>
+		</author>
+		<ptr target="http://www.jstor.org/stable/3013066612/5/23" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7QfY7HN">J Avian Med Surg</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">55</biblScope>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+	<note>Cardiovascular parameters in capitive blue-fronted amazon parrots. Amazona aestiva, Linnaeus, 1758) with v… about:blank 14/15</note>
+</biblStruct>
+
+<biblStruct coords="14,61.09,36.75,454.44,8.51;14,52.33,54.01,462.76,8.51;14,52.33,72.02,385.54,8.51" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_RnvKnCC">Sedative effects of intranasal midazolam administration in wild Caught blue-fronted Amazon (Amazona aestiva) and Orange-winged Amazon (Amazona amazonica) parrots</title>
+		<author>
+			<persName coords=""><forename type="first">Dph</forename><surname>Schaffer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nllc</forename><surname>De Araújo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Acs</forename><surname>Raposo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Efm</forename><surname>Filho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jvr</forename><surname>Vieira</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">P</forename><surname>Oriá</surname></persName>
+		</author>
+		<idno type="DOI">10.1647/2016-201</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Mae8GR8">J Avian Med Surg</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="213" to="218" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,62.63,106.53,474.87,8.51;14,52.33,123.79,110.70,8.51" xml:id="b21">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Massone</surname></persName>
+		</author>
+		<title level="m" xml:id="_kUqECzz">Anestesiologia veterinária : farmacologia e técnicas: texto e atlas colorido</title>
+				<meeting><address><addrLine>Rio de Janeiro-RJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Guanabara Koogan</publisher>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note>6th ed</note>
+</biblStruct>
+
+<biblStruct coords="14,62.45,158.13,490.37,8.68;14,52.33,175.57,482.73,8.51;14,52.33,193.57,253.90,8.51" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_Qs6B85f">Radiologia em Répteis, Aves e Roedores de companhia</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">S</forename><surname>Cubas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jcr</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Catão-Dias</forename><surname>Jlpinto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Acbcf</forename><surname>Arnaut</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cab</forename><surname>Santos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Unruh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_dj5KmwT">Tratado de Animais Selvagens-Medicina Veterinária</title>
+				<editor>
+			<persName><forename type="first">Z</forename><forename type="middle">S</forename><surname>Cubas</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Jcr</forename><surname>Silva</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Catão-Dias</forename><surname>Jl</surname></persName>
+		</editor>
+		<meeting><address><addrLine>São Paulo</addrLine></address></meeting>
+		<imprint>
+			<publisher>Roca</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="1654" to="1781" />
+		</imprint>
+	</monogr>
+	<note>2nd ed</note>
+</biblStruct>
+
+<biblStruct coords="14,62.45,227.91,482.62,8.68;14,52.33,245.35,407.42,8.51" xml:id="b23">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">S</forename><surname>Cubas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jcr</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Catão-Dias</forename><surname>Jlaugusto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ultrassonografia</surname></persName>
+		</author>
+		<title level="m" xml:id="_wqJaBgR">Tratado de animais selvagens medicina veterinária</title>
+				<editor>
+			<persName><forename type="first">Z</forename><forename type="middle">S</forename><surname>Cubas</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Jcr</forename><surname>Silva</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Catão-Dias</forename><surname>Jl</surname></persName>
+		</editor>
+		<meeting><address><addrLine>São Paulo</addrLine></address></meeting>
+		<imprint>
+			<publisher>Roca</publisher>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="page" from="879" to="895" />
+		</imprint>
+	</monogr>
+	<note>1st ed</note>
+</biblStruct>
+
+<biblStruct coords="14,61.44,279.86,468.24,8.51;14,52.33,297.87,372.40,8.51" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_SgrNVrK">Feasibility of transesophageal echocardiography in birds without cardiac disease</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Beaufrère</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Pariaut</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">G</forename><surname>Nevarez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">N</forename><surname>Tully</surname></persName>
+		</author>
+		<idno type="DOI">10.2460/javma.236.5.540</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_uh5TEFN">J Am Vet Med Assoc</title>
+		<imprint>
+			<biblScope unit="volume">236</biblScope>
+			<biblScope unit="page" from="540" to="547" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.02,331.64,411.86,8.51;14,52.33,349.65,135.41,8.51" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_mcXYpqc">Transoesophageal echocardiography</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">E</forename><surname>Brickner</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/8756479305275569</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_X3BqnK8">J Diagnostic Med Sonogr</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="309" to="317" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,62.96,384.16,455.22,8.51;14,52.33,401.42,424.94,8.51" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_uB8Gy8c">The impact of isolated obesity on right ventricular function in young adults</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sokmen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Sokmen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Acar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Akcay</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Koroglu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Koleoglu</surname></persName>
+		</author>
+		<idno type="DOI">10.5935/abc.20130142</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tAu45wV">Arq Bras Cardiol</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="page" from="160" to="168" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,62.39,435.76,447.70,8.68;14,52.33,453.95,426.50,8.51" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_X8GWpQZ">Evaluation of size, function, and hemodynamics</title>
+		<author>
+			<persName coords=""><forename type="first">Boon</forename><surname>Jaboon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_cfcMJ7G">Manual of Veterinary Echocardiography</title>
+				<editor>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Boon</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Arnes, AI, United States</addrLine></address></meeting>
+		<imprint>
+			<publisher>Lowa State University Press</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="151" to="260" />
+		</imprint>
+	</monogr>
+	<note>2nd ed.</note>
+</biblStruct>
+
+<biblStruct coords="14,61.13,488.46,477.94,8.51;14,52.33,505.72,157.13,8.51" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_NXRYj6a">Obesity in dogs: Effects on renal function, blood pressure, and renal disease</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">A</forename><surname>Joles</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/01652176.1998.9694854</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_9axZwrj">Vet Q</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="117" to="120" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.27,540.24,477.21,8.51;14,52.33,557.49,464.87,8.51" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_Batufa9">Update on obesity and obesity paradox in heart failure</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">J</forename><surname>Lavie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Alpert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">De</forename><surname>Schutter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lopez-Jimenez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Milani</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.pcad.2015.12.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_6ppKgn6">Prog Cardiovasc Dis</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="393" to="400" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Elsevier Inc</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,60.74,592.01,491.01,8.51;14,52.33,610.02,320.55,8.51" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_ptyt7qA">Obesity cardiomyopathy: Pathophysiology and evolution of the clinical syndrome</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Alpert</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/00000441-200104000-00003</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dy76MbW">Am J Med Sci. Elsevier Masson SAS</title>
+		<imprint>
+			<biblScope unit="volume">321</biblScope>
+			<biblScope unit="page" from="225" to="236" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.66,644.53,463.66,8.51;14,52.33,661.79,280.33,8.51" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_PxgPhvd">Left ventricular function in malnutrition</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">B</forename><surname>Alden</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">D</forename><surname>Madoff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">J</forename><surname>Stahl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Lakatua</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">S</forename><surname>Ring</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">B</forename><surname>Cerra</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/ajpheart.1987.253.2.H380</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_smgeEQw">Am J Physiol</title>
+		<imprint>
+			<biblScope unit="volume">253</biblScope>
+			<biblScope unit="page" from="H380" to="387" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.79,696.31,405.84,8.51" xml:id="b32">
+	<monogr>
+		<title level="m" type="main" xml:id="_Q84phzx">Veterinary diagnostic imaging : birds, exotic pets, and wildlife</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">S</forename><surname>Farrow</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<publisher>Mosby Elsevier</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,61.84,730.65,487.32,8.68;14,52.33,748.08,484.50,8.51;14,52.33,766.09,276.08,8.51;15,26.45,19.13,58.98,4.75;15,115.66,19.13,448.27,4.75;15,26.45,822.13,47.68,4.75;15,545.47,822.13,23.07,4.75" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_FjY9d4F">Computed tomography (CT)</title>
+		<author>
+			<persName coords=""><forename type="first">Krautwald-Junghanns M-E</forename><surname>Pees</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Reese</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Tkrautwald-Junghanns</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-E</forename><surname>Schroff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Bartels</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Krautwald-Junghanns</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-E</forename><surname>Pees</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Reese</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_kNngrSV">Diagnostic Imaging of Exotic Pets</title>
+				<meeting><address><addrLine>Hannover, Germany</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="page" from="28" to="30" />
+		</imprint>
+	</monogr>
+	<note>1st ed.. 12/5/23, 21:55 Cardiovascular parameters in capitive blue-fronted amazon parrots (Amazona aestiva, Linnaeus, 1758) with v… about:blank 15/15</note>
+</biblStruct>
+
+<biblStruct coords="15,61.44,36.75,479.77,8.51;15,52.33,54.01,240.56,8.51" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_vfy7XaW">Measurement of the cardiac silhouette in psittacines</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Straub</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Pees</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-E</forename><surname>Krautwald-Junghanns</surname></persName>
+		</author>
+		<idno type="DOI">10.2460/javma.2002.221.76</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pNACFkP">J Am Vet Med Assoc</title>
+		<imprint>
+			<biblScope unit="volume">221</biblScope>
+			<biblScope unit="page" from="76" to="79" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,61.16,88.53,465.00,8.51;15,52.33,106.53,417.02,8.51;15,52.33,123.79,115.60,8.51" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_3UQHGKX">A comparison of two-dimensional radiography and threedimensional computed tomography in angular cephalometric measurements</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Nalçaci</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Öztürk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Sökücü</surname></persName>
+		</author>
+		<idno type="DOI">10.1259/dmfr/82724776</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_atxmTua">Dentomaxillofacial Radiol</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="100" to="106" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,62.27,158.31,420.46,8.51;15,52.33,175.57,491.14,8.51;15,52.33,193.57,68.32,8.51" xml:id="b36">
+	<monogr>
+		<title level="m" type="main" xml:id="_QrrEATw">Ressonância magnética cardíaca e tomografia computadorizada na cardiomiopatia isquêmica: atualidades. Radiologia Brasileira</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">B</forename><surname>Assunção</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dcl</forename><surname>Oliveira</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>De</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">F</forename><surname>Souza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Nacif</surname></persName>
+		</author>
+		<idno type="DOI">10.1590/0100-3984.2014.0055</idno>
+		<imprint>
+			<date>201649</date>
+			<biblScope unit="page" from="26" to="34" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,60.97,228.09,479.52,8.51;15,52.33,245.35,479.02,8.51;15,52.33,263.36,338.81,8.51" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" xml:id="_AKtJ6Xf">Characterization of atherosclerosis by histochemical and immunohistochemical methods in African grey parrots (Psittacus erithacus) and Amazon Parrots (Amazona spp</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Fricke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Cramer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M-E</forename><surname>Krautwald-Junghanns</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">M</forename><surname>Dorrestein</surname></persName>
+		</author>
+		<idno type="DOI">10.1637/8521-111908-Case.1</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4qXmxQ9">Avian Dis</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="466" to="472" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,61.50,297.87,362.53,8.51;15,52.33,315.13,157.13,8.51" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_jMhdukA">Atherosclerosis in parrots. A review</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">J</forename><surname>Bavelaar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">C</forename><surname>Beynen</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/01652176.2004.9695168</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UpKanrp">Vet Q</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="50" to="60" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

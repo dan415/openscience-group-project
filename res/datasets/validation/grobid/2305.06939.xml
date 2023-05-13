@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_fcxZ92s">Deep Multi-View Subspace Clustering with Anchor Graph</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2023-05-11">11 May 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,129.04,123.67,74.07,10.57"><forename type="first">Chenhang</forename><surname>Cui</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Electronic Science and Technology of China</orgName>
+								<address>
+									<postCode>611731</postCode>
+									<settlement>Chengdu</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,213.58,123.67,61.75,10.57"><forename type="first">Yazhou</forename><surname>Ren</surname></persName>
+							<email>yazhou.ren@uestc.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Electronic Science and Technology of China</orgName>
+								<address>
+									<postCode>611731</postCode>
+									<settlement>Chengdu</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,290.04,123.67,51.49,10.57"><forename type="first">Jingyu</forename><surname>Pu</surname></persName>
+							<email>pujingyu0105@163.com</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Electronic Science and Technology of China</orgName>
+								<address>
+									<postCode>611731</postCode>
+									<settlement>Chengdu</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,351.99,123.67,64.55,10.57"><forename type="first">Xiaorong</forename><surname>Pu</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,427.00,123.67,51.48,10.57"><forename type="first">Lifang</forename><surname>He</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Electronic Science and Technology of China</orgName>
+								<address>
+									<postCode>611731</postCode>
+									<settlement>Chengdu</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Lehigh University</orgName>
+								<address>
+									<postCode>18015</postCode>
+									<region>PA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_4GXQjdh">Deep Multi-View Subspace Clustering with Anchor Graph</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-05-11">11 May 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">19349CE13EC853650EA369DBC3BF19D1</idno>
+					<idno type="arXiv">arXiv:2305.06939v1[cs.LG]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_8YkTZHB"><p xml:id="_37gVPXe">Deep multi-view subspace clustering (DMVSC) has recently attracted increasing attention due to its promising performance. However, existing DMVSC methods still have two issues: (1) they mainly focus on using autoencoders to nonlinearly embed the data, while the embedding may be suboptimal for clustering because the clustering objective is rarely considered in autoencoders, and (2) existing methods typically have a quadratic or even cubic complexity, which makes it challenging to deal with large-scale data. To address these issues, in this paper we propose a novel deep multi-view subspace clustering method with anchor graph (DMCAG). To be specific, DMCAG firstly learns the embedded features for each view independently, which are used to obtain the subspace representations. To significantly reduce the complexity, we construct an anchor graph with small size for each view. Then, spectral clustering is performed on an integrated anchor graph to obtain pseudo-labels. To overcome the negative impact caused by suboptimal embedded features, we use pseudo-labels to refine the embedding process to make it more suitable for the clustering task. Pseudo-labels and embedded features are updated alternately. Furthermore, we design a strategy to keep the consistency of the labels based on contrastive learning to enhance the clustering performance. Empirical studies on real-world datasets show that our method achieves superior clustering performance over other state-of-the-art methods.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1" xml:id="_2PhFCMY">Introduction</head><p xml:id="_nYXgm6z">Subspace clustering has been studied extensively over the years, which assumes that the data points are drawn from lowdimensional subspaces, and could be expressed as a linear combination of other data points. Especially, sparse subspace clustering (SSC) <ref type="bibr" coords="1,123.48,662.27,113.56,9.79">[Elhamifar and Vidal, 2013]</ref> has shown the ability to find a sparse representation corresponding to the points from the same subspace. After obtaining the representation of the subspace, the spectral clustering is then applied to obtain the final clustering results. On the other hand, low-rank subspace segmentation was proposed in <ref type="bibr" coords="1,515.52,251.22,42.48,9.67;1,315.00,263.07,23.24,8.90" target="#b4">[Liu et al., 2012]</ref> to find a low-rank subspace representation. Despite some state-of-the-art performances have been achieved, most existing methods only focus on single-view clustering tasks.</p><p xml:id="_GUmB4rD">In many real-world applications, with the exponential growth of data, the description of data has gradually evolved from a single source to multiple sources. For example, a video consists of text, images, and audio. A piece of text can be translated into various languages, and scenes can also be described from different perspectives. These different views often contain complementary information to each other. Making full use of the complementary and consistent information among multiple views could potentially improve the clustering performance.</p><p xml:id="_prny9cn">Considering the diversity of information that comes with multi-view data, the research of multi-view subspace clustering (MVSC) has attracted increasing attention recently. MVSC aims to seek a unified subspace from learning the fusion representation of multi-view data, and then separates data in the corresponding subspace. In the literature, many MVSC methods have been proposed <ref type="bibr" coords="1,461.74,473.60,78.02,9.79" target="#b18">[Zhang et al., 2015;</ref><ref type="bibr" coords="1,541.95,474.50,16.05,8.90;1,315.00,485.45,48.50,8.90" target="#b5">Luo et al., 2018;</ref><ref type="bibr" coords="1,366.40,485.45,60.25,8.90">Li et al., 2019;</ref><ref type="bibr" coords="1,429.55,485.45,74.39,8.90" target="#b14">Wang et al., 2019;</ref><ref type="bibr" coords="1,506.84,485.45,51.16,8.90;1,315.00,496.41,22.69,8.90" target="#b19">Zheng et al., 2020;</ref><ref type="bibr" coords="1,340.64,496.41,65.41,8.90" target="#b4">Liu et al., 2021;</ref><ref type="bibr" coords="1,409.01,496.41,54.35,8.90" target="#b11">Si et al., 2022</ref>]. However, one major weakness of existing approaches is their high time and space complexities, which are often quadratic or cubic in the number of samples n. Recently, a number of anchor-based multiview subspace clustering methods <ref type="bibr" coords="1,463.95,539.35,94.05,9.79">[Chen and Cai, 2011;</ref><ref type="bibr" coords="1,315.00,551.21,73.24,8.90" target="#b12">Sun et al., 2021;</ref><ref type="bibr" coords="1,393.09,551.21,79.32,8.90" target="#b2">Kang et al., 2020;</ref><ref type="bibr" coords="1,477.26,551.21,80.73,8.90" target="#b14">Wang et al., 2022;</ref><ref type="bibr" coords="1,315.00,562.17,69.63,8.90" target="#b5">Liu et al., 2022]</ref> have been developed, which can achieve promising performance with a large reduction in storage and computational time. Generally, the anchor graphs are equally weighted and fused into the consensus graph, and then spectral clustering is performed to obtain the clustering result.</p><p xml:id="_UdNpwP2">On the other hand, inspired by deep neural networks (DNNs), many deep multi-view subspace clustering (DMVSC) methods have been proposed <ref type="bibr" coords="1,481.67,639.58,76.33,9.79" target="#b9">[Peng et al., 2020;</ref><ref type="bibr" coords="1,315.00,651.44,76.12,8.90" target="#b14">Wang et al., 2020;</ref><ref type="bibr" coords="1,394.54,651.44,117.76,8.90" target="#b2">Kheirandishfard et al., 2020;</ref><ref type="bibr" coords="1,515.73,651.44,42.27,8.90;1,315.00,662.40,22.69,8.90" target="#b12">Sun et al., 2019;</ref><ref type="bibr" coords="1,342.27,662.40,72.89,8.90" target="#b20">Zhu et al., 2019;</ref><ref type="bibr" coords="1,419.72,662.40,62.24,8.90" target="#b1">Ji et al., 2017]</ref>. However, most DMVSC methods only consider the feature learning ability in networks, their performance is still limited because this learning process is typically independent of the clustering task.</p><p xml:id="_ne5BvHW">To address the above issues, this paper proposes deep multi-view subspace clustering with anchor graph (DM-CAG). DMCAG firstly utilizes deep autoencoders to learn low-dimensional embedded features by optimizing the reconstruction loss for each view independently. For each view, a set of points are chosen by performing k-means on the learned features to construct anchor graphs. Then, we utilize anchor graphs and embedded features as input to get the subspace representation respectively. Once the desired subspace representation is obtained, the clustering result can be calculated by applying the standard spectral clustering algorithm. Unlike the most existing DMVSC methods, the proposed method does not output the clustering result from spectral clustering directly. Instead, we obtain a unified target distribution from this clustering result primarily, which is more robust than that generated by k-means <ref type="bibr" coords="2,229.65,220.73,67.35,9.79" target="#b16">[Xie et al., 2016;</ref><ref type="bibr" coords="2,54.00,232.58,67.63,8.90" target="#b18">Xu et al., 2022]</ref>, especially for clusters that do not form convex regions or that are not clearly separated. In a selfsupervised manner, the Kullback-Leibler (KL) divergence between the unified target distribution and each view's cluster assignments is optimized. We iteratively refine embedding with pseudo-labels derived from the spectral clustering, which in turn help to obtain complementary information and a more accurate target distribution. Besides, to ensure the consistency among different views and avoid affecting the quality of reconstruction, we adopt contrastive learning on the labels instead of latent features. The main contributions of this paper are summarized as follows:</p><p xml:id="_nYKgEgt">• We propose a novel deep self-supervised model for MVSC. A unified target distribution is generated via spectral clustering which is more robust and can accurately guide the feature learning process. The target distribution and learned features are updated iteratively. In recent years, the application of deep learning technology in multi-view clustering has been a hot topic. Deep embedded clustering (DEC) <ref type="bibr" coords="2,126.46,606.71,70.99,9.79" target="#b16">[Xie et al., 2016]</ref> utilizes the autoencoder to extract the low-dimensional latent representation from raw features and then optimizes the student's t-distribution and target distribution of the feature representation to achieve clustering. In contrast, traditional multi-view clustering algorithms mostly use linear and shallow embedding to learn the latent structure of multi-view data. However, these methods cannot utilize the nonlinear property of data availably, which is crucial to reveal a complex clustering structure <ref type="bibr" coords="2,393.28,56.34,67.02,9.79" target="#b10">[Ren et al., 2022]</ref>. Deep embedded multiview clustering with collaborative training (DEMVC) <ref type="bibr" coords="2,542.51,67.30,15.49,8.90;2,315.00,79.16,55.48,8.90" target="#b17">[Xu et al., 2021a]</ref> is a novel framework for multi-view clustering, in which a shared scheme of the auxiliary distribution is used to improve the performance of the clustering. By assuming that clustering structures with high discriminability play a significant role in clustering, self-supervised discriminative feature learning for multi-view clustering (SDMVC) <ref type="bibr" coords="2,315.00,144.01,65.65,9.79" target="#b18">[Xu et al., 2022]</ref> leverages the global discriminative information contained in all views' embedded features. During the process, the global information will guide the feature learning process of each view. The autoencoder is usually utilized to capture the most important features present in the data. A suitable autoencoder can obtain more robust representations. Deep embedding clustering based on contractive autoencoder (DECCA) <ref type="bibr" coords="2,358.96,220.72,82.34,9.79" target="#b0">[Diallo et al., 2021]</ref> simultaneously disentangles the problem of learned representation by preserving important information from the initial data while pushing the original samples and their augmentations together. With the introduction of the contractive autoencoders, the learned features are better than normal autoencoders. The available information provided by latent graph is often ignored, deep embedded multi-view clustering via jointly learning latent representations and graphs (DMVCJ) <ref type="bibr" coords="2,446.18,308.40,80.54,9.79">[Huang et al., 2022]</ref> utilizes the graphs from latent features to promote the performance of deep MVC models. By learning the latent graphs and feature representations jointly, the available information implied in latent graph can improve the clustering performance. The self-supervised manner is widely used in deep clustering, which is valuable to migrate it to other clustering algorithms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2" xml:id="_CYe83dv">Multi-View Subspace Clustering</head><p xml:id="_6BgGgeg">Although many methods exist in subspace clustering, such as low-rank representation subspace clustering (LRR) <ref type="bibr" coords="2,540.84,420.20,17.16,8.90;2,315.00,432.06,50.05,8.90" target="#b4">[Liu et al., 2012]</ref>, sparse subspace clustering (SSC) <ref type="bibr" coords="2,514.94,431.16,43.06,8.90;2,315.00,443.02,67.48,8.90">[Elhamifar and Vidal, 2013]</ref>, most of the multi-view subspace clustering methods adopt self-representation to obtain the subspace representation. Low-rank tensor constrained multi-view subspace clustering (LMSC) <ref type="bibr" coords="2,416.07,475.00,77.93,9.79">[Zhang et al., 2017]</ref> learns the latent representation based on multi-view features, and generates a common subspace representation rather than that of individual view. Flexible multi-view representation learning for subspace clustering (FMR) <ref type="bibr" coords="2,412.70,518.83,64.04,9.79">[Li et al., 2019]</ref> avoids using partial information for data reconstruction and makes the latent representation well adapted to subspace clustering.</p><p xml:id="_m8dZ4uk">Most of existing MVSC methods are challenging to apply in large-scale data sets. Fortunately, inspired by the idea of anchor graph which can help reduce both storage and computational time, a lot of anchor-based MVSC methods have been proposed. Large-scale multi-view subspace clustering (LMVSC) <ref type="bibr" coords="2,359.36,606.71,73.85,9.79" target="#b2">[Kang et al., 2020</ref>] can be solved in linear time, which selects a small number of instances to construct anchor graphs for each view, and then integrates all anchor graphs from each views. It thus can perform spectral clustering on a small graph. Efficient one-pass multi-view subspace clustering with consensus anchor (CGMSC) <ref type="bibr" coords="2,516.48,661.50,41.52,9.67;2,315.00,673.36,23.24,8.90" target="#b5">[Liu et al., 2022]</ref> unifies fused graph construction and anchor learning into a unified and flexible framework so that they seamlessly contribute mutually and boost performance. Fast multi-view anchor correspondence clustering (FMVACC) <ref type="bibr" coords="3,243.80,56.34,53.20,9.67;3,54.00,68.20,23.24,8.90" target="#b14">[Wang et al., 2022]</ref> finds that the selected anchor sets in multi-view data are not aligned, which may lead to inaccurate graph fusion and degrade the clustering performance, so an anchor alignment module is proposed to solve the anchor-unaligned problem (AUP).</p><p xml:id="_GNVG7S6">With the development of deep neural networks, a number of deep multi-view subspace clustering methods have been proposed. Deep subspace clustering with 1 -norm (DSC-L1) <ref type="bibr" coords="3,71.96,154.97,77.39,9.79" target="#b9">[Peng et al., 2020]</ref> learns nonlinear mapping functions for data to map the original features into another space, and then the affinity matrix is calculated in the new space. Deep multi-view subspace clustering with unified and discriminative learning (DMSC-UDL) <ref type="bibr" coords="3,166.59,198.81,76.26,9.79" target="#b14">[Wang et al., 2020]</ref> integrates local and global structure learning simultaneously, which can make full use of all the information of the original multi-view data. Different from the above-mentioned deep multi-view clustering methods, we combine representation learning and spectral clustering into a unified optimization framework, the clustering results can be sufficiently exploited to guide the representation learning for each view.</p><p xml:id="_DAxrjRU">3 Method Problem Statement.</p><p xml:id="_wUA3mbt">Given multi-view data</p><formula xml:id="formula_0" coords="3,54.00,311.98,243.00,21.72">X = {X v ∈ R d v ×n } V</formula><p xml:id="_tZsfD9A">v=1 with V views, d v is the dimension of the v-th view, and n is the instance number. The target of MVSC is to divide the given instances into k clusters.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1" xml:id="_Ds4MfQm">Motivation</head><p xml:id="_cEJNJgS">Subspace clustering aims to find out an underlying subspace which expresses each point as a linear combination of other points. The final clustering assignment is obtained by performing spectral clustering on the learned subspace. Basically, it can be mathematically denoted as: min</p><formula xml:id="formula_1" coords="3,117.29,437.22,179.72,43.51">X v V v=1 ||X v − X v S v || 2 F + γ||S v || 2 F s.t. S v 0, S v 1 = 1,<label>(1)</label></formula><p xml:id="_2qUzcCX">where S v ∈ R n×n is the learned subspace of v-th view and γ is a trade-off coefficient that controls the sparsity of S v . The constraints on S v ensure that S v is non-negative and j S i j = 1. When the adjacency graphs are obtained, spectral clustering can be performed on S v to get the clustering result. Existing MVSC methods aim at learning concrete subspace effectively and mining global information of all views to improve the clustering assignment quality, but still meet some challenges:</p><p xml:id="_hyVYQsR">(1) Most MVSC methods require high time complexity (at least O(n 2 k)) to calculate the clustering result on raw features, which requires more storage and time and is also difficult to deal with large-scale datasets. Additionally, some DMVSC methods such as <ref type="bibr" coords="3,125.79,628.63,64.38,9.79" target="#b1">[Ji et al., 2017;</ref><ref type="bibr" coords="3,194.00,629.52,63.82,8.90" target="#b3">Li et al., 2021]</ref> focus on learning subspace by nonlinearly embedding the data. Since the connection between the learned subspace and clustering is weak, the learned features may not be optimal for the clustering task.</p><p xml:id="_tBjeySU">(2) From existing self-supervised MVC methods, we can observe that most of them heavily depend on the quality of latent representations to supervise the learning process. <ref type="bibr" coords="3,542.51,56.34,15.49,8.90;3,315.00,68.20,51.26,8.90" target="#b18">[Xu et al., 2022]</ref> fuses the embedded features of all views and utilizes k-means <ref type="bibr" coords="3,383.29,78.26,75.97,9.79" target="#b6">[MacQueen, 1967]</ref> to obtain the global target distribution. However, k-means does not perform well on some data structure such as non-convex structure compared with spectral clustering <ref type="bibr" coords="3,409.01,111.14,64.78,9.79" target="#b7">[Ng et al., 2001]</ref> which is more robust to different distributions. Hence, their obtained pseudo-labels may not reflect clear clustering structure to guide the latent feature learning process.</p><p xml:id="_rJsQHPY">(3) Some views of an instance might have wrong clustering assignment, leading to the clustering inconsistency. Some deep-learning based MVC methods achieve the consistency by directly learning common information on latent features <ref type="bibr" coords="3,315.00,198.81,78.30,9.79">[Cheng et al., 2021]</ref>, which may reduce the complementarity of each view's information due to the conflict between learning exact latent representations and achieving consistency.</p><p xml:id="_ahf7YfC">To address the above-mentioned issues, we propose a novel DMCAG framework as shown in Fig. <ref type="figure" coords="3,471.72,243.54,3.74,8.90">1</ref>. We use the anchor method to construct the graph matrix on latent features of each view which requires less time and storage. After that, we obtain global pseudo-labels by performing spectral clustering on the integrated anchor graph. Since spectral clustering is more robust to the data distribution, our self-supervised process can learn higher discriminative information from each view. Then, we adopt contrastive learning on pseudo-labels of latent features to maintain the view-private information and achieve the clustering consistency among all views.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2" xml:id="_YaK2j2K">Learning Anchor Graph via Autoencoders</head><p xml:id="_9J5GeMc">As for much redundancy in the raw data, we utilize the deep autoencoder to extract the latent representations of all views. Through the encoder f v θ v and decoder g v φ v , where θ v and φ v are learnable parameters, X v is encoded as Z v ∈ R l×n (l is the same for all views) via f v θ v and Z v is decoded as Xv via g v φ v . The reconstruction loss is defined as:</p><formula xml:id="formula_2" coords="3,359.13,447.78,198.87,29.69">L r = V v=1 L v r = V v=1 ||X v − g v φ v ( f v θ v (X v ))|| 2 F .<label>(2)</label></formula><p xml:id="_cUYT6Bx">Inspired by <ref type="bibr" coords="3,362.40,483.17,73.46,9.79" target="#b2">[Kang et al., 2020]</ref>, we adopt the anchor graph to replace the full adjacency matrix S , which is formulated as:</p><formula xml:id="formula_3" coords="3,356.80,510.90,201.21,44.51">min C v L v a = V v=1 ||Z v − A v (C v ) T || 2 F + γ||C v || 2 F s.t. C v 0, (C v ) T 1 = 1,<label>(3)</label></formula><p xml:id="_QTa37Mc">where A v ∈ R l×m (m is the anchor number) is a set of clustering centroids through k-means on the embedded features Z v , and C v ∈ R n×m is the anchor graph matrix reflecting relationship between Z v and A v . The problem above can be solved by convex quadratic programming. We refer the readers to <ref type="bibr" coords="3,315.00,617.80,55.45,9.79" target="#b15">[Wolfe, 1959]</ref> for more details about quadratic programming.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3" xml:id="_R5ZkpEB">Spectral Self-Supervised Learning</head><p xml:id="_cxjBTna">As <ref type="bibr" coords="3,329.41,650.54,68.88,9.79" target="#b7">[Ng et al., 2001]</ref> shows, for clusters that are not clearly separated or do not form convex regions, the spectral method can also reliably find clustering assignment. Hence, we use spectral clustering to obtain more robust global target distribution to guide the self-training. Spectral clustering [Ng et</p><formula xml:id="formula_4" coords="4,57.41,67.07,494.28,268.07">𝑋 ! 𝑓 ! ! " 𝑋 " 𝑓 ! " # 𝑍 ! 𝑍 " 𝑔 $ ! " 𝑔 $ " # 𝑋 # ! 𝑋 # " 𝐿 ! " 𝐿 ! # 𝐿 $ " 𝐿 $ # … 𝑄 ! 𝑄 " 𝑃 … Spectral clustering Target distribution clustering consistency 𝐿 ! 𝑍 ! 𝑍 " 𝐴 !</formula><p xml:id="_Gh7JVtR">𝐴 "</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_4KT6zrX">Affinity Matrix</head><p xml:id="_7sRngaj">Figure <ref type="figure" coords="4,79.48,357.88,3.49,8.01">1</ref>: The framework of DMCAG. For the v-th view, X v denotes the input data, Z v denotes the embedded features, A v is a set of clustering centroids with the number of m, and Q v is the soft cluster assignment distribution. P denotes the unified target distribution obtained through spectral clustering.</p><p xml:id="_XRExbrW">al., 2001] can be mathematically described as finding Q ∈ R n×k by maximizing: max</p><formula xml:id="formula_5" coords="4,119.78,431.58,177.22,16.54">Q T r (Q T S Q) s.t. Q T Q = I.<label>(4)</label></formula><p xml:id="_t33XTwa">Following Theorem 1 introduced by [Chen and <ref type="bibr" coords="4,253.78,454.43,43.22,8.90" target="#b0">Cai, 2011;</ref><ref type="bibr" coords="4,54.00,465.39,73.66,8.90" target="#b2">Kang et al., 2020]</ref>, we present an approach to approximate the singular vectors of S in latent space. Theorem 1. [Chen and <ref type="bibr" coords="4,152.71,490.05,42.75,8.71" target="#b0">Cai, 2011;</ref><ref type="bibr" coords="4,198.05,489.98,72.56,8.90" target="#b2">Kang et al., 2020]</ref> Given a similarity matrix S , which can be decomposed as (C T )C. Define singular value decomposition (SVD) of C as U∧V T , then we have max</p><formula xml:id="formula_6" coords="4,86.84,535.41,210.16,17.30">Q T Q=I T r (Q T S Q) ⇐⇒ min Q T Q=I,H ||C − QH T || 2 F .<label>(5)</label></formula><p xml:id="_cQjmDBA">And the optimal solution Q * is equal to U.</p><p xml:id="_9bfgX6a">Proof. From Eq. ( <ref type="formula" coords="4,129.08,575.88,3.53,8.90" target="#formula_6">5</ref>), one can observe that the optimal H * = C T Q. Substituting H * = C T Q into Eq. ( <ref type="formula" coords="4,228.16,586.84,3.53,8.90" target="#formula_6">5</ref>), the following equivalences hold min</p><formula xml:id="formula_7" coords="4,76.71,610.35,199.42,39.12">Q T Q=I,H ||C − QH T || 2 F ⇐⇒ min Q T Q=I ||C − QQ T C|| 2 F ⇐⇒ max Q T Q=I T r (Q T CC T Q) ⇐⇒ max Q T Q=I T r (Q T S Q).</formula><p xml:id="_DAFzKdb">Furthermore, one can obtain S = CC T = U∧V T (U∧V T ) T = U∧(V T V)∧U T = U∧ 2 U T . Therefore, we could use left singular vectors of C to approximate the eigenvectors of S .</p><p xml:id="_jN786zr">According to Theorem 1, we calculate eigenvectors {U v } V v=1 of {C v } V v=1 to approximate the eigenvectors of full similarity matrix. To fully exploit the complementary information across all views, we concatenate all eigenvectors U = {U 1 , U 2 , . . . , U V } ∈ R n× (Vk) to generate the global feature via the spectral method. After obtaining the global feature U, we apply k-means to calculate the cluster centroids {µ j } k j=1 :</p><p xml:id="_Nu3ZHEd">min</p><formula xml:id="formula_8" coords="4,379.55,492.49,174.58,29.68">µ 1 ,...,µ k n i=1 k j=1 U(i, :) − µ j 2 . (<label>6</label></formula><formula xml:id="formula_9" coords="4,554.13,502.61,3.87,8.90">)</formula><p xml:id="_jQN2tZ6">Similiar to DEC <ref type="bibr" coords="4,382.11,527.57,66.41,9.79" target="#b16">[Xie et al., 2016]</ref>, which is a popular singleview deep clustering method utilizing Student's t-distribution [Van der <ref type="bibr" coords="4,353.79,550.38,107.07,8.90" target="#b13">Maaten and Hinton, 2008]</ref>, the soft clustering assignment t i j between global feature U and each cluster centroid µ j could be computed as:</p><formula xml:id="formula_10" coords="4,374.18,586.37,179.95,32.71">t i j = (α + U(i, :) − µ j 2 ) −1 j (α + U(i, :) − µ j 2 ) −1 . (<label>7</label></formula><formula xml:id="formula_11" coords="4,554.13,598.67,3.87,8.90">)</formula><p xml:id="_uFXtUeX">To increase the discriminability of the global soft assignments, the target distribution P is formulated as:</p><formula xml:id="formula_12" coords="4,396.92,648.05,157.21,29.73">p i j = (t 2 i j / i t i j ) j (t 2 i j / i t i j ) . (<label>8</label></formula><formula xml:id="formula_13" coords="4,554.13,658.77,3.87,8.90">)</formula><p xml:id="_wJ3sPNr">We obtain soft clustering assignment (pseudo-label)</p><formula xml:id="formula_14" coords="4,318.42,680.76,239.58,23.29">Q v = q v</formula><p xml:id="_yqA8KXJ">1 , q v 2 , . . . , q v N of each view, where q v i j can be considered as the probability of the i-th instance belonging to the j-th cluster in the v-th view. It is defined as:</p><formula xml:id="formula_15" coords="5,120.84,84.70,172.29,40.15">q v i j = (1 + z v i − µ v j 2 ) −1 j (1 + z v i − µ v j 2 ) −1 , (<label>9</label></formula><formula xml:id="formula_16" coords="5,293.13,101.16,3.87,8.90">)</formula><p xml:id="_ENvSj7X">where µ v j denotes the j-th cluster centroid of the v-th view. Overall, we use Kullback-Leibler divergence between the unified target distribution P and view-private soft assignment distribution Q v to guide autoencoders to optimize latent features containing higher discriminative information, which can be formulated as:</p><formula xml:id="formula_17" coords="5,91.85,210.36,201.00,29.68">L v c = D KL (P Q v ) = V v=1 n i=1 k j=1 p i j log p i j q v i j . (<label>10</label></formula><formula xml:id="formula_18" coords="5,292.85,220.48,4.15,8.90">)</formula><p xml:id="_uSZrxV9">As the target distribution obtained from spectral clustering is adaptive to different data distributions, we can get more explicit cluster structures to guide the self-training process compared with k-means. To extract embedded features that reflect correct information of raw features and learn an accurate assignment for clustering, we jointly optimize the reconstruction of autoencoders and self-supervised learning. The total loss function L s is defined as:</p><formula xml:id="formula_19" coords="5,139.19,347.21,153.66,29.69">L s = V v=1 (L v r + L v c ). (<label>11</label></formula><formula xml:id="formula_20" coords="5,292.85,357.33,4.15,8.90">)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4" xml:id="_gwGQTrG">Label Consistency Learning</head><p xml:id="_XHJY952">To guarantee the same soft assignment distribution of all views represent the same cluster, we need to achieve the consistency of pseudo-labels. We adopt contrastive learning to the soft assignment obtained from Eq. ( <ref type="formula" coords="5,225.77,438.18,3.53,8.90" target="#formula_15">9</ref>). For the m-th view, Q m (:, j) have (Vk − 1) pairs, where the (V − 1) pairs {Q m (:, j), Q n (:, j)} m n are positive and the rest V(k − 1) pairs are negative. Thereby the contrastive loss can be defined as:</p><formula xml:id="formula_21" coords="5,67.25,490.65,212.57,29.69">L mn Q = − 1 k k j=1 log e d(Q m (:, j),Q n (:, j))/τ k k =1 v=m,n e d(Q m (:, j),Q v (:,k ))/τ − e 1/τ</formula><p xml:id="_H6Xdkzk">, (12) where d(•, •) represents the cosine distance to meausure the similiarty between two labels, τ is the temperature parameter. Moreover, to avoid the samples being assigned into a single cluster, we use the cross entropy as a regularization term. Generally, the label consistency learning is formulated as:</p><formula xml:id="formula_22" coords="5,97.88,596.66,199.12,29.68">L Q = 1 2 V m=1 n m L mn Q + V m=1 k j=1 s m j log s m j ,<label>(13)</label></formula><p xml:id="_tRtP2Dx">where s m j =<ref type="foot" coords="5,108.29,637.07,3.49,6.23" target="#foot_0">1</ref> N N i=1 q m i j . After finetuning the labels via contrastive learning, the similarities of positive pairs are enhanced and thereby the obtained latent features have clearer clustering structure. At last, the clustering prediction y is obtained through the target distribution P calculated by performing k-means on U.</p><p xml:id="_bmuaNjU">Algorithm 1 Deep Multi-View Subspace Clustering with Anchor Graph (DMCAG)</p><formula xml:id="formula_23" coords="5,324.96,83.16,189.10,19.90">Input: multi-view dataset X , cluster number k. Initialization: Get {θ v , φ v , µ v , A v } V</formula><p xml:id="_GPkqhq6">v=1 by pretraining autoencoders and k-means.</p><formula xml:id="formula_24" coords="5,324.96,105.28,233.04,32.38">Initialize {C v } V v=1 via quadratic pro- gramming. Update {θ v , φ v Q v } V</formula><p xml:id="_F9pKcmy">v=1 by performing self-supervised learning via Eq. ( <ref type="formula" coords="5,375.32,139.72,7.64,8.90" target="#formula_19">11</ref>). Performing contrastive learning on {Q v } V v=1 via Eq. ( <ref type="formula" coords="5,532.95,150.68,7.64,8.90" target="#formula_22">13</ref>). Obtain {C v } V v=1 via Eq. ( <ref type="formula" coords="5,420.41,163.36,3.53,8.90" target="#formula_3">3</ref>). Output: Cluster assignment y via Eq. ( <ref type="formula" coords="5,482.17,174.32,3.53,8.90" target="#formula_8">6</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5" xml:id="_tCKNFeG">Optimization</head><p xml:id="_vscPccJ">The detailed optimization procedure is summarized in Algorithm 1. We adopt the Adam method to train the autoencoders. At the beginning, autoencoders are initialized by Eq. ( <ref type="formula" coords="5,318.53,254.72,3.53,8.90" target="#formula_2">2</ref>). After that, we solve Eq. ( <ref type="formula" coords="5,442.80,254.72,3.87,8.90" target="#formula_3">3</ref>) via convex quadratic programming to obtain U and calculate the global target distribution P. Then, the spectral self-supervised learning is adopted to learn more representive embeddings. After performing the self-supervised learning, the contrastive learning is conducted to achieve the clustering consistency. At last, we run k-means on U to obtain the final clustering result y:  <ref type="bibr" coords="5,447.66,485.08,20.75,8.90">[216,</ref><ref type="bibr" coords="5,470.90,485.08,12.45,8.90">76,</ref><ref type="bibr" coords="5,485.85,485.08,12.45,8.90">64,</ref><ref type="bibr" coords="5,500.79,485.08,7.47,8.90">6,</ref><ref type="bibr" coords="5,510.75,485.08,17.43,8.90">240,</ref><ref type="bibr" coords="5,530.68,485.08,13.28,8.90">47]</ref> Table <ref type="table" coords="5,373.30,506.37,3.49,8.01">1</ref>: The statistics of experimental datasets.  gories corresponding to numerals 0-9. Each sample has six visual views.</p><formula xml:id="formula_25" coords="5,400.90,342.54,152.95,17.30">y i = argmax j (p i j ).<label>(14</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_5E9fqn3">Datasets. As shown in</head><p xml:id="_R4UMjXs">Comparison Methods. Comparsion methods include 3 traditional single-view clustering methods, i.e., k-means <ref type="bibr" coords="6,272.66,476.58,24.34,8.90;6,54.00,488.43,52.44,8.90">[Mac-Queen, 1967]</ref>, SC (Spectral clustering <ref type="bibr" coords="6,208.16,487.53,63.66,9.79" target="#b7">[Ng et al., 2001]</ref>), and DEC (Deep embedded clustering <ref type="bibr" coords="6,192.69,498.49,69.29,9.79" target="#b16">[Xie et al., 2016]</ref>), and 6 state-of-art MVC methods, i.e., CSMSC (Consistent and specific multi-view subspace clustering <ref type="bibr" coords="6,200.09,521.31,65.03,8.90" target="#b5">[Luo et al., 2018]</ref>), FMR (Flexible multi-view representation learning for subspace clustering), SAMVC (Self-paced and auto-weighted multiview clustering <ref type="bibr" coords="6,121.36,553.29,73.97,9.79" target="#b10">[Ren et al., 2020]</ref>), LMVSC (Large-scale multi-view subspace clustering in linear time <ref type="bibr" coords="6,244.36,564.25,52.64,9.67;6,54.00,576.10,20.75,8.90" target="#b2">[Kang et al., 2020]</ref>), CGMSC (Multi-view subspace clustering with adaptive locally consistent graph regularization <ref type="bibr" coords="6,224.27,586.16,64.43,9.79" target="#b4">[Liu et al., 2021]</ref>), and FMVACC (Fast multi-view anchor-correspondence clustering <ref type="bibr" coords="6,79.73,608.08,74.46,9.79" target="#b14">[Wang et al., 2022]</ref>).</p><p xml:id="_3jYgvaA">Evaluation Metrics. We evaluate the effectiveness of clustering by three commonly used metrics, i.e., clustering accuracy (ACC), normalized mutual information (NMI), and adjusted rand index (ARI). A higher value of each evaluation metric indicates a better clustering performance.</p><p xml:id="_dMw7sYw">Implementation. The convolutional (Conv) and fully connected (Fc) neural networks are applied according to differ-ent types of data. For the image datasets, i.e., MNIST-USPS and Multi-COIL-10, we use the convolutional autoencoder (CAE) for each view to learn embedded features. The encoder is Input-Conv 32 4 -Conv 64 4 -Conv 64 4 -Fc 10 . Since all views of BDGP, UCI-digits, Fashion-MV, and HW are vector data, we utilize fully connected autoencoder. For each view, the encoder is Input-Fc 500 -Fc 500 -Fc 2000 -Fc 10 . All the decoders are symmetric with the corresponding encoders. Following <ref type="bibr" coords="6,315.00,526.58,76.76,9.79" target="#b2">[Kang et al., 2020]</ref>, we select anchor numbers in the range <ref type="bibr" coords="6,315.00,538.43,15.77,8.90">[10,</ref><ref type="bibr" coords="6,334.59,538.43,16.60,8.90">100]</ref>. We select γ from {0.1, 1, 10}. Temperature parameter τ is set to 1 and α is set to 0.001 for all experiments. All experiments are performed on Windows PC with Intel (R) Core (TM) i5-12600K CPU@3.69 GHz, 32.0 GB RAM, and GeForce RTX 3070ti GPU (8 GB caches). For fair comparison, all baselines are tuned to the best performance according to the corresponding papers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2" xml:id="_TCGEAvk">Results and Analysis</head><p xml:id="_8pa2KxE">Comparison with Baselines. The comparison of DMCAG and baseline methods is shown in Table <ref type="table" coords="6,485.67,651.44,3.74,8.90" target="#tab_2">2</ref>, where the best result is bolded in each row and the second-best result is underlined. Due to the high complexity, the result of FMR is not obtained on Fasion-MV dataset after running 24 hours. From Table <ref type="table" coords="6,367.74,695.28,3.74,8.90" target="#tab_2">2</ref>, we can observe that the proposed method  achieves the best performance among all baseline models on six datasets, illustrating the validity of our method. Especially for Multi-COIL-10 and Fasion-MV, our method makes greater improvement than existing methods. The main reason is that we conduct clearer self-supervised learning with latent anchor graphs and achieve clustering consistency via contrastive learning on pseudo-labels. Besides, many subspace clustering methods do not perform well on BDGP dataset due to the high dimension of one view's feature, however, our method outperforms due to the ability of extracting features from high-dimension data.</p><p xml:id="_KsaNN2S">Ablation Studies. To verify the effectiveness of the proposed method, we further conduct a set of ablation studies on the loss components from Eqs. ( <ref type="formula" coords="7,203.62,513.85,8.30,8.90" target="#formula_17">10</ref>) and ( <ref type="formula" coords="7,241.09,513.85,7.64,8.90" target="#formula_22">13</ref>). L r is the reconstruction loss of autoencoders. L s aims to mine global information and supervise the learning process with global target distribution. L Q is optimized to achieve the consistency among all views. In the Table <ref type="table" coords="7,198.28,557.68,3.74,8.90" target="#tab_3">3</ref>, (A) is optimized without self-supervised learning and contrastive learning, (B) is optimized without contrastive learning, and (C) is optimized without self-supervised process. As shown in Table <ref type="table" coords="7,273.74,590.56,3.74,8.90" target="#tab_3">3</ref>, we can find that (B) and (C) perform better than (A). (D) (our proposed model with all loss components) performs the best, illustrating that each loss component is important for the final clustering result.</p><p xml:id="_JmPyYa4">Parameter Sensitivity Analysis. As main hyperparameters of the proposed method are anchor number and sparsity coefficient, we test the general clustering performance with different settings to show the stability of DMCAG. From Fig. <ref type="figure" coords="7,278.09,684.32,4.98,8.90" target="#fig_0">2</ref> we can observe that our method in a certain range of parameters is insensitive to the clustering results. In addition, we can find that too many anchors will reduce clustering performance as the anchors' information may not be representative. A too large or too small γ also reduces the final clustering performence, of which the reason is that the inappropriate sparsity constraint could lead to extra errors.</p><p xml:id="_xtUVBMT">Visualization of Clustering Results. We visualize the clustering results on four datasets via t-SNE [ <ref type="bibr" coords="7,496.60,449.05,61.40,9.79;7,315.00,460.90,73.06,8.90" target="#b13">Van der Maaten and Hinton, 2008]</ref>, which reduces the dimension of the extracted feature vectors to 2D. As shown in Fig. <ref type="figure" coords="7,521.70,471.86,3.74,8.90" target="#fig_1">3</ref>, where different colors denote the labels of different nodes, we can find that the final clustering structures are clearly visible, especially for Multi-COIL-10 and MNIST-USPS, which further demonstrates the effectiveness of our DMCAG method.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5" xml:id="_auqVjWv">Conclusion</head><p xml:id="_cMqvbwj">In this paper, we proposed a novel DMCAG framework for deep multi-view subspace clustering. By introducing the latent anchor graph and spectral self-supervised learning, we can effectively perform spectral clustering to obtain more robust global target distribution and significantly improve the latent features structure for clustering. In addition, we adopt the contrastive learning on the soft assignment of each view to achieve the consistency among all views. Extensive experiments on six multi-view data sets and ablation studies have demonstrated the superiority of the proposed method. Moreover, it is an interesting future work to further improve the efficiency of constructing the latent anchor subspace to deal with large-scale data, and find more robust target distribution.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="7,157.74,176.51,296.53,8.01;7,62.56,54.00,148.79,111.63"><head>Figure 2 :</head><label>2</label><figDesc xml:id="_VWuYmr4">Figure 2: Clustering performance with different parameter settings on HW dataset.</figDesc><graphic coords="7,62.56,54.00,148.79,111.63" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="7,190.94,335.09,230.11,8.01;7,60.34,197.51,133.06,99.79"><head>Figure 3 :</head><label>3</label><figDesc xml:id="_JsMMBWk">Figure 3: Visualization of the clustering results on four datasets.</figDesc><graphic coords="7,60.34,197.51,133.06,99.79" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="5,315.00,343.28,243.00,150.69"><head></head><label></label><figDesc xml:id="_kPU75bu">)</figDesc><table coords="5,315.00,372.77,232.69,121.21"><row><cell cols="2">4 Experiments</cell><cell></cell><cell></cell></row><row><cell cols="3">4.1 Experimental Settings</cell><cell></cell></row><row><cell>Dataset</cell><cell cols="2">Sample View</cell><cell>Dimension</cell></row><row><cell cols="2">MNIST-USPS 5000</cell><cell>2</cell><cell>[[28,28], [28,28]]</cell></row><row><cell cols="2">Multi-COIL-10 720</cell><cell cols="2">3 [[32,32], [32,32], [32,32]]</cell></row><row><cell>BDGP</cell><cell>2500</cell><cell>2</cell><cell>[1750, 79]</cell></row><row><cell>UCI-digits</cell><cell>2000</cell><cell>3</cell><cell>[240, 76, 64 ]</cell></row><row><cell cols="3">Fashion-MV 10000 3</cell><cell>[784, 784, 784]</cell></row><row><cell>HW</cell><cell>2000</cell><cell>6</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="5,315.00,534.24,243.00,140.40"><head>Table 2 :</head><label>2</label><figDesc xml:id="_ffTvPmk">Table1, our experiments are carried out on six datasets. Specifically, MNIST-USPS<ref type="bibr" coords="5,509.33,544.30,48.67,9.67;5,315.00,556.16,23.24,8.90" target="#b8">[Peng et al., 2019]</ref> collects from two handwritten digital image datasets, which are treated as two views. Multi-COIL-10 [<ref type="bibr" coords="5,535.82,566.22,22.18,9.67;5,315.00,578.08,43.79,8.90" target="#b17">Xu et al., 2021b]</ref> collects 720 grayscale object images with size of 32 × 32 from 10 clusters, where the different views represent various poses of objects. BDGP<ref type="bibr" coords="5,446.57,599.10,68.08,9.79" target="#b0">[Cai et al., 2012]</ref> contains 5 different types of drosophila. Each sample has the visual and textual views. UCI-digits 1 is a collection of 2000 samples with 3 views, which has 10 categories. Fashion-MV<ref type="bibr" coords="5,525.86,631.97,32.14,9.67;5,315.00,643.83,38.23,8.90" target="#b15">[Xiao et al., 2017]</ref> contains images from 10 categories, where we treat three different styles of one object as three views. Handwritten Numerals (HW) 2 contains 2000 samples from 10 cate-Results of all methods on six datasets. The best result in each row is shown in bold and the second-best is underlined.</figDesc><table coords="6,60.71,55.35,490.58,341.85"><row><cell>Datasets</cell><cell>K-means</cell><cell>SC</cell><cell cols="8">DEC CSMSC FMR SAMVC LMVSC CGMSC FMVACC</cell><cell>Ours</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>ACC</cell><cell></cell><cell></cell><cell></cell></row><row><cell>MNIST-USPS</cell><cell>76.78</cell><cell cols="2">65.96 73.10</cell><cell cols="2">72.68</cell><cell>63.02</cell><cell>69.65</cell><cell>38.54</cell><cell>91.22</cell><cell>98.67</cell><cell>99.58</cell></row><row><cell>Multi-COIL-10</cell><cell>73.36</cell><cell cols="2">33.75 74.01</cell><cell cols="2">97.64</cell><cell>78.06</cell><cell>84.31</cell><cell>63.79</cell><cell>99.86</cell><cell>93.20</cell><cell>100.00</cell></row><row><cell>BDGP</cell><cell>43.24</cell><cell cols="2">51.72 94.78</cell><cell cols="2">53.48</cell><cell>95.12</cell><cell>51.31</cell><cell>35.85</cell><cell>45.60</cell><cell>58.63</cell><cell>98.00</cell></row><row><cell>UCI-digits</cell><cell>79.50</cell><cell cols="2">63.35 87.35</cell><cell cols="2">88.20</cell><cell>80.10</cell><cell>74.20</cell><cell>74.60</cell><cell>76.95</cell><cell>89.47</cell><cell>95.60</cell></row><row><cell>Fashion-MV</cell><cell>70.93</cell><cell cols="2">53.54 67.07</cell><cell cols="2">77.61</cell><cell>-</cell><cell>62.86</cell><cell>43.43</cell><cell>82.79</cell><cell>79.62</cell><cell>97.89</cell></row><row><cell>HW</cell><cell>75.45</cell><cell cols="2">77.69 81.13</cell><cell cols="2">89.80</cell><cell>86.05</cell><cell>76.37</cell><cell>91.65</cell><cell>69.10</cell><cell>89.45</cell><cell>97.90</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>NMI</cell><cell></cell><cell></cell><cell></cell></row><row><cell>MNIST-USPS</cell><cell>72.33</cell><cell cols="2">58.11 71.46</cell><cell cols="2">72.64</cell><cell>60.90</cell><cell>60.99</cell><cell>63.09</cell><cell>88.24</cell><cell>96.74</cell><cell>99.86</cell></row><row><cell>Multi-COIL-10</cell><cell>76.91</cell><cell cols="2">12.31 77.43</cell><cell cols="2">96.17</cell><cell>80.04</cell><cell>92.09</cell><cell>75.83</cell><cell>99.68</cell><cell>93.39</cell><cell>100.00</cell></row><row><cell>BDGP</cell><cell>56.94</cell><cell cols="2">58.91 86.92</cell><cell cols="2">39.92</cell><cell>87.69</cell><cell>45.15</cell><cell>36.69</cell><cell>27.15</cell><cell>36.81</cell><cell>94.69</cell></row><row><cell>UCI-digits</cell><cell>77.30</cell><cell cols="2">66.60 79.50</cell><cell cols="2">80.68</cell><cell>72.13</cell><cell>74.73</cell><cell>74.93</cell><cell>77.62</cell><cell>84.35</cell><cell>91.10</cell></row><row><cell>Fashion-MV</cell><cell>65.61</cell><cell cols="2">57.72 72.34</cell><cell cols="2">77.91</cell><cell>-</cell><cell>68.78</cell><cell>46.02</cell><cell>86.48</cell><cell>76.31</cell><cell>95.40</cell></row><row><cell>HW</cell><cell>78.58</cell><cell cols="2">86.91 82.61</cell><cell cols="2">82.95</cell><cell>76.49</cell><cell>84.41</cell><cell>84.43</cell><cell>81.83</cell><cell>85.98</cell><cell>95.25</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>ARI</cell><cell></cell><cell></cell><cell></cell></row><row><cell>MNIST-USPS</cell><cell>63.53</cell><cell cols="2">48.64 63.23</cell><cell cols="2">64.08</cell><cell>49.73</cell><cell>74.58</cell><cell>27.74</cell><cell>86.46</cell><cell>97.65</cell><cell>99.07</cell></row><row><cell>Multi-COIL-10</cell><cell>64.85</cell><cell cols="2">14.02 65.66</cell><cell cols="2">94.89</cell><cell>70.59</cell><cell>88.75</cell><cell>55.05</cell><cell>99.69</cell><cell>92.47</cell><cell>100.00</cell></row><row><cell>BDGP</cell><cell>26.04</cell><cell cols="2">31.56 87.02</cell><cell cols="2">33.59</cell><cell>88.38</cell><cell>19.60</cell><cell>35.06</cell><cell>21.99</cell><cell>44.25</cell><cell>95.11</cell></row><row><cell>UCI-digits</cell><cell>71.02</cell><cell cols="2">54.07 75.69</cell><cell cols="2">76.72</cell><cell>65.53</cell><cell>74.25</cell><cell>74.27</cell><cell>70.08</cell><cell>83.33</cell><cell>90.59</cell></row><row><cell>Fashion-MV</cell><cell>56.89</cell><cell cols="2">42.61 62.91</cell><cell cols="2">70.28</cell><cell>-</cell><cell>56.65</cell><cell>41.12</cell><cell>78.27</cell><cell>72.92</cell><cell>95.48</cell></row><row><cell>HW</cell><cell>66.72</cell><cell cols="2">75.26 74.25</cell><cell cols="2">79.50</cell><cell>72.59</cell><cell>73.87</cell><cell>83.20</cell><cell>69.54</cell><cell>85.04</cell><cell>95.40</cell></row><row><cell></cell><cell cols="2">Components</cell><cell cols="3">MNIST-USPS</cell><cell></cell><cell>Fashion-MV</cell><cell></cell><cell>BDGP</cell></row><row><cell></cell><cell cols="4">L r L s L Q ACC NMI</cell><cell>ARI</cell><cell cols="2">ACC NMI</cell><cell>ARI</cell><cell>ACC NMI</cell><cell>ARI</cell></row><row><cell>(A)</cell><cell></cell><cell></cell><cell cols="8">64.26 65.37 52.03 62.80 71.57 55.56 37.96 36.42 14.10</cell></row><row><cell>(B)</cell><cell></cell><cell></cell><cell cols="8">83.44 82.34 73.67 75.12 79.65 67.08 61.88 65.13 46.56</cell></row><row><cell>(C)</cell><cell></cell><cell></cell><cell cols="8">84.10 90.21 82.79 93.38 90.78 87.55 71.28 64.34 56.15</cell></row><row><cell cols="11">(D) 99.58 98.86 99.07 97.89 95.40 95.48 98.00 94.69 95.11</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="6,236.53,409.59,138.93,8.01"><head>Table 3 :</head><label>3</label><figDesc xml:id="_abhnRhJ">Ablation studies on DMCAG.</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0">https://archive.ics.uci.edu/ml/datasets/Multiple%2BFeatures</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1">https://archive.ics.uci.edu/ml/datasets.php</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_cpkvGkj">Acknowledgment</head><p xml:id="_KFPMMwQ">This work was supported in part by Sichuan Science and Technology Program (Nos.</p><p xml:id="_DH5VMV6">2022YFS0047 and 2022YFS0055), Medico-Engineering Cooperation Funds from the University of Electronic Science and Technology of China (No. ZYGX2021YGLH022), National Science Foundation (MRI 2215789), and Lehigh's grants (Nos. S00010293 and 001250).</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="8,58.29,173.88,238.71,9.79;8,65.62,185.74,231.38,8.90;8,65.62,196.70,231.38,8.90;8,65.62,207.66,118.17,8.90;8,54.00,221.20,243.00,9.79;8,65.62,233.06,231.38,8.90;8,65.62,244.01,146.37,8.90;8,54.00,257.56,243.00,9.79;8,65.62,269.41,231.38,8.90;8,65.62,280.37,231.38,8.90;8,65.62,291.33,126.18,8.90;8,54.00,304.88,243.00,9.79;8,65.62,316.73,231.38,8.90;8,65.62,327.69,231.38,8.90;8,65.62,338.65,174.16,8.90;8,54.00,352.19,243.00,9.79;8,65.62,364.05,231.38,8.90;8,65.62,375.01,189.20,8.90;8,54.00,388.55,243.00,9.79;8,65.62,400.41,231.38,8.90;8,65.62,411.37,231.38,8.90;8,65.62,422.33,159.58,8.90" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_yrUnx2Z">Joint stage recognition and anatomical annotation of drosophila gene expression patterns</title>
+		<author>
+			<persName coords=""><surname>Cai</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2205.03803</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_PpuJBQ2">Yazhou Ren, Xiaorong Pu, and Lifang He. Deep embedded multi-view clustering via jointly learning latent representations and graphs</title>
+		<title level="s" xml:id="_ySR4C26">Ehsan Elhamifar and René Vidal</title>
+		<editor>
+			<persName><forename type="first">Cai</forename><surname>Chen</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Xinlei</forename><surname>Chen</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Deng</forename><surname>Cai</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Zongmo Huang</publisher>
+			<date type="published" when="2011">2012. 2012. 2011. 2021. 2021. 2021. 2013. 2013. 2022. 2022</date>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="2765" to="2781" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>Sparse subspace clustering: Algorithm, theory, and applications</note>
+</biblStruct>
+
+<biblStruct coords="8,57.32,435.87,239.68,9.79;8,65.62,447.73,231.38,8.90;8,65.62,458.69,106.98,8.90" xml:id="b1">
+	<monogr>
+		<title level="m" type="main" xml:id="_trCePZS">Deep subspace clustering networks. NeurIPS, 30</title>
+		<author>
+			<persName coords=""><forename type="first">Ji</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,58.98,472.23,238.02,9.79;8,65.62,484.09,231.38,8.90;8,65.62,495.04,231.38,8.90;8,65.62,506.00,123.96,8.90;8,54.00,519.55,155.68,9.79;8,229.87,520.45,67.13,8.90;8,65.62,531.40,231.38,8.90;8,65.62,542.36,231.38,8.90;8,65.62,553.32,136.90,8.90;8,54.00,566.87,243.00,9.79;8,65.62,578.72,231.38,8.90;8,65.62,589.68,231.38,8.90;8,65.62,600.64,97.40,8.90" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_pxNt3tU">Flexible multi-view representation learning for subspace clustering</title>
+		<author>
+			<persName coords=""><surname>Kang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_DAwTRz8">WACVW</title>
+				<imprint>
+			<date type="published" when="2019">2020. 2020. 2020. 2020. 2019. 2019</date>
+			<biblScope unit="page" from="2916" to="2922" />
+		</imprint>
+	</monogr>
+	<note>IJCAI</note>
+</biblStruct>
+
+<biblStruct coords="8,54.00,614.18,243.00,9.79;8,65.62,626.04,231.38,8.90;8,65.62,637.00,231.38,8.90;8,65.62,647.96,78.87,8.90" xml:id="b3">
+	<monogr>
+		<title level="m" type="main" xml:id="_RTBxXuX">Self-guided deep multiview subspace clustering via consensus affinity regularization</title>
+		<author>
+			<persName coords=""><surname>Li</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021">2021. 2021</date>
+			<publisher>IEEE T CY-BERNETICS</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,58.29,661.50,238.71,9.79;8,65.62,673.36,231.38,8.90;8,65.62,684.32,231.38,8.90;8,65.62,695.28,86.61,8.90;8,315.00,56.34,243.00,9.79;8,326.62,68.20,231.38,8.90;8,326.62,79.16,231.38,8.90;8,326.62,90.11,145.28,8.90" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_W3FN55B">Multi-view subspace clustering with adaptive locally consistent graph regularization</title>
+		<author>
+			<persName coords=""><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VY6pDZt">Neural Computing and Applications</title>
+		<imprint>
+			<biblScope unit="volume">TPAMI</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="15397" to="15412" />
+			<date type="published" when="2012">2012. 2012. 2021. 2021</date>
+		</imprint>
+	</monogr>
+	<note>Robust recovery of subspace structures by low-rank representation</note>
+</biblStruct>
+
+<biblStruct coords="8,319.29,103.48,238.71,9.79;8,326.62,115.34,231.38,8.90;8,326.62,126.30,231.38,8.90;8,326.62,137.25,200.32,8.90;8,315.00,150.62,243.00,9.79;8,326.62,162.48,231.38,8.90;8,326.62,173.44,165.20,8.90" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_FxxH6zy">Efficient one-pass multi-view subspace clustering with consensus anchors</title>
+		<author>
+			<persName coords=""><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_nfRaSwB">AAAI</title>
+				<imprint>
+			<date type="published" when="2018">2022. 2022. 2018. 2018</date>
+			<biblScope unit="page" from="7576" to="7584" />
+		</imprint>
+	</monogr>
+	<note>AAAI</note>
+</biblStruct>
+
+<biblStruct coords="8,319.95,186.80,238.05,9.79;8,326.62,198.66,231.38,8.90;8,326.62,209.62,62.27,8.90" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_Xe7TtRF">Classification and analysis of multivariate observations</title>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Macqueen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Macqueen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_z9F45U9">BSMSP</title>
+				<imprint>
+			<date type="published" when="1967">1967. 1967</date>
+			<biblScope unit="page" from="281" to="297" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,320.16,222.98,237.83,9.79;8,326.62,234.84,231.38,8.90;8,326.62,245.80,117.60,8.90" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_v3GRxfB">On spectral clustering: Analysis and an algorithm</title>
+		<author>
+			<persName coords=""><surname>Ng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_SghFZZ6">NeurIPS</title>
+				<imprint>
+			<date type="published" when="2001">2001. 2001</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,319.65,259.16,238.35,9.79;8,326.62,271.02,231.38,8.90;8,326.62,281.98,231.39,8.90;8,326.62,292.94,72.23,8.90" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_pWppPeB">Comic: Multi-view clustering without parameter selection</title>
+		<author>
+			<persName coords=""><surname>Peng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_8KUm7fp">ICML</title>
+				<imprint>
+			<date type="published" when="2019">2019. 2019</date>
+			<biblScope unit="page" from="5092" to="5101" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,315.00,306.30,243.00,9.79;8,326.62,318.16,231.38,8.90;8,326.62,329.12,154.70,8.90" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_fJThqz5">Deep subspace clustering</title>
+		<author>
+			<persName coords=""><surname>Peng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jUva6yV">TNNLS</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="5509" to="5521" />
+			<date type="published" when="2020">2020. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,315.00,342.48,243.00,9.79;8,326.62,354.34,146.82,8.90;8,493.40,354.34,64.60,8.90;8,326.62,365.30,231.38,8.90;8,326.62,376.26,79.98,8.90;8,315.00,389.62,243.00,9.79;8,326.62,401.48,231.38,8.90;8,326.62,412.44,231.38,8.90;8,326.62,423.40,134.95,8.90" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_4dZAZnW">Self-paced and auto-weighted multi-view clustering</title>
+		<author>
+			<persName coords=""><forename type="first">Ren</forename></persName>
+		</author>
+		<idno type="arXiv">arXiv:2210.04142</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_B5R6DzW">Deep clustering: A comprehensive survey</title>
+				<imprint>
+			<date type="published" when="2020">2020. 2020. 2022. 2022</date>
+			<biblScope unit="volume">383</biblScope>
+			<biblScope unit="page" from="248" to="256" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="8,318.88,436.76,239.12,9.79;8,326.62,448.62,231.38,8.90;8,326.62,459.58,231.38,8.90;8,326.62,470.54,75.00,8.90" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_2NYtKMa">Consistent and diverse multi-view subspace clustering with structure constraint</title>
+		<author>
+			<persName coords=""><forename type="first">Si</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JCkVhC4">Pattern Recognition</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page">108196</biblScope>
+			<date type="published" when="2022">2022. 2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,319.70,483.90,238.29,9.79;8,326.62,495.76,231.38,8.90;8,326.62,506.72,209.43,8.90;8,315.00,520.08,243.00,9.79;8,326.62,531.94,231.38,8.90;8,326.62,542.90,231.38,8.90;8,326.62,553.86,231.39,8.90;8,326.62,564.82,22.42,8.90" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_xfaUxA7">Scalable multi-view subspace clustering with unified anchors</title>
+		<author>
+			<persName coords=""><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_5BKCZvx">ACM MM</title>
+				<imprint>
+			<date type="published" when="2019">2019. 2019. 2021. 2021</date>
+			<biblScope unit="page" from="3528" to="3536" />
+		</imprint>
+	</monogr>
+	<note>ACML</note>
+</biblStruct>
+
+<biblStruct coords="8,319.70,578.18,238.30,9.79;8,326.62,590.04,231.38,8.90;8,326.62,601.00,48.98,8.90" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_2hWXQs3">Laurens Van der Maaten and Geoffrey Hinton. Visualizing data using t-sne</title>
+		<author>
+			<persName coords=""><surname>Van Der Maaten</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zEthePh">JMLR</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<date type="published" when="2008">2008. 2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,315.00,614.36,243.00,9.79;8,326.62,626.22,231.38,8.90;8,326.62,637.18,231.38,8.90;8,326.62,648.14,136.61,8.90;8,315.00,661.50,156.99,9.79;8,487.67,662.40,70.33,8.90;8,326.62,673.36,231.38,8.90;8,326.62,684.32,231.38,8.90;8,326.62,695.28,209.90,8.90;9,54.00,56.34,243.00,9.79;9,65.62,68.20,231.38,8.90;9,65.62,79.16,231.38,8.90;9,65.62,90.11,231.39,8.90;9,65.62,101.07,100.17,8.90" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_NETrun5">Multi-view subspace clustering with intactness-aware similarity. Pattern Recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Wang</forename></persName>
+		</author>
+		<idno type="arXiv">arXiv:2205.15075</idno>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_2HYcHED">Xinzhong Zhu, and En Zhu. Align then fusion: Generalized large-scale multi-view clustering with anchor matching correspondences</title>
+				<editor>
+			<persName><forename type="first">Wang</forename></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2019">2019. 2019. 2020. 2020. 2022</date>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="page" from="3483" to="3493" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>Deep multi-view subspace clustering with unified and discriminative learning</note>
+</biblStruct>
+
+<biblStruct coords="9,58.27,115.12,113.42,9.79;9,188.62,116.02,108.38,8.90;9,65.62,126.98,231.38,8.90;9,65.62,137.94,174.59,8.90;9,54.00,151.98,243.00,9.79;9,65.62,163.84,231.38,8.90;9,65.62,174.80,231.39,8.90;9,65.62,185.76,100.17,8.90" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_m7szQpU">Fashion-mnist: a novel image dataset for benchmarking machine learning algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">Philip</forename><surname>Wolfe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kashif</forename><surname>Wolfe ; Han Xiao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Roland</forename><surname>Rasul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Vollgraf</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1708.07747</idno>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_RpxBCwu">Econometrica: Journal of the Econometric Society</title>
+		<imprint>
+			<biblScope unit="page" from="382" to="398" />
+			<date type="published" when="1959">1959. 1959. 2017. 2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>The simplex method for quadratic programming</note>
+</biblStruct>
+
+<biblStruct coords="9,58.43,199.80,238.57,9.79;9,65.62,211.66,231.38,8.90;9,65.62,222.62,165.19,8.90" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_sTHEtA2">Unsupervised deep embedding for clustering analysis</title>
+		<author>
+			<persName coords=""><surname>Xie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_Qs7ZSEy">ICML</title>
+				<imprint>
+			<date type="published" when="2016">2016. 2016</date>
+			<biblScope unit="page" from="478" to="487" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,59.16,236.67,237.83,9.79;9,65.62,248.52,231.38,8.90;9,65.62,259.48,231.38,8.90;9,65.62,270.44,79.98,8.90;9,54.00,284.49,243.00,9.79;9,65.62,296.34,231.38,8.90;9,65.62,307.30,231.38,8.90;9,65.62,318.26,231.38,8.90;9,65.62,329.22,165.19,8.90" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" xml:id="_s8R9J2h">Multi-vae: Learning disentangled view-common and view-peculiar visual representations for multi-view clustering</title>
+		<author>
+			<persName coords=""><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_faGmV7k">Jie Xu, Yazhou Ren, Huayi Tang, Xiaorong Pu, Xiaofeng Zhu, Ming Zeng, and Lifang He</title>
+				<imprint>
+			<date type="published" when="2021">2021a. 2021. 2021b. 2021</date>
+			<biblScope unit="volume">573</biblScope>
+			<biblScope unit="page" from="9234" to="9243" />
+		</imprint>
+	</monogr>
+	<note>ICCV</note>
+</biblStruct>
+
+<biblStruct coords="9,59.16,343.27,237.83,9.79;9,65.62,355.12,231.38,8.90;9,65.62,366.08,231.38,8.90;9,65.62,377.04,179.61,8.90;9,54.00,391.09,243.00,9.79;9,65.62,402.94,231.38,8.90;9,65.62,413.90,231.38,8.90;9,65.62,424.86,72.23,8.90;9,54.00,438.91,243.00,9.79;9,65.62,450.76,231.38,8.90;9,65.62,461.72,231.39,8.90;9,65.62,472.68,72.23,8.90" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_JbuyUPe">Self-supervised discriminative feature learning for deep multi-view clustering. TKDE, 2022</title>
+		<author>
+			<persName coords=""><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_F2U2fr7">ICCV</title>
+				<imprint>
+			<date type="published" when="2015">2022. 2015. 2015. 2017. 2017</date>
+			<biblScope unit="page" from="4279" to="4287" />
+		</imprint>
+	</monogr>
+	<note>ICCV</note>
+</biblStruct>
+
+<biblStruct coords="9,58.80,486.73,238.20,9.79;9,65.62,498.58,231.38,8.90;9,65.62,509.54,231.38,8.90;9,65.62,520.50,92.71,8.90" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_yh2nYTT">Feature concatenation multi-view subspace clustering</title>
+		<author>
+			<persName coords=""><surname>Zheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_veqvv7q">Neurocomputing</title>
+		<imprint>
+			<biblScope unit="volume">379</biblScope>
+			<biblScope unit="page" from="89" to="102" />
+			<date type="published" when="2020">2020. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,54.00,534.55,243.00,9.79;9,65.62,546.40,231.38,8.90;9,65.62,557.36,231.38,8.90;9,65.62,568.32,100.17,8.90" xml:id="b20">
+	<monogr>
+		<title level="m" type="main" xml:id="_3xRAGT8">Multiview deep subspace clustering networks</title>
+		<author>
+			<persName coords=""><surname>Zhu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1908.01978</idno>
+		<imprint>
+			<date type="published" when="2019">2019. 2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_XxKwzwr">Epidemiology, Genetic Recombination, and Pathogenesis of Coronaviruses</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,57.09,259.93,45.65,11.92"><forename type="first">Shuo</forename><surname>Su</surname></persName>
+							<email>shuosu@njau.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Engineering Laboratory of Animal Immunity of Jiangsu Province</orgName>
+								<orgName type="department" key="dep2">Institute of immunology and College of Veterinary Medicine</orgName>
+								<orgName type="institution">Nanjing Agricultural University</orgName>
+								<address>
+									<settlement>Nanjing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,125.69,259.93,59.63,11.92"><forename type="first">Gary</forename><surname>Wong</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Shenzhen Key Laboratory of Pathogen and Immunity</orgName>
+								<orgName type="institution">Shenzhen Third People&apos;s Hospital</orgName>
+								<address>
+									<settlement>Shenzhen</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Institute of Microbiology</orgName>
+								<orgName type="laboratory">CAS Key Laboratory of Pathogenic Microbiology and Immunology</orgName>
+								<orgName type="institution">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">CAS Center for Influenza Research and Early-Warning (CASCIRE)</orgName>
+								<orgName type="institution">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,218.27,259.93,64.38,11.92"><forename type="first">Weifeng</forename><surname>Shi</surname></persName>
+							<affiliation key="aff4">
+								<orgName type="department">Institute of Pathogen Biology</orgName>
+								<orgName type="institution">Taishan Medical College</orgName>
+								<address>
+									<settlement>Taian</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,297.52,259.93,39.21,11.92"><forename type="first">Jun</forename><surname>Liu</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">CAS Center for Influenza Research and Early-Warning (CASCIRE)</orgName>
+								<orgName type="institution">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<orgName type="department" key="dep1">Chinese Center for Disease Control and Prevention</orgName>
+								<orgName type="department" key="dep2">CDC)</orgName>
+								<orgName type="institution">National Institute for Viral Disease Control and Prevention</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country>China, China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,57.09,275.46,102.33,11.92"><forename type="first">Alexander</forename><forename type="middle">C K</forename><surname>Lai</surname></persName>
+							<affiliation key="aff6">
+								<orgName type="institution">Kentucky State University</orgName>
+								<address>
+									<settlement>Frankfort</settlement>
+									<region>Kentucky</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,173.93,275.46,65.64,11.92"><forename type="first">Jiyong</forename><surname>Zhou</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Engineering Laboratory of Animal Immunity of Jiangsu Province</orgName>
+								<orgName type="department" key="dep2">Institute of immunology and College of Veterinary Medicine</orgName>
+								<orgName type="institution">Nanjing Agricultural University</orgName>
+								<address>
+									<settlement>Nanjing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,255.63,275.46,60.24,11.92"><forename type="first">Wenjun</forename><surname>Liu</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Institute of Microbiology</orgName>
+								<orgName type="laboratory">CAS Key Laboratory of Pathogenic Microbiology and Immunology</orgName>
+								<orgName type="institution">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">CAS Center for Influenza Research and Early-Warning (CASCIRE)</orgName>
+								<orgName type="institution">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,57.09,291.00,44.42,11.92"><forename type="first">Yuhai</forename><surname>Bi</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Shenzhen Key Laboratory of Pathogen and Immunity</orgName>
+								<orgName type="institution">Shenzhen Third People&apos;s Hospital</orgName>
+								<address>
+									<settlement>Shenzhen</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Institute of Microbiology</orgName>
+								<orgName type="laboratory">CAS Key Laboratory of Pathogenic Microbiology and Immunology</orgName>
+								<orgName type="institution">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">CAS Center for Influenza Research and Early-Warning (CASCIRE)</orgName>
+								<orgName type="institution">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,164.30,291.00,83.53,11.92"><forename type="first">George</forename><forename type="middle">F</forename><surname>Gao</surname></persName>
+							<email>gaof@im.ac.cn</email>
+							<affiliation key="aff1">
+								<orgName type="department">Shenzhen Key Laboratory of Pathogen and Immunity</orgName>
+								<orgName type="institution">Shenzhen Third People&apos;s Hospital</orgName>
+								<address>
+									<settlement>Shenzhen</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Institute of Microbiology</orgName>
+								<orgName type="laboratory">CAS Key Laboratory of Pathogenic Microbiology and Immunology</orgName>
+								<orgName type="institution">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">CAS Center for Influenza Research and Early-Warning (CASCIRE)</orgName>
+								<orgName type="institution">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<orgName type="department" key="dep1">Chinese Center for Disease Control and Prevention</orgName>
+								<orgName type="department" key="dep2">CDC)</orgName>
+								<orgName type="institution">National Institute for Viral Disease Control and Prevention</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country>China, China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff7">
+								<orgName type="department">Collaborative Innovation Center for</orgName>
+							</affiliation>
+							<affiliation key="aff9">
+								<orgName type="department">Medical School</orgName>
+								<orgName type="institution" key="instit1">University of Chinese Academy of Sciences</orgName>
+								<orgName type="institution" key="instit2">Chinese Academy of Sciences</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff8">
+								<orgName type="department">Treatment of Infectious Disease</orgName>
+								<orgName type="institution">Zhejiang University</orgName>
+								<address>
+									<settlement>Hangzhou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_3FhDMr5">Epidemiology, Genetic Recombination, and Pathogenesis of Coronaviruses</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">DDA9B32C56E9BD90698C31D6973943D1</idno>
+					<idno type="DOI">10.1016/j.tim.2016.03.003</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:42+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_SCXVgQh"><p xml:id="_UB2kdkQ">Human coronaviruses (HCoVs) were first described in the 1960s for patients with the common cold. Since then, more HCoVs have been discovered, including those that cause severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS), two pathogens that, upon infection, can cause fatal respiratory disease in humans. It was recently discovered that dromedary camels in Saudi Arabia harbor three different HCoV species, including a dominant MERS HCoV lineage that was responsible for the outbreaks in the Middle East and South Korea during 2015. In this review we aim to compare and contrast the different HCoVs with regard to epidemiology and pathogenesis, in addition to the virus evolution and recombination events which have, on occasion, resulted in outbreaks amongst humans.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_39phYnc">A Brief Introduction to Human and Animal Coronaviruses</head><p xml:id="_dsS45AC">Coronaviruses (CoVs), of the family Coronaviridae, are enveloped viruses with a single-strand, positive-sense RNA genome approximately 26-32 kilobases in size, which is the largest known genome for an RNA virus [1]. The term 'coronavirus' refers to the appearance of CoV virions when observed under electron microscopy, in which spike projections from the virus membrane give the semblance of a crown, or corona in Latin [2,3]. All coronaviruses share similarities in the organization and expression of their genome, in which 16 nonstructural proteins (nsp1 through nsp16), encoded by open reading frame (ORF) 1a/b at the 5 0 end, are followed by the structural proteins spike (S), envelope (E), membrane (M), and nucleocapsid (N), which are encoded by other ORFs at the 3 0 end. CoVs are separated into four genera based on phylogeny: alpha-CoV (group 1), beta-CoV (group 2), gamma-CoV (group 3) and delta-CoV (group 4) (http://ictvonline. org/proposals/2008.085-122 V.v4.Coronaviridae.pdf). Within the beta-CoV genus, four lineages (A, B, C, and D) are recognized. Distinct from other beta-CoV lineages, lineage A viruses also encode a smaller protein called hemagglutinin esterase (HE), which is functionally similar to the S protein [4]. Since the early 1970s, a variety of pathological conditions in domestic animals have been attributed to CoV infections [5]. With the exception of infectious bronchitis virus (IBV), which causes avian infectious bronchitis in chickens [6], canine respiratory coronavirus (CRCoV), which causes respiratory disease in dogs [7], and mouse hepatitis virus (MHV), which can cause a progressive demyelinating encephalitis in mice [3,8], other CoV infections typically result in Trends Six coronaviruses (CoVs) are known to infect humans: 229E, OC43, SARS-CoV, NL63, HKU1, and MERS-CoV. Many CoVs are simultaneously maintained in nature, allowing for genetic recombination, resulting in novel viruses. Recombination of CoV in camels has resulted in a dominant MERS lineage that caused human outbreaks in 2015.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="602.929" lry="782.929"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_ck2VtNW"><p xml:id="_nJ3D5Cx">gastrointestinal symptoms. For instance, transmissible gastroenteritis coronavirus (TGEV) <ref type="bibr" coords="2,57.09,119.57,10.29,8.25" target="#b8">[9,</ref><ref type="bibr" coords="2,67.38,119.57,10.29,8.25" target="#b9">10]</ref>, bovine coronavirus (BCV) <ref type="bibr" coords="2,180.85,119.57,13.28,8.25" target="#b10">[11]</ref>, feline coronavirus (FCoV) <ref type="bibr" coords="2,295.14,119.57,13.28,8.25" target="#b11">[12]</ref>, canine coronavirus (CCoV) <ref type="bibr" coords="2,57.09,131.53,13.32,8.25" target="#b12">[13]</ref>, and turkey coronavirus (TCV) <ref type="bibr" coords="2,187.20,131.53,14.18,8.25" target="#b13">[14]</ref> are known to cause enteritis in their respective hosts <ref type="bibr" coords="2,402.63,131.53,8.75,8.25" target="#b0">[1]</ref>.</p><p xml:id="_NuMzBmD">In humans, CoV infections primarily involve the upper respiratory tract and the gastrointestinal tract, and vary from mild, self-limiting disease, such as the common cold, to more severe manifestations, such as bronchitis and pneumonia with renal involvement <ref type="bibr" coords="2,266.68,179.32,13.09,8.25" target="#b14">[15]</ref>. The first human coronavirus (HCoV) was isolated during 1965 from the nasal discharge of patients with the common cold and termed B814 <ref type="bibr" coords="2,79.77,203.25,13.09,8.25" target="#b15">[16]</ref>. Currently, six different CoV strains are known to infect humans. These include: HCoV-229E (229E), HCoV-OC43 (OC43), severe acute respiratory syndrome coronavirus (SARS-CoV), HCoV-NL63 (NL63), HCoV-HKU1 (HKU1), and Middle East respiratory syndrome coronavirus (MERS-CoV) <ref type="bibr" coords="2,107.32,239.14,13.09,8.25" target="#b16">[17]</ref>. 229E and OC43 are the prototype viruses from the two main HCoV lineages (Alpha and Beta, respectively) that cause 15-29% of all common colds, and are the best characterized <ref type="bibr" coords="2,110.55,263.00,13.09,8.25" target="#b17">[18]</ref>. SARS-CoV is the aetiological agent that was behind an outbreak of severe respiratory disease through China during 2002-2003 <ref type="bibr" coords="2,267.02,274.97,13.09,8.25" target="#b18">[19]</ref>, and MERS-CoV is the pathogen responsible for an ongoing outbreak of severe respiratory disease centered in the Middle East since 2012 <ref type="bibr" coords="2,99.95,298.89,13.09,8.25" target="#b19">[20]</ref>. In this review, we first compare and contrast the epidemiology and pathogenesis of the known CoVs infecting humans, in which CoVs that cause mild to severe disease in humans are newly emerged from a zoonotic source. Second, we describe the ecology of CoVs, and highlight evidence for viral recombination between the different CoVs within animal populations, which may result in the generation of novel CoVs that are transmissible and lethal to humans. Finally, we summarize the phylogeny, evolution, and genetic recombination of CoVs in detail.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_r5BcPn8">Epidemiology and Pathogenesis of HCoV</head><p xml:id="_2yxvreH">The epidemiology and pathogenesis of each HCoV are discussed within the following sections and summarized in Table <ref type="table" coords="2,155.91,406.55,4.95,8.25" target="#tab_0">1</ref> and Figure <ref type="figure" coords="2,206.70,406.55,3.70,8.25" target="#fig_0">1</ref>, respectively. In general, 229E, OC43, and NL63 are distributed globally (Figure <ref type="figure" coords="2,162.77,418.51,8.49,8.25" target="#fig_0">1A</ref>) and tend to be transmitted predominantly during the winter season in temperate-climate countries <ref type="bibr" coords="2,210.33,430.47,13.32,8.25" target="#b20">[21]</ref>, while NL63 showed a spring-summer peak of activity from a study in Hong Kong <ref type="bibr" coords="2,194.40,442.44,13.28,8.25" target="#b21">[22]</ref>.</p><p xml:id="_XCBpMuY">Human Coronavirus 229E (alphacoronavirus) Strain 229E was discovered during 1966, when researchers were characterizing five novel agents that were isolated from the respiratory tract of humans who had contracted the common cold <ref type="bibr" coords="2,75.63,502.19,13.32,8.25" target="#b22">[23]</ref>. 229E was adapted to grow in WI-38 lung fibroblast cell lines, and was later shown to be morphologically identical to IBV and MHV <ref type="bibr" coords="2,228.13,514.15,13.28,8.25" target="#b23">[24]</ref>. Symptoms of 229E infection include general malaise, headache, nasal discharge, sneezing, and a sore throat <ref type="bibr" coords="2,298.88,526.11,13.28,8.25" target="#b24">[25]</ref>. A small portion of patients (10-20%) will also exhibit fever and cough. The incubation time is approximately 2-5 days, followed by illness lasting between 2 and 18 days, and clinically indistinguishable from respiratory tract infections caused by other pathogens, such as rhinovirus and influenza A <ref type="bibr" coords="2,367.65,561.94,13.32,8.25" target="#b17">[18]</ref>. 229E is distributed globally (Figure <ref type="figure" coords="2,160.38,573.91,7.55,8.25" target="#fig_0">1A</ref>). Human Coronavirus OC43 (betacoronavirus, lineage A) Strain OC43 was discovered, during 1967, in the nasopharyngeal wash of a patient with the common cold, and is adapted to grow in organ cultures containing suckling mouse brains. Similar to 229E, OC43 is morphologically indistinguishable from IBV and MHV <ref type="bibr" coords="2,349.00,633.72,13.28,8.25" target="#b23">[24]</ref>, and patients infected with OC43 present the same clinical symptoms as that of 229E <ref type="bibr" coords="2,329.44,645.68,13.32,8.25" target="#b23">[24]</ref>. However, there is no serological cross-reactivity between 229E and OC43 <ref type="bibr" coords="2,272.35,657.64,13.28,8.25" target="#b23">[24]</ref>. OC43 is also distributed globally (Figure <ref type="figure" coords="2,85.66,669.55,7.58,8.25" target="#fig_0">1A</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_fnbksc8">SARS-CoV (betacoronavirus, lineage B)</head><p xml:id="_t9KVbRe">Patients infected with SARS-CoV initially present with fever, myalgia, headache, malaise, and chills, followed by a nonproductive cough, dyspnea, and respiratory distress generally 5 to 7 days later, which may result in death (http://www.who.int/csr/sars/en/WHOconsensus. pdf?ua=1). Other notable features in some cases include infection of the gastrointestinal tract, liver, kidney, and brain. Diffuse alveolar damage, epithelial cell proliferation, and an increase in macrophages is seen in SARS-CoV infection of the lung. Lymphopenia, hemophagocytosis in the lung, in addition to white-pulp atrophy of the spleen observed in SARS patients, are similar to fatal H5N1 influenza virus infections <ref type="bibr" coords="3,213.39,705.38,8.75,8.25" target="#b0">[1]</ref>. Diarrhea is observed in approximately 30-40% of SARS infections (http://www.cdc.gov/sars/about/faq.html).  <ref type="figure" coords="4,159.25,681.45,7.76,8.25" target="#fig_0">1B</ref>). An eventual 8273 cases were reported, with 775 deaths for a case fatality rate (CFR) of 9%, and the majority of cases and deaths occurred in mainland China and in Hong Kong <ref type="bibr" coords="4,126.65,705.38,13.32,8.25" target="#b18">[19]</ref>. The elderly were more susceptible to SARS disease, with a mortality rate of over 50% (http://www.cdc.gov/sars/surveillance/absence.html). Human Coronavirus NL63 (alphacoronavirus) NL63 is primarily associated with young children, the elderly, and immunocompromised patients with respiratory illnesses <ref type="bibr" coords="5,152.50,131.53,13.32,8.25" target="#b25">[26]</ref>. NL63 was a novel HCoV isolated from a 7-month-old child with coryza, conjunctivitis, fever, and bronchiolitis in the Netherlands during late 2004 <ref type="bibr" coords="5,368.22,143.49,13.28,8.25" target="#b25">[26]</ref>, and an independent investigation described the isolation of virtually the same virus from a nasal sample collected from an 8-month-old boy suffering from pneumonia in the Netherlands <ref type="bibr" coords="5,357.39,167.36,13.28,8.25" target="#b26">[27]</ref>. NL63 was also detected in New Haven, USA, during 2005 amongst 79 of 895 children, and was initially called HCoV-NH (NH), but genetic and phylogenetic analyses showed that NH and HKU1 likely are the same species <ref type="bibr" coords="5,143.09,203.25,14.48,8.25" target="#b25">[26,</ref><ref type="bibr" coords="5,157.57,203.25,10.86,8.25" target="#b27">28]</ref>. Infections with NL63 typically result in mild respiratory disease similar to the common cold, characterized by cough, rhinorrhea, tachypnea, fever, and hypoxia, and resolve on their own <ref type="bibr" coords="5,149.67,227.17,13.28,8.25" target="#b28">[29]</ref>. Obstructive laryngitis, also known as croup, is frequently observed with NL63 infections. A study estimated that NL63 accounts for an estimated 4.7% of common respiratory diseases <ref type="bibr" coords="5,136.69,251.04,13.28,8.25" target="#b25">[26]</ref>. NL63 is distributed globally (Figure <ref type="figure" coords="5,292.37,251.04,7.55,8.25" target="#fig_0">1A</ref>).</p><p xml:id="_4YzWcH3">Human Coronavirus HKU1 (betacoronavirus, lineage A) HKU1 was first discovered during January 2005 in a 71-year-old patient from Hong Kong who had been hospitalized with pneumonia and bronchiolitis <ref type="bibr" coords="5,271.16,298.89,13.28,8.25" target="#b29">[30]</ref>. The symptoms of HKU1 respiratory tract infections are not able to be separated from those caused by other respiratory viruses.</p><p xml:id="_wWAjDvX">Most patients present with fever, running nose, and cough for infections in the upper respiratory tract, whereas a fever, productive cough, and dyspnea are the common symptoms presenting for infections in the lower respiratory tract <ref type="bibr" coords="5,215.66,346.74,13.28,8.25" target="#b30">[31]</ref>. Most HKU1 infections are self-limiting, with only two deaths reported in patients with pneumonia due to HKU1 <ref type="bibr" coords="5,294.29,358.64,13.28,8.25" target="#b31">[32]</ref>. Although HKU1 is clinically relatively mild in children, HKU1 infection is associated with a high incidence of seizures, and was found in a patient with meningitis <ref type="bibr" coords="5,191.00,382.57,14.48,8.25" target="#b32">[33,</ref><ref type="bibr" coords="5,205.47,382.57,10.86,8.25" target="#b33">34]</ref>. HKU1 cases outside Asia were detected in New Haven, USA, in 2 out of 851 children <ref type="bibr" coords="5,196.33,394.53,13.28,8.25" target="#b34">[35]</ref>, and also in Australia <ref type="bibr" coords="5,292.42,394.53,13.28,8.25" target="#b35">[36]</ref>, France <ref type="bibr" coords="5,339.42,394.53,13.28,8.25" target="#b36">[37]</ref>, and Brazil <ref type="bibr" coords="5,397.64,394.53,13.32,8.25" target="#b37">[38]</ref>, indicating a global distribution for the virus (Figure <ref type="figure" coords="5,251.43,406.49,7.55,8.25" target="#fig_0">1A</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_gXk3Nbc">MERS-CoV (betacoronavirus, lineage C)</head><p xml:id="_h3G7Mpr">MERS-CoV was first isolated from the lungs of a 60-year-old patient who had died from a severe respiratory illness in Jeddah, Saudi Arabia, 2012 <ref type="bibr" coords="5,250.87,454.34,13.28,8.25" target="#b38">[39]</ref>. Clinical manifestations of MERS-CoV infection range from asymptomatic to severe pneumonia with acute respiratory distress, septic shock, and renal failure resulting in death <ref type="bibr" coords="5,210.22,478.21,13.28,8.25" target="#b39">[40]</ref>. A typical disease course begins with fever, cough, chills, sore throat, myalgia, and arthralgia, followed by dyspnea and rapid progression to pneumonia <ref type="bibr" coords="5,103.12,502.13,11.62,8.25" target="#b39">[40]</ref><ref type="bibr" coords="5,114.75,502.13,3.87,8.25" target="#b40">[41]</ref><ref type="bibr" coords="5,114.75,502.13,3.87,8.25" target="#b41">[42]</ref><ref type="bibr" coords="5,118.62,502.13,11.62,8.25" target="#b42">[43]</ref>. Approximately one-third of patients present with gastrointestinal symptoms, such as diarrhea and vomiting. Acute renal impairment was the most striking feature of disease caused by MERS-CoV, which is thus far unique for human CoV infections <ref type="bibr" coords="5,385.34,526.06,14.48,8.25" target="#b39">[40,</ref><ref type="bibr" coords="5,399.82,526.06,10.86,8.25" target="#b43">44]</ref>. Seventy-five percent of patients with MERS disease also had at least one other comorbidity, and patients who died were more likely to have a pre-existing/underlying condition <ref type="bibr" coords="5,358.30,549.98,13.28,8.25" target="#b39">[40]</ref>. Countries around the Arabian Peninsula are known to be endemic for MERS-CoV, and Saudi Arabia has reported the most cases, but since its discovery in 2012, cases have been occasionally exported to other countries through travel, sometimes causing clusters of secondary outbreaks (Figure <ref type="figure" coords="5,86.34,597.77,8.70,8.25" target="#fig_0">1B</ref>) <ref type="bibr" coords="5,103.01,597.77,13.32,8.25" target="#b44">[45]</ref>. As of December 31, 2015, a total of 1621 laboratory-confirmed infections have been reported, with 584 deaths (CFR = 36.0%) over 26 countries (http://www.who.int/csr/ disease/coronavirus_infections/en), making MERS-CoV one of the most dangerous viruses known to humans.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_wmhmaMJ">Ecology of Human Coronaviruses</head><p xml:id="_B7w8eMd">Based on currently available evidence, 229E, OC43, NL63, and HKU1 are well adapted to humans, and the viruses widely circulate in the human population (Figure <ref type="figure" coords="5,339.19,681.51,3.17,8.25" target="#fig_1">2</ref>), with most cases causing mild disease in immunocompetent adults, and none of these viruses have been found to be maintained within an animal reservoir. However, in the case of SARS-CoV and MERS-CoV, the viruses are not as well adapted to being maintained in humans, and thus are likely spread mainly in zoonotic reservoir(s), with occasional spillover into the susceptible human population, possibly via an intermediate host species.</p><p xml:id="_rFBTPCy">Regarding SARS-CoV, epidemiology data implicated masked palm civets (Paguma larvata) from live animal markets (LAM) in Guangdong Province, China, as a route of exposure to SARS-CoV <ref type="bibr" coords="6,57.09,346.68,13.14,8.25" target="#b45">[46]</ref>. However, masked palm civets from the wild or from farms without LAM exposure were largely negative for SARS-CoV <ref type="bibr" coords="6,171.21,358.64,13.14,8.25" target="#b46">[47]</ref>. This suggests that palm civets were an intermediate host, but not a reservoir for SARS-CoV <ref type="bibr" coords="6,172.97,370.61,13.14,8.25" target="#b47">[48]</ref>. Subsequent studies have shown that wild horseshoe bats (Rhinolophidae family), which can also be found in LAM in China and served in some Chinese restaurants in Guangdong, China, have detectable levels of antibodies against SARS-CoV and a SARS-CoV-like virus (SARSr-Rh-Bat CoV) <ref type="bibr" coords="6,220.37,406.49,14.28,8.25" target="#b48">[49,</ref><ref type="bibr" coords="6,234.64,406.49,10.71,8.25" target="#b49">50]</ref>, suggesting a bat origin for SARS-CoV. An evolutionary relationship between coronaviruses and bats was proposed, in which the ancestor for SARS-CoV first spread to bats of the Hipposideridae family, then Rhinolophidae, then masked palm civets and eventually humans <ref type="bibr" coords="6,194.85,442.32,13.14,8.25" target="#b50">[51]</ref>. Recently, two new SARS-like CoVs were isolated in horseshoe bats, and these viruses showed the highest relationship to SARS-CoV from all known bat coronaviruses <ref type="bibr" coords="6,128.64,466.25,13.09,8.25" target="#b51">[52]</ref>. ORF8 analysis of the SARS-like CoVs in bats suggests that Chinese horseshoe bats are the natural reservoirs of SARS-CoV <ref type="bibr" coords="6,260.79,478.21,14.28,8.25" target="#b51">[52,</ref><ref type="bibr" coords="6,275.07,478.21,10.71,8.25" target="#b52">53]</ref>, and that intermediate hosts might not be needed for direct human infection, particularly for some bat SARS-CoV-like viruses <ref type="bibr" coords="6,397.87,490.17,13.14,8.25" target="#b51">[52]</ref>.</p><p xml:id="_yUm8tkd">In the case of MERS-CoV, studies in Oman, Saudi Arabia, Qatar, United Arab Emirates, and Jordan have shown that dromedary camels are seropositive for neutralizing antibodies against MERS-CoV [54], as well as camels of Middle East origin in Africa, including Egypt, Kenya, Nigeria, Ethiopia, Tunisia, Somalia, and Sudan <ref type="bibr" coords="6,229.66,549.93,13.28,8.25" target="#b54">[55]</ref>. Subsequent studies on dromedary camels in Saudi Arabia <ref type="bibr" coords="6,107.15,561.89,13.28,8.25" target="#b55">[56]</ref>, Qatar <ref type="bibr" coords="6,149.05,561.89,13.28,8.25" target="#b56">[57]</ref>, and Egypt <ref type="bibr" coords="6,208.29,561.89,14.18,8.25" target="#b57">[58]</ref> show that live MERS-CoV can be isolated primarily from the nasal swabs of camels, showing that camels are potential source of MERS-CoV infection. However, many confirmed cases lack contact history with camels <ref type="bibr" coords="6,352.69,585.81,13.28,8.25" target="#b58">[59]</ref>, suggesting direct human-to-human transmission, or through contact with a yet-to-be-identified animal species that is maintaining MERS-CoV. Studies on HKU4, a coronavirus of bat origin and the most phylogenically closely related to MERS-CoV, had shown that HKU4 is able to utilize the CD26 receptor for virus entry <ref type="bibr" coords="6,186.69,633.60,13.32,8.25" target="#b59">[60]</ref>. As CD26 is a known receptor for MERS-CoV <ref type="bibr" coords="6,382.85,633.60,13.32,8.25" target="#b60">[61]</ref>, the similarity in receptor specificity of these two CoVs supports the hypothesis that MERS-CoVs is also a bat-originated CoV. However, live MERS-CoV has not been isolated from wild bats, nor have viral sequences been detected.</p><p xml:id="_be29Snd">A recent investigation discovered that multiple HCoV species, including MERS-CoV, beta-CoV group A, and a 229E-like virus, circulate amongst dromedary camels in Saudi Arabia <ref type="bibr" coords="6,398.10,705.38,12.91,8.25" target="#b61">[62]</ref>. Furthermore, multiple lineages of circulating MERS-CoV in these camels had resulted in a dominant, recombinant MERS-CoV strain that was responsible for the MERS-CoV outbreaks during 2015 <ref type="bibr" coords="7,398.15,107.61,12.91,8.25" target="#b61">[62]</ref>. These results show that various CoVs of human and animal origin are currently circulating in the wild, providing ample opportunity for CoVs to undergo evolution and genetic recombination, thereby resulting in recombinant CoVs that may potentially be more deadly to humans. In the following sections, we summarize the evolution and genetic recombination of the current HCoVs.     grouped together with porcine epidemic diarrhea virus (PEDV), TGEV, porcine respiratory coronavirus (PRCV), feline infectious peritonitis virus (FIPV), and some bat-derived coronaviruses (Figure <ref type="figure" coords="8,85.21,131.53,3.18,8.25" target="#fig_6">3</ref>). The topology of the phylogeny is similar to the tree constructed based on the RNAdependent RNA polymerase gene <ref type="bibr" coords="8,191.00,143.49,13.32,8.25" target="#b54">[55]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_4RKzV3H">Phylogeny, Evolution and Genetic Recombination in Human Coronaviruses</head><formula xml:id="formula_0" coords="7,170.78,254.83,102.53,105.48">B a t -C o V H K U 5 -1 L M H 0 3 f B a t -C o V H K U 4 -1 B 0 4 f 100 E r i n a c e u s -C o V / 2 0 1 2 -2 1 6 / G E R / 2 0 1 2 B a t - C o V C p / Y u n n a n 2 0 1 1 B a t - S A R S - li k e C o V R s S H C 0 1 4 B a t - S A R S - li k e C o V R s 3 3<label>6</label></formula><formula xml:id="formula_1" coords="7,393.66,516.71,101.66,98.31">B a t -C o V 1 A / A F C D 6 2 B a t -C o V 1 B / A F C D 3 0 7 100 B a t -C o V H K U 8 / A F C D 7 7 100 B a t - C o V H K U 1 0 / L S H 5 A B a t - C o V H K U 1 0 / 1 8 3 A 100 B a t - C o V B t C o V / 5 1 2 / 2 0 0 5 P o r c in e -P E D V C V</formula><formula xml:id="formula_2" coords="7,199.33,534.20,123.86,85.88">C o v H K U 1 4 -1 100 H C o V H K U 1 H C o V H K U 1 -N 1 0 / H o n g K o n g 100 H C o V H K U 1 -N 1 6 100 M H V -A 5 9 R a t -C o V P a r k e r 100</formula><formula xml:id="formula_3" coords="7,269.82,238.15,138.27,414.89">-CoV CV7 SARS -CoV Tor2 Ba t SA RS -Co V HK U3 -1 C iv e t SA R S C o V SZ 1 6 /2 0 0 3 Ba t SA RS -Co V Rf1 /20 04 Ba t Co V 27 3/ 20 05 Ba t Co V H KU 9- 1/ BF -0 05 I HCoV-OC 43 HK04-02 C am el -C o V H K U 23 -3 68 F Bo vi ne -C oV EN T An te lop e- Co V US /O H1 /2 00 3 Porcine-PHEV HC oV -N L6 3 H C o V -2 2 9 E V ic u g n a p a co s- C o V C A 0 8 -1 /<label>2</label></formula><p xml:id="_gCA6pPM">OC43, HKU1, SARS-CoV, and MERS-CoV belong to the beta-CoV genus. Lineage A includes OC43 and HKU1, MHV, porcine hemagglutinating encephalomyelitis virus (PHEV), in addition to equine, rabbit, camel, bovine, antelope-derived animal coronaviruses. Lineage B includes SARS-CoV, SARS-like viruses of bat and palm civet origin, and some bat-derived CoVs. Lineage C includes MERS-CoV and some bat-derived viruses. Lineage D contains only bat-derived coronavirus (Figure <ref type="figure" coords="8,133.46,227.17,3.17,8.25" target="#fig_6">3</ref>). In contrast to alpha-and beta-CoVs, gamma-CoVs consist mainly of avian coronaviruses (such as IBV), as well as CoVs isolated from aquatic animals, whales, and dolphins. CoVs of wild-bird origin are clustered into the delta-CoV, which also contains some swine-derived CoVs (Figure <ref type="figure" coords="8,165.43,263.00,3.17,8.25" target="#fig_6">3</ref>).</p><p xml:id="_BdTw7VE">In general, alpha-and beta-CoVs primarily include CoVs from mammals, whereas gamma-and delta-CoVs mostly include CoVs of avian origin. Notably, all currently known HCoVs belong to either the alpha-or betacoronavirus genera, which also contain CoVs of mainly bat origin.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_M5HDqCB">Mutation and Genetic Recombination in Coronaviruses</head><p xml:id="_t5u2vJr">The estimated mutation rates in CoV are moderate to high compared to other single-stranded RNA (ssRNA) viruses, and the average substitution rate for CoVs was $10 À4 substitutions per year per site <ref type="bibr" coords="8,105.56,370.61,13.32,8.25" target="#b62">[63]</ref>. The nucleotide mutation rate of IBV for the hypervariable region in the S gene was estimated to be 0.3-0.6 Â 10 -2 per site per year <ref type="bibr" coords="8,261.07,382.57,13.28,8.25" target="#b63">[64]</ref>. The S gene of OC43 possessed an average rate of 6.410.58 Â 10 -4 substitution rates per site per year <ref type="bibr" coords="8,307.79,394.53,13.32,8.25" target="#b64">[65]</ref>. Additionally, the S gene of 229E possessed a rate of $3 Â 10 À 4 substitutions per site per year <ref type="bibr" coords="8,322.30,406.49,13.28,8.25" target="#b62">[63]</ref>. For SARS-CoV, the mutation rate in the whole genome was estimated to be 0.80-2.38 Â 1 -3 nucleotide substitutions per site per year, and the nonsynonymous and synonymous substitution rates were estimated to be 1.16-3.30 Â 10 -3 and 1.67-4.67 Â 10 -3 per site per year, respectively, which is similar to other RNA viruses <ref type="bibr" coords="8,105.39,454.28,13.09,8.25" target="#b65">[66]</ref>. The evolutionary rate for MERS-CoV genomes was estimated as 1.12 Â 10 À3 substitutions per site per year (95% credible interval [95% CI], 8.76 Â 10 À4 ; 1.37 Â 10 À3 ) <ref type="bibr" coords="8,397.87,466.25,13.14,8.25" target="#b66">[67]</ref>. Furthermore, the large RNA genome in CoV allows for extra plasticity in genome modification by mutations and recombinations, thereby increasing the probability for intraspecies variability, interspecies 'host jump', and novel CoVs to emerge under the right conditions <ref type="bibr" coords="8,355.12,502.13,11.47,8.25" target="#b67">[68]</ref><ref type="bibr" coords="8,366.60,502.13,3.82,8.25" target="#b68">[69]</ref><ref type="bibr" coords="8,370.42,502.13,11.47,8.25" target="#b69">[70]</ref>.</p><p xml:id="_ss6hv8c">The major reason for recombination may be at the replication step in the virus life cycle. During replication, a set of subgenomic RNAs is generated, increasing the homologous recombination rate among closely related genes from different lineages of CoVs or other viruses by template switching <ref type="bibr" coords="8,97.40,561.89,13.28,8.25" target="#b32">[33]</ref>. Concurrently, circulating CoVs in multiple host species likely contribute to increases in the rate of recombination events. However, the exact mechanism of genetic recombination in CoVs remains unclear: recombination site 'breakpoints' in the viral genome the crossing point of the recombinant genes between two distinct viral strains or genotypesappear to be random, as different recombinant strains have different breakpoints.</p><p xml:id="_SPwW6RH">Genetic recombination has been previously documented for animal CoVs, for instance: MHV <ref type="bibr" coords="8,57.09,645.57,13.32,8.25" target="#b70">[71]</ref>, TGEV <ref type="bibr" coords="8,101.25,645.57,13.28,8.25" target="#b71">[72]</ref>, as well as feline and canine coronaviruses <ref type="bibr" coords="8,283.58,645.57,14.45,8.25" target="#b72">[73,</ref><ref type="bibr" coords="8,298.03,645.57,10.84,8.25" target="#b73">74]</ref>. Genetic recombination for other HCoVs including OC43, NL63, HKU1, SARS-CoV <ref type="bibr" coords="8,273.15,657.53,13.32,8.25" target="#b50">[51]</ref>, and MERS-CoV have also been documented and are discussed in detail below.</p><p xml:id="_XYgnGKF">OC43 has diverged into five distinct genotypes (A to E). Genotype A is typified by the prototype VR759 strain that was isolated in 1967 <ref type="bibr" coords="8,209.88,705.38,13.32,8.25" target="#b74">[75]</ref>. Genotypes  <ref type="bibr" coords="9,174.58,613.56,124.29,4.11;9,174.58,619.92,157.98,4.12;9,174.58,626.28,157.98,4.12;9,174.58,632.63,59.41,4.12;9,174.58,638.99,92.26,4.12;9,174.58,645.35,157.98,4.12">14490-14523, 15210-15238, 19206-19253, 19396-19420 15210-15253, 15417-15457, 17088-17125, 19102-19132, 20712-20747 14986-15055, 15417-15457, 17088-17125, 19102-19132, 20712-20747 17688-17714, 19548-19588 15210-15232, 18558-18577, 20797-20827 14808-14835, 15062-15093, 15624-15670, 17783-17809, 19113-19132</ref> nsp5-nsp8 nsp9 nsp10-nsp11 nsp12 nsp13 nsp14 nsp15 nsp16 breakpoint of 2500-5000 bp in the NSP2-NSP3 gene and 15500 bp-3 0 end in NSP12-N genes <ref type="bibr" coords="10,57.09,119.57,14.18,8.25" target="#b74">[75]</ref> (Figure <ref type="figure" coords="10,101.37,119.57,3.68,8.25" target="#fig_8">4</ref>, Key Figure <ref type="figure" coords="10,148.67,119.57,3.50,8.25">)</ref>. Genotype E, identified in 2014, emerged by recombination amongst the genotype B, C, and D viruses with different breakpoints in the genes compared to the generation of genotype D <ref type="bibr" coords="10,156.30,143.49,14.18,8.25" target="#b75">[76]</ref> (Figure <ref type="figure" coords="10,201.15,143.49,3.18,8.25" target="#fig_8">4</ref>). A study in France, between 2001 and 2013, demonstrated that OC43 strains have more recombination patterns in Lower Normandy, and circulating OC43 viruses have a high genetic diversity <ref type="bibr" coords="10,238.62,167.36,13.32,8.25" target="#b16">[17]</ref>.</p><p xml:id="_y9AwyXV">NL63 also has the potential for genetic recombination, and one such example is between the Amsterdam 1 and 496 strains. Recombination site breakpoints were identified in two parts of the S gene <ref type="bibr" coords="10,87.53,215.21,14.18,8.25" target="#b62">[63]</ref> (Figure <ref type="figure" coords="10,133.29,215.21,3.18,8.25" target="#fig_8">4</ref>).</p><p xml:id="_UbUgPNt">Recombination events have been observed for different genotypes of HKU1, in which recombination breakpoints were found on genotypes B and C in the nsp6-nsp7 and nsp16-HE genes, respectively <ref type="bibr" coords="10,104.54,263.00,14.18,8.25" target="#b69">[70]</ref> (Figure <ref type="figure" coords="10,150.07,263.00,3.17,8.25" target="#fig_8">4</ref>). HKU1 was also shown to be able to recombine with other animal beta-CoVs, such as MHV, at the nsp3, nsp4, nsp6, nsp7, nps9, and nsp10 genes <ref type="bibr" coords="10,361.59,274.97,14.18,8.25" target="#b76">[77]</ref> (Figure <ref type="figure" coords="10,404.73,274.97,3.18,8.25" target="#fig_8">4</ref>).</p><p xml:id="_pnK6BMz">SARS-CoV has a possible recombinant history with lineages of alpha-and gamma-CoV <ref type="bibr" coords="10,397.64,298.89,13.32,8.25" target="#b77">[78]</ref>.</p><p xml:id="_tqSbnM5">Many specific breakpoints and a large number of smaller recombinant regions had been identified in the RNA-dependent RNA polymerase (RDRP, nsp12 gene) at the following locations: nucleotides 13 392-13 610, 15 259-15 342, and 15 974-16 108 based on the sequence of the SARS-CoV TOR2 strain <ref type="bibr" coords="10,170.70,346.68,13.28,8.25" target="#b77">[78]</ref>. Recombination locations were also identified in the nsp9 and most of nsp10 gene located at 12 613-13 344, and parts of nsp14 (18 117-18 980) <ref type="bibr" coords="10,397.64,358.64,13.28,8.25" target="#b77">[78]</ref>.</p><p xml:id="_CRrr3Rx">Another study analyzing the genome of the SARS-CoV CV7 strain had shown that seven putative recombination locations were found between SARS-CoV and six other coronaviruses: PEDV, TGEV, BCV, 229E, MHV, and IBV (Figure <ref type="figure" coords="10,253.64,394.53,3.18,8.25" target="#fig_8">4</ref>). This further suggests that SARS-CoV emerged via serial horizontal transmission and by genetic recombination, enhancing the adaptation process to its new host <ref type="bibr" coords="10,175.41,418.45,13.32,8.25" target="#b78">[79]</ref>.</p><p xml:id="_2d3KNnd">Recombination was also detected between the SARS-related bat-associated CoV (SARSr-Bat CoVs), in which recombination between the Rp3 strain from Guangxi Province and Rf1 strain from Hubei Province, China, generated a new strain (SARSr-Civet CoV SZ3) in civets, with a breakpoint at the nsp16/spike and S2 region <ref type="bibr" coords="10,244.35,478.21,14.18,8.25" target="#b50">[51]</ref> (Figure <ref type="figure" coords="10,290.89,478.21,3.18,8.25" target="#fig_8">4</ref>). Furthermore, the SARS-CoV Rf1/2004 strain is itself a recombinant from the bat CoV 279/2004, bat CoV Rm1/2004 and civet CoV SZ3/2003 <ref type="bibr" coords="10,138.33,502.13,14.18,8.25" target="#b50">[51]</ref> (Figure <ref type="figure" coords="10,184.08,502.13,3.18,8.25" target="#fig_8">4</ref>).</p><p xml:id="_k2T4rP4">A recent study showed that the epidemic MERS-CoV experienced recombination events between the different lineages, which occurred in dromedary camels in Saudi Arabia <ref type="bibr" coords="10,397.64,537.96,13.28,8.25" target="#b61">[62]</ref>. Lineages 3 and 5 viruses were predominant during July and December 2014; however, lineage 5 became dominant within the camel population by 2015. Lineage 5, which is closely associated with the MERS-CoV causing the outbreak in South Korea in 2015, as well as recent human infections in Riyadh, Saudi Arabia, is a recombinant virus between lineages 3 and 4, or groups 3 and 5 of clade B (Figure <ref type="figure" coords="10,161.63,597.77,3.54,8.25" target="#fig_8">4</ref>) <ref type="bibr" coords="10,171.67,597.77,14.48,8.25" target="#b61">[62,</ref><ref type="bibr" coords="10,186.14,597.77,10.86,8.25" target="#b79">80]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_PaH4dmE">Concluding Remarks</head><p xml:id="_jDr8hub">The result from a high frequency of recombination events in CoVs is the generation of novel viruses with a high genetic diversity, with unpredictable changes in virulence during human infections. With multiple species of CoVs circulating in the wild amongst different animal species that may constantly interact with one another, it is likely not a matter of if, but when, the next recombinant CoV will emerge and cause another outbreak in the human population. As such, some crucial future areas of investigation include: (i) the prevalence of HCoVs already circulating within the animal population, (ii) the commonality of coronavirus recombination in animals, (iii) animals which may potentially serve as mixing vessels for the generation of novel recombinant Outstanding Questions</p><p xml:id="_7Ua9Rxa">How common is coronavirus recombination in animals?</p><p xml:id="_VhuwREj">Can coronavirus undergo recombination in animal hosts other than camels?</p><p xml:id="_qpf6494">Is there a way to predict the potential emergence of a novel recombinant coronavirus in the human population?</p><p xml:id="_4G7eug2">CoVs, and (iv) a surveillance network to monitor and predict the potential emergence of a highly virulent, recombinant CoV from animals (see Outstanding Questions). Furthermore, lessons from the SARS-CoV and MERS-CoV outbreaks must be urgently learned in advance to effectively prepare for the next CoV outbreak.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,57.09,605.80,488.72,7.33;4,57.09,615.98,395.31,6.42"><head>Figure 1 .</head><label>1</label><figDesc xml:id="_pGYBsre">Figure 1. Global Distribution of Human Coronaviruses. (A) Green, blue, brown, and purple represent the global distribution of the NL63, HKU1, OC43, and 229E human coronaviruses, respectively. (B) Red and yellow represent the global distribution of MERS-CoV and SARS-CoV, respectively.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="6,292.03,107.41,122.32,7.33;6,292.02,116.88,122.32,7.33;6,292.03,126.35,122.26,7.33;6,292.03,136.53,122.25,6.42;6,292.02,145.99,122.20,6.42;6,292.03,155.46,122.21,6.42;6,292.02,164.93,122.20,6.42;6,292.02,174.40,122.22,6.42;6,292.03,183.61,122.23,6.97;6,292.03,193.33,122.25,6.42;6,292.02,202.80,122.20,6.42;6,292.02,212.27,122.25,6.42;6,292.02,221.74,39.12,6.42;6,57.02,107.38,191.18,147.91"><head>Figure 2 .</head><label>2</label><figDesc xml:id="_Pd93dKq">Figure 2. Intra-and Inter-Species Transmission of Human Coronaviruses. Red, yellow, green, blue, brown, and purple arrows represent transmission of MERS-CoV, SARS-CoV, NL63, HKU1, OC43, and 229E, respectively, between bats, camels, cows, humans, and masked palm civets (shown in a legend on the side of the figure). Unbroken arrows represent confirmed transmission between the two species in question, and broken arrows represent suspected transmission.</figDesc><graphic coords="6,57.02,107.38,191.18,147.91" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="7,57.09,191.34,82.46,8.25;7,57.09,203.30,357.20,8.25;7,57.09,215.27,357.20,8.25;7,87.25,444.90,98.68,5.24;7,88.62,417.29,99.95,18.62;7,76.38,396.06,113.03,25.63;7,89.95,383.69,104.48,26.56;7,206.61,416.53,4.56,3.64;7,105.58,370.10,90.00,27.67;7,164.82,372.19,42.49,17.30;7,58.28,306.06,144.42,66.64;7,99.95,296.49,110.78,64.54"><head>26 D</head><label>26</label><figDesc xml:id="_KWybQUK">Phylogenetic AnalysisThe phylogenetic tree for the CoVs of zoonotic and human origin was constructed based on the full genome. It can be observed that 229E and NL63 belong to the alpha-CoV genus and are MERS-CoV KOREA/Seoul/168-2-2015 ME RS-Co V Hu /Ri yad h/K SA/ 295 9/2 015 Ca me l-M ER S-C oV ca me l/R iya dh /R y7 9/ 20 15 Ca m el -M ER S-Co V ca m el /T aif /T 15 0/ 20 15 ro m ed ar y-M ER S-Co V KF U -H KU 13 H C o V -E M C /2 01 2 N e o ro m ic ia c a p e n s is -C o V N e o ro m ic ia /P M L -P H E 1 /R S A /2 0 1 1 V e s p e r Ɵ li o s u p e r a n s -C o V B t V s -B e t a C o V / S C 2 0 1 3</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="7,269.82,312.74,5.24,2.78;7,273.80,328.90,6.84,3.64;7,257.97,246.38,5.24,3.20;7,259.30,249.58,5.24,4.08;7,260.99,253.66,6.48,5.00;7,263.62,260.01,9.17,12.23;7,269.25,273.60,7.88,9.76;7,273.86,284.72,7.55,8.60;7,277.42,293.32,5.24,5.36;7,279.64,298.67,7.76,9.12;7,295.67,321.69,6.84,3.64;7,339.45,262.96,5.24,13.19;7,338.29,276.15,5.24,12.50;7,337.05,290.12,5.24,12.18;7,324.76,322.89,6.84,3.64;7,313.94,330.46,6.84,3.64;7,305.29,338.28,6.84,3.64;7,303.96,345.97,4.56,3.64;7,363.94,319.29,6.84,3.64;7,357.45,324.57,4.56,3.64;7,322.23,352.70,6.84,3.64;7,326.62,360.88,6.84,3.64;7,393.25,319.40,7.04,5.83;7,396.69,315.19,5.24,4.22;7,399.18,309.87,6.80,5.31;7,403.06,303.64,5.24,4.98;7,405.99,298.02,6.98,5.61;7,409.30,293.96,5.24,4.06;7,411.70,283.15,9.75,10.81;7,418.83,279.32,5.24,2.57;7,420.34,274.34,5.24,4.98;7,423.27,271.51,5.24,2.83;7,403.58,284.14,42.32,48.45;7,443.90,246.65,32.73,36.35;7,394.71,332.03,6.84,3.64;7,412.93,317.09,23.27,22.60;7,434.42,311.89,5.24,4.11;7,438.14,303.99,10.21,7.91;7,426.22,280.67,72.62,67.44;7,435.73,336.34,20.06,18.76;7,425.24,351.98,4.56,3.64;7,414.79,353.78,6.84,3.64;7,403.61,351.62,6.84,3.64;7,442.81,319.25,67.09,45.89;7,451.50,338.22,58.40,37.85;7,440.03,369.65,4.56,3.64;7,454.57,335.84,86.27,49.66;7,460.52,363.36,56.98,33.49;7,464.46,373.51,76.90,34.86;7,455.17,399.94,6.84,3.64;7,468.19,401.39,59.08,17.50;7,470.26,416.65,68.88,13.47;7,460.94,421.93,6.84,3.64;7,452.65,413.64,6.84,3.64;7,470.28,434.19,74.64,8.91;7,470.68,449.89,60.78,5.24;7,469.50,461.76,61.45,14.06;7,463.11,456.19,6.84,3.64;7,456.62,447.90,6.84,3.64;7,449.40,429.51,6.84,3.64;7,441.83,425.54,6.84,3.64;7,432.82,417.97,6.84,3.64;7,419.84,399.22,6.84,3.64;7,467.45,473.58,51.07,17.31;7,463.40,484.26,49.06,19.14;7,460.20,495.35,45.14,22.47;7,456.26,490.09,6.84,3.64;7,450.85,480.35,6.84,3.64;7,454.41,506.50,68.70,37.11"><head>H</head><label></label><figDesc xml:id="_pF6ERA3">g a W h a le -C o V S W 1 B o Ʃ le n o s e d o lp h in -C o V e-FI PV 79 -1 14 6 P o rc in e-P R C V IS U -1 P o rc in e -T G E V S C -Y 100 100 B a t-C o V H K U 2 / G D / 4 3 0 / 2 0 0 6</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="7,259.85,535.76,4.56,3.64;7,298.56,529.99,6.84,3.64;7,401.33,497.18,4.56,3.64;7,410.58,454.63,6.84,3.64;7,405.77,450.54,6.84,3.64;7,398.68,444.89,6.84,3.64;7,392.61,442.85,6.84,3.64;7,386.36,440.26,6.84,3.64;7,131.43,531.12,81.36,45.49;7,380.65,443.57,4.56,3.64;7,373.68,440.91,6.83,3.64;7,177.65,516.11,38.59,22.59;7,142.13,505.59,82.38,29.31;7,63.76,498.45,127.40,36.09;7,228.72,497.66,4.56,3.64;7,368.57,443.81,4.56,3.64;7,361.68,444.89,4.56,3.64;7,148.60,482.77,48.21,16.84;7,144.82,470.36,67.07,13.85;7,353.73,446.76,6.84,3.64;7,349.04,444.23,4.56,3.64;7,337.98,446.94,6.84,3.64;7,133.34,458.66,58.30,11.52;7,321.60,265.02,2.62,25.79"><head></head><label></label><figDesc xml:id="_Qn4HfTu">V E n g la n d / 1 H C o V E n g la n d /Q a ta r/ 2 0 1 2 100Ca m el us dr om ed ar iu s-M ER S-Co V KS A-CA M EL -</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="7,57.09,680.29,488.66,7.33;7,57.09,690.47,488.63,6.42;7,57.09,699.94,488.66,6.42;7,57.09,709.41,488.68,6.42;7,57.09,718.82,224.77,6.42"><head>Figure 3 .</head><label>3</label><figDesc xml:id="_h2xn8NB">Figure 3. Phylogenetic Tree of Known Animal and Human Coronaviruses. Phylogenetic analysis of the full-length genome sequences of coronaviruses publicly available in GenBank was performed using RAxML, with 1000 bootstrap replicates. Lines with different colors represent different coronavirus species, Alphacoronaviruses (blue lines), Beta-coronaviruses (red lines for Beta-coronavirus C, and black lines for Beta-coronavirus A, B, and D), Gamma-coronaviruses (green lines), and Delta-coronaviruses (purple lines). Human isolates are highlighted with different colors, whereas strains from other hosts are shown in black. Numbers at the branches represent bootstrap values obtained in the phylogenetic analysis.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="8,274.05,705.38,140.18,8.25;8,57.09,717.34,357.15,8.25;9,57.09,106.90,50.43,9.07;9,57.09,124.69,247.09,11.00;9,57.71,161.36,63.28,5.66;9,145.31,161.68,22.44,4.31;9,145.17,191.72,22.45,4.31;9,141.37,221.07,81.86,4.31;9,141.82,249.44,10.41,4.31;9,247.41,284.17,13.11,4.31;9,175.13,284.17,25.15,4.31;9,141.40,308.69,138.51,4.31;9,266.03,332.76,25.15,4.31;9,234.07,332.76,10.41,4.31;9,196.47,332.76,10.41,4.31;9,148.69,332.76,22.44,4.31;9,145.08,385.60,22.44,4.31;9,145.31,425.85,22.45,4.31;9,145.08,453.68,22.44,4.31;9,140.50,512.31,22.44,4.31;9,139.17,594.39,201.47,4.65;9,139.17,600.44,172.50,4.65;9,139.17,606.97,60.52,4.65;9,139.17,613.56,32.46,4.11;9,139.17,619.85,32.69,4.11;9,139.17,626.27,32.17,4.11;9,139.17,632.44,32.69,4.11;9,139.17,638.85,32.55,4.11;9,139.17,645.27,31.57,4.11"><head></head><label></label><figDesc xml:id="_akznDmR">B and C are two naturally circulating viruses. Genotype D emerged via recombination between genotypes B and C viruses at the coronavirus, IBV: avian infecƟous bronchiƟs virus, MHV: murine hepaƟƟs TGEV: transmissible gastroenteriƟs, PEDV: porcine epidemic diarrhea virus HCoV: human coronavirus a:14365-14412, b:14724-14746, c:14367-14395, d:10609-10641, e:13986-14011, f:12821-12854,</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="9,57.09,679.44,357.15,7.33;9,57.09,689.62,357.12,6.42;9,57.09,699.09,14.95,6.42"><head>Figure 4 .</head><label>4</label><figDesc xml:id="_3Ew6wRn">Figure 4. The colored regions of each human coronavirus indicate genetic recombination at the genomic sites with coronaviruses of zoonotic origin. Specific nucleotide locations where recombination occurred are also shown in broken lines.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="3,57.09,112.29,357.24,499.96"><head>Table 1 .</head><label>1</label><figDesc xml:id="_NXdQtNx">Comparison of Clinical Symptoms, Incubation Time, Median Time to Death, and Case Fatality Rates of Human Coronaviruses</figDesc><table coords="3,57.09,135.05,353.15,477.19"><row><cell>HCoV</cell><cell>Clinical Symptoms</cell><cell>Case</cell><cell>Incubation</cell><cell>Median</cell><cell>Refs</cell></row><row><cell></cell><cell></cell><cell>Fatality</cell><cell>Period</cell><cell>Time to</cell><cell></cell></row><row><cell></cell><cell></cell><cell>Rate</cell><cell></cell><cell>Death</cell><cell></cell></row><row><cell>229E</cell><cell>General malaise</cell><cell>N/A a</cell><cell>2-5 days</cell><cell>-</cell><cell>[18,81,82]</cell></row><row><cell></cell><cell>Headache</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Nasal discharge</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Sneezing</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Sore throat</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Fever and cough</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>(10-20% of patients)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>OC43</cell><cell>General malaise</cell><cell>N/A</cell><cell>2-5 days</cell><cell>-</cell><cell>[18,82-84]</cell></row><row><cell></cell><cell>Headache</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Nasal discharge</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Sneezing</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Sore throat</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Fever and cough</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>(10-20% of patients)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>SARS-CoV</cell><cell>Fever</cell><cell>9%</cell><cell>2-11 days</cell><cell>23 days</cell><cell>[19,42,85-88]</cell></row><row><cell></cell><cell>Myalgia</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Headache</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Malaise</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Chills</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Nonproductive cough</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Dyspnea</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Respiratory distress</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Diarrhea (30-40% of patients)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>NL63</cell><cell>Cough, Rhinorrhea</cell><cell>N/A</cell><cell>2-4 days</cell><cell>-</cell><cell>[89-92]</cell></row><row><cell></cell><cell>Tachypnea</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Fever</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Hypoxia</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Obstructive laryngitis (croup)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>HKU1</cell><cell>Fever</cell><cell>N/A</cell><cell>2-4 days</cell><cell>-</cell><cell>[2,32-34,93,94]</cell></row><row><cell></cell><cell>Running nose</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Cough</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Dyspnea</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>MERS-CoV</cell><cell>Fever</cell><cell>36%</cell><cell>2-13 days</cell><cell>14 days</cell><cell>[41-43,95,96]</cell></row><row><cell></cell><cell>Cough</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Chills</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Sore throat</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Myalgia</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Arthralgia</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Dyspnea</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Pneumonia</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Diarrhea and vomiting</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>(one-third of patients)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>Acute renal impairment</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">a N/A, not applicable.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0">Trends in Microbiology, June 2016, Vol. 24, No. 6 491</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1">Trends in Microbiology, June 2016, Vol. 24, No. 6 493</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_2">Trends in Microbiology, June 2016, Vol. 24, No. 6 495</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_3">Trends in Microbiology, June 2016, Vol. 24, No. 6 497</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_4">Trends in Microbiology, June 2016, Vol. 24, No. 6 499</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="502" xml:id="foot_5">Trends in Microbiology, June 2016, Vol. 24, No. 6</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_HnxKNBt">Acknowledgments</head><p xml:id="_Et6auFD">This work was supported by the National Natural Science Foundation of China (81461168030), the China National Grand S&amp;T Special Project (2014ZX10004-001-006), and the National Key Program for Infectious Disease of China (2016ZX10004222). G.F.G. is a leading principal investigator of the NSFC Innovative Research Group (grant number 81321063). J.Z and S.S are supported by the Priority Academic Program Development of Jiangsu Higher Education Institution. G.W. is the recipient of a Banting Postdoctoral Fellowship from the Canadian Institutes of Health Research (CIHR), and a President's International Fellowship Initiative from the Chinese Academy of Sciences (CAS). All authors declare no competing interests.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_PpPUqhR">Author Contributions</head><p xml:id="_rmMSBvV">Shuo Su and Gary Wong contributed equally to this manuscript.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="11,59.55,310.55,172.22,5.50;11,67.29,318.54,164.44,5.50;11,67.29,326.48,131.96,5.50" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_xbVD7wT">Coronavirus pathogenesis and the emerging pathogen severe acute respiratory syndrome coronavirus. Microbiol</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">R</forename><surname>Weiss</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Navas-Martin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zpUjawD">Mol. Biol. Rev</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="635" to="664" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,59.55,336.46,172.17,5.50;11,67.29,344.45,164.42,5.50;11,67.29,352.39,45.68,5.50" xml:id="b1">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Lai</surname></persName>
+		</author>
+		<title level="m" xml:id="_3hKE3QA">Fields Virology</title>
+				<editor>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Knipe</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Howley</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Lippincott Williams &amp; Wilkins</publisher>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="page" from="1305" to="1335" />
+		</imprint>
+	</monogr>
+	<note>5th edn</note>
+</biblStruct>
+
+<biblStruct coords="11,59.55,362.36,172.19,5.50;11,67.29,370.36,102.19,5.50" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_kJyKSmT">The molecular biology of coronaviruses</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">M</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Cavanagh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_D7sPtNs">Adv. Vir. Res</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="1" to="100" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,59.55,380.28,172.18,5.50;11,67.29,388.27,164.48,5.50;11,67.29,396.27,137.02,5.50" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_m8Fw5ds">Attachment of mouse hepatitis virus to O-acetylated sialic acid is mediated by hemagglutinin-esterase and not by the spike protein</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Langereis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CeeNR95">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="8970" to="8974" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,59.55,406.19,172.21,5.50;11,67.29,414.18,154.96,5.50" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_ECbHBps">Rotavirus and coronavirus associated diarrhoea in domestic animals</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">J</forename><surname>Durham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CGuSBgY">N. Zealand Vet. J</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="30" to="32" />
+			<date type="published" when="1979">1979</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,59.55,424.16,172.20,5.50;11,67.29,432.10,58.26,5.50" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_RHwZZXN">Coronavirus avian infectious bronchitis virus</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Cavanagh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_aYPQKVc">Vet. Res</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="281" to="297" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,59.55,442.08,172.17,5.50;11,67.29,450.07,164.44,5.50" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_cD6q5HJ">Detection of a group 2 coronavirus in dogs with canine infectious respiratory disease</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Erles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wZs8GZQ">Virology</title>
+		<imprint>
+			<biblScope unit="volume">310</biblScope>
+			<biblScope unit="page" from="216" to="223" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,59.55,459.99,172.20,5.50;11,67.29,467.98,112.63,5.50" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_Tz7n7NP">Pathogenesis of demyelination induced by a mouse hepatitis</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">P</forename><surname>Weiner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_SRu87RC">Arch. Neurol</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="298" to="303" />
+			<date type="published" when="1973">1973</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,59.55,477.96,172.18,5.50;11,67.29,485.90,164.43,5.50;11,67.29,493.89,164.45,5.50;11,67.29,501.83,32.97,5.50" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_vyjYC8G">Transmissible gastroenteritis of swine: virus-intestinal cell interactions. II. Electron microscopy of the epithelium in isolated jejunal loops</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Pensaert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PYjRacg">Arch. Gesamte Virusforsch</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="335" to="351" />
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,62.57,511.81,169.16,5.50;11,67.29,519.80,164.44,5.50;11,67.29,527.74,164.43,5.50;11,67.29,535.73,155.94,5.50" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" xml:id="_uz3rndt">Transmissible gastroenteritis of swine: virus-intestinal cell interactions. I. Immunofluorescence, histopathology and virus production in the small intestine through the course of infection</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Pensaert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jecnqPX">Arch. Gesamte Virusforsch</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="321" to="334" />
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,62.57,545.71,169.21,5.50;11,67.29,553.65,140.22,5.50" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_23NjpHS">Replication of an enteric bovine coronavirus in intestinal organ cultures</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Bridger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nSgmHJP">Arch. Virol</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="43" to="51" />
+			<date type="published" when="1978">1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,62.57,563.62,169.21,5.50;11,67.29,571.56,164.45,5.50;11,67.29,579.56,13.20,5.50" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_VMVeqxA">Pathogenicity studies of feline coronavirus isolates 79-1146 and 79-1683</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Pedersen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_grk4AKp">Am. J. Vet. Res</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="2580" to="2585" />
+			<date type="published" when="1984">1984</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,62.57,589.53,169.15,5.50;11,67.29,597.47,164.43,5.50;11,67.29,605.46,75.27,5.50" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_9TsvYmC">Recovery and Characterization of a Coronavirus from Military Dogs with Diarrhea</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">N</forename><surname>Binn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_QvQZjMk">Proc. Annu. Meet. U.S. Anim Health Assoc</title>
+		<imprint>
+			<biblScope unit="page" from="359" to="366" />
+			<date type="published" when="1974">1974</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,62.57,615.44,169.18,5.50;11,67.29,623.38,118.30,5.50" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_EZAZGqy">Pathogenicity of turkey coronavirus in turkeys and chickens</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">M</forename><surname>Ismail</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pcycAZa">Avian Dis</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="515" to="522" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,62.57,633.36,169.17,5.50;11,67.29,641.35,132.75,5.50" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_uXHdpcf">Recently discovered human coronaviruses</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">A</forename><surname>Wevers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Van Der Hoek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5VCkmkV">Clin. Lab. Med</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="715" to="724" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,62.57,651.27,169.17,5.50;11,67.29,659.27,164.45,5.50" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_AMSz2wY">Cultivation of a novel type of common-cold virus in organ cultures</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Tyrrell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">L</forename><surname>Bynoe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4bM2wn4">Br. Med. J</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1467" to="1470" />
+			<date type="published" when="1965">1965</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,62.57,669.24,169.22,5.50;11,67.29,677.18,164.46,5.50;11,67.29,685.17,164.43,5.50;11,67.29,693.11,77.32,5.50" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_367tFcq">Genomic analysis of 15 human coronaviruses OC43 (HCoV-OC43s) circulating in France from 2001 to 2013 reveals a high intra-specific diversity with new recombinant genotypes</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Kin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zjVNGF9">Viruses</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="2358" to="2377" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,62.57,703.09,169.15,5.50;11,67.29,711.08,48.11,5.50" xml:id="b17">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Monto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_vx5wQc8">Medical reviews. Coronaviruses. Yale J. Biol. Med</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="234" to="251" />
+			<date type="published" when="1974">1974</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,310.55,169.17,5.50;11,249.85,318.54,154.42,5.50" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" xml:id="_Ar2CaqN">Coronavirus as a possible cause of severe acute respiratory syndrome</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S M</forename><surname>Peiris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CxAA4sc">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">361</biblScope>
+			<biblScope unit="page" from="1319" to="1325" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,328.52,169.16,5.50;11,249.85,336.46,89.31,5.50" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_ghnDMSW">MERS: emergence of a novel human coronavirus</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">S</forename><surname>Raj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_yUCFAzq">Curr. Opin. Virol</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="58" to="62" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,346.43,169.17,5.50;11,249.85,354.43,164.44,5.50;11,249.85,362.36,47.83,5.50" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_uaqyedq">Coronavirus infections in working adults. Eight-year study with 229 E and OC 43</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">O</forename><surname>Hendley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jG59jyY">Am. Rev. Respir. Dis</title>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="page" from="805" to="811" />
+			<date type="published" when="1972">1972</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,372.34,169.14,5.50;11,249.85,380.28,164.47,5.50;11,249.85,388.27,164.46,5.50;11,249.85,396.27,29.41,5.50" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_mgUkxuf">Human coronavirus NL63 infection and other coronavirus infections in children hospitalized with acute respiratory disease in Hong Kong</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">S</forename><surname>Chiu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fnjhduK">China. Clin. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="1721" to="1729" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,406.19,169.16,5.50;11,249.85,414.18,164.44,5.50" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_hWzukZk">A new virus isolated from the human respiratory tract</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Hamre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Procknow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_HvrN8Qe">Proc. Soc. Exp. Biol. Med</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page" from="190" to="193" />
+			<date type="published" when="1966">1966</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,424.16,169.17,5.50;11,249.85,432.10,164.41,5.50;11,249.85,440.09,79.75,5.50" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_E7kHVGB">Recovery in tracheal organ cultures of novel viruses from patients with respiratory disease</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Mcintosh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ndWqqSd">Proc. Natl. Acad. Sci. U.S.A</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="933" to="940" />
+			<date type="published" when="1967">1967</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,450.07,169.19,5.50;11,249.85,458.01,76.57,5.50" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" xml:id="_pt3DMnh">Signs and symptoms in common colds</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Tyrrell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_SHQ967j">Epidem. Infect</title>
+		<imprint>
+			<biblScope unit="volume">111</biblScope>
+			<biblScope unit="page" from="143" to="156" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,467.98,169.18,5.50;11,249.85,475.92,134.40,5.50" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_httcASd">Human coronavirus NL63, a new respiratory virus</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Van Der Hoek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MEDFUEq">FEMS Microbiol. Rev</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="760" to="773" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,485.90,169.21,5.50;11,249.85,493.89,164.42,5.50;11,249.85,501.83,72.78,5.50" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" xml:id="_UZUbsmS">A previously undescribed coronavirus associated with respiratory disease in humans</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Fouchier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_sJQXCga">Proc. Natl. Acad. Sci. U.S.A</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="page" from="6212" to="6216" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,511.81,169.15,5.50;11,249.85,519.80,164.45,5.50;11,249.85,527.74,95.28,5.50" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_nvQBWhr">Evidence of a novel human coronavirus that is associated with respiratory tract disease in infants and young children</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Esper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ysyKvFP">J. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">191</biblScope>
+			<biblScope unit="page" from="492" to="498" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,537.72,169.16,5.50;11,249.85,545.71,126.28,5.50" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_f7aRuTC">Understanding human coronavirus HCoV-NL63</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Abdul-Rasool</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">C</forename><surname>Fielding</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bUydvCz">Open Virol. J</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="76" to="84" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,555.63,169.17,5.50;11,249.85,563.62,164.43,5.50;11,249.85,571.56,98.23,5.50" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" xml:id="_BUk6Xy4">Characterization and complete genome sequence of a novel coronavirus, coronavirus HKU1, from patients with pneumonia</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">C</forename><surname>Woo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4SdfhmC">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="page" from="884" to="895" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,581.54,169.16,5.50;11,249.85,589.53,93.79,5.50" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_SMZ2kb6">More and more coronaviruses: human coronavirus HKU1</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">C</forename><surname>Woo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_MURJhMy">Viruses</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="57" to="71" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,599.51,169.21,5.50;11,249.85,607.45,164.46,5.50;11,249.85,615.44,108.73,5.50" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_R2bde8A">Clinical and molecular epidemiological features of coronavirus HKU1-associated community-acquired pneumonia</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">C</forename><surname>Woo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_qbxdmqS">J. Infect Dis</title>
+		<imprint>
+			<biblScope unit="volume">192</biblScope>
+			<biblScope unit="page" from="1898" to="1907" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,625.36,169.21,5.50;11,249.85,633.36,151.25,5.50" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_rrCCjbq">Coronavirus HKU1 and other coronavirus infections in Hong Kong</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">K P</forename><surname>Lau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_53yTxxU">J. Clin. Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="2063" to="2071" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,643.33,169.17,5.50;11,249.85,651.27,164.46,5.50;11,249.85,659.27,164.44,5.50;11,249.85,667.20,109.18,5.50" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_mWUJmsj">Epidemiology and clinical presentations of the four human coronaviruses 229E, HKU1, NL63, and OC43 detected over 3 years using a novel multiplex real-time PCR method</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">R</forename><surname>Gaunt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_A5aSXkh">J. Clin. Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="2940" to="2947" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.12,677.18,169.18,5.50;11,249.85,685.17,101.86,5.50" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_qYp6ccg">Coronavirus HKU1 infection in the United States</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Esper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_aKCVmNM">Emerg. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="775" to="779" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,245.25,695.15,169.01,5.50;11,249.85,703.09,164.44,5.50;11,249.85,711.08,19.97,5.50" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_8KhZTyy">Evidence of human coronavirus HKU1 and human bocavirus in Australian children</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">P</forename><surname>Sloots</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TVWjjUR">J. Clin. Virol</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="99" to="102" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,105.77,169.20,5.50;12,67.29,113.71,146.75,5.50" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_8h3qzR8">Detection of the new human coronavirus HKU1: a report of 6 cases</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Vabret</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Da5zSJw">Clin. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="634" to="639" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,123.69,169.14,5.50;12,67.29,131.62,105.50,5.50" xml:id="b37">
+	<analytic>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">G</forename><surname>Goes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_RSJcFE4">Coronavirus HKU1 in children</title>
+				<meeting><address><addrLine>Brazil</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1995">2011. 1995</date>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="1147" to="1148" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,141.60,169.16,5.50;12,67.29,149.60,164.45,5.50" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_WaQ2JyY">Isolation of a novel coronavirus from a man with pneumonia in Saudi Arabia</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Zaki</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rx5vDAa">N. Engl. J. Med</title>
+		<imprint>
+			<biblScope unit="volume">367</biblScope>
+			<biblScope unit="page" from="1814" to="1820" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,159.57,169.19,5.50;12,67.29,167.51,39.56,5.50" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_cDjpBcq">Middle East respiratory syndrome</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zumla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4DKBWSM">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">386</biblScope>
+			<biblScope unit="page" from="995" to="1007" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,177.49,169.17,5.50;12,67.29,185.43,164.42,5.50;12,67.29,193.42,61.94,5.50" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_xy8Cz52">Middle East respiratory syndrome coronavirus: a case-control study of hospitalized patients</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">A</forename><surname>Al-Tawfiq</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_rBCeFrC">Clin. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="160" to="165" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,203.40,169.19,5.50;12,67.29,211.34,164.44,5.50;12,67.29,219.33,164.46,5.50;12,67.29,227.32,61.94,5.50" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" xml:id="_mqTG3Pc">Epidemiological, demographic, and clinical characteristics of 47 cases of Middle East respiratory syndrome coronavirus disease from Saudi Arabia: a descriptive study</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Assiri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JbFAsbF">Lancet Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="752" to="761" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,237.24,169.14,5.50;12,67.29,245.24,164.46,5.50;12,67.29,253.17,95.85,5.50" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" xml:id="_GTGQbtj">Clinical course and outcomes of critically ill patients with Middle East respiratory syndrome coronavirus infection</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">M</forename><surname>Arabi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gCG29ZM">Ann. Intern. Med</title>
+		<imprint>
+			<biblScope unit="volume">160</biblScope>
+			<biblScope unit="page" from="389" to="397" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,263.15,169.17,5.50;12,67.29,271.15,164.44,5.50;12,67.29,279.08,82.81,5.50" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" xml:id="_zmv5JnA">Clinical features and virological analysis of a case of Middle East respiratory syndrome coronavirus infection</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Drosten</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tfAfapK">Lancet. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="745" to="751" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,289.06,169.18,5.50;12,67.29,297.05,106.40,5.50" xml:id="b44">
+	<analytic>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Su</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" xml:id="_S9bAra9">MERS in South Korea and China: a potential outbreak threat</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">385</biblScope>
+			<biblScope unit="page" from="2349" to="2350" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,306.98,169.17,5.50;12,67.29,314.97,164.43,5.50;12,67.29,322.96,58.43,5.50" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_JZ5M5VJ">Isolation and characterization of viruses related to the SARS coronavirus from animals in southern China</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Guan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_C5m85K9">Science</title>
+		<imprint>
+			<biblScope unit="volume">302</biblScope>
+			<biblScope unit="page" from="276" to="278" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,332.88,169.18,5.50;12,67.29,340.88,60.54,5.50" xml:id="b46">
+	<analytic>
+		<title level="a" type="main" xml:id="_gsbw8vy">Identification of a novel coronavirus in bats</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">L</forename><surname>Poon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eaBGwg9">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<date type="published" when="2001">2005. 2001-2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.40,350.86,169.35,5.50;12,67.29,358.79,159.54,5.50" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_54qVFEe">Coronaviruses post-SARS: update on replication and pathogenesis</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Perlman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Netland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bFWgRb8">Nat. Rev. Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="439" to="450" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,368.77,169.15,5.50;12,67.29,376.71,88.71,5.50" xml:id="b48">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Tu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tQBhDYp">Antibodies to SARS coronavirus in civets. Emerg. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="2244" to="2248" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,386.69,169.18,5.50;12,67.29,394.68,164.44,5.50;12,67.29,402.62,164.43,5.50;12,67.29,410.61,46.21,5.50" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" xml:id="_W4jg7mn">Molecular evolution analysis and geographic investigation of severe acute respiratory syndrome coronaviruslike virus in palm civets at an animal market and on farms</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Kan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_XgF4Ceb">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="page" from="11892" to="11900" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,420.59,169.17,5.50;12,67.29,428.53,164.42,5.50;12,67.29,436.52,164.42,5.50;12,67.29,444.46,164.45,5.50;12,67.29,452.45,98.24,5.50" xml:id="b50">
+	<analytic>
+		<title level="a" type="main" xml:id="_5cKMu6A">Ecoepidemiology and complete genome comparison of different strains of severe acute respiratory syndrome-related Rhinolophus bat coronavirus in China reveal bats as a reservoir for acute, self-limiting infection that allows recombination events</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">K</forename><surname>Lau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_phdFGas">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="2808" to="2819" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.47,462.43,169.25,5.50;12,67.29,470.36,164.42,5.50" xml:id="b51">
+	<analytic>
+		<title level="a" type="main" xml:id="_cJ5fNDZ">Isolation and characterization of a bat SARSlike coronavirus that uses the ACE2 receptor</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">Y</forename><surname>Ge</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_w6eEMJv">Nature</title>
+		<imprint>
+			<biblScope unit="volume">503</biblScope>
+			<biblScope unit="page" from="535" to="538" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,480.34,169.20,5.50;12,67.29,488.34,164.46,5.50;12,67.29,496.27,132.13,5.50" xml:id="b52">
+	<analytic>
+		<title level="a" type="main" xml:id="_aV7B7Au">ORF8-related genetic evidence for Chinese horseshoe bats as the source of human severe acute respiratory syndrome coronavirus</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_urptW66">J. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">213</biblScope>
+			<biblScope unit="page" from="579" to="583" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,506.25,169.17,5.50;12,67.29,514.25,164.44,5.50;12,67.29,522.18,164.44,5.50" xml:id="b53">
+	<analytic>
+		<title level="a" type="main" xml:id="_RhS62Kp">Middle East respiratory syndrome coronavirus neutralising serum antibodies in dromedary camels: a comparative serological study</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">B</forename><surname>Reusken</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5NmSR68">Lancet. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="859" to="866" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,532.16,169.17,5.50;12,67.29,540.10,164.47,5.50;12,67.29,548.09,108.94,5.50" xml:id="b54">
+	<analytic>
+		<title level="a" type="main" xml:id="_p2exKWT">Middle East respiratory syndrome coronavirus: another zoonotic betacoronavirus causing SARS-like disease</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">F W</forename><surname>Chan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PwGwX4M">Clin. Microbiol. Rev</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="465" to="522" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,558.07,169.18,5.50;12,67.29,566.01,139.96,5.50" xml:id="b55">
+	<analytic>
+		<title level="a" type="main" xml:id="_5pSmRVZ">MERS coronavirus in dromedary camel herd, Saudi Arabia</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">G</forename><surname>Hemida</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bWhQwwH">Emerg. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="1231" to="1234" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,575.98,169.13,5.50;12,67.29,583.98,164.46,5.50" xml:id="b56">
+	<analytic>
+		<title level="a" type="main" xml:id="_7KsaYbf">Isolation of MERS coronavirus from a dromedary camel</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">S</forename><surname>Raj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_9UZcJQZ">Emerg. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="1339" to="1342" />
+			<date type="published" when="2014">2014. 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,593.90,169.17,5.50;12,67.29,601.89,106.97,5.50" xml:id="b57">
+	<analytic>
+		<title level="a" type="main" xml:id="_9JNaucE">MERS coronaviruses in dromedary camels</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">K</forename><surname>Chu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_KKSrtBY">Egypt. Emerg. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="1049" to="1053" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,611.87,169.15,5.50;12,67.29,619.81,164.45,5.50;12,67.29,627.80,164.47,5.50;12,67.29,635.74,45.67,5.50" xml:id="b58">
+	<analytic>
+		<title level="a" type="main" xml:id="_aMr3GZz">Concerns about misinterpretation of recent scientific data implicating dromedary camels in epidemiology of Middle East respiratory syndrome (MERS)</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Samara</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">A</forename><surname>Abdoun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_USaQpNC">Mbio</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="e01430" to="e1514" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,645.72,169.18,5.50;12,67.29,653.71,164.40,5.50;12,67.29,661.65,55.76,5.50" xml:id="b59">
+	<analytic>
+		<title level="a" type="main" xml:id="_BESZmQK">Bat origins of MERS-CoV supported by bat coronavirus HKU4 usage of human receptor CD26</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_8KTBhxW">Cell Host Microbe</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="328" to="337" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,671.62,169.19,5.50;12,67.29,679.62,164.44,5.50;12,67.29,687.56,36.26,5.50" xml:id="b60">
+	<analytic>
+		<title level="a" type="main" xml:id="_ERGss5E">Molecular basis of binding between novel human coronavirus MERS-CoV and its receptor CD26</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Lu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_RVkq6E5">Nature</title>
+		<imprint>
+			<biblScope unit="volume">500</biblScope>
+			<biblScope unit="page" from="227" to="231" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,62.57,697.53,169.20,5.50;12,67.29,705.53,164.45,5.50;12,67.29,713.46,44.02,5.50" xml:id="b61">
+	<analytic>
+		<title level="a" type="main" xml:id="_gyy6zvu">Co-circulation of three camel coronavirus species and recombination of MERS-CoVs in Saudi Arabia</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Sabir</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UhMMDQP">Science</title>
+		<imprint>
+			<biblScope unit="volume">351</biblScope>
+			<biblScope unit="page" from="81" to="84" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,105.77,169.16,5.50;12,249.85,113.71,154.75,5.50" xml:id="b62">
+	<analytic>
+		<title level="a" type="main" xml:id="_ySTWGk6">Mosaic structure of human coronavirus NL63, one thousand years of evolution</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Pyrc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pDm3ccw">J. Mol. Biol</title>
+		<imprint>
+			<biblScope unit="volume">364</biblScope>
+			<biblScope unit="page" from="964" to="973" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,123.69,169.16,5.50;12,249.85,131.62,164.42,5.50;12,249.85,139.62,36.26,5.50" xml:id="b63">
+	<analytic>
+		<title level="a" type="main" xml:id="_Yf6Bnsp">Does IBV change slowly despite the capacity of the spike protein to vary greatly?</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Cavanagh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Mx2xAbJ">Adv. Exp. Med. Biol</title>
+		<imprint>
+			<biblScope unit="volume">440</biblScope>
+			<biblScope unit="page" from="729" to="734" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,149.60,169.18,5.50;12,249.85,157.53,146.33,5.50" xml:id="b64">
+	<analytic>
+		<title level="a" type="main" xml:id="_6EfHz5T">Genetic drift of human coronavirus OC43 spike gene during adaptive evolution</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Ren</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fvesGPA">Sci. Rep</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">11451</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,167.51,169.16,5.50;12,249.85,175.51,151.05,5.50" xml:id="b65">
+	<analytic>
+		<title level="a" type="main" xml:id="_bSj3BkN">Moderate mutation rate in the SARS coronavirus genome and its implications</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pnX5aU8">BMC Evol. Biol</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">21</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,185.43,169.17,5.50;12,249.85,193.42,164.45,5.50;12,249.85,201.41,38.75,5.50" xml:id="b66">
+	<analytic>
+		<title level="a" type="main" xml:id="_TJ3PYFP">Spread, circulation, and evolution of the Middle East respiratory syndrome coronavirus</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Cotten</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Aj7kyhh">Mbio</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="e01062" to="e1113" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,211.34,169.14,5.50;12,249.85,219.33,164.46,5.50" xml:id="b67">
+	<analytic>
+		<title level="a" type="main" xml:id="_NMez8DJ">Coronavirus diversity, phylogeny and interspecies jumping</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">C</forename><surname>Woo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_AvMbEV2">Exp. Biol. Med. (Maywood)</title>
+		<imprint>
+			<biblScope unit="volume">234</biblScope>
+			<biblScope unit="page" from="1117" to="1127" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,229.31,169.20,5.50;12,249.85,237.24,164.47,5.50;12,249.85,245.24,92.27,5.50" xml:id="b68">
+	<analytic>
+		<title level="a" type="main" xml:id="_373a8e4">Infectious diseases emerging from Chinese wet-markets: zoonotic origins of severe respiratory viral infections</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">C</forename><surname>Woo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CXZfMna">Curr. Opin. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="401" to="407" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,255.22,169.21,5.50;12,249.85,263.15,164.45,5.50;12,249.85,271.15,155.21,5.50" xml:id="b69">
+	<analytic>
+		<title level="a" type="main" xml:id="_KtpztW8">Comparative analysis of 22 coronavirus HKU1 genomes reveals a novel genotype and evidence of natural recombination in coronavirus HKU1</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">C</forename><surname>Woo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VhepFKP">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="7136" to="7145" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,281.07,169.19,5.50;12,249.85,289.06,158.32,5.50" xml:id="b70">
+	<analytic>
+		<title level="a" type="main" xml:id="_hRvJNjb">Recombination between nonsegmented RNA genomes of murine coronaviruses</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">M</forename><surname>Lai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5YutSQC">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="449" to="456" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,299.04,169.17,5.50;12,249.85,306.98,164.47,5.50;12,249.85,314.97,39.56,5.50" xml:id="b71">
+	<analytic>
+		<title level="a" type="main" xml:id="_H6ZP59Y">Evidence of recombinant strains of porcine epidemic diarrhea virus</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">F</forename><surname>Tian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xMBWfsB">Emerg. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="1735" to="1738" />
+			<date type="published" when="2013">2014. 2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,324.95,169.17,5.50;12,249.85,332.88,164.46,5.50;12,249.85,340.88,98.59,5.50" xml:id="b72">
+	<analytic>
+		<title level="a" type="main" xml:id="_RMH5kdd">Emergence of pathogenic coronaviruses in cats by homologous recombination between feline and canine coronaviruses</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Terada</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_BB5Pfdc">PLoS ONE</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">e106534</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.25,350.86,169.03,5.50;12,249.85,358.79,164.43,5.50;12,249.85,366.79,100.58,5.50" xml:id="b73">
+	<analytic>
+		<title level="a" type="main" xml:id="_vdeH4eE">Recombinant canine coronaviruses related to transmissible gastroenteritis virus of Swine are circulating in dogs</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Decaro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2MQDsnJ">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="1532" to="1537" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,376.71,169.17,5.50;12,249.85,384.70,164.45,5.50;12,249.85,392.70,164.45,5.50;12,249.85,400.63,90.71,5.50" xml:id="b74">
+	<analytic>
+		<title level="a" type="main" xml:id="_Dvmr7wE">Molecular epidemiology of human coronavirus OC43 reveals evolution of different genotypes over time and recent emergence of a novel genotype due to natural recombination</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">K P</forename><surname>Lau</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TnVadUX">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page" from="11325" to="11337" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,410.61,169.18,5.50;12,249.85,418.60,164.42,5.50;12,249.85,426.54,50.38,5.50" xml:id="b75">
+	<analytic>
+		<title level="a" type="main" xml:id="_6s9qrg8">Genotype shift in human coronavirus OC43 and emergence of a novel genotype by natural recombination</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_eMeYj3A">J. Infect</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="page" from="641" to="650" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,436.52,169.17,5.50;12,249.85,444.46,164.44,5.50;12,249.85,452.45,91.72,5.50" xml:id="b76">
+	<analytic>
+		<title level="a" type="main" xml:id="_Zc3WZ8T">Phylogenetic and recombination analysis of coronavirus HKU1, a novel coronavirus from patients with pneumonia</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">C</forename><surname>Woo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_hWZWP5G">Arch. Virol</title>
+		<imprint>
+			<biblScope unit="volume">150</biblScope>
+			<biblScope unit="page" from="2299" to="2311" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,462.43,169.19,5.50;12,249.85,470.36,164.43,5.50;12,249.85,478.36,88.18,5.50" xml:id="b77">
+	<analytic>
+		<title level="a" type="main" xml:id="_ruQnuvd">Evidence from the evolutionary analysis of nucleotide sequences for a recombinant history of SARS-CoV</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Stanhope</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_TnKZWSU">Infect. Genet. Evol</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="15" to="19" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,488.34,169.18,5.50;12,249.85,496.27,164.43,5.50" xml:id="b78">
+	<analytic>
+		<title level="a" type="main" xml:id="_j73Gtzx">Testing the hypothesis of a recombinant origin of the SARS-associated coronavirus</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">W</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nb5e7sE">Arch. Virol</title>
+		<imprint>
+			<biblScope unit="volume">150</biblScope>
+			<biblScope unit="page" from="1" to="20" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,506.25,169.17,5.50;12,249.85,514.03,164.41,5.98;12,249.85,522.18,164.45,5.50;12,249.85,530.18,60.72,5.50" xml:id="b79">
+	<analytic>
+		<title level="a" type="main" xml:id="_FPpWUPH">Origin and possible genetic recombination of the Middle East respiratory syndrome coronavirus from the first imported case in China: phylogenetics and coalescence analysis</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_d49P33a">Mbio</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="e01280" to="e01215" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,540.10,169.17,5.50;12,249.85,548.09,156.34,5.50" xml:id="b80">
+	<analytic>
+		<title level="a" type="main" xml:id="_wmPKWfw">Coronavirus 229E-related pneumonia in immunocompromised patients</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Pene</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Rwj7aX4">Clin. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="929" to="932" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,558.07,169.16,5.50;12,249.85,566.01,61.94,5.50" xml:id="b81">
+	<analytic>
+		<title level="a" type="main" xml:id="_qZ6W6YW">Coronaviruses in children</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Papa</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_zRraKJm">Greece. Emerg. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="947" to="949" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,575.98,169.17,5.50;12,249.85,583.98,164.46,5.50;12,249.85,591.91,112.24,5.50" xml:id="b82">
+	<analytic>
+		<title level="a" type="main" xml:id="_cnAekXw">Epidemiological and clinical features of human coronavirus infections among different subsets of patients</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">K</forename><surname>Cabeca</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PhpsRcR">Influenza Other Respir. Virus</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="1040" to="1047" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.25,601.89,169.02,5.50;12,249.85,609.89,164.45,5.50;12,249.85,617.82,164.44,5.50;12,249.85,625.82,30.17,5.50" xml:id="b83">
+	<analytic>
+		<title level="a" type="main" xml:id="_SnZgx7U">Isolation and characterization of current human coronavirus strains in primary human epithelial cell cultures reveal differences in target cell tropism</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Dijkman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_7epM5DX">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page" from="6081" to="6090" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,635.74,169.20,5.50;12,249.85,643.73,116.65,5.50" xml:id="b84">
+	<analytic>
+		<title level="a" type="main" xml:id="_bahBkqW">Severe Acute Respiratory Syndrome (SARS)</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Cleri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bgUMVuy">Infect. Dis. Clin. N. Am</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="175" to="202" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,653.71,169.17,5.50;12,249.85,661.65,89.95,5.50" xml:id="b85">
+	<analytic>
+		<title level="a" type="main" xml:id="_TrTGfUz">Multiple organ infection and the pathogenesis of SARS</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Gu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_DSkUesd">J. Exp. Med</title>
+		<imprint>
+			<biblScope unit="volume">202</biblScope>
+			<biblScope unit="page" from="415" to="424" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,671.62,169.14,5.50;12,249.85,679.62,164.41,5.50;12,249.85,687.56,29.41,5.50" xml:id="b86">
+	<analytic>
+		<title level="a" type="main" xml:id="_4HHsGqN">A cluster of cases of severe acute respiratory syndrome in Hong Kong</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">W</forename><surname>Tsang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_gyqCQQT">N. Engl. J. Med</title>
+		<imprint>
+			<biblScope unit="volume">348</biblScope>
+			<date type="published" when="1977">2003. 1977-1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,245.12,697.53,169.18,5.50;12,249.85,705.53,164.43,5.50;12,249.85,713.46,127.04,5.50" xml:id="b87">
+	<analytic>
+		<title level="a" type="main" xml:id="_aCCmSGN">Clinical progression and viral load in a community outbreak of coronavirus-associated SARS pneumonia: a prospective study</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S M</forename><surname>Peiris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wB5eM8H">Lancet</title>
+		<imprint>
+			<biblScope unit="volume">361</biblScope>
+			<biblScope unit="page" from="1767" to="1772" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,394.07,753.09,151.76,7.36" xml:id="b88">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_cM37naJ">Trends in Microbiology</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">501</biblScope>
+			<date type="published" when="2016-06">June 2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.57,105.77,169.16,5.50;13,67.29,113.71,164.47,5.50;13,67.29,121.70,164.47,5.50;13,67.29,129.64,10.22,5.50" xml:id="b89">
+	<analytic>
+		<title level="a" type="main" xml:id="_h32Pz4W">A novel pancoronavirus RT-PCR assay: frequent detection of human coronavirus NL63 in children hospitalized with respiratory tract infections in Belgium</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Moes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tTxKp7E">BMC Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">6</biblScope>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.57,139.62,169.17,5.50;13,67.29,147.61,95.34,5.50" xml:id="b90">
+	<analytic>
+		<title level="a" type="main" xml:id="_kknag2x">Human coronavirus NL63 infection in Canada</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Bastien</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_nH8txBR">J. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">191</biblScope>
+			<biblScope unit="page" from="503" to="506" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.57,157.53,169.19,5.50;13,67.29,165.53,109.62,5.50" xml:id="b91">
+	<analytic>
+		<title level="a" type="main" xml:id="_6YKkMtA">Croup is associated with the novel coronavirus NL63</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Van Der Hoek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_czUf8rH">PLoS Med</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="764" to="770" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,62.57,175.51,169.14,5.50;13,67.29,183.44,164.47,5.50;13,67.29,191.44,164.46,5.50;13,67.29,199.37,29.41,5.50" xml:id="b92">
+	<analytic>
+		<title level="a" type="main" xml:id="_jamtqP7">Human coronavirus NL63 infection and other coronavirus infections in children hospitalized with acute respiratory disease in Hong Kong</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">S</forename><surname>Chiu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_BVCjEd2">Clin. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="1721" to="1729" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,245.12,105.77,169.15,5.50;13,249.85,113.71,59.38,5.50" xml:id="b93">
+	<analytic>
+		<title level="a" type="main" xml:id="_Y9DRrEj">The common cold: a review of the literature</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Wat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jrPtuSd">Eur. J. Intern. Med</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="79" to="88" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,245.12,123.69,169.18,5.50;13,249.85,131.62,153.40,5.50" xml:id="b94">
+	<analytic>
+		<title level="a" type="main" xml:id="_kG46FhK">Detection of viruses identified recently in children with acute wheezing</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">Y</forename><surname>Chung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_A36yc7g">J. Med. Virol</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="page" from="1238" to="1243" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,245.12,141.60,169.14,5.50;13,249.85,149.60,164.48,5.50;13,249.85,157.53,164.38,5.50;13,249.85,165.53,164.42,5.50;13,249.85,173.52,96.09,5.50" xml:id="b95">
+	<analytic>
+		<title level="a" type="main" xml:id="_4Hqwpxd">State of knowledge and data gaps of Middle East respiratory syndrome coronavirus (MERS-CoV) in humans</title>
+		<idno type="DOI">10.1371/currents.outbreaks.0bf719e352e7478f8ad85fa30127ddb8</idno>
+		<ptr target="http://dx.doi.org/10.1371/currents.outbreaks.0bf719e352e7478f8ad85fa30127ddb8" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Tp7jwqc">PLoS Curr. Outbreaks Published online November</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<date type="published" when="2013">2013. 2013</date>
+		</imprint>
+		<respStmt>
+			<orgName>WHO Mers-Cov Research Group</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,245.12,183.44,169.19,5.50;13,249.85,191.44,164.48,5.50;13,249.85,199.37,99.70,5.50" xml:id="b96">
+	<analytic>
+		<title level="a" type="main" xml:id="_pXJHgvG">Viral Shedding and antibody response in 37 patients with Middle East respiratory syndrome coronavirus infection</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">M</forename><surname>Corman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_UwRWwkf">Clin. Infect. Dis</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="page" from="477" to="483" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

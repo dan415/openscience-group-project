@@ -1,0 +1,2121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" xml:id="_K6zvHmF">Highly diverse and unknown viruses may enhance Antarctic endoliths&apos; adaptability</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,56.62,181.08,90.88,10.16"><forename type="first">Cassandra</forename><forename type="middle">L</forename><surname>Ettinger</surname></persName>
+							<email>cassande@ucr.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Microbiology and Plant Pathology</orgName>
+								<orgName type="institution">University of California</orgName>
+								<address>
+									<settlement>Riverside</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,158.59,181.08,77.43,10.16"><forename type="first">Morgan</forename><surname>Saunders</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Biological Sciences</orgName>
+								<orgName type="institution">California State Polytechnic University</orgName>
+								<address>
+									<settlement>Pomona</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="institution">The University of Arizona</orgName>
+								<address>
+									<settlement>Tucson</settlement>
+									<region>AZ</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,249.20,181.08,71.10,10.16"><forename type="first">Laura</forename><surname>Selbmann</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Department of Ecological and Biological Sciences</orgName>
+								<orgName type="institution">University of Tuscia</orgName>
+								<address>
+									<settlement>Viterbo</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,328.38,181.08,120.05,10.16"><forename type="first">Manuel</forename><surname>Delgado-Baquerizo</surname></persName>
+							<affiliation key="aff4">
+								<orgName type="laboratory">Laboratorio de Biodiversidad Y Funcionamiento Ecosistémico</orgName>
+								<orgName type="institution" key="instit1">Instituto de Recursos Naturales Y Agrobiología de Sevilla (IRNAS)</orgName>
+								<orgName type="institution" key="instit2">CSIC</orgName>
+								<address>
+									<addrLine>Av. Reina Mercedes 10</addrLine>
+									<postCode>E-41012</postCode>
+									<settlement>Seville</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<orgName type="institution" key="instit1">Unidad Asociada CSIC-UPO (BioFun)</orgName>
+								<orgName type="institution" key="instit2">Universidad Pablo de Olavide</orgName>
+								<address>
+									<postCode>41013</postCode>
+									<settlement>Seville</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,56.63,195.09,65.60,10.16"><forename type="first">Claudio</forename><surname>Donati</surname></persName>
+							<affiliation key="aff6">
+								<orgName type="department">Research and Innovation Centre</orgName>
+								<address>
+									<addrLine>Fondazione Edmund Mach, Via E. Mach 1, San Michele All&apos; Adige 38098</addrLine>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,130.31,195.08,73.55,10.16"><forename type="first">Davide</forename><surname>Albanese</surname></persName>
+							<affiliation key="aff6">
+								<orgName type="department">Research and Innovation Centre</orgName>
+								<address>
+									<addrLine>Fondazione Edmund Mach, Via E. Mach 1, San Michele All&apos; Adige 38098</addrLine>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,211.93,195.08,52.59,10.16"><forename type="first">Simon</forename><surname>Roux</surname></persName>
+							<affiliation key="aff7">
+								<orgName type="department">Department of Energy Joint Genome Institute</orgName>
+								<orgName type="institution">Lawrence Berkeley National Laboratory</orgName>
+								<address>
+									<addrLine>One Cyclotron Road</addrLine>
+									<postCode>94720</postCode>
+									<settlement>Berkeley</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,272.60,195.08,72.18,10.16"><forename type="first">Susannah</forename><surname>Tringe</surname></persName>
+							<affiliation key="aff7">
+								<orgName type="department">Department of Energy Joint Genome Institute</orgName>
+								<orgName type="institution">Lawrence Berkeley National Laboratory</orgName>
+								<address>
+									<addrLine>One Cyclotron Road</addrLine>
+									<postCode>94720</postCode>
+									<settlement>Berkeley</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,352.86,195.08,83.91,10.16"><forename type="first">Christa</forename><surname>Pennacchio</surname></persName>
+							<affiliation key="aff7">
+								<orgName type="department">Department of Energy Joint Genome Institute</orgName>
+								<orgName type="institution">Lawrence Berkeley National Laboratory</orgName>
+								<address>
+									<addrLine>One Cyclotron Road</addrLine>
+									<postCode>94720</postCode>
+									<settlement>Berkeley</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,444.39,195.08,69.08,10.16"><forename type="first">Tijana</forename><forename type="middle">G</forename><surname>Del Rio</surname></persName>
+							<affiliation key="aff7">
+								<orgName type="department">Department of Energy Joint Genome Institute</orgName>
+								<orgName type="institution">Lawrence Berkeley National Laboratory</orgName>
+								<address>
+									<addrLine>One Cyclotron Road</addrLine>
+									<postCode>94720</postCode>
+									<settlement>Berkeley</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,56.62,209.09,65.45,10.16"><forename type="first">Jason</forename><forename type="middle">E</forename><surname>Stajich</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Microbiology and Plant Pathology</orgName>
+								<orgName type="institution">University of California</orgName>
+								<address>
+									<settlement>Riverside</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff8">
+								<orgName type="department">Institute for Integrative Genome Biology</orgName>
+								<orgName type="institution">University of California</orgName>
+								<address>
+									<settlement>Riverside</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,152.62,209.08,68.37,10.16"><forename type="first">Claudia</forename><surname>Coleine</surname></persName>
+							<email>coleine@unitus.it</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Microbiology and Plant Pathology</orgName>
+								<orgName type="institution">University of California</orgName>
+								<address>
+									<settlement>Riverside</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Department of Ecological and Biological Sciences</orgName>
+								<orgName type="institution">University of Tuscia</orgName>
+								<address>
+									<settlement>Viterbo</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="laboratory">Laboratorio de Biodiversidad Y Funcionamiento Ecosistémico</orgName>
+								<orgName type="institution" key="instit1">Instituto de Recursos Naturales Y Agrobiología de Sevilla (IRNAS)</orgName>
+								<orgName type="institution" key="instit2">CSIC</orgName>
+								<address>
+									<addrLine>Av. Reina Mercedes 10</addrLine>
+									<postCode>E-41012</postCode>
+									<settlement>Seville</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" xml:id="_Sth5nGV">Highly diverse and unknown viruses may enhance Antarctic endoliths&apos; adaptability</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">31B497F706C7EFBA805D2476FDDFA2C2</idno>
+					<idno type="DOI">10.1186/s40168-023-01554-6</idno>
+					<note type="submission">Received: 12 January 2023 Accepted: 19 April 2023</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2023-05-12T20:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_NNgvCcW"><p xml:id="_69UNSVb">Background Rock-dwelling microorganisms are key players in ecosystem functioning of Antarctic ice free-areas. Yet, little is known about their diversity and ecology, and further still, viruses in these communities have been largely unexplored despite important roles related to host metabolism and nutrient cycling. To begin to address this, we present a large-scale viral catalog from Antarctic rock microbial communities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_RFTrUjj">Results</head><p xml:id="_e3nuxSj">We performed metagenomic analyses on rocks from across Antarctica representing a broad range of environmental and spatial conditions, and which resulted in a predicted viral catalog comprising &gt; 75,000 viral operational taxonomic units (vOTUS). We found largely undescribed, highly diverse and spatially structured virus communities which had predicted auxiliary metabolic genes (AMGs) with functions indicating that they may be potentially influencing bacterial adaptation and biogeochemistry.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_BmPru29">Conclusion</head><p xml:id="_VC8vWqq">This catalog lays the foundation for expanding knowledge of virosphere diversity, function, spatial ecology, and dynamics in extreme environments. This work serves as a step towards exploring adaptability of microbial communities in the face of a changing climate.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="790.866"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ySFxw2J">Background</head><p xml:id="_DNNAevy">Viruses are among the most prevalent entities on our planet, with the ability to infect organisms across all domains <ref type="bibr" coords="2,95.18,125.84,10.16,11.68" target="#b0">[1]</ref>. Sequencing advances are reshaping understanding of viral diversity across Earth's diverse ecosystems, leading to a remarkable expansion of viral catalogs <ref type="bibr" coords="2,89.49,161.84,8.20,11.68" target="#b0">[1]</ref><ref type="bibr" coords="2,97.69,161.84,4.10,11.68" target="#b1">[2]</ref><ref type="bibr" coords="2,97.69,161.84,4.10,11.68" target="#b2">[3]</ref><ref type="bibr" coords="2,97.69,161.84,4.10,11.68" target="#b3">[4]</ref><ref type="bibr" coords="2,97.69,161.84,4.10,11.68" target="#b4">[5]</ref><ref type="bibr" coords="2,101.79,161.84,8.20,11.68" target="#b5">[6]</ref>. It is becoming clear that viruses play key roles in global biogeochemical cycles through the modulation of host population dynamics, and that the betterstudied pathogenic viruses represent only a small fraction of the virosphere <ref type="bibr" coords="2,129.72,209.84,8.13,11.68" target="#b6">[7]</ref><ref type="bibr" coords="2,137.85,209.84,4.07,11.68" target="#b7">[8]</ref><ref type="bibr" coords="2,141.92,209.84,8.13,11.68" target="#b8">[9]</ref>. Further, through auxiliary metabolic genes (AMGs), some viruses can directly impact host metabolism to improve fitness <ref type="bibr" coords="2,203.41,233.84,14.77,11.68" target="#b9">[10]</ref>, including in terrestrial ecosystems characterized by extreme conditions (e.g., oligotrophy, aridity, high, or low temperature).</p><p xml:id="_vZKMJw4">Antarctic ice-free areas include several of the most inhospitable regions on Earth, among which is the Mars counterpart <ref type="bibr" coords="2,86.92,293.85,14.29,11.68" target="#b10">[11]</ref>: the McMurdo Dry Valleys. In these locations, where rocks represent the main substratum, active life is possible for only a few specialized microorganisms; they survive by dwelling in porous rocks, forming self-sustaining ecosystems called endolithic communities <ref type="bibr" coords="2,230.56,341.83,14.83,11.68" target="#b11">[12,</ref><ref type="bibr" coords="2,248.88,341.83,11.12,11.68" target="#b12">13]</ref>. These microorganisms are the primary life-forms present assuring the balance and functionality of these otherwise inert ecosystems. Recent studies have shed light on their biodiversity and adaptation, particularly the evolution of new and peculiar taxa spanning bacteria, fungi, and archaea <ref type="bibr" coords="2,56.69,413.84,12.45,11.68" target="#b12">[13]</ref><ref type="bibr" coords="2,69.14,413.84,4.15,11.68" target="#b13">[14]</ref><ref type="bibr" coords="2,69.14,413.84,4.15,11.68" target="#b14">[15]</ref><ref type="bibr" coords="2,73.29,413.84,12.45,11.68" target="#b15">[16]</ref>. However, the ecology and distribution of viral diversity from these communities remain wholly unknown and, to date, viral studies have instead focused on Antarctic freshwater lakes <ref type="bibr" coords="2,123.04,449.83,12.45,11.68" target="#b16">[17]</ref><ref type="bibr" coords="2,135.49,449.83,4.15,11.68" target="#b17">[18]</ref><ref type="bibr" coords="2,139.64,449.83,12.45,11.68" target="#b19">[19]</ref>, surrounding oceans <ref type="bibr" coords="2,239.98,449.83,12.45,11.68" target="#b20">[20]</ref><ref type="bibr" coords="2,252.43,449.83,4.15,11.68" target="#b21">[21]</ref><ref type="bibr" coords="2,256.58,449.83,12.45,11.68" target="#b22">[22]</ref>, and soils <ref type="bibr" coords="2,76.16,461.82,12.45,11.68" target="#b23">[23]</ref><ref type="bibr" coords="2,88.62,461.82,4.15,11.68" target="#b24">[24]</ref><ref type="bibr" coords="2,88.62,461.82,4.15,11.68" target="#b25">[25]</ref><ref type="bibr" coords="2,92.77,461.82,12.45,11.68" target="#b26">[26]</ref>.</p><p xml:id="_CAhwuQP">Here, we provide a large-scale viral catalog from 191 Antarctic endolith metagenomes. We sampled 37 localities across a broad range of environmental (e.g., 4 rock typologies, different altitudes and sun exposure) and spatial conditions (i.e., Antarctic Peninsula, Northern Victoria Land, and McMurdo Dry Valleys) (Table <ref type="table" coords="2,240.72,533.85,8.11,11.68">S1</ref>; Fig. <ref type="figure" coords="2,273.24,533.85,8.65,11.68" target="#fig_1">2A</ref>). We aimed to (i) untangle viral diversity in these communities, (ii) predict AMGs and how they may drive the fitness of their hosts, and (iii) explore ecological patterns (e.g., biogeography). This catalog is the first step toward understanding the role of viruses in the coldest and driest region on Earth. This information is also critical for elucidating the possible role of viruses in whole community adaptation in a dry ecosystem that will expand owing to global change <ref type="bibr" coords="2,114.85,641.84,14.77,11.68" target="#b27">[27]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_FSUGDnx">Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_hvFAbUT">Study area</head><p xml:id="_fbqN9hq">One hundred ninety-one rocks colonized by endolithic communities were collected in thirty-eight sites in Antarctica including Antarctic Peninsula (n = 3), McMurdo Dry Valleys, Southern Victoria Land (n = 80), and Northern Victoria Land (n = 108) during more than 20 years of Italian Antarctic Expeditions. Different rock typologies (sandstone n = 141, granite n = 43, quartz n = 5, and basalt/dolerite n = 2) were sampled. Samples were collected along a latitudinal transect ranging from − 62.10008 − 58.51664 to − 77.874 160.739 at different environmental conditions namely sun exposure (northern sun exposed and southern shady rocks) and an altitudinal transect from sea level to 3100 m above sea level (a.s.l.) to provide a comprehensive overview of Antarctic endolithic diversity (Table <ref type="table" coords="2,462.81,221.46,7.68,11.68">S1</ref>). The presence of endolithic colonization was assessed by direct observation in situ. Rocks were excised using a geologic hammer and sterile chisel, and rock samples were preserved in sterile plastic bags, transported, and stored at -20 °C in the Culture Collection of Antarctic fungi of the Mycological Section of the Italian Antarctic National Museum (MNA-CCFEE), until downstream analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_v7SYDk2">Study data</head><p xml:id="_GZUJ8Bf">In total, the dataset included 191 metagenomes, of which 100 have been assembled as described in Albanese et al. <ref type="bibr" coords="2,304.72,365.46,14.77,11.68" target="#b13">[14]</ref>. The remaining metagenomes were generated, sequenced, and assembled as described below. The final metagenomic set represented 149,585,625 metagenomic contigs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_dWX6pTB">DNA extraction, library preparation, and sequencing</head><p xml:id="_x64AS3a">Total community DNA was extracted from 1 g of crushed rocks using DNeasy PowerSoil Pro Kit (Qiagen, Germany), quality checked by electrophoresis using a 1.5% agarose gel and Nanodrop spectrophotometer (Thermofisher, USA) and quantified using the Qubit dsDNA HS Assay Kit (Life Technologies, USA) according to Coleine et al. <ref type="bibr" coords="2,373.27,509.46,14.77,11.68" target="#b12">[13]</ref>. Shotgun metagenomic sequencing paired-end libraries were constructed by using Next Ultra DNA library prep kits and sequenced as 2 × 150 bp using the Illumina NovaSeq platform (Illumina Inc., San Diego, CA, USA) at the Edmund Mach Foundation (San Michele all' Adige, Italy) and at the DOE Joint Genome Institute (JGI).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Zph5YU6">Sequencing reads preparation and assembly</head><p xml:id="_kS6TejX">The metashot/mag-illumina v2.0.0 workflow (https:// github. com/ metas hot/ mag-illum ina, parameters: -metaspades_k 21,33,55,77,99) was used to perform raw reads quality trimming and filtering, and assembly on the metagenomic samples. In brief, adapter trimming, contaminant (artifacts and and spike-ins) and quality filtering were performed using BBDuk (BBMap/BBTools v38.79, https:// sourc eforge. net/ proje cts/ bbmap/). During the quality filtering procedure i) raw reads were quality-trimmed to Q6 using the Phred algorithm; ii) reads that contained 4 or more "N" bases, had an average quality below 10, shorter than 50 bp or under 50% of the original length were removed. Samples were then assembled individually with SPAdes v3.15.1 <ref type="bibr" coords="3,226.38,125.31,15.49,11.68" target="#b28">[28]</ref> (parameters -meta -k 21,33,55,77,99).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Vj7NcVp">Identification and clustering of viral genomes</head><p xml:id="_5XXfeW4">Using a workflow similar to Guo et al. <ref type="bibr" coords="3,209.25,173.33,14.61,11.68" target="#b29">[29]</ref>, viral sequences were identified separately for each of the 191 metagenomic assemblies using VirSorter2 v. 2.2.3 <ref type="bibr" coords="3,222.80,197.33,16.08,11.68" target="#b30">[30]</ref> using -minlength 5000, -min-score 0.5, and -include-groups dsDNA phage,NCLDV,RNA,ssDNA,lavidaviridae. CheckV v0.8.1 <ref type="bibr" coords="3,56.69,233.31,16.08,11.68" target="#b31">[31]</ref> was run on the VirSorter2 predicted viral sequences using the "end_to_end" workflow VirSorter2 was then run again on the viral sequences from CheckV workflow with the -prep-for-dramv option. DRAM-v v. 1.2.2 <ref type="bibr" coords="3,274.48,269.30,16.08,11.68" target="#b32">[32]</ref> was then used to "annotate" sequences against databases downloaded on August 3rd, 2021 including Viral RefSeq, KOfam <ref type="bibr" coords="3,89.89,305.28,14.61,11.68" target="#b33">[33]</ref>, Pfam <ref type="bibr" coords="3,136.36,305.28,14.61,11.68" target="#b34">[34]</ref>, dbCAN v.9 <ref type="bibr" coords="3,208.06,305.28,14.61,11.68" target="#b35">[35]</ref>, MEROPS <ref type="bibr" coords="3,272.30,305.28,14.61,11.68" target="#b36">[36]</ref>, and VOGDB (http:// vogdb. org/). DRAM-v was then used to "distill" annotations into predicted AMGs for phage.</p><p xml:id="_ywxKeW3">Viral sequences from all assemblies were combined and clustered into 95% similarity viral operational taxonomic units (vOTUs) using CD-HIT v. 4.8.1 <ref type="bibr" coords="3,217.92,365.26,16.23,11.68" target="#b37">[37]</ref> with the following parameters: -c 0.95 -aS 0.85 -M 0 -d 0. Prodigal v. 2.6.3 <ref type="bibr" coords="3,88.80,389.32,16.23,11.68" target="#b38">[38]</ref> was used to predict open reading frames in vOTUs using the -p meta option. VContact2 v. 0.9.19 was then run on predicted proteins from phage vOTUs and predicted proteins from the INPHARED August 2022 viral reference database to generate viral clusters (VCs) based on gene-sharing networks <ref type="bibr" coords="3,198.63,449.30,15.27,11.68" target="#b39">[39,</ref><ref type="bibr" coords="3,218.13,449.30,11.45,11.68" target="#b40">40]</ref>. We assigned taxonomy to phage vOTUs based on VC membership as in Santos-Medellin et al. <ref type="bibr" coords="3,162.87,473.29,14.77,11.68" target="#b41">[41]</ref>. Predicted viral sequences and 95% similarity vOTUS are archived on Zenodo <ref type="bibr" coords="3,266.88,485.28,14.77,11.68" target="#b42">[42]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_et3AJaJ">Viral host-prediction</head><p xml:id="_9c7FC9p">Hosts were predicted for the phage sequences identified using (i) a database of complete genomes from NCBI RefSeq, and (ii) a previously published database of representative metagenome-assembled genomes (MAGs) from Antarctic endolith samples. To produce (i), we used "ncbi-genome-download" to download all complete bacterial (n = 25,984) and archaeal (n = 416) genomes, as of April 7, 2022, from NCBI RefSeq <ref type="bibr" coords="3,195.55,605.32,14.77,11.68" target="#b43">[43]</ref>. For (ii), we downloaded MAGs from Zenodo (https:// doi. org/ 10. 5281/ zenodo. 73135 91). We then used NCBI BLAST 2.12.0 + to convert these two databases into blast databases using "makeblastdb" and used "blastn" to compare vOTUs to these databases <ref type="bibr" coords="3,135.94,665.31,14.77,11.68" target="#b44">[44]</ref>. We filtered the blastn results in R based on existing thresholds <ref type="bibr" coords="3,196.66,677.30,12.84,11.68" target="#b45">[45]</ref><ref type="bibr" coords="3,209.50,677.30,4.28,11.68" target="#b46">[46]</ref><ref type="bibr" coords="3,213.78,677.30,12.84,11.68" target="#b47">[47]</ref>. Briefly, database matches had to share ≥ 2000 bp region with ≥ 70% sequence identity to the viral sequence and needed to have a bit score of ≥ 50 and minimum e value of 0.001. Further to ensure matches did not represent partial or entirely viral contigs when searching against the MAG database, matches had to cover &lt; 50% of the total MAG sequence length. As in Korthari et al. <ref type="bibr" coords="3,465.54,125.31,14.77,11.68" target="#b46">[46]</ref>, only the top 5 hits matching these thresholds were considered, with host predictions made at each taxonomic level only if the taxonomy of all hits were in agreement. Discrepancies resulted in no host prediction for that taxonomic level. We then combined host predictions from both the Ref-Seq and MAG databases together; if there were discrepancies between the two databases, we defaulted to the MAG-based prediction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_gjpEhYF">Ecological analysis of vOTUs</head><p xml:id="_ktwNFDb">We mapped reads from each metagenome to vOTUs using BBMap with a minimum sequence similarity of 90% to quantify vOTU relative abundance <ref type="bibr" coords="3,460.40,281.32,14.30,11.68" target="#b48">[48]</ref>. We then used SAMtools to convert resulting sam files to bam files and genomecov from BEDTools to obtain coverage information for each vOTU across each metagenome <ref type="bibr" coords="3,469.80,317.30,14.83,11.68" target="#b49">[49,</ref><ref type="bibr" coords="3,487.13,317.30,11.12,11.68" target="#b50">50]</ref>. We then used bamM to parse bam files and calculate the trimmed pileup coverage (tpmean), which we used here in our analysis of viral relative abundance <ref type="bibr" coords="3,433.06,353.33,14.30,11.68" target="#b51">[51]</ref>. We removed vOTUs which displayed &lt; 75% coverage over the length of the viral sequence and viral sequences &lt; 10 kbp in length prior to downstream analyses in R <ref type="bibr" coords="3,413.76,389.31,14.30,11.68" target="#b52">[52]</ref>. Thresholds for analysis of vOTUs were based on community guidelines for length (i.e., ≥ 10 kbp), similarity (i.e., ≥ 95% similarity), and detection (i.e., ≥ 75% of the viral genome length covered ≥ 1 × by reads at ≥ 90% average nucleotide identity) <ref type="bibr" coords="3,479.22,437.32,14.83,11.68" target="#b53">[53,</ref><ref type="bibr" coords="3,497.24,437.32,11.12,11.68" target="#b54">54]</ref>. To be conservative, we also removed vOTUs with a CheckV quality score of "not-determined" prior to downstream analysis. The viral abundance (tpmean), quality, taxonomy, and annotation results were imported, analyzed, and visualized in R using many packages including tidyverse and phyloseq <ref type="bibr" coords="3,304.72,509.31,14.83,11.68" target="#b55">[55,</ref><ref type="bibr" coords="3,322.57,509.31,11.12,11.68" target="#b56">56]</ref>. Analysis scripts associated with this study are on GitHub and archived in Zenodo <ref type="bibr" coords="3,433.15,521.31,14.30,11.68" target="#b57">[57]</ref>.</p><p xml:id="_NptgBpH">To compare viral diversity between metagenomes (i.e., beta diversity), we calculated the Hellinger distance, the Euclidean distance of Hellinger transformed abundance data. We performed Hellinger transformations using the transform function in the microbiome R package, calculated the Hellinger distance using the ordinate function in phyloseq, and then visualized these distances using principal-coordinate analysis (PCoA). We performed permutational multivariate analyses of variance (PERMANOVAs) with 9,999 permutations to test for significant differences in mean centroids using the model: Distance ~ Site + Rock type. Models were tested with "by = margins" and "by = terms" with all sequential combinations. We ran the ordistep and ordiR2step functions to help assess optimal parameters to include in the model. Since PERMANOVA tests are sensitive to differences in group dispersion, we also tested for significant differences in mean dispersions using the betadisper and permutest functions from the vegan package in R with 9,999 permutations.</p><p xml:id="_ZG6FJAj">To test for correlations between viral community distances (Hellinger distances) and geographic distances, we first subset the data to exclude metagenomes from the Antarctic Peninsula, and to account for variation between rock types, subset the data to include only metagenomes representing sandstone samples. We calculated geographical distances between metagenomes using the distm function in the geosphere package in R. We performed Mantel tests in the vegan R package to assess correlations between the community and geographic distances using a Spearman correlation and 9999 permutations. Mantel tests were repeated with exclusion of community distances when the geographic distance was zero to assess if patterns persisted in the absence of data from the same site.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Qu9dZd2">Results and discussion</head><p xml:id="_sSjjg4Z">Using VirSorter2 <ref type="bibr" coords="4,139.67,319.96,14.77,11.68" target="#b30">[30]</ref>, we predicted 101,085 viral sequences. We clustered these at 95% average nucleotide identity into 76,984 vOTUS <ref type="bibr" coords="4,199.56,343.96,14.76,11.68" target="#b37">[37]</ref>; we further used VContact2 <ref type="bibr" coords="4,351.58,88.58,16.23,11.68" target="#b39">[39]</ref> with INPHARED <ref type="bibr" coords="4,443.40,88.58,16.23,11.68" target="#b40">[40]</ref> reference genomes to cluster phage vOTUs into 7598 VCs, which approximate genus-level groupings based on gene-sharing networks. To keep analysis focused on the most robust catalog, we filtered this collection using community thresholds for length, detection, and quality (see "Methods" section) <ref type="bibr" coords="4,363.16,160.58,15.27,11.68" target="#b31">[31,</ref><ref type="bibr" coords="4,382.31,160.58,12.07,11.68" target="#b53">53,</ref><ref type="bibr" coords="4,398.27,160.58,11.45,11.68" target="#b54">54]</ref>. The final viral catalog represented 14,796 viral sequences (Table <ref type="table" coords="4,455.02,172.58,8.11,11.68">S2</ref>; 76 complete, 341 high-quality, 1539 medium-quality, 12,840 low-quality), including 2,695 prophage, which clustered into 11,806 vOTUs, of which 5743 phage vOTUs (7309 sequences) were successfully placed in 2286 VCs; the final catalog was predicted to predominantly be dsDNA phage, though 15.2% of vOTUs may represent eukaryotic viruses (i.e. nucleocytoplasmic large DNA viruses).</p><p xml:id="_vd8zv2D">Our findings may indicate that Antarctic rock communities host highly diverse and novel phage populations, with only 1.8% (41 out of 2,286) of the VCs including reference sequences. The remaining 98.2% were unique VCs (i.e., did not include reference genomes), and could represent novel phage genera, greatly expanding the known diversity of viruses. Of the 41 VCs that did include reference genomes, the majority were assigned to the Caudoviricetes class (formerly Caudovirales order) of tailed double-stranded DNA bacteriophage (Figure <ref type="figure" coords="5,181.42,124.58,7.98,11.68" target="#fig_0">S1</ref>). Many genomes have not yet been reclassified, leaving viral taxonomy in flux; under the new schema, most of the 41 VCs are unclassified <ref type="bibr" coords="5,113.16,160.56,15.40,11.68" target="#b58">[58]</ref>. The majority of unique VCs are represented by viral sequences from sandstone communities (Fig. <ref type="figure" coords="5,126.25,184.58,8.95,11.68" target="#fig_0">1A</ref>), which represents an optimum substratum, in terms of rock traits (e.g., porosity), for endolithic colonization <ref type="bibr" coords="5,159.83,208.57,15.40,11.68" target="#b59">[59]</ref>, but is also the most represented substratum in this work.</p><p xml:id="_zv5peqC">We further established host-virus linkages using NCBI BLAST against complete bacteria and archaea genomes from RefSeq, and Antarctic endolithic bacterial and archaeal metagenome-assembled genomes (MAGs) (see "Methods" section) <ref type="bibr" coords="5,406.39,112.57,13.58,11.68" target="#b44">[44]</ref><ref type="bibr" coords="5,419.97,112.57,4.53,11.68" target="#b45">[45]</ref><ref type="bibr" coords="5,424.50,112.57,13.58,11.68" target="#b46">[46]</ref> to explore the potential effects of viruses on host fitness, such as host-cell reprogramming through AMGs <ref type="bibr" coords="5,419.93,136.58,14.61,11.68" target="#b60">[60]</ref>. While we were unable to predict hosts for the majority of viral sequences (only 23.94% had a host prediction), we observed that Proteobacteria, Actinobacteriota, and Chloroflexota were the most commonly predicted host phyla (Fig. <ref type="figure" coords="5,480.12,184.58,8.06,11.68" target="#fig_0">1B</ref>), which are thought to be core members of these communities <ref type="bibr" coords="5,509.39,196.57,15.12,11.68" target="#b13">[14,</ref><ref type="bibr" coords="5,526.61,196.57,11.98,11.68" target="#b61">61,</ref><ref type="bibr" coords="5,304.72,208.57,11.34,11.68" target="#b62">62]</ref>. Using predictions against the Antarctic MAGs, we predicted hosts for an additional 16.5% of viral sequences compared to the 7.48% predicted using RefSeq alone (Figure <ref type="figure" coords="5,335.72,244.55,7.61,11.68" target="#fig_1">S2</ref>). We then sought to improve understanding on the functional profiles of retrieved phages using DRAM-v (Table <ref type="table" coords="6,277.81,101.33,8.49,11.68">S3</ref>) <ref type="bibr" coords="6,56.69,113.32,14.14,11.68" target="#b32">[32]</ref>. Notably, this catalog, which comprises metabolic novelty (39.3% of DRAM-v predicted AMGs had no distilled classification), may complement other available resources, which have largely been limited to coverage of humanrelated microbiomes (e.g. Li et al. <ref type="bibr" coords="6,197.52,161.31,13.79,11.68" target="#b63">[63]</ref>). Within identified functions, we found putative phage AMGs related to carbon, energy, and nitrogen metabolisms (Fig. <ref type="figure" coords="6,240.23,185.33,8.33,11.68" target="#fig_0">1C</ref>). Specifically, within carbohydrate metabolism, glycoside hydrolases, glycosyltransferases, and carbohydrate-binding domains predominated. Within nitrogen metabolism, methionine degradation was the most prevalent module, and within energy, the dominant modules were related to electron transport and photosynthesis. This highlights the need to connect vOTUs to Antarctic MAGs <ref type="bibr" coords="6,201.68,269.30,15.64,11.68" target="#b13">[14]</ref> and to implement complementary techniques (e.g., single-cell genomics) to provide a deeper understanding of virus-bacteria dynamics. More importantly, these findings suggest a possible complex role for viruses in element biogeochemical cycles in the rocks of Antarctica, which have traditionally been considered devoid of life.</p><p xml:id="_auY66jb">Given the geographic spread of sampling (see "Methods" section and Table <ref type="table" coords="6,127.40,365.32,7.89,11.68">S1</ref>; Fig. <ref type="figure" coords="6,157.43,365.32,8.42,11.68" target="#fig_1">2A</ref>), we assessed whether this catalog could be useful to answer ecological questions related to viral community dynamics. While the dominant vOTUs at each site were taxonomically unclassified and largely members of unique VCs and thus possible novel genera (Fig. <ref type="figure" coords="6,80.17,425.31,7.89,11.68" target="#fig_1">2B</ref>), when investigating between-sample diversity (beta diversity) we observed a significant pattern related to site specificity (Fig. <ref type="figure" coords="6,135.42,449.30,9.09,11.68" target="#fig_1">2C</ref>; PERMANOVA, p &lt; 0.001). Further, we detected a significant correlation with geographic distance in sandstone communities (Fig. <ref type="figure" coords="6,207.59,473.33,9.36,11.68" target="#fig_1">2D</ref>; Mantel r = 0.197, p &lt; 0.001), such that communities are more dissimilar with increasing distance. Combined these results indicate possible latitudinal spatial structuring of viral communities. In further support of this, we were able to detect only 41.0% of vOTUs at more than one site, with 29.4% of vOTUs detected across two or more geographic regions and only 1.45% detected across all regions. Of the vOTUs detected across all regions, the majority were in unique VCs (66.7%) and none were in VCs with reference data. We hypothesize that this viral spatial structuring reflects the reported dispersion limitation and local composition and adaptation of hosts in these communities <ref type="bibr" coords="6,171.03,617.32,14.80,11.68" target="#b13">[14,</ref><ref type="bibr" coords="6,189.00,617.32,11.10,11.68" target="#b14">15]</ref>. Similar spatial structuring has also been observed in grassland soil viromes, purportedly as a result of local assembly dynamics <ref type="bibr" coords="6,255.64,641.32,14.80,11.68" target="#b41">[41,</ref><ref type="bibr" coords="6,272.42,641.32,11.10,11.68" target="#b64">64]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_CGsbKn9">Conclusions</head><p xml:id="_fVCRdfb">This study represents the most exhaustive geographic endeavor to date to capture the viral genomic diversity across ice-free regions of Antarctica and the first large-scale effort to explore the virosphere in endolithic communities. This catalog is a comprehensive repository for exploring the diversity, function, spatial ecology, and host-virus dynamics of this enigmatic continent. We also unveiled a potential influence of some viruses on carbon, energy, and nitrogen metabolism under conditions of oligotrophy up to the limit for life sustainability. Finally, this work may serve in the future as an important first step towards exploring adaptability of microbial communities in extreme conditions on Earth.</p><p xml:id="_QdZVFs6">• fast, convenient online submission • thorough peer review by experienced researchers in your field • rapid publication on acceptance</p><p xml:id="_2sGVfgv">• support for research data, including large and complex data types • gold Open Access which fosters wider collaboration and increased citations maximum visibility for your research: over 100M website views per year</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_aZU3TBy">•</head><p xml:id="_HYEc3S8">At BMC, research is always in progress.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_Sg9hpHe">Learn more biomedcentral.com/submissions</head><p xml:id="_AsA2ts9">Ready to submit your research Ready to submit your research ? Choose BMC and benefit from:</p><p xml:id="_dmu4H8X">? Choose BMC and benefit from:</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,62.69,682.47,453.21,7.39;4,62.69,692.47,457.42,9.28;4,62.70,702.47,456.90,7.39;4,62.70,712.47,172.16,7.39;4,389.15,546.71,60.86,81.62"><head>Fig. 1</head><label>1</label><figDesc xml:id="_ndmpJGy">Fig. 1 Antarctica is an underappreciated source of phage novelty. A Bar charts displaying the number of viral sequences placed in VCs colored by rock type (sandstone n = 141, granite n = 43, quartz n = 5, and basalt/dolerite n = 2) and divided by whether the VC is clustered with reference genomes. B Bar chart displaying host predictions colored by predicted host phylum. C Bar chart showing the number of predicted phage AMGs summarized by DRAM-v distilled metabolic categories</figDesc><graphic coords="4,389.15,546.71,60.86,81.62" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="5,62.69,642.28,469.93,7.39;5,62.69,652.28,450.22,7.39;5,62.69,662.28,455.90,7.39;5,62.69,672.28,463.41,7.39;5,62.69,682.28,451.22,7.39;5,62.69,692.28,462.56,7.39;5,62.69,702.28,456.27,7.39;5,62.69,712.28,146.84,7.39;5,123.95,380.16,266.66,246.74"><head>Fig. 2</head><label>2</label><figDesc xml:id="_cZdYd7C">Fig. 2 Spatial structuring of viral communities in Antarctic rocks. A Map showing collection sites with shapes and colors representative of the broad geographic area. B Stacked bar charts displaying the mean relative abundance of phage vOTUs at each site colored by predicted viral families. Sequences that were clustered into VCs with reference data are labeled by their taxonomy, sequences clustered without reference genomes are labeled "Unique VC", while the rest are labeled based on their VContact2 status (i.e., singleton [share few or no genes with other genomes], overlap [share genes with genomes in multiple VCs], or outlier [share genes, but cannot confidently be placed in a VC]). C Principal-coordinate analysis (PCoA) visualization of Hellinger distances of viral communities. Samples are colored by site, with sites ordered by latitude, and have shapes based on geographic areas. D A scatter plot depicting a significant relationship between sandstone viral community beta diversity (Hellinger distance) and geographical distance (km) between sites</figDesc><graphic coords="5,123.95,380.16,266.66,246.74" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_xSrqv7A">Acknowledgements</head><p xml:id="_m3RAnrA">Not applicable.</p></div>
+			</div>
+
+
+			<div type="funding">
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="_qP6hg5Q"><p xml:id="_KQgxPR4">Funding C.L.E. is supported by the National Science Foundation (NSF) under a NSF Ocean Sciences Postdoctoral Fellowship (Award No. 2205744). M.S. was supported by the NSF REU The National Summer Undergraduate Research Project, Award No. 2149582. C.C. is supported by the European Commission under the Marie Sklodowska-Curie Grant Agreement No. 702057 (DRYLIFE). C.C. and L.S. wish to thank the Italian National Antarctic Research Program for funding sampling campaigns and research activities in Italy in the frame of PNRA projects. The Italian Antarctic National Museum (MNA) is kindly acknowledged for financial support to the Mycological Section of the MNA and for providing rock samples used in this study stored in the Culture Collection of Antarctic fungi (MNA-CCFEE), University of Tuscia, Italy. M.D-B. is supported by a project from the Spanish Ministry of Science and Innovation (PID2020-115813RA-I00), and a project of the Fondo Europeo de Desarrollo Regional (FEDER) and the Consejería de Transformación Económica, Industria, Conocimiento y Universidades of the Junta de Andalucía (FEDER Andalucía 2014-2020 Objetivo temático '01-Refuerzo de la investigación, el desarrollo tecnológico y la innovación') associated with the research project P20_00879 (ANDABIOMA). J.E.S. is a CIFAR fellow in the Fungal Kingdom: Threats and Opportunities program. Data analyses performed at the High-Performance Computing Cluster at the University of California Riverside in the Institute of Integrative Genome Biology were supported by NSF grant DBI-1429826 and NIH grant S10-OD016290. Part of this work (proposals https:// doi. org/ 10. 46936/ 10. 25585/ 60000 791 and https:// doi. org/ 10. 46936/ fics. proj. 2020. 51548/ 60000 213) was conducted by the U.S. Department of Energy Joint Genome Institute (https:// ror. org/ 04xm1 d337), a DOE Office of Science User Facility, supported by the Office of Science of the US Department of Energy under Contract No. DE-AC02-05CH11231. The funders had no role in study design, data collection and interpretation, or the decision to submit the work for publication.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_USdD9eF">Supplementary Information</head><p xml:id="_nykJCM2">The online version contains supplementary material available at https:// doi. org/ 10. 1186/ s40168-023-01554-6.</p><p xml:id="_qgyDy93">Additional file 1: Table <ref type="table" coords="6,383.98,263.99,6.45,6.93">S1</ref>. Sample information and viral identification statistics from Antarctic metagenomes. Table <ref type="table" coords="6,461.23,272.99,6.45,6.93">S2</ref>. Final viral catalog sequence information. Table <ref type="table" coords="6,398.57,281.99,6.45,6.93">S3</ref>. DRAM-v distilled annotations for predicted phage AMGs. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_xvPnMhY">Availability of data and materials</head><p xml:id="_2dVdhu5">Metagenomic raw data are available under the NCBI accession numbers listed in Supplementary Table <ref type="table" coords="7,146.51,106.58,5.63,6.93">S1</ref>. Analysis scripts and intermediate data files associated with this study are on GitHub (https:// github. com/ staji chlab/ Antar ctic_ Virus_ Disco very) and archived in Zenodo (https:// doi. org/ 10. 5281/ zenodo. 73743 27). Fasta files representing the entire catalog of predicted viral sequences and 95% similarity vOTUS are archived and available on Zenodo (https:// doi. org/ 10. 5281/ zenodo. <ref type="bibr" coords="7,154.38,151.58,26.26,6.93">72458 11)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_3MQENU9">Declarations</head><p xml:id="_vQH24EC">Ethics approval and consent to participate Not applicable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_ZWymkGy">Consent for publication</head><p xml:id="_WF39SUG">Not applicable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_xBsJsC9">Competing interests</head><p xml:id="_m3TE3v5">The authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head xml:id="_HzgmRDY">Publisher's Note</head><p xml:id="_XX8jkas">Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="7,60.14,338.58,226.08,6.93;7,71.69,347.58,215.93,6.93" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" xml:id="_cA3TPYa">Uncovering Earth&apos;s virome</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Paez-Espino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">A</forename><surname>Eloe-Fadrosh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">A</forename><surname>Pavlopoulos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">D</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Huntemann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Mikhailova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WxksFDZ">Nature</title>
+		<imprint>
+			<biblScope unit="volume">536</biblScope>
+			<biblScope unit="page" from="425" to="430" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,60.14,356.58,223.49,6.93;7,71.69,365.58,210.10,6.93;7,71.69,374.58,50.70,6.93" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" xml:id="_QVQxBhS">Hostlinked soil viral ecology along a permafrost thaw gradient</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">B</forename><surname>Emerson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">R</forename><surname>Brum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Bolduc</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">J</forename><surname>Woodcroft</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">B</forename><surname>Jang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_wBhFGEV">Nat Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="870" to="880" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,60.17,383.58,222.73,6.93;7,71.69,392.58,197.40,6.93;7,71.69,401.58,62.88,6.93" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" xml:id="_SNTNPUV">Marine DNA viral macro-and microdiversity from pole to pole</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">C</forename><surname>Gregory</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Zayed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Conceição-Neto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Temperton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Bolduc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_jctRSqQ">Cell</title>
+		<imprint>
+			<biblScope unit="volume">177</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1109" to="1123" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,60.17,410.58,222.37,6.93;7,71.69,419.58,215.97,6.93;7,71.69,428.58,166.75,6.93" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" xml:id="_cVfRv4J">The gut virome database reveals age-dependent patterns of virome diversity in the human gut</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">C</forename><surname>Gregory</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Zablocki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Zayed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Howell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Bolduc</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">B</forename><surname>Sullivan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_RVzbRt6">Cell Host Microbe</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="724" to="740" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,60.17,437.58,215.80,6.93;7,71.69,446.58,202.21,6.93;7,71.69,455.58,194.14,6.93;7,71.69,464.58,65.27,6.93" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" xml:id="_tp3Whyb">IMG/VR v3: an integrated ecological and evolutionary framework for interrogating genomes of uncultivated viruses</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Páez-Espino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Palaniappan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ratner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Chu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_r7aJ8Ju">Nucleic Acids Res</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">D1</biblScope>
+			<biblScope unit="page" from="D764" to="D775" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,60.17,473.58,223.67,6.93;7,71.69,482.58,211.89,6.93;7,71.69,491.58,66.54,6.93" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" xml:id="_ATcSfbn">Expansion of the global RNA virome reveals diverse clades of bacteriophages</title>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Neri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">I</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">P</forename><surname>Camargo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Kazlauskas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tHaXhjK">Cell</title>
+		<imprint>
+			<biblScope unit="volume">185</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page" from="4023" to="4037" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,60.06,500.58,217.76,6.93;7,71.69,509.58,218.86,6.93" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" xml:id="_zteXUy4">New dimensions of the virus world discovered through metagenomics</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Kristensen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">R</forename><surname>Mushegian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">V</forename><surname>Dolja</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">V</forename><surname>Koonin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mAgxWJg">Trends Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="11" to="19" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,60.17,518.58,228.73,6.93;7,71.69,527.58,209.44,6.93" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" xml:id="_gJQQ3DV">Diversities and potential biogeochemical impacts of mangrove soil viruses</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Zeng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_z7EhUwq">Microbiome</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">58</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,60.17,536.58,228.01,6.93;7,71.69,545.58,210.62,6.93;7,71.69,554.58,183.67,6.93" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" xml:id="_NFahFHz">Modeling ecological drivers in marine viral communities using comparative metagenomics and network analyses</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">L</forename><surname>Hurwitz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Westveld</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">R</forename><surname>Brum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">B</forename><surname>Sullivan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ux7qbxy">Proc Natl Acad Sci U S A</title>
+		<imprint>
+			<biblScope unit="volume">111</biblScope>
+			<biblScope unit="page" from="10714" to="10719" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,63.44,563.58,224.30,6.93;7,71.69,572.58,144.98,6.93" xml:id="b9">
+	<monogr>
+		<title level="m" type="main" xml:id="_DQyZWJX">Exploring the vast diversity of marine viruses. Oceanography</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Breitbart</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Suttle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Sullivan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="135" to="139" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,63.44,581.58,209.07,6.93;7,71.69,590.58,153.75,6.93" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" xml:id="_RpnMEyc">Habitability: a review</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">S</forename><surname>Cockell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Bush</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Bryce</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Direito</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Fox-Powell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Harrison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_vXQxNpy">Astrobiology</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="page" from="89" to="117" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,63.44,599.58,212.95,6.93;7,71.69,608.58,81.19,6.93" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" xml:id="_hfzpeGU">Endolithic microorganisms in the antarctic cold desert</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">I</forename><surname>Friedmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dSFCpjD">Science</title>
+		<imprint>
+			<biblScope unit="volume">215</biblScope>
+			<biblScope unit="page" from="1045" to="1053" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,63.44,617.58,225.31,6.93;7,71.69,626.58,199.93,6.93;7,71.69,635.58,140.17,6.93" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" xml:id="_kXx7B5m">Endolithic microbial composition in Helliwell Hills, a newly investigated Mars-like area in Antarctica</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Coleine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Biagioli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Vera</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Onofri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Selbmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_5uGwpCm">Environ Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="4002" to="4016" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,63.44,644.58,225.85,6.93;7,71.69,653.58,218.52,6.93;7,71.69,662.58,68.87,6.93" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" xml:id="_G4eFwTy">Pre-Cambrian roots of novel Antarctic cryptoendolithic bacterial lineages</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Albanese</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Coleine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Rota-Stabelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Onofri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">G</forename><surname>Tringe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">E</forename><surname>Stajich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bsZMqQ2">Microbiome</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">63</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,63.44,671.58,215.96,6.93;7,71.69,680.58,214.30,6.93;7,71.69,689.58,184.45,6.93" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" xml:id="_RYCWxXx">Endolithic microbial diversity in sandstone and granite from the McMurdo Dry Valleys</title>
+		<author>
+			<persName coords=""><forename type="first">Sdj</forename><surname>Archer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>De Los Ríos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">S</forename><surname>Niederberger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Craig</forename><surname>Cary</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Coyne</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_qGwzyAp">Antarctica. Polar Biol</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="997" to="1006" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,63.44,698.58,216.81,6.93;7,71.69,707.58,217.25,6.93;7,71.69,716.58,122.80,6.93" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" xml:id="_NMq3j7b">Microbial diversity of cryptoendolithic communities from the McMurdo Dry Valleys</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">R</forename><surname>De La Torre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">M</forename><surname>Goebel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">I</forename><surname>Friedmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">R</forename><surname>Pace</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_pEmDYnA">Antarctica. Appl Environ Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="3858" to="3867" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.47,88.59,219.71,6.93;7,319.73,97.59,204.80,6.93;7,319.73,106.59,51.58,6.93" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" xml:id="_hcWsf2U">High diversity of the viral community from an Antarctic lake</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>López-Bueno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Tamames</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Velázquez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Moya</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Quesada</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Alcamí</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_v5u8NUc">Science</title>
+		<imprint>
+			<biblScope unit="volume">326</biblScope>
+			<biblScope unit="page" from="858" to="861" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.47,115.59,208.42,6.93;7,319.73,124.59,212.74,6.93" xml:id="b17">
+	<monogr>
+		<title level="m" type="main" xml:id="_7U4rCDQ">Virome analysis in lakes of the South Shetland Islands</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Prado</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">L</forename><surname>Brandão</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">M</forename><surname>Fumian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Freitas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Chame</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Leomil</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">Antarctica -2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,319.73,133.59,102.67,6.93" xml:id="b18">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WAhZ3nt">Sci Total Environ</title>
+		<imprint>
+			<biblScope unit="volume">852</biblScope>
+			<biblScope unit="page">158537</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.47,142.59,209.03,6.93;7,319.73,151.59,217.66,6.93;7,319.73,160.59,209.09,6.93;7,319.73,169.59,79.48,6.93" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" xml:id="_WbHRftD">Diverse small circular single-stranded DNA viruses identified in a freshwater pond on the McMurdo Ice Shelf (Antarctica)</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Zawar-Reza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">R</forename><surname>Argüello-Astorga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kraberger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Julian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Stainton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">A</forename><surname>Broady</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_dBKGySJ">Infect Genet Evol</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="132" to="138" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.47,178.59,211.91,6.93;7,319.73,187.59,213.31,6.93;7,319.73,196.59,120.53,6.93" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" xml:id="_ST4wk2b">Elucidating viral communities during a phytoplankton bloom on the West Antarctic Peninsula</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Alarcón-Schumacher</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Guajardo-Leiva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Antón</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Díez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Q95Y7BM">Front Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">1014</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.47,205.59,225.62,6.93;7,319.73,214.59,212.89,6.93" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" xml:id="_E6Xbg2a">RNA viruses as major contributors to Antarctic virioplankton</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">A</forename><surname>Miranda</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">I</forename><surname>Culley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">R</forename><surname>Schvarcz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">F</forename><surname>Steward</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_EYd48As">Environ Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="3714" to="3727" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.47,223.59,223.90,6.93;7,319.73,232.59,208.87,6.93;7,319.73,241.59,149.78,6.93" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" xml:id="_6GcwR4Y">Viral diversity and its relationship with environmental factors at the surface and deep sea of Prydz Bay</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Xia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_fn3dg7U">Antarctica. Front Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">2981</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.47,250.59,214.41,6.93;7,319.73,259.59,211.94,6.93;7,319.73,268.59,211.69,6.93;7,319.73,277.59,106.90,6.93" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" xml:id="_MrsGpzS">High-level diversity of tailed phages, eukaryote-associated viruses, and virophage-like elements in the metaviromes of antarctic soils</title>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Zablocki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Van Zyl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Adriaenssens</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Rubagotti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Tuffin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">C</forename><surname>Cary</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ZvtSdF4">Appl Environ Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page" from="6888" to="6897" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.47,286.59,219.18,6.93;7,319.73,295.59,209.15,6.93;7,319.73,304.59,178.84,6.93" xml:id="b24">
+	<monogr>
+		<title level="m" type="main" xml:id="_JssV2YY">Environmental drivers of viral community composition in Antarctic soils identified by viromics</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Adriaenssens</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Kramer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">W</forename><surname>Van Goethem</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">P</forename><surname>Makhalanyane</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Hogg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Cowan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">83</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.47,313.59,214.41,6.93;7,319.73,322.59,218.23,6.93;7,319.73,331.59,77.79,6.93" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" xml:id="_uB8Rwqb">Niche-dependent genetic diversity in Antarctic metaviromes</title>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Zablocki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Van Zyl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Adriaenssens</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Rubagotti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Tuffin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">C</forename><surname>Cary</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_JJ3c3A5">Bacteriophage</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">e980125</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,340.59,209.24,6.93;7,319.73,349.59,218.06,6.93;7,319.73,358.59,102.07,6.93" xml:id="b26">
+	<monogr>
+		<title level="m" type="main" xml:id="_ekneZbY">Phages Actively challenge niche communities in Antarctic soils. mSystems</title>
+		<author>
+			<persName coords=""><forename type="first">Oki</forename><surname>Bezuidt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">H</forename><surname>Lebre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Pierneef</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>León-Sobrino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Adriaenssens</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Cowan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">e00234</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,367.59,226.87,6.93;7,319.73,376.59,217.63,6.93" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" xml:id="_HXH2dZ7">Soil viral diversity, ecology and climate change</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">K</forename><surname>Jansson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Wu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41579-022-00811-z</idno>
+		<ptr target="https://doi.org/10.1038/s41579-022-00811-z" />
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_f6uPhvu">Nat Rev Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="296" to="311" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,385.59,209.33,6.93;7,319.73,394.59,212.81,6.93;7,319.73,403.59,162.47,6.93" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" xml:id="_CqQ3FhN">SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bankevich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Nurk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Antipov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Gurevich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Dvorkin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Kulikov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_WghXtFx">J Comput Biol</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="455" to="477" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,412.59,223.94,6.93;7,319.73,421.59,210.13,6.93;7,319.73,430.59,178.49,6.93" xml:id="b29">
+	<monogr>
+		<title level="m" type="main" xml:id="_5HTF2dA">Viral sequence identification SOP with VirSorter2. protocols.io</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Vik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Pratama</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Sullivan</surname></persName>
+		</author>
+		<ptr target="https://www.protocols.io/view/viral-sequence-identification-sop-with-virsorter2-btv8nn9w" />
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,439.59,212.42,6.93;7,319.73,448.59,211.29,6.93;7,319.73,457.59,158.45,6.93" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" xml:id="_eGnabsG">VirSorter2: a multi-classifier, expert-guided approach to detect diverse DNA and RNA viruses</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Bolduc</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Zayed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Varsani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Dominguez-Huerta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">O</forename><surname>Delmont</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FdngVuX">Microbiome</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">37</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,466.59,213.76,6.93;7,319.73,475.59,212.63,6.93;7,319.73,484.59,155.23,6.93" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" xml:id="_agEVHWN">CheckV assesses the quality and completeness of metagenome-assembled viral genomes</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Nayfach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">P</forename><surname>Camargo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Schulz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Eloe-Fadrosh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">C</forename><surname>Kyrpides</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xuTmkg9">Nat Biotechnol</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="578" to="585" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,493.59,213.95,6.93;7,319.73,502.59,214.44,6.93;7,319.73,511.59,184.14,6.93" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" xml:id="_FzMhmQb">DRAM for distilling microbial metabolism to automate the curation of microbiome function</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Shaffer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Borton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">B</forename><surname>Mcgivern</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Zayed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">La</forename><surname>Rosa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">L</forename><surname>Solden</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Z988MYY">Nucleic Acids Res</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="8883" to="8900" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,520.59,223.55,6.93;7,319.73,529.59,206.35,6.93;7,319.73,538.59,169.93,6.93" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" xml:id="_5qDkwVy">KofamKOALA: KEGG Ortholog assignment based on profile HMM and adaptive score threshold</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Aramaki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Blanc-Mathieu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Endo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ohkubo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kanehisa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Goto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VuAVgyJ">Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="2251" to="2252" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,547.59,204.94,6.93;7,319.73,556.59,184.16,6.93;7,319.73,565.59,52.78,6.93" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" xml:id="_6WFcxbX">The Pfam protein families database in 2019</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>El-Gebali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Mistry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bateman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">R</forename><surname>Eddy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Luciani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">C</forename><surname>Potter</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_bXspQU8">Nucleic Acids Res</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="D427" to="432" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.28,574.59,216.42,6.93;7,319.73,583.59,216.80,6.93;7,319.73,592.59,62.69,6.93" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" xml:id="_kx6A8PM">dbCAN2: a meta server for automated carbohydrate-active enzyme annotation</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Yohe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Entwistle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_yjVwdBH">Nucleic Acids Res</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="W95" to="101" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,601.59,215.90,6.93;7,319.73,610.59,153.57,6.93" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" xml:id="_JdWWvnq">MEROPS: the peptidase database</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">D</forename><surname>Rawlings</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">J</forename><surname>Barrett</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bateman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ApEDrgn">Nucleic Acids Res</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="D227" to="233" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,619.59,222.59,6.93;7,319.73,628.59,214.04,6.93" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" xml:id="_tHjFj3e">Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Godzik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_VdYARqe">Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="1658" to="1659" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,637.59,223.23,6.93;7,319.73,646.59,215.95,6.93;7,319.73,655.59,97.88,6.93" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" xml:id="_WDkuCmv">Prodigal: prokaryotic gene recognition and translation initiation site identification</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Hyatt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G-L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">F</forename><surname>Locascio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">L</forename><surname>Land</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">W</forename><surname>Larimer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">J</forename><surname>Hauser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2bpU62N">BMC Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">119</biblScope>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,664.59,224.38,6.93;7,319.73,673.59,202.94,6.93;7,319.73,682.59,198.82,6.93" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" xml:id="_NJt6Erx">Taxonomic assignment of uncultivated prokaryotic virus genomes is enabled by gene-sharing networks</title>
+		<author>
+			<persName coords=""><forename type="first">Bin</forename><surname>Jang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Bolduc</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Zablocki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Kuhn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Adriaenssens</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_ZD6Jm4P">Nat Biotechnol</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="632" to="639" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,311.48,691.59,220.47,6.93;7,319.73,700.59,208.24,6.93;7,319.73,709.59,201.98,6.93;7,319.73,718.59,44.26,6.93" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" xml:id="_kKGDUgr">INfrastructure for a PHAge REference Database: identification of large-scale biases in the current collection of cultured phage genomes</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Cook</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Redgwell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Rihtman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Clokie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_h77fwJG">PHAGE</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="214" to="223" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.44,88.58,196.14,6.93;8,71.69,97.58,205.93,6.93;8,71.69,106.58,204.25,6.93;8,71.69,115.58,51.58,6.93" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" xml:id="_YSVZgBm">Viromes outperform total metagenomes in revealing the spatiotemporal patterns of agricultural soil viral communities</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Santos-Medellin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">A</forename><surname>Zinke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ter</forename><surname>Horst</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Gelardi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">L</forename><surname>Parikh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Emerson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">B</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2AkS3H6">ISME J</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="1956" to="1970" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.44,124.58,220.48,6.93;8,71.69,133.58,85.57,6.93" xml:id="b42">
+	<monogr>
+		<title level="m" type="main" xml:id="_Ub9DrQA">Antarctic rock viral catalog</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ettinger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Stajich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Coleine</surname></persName>
+		</author>
+		<ptr target="https://zenodo.org/record/7245811" />
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.44,142.58,220.03,6.93;8,71.69,151.58,204.23,6.93" xml:id="b43">
+	<monogr>
+		<ptr target="https://github.com/kblin/ncbi-genome-download" />
+		<title level="m" xml:id="_6zDCV38">Scripts to download genomes from the NCBI FTP servers</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,160.58,226.37,6.93;8,71.70,169.58,214.36,6.93" xml:id="b44">
+	<analytic>
+		<title level="a" type="main" xml:id="_uvH54rr">BLAST+: architecture and applications</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Camacho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Coulouris</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Avagyan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Papadopoulos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Bealer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_4hpMBrh">BMC Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,178.58,196.28,6.93;8,71.70,187.58,215.72,6.93;8,71.70,196.58,61.50,6.93" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" xml:id="_9JnYgQY">Computational approaches to predict bacteriophage-host relationships</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Edwards</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Mcnair</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Faust</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Raes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">E</forename><surname>Dutilh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_V4mYGPZ">FEMS Microbiol Rev</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="258" to="272" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,205.58,226.89,6.93;8,71.70,214.58,215.54,6.93;8,71.70,223.58,185.43,6.93" xml:id="b46">
+	<monogr>
+		<title level="m" type="main" xml:id="_aDJQWuU">Ecogenomics of groundwater phages suggests niche differentiation linked to specific environmental tolerance. mSystems</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kothari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Prieto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Soneja</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J-M</forename><surname>Chandonia</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">e0053721</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,232.58,191.38,6.93;8,71.70,241.58,189.86,6.93;8,71.70,250.58,51.59,6.93" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" xml:id="_Wyc6KhD">A genomic catalog of Earth&apos;s microbiomes</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Nayfach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Seshadri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Udwary</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Varghese</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Schulz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_tTSjkHx">Nat Biotechnol</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="page" from="499" to="509" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,259.58,207.56,6.93" xml:id="b48">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Bushnell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bbmap</surname></persName>
+		</author>
+		<ptr target="https://sourceforge.net/projects/bbmap/" />
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,268.58,215.46,6.93;8,71.70,277.58,144.79,6.93" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" xml:id="_UTZdfCx">BEDTools: a flexible suite of utilities for comparing genomic features</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">R</forename><surname>Quinlan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">M</forename><surname>Hall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_khBd5Kq">Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="841" to="842" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,286.58,204.11,6.93;8,71.70,295.58,189.21,6.93;8,71.70,304.58,47.92,6.93" xml:id="b50">
+	<analytic>
+		<title level="a" type="main" xml:id="_CyxX8WT">The sequence alignment/map format and SAMtools</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Handsaker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Wysoker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Fennell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Ruan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Homer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_xwDTJER">Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="2078" to="2079" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,313.58,213.34,6.93;8,71.70,322.58,122.98,6.93" xml:id="b51">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">/</forename><surname>Ecogenomics</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bamm</surname></persName>
+		</author>
+		<ptr target="https://github.com/Ecogenomics/BamM" />
+		<title level="m" xml:id="_PPKS8N2">Metagenomics-focused BAM file manipulation</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,331.58,217.87,6.93;8,71.70,340.58,98.26,6.93" xml:id="b52">
+	<monogr>
+		<title level="m" type="main" xml:id="_DSbFGXv">R: A language and environment for statistical computing</title>
+		<author>
+			<persName coords=""><forename type="first">Team</forename><surname>Core</surname></persName>
+		</author>
+		<ptr target="https://www.r-project.org/" />
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,349.58,216.44,6.93;8,71.70,358.58,218.86,6.93;8,71.70,367.58,106.43,6.93" xml:id="b53">
+	<analytic>
+		<title level="a" type="main" xml:id="_8TBm4e2">Minimum information about an uncultivated virus genome (MIU-ViG)</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Adriaenssens</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">E</forename><surname>Dutilh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">V</forename><surname>Koonin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Kropinski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Krupovic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_Qb3jjDE">Nat Biotechnol</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="29" to="37" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,376.58,200.44,6.93;8,71.70,385.58,214.60,6.93;8,71.70,394.58,162.28,6.93" xml:id="b54">
+	<analytic>
+		<title level="a" type="main" xml:id="_FPC9nH8">Benchmarking viromics: an evaluation of metagenome-enabled estimates of viral community composition and diversity</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">B</forename><surname>Emerson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">A</forename><surname>Eloe-Fadrosh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">B</forename><surname>Sullivan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_DgTxFfg">PeerJ</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">e3817</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,403.58,200.00,6.93;8,71.70,412.58,212.86,6.93;8,71.70,421.58,44.15,6.93" xml:id="b55">
+	<analytic>
+		<title level="a" type="main" xml:id="_9996VaJ">phyloseq: an R package for reproducible interactive analysis and graphics of microbiome census data</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">J</forename><surname>Mcmurdie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Holmes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_SVzW7Ge">PLoS ONE</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">e61217</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,430.58,221.54,6.93;8,71.70,439.58,181.95,6.93" xml:id="b56">
+	<analytic>
+		<title level="a" type="main" xml:id="_UC5vVrf">Welcome to the Tidyverse</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Wickham</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Averick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bryan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">D</forename><surname>Mcgowan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>François</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_FYcV9t3">J Open Source Softw</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">1686</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,448.58,219.45,6.93;8,71.70,457.58,140.21,6.93" xml:id="b57">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ettinger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Stajich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Coleine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Antarctic_Virus_Discovery</surname></persName>
+		</author>
+		<idno type="DOI">10.5281/zenodo.7374327</idno>
+		<idno>v2. 2022</idno>
+		<ptr target="https://doi.org/10.5281/zenodo" />
+		<imprint>
+			<biblScope unit="volume">73743</biblScope>
+			<biblScope unit="page">27</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,466.58,222.86,6.93;8,71.70,475.58,114.04,6.93" xml:id="b58">
+	<analytic>
+		<title level="a" type="main" xml:id="_3B4tg8p">A roadmap for genome-based phage taxonomy</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Turner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Kropinski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Adriaenssens</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_CPcuTEd">Viruses</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">506</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,484.58,216.20,6.93;8,71.70,493.58,209.56,6.93;8,71.70,502.58,184.21,6.93" xml:id="b59">
+	<analytic>
+		<title level="a" type="main" xml:id="_cxSztHM">Effect of environmental parameters on biodiversity of the fungal component in lithic Antarctic communities</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Selbmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Onofri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Coleine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Buzzini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Canini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Zucconi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_PGQgdtz">Extremophiles</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="1069" to="1080" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,511.58,216.05,6.93;8,71.70,520.58,215.02,6.93;8,71.70,529.58,137.89,6.93" xml:id="b60">
+	<analytic>
+		<title level="a" type="main" xml:id="_nv29KZd">Insights into the dynamics between viruses and their hosts in a hot spring microbial mat</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">K</forename><surname>Jarett</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Džunková</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Schulz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Roux</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Paez-Espino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Eloe-Fadrosh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_AesGPM4">ISME J</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="2527" to="2541" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,538.58,212.14,6.93;8,71.70,547.58,217.15,6.93;8,71.70,556.58,212.36,6.93" xml:id="b61">
+	<analytic>
+		<title level="a" type="main" xml:id="_AbQTFNF">Altitude and fungal diversity influence the structure of Antarctic cryptoendolithic Bacteria communities</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Coleine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">E</forename><surname>Stajich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Pombubpa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Zucconi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Onofri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Canini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_mzsZaPy">Environ Microbiol Rep</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="718" to="726" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,565.58,208.80,6.93;8,71.70,574.58,210.86,6.93;8,71.70,583.58,214.63,6.93;8,71.70,592.58,36.86,6.93" xml:id="b62">
+	<analytic>
+		<title level="a" type="main" xml:id="_ECPqCkT">Antarctic cryptoendolithic fungal communities are highly adapted and dominated by Lecanoromycetes and Dothideomycetes</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Coleine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">E</forename><surname>Stajich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Zucconi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Onofri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Pombubpa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Egidi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_2ExxGkx">Front Microbiol</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">1392</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,601.58,218.96,6.93;8,71.70,610.58,210.09,6.93;8,71.70,619.58,135.13,6.93" xml:id="b63">
+	<monogr>
+		<title level="m" type="main" xml:id="_FUkNfjk">A catalog of 48,425 nonredundant viruses from oral metagenomes expands the horizon of the human oral virome. iScience</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page">104418</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,63.45,628.58,204.87,6.93;8,71.70,637.58,200.56,6.93;8,71.70,646.58,207.01,6.93;8,71.70,655.58,69.77,6.93" xml:id="b64">
+	<analytic>
+		<title level="a" type="main" xml:id="_pBymbZa">Spatial turnover of soil viral populations and genotypes overlain by cohesive responses to moisture in grasslands</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Santos-Medellín</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Estera-Molina</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Pett-Ridge</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">K</forename><surname>Firestone</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">B</forename><surname>Emerson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" xml:id="_r2dz6UD">PNAS</title>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="page">e2209132119</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
