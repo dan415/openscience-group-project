@@ -200,10 +200,10 @@ class Citation:
 
 class Author:
     
-    OPENALEX_API_URL = "https://openalex.org/api/v1/authors"
+    OPENALEX_API_URL = "https://openalex.org/api/v1/authors?search="
 
     def __init__(self, forename=None, surname=None, email=None, affiliation_name=None, affiliation_country=None,
-                 twitter=None, orcid=None, writes=None, acknowledged_by=None):
+                 works_count=None, cited_by_count=None, writes=None, acknowledged_by=None):
         if acknowledged_by is None:
             acknowledged_by = []
         if writes is None:
@@ -211,19 +211,19 @@ class Author:
         self.forename = forename
         self.surname = surname
         self.email = email
-        self.twitter = twitter
-        self.orcid = orcid
+        self.works_count = works_count
+        self.cited_by_count = cited_by_count
         self.writes = writes
         self.affiliation = Affiliation(affiliation_name, affiliation_country)
         self.ackowledged_by = acknowledged_by
     
-    def get_openalex_info(self, author_id):
-        response = requests.get(f"{self.OPENALEX_API_URL}/{author_id}")
+    def get_openalex_info(self, forename, surname):
+        response = requests.get(f"{self.OPENALEX_API_URL}/{forename}%20{surname}")
         if response.status_code == 200:
             author_data = response.json()
             return {
-                "twitter": author_data["twitter"],
-                "orcid": author_data["orcid"],
+                "works_count": author_data["works_count"],
+                "cited_by_count": author_data["cited_by_count"],
                 "email": author_data["email"]
             }
         else:
