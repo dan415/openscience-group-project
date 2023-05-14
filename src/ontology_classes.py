@@ -31,10 +31,10 @@ class Paper:
             self.references = self.get_references()
             self.keywords = self.get_keywords()
             self.title = self.get_title()
-            self.title = self.title.lower() if self.title else self.title
+            self.title = self.title.lower() if self.title else "unknown"
         else:
             self.authors = authors
-            self.title = title.lower() if title else title
+            self.title = title.lower() if title else "unknown"
             self.journal = Journal(name=journal, publishes=[self]) if journal else None
             self.cited_by = [cited_by]
     def get_schema(self):
@@ -141,7 +141,7 @@ class Paper:
                                                                                        f"{self.schema}text").find(
                                                                                        f"{self.schema}back").findall(
                                                                                        rf"{self.schema}div")]))))[-1][
-                    -1])
+                    -1], source=self)
         except:
             return Aknowledgement(text="", source=self)
 
@@ -195,18 +195,18 @@ class Citation:
 
 class Author:
 
-    def __init__(self, forename=None, surname=None, email=None, affiliation_name=None, affiliation_country=None,
-                 twitter=None, orcid=None, writes=None, acknowledged_by=None):
+    def __init__(self, forename=None, surname=None, affiliation_name=None, affiliation_country=None,
+                 works_count=None, cited_by_count=None, writes=None, acknowledged_by=None, email=None):
         if acknowledged_by is None:
             acknowledged_by = []
         if writes is None:
             writes = []
-        self.forename = forename
-        self.surname = surname
-        self.email = email
-        self.twitter = twitter
-        self.orcid = orcid
+        self.forename = forename if forename is not None else "unknown"
+        self.surname = surname if surname is not None else "unknown"
+        self.works_count = works_count
+        self.cited_by_count = cited_by_count
         self.writes = writes
+        self.email = email
         self.affiliation = Affiliation(affiliation_name, affiliation_country)
         self.ackowledged_by = acknowledged_by
 
@@ -220,8 +220,10 @@ class Author:
 
 class Affiliation:
 
-    def __init__(self, name=None, country=None, established=None, website=None, ackowledged_by=[]):
-        self.name = name
+    def __init__(self, name=None, country=None, established=None, website=None, ackowledged_by=None):
+        if ackowledged_by is None:
+            ackowledged_by = []
+        self.name = name if name is not None else "unknown"
         self.country = country
         self.website = website
         self.established = established
@@ -240,7 +242,7 @@ class Journal:
     def __init__(self, name=None, country=None, established=None, description=None, publishes=None):
         if publishes is None:
             publishes = []
-        self.name = name
+        self.name = name if name is not None else "unknown"
         self.country = country
         self.description = description
         self.established = established

@@ -134,11 +134,11 @@ class PaperSet:
             ner_results = self.ner(text)
             processed_entities = self.process_entities(ner_results, text)
             paper.acknowledgements.acknowledges_org = list(
-                map(lambda x: Affiliation(name=x["text"], ackowledged_by=paper.acknowledgements),
+                map(lambda x: Affiliation(name=x["text"], ackowledged_by=[paper.acknowledgements]),
                     filter(lambda x: x["entity"] == "ORG", processed_entities)))
             paper.acknowledgements.acknowledges_people = list(
                 map(lambda x: Author(forename=_get_forename(x["text"]), surname=x["text"].split(" ")[-1],
-                                     acknowledged_by=paper.acknowledgements),
+                                     acknowledged_by=[paper.acknowledgements]),
                     filter(lambda x: x["entity"] == "PER", processed_entities)))
 
     def link_and_get_all_authors(self):
@@ -153,6 +153,7 @@ class PaperSet:
                     paper.authors.append(authors[index])
                     if authors[index] in paper.authors:
                         authors[index].writes.append(paper)
+                        authors[index].ackowledged_by.extend(author.ackowledged_by)
 
         return authors
 
@@ -171,12 +172,13 @@ class PaperSet:
     def link_and_get_all_journals(self):
         journals = []
         for paper in self.papers.values():
-            if paper.journal and paper.journal not in journals:
-                journals.append(paper.journal)
-            else:
-                index = journals.index(paper.journal)
-                paper.journal = journals[index]
-                journals[index].publishes.append(paper)
+            if paper.journal:
+                if paper.journal not in journals:
+                    journals.append(paper.journal)
+                else:
+                    index = journals.index(paper.journal)
+                    paper.journal = journals[index]
+                    journals[index].publishes.append(paper)
 
         return journals
 
