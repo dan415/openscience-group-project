@@ -200,7 +200,7 @@ class Citation:
 
 class Author:
     
-    OPENALEX_API_URL = "https://openalex.org/api/v1/authors?search="
+    OPENALEX_API_URL = "https://api.openalex.org/authors?search="
 
     def __init__(self, forename=None, surname=None, email=None, affiliation_name=None, affiliation_country=None,
                  works_count=None, cited_by_count=None, writes=None, acknowledged_by=None):
