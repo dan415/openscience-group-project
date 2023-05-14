@@ -3,14 +3,14 @@ import xml.etree.ElementTree as ET
 
 class Paper:
 
-    def __init__(self, tree=None, filename=None, pdf_path=None, xml_path=None, mode="xml", authors=None, title=None,
+    def __init__(self, tree=None, filename=None, pdf_path=None, xml_path=None, physical=True, authors=None, title=None,
                  journal=None, cited_by=None):
 
         self.input_path = pdf_path
         self.output_path = xml_path
         self.filename = filename
         self.tree = tree
-        self.mode = mode
+        self.physical = physical
         self.cluster = None
         self.topic = None
         self.acknowledgements = None
@@ -21,9 +21,9 @@ class Paper:
         self.title = None
         self.abstract = None
         self.authors = []
-
+        self.journal = None
         self.schema = None
-        if self.mode == "xml":
+        if self.physical:
             self.schema = self.get_schema()
             self.authors = self.get_authors()
             self.abstract = self.get_abstract()
@@ -32,17 +32,11 @@ class Paper:
             self.keywords = self.get_keywords()
             self.title = self.get_title()
             self.title = self.title.lower() if self.title else self.title
-        elif self.mode == "kg":  # knowledge graph
-            raise NotImplementedError("Knowledge graph mode not implemented yet")
-        elif self.mode == "citation":
+        else:
             self.authors = authors
             self.title = title.lower() if title else title
-            self.journal = journal
+            self.journal = Journal(name=journal, publishes=[self]) if journal else None
             self.cited_by = [cited_by]
-
-        else:
-            raise ValueError("Mode must be either xml or kg")
-
     def get_schema(self):
         if not self.tree:
             return ""
@@ -194,7 +188,7 @@ class Paper:
 class Citation:
 
     def __init__(self, date=None, authors=None, title=None, journal=None, source=None):
-        self.cites = Paper(authors=authors, title=title, journal=journal, mode="citation", cited_by=self)
+        self.cites = Paper(authors=authors, title=title, journal=journal, physical=False, cited_by=self)
         self.date = date
         self.source = source
 
@@ -223,6 +217,7 @@ class Author:
         return hash((self.forename, self.surname))
 
 
+
 class Affiliation:
 
     def __init__(self, name=None, country=None, established=None, website=None, ackowledged_by=[]):
@@ -238,6 +233,25 @@ class Affiliation:
     def __hash__(self):
         return hash(self.name)
 
+
+
+class Journal:
+
+    def __init__(self, name=None, country=None, established=None, description=None, publishes=None):
+        if publishes is None:
+            publishes = []
+        self.name = name
+        self.country = country
+        self.description = description
+        self.established = established
+        self.publishes = publishes
+
+
+    def __eq__(self, other):
+        return self.name == other.name
+
+    def __hash__(self):
+        return hash(self.name)
 
 class Aknowledgement:
 

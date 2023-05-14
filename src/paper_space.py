@@ -48,12 +48,13 @@ class PaperSet:
         self.find_entities()
         self.all_authors = self.link_and_get_all_authors()
         self.all_affiliations = self.link_and_get_affiliations()
+        self.all_journals = self.link_and_get_all_journals()
 
     def get_xml_papers(self):
-        return {paper.title: paper for paper in self.papers.values() if paper.mode == "xml"}
+        return {paper.title: paper for paper in self.papers.values() if paper.physical}
 
     def get_citation_papers(self):
-        return {paper.title: paper for paper in self.papers.values() if paper.mode == "citation"}
+        return {paper.title: paper for paper in self.papers.values() if not paper.physical}
 
     def encode_papers(self):
         encodable = self.get_xml_papers()
@@ -166,6 +167,18 @@ class PaperSet:
                     author.affiliation = affiliations[author.affiliation]
                     author.affiliation.acknowledged_by.extend(previous_ack_by)
         return affiliations
+
+    def link_and_get_all_journals(self):
+        journals = []
+        for paper in self.papers.values():
+            if paper.journal and paper.journal not in journals:
+                journals.append(paper.journal)
+            else:
+                index = journals.index(paper.journal)
+                paper.journal = journals[index]
+                journals[index].publishes.append(paper)
+
+        return journals
 
     def process_entities(self, entities, text):
         org_start = None
