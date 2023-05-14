@@ -1,4 +1,11 @@
+import re
 import xml.etree.ElementTree as ET
+from datetime import datetime
+
+import requests
+from pyalex import Authors
+from wikidataintegrator import wdi_core, wdi_login
+from wikidataintegrator.wdi_helpers import try_write
 
 
 class Paper:
@@ -37,6 +44,7 @@ class Paper:
             self.title = title.lower() if title else "unknown"
             self.journal = Journal(name=journal, publishes=[self]) if journal else None
             self.cited_by = [cited_by]
+
     def get_schema(self):
         if not self.tree:
             return ""
@@ -194,6 +202,7 @@ class Citation:
 
 
 class Author:
+    OPENALEX_API_URL = "https://openalex.org/api/v1/authors"
 
     def __init__(self, forename=None, surname=None, affiliation_name=None, affiliation_country=None,
                  works_count=None, cited_by_count=None, writes=None, acknowledged_by=None, email=None):
@@ -201,8 +210,8 @@ class Author:
             acknowledged_by = []
         if writes is None:
             writes = []
-        self.forename = forename if forename is not None else "unknown"
-        self.surname = surname if surname is not None else "unknown"
+        self.forename = re.sub(r'[^a-zA-Z]', '', forename) if forename is not None else "unknown"
+        self.surname = re.sub(r'[^a-zA-Z]', '', surname) if surname is not None else "unknown"
         self.works_count = works_count
         self.cited_by_count = cited_by_count
         self.writes = writes
@@ -210,12 +219,27 @@ class Author:
         self.affiliation = Affiliation(affiliation_name, affiliation_country)
         self.ackowledged_by = acknowledged_by
 
+    def enrich(self):
+        if self.forename != "unknown" and self.surname != "unknown":
+            info = self.get_openalex_info(f"{self.forename} {self.surname}")
+            if info:
+                self.works_count = info.get("works_count", self.works_count)
+                self.cited_by_count = info.get("cited_by_count", self.cited_by_count)
+
+    def get_openalex_info(self, author):
+        res = Authors().search_filter(display_name=author).get()
+        if res and len(res) > 0:
+            res = res[0]
+            return {"works_count": res.get("works_count", self.works_count),
+                    "cited_by_count": res.get("cited_by_count", self.cited_by_count)}
+
+        return None
+
     def __eq__(self, other):
         return self.forename == other.forename and self.surname == other.surname
 
     def __hash__(self):
         return hash((self.forename, self.surname))
-
 
 
 class Affiliation:
@@ -229,12 +253,54 @@ class Affiliation:
         self.established = established
         self.acknowledged_by = ackowledged_by
 
+    def enrich(self):
+        if self.name and self.name != "unknown":
+            wd_item_id = self.get_wikidata_item_id(self.name)
+            if wd_item_id:
+                affiliation_info = self.get_wikidata_info(wd_item_id)
+                self.website = affiliation_info.get("website")
+                established = affiliation_info.get("established")
+                if established:
+                    try:
+                        self.established = datetime.fromisoformat(established)
+                    except:
+                        self.established = established
+
     def __eq__(self, other):
         return self.name == other.name
 
     def __hash__(self):
         return hash(self.name)
 
+    @staticmethod
+    def get_wikidata_item_id(name):
+        name = re.sub(r'[^a-zA-Z0-9]', '', name)
+        query = f'SELECT ?item WHERE {{ ?item rdfs:label "{name}"@en }}'
+        results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3, retry_after=5)
+        if results["results"]["bindings"]:
+            return results["results"]["bindings"][0]["item"]["value"].split("/")[-1]
+        else:
+            return None
+
+    @staticmethod
+    def get_wikidata_info(wd_item_id):
+        query = f'SELECT ?website ?established WHERE {{ wd:{wd_item_id} wdt:P856 ?website . OPTIONAL {{ wd:{wd_item_id} wdt:P571 ?established }} }}'
+        results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
+        try:
+            website = results["results"]["bindings"][0]["website"]["value"] if results["results"]["bindings"][0][
+                "website"] else None
+        except:
+            website = None
+        try:
+            established = results["results"]["bindings"][0]["established"]["value"] if results["results"]["bindings"][
+                0].get("established") else None
+        except:
+            established = None
+        return {"website": website, "established": established}
+
+
+from wikidataintegrator import wdi_core, wdi_login
+from wikidataintegrator.wdi_helpers import try_write
 
 
 class Journal:
@@ -248,12 +314,57 @@ class Journal:
         self.established = established
         self.publishes = publishes
 
+    def enrich(self):
+        if self.name and self.name != "unknown":
+            wd_item_id = self.get_wikidata_item_id(self.name)
+            if wd_item_id:
+                journal_info = self.get_wikidata_info(wd_item_id)
+                self.country = journal_info.get("country_of_origin")
+                self.description = journal_info.get("description")
+                established = journal_info.get("established")
+                if established:
+                    try:
+                        self.established = datetime.fromisoformat(established)
+                    except:
+                        self.established = established
 
     def __eq__(self, other):
         return self.name == other.name
 
     def __hash__(self):
         return hash(self.name)
+
+    @staticmethod
+    def get_wikidata_item_id(name):
+        name = re.sub(r'[^a-zA-Z0-9]', '', name)
+        query = f'SELECT ?item WHERE {{ ?item rdfs:label "{name}"@en }}'
+        results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
+        if results["results"]["bindings"]:
+            return results["results"]["bindings"][0]["item"]["value"].split("/")[-1]
+        else:
+            return None
+
+    @staticmethod
+    def get_wikidata_info(wd_item_id):
+        query = f'SELECT ?description ?established ?country_of_origin WHERE {{ wd:{wd_item_id} wdt:P31 wd:Q5633421 . OPTIONAL {{ wd:{wd_item_id} wdt:P17 ?country . ?country rdfs:label ?country_of_origin filter(lang(?country_of_origin) = "en") }} . OPTIONAL {{ wd:{wd_item_id} schema:description ?description filter(lang(?description) = "en") }} . OPTIONAL {{ wd:{wd_item_id} wdt:P571 ?established }} }}'
+        results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
+        try:
+            country_of_origin = results["results"]["bindings"][0]["country_of_origin"]["value"] if \
+                results["results"]["bindings"][0]["country_of_origin"] else None
+        except:
+            country_of_origin = None
+        try:
+            description = results["results"]["bindings"][0]["description"]["value"] if results["results"]["bindings"][
+                0].get("description") else None
+        except:
+            description = None
+        try:
+            established = results["results"]["bindings"][0]["established"]["value"] if results["results"]["bindings"][
+                0].get("established") else None
+        except:
+            established = None
+        return {"country_of_origin": country_of_origin, "description": description, "established": established}
+
 
 class Aknowledgement:
 

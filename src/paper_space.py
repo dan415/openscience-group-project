@@ -43,12 +43,20 @@ class PaperSet:
             with open("../res/models/vectorizer.pkl", "rb") as f:
                 self.vectorizer = pickle.load(f)
 
+        print("\rClustering", end='')
         self.clusterize()
+        print("\rTopic Modeling", end='')
         self.topic_modeling()
+        print("\rRecognizing entities", end='')
         self.find_entities()
+        print("\rLinking authors", end='')
         self.all_authors = self.link_and_get_all_authors()
+        print("\rLinking affiliations", end='')
         self.all_affiliations = self.link_and_get_affiliations()
+        print("\rLinking journals", end='')
         self.all_journals = self.link_and_get_all_journals()
+
+        self.enrich()
 
     def get_xml_papers(self):
         return {paper.title: paper for paper in self.papers.values() if paper.physical}
@@ -109,7 +117,7 @@ class PaperSet:
             with open("../res/models/lda_model.pkl", "wb") as f:
                 pickle.dump(self.lda_model, f)
 
-        feature_names = self.vectorizer.get_feature_names()
+        feature_names = self.vectorizer.get_feature_names_out()
         for topic_idx, topic in enumerate(self.lda_model.components_):
             top_words_idx = topic.argsort()[:-3:-1]
             self.topics.append(", ".join([feature_names[i] for i in top_words_idx]))
@@ -211,3 +219,25 @@ class PaperSet:
                     people_start = None
 
         return new_entities
+
+    def enrich_journals(self):
+        for journal in self.all_journals:
+            journal.enrich()
+
+    def enrich_affiliations(self):
+        for affiliation in self.all_affiliations:
+            affiliation.enrich()
+
+    def enrich_authors(self):
+        print(len(self.all_authors))
+        for author in self.all_authors:
+            print("\rEnriching authors: {}, {}/{}                                              ".format(f'{author.forename} {author.surname}', self.all_authors.index(author), len(self.all_authors)), end='')
+            author.enrich()
+
+    def enrich(self):
+        print("\rEnriching affiliations", end='')
+        self.enrich_affiliations()
+        print("\rEnriching authors                                                                ", end='')
+        self.enrich_authors()
+        print("\rEnriching journals                                                                ", end='')
+        self.enrich_journals()

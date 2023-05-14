@@ -1,3 +1,5 @@
+from time import sleep
+
 from grobid.client import GrobidClient
 import xml.etree.ElementTree as ET
 import os
@@ -35,10 +37,18 @@ class PaperProcessor:
     def process_from_xml(self, paper_name, input_path=None):
         res = self.parse(paper_name)
         return Paper(tree=res, filename=paper_name, pdf_path=input_path, xml_path=self.output_path)
+
     def process_folder(self, folder):
         papers = []
-        if not self.grobid.test_alive():
-            print("INITIALIZE GROBID FIRST")
+        for i in range(0, 3):
+            if not self.grobid.test_alive():
+                print("INITIALIZE GROBID FIRST")
+                sleep(10)
+                if i == 2:
+                    print("GROBID NOT AVAILABLE")
+                    exit(-1)
+            else:
+                break
         for paper in os.listdir(folder):
             if paper.endswith(".pdf"):
                 paper_obj = self.process(folder + paper)
