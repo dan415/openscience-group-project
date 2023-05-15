@@ -43,17 +43,17 @@ class PaperSet:
             with open("../res/models/vectorizer.pkl", "rb") as f:
                 self.vectorizer = pickle.load(f)
 
-        print("\rClustering", end='')
+        print("\rClustering              ", end='')
         self.clusterize()
-        print("\rTopic Modeling", end='')
+        print("\rTopic Modeling          ", end='')
         self.topic_modeling()
-        print("\rRecognizing entities", end='')
+        print("\rRecognizing entities    ", end='')
         self.find_entities()
-        print("\rLinking authors", end='')
+        print("\rLinking authors         ", end='')
         self.all_authors = self.link_and_get_all_authors()
         print("\rLinking affiliations", end='')
         self.all_affiliations = self.link_and_get_affiliations()
-        print("\rLinking journals", end='')
+        print("\rLinking journals        ", end='')
         self.all_journals = self.link_and_get_all_journals()
 
         self.enrich()

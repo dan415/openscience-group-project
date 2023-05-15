@@ -274,7 +274,7 @@ class Affiliation:
 
     @staticmethod
     def get_wikidata_item_id(name):
-        name = re.sub(r'[^a-zA-Z0-9]', '', name)
+        name = re.sub(r'[^a-zA-Z0-9]\s', '', name)
         query = f'SELECT ?item WHERE {{ ?item rdfs:label "{name}"@en }}'
         results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3, retry_after=5)
         if results["results"]["bindings"]:
@@ -336,7 +336,7 @@ class Journal:
 
     @staticmethod
     def get_wikidata_item_id(name):
-        name = re.sub(r'[^a-zA-Z0-9]', '', name)
+        name = re.sub(r'[^a-zA-Z0-9\s]', '', name)
         query = f'SELECT ?item WHERE {{ ?item rdfs:label "{name}"@en }}'
         results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
         if results["results"]["bindings"]:
