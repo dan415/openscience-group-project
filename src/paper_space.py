@@ -23,7 +23,10 @@ def _get_forename(name):
 
 
 class PaperSet:
-
+    """
+    This class represents a collection of academic papers. It provides methods for indexing, 
+    encoding, clustering, topic modeling, and entity recognition on the papers.
+    """
     def __init__(self, papers):
         self.papers = self.index_papers(papers)
         # self.encoder = SentenceTransformer("jamescalam/minilm-arxiv-encoder")
@@ -59,24 +62,44 @@ class PaperSet:
         self.enrich()
 
     def get_xml_papers(self):
+        """
+        Returns a dictionary of paper instances whose content was obtained from XML files.
+
+        Returns:
+            dict: Dictionary with paper titles as keys and paper instances as values.
+        """
         return {paper.title: paper for paper in self.papers.values() if paper.physical}
 
     def get_citation_papers(self):
+        """
+        Returns a dictionary of paper instances that were created from citations.
+
+        Returns:
+            dict: Dictionary with paper titles as keys and paper instances as values.
+        """
         return {paper.title: paper for paper in self.papers.values() if not paper.physical}
 
     def encode_papers(self):
+        """
+        Encodes the abstract of each paper in the collection using a Sentence Transformer model.
+
+        Returns:
+            pd.DataFrame: DataFrame where each row represents a paper and columns represent the embedding vector.
+        """
         encodable = self.get_xml_papers()
         return pd.DataFrame(self.encoder.encode([paper.abstract for paper in encodable.values()]),
                             index=[paper.title for paper in encodable.values()])
 
     def index_papers(self, papers):
-        '''
-        Creates Dictionary of papers where key is the papers title and value is the paper object, only for
-        physical papers. Then, for papers created by citations, it creates another dictionary and then checks if the title
-        of the paper is in the dictionary of physical papers. If it is, it changes the paper object to the physical paper
+        """
+        Indexes the papers by their titles and updates the citations of the papers.
 
-        :return:
-        '''
+        Args:
+            papers (list): List of paper instances.
+
+        Returns:
+            dict: Dictionary with paper titles as keys and paper instances as values.
+        """
         papers_dict = {paper.title: paper for paper in papers}
         ref_papers = {}
         for paper in papers:
@@ -92,9 +115,27 @@ class PaperSet:
         return papers_dict
 
     def encode_paper(self, paper):
+        """
+        Encodes the abstract of a single paper using a Sentence Transformer model.
+
+        Args:
+            paper (Paper): Instance of the Paper class.
+
+        Returns:
+            pd.DataFrame: DataFrame where rows represent the embedding vector of the paper.
+        """
         return pd.DataFrame(self.encoder.encode(paper.abstract), index=paper.filename)
 
     def preprocess_text(self, text):
+        """
+        Tokenizes the text into individual words, removes stop words, and rejoins the remaining tokens.
+
+        Args:
+            text (str): Text to preprocess.
+
+        Returns:
+            str: Preprocessed text.
+        """
         # Tokenize the text into individual words
         tokens = word_tokenize(text)
         # Remove stop words from the token list
@@ -103,6 +144,12 @@ class PaperSet:
         return ' '.join(filtered_tokens)
 
     def clusterize(self):
+        """
+        Clusters the papers in the collection using Agglomerative Clustering.
+
+        Returns:
+            None
+        """
         encoded = self.encode_papers()
         clustering = AgglomerativeClustering(n_clusters=2, affinity='cosine', linkage='complete')
         assined_papers = pd.Series(clustering.fit_predict(encoded), index=encoded.index)
@@ -126,6 +173,12 @@ class PaperSet:
             self.papers[paper].topic = self.topics[self.lda_model.transform(token).argmax()]
 
     def topic_modeling(self):
+        """
+        Performs topic modeling on the abstracts of the papers in the collection using Latent Dirichlet Allocation.
+
+        Returns:
+            None
+        """
         df = pd.DataFrame([{'Title': paper.title, "abstract": self.preprocess_text(paper.abstract),
                             'label': paper.cluster} for paper in
                            self.get_xml_papers().values()])
@@ -137,6 +190,12 @@ class PaperSet:
         self._perform_lda(self.vectorizer.transform(df['abstract']), df['Title'])
 
     def find_entities(self):
+        """
+        Recognizes and categorizes entities in the acknowledgement section of the papers using a Named Entity Recognition model.
+
+        Returns:
+            None
+        """
         for paper in self.get_xml_papers().values():
             text = paper.acknowledgements.text
             ner_results = self.ner(text)
@@ -150,6 +209,12 @@ class PaperSet:
                     filter(lambda x: x["entity"] == "PER", processed_entities)))
 
     def link_and_get_all_authors(self):
+        """
+        Links authors of the papers in the collection and returns a list of all unique authors.
+
+        Returns:
+            list: List of Author instances.
+        """
         authors = []
         for paper in self.papers.values():
             for author in paper.authors:
@@ -166,6 +231,12 @@ class PaperSet:
         return authors
 
     def link_and_get_affiliations(self):
+        """
+        Links affiliations of authors in the collection and returns a dictionary of unique affiliations.
+
+        Returns:
+            dict: Dictionary with affiliation names as keys and Affiliation instances as values.
+        """
         affiliations = {}
         for paper in self.papers.values():
             for author in paper.authors:
@@ -178,6 +249,12 @@ class PaperSet:
         return affiliations
 
     def link_and_get_all_journals(self):
+        """
+        Links journals of the papers in the collection and returns a list of all unique journals.
+
+        Returns:
+            list: List of Journal instances.
+        """
         journals = []
         for paper in self.papers.values():
             if paper.journal:
@@ -191,6 +268,16 @@ class PaperSet:
         return journals
 
     def process_entities(self, entities, text):
+        """
+        Processes the recognized entities and extracts organization and people entities.
+
+        Args:
+            entities (list): List of recognized entities.
+            text (str): Text containing the entities.
+
+        Returns:
+            list: List of dictionaries with entity type and text.
+        """
         org_start = None
         org_end = None
         people_start = None
@@ -221,20 +308,44 @@ class PaperSet:
         return new_entities
 
     def enrich_journals(self):
+        """
+        Enriches the information of all journals in the collection.
+
+        Returns:
+            None
+        """
         for journal in self.all_journals:
             journal.enrich()
 
     def enrich_affiliations(self):
+        """
+        Enriches the information of all affiliations in the collection.
+
+        Returns:
+            None
+        """
         for affiliation in self.all_affiliations:
             affiliation.enrich()
 
     def enrich_authors(self):
+        """
+        Enriches the information of all authors in the collection.
+
+        Returns:
+            None
+        """
         print(len(self.all_authors))
         for author in self.all_authors:
             print("\rEnriching authors: {}, {}/{}                                              ".format(f'{author.forename} {author.surname}', self.all_authors.index(author), len(self.all_authors)), end='')
             author.enrich()
 
     def enrich(self):
+        """
+        Enriches the information of affiliations, authors, and journals in the collection.
+
+        Returns:
+            None
+        """
         print("\rEnriching affiliations", end='')
         self.enrich_affiliations()
         print("\rEnriching authors                                                                ", end='')

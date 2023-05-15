@@ -21,10 +21,20 @@ class RDFParser:
         self.build()
 
     def build(self):
+        """
+        Builds the RDF graph by adding papers and related entities to the graph.
+        """
         for paper in self.paper_space.papers.values():
             self.add_paper(paper)
 
     def add_paper(self, paper: Paper):
+        """
+        Adds a paper and its related entities to the RDF graph.
+
+        Parameters:
+            paper: The Paper object to be added to the RDF graph.
+        """
+
         paper_id = paper.title.replace(' ', '_').lower()
         paper_id = re.sub(r'[^a-zA-Z0-9]', '', paper_id)
         self.defined_instances.add(paper_id)
@@ -73,6 +83,13 @@ class RDFParser:
             self.g.add((namespace, self.schema["cited_by"], URIRef(self.instances[cited_by_id])))
 
     def add_author(self, author: Author):
+        """
+        Adds an author and its related entities to the RDF graph.
+
+        Parameters:
+            author: The Author object to be added to the RDF graph.
+        """
+
         author_id = re.sub(r'[^a-zA-Z0-9]', '',
                            f"{author.forename.replace(' ', '_').lower()}_{author.surname.replace(' ', '_').lower()}")
         self.defined_instances.add(author_id)
@@ -105,6 +122,13 @@ class RDFParser:
             self.g.add((namespace, self.schema["acknowledged_by"], URIRef(self.instances[ack_id])))
 
     def add_journal(self, journal: Journal):
+        """
+        Adds a journal and its related entities to the RDF graph.
+
+        Parameters:
+            journal: The Journal object to be added to the RDF graph.
+        """
+
         journal_id = f'{journal.name.replace(" ", "_").lower()}' if journal.name else "no_journal"
         journal_id = re.sub(r'[^a-zA-Z0-9]', '', journal_id)
         self.defined_instances.add(journal_id)
@@ -123,6 +147,12 @@ class RDFParser:
             self.g.add((namespace, self.schema["publishes"], URIRef(self.instances[paper_id])))
 
     def add_affiliation(self, affiliation: Affiliation):
+        """
+        Adds an affiliation and its related entities to the RDF graph.
+
+        Parameters:
+            affiliation: The Affiliation object to be added to the RDF graph.
+        """
         affiliation_id = f'{affiliation.name.replace(" ", "_").lower()}' if affiliation.name else "no_affiliation"
         affiliation_id = re.sub(r'[^a-zA-Z0-9]', '', affiliation_id)
         self.defined_instances.add(affiliation_id)
@@ -141,6 +171,12 @@ class RDFParser:
             self.g.add((namespace, self.schema["acknowledged_by"], URIRef(self.instances[ack_id])))
 
     def add_citation(self, citation: Citation):
+        """
+        Adds a citation and its related entities to the RDF graph.
+
+        Parameters:
+            citation: The Citation object to be added to the RDF graph.
+        """
         citation_id = f'{citation.source.title.replace(" ", "_").lower()}_{citation.cites.title.replace(" ", "_").lower()}'
         citation_id = re.sub(r'[^a-zA-Z0-9]', '', citation_id)
         self.defined_instances.add(citation_id)
@@ -161,6 +197,12 @@ class RDFParser:
         self.g.add((namespace, self.schema["cites"], URIRef(self.instances[cites_id])))
 
     def add_acknowledgement(self, acknowledgement: Aknowledgement):
+        """
+        Adds an acknowledgement and its related entities to the RDF graph.
+
+        Parameters:
+            acknowledgement: The Acknowledgement object to be added to the RDF graph.
+        """
         ack_id = f'{acknowledgement.source.title.replace(" ", "_").lower()}_acknowledgement'
         ack_id = re.sub(r'[^a-zA-Z0-9]', '', ack_id)
         self.defined_instances.add(ack_id)
@@ -189,6 +231,15 @@ class RDFParser:
             self.g.add((namespace, self.schema["acknowledges_org"], URIRef(self.instances[affiliation_id])))
 
     def get_paper_by_title(self, title: str):
+        """
+        Retrieves a paper from the RDF graph based on its title.
+
+        Parameters:
+            title: The title of the paper.
+
+        Returns:
+            URIRef: The URIRef of the paper in the RDF graph.
+        """
         paper_id = f'{title.replace(" ", "_").lower()}'
         paper_id = re.sub(r'[^a-zA-Z0-9]', '', paper_id)
         return self.g.value(URIRef(self.instances[paper_id]), self.schema["paper"])

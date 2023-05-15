@@ -9,6 +9,10 @@ from wikidataintegrator.wdi_helpers import try_write
 
 
 class Paper:
+    """
+    This class represents a scientific paper.
+    """
+
 
     def __init__(self, tree=None, filename=None, pdf_path=None, xml_path=None, physical=True, authors=None, title=None,
                  journal=None, cited_by=None):
@@ -30,6 +34,9 @@ class Paper:
         self.authors = []
         self.journal = None
         self.schema = None
+
+        # If the article is physical, it obtains the details from the XML tree.
+
         if self.physical:
             self.schema = self.get_schema()
             self.authors = self.get_authors()
@@ -46,12 +53,20 @@ class Paper:
             self.cited_by = [cited_by]
 
     def get_schema(self):
+        """
+        Retrieves the schema of the XML tree.
+        :return: The schema of the XML tree.
+        """
         if not self.tree:
             return ""
         res = self.tree.getroot().tag.split("}")
         return res[0] + "}" if len(res) > 0 else ""
 
     def get_institution(self):
+        """
+        Retrieves the institution of the paper.
+        :return: The name of the institution.
+        """
         if not self.tree:
             return ""
         try:
@@ -61,6 +76,10 @@ class Paper:
             return ""
 
     def get_keywords(self):
+        """
+        Retrieves the key words of the paper.
+        :return: A list of key words.
+        """
         if not self.tree:
             return []
         try:
@@ -73,6 +92,10 @@ class Paper:
             return []
 
     def get_title(self):
+        """
+        Retrieves the title of the paper.
+        :return: The title of the paper.
+        """
         if not self.tree:
             return ""
         try:
@@ -82,6 +105,12 @@ class Paper:
             return ""
 
     def get_author(self, author, add_as_writer=False):
+        """
+        Retrieves information about an author.
+        :param author: XML object of the author.
+        :param add_as_writer: Boolean indicating whether to add the paper to the author's written works list.
+        :return: A dictionary with the author's information.
+        """
         author_dict = {}
         if author.find(f"{self.schema}persName") is not None:
             if author.find(f"{self.schema}persName").find(f"{self.schema}forename") is not None:
@@ -106,6 +135,10 @@ class Paper:
         return Author(**author_dict)
 
     def get_authors(self):
+        """
+        Retrieves the list of authors of the paper.
+        :return: A list of author objects.
+        """
         if not self.tree:
             return []
         try:
@@ -141,6 +174,10 @@ class Paper:
             return ""
 
     def get_acknowledgements(self):
+        """
+        Retrieves the acknowledgements section of the paper.
+        :return: An acknowledgements object.
+        """
         try:
             return Aknowledgement(
                 text=list(map(lambda x: [y.text for y in x], map(lambda x: [y for y in x.iter()], filter(
@@ -154,6 +191,10 @@ class Paper:
             return Aknowledgement(text="", source=self)
 
     def get_references(self):
+        """
+        Retrieves the references cited in the paper.
+        :return: A list of citation objects.
+        """
         refs = []
         if not self.tree:
             return refs
@@ -194,6 +235,14 @@ class Paper:
 
 
 class Citation:
+    """
+    This class represents a citation in a scientific paper.
+    
+    Attributes:
+        cites (Paper object): Represents the paper that is being cited.
+        date (str): The date of the citation.
+        source (str): The source from which the citation is taken.
+    """
 
     def __init__(self, date=None, authors=None, title=None, journal=None, source=None):
         self.cites = Paper(authors=authors, title=title, journal=journal, physical=False, cited_by=self)
@@ -202,6 +251,19 @@ class Citation:
 
 
 class Author:
+    """
+    This class represents an author of a scientific paper.
+
+    Attributes:
+        forename (str): The author's forename.
+        surname (str): The author's surname.
+        works_count (int): The number of works authored by the person.
+        cited_by_count (int): The number of times the author's works have been cited.
+        writes (list): A list of papers written by the author.
+        email (str): The author's email address.
+        affiliation (Affiliation object): Represents the affiliation of the author.
+        acknowledged_by (list): A list of acknowledgments for the author.
+    """
     OPENALEX_API_URL = "https://openalex.org/api/v1/authors"
 
     def __init__(self, forename=None, surname=None, affiliation_name=None, affiliation_country=None,
@@ -220,6 +282,9 @@ class Author:
         self.ackowledged_by = acknowledged_by
 
     def enrich(self):
+        """
+        Enriches the Author instance with additional information (works_count and cited_by_count) from the OpenAlex API.
+        """
         if self.forename != "unknown" and self.surname != "unknown":
             info = self.get_openalex_info(f"{self.forename} {self.surname}")
             if info:
@@ -227,6 +292,16 @@ class Author:
                 self.cited_by_count = info.get("cited_by_count", self.cited_by_count)
 
     def get_openalex_info(self, author):
+
+        """
+        Gets author information from the OpenAlex API.
+
+        Args:
+            author (str): The name of the author.
+
+        Returns:
+            dict: A dictionary with information about the author's works count and cited by count. Returns none if no information could be retrieved.
+        """
         res = Authors().search_filter(display_name=author).get()
         if res and len(res) > 0:
             res = res[0]
@@ -236,14 +311,32 @@ class Author:
         return None
 
     def __eq__(self, other):
+        """
+        Checks if this Author is equal to another Author (other). Two Authors are considered equal if they have the same forename and surname.
+
+        Args:
+            other (Author): Another Author instance to compare with.
+
+        Returns:
+            bool: True if the two Authors are equal, False otherwise.
+        """
         return self.forename == other.forename and self.surname == other.surname
 
     def __hash__(self):
+        """
+        Returns a hash value for the Author instance. This is used for operations that need to hash objects, such as set operations.
+
+        Returns:
+            int: A hash value for the Author instance.
+        """
         return hash((self.forename, self.surname))
 
 
 class Affiliation:
-
+    """
+    This class represents an affiliation associated with an author of a paper. 
+    An affiliation could be an academic or research institution.
+    """
     def __init__(self, name=None, country=None, established=None, website=None, ackowledged_by=None):
         if ackowledged_by is None:
             ackowledged_by = []
@@ -254,6 +347,12 @@ class Affiliation:
         self.acknowledged_by = ackowledged_by
 
     def enrich(self):
+        """
+        Enriches the affiliation object with additional details from Wikidata if possible.
+
+        Returns:
+            None
+        """
         if self.name and self.name != "unknown":
             wd_item_id = self.get_wikidata_item_id(self.name)
             if wd_item_id:
@@ -267,13 +366,38 @@ class Affiliation:
                         self.established = established
 
     def __eq__(self, other):
+        """
+        Checks if this Affiliation is equal to another Affiliation (other). 
+        Two Affiliations are considered equal if they have the same name.
+
+        Args:
+            other (Affiliation): Another Affiliation instance to compare with.
+
+        Returns:
+            bool: True if the two Affiliations are equal, False otherwise.
+        """
         return self.name == other.name
 
     def __hash__(self):
+        """
+        Returns a hash value for the Affiliation instance. This is used for operations that need to hash objects, such as set operations.
+
+        Returns:
+            int: A hash value for the Affiliation instance.
+        """
         return hash(self.name)
 
     @staticmethod
     def get_wikidata_item_id(name):
+        """
+        Retrieves the Wikidata item ID associated with the given name.
+
+        Args:
+            name (str): The name of the affiliation.
+
+        Returns:
+            str: The Wikidata item ID if found, None otherwise.
+        """
         name = re.sub(r'[^a-zA-Z0-9]', '', name)
         query = f'SELECT ?item WHERE {{ ?item rdfs:label "{name}"@en }}'
         results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3, retry_after=5)
@@ -284,6 +408,15 @@ class Affiliation:
 
     @staticmethod
     def get_wikidata_info(wd_item_id):
+        """
+        Retrieves the Wikidata information associated with the given Wikidata item ID.
+
+        Args:
+            wd_item_id (str): The Wikidata item ID.
+
+        Returns:
+            dict: A dictionary with the 'website' and 'established' details if found, None otherwise.
+        """
         query = f'SELECT ?website ?established WHERE {{ wd:{wd_item_id} wdt:P856 ?website . OPTIONAL {{ wd:{wd_item_id} wdt:P571 ?established }} }}'
         results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
         try:
@@ -304,6 +437,9 @@ from wikidataintegrator.wdi_helpers import try_write
 
 
 class Journal:
+    """
+    This class represents a journal in which papers are published. 
+    """
 
     def __init__(self, name=None, country=None, established=None, description=None, publishes=None):
         if publishes is None:
@@ -315,6 +451,12 @@ class Journal:
         self.publishes = publishes
 
     def enrich(self):
+        """
+        Enriches the journal object with additional details from Wikidata if possible.
+
+        Returns:
+            None
+        """
         if self.name and self.name != "unknown":
             wd_item_id = self.get_wikidata_item_id(self.name)
             if wd_item_id:
@@ -329,13 +471,38 @@ class Journal:
                         self.established = established
 
     def __eq__(self, other):
+        """
+        Checks if this Journal is equal to another Journal (other). 
+        Two Journals are considered equal if they have the same name.
+
+        Args:
+            other (Journal): Another Journal instance to compare with.
+
+        Returns:
+            bool: True if the two Journals are equal, False otherwise.
+        """
         return self.name == other.name
 
     def __hash__(self):
+         """
+        Returns a hash value for the Journal instance. This is used for operations that need to hash objects, such as set operations.
+
+        Returns:
+            int: A hash value for the Journal instance.
+        """
         return hash(self.name)
 
     @staticmethod
     def get_wikidata_item_id(name):
+        """
+        Retrieves the Wikidata item ID associated with the given name.
+
+        Args:
+            name (str): The name of the journal.
+
+        Returns:
+            str: The Wikidata item ID if found, None otherwise.
+        """
         name = re.sub(r'[^a-zA-Z0-9]', '', name)
         query = f'SELECT ?item WHERE {{ ?item rdfs:label "{name}"@en }}'
         results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
@@ -346,6 +513,15 @@ class Journal:
 
     @staticmethod
     def get_wikidata_info(wd_item_id):
+         """
+        Retrieves the Wikidata information associated with the given Wikidata item ID.
+
+        Args:
+            wd_item_id (str): The Wikidata item ID.
+
+        Returns:
+            dict: A dictionary with the 'country_of_origin', 'description' and 'established' details if found, None otherwise.
+        """
         query = f'SELECT ?description ?established ?country_of_origin WHERE {{ wd:{wd_item_id} wdt:P31 wd:Q5633421 . OPTIONAL {{ wd:{wd_item_id} wdt:P17 ?country . ?country rdfs:label ?country_of_origin filter(lang(?country_of_origin) = "en") }} . OPTIONAL {{ wd:{wd_item_id} schema:description ?description filter(lang(?description) = "en") }} . OPTIONAL {{ wd:{wd_item_id} wdt:P571 ?established }} }}'
         results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
         try:
@@ -367,7 +543,9 @@ class Journal:
 
 
 class Aknowledgement:
-
+    """
+    This class represents an acknowledgement in a paper. 
+    """
     def __init__(self, text=None, source=None):
         self.text = text
         self.source = source
