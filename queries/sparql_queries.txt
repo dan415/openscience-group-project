@@ -6,9 +6,6 @@ WHERE {
          schema:title ?title .
 }
 
-
-PREFIX schema: <http://schema.org/>
-
 SELECT ?authorName ?affiliationName
 WHERE {
   ?paper a schema:Paper ;
