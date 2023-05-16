@@ -13,7 +13,6 @@ class Paper:
     This class represents a scientific paper.
     """
 
-
     def __init__(self, tree=None, filename=None, pdf_path=None, xml_path=None, physical=True, authors=None, title=None,
                  journal=None, cited_by=None):
 
@@ -49,7 +48,8 @@ class Paper:
         else:
             self.authors = authors
             self.title = title.lower() if title else "unknown"
-            self.journal = Journal(name=journal, publishes=[self]) if journal else None
+            self.journal = Journal(name=journal, publishes=[
+                                   self]) if journal else None
             self.cited_by = [cited_by]
 
     def get_schema(self):
@@ -204,29 +204,37 @@ class Paper:
             ref_dict["source"] = self
             if ref.find(f"{self.schema}analytic") is not None:
                 if ref.find(f"{self.schema}analytic/{self.schema}title") is not None:
-                    ref_dict["title"] = ref.find(f"{self.schema}analytic/{self.schema}title").text
+                    ref_dict["title"] = ref.find(
+                        f"{self.schema}analytic/{self.schema}title").text
                 if ref.find(f"{self.schema}analytic/{self.schema}author") is not None:
-                    aux_authors = [author for author in ref.findall(f"{self.schema}analytic/{self.schema}author")]
+                    aux_authors = [author for author in ref.findall(
+                        f"{self.schema}analytic/{self.schema}author")]
                     authors_class = []
                     for author in aux_authors:
-                        authors_class.append(self.get_author(author, add_as_writer=False))
+                        authors_class.append(self.get_author(
+                            author, add_as_writer=False))
                     ref_dict["authors"] = authors_class
 
             if ref.find(f"{self.schema}monogr") is not None:
                 if ref.find(f"{self.schema}monogr/{self.schema}title") is not None:
                     if "title" in ref_dict.keys():
-                        ref_dict["journal"] = ref.find(f"{self.schema}monogr/{self.schema}title").text
+                        ref_dict["journal"] = ref.find(
+                            f"{self.schema}monogr/{self.schema}title").text
                     else:
-                        ref_dict["title"] = ref.find(f"{self.schema}monogr/{self.schema}title").text
+                        ref_dict["title"] = ref.find(
+                            f"{self.schema}monogr/{self.schema}title").text
                 if ref.find(f"{self.schema}monogr/{self.schema}imprint") is not None:
                     if ref.find(f"{self.schema}monogr/{self.schema}imprint/{self.schema}date") is not None:
-                        ref_dict["date"] = ref.find(f"{self.schema}monogr/{self.schema}imprint/{self.schema}date").text
+                        ref_dict["date"] = ref.find(
+                            f"{self.schema}monogr/{self.schema}imprint/{self.schema}date").text
 
                 if "authors" not in ref_dict.keys():
-                    aux_authors = [author for author in ref.findall(f"{self.schema}monogr/{self.schema}author")]
+                    aux_authors = [author for author in ref.findall(
+                        f"{self.schema}monogr/{self.schema}author")]
                     authors_class = []
                     for author in aux_authors:
-                        authors_class.append(self.get_author(author, add_as_writer=False))
+                        authors_class.append(self.get_author(
+                            author, add_as_writer=False))
                     ref_dict["authors"] = authors_class
             if "title" in ref_dict.keys() and ref_dict["title"] is not None:
                 refs.append(ref_dict)
@@ -237,7 +245,7 @@ class Paper:
 class Citation:
     """
     This class represents a citation in a scientific paper.
-    
+
     Attributes:
         cites (Paper object): Represents the paper that is being cited.
         date (str): The date of the citation.
@@ -245,7 +253,8 @@ class Citation:
     """
 
     def __init__(self, date=None, authors=None, title=None, journal=None, source=None):
-        self.cites = Paper(authors=authors, title=title, journal=journal, physical=False, cited_by=self)
+        self.cites = Paper(authors=authors, title=title,
+                           journal=journal, physical=False, cited_by=self)
         self.date = date
         self.source = source
 
@@ -272,8 +281,10 @@ class Author:
             acknowledged_by = []
         if writes is None:
             writes = []
-        self.forename = re.sub(r'[^a-zA-Z]', '', forename) if forename is not None else "unknown"
-        self.surname = re.sub(r'[^a-zA-Z]', '', surname) if surname is not None else "unknown"
+        self.forename = re.sub(
+            r'[^a-zA-Z]', '', forename) if forename is not None else "unknown"
+        self.surname = re.sub(
+            r'[^a-zA-Z]', '', surname) if surname is not None else "unknown"
         self.works_count = works_count
         self.cited_by_count = cited_by_count
         self.writes = writes
@@ -289,10 +300,10 @@ class Author:
             info = self.get_openalex_info(f"{self.forename} {self.surname}")
             if info:
                 self.works_count = info.get("works_count", self.works_count)
-                self.cited_by_count = info.get("cited_by_count", self.cited_by_count)
+                self.cited_by_count = info.get(
+                    "cited_by_count", self.cited_by_count)
 
     def get_openalex_info(self, author):
-
         """
         Gets author information from the OpenAlex API.
 
@@ -334,9 +345,10 @@ class Author:
 
 class Affiliation:
     """
-    This class represents an affiliation associated with an author of a paper. 
+    This class represents an affiliation associated with an author of a paper.
     An affiliation could be an academic or research institution.
     """
+
     def __init__(self, name=None, country=None, established=None, website=None, ackowledged_by=None):
         if ackowledged_by is None:
             ackowledged_by = []
@@ -367,7 +379,7 @@ class Affiliation:
 
     def __eq__(self, other):
         """
-        Checks if this Affiliation is equal to another Affiliation (other). 
+        Checks if this Affiliation is equal to another Affiliation (other).
         Two Affiliations are considered equal if they have the same name.
 
         Args:
@@ -400,7 +412,8 @@ class Affiliation:
         """
         name = re.sub(r'[^a-zA-Z0-9]', '', name)
         query = f'SELECT ?item WHERE {{ ?item rdfs:label "{name}"@en }}'
-        results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3, retry_after=5)
+        results = wdi_core.WDItemEngine.execute_sparql_query(
+            query, max_retries=3, retry_after=5)
         if results["results"]["bindings"]:
             return results["results"]["bindings"][0]["item"]["value"].split("/")[-1]
         else:
@@ -418,7 +431,8 @@ class Affiliation:
             dict: A dictionary with the 'website' and 'established' details if found, None otherwise.
         """
         query = f'SELECT ?website ?established WHERE {{ wd:{wd_item_id} wdt:P856 ?website . OPTIONAL {{ wd:{wd_item_id} wdt:P571 ?established }} }}'
-        results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
+        results = wdi_core.WDItemEngine.execute_sparql_query(
+            query, max_retries=3)
         try:
             website = results["results"]["bindings"][0]["website"]["value"] if results["results"]["bindings"][0][
                 "website"] else None
@@ -432,13 +446,9 @@ class Affiliation:
         return {"website": website, "established": established}
 
 
-from wikidataintegrator import wdi_core, wdi_login
-from wikidataintegrator.wdi_helpers import try_write
-
-
 class Journal:
     """
-    This class represents a journal in which papers are published. 
+    This class represents a journal in which papers are published.
     """
 
     def __init__(self, name=None, country=None, established=None, description=None, publishes=None):
@@ -472,7 +482,7 @@ class Journal:
 
     def __eq__(self, other):
         """
-        Checks if this Journal is equal to another Journal (other). 
+        Checks if this Journal is equal to another Journal (other).
         Two Journals are considered equal if they have the same name.
 
         Args:
@@ -484,7 +494,7 @@ class Journal:
         return self.name == other.name
 
     def __hash__(self):
-         """
+        """
         Returns a hash value for the Journal instance. This is used for operations that need to hash objects, such as set operations.
 
         Returns:
@@ -513,7 +523,7 @@ class Journal:
 
     @staticmethod
     def get_wikidata_info(wd_item_id):
-         """
+        """
         Retrieves the Wikidata information associated with the given Wikidata item ID.
 
         Args:
