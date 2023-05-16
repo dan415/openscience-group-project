@@ -1,0 +1,18 @@
+PREFIX schema: <http://schema.org/>
+
+SELECT ?title
+WHERE {
+  ?paper a schema:Paper ;
+         schema:title ?title .
+}
+
+SELECT ?authorName ?affiliationName
+WHERE {
+  ?paper a schema:Paper ;
+         schema:author ?author .
+  ?author schema:forename ?forename ;
+          schema:surname ?surname ;
+          schema:affiliation ?affiliation .
+  ?affiliation schema:name ?affiliationName .
+  BIND(CONCAT(?forename, " ", ?surname) AS ?authorName)
+}
