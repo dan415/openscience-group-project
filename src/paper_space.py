@@ -11,7 +11,7 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction.text import CountVectorizer
 
-from src.ontology_classes import Affiliation, Author
+from ontology_classes import Affiliation, Author
 
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -27,8 +27,9 @@ class PaperSet:
     This class represents a collection of academic papers. It provides methods for indexing, 
     encoding, clustering, topic modeling, and entity recognition on the papers.
     """
-    def __init__(self, papers):
+    def __init__(self, papers, res_path="../res"):
         self.papers = self.index_papers(papers)
+        self.res_path = res_path
         # self.encoder = SentenceTransformer("jamescalam/minilm-arxiv-encoder")
         self.encoder = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
         self.ner = pipeline("ner",
@@ -39,11 +40,11 @@ class PaperSet:
         self.lda_model = None
         self.vectorizer = None
         self.topics = []
-        if os.path.exists("../res/models/lda_model.pkl"):
-            with open("../res/models/lda_model.pkl", "rb") as f:
+        if os.path.exists(f"{self.res_path}/models/lda_model.pkl"):
+            with open(f"{self.res_path}/models/lda_model.pkl", "rb") as f:
                 self.lda_model = pickle.load(f)
-        if os.path.exists("../res/models/vectorizer.pkl"):
-            with open("../res/models/vectorizer.pkl", "rb") as f:
+        if os.path.exists(f"{self.res_path}/models/vectorizer.pkl"):
+            with open(f"{self.res_path}/models/vectorizer.pkl", "rb") as f:
                 self.vectorizer = pickle.load(f)
 
         print("\rClustering              ", end='')
@@ -161,7 +162,7 @@ class PaperSet:
         if not self.lda_model:
             self.lda_model = LatentDirichletAllocation(n_components=num_topics, max_iter=500, learning_method='online')
             self.lda_model.fit(tokens)
-            with open("../res/models/lda_model.pkl", "wb") as f:
+            with open(f"{self.res_path}/models/lda_model.pkl", "wb") as f:
                 pickle.dump(self.lda_model, f)
 
         feature_names = self.vectorizer.get_feature_names_out()
@@ -185,7 +186,7 @@ class PaperSet:
         if not self.vectorizer:
             self.vectorizer = CountVectorizer()
             self.vectorizer.fit(df['abstract'])
-            with open("../res/models/vectorizer.pkl", "wb") as f:
+            with open(f"{self.res_path}/models/vectorizer.pkl", "wb") as f:
                 pickle.dump(self.vectorizer, f)
         self._perform_lda(self.vectorizer.transform(df['abstract']), df['Title'])
 

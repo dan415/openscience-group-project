@@ -3,13 +3,11 @@ import json
 import os
 
 import requests
-from grobid.client import GrobidClient
-import xml.etree.ElementTree as ET
 import logging
 
 from processor import PaperProcessor
-from src.paper_space import PaperSet
-from src.rdfparser import RDFParser
+from paper_space import PaperSet
+from rdfparser import RDFParser
 
 # Set up logging
 logging.basicConfig(filename=f'./log.log', encoding='utf-8', format='%(asctime)s %(message)s',
@@ -77,7 +75,7 @@ if __name__ == '__main__':
     # Create the paper space
     logging.info('Creating paper space')
     print('Creating paper space')
-    paper_space = PaperSet(papers)
+    paper_space = PaperSet(papers, res_path=args.RES_FOLDER)
 
     # Serialize the paper space
     logging.info('Serializing paper space')

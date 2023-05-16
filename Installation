@@ -5,12 +5,12 @@ docker pull lfoppiano/grobid:0.7.2
 docker run -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2 &
 
 <h1>Fuseki</h1>
-sudo docker run -e ADMIN_PASSWORD=D=123 -it --rm -p 3030:3030 stain/jena-fuseki
+sudo docker run -e ADMIN_PASSWORD=D=1234 -it --rm -p 3030:3030 stain/jena-fuseki
 
 <h1>Environment</h1>
 conda create --name openenv python=3.9 rdflib=6.3.2 dash=2.9.3 findspark=2.0.1 pyspark=3.4.0 sentence-transformers=2.2.2 scikit-learn=1.0.2 transformers=4.28.1  gensim=4.3.0 -c conda-forge
 conda activate openenv
-pip install pygrobid
+pip install pygrobid==0.1.6
 pip install wikidataintegrator==0.9.27
 pip install pyalex==0.9
 cd src

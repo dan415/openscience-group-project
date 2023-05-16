@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  grobid:
+    volumes:
+      - ./res:/res
+    image: lfoppiano/grobid:0.7.2
+    ports:
+      - "8070:8070"
+  fuseki:
+    image: stain/jena-fuseki
+    ports:
+      - "3030:3030"
+    environment:
+      - ADMIN_PASSWORD=1234
+      #- JVM_ARGS=-Xmx2048M
+  pdfprocessor:
+    network_mode: host
+    build: . # if you want to build the image locally
+    #omenlaptop
+    image: danicabrera/opensciencegroupproject:latest
+    volumes:
+      - ./res:/app/res

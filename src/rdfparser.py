@@ -1,10 +1,6 @@
 import re
-
-from rdflib.parser import PythonInputSource
-
 from rdflib import Graph, Namespace, URIRef, Literal, RDF
-
-from src.ontology_classes import Paper, Author, Journal, Affiliation, Citation, Aknowledgement
+from ontology_classes import Paper, Author, Journal, Affiliation, Citation, Aknowledgement
 
 
 # Create a new RDF graph
