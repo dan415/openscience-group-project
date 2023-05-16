@@ -43,4 +43,4 @@ jobs:
             python-version: '3.9'
         - run: pip install --upgrade pip && pip install -r requirements.txt
         - name: run tests
-          run: python -m unittest test.test
+          run: python -m unittest test.test_analyzer
