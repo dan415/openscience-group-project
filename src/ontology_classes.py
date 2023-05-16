@@ -515,7 +515,8 @@ class Journal:
         """
         name = re.sub(r'[^a-zA-Z0-9]', '', name)
         query = f'SELECT ?item WHERE {{ ?item rdfs:label "{name}"@en }}'
-        results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
+        results = wdi_core.WDItemEngine.execute_sparql_query(
+            query, max_retries=3)
         if results["results"]["bindings"]:
             return results["results"]["bindings"][0]["item"]["value"].split("/")[-1]
         else:
@@ -533,7 +534,8 @@ class Journal:
             dict: A dictionary with the 'country_of_origin', 'description' and 'established' details if found, None otherwise.
         """
         query = f'SELECT ?description ?established ?country_of_origin WHERE {{ wd:{wd_item_id} wdt:P31 wd:Q5633421 . OPTIONAL {{ wd:{wd_item_id} wdt:P17 ?country . ?country rdfs:label ?country_of_origin filter(lang(?country_of_origin) = "en") }} . OPTIONAL {{ wd:{wd_item_id} schema:description ?description filter(lang(?description) = "en") }} . OPTIONAL {{ wd:{wd_item_id} wdt:P571 ?established }} }}'
-        results = wdi_core.WDItemEngine.execute_sparql_query(query, max_retries=3)
+        results = wdi_core.WDItemEngine.execute_sparql_query(
+            query, max_retries=3)
         try:
             country_of_origin = results["results"]["bindings"][0]["country_of_origin"]["value"] if \
                 results["results"]["bindings"][0]["country_of_origin"] else None
@@ -556,6 +558,7 @@ class Aknowledgement:
     """
     This class represents an acknowledgement in a paper. 
     """
+
     def __init__(self, text=None, source=None):
         self.text = text
         self.source = source

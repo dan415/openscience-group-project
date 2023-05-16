@@ -15,6 +15,7 @@ from src.rdfparser import RDFParser
 logging.basicConfig(filename=f'./log.log', encoding='utf-8', format='%(asctime)s %(message)s',
                     level=logging.DEBUG)
 
+
 def healthcheck(server):
     '''
     Checks if the grobid server is healthy.
@@ -26,6 +27,7 @@ def healthcheck(server):
             return bool(requests.get(f"{srv}/api/isalive").content.decode().capitalize())
         except:
             return False
+
 
 if __name__ == '__main__':
     # Clear the log file

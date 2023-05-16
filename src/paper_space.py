@@ -27,14 +27,17 @@ class PaperSet:
     This class represents a collection of academic papers. It provides methods for indexing, 
     encoding, clustering, topic modeling, and entity recognition on the papers.
     """
+
     def __init__(self, papers):
         self.papers = self.index_papers(papers)
         # self.encoder = SentenceTransformer("jamescalam/minilm-arxiv-encoder")
-        self.encoder = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
+        self.encoder = SentenceTransformer(
+            'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
         self.ner = pipeline("ner",
                             model=AutoModelForTokenClassification.from_pretrained(
                                 "Babelscape/wikineural-multilingual-ner"),
-                            tokenizer=AutoTokenizer.from_pretrained("Babelscape/wikineural-multilingual-ner")
+                            tokenizer=AutoTokenizer.from_pretrained(
+                                "Babelscape/wikineural-multilingual-ner")
                             )
         self.lda_model = None
         self.vectorizer = None
@@ -107,7 +110,8 @@ class PaperSet:
                 for i in range(len(paper.references)):
                     if paper.references[i].cites.title in papers_dict.keys():
                         paper.references[i].cites = papers_dict[paper.references[i].cites.title]
-                        papers_dict[paper.references[i].cites.title].cited_by.append(paper.references[i])
+                        papers_dict[paper.references[i].cites.title].cited_by.append(
+                            paper.references[i])
                     else:
                         ref_papers[paper.references[i].cites.title] = paper.references[i].cites
                         papers_dict[paper.references[i].cites.title] = paper.references[i].cites
@@ -139,7 +143,8 @@ class PaperSet:
         # Tokenize the text into individual words
         tokens = word_tokenize(text)
         # Remove stop words from the token list
-        filtered_tokens = [word for word in tokens if not word.lower() in stop_words]
+        filtered_tokens = [
+            word for word in tokens if not word.lower() in stop_words]
         # Join the remaining tokens back into a single string
         return ' '.join(filtered_tokens)
 
@@ -151,15 +156,18 @@ class PaperSet:
             None
         """
         encoded = self.encode_papers()
-        clustering = AgglomerativeClustering(n_clusters=2, affinity='cosine', linkage='complete')
-        assined_papers = pd.Series(clustering.fit_predict(encoded), index=encoded.index)
+        clustering = AgglomerativeClustering(
+            n_clusters=2, affinity='cosine', linkage='complete')
+        assined_papers = pd.Series(
+            clustering.fit_predict(encoded), index=encoded.index)
         for item, cluster in assined_papers.items():
             self.papers[item].cluster = cluster
 
     def _perform_lda(self, tokens, index):
         num_topics = 10
         if not self.lda_model:
-            self.lda_model = LatentDirichletAllocation(n_components=num_topics, max_iter=500, learning_method='online')
+            self.lda_model = LatentDirichletAllocation(
+                n_components=num_topics, max_iter=500, learning_method='online')
             self.lda_model.fit(tokens)
             with open("../res/models/lda_model.pkl", "wb") as f:
                 pickle.dump(self.lda_model, f)
@@ -167,10 +175,12 @@ class PaperSet:
         feature_names = self.vectorizer.get_feature_names_out()
         for topic_idx, topic in enumerate(self.lda_model.components_):
             top_words_idx = topic.argsort()[:-3:-1]
-            self.topics.append(", ".join([feature_names[i] for i in top_words_idx]))
+            self.topics.append(
+                ", ".join([feature_names[i] for i in top_words_idx]))
 
         for paper, token in zip(index, tokens):
-            self.papers[paper].topic = self.topics[self.lda_model.transform(token).argmax()]
+            self.papers[paper].topic = self.topics[self.lda_model.transform(
+                token).argmax()]
 
     def topic_modeling(self):
         """
@@ -187,7 +197,8 @@ class PaperSet:
             self.vectorizer.fit(df['abstract'])
             with open("../res/models/vectorizer.pkl", "wb") as f:
                 pickle.dump(self.vectorizer, f)
-        self._perform_lda(self.vectorizer.transform(df['abstract']), df['Title'])
+        self._perform_lda(self.vectorizer.transform(
+            df['abstract']), df['Title'])
 
     def find_entities(self):
         """
@@ -226,7 +237,8 @@ class PaperSet:
                     paper.authors.append(authors[index])
                     if authors[index] in paper.authors:
                         authors[index].writes.append(paper)
-                        authors[index].ackowledged_by.extend(author.ackowledged_by)
+                        authors[index].ackowledged_by.extend(
+                            author.ackowledged_by)
 
         return authors
 
@@ -298,11 +310,13 @@ class PaperSet:
 
             if org_start is not None and org_end is not None:
                 if i == len(entities) - 1 or entities[i + 1]['entity'] != 'I-ORG':
-                    new_entities.append({'entity': 'ORG', "text": text[org_start:org_end]})
+                    new_entities.append(
+                        {'entity': 'ORG', "text": text[org_start:org_end]})
                     org_start = None
             if people_start is not None and people_end is not None:
                 if i == len(entities) - 1 or entities[i + 1]['entity'] != 'I-PER':
-                    new_entities.append({'entity': 'PER', "text": text[people_start:people_end]})
+                    new_entities.append(
+                        {'entity': 'PER', "text": text[people_start:people_end]})
                     people_start = None
 
         return new_entities
@@ -336,7 +350,8 @@ class PaperSet:
         """
         print(len(self.all_authors))
         for author in self.all_authors:
-            print("\rEnriching authors: {}, {}/{}                                              ".format(f'{author.forename} {author.surname}', self.all_authors.index(author), len(self.all_authors)), end='')
+            print("\rEnriching authors: {}, {}/{}                                              ".format(
+                f'{author.forename} {author.surname}', self.all_authors.index(author), len(self.all_authors)), end='')
             author.enrich()
 
     def enrich(self):
