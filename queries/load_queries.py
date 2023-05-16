@@ -1,3 +1,6 @@
+from flask import g
+
+
 def load_queries(file_path):
     with open(file_path, "r") as file:
         queries = file.read()
