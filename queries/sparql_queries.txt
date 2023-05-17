@@ -1,18 +1,85 @@
+########################################################################################################################
+    PREFIX schema: <http://schema.org/>
+    PREFIX instances: <http://instances.com/>
+
+    SELECT ?title WHERE {
+        ?paper a schema:paper ;
+               schema:title ?title .
+    }
+
+
+########################################################################################################################
 PREFIX schema: <http://schema.org/>
+PREFIX instances: <http://instances.com/>
+
+    SELECT ?forename ?surname WHERE {
+
+        ?paper a schema:paper ;
+               schema:title "a generative model for audio in the frequency domain";
+               schema:author ?author .
+  				?author schema:forename ?forename .
+  				?author schema:surname ?surname
+    }
+
+########################################################################################################################
+PREFIX schema: <http://schema.org/>
+PREFIX instances: <http://instances.com/>
+
+SELECT ?title ?cluster
+
+WHERE {
+
+        ?paper a schema:paper ;
+               schema:physical true.
+  			   ?paper schema:title ?title .
+               ?paper schema:cluster ?cluster .
+    }
+
+
+########################################################################################################################
+PREFIX schema: <http://schema.org/>
+PREFIX instances: <http://instances.com/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
 
 SELECT ?title
-WHERE {
-  ?paper a schema:Paper ;
-         schema:title ?title .
-}
 
-SELECT ?authorName ?affiliationName
 WHERE {
-  ?paper a schema:Paper ;
-         schema:author ?author .
-  ?author schema:forename ?forename ;
-          schema:surname ?surname ;
-          schema:affiliation ?affiliation .
-  ?affiliation schema:name ?affiliationName .
-  BIND(CONCAT(?forename, " ", ?surname) AS ?authorName)
-}
+
+        ?paper a schema:paper ;
+               schema:physical true ;
+  			   schema:cluster "1"^^xsd:integer;
+  			   schema:topic "models, learning" .
+  			   ?paper schema:title ?title .
+    }
+
+########################################################################################################################
+PREFIX schema: <http://schema.org/>
+PREFIX instances: <http://instances.com/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+    SELECT ?text WHERE {
+
+        ?paper a schema:paper ;
+                schema:author ?author .
+  				?author schema:forename "S" .
+  				?author schema:surname "Vasquez" ;
+  				schema:acknowledged_by ?ack .
+    			?ack schema:text ?text
+    }
+
+########################################################################################################################
+
+PREFIX schema: <http://schema.org/>
+PREFIX instances: <http://instances.com/>
+
+    SELECT ?forename ?surname ?text ?affiliationname WHERE {
+
+        ?author a schema:author ;
+                schema:forename ?forename .
+  				?author schema:surname ?surname .
+  				?author schema:acknowledged_by ?ack .
+  				?ack schema:text ?text .
+  				?ack schema:acknowledges_org ?affiliation .
+  				?affiliation schema:name ?affiliationname
+    }
