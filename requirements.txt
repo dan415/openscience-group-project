@@ -1,0 +1,7 @@
+grobid-client-python
+requests
+wikidataintegrator
+pyalex
+rdflib
+sentence-transformers
+transformers
