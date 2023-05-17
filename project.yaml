@@ -1,0 +1,77 @@
+# Mandatory field
+type: "project"
+
+title: "Project - Artificial Intelligence And Open Science In Research Software Engineering Deliverable 2"
+
+goal: "Advanced data analysis on research publications: Given a corpus of 30 papers, group them according to common themes, link them in a Research Knowledge Graph (RKG) together with their metadata and funding information."
+
+social_motivation: "This is the social motivation behind this project."
+
+sketch: "images/sketch_ya2ro.jpg"
+
+areas:
+  - "Area 1: Some description."
+  - "Area 2: Some description."
+
+activities:
+  - "Subtask 1: Some description."
+  - "Subtask 2: Some description."
+
+demo:
+  - link: http://demo.com
+    description: "This is a description for a demo."
+  - name: "Demo name"
+    link: http://demo.com
+    description: "This is a description for a demo with name."
+
+datasets:
+  - link: www.D1.com
+    name: "Dataset 1"
+    description: "Description dataset 1"
+    doi: www.doi-DB1.com
+  - link: www.D2.com
+    name: "Dataset 2"
+    description: "Description dataset 2"
+    doi: www.doi-DB2.com
+
+software:
+  - link: http://software-1.com
+    name: "Software 1"
+    description: "Description software 1"
+    license: "MIT-License"
+  - link: http://software-2.com
+    description: "Description software 2"
+    license: "MIT-License"
+
+bibliography:
+  - "Bibliography entry 1"
+  - "Bibliography entry 2"
+  - "Bibliography entry 3"
+
+participants:
+  # Alternative way if participant has an ORCID
+  #-
+  #orcid: https://orcid.org/0000-0003-0454-7145
+  #role: "Coordinator"
+  - name: "Author"
+    position: "Author's position"
+    description: "Author's description"
+    web: https://author-web.com/
+    #photo: author_photo.jpg
+    # If photo isn't provided a default one will be used
+  - name: "Author"
+    position: "Author's position"
+    description: "Author's description"
+    web: https://author-web.com/
+    #photo: author_photo.jpg
+    # If photo isn't provided a default one will be used
+  - name: "Author"
+    position: "Author's position"
+    description: "Author's description"
+    web: https://author-web.com/
+    #photo: author_photo.jpg
+    # If photo isn't provided a default one will be used
+
+contact:
+  email: contact@projectmail.com
+  phone: +34 999 999 999
