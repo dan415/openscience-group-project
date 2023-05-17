@@ -1,0 +1,85 @@
+# Mandatory field
+type: "project"
+
+title: "Project - Artificial Intelligence And Open Science In Research Software Engineering Deliverable 2"
+
+goal: "Advanced data analysis on research publications: Given a corpus of 30 papers, group them according to common themes, link them in a Research Knowledge Graph (RKG) together with their metadata and funding information."
+
+social_motivation: "In the field of healthcare and medical research, clinical trials play a crucial role in advancing our understanding of diseases, testing new treatments, and improving patient outcomes. As the volume of clinical research continues to grow, it becomes essential to identify trends and gain valuable insights from these studies."
+
+#sketch: "images/sketch_ya2ro.jpg"
+
+areas:
+  - "Area 1: Use information on clinical trials associated with the publications to identify trends in clinical research. Enriching PubMed with wikidata"
+
+activities:
+  - "Subtask 1: Papers selection. There are papers from 2 distinct research fields, and the main reason for selecting them is their complete metadata: Acknowledgments, authors, affiliations, etc."
+  - "Subtask 2: Leveraging GROBID for Knowledge Graph Construction: Extracting Relevant Information from Selected Papers"
+  - "Subtask 3: Ontology. Diagram of the ontology that was defined for the project"
+  - "Subtask 4: Transform the classes and properties from the xml already processed (by GROBID) to the \"Paper Space\" for a more useful representation"
+  - "Subtask 5: Enriching with wikidata (affiliation, website and Journal) and OpenAlex (author's count of citations and publications)"
+  - "Subtack 6: Obtain Knowledge Graph from Paper Space -> JSON-LD"
+  - "Subtask 7: Clustering"
+  - "Subtask 8: Topic Modeling"
+  - "Subtask 9: Entity Recognition"
+
+demo:
+  - name: "Git Repository"
+    link: https://github.com/dan415/openscience-grupo
+    description: "Find the docs and demos in the github repository."
+
+datasets:
+  - link: https://drive.google.com/drive/folders/1ACPAXCJiZzueSEnA3p1kjZoMWzqGY4qG?usp=share_link
+    name: "Dataset 1"
+    description: "List of selected papers"
+
+software:
+  - link: https://github.com/dan415/openscience-grupo
+    name: "openscience-grupo"
+    description: "Main code repository"
+    license: "MIT-License"
+
+bibliography:
+  - "GROBID. https://github.com/kermitt2/grobid"
+  - "ya2ro. https://github.com/oeg-upm/ya2ro/tree/main"
+  - "wikidata. https://www.wikidata.org/wiki/Wikidata:Main_Page"
+  - "openalex. https://openalex.org/"
+  - "Apache Jena Fuseki. https://jena.apache.org/documentation/fuseki2/"
+  - "RDFLib. https://github.com/RDFLib/rdflib"
+
+participants:
+  # Alternative way if participant has an ORCID
+  #-
+  #orcid: https://orcid.org/0000-0003-0454-7145
+  #role: "Coordinator"
+  - name: "Daniel Cabrera"
+    #position: "Author's position"
+    #description: "Author's description"
+    web: https://github.com/dan415
+    #photo: author_photo.jpg
+    # If photo isn't provided a default one will be used
+
+  - name: "Alejandro Ayuso"
+    #position: "Author's position"
+    #description: "Author's description"
+    web: https://github.com/AlexAyuso01
+    #photo: author_photo.jpg
+    # If photo isn't provided a default one will be used
+
+  - name: "Alejandro Morán"
+    #position: "Author's position"
+    #description: "Author's description"
+    web: https://github.com/Alejandro9998
+    #photo: author_photo.jpg
+    # If photo isn't provided a default one will be used
+
+  - name: "Sebastian Bayona"
+    #position: "Author's position"
+    #description: "Author's description"
+    web: https://github.com/sbayonag
+    #photo: author_photo.jpg
+    # If photo isn't provided a default one will be used
+
+contact:
+  email: daniel.crodriguez@alumnos.upm.es
+  phone: +34 641658950

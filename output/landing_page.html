@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<title>Landing page</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+<style id="style">
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px; text-align: justify;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+img {display: block;margin-left: auto;margin-right: auto;}
+.column {float: left;width: 50%;padding: 5px;}
+.row::after {content: ""; clear: both; display: table;}
+.centered-element {margin: 0;position: absolute;top: 50%;transform: translateY(-50%);}
+
+
+                h1,h1 b{color:#fff!important}
+                .w3-light-grey{background-color:#ddd!important;color:#222831!important}
+                .w3-green{background-color:#30475e!important}.w3-round{border:5px solid #f05454!important}
+                body{background-color:#222831!important;color:#fff!important}
+                </style>
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" id="mySidebar" style="z-index:3;width:300px;font-weight:bold;"><br/>
+<a class="w3-button w3-hide-large w3-display-topleft" href="javascript:void(0)" onclick="w3_close()" style="width:100%;font-size:22px">Close Menu</a>
+<!-- Header -->
+<div class="w3-container" id="showcase" style="margin-top:40px">
+<h1><b> Green Planet Projects </b></h1>
+</div>
+<div class="w3-bar-block centered-element">
+<span id="sidebar"><a class="w3-bar-item w3-button w3-hover-white" href="#project_-_artificial_intelligence_and_open_science_in_research_software_engineering_deliverable_2" onclick="w3_close()">Project - Artificial Intellige...</a></span>
+</div>
+</nav>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+<a class="w3-button w3-green w3-margin-right" href="javascript:void(0)" onclick="w3_open()">☰</a>
+</header>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" id="myOverlay" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin:auto; padding-left: 340px; max-width: 1500px;">
+<!-- Content -->
+<div id="content" style="margin-top:80px"><div class="w3-container" id="project_-_artificial_intelligence_and_open_science_in_research_software_engineering_deliverable_2" style="margin-top:15px">
+<a href="project/ro-crate-preview.html"><h2><b>Project - Artificial Intelligence And Open Science In Research Software Engineering Deliverable 2 (Project)</b></h2></a>
+<hr class="w3-round" style="width:50px;border:5px solid green"/>
+<details>
+<summary class="w3-opacity">Advanced data analysis on research publications: Given a corpus of 30 papers, group them according t...</summary>
+<p>Advanced data analysis on research publications: Given a corpus of 30 papers, group them according to common themes, link them in a Research Knowledge Graph (RKG) together with their metadata and funding information.</p>
+</details>
+</div></div>
+<!-- End page content -->
+</div>
+<script>
+	// Script to open and close sidebar
+	function w3_open() {
+		document.getElementById("mySidebar").style.display = "block";
+		document.getElementById("myOverlay").style.display = "block";
+	}
+	
+	function w3_close() {
+		document.getElementById("mySidebar").style.display = "none";
+		document.getElementById("myOverlay").style.display = "none";
+	}
+	
+	// Modal Image Gallery
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+		var captionText = document.getElementById("caption");
+		captionText.innerHTML = element.alt;
+	}
+	
+	</script>
+</body>
+</html>

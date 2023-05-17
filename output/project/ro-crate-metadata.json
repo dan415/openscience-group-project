@@ -1,0 +1,98 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "description": "RO-Crate Metadata File Descriptor (this file)"
+        },
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "DataType": "Project",
+            "author": [
+                {
+                    "@id": "#daniel_cabrera"
+                },
+                {
+                    "@id": "#alejandro_ayuso"
+                },
+                {
+                    "@id": "#alejandro_mor\u00e1n"
+                },
+                {
+                    "@id": "#sebastian_bayona"
+                }
+            ],
+            "description": "Advanced data analysis on research publications: Given a corpus of 30 papers, group them according to common themes, link them in a Research Knowledge Graph (RKG) together with their metadata and funding information.",
+            "hasPart": [
+                {
+                    "@id": "#openscience-grupo"
+                },
+                {
+                    "@id": "#dataset_1"
+                },
+                {
+                    "@id": "ro-crate-preview.html"
+                }
+            ],
+            "name": "Project - Artificial Intelligence And Open Science In Research Software Engineering Deliverable 2"
+        },
+        {
+            "@id": "#daniel_cabrera",
+            "@type": "Person",
+            "name": "Daniel Cabrera"
+        },
+        {
+            "@id": "#alejandro_ayuso",
+            "@type": "Person",
+            "name": "Alejandro Ayuso"
+        },
+        {
+            "@id": "#alejandro_mor\u00e1n",
+            "@type": "Person",
+            "name": "Alejandro Mor\u00e1n"
+        },
+        {
+            "@id": "#sebastian_bayona",
+            "@type": "Person",
+            "name": "Sebastian Bayona"
+        },
+        {
+            "@id": "#openscience-grupo",
+            "@type": "SoftwareApplication",
+            "description": "Main code repository",
+            "installUrl": "https://github.com/dan415/openscience-grupo"
+        },
+        {
+            "@id": "#dataset_1",
+            "@type": "Dataset",
+            "description": "List of selected papers",
+            "distribution": {
+                "@id": "https://drive.google.com/drive/folders/1ACPAXCJiZzueSEnA3p1kjZoMWzqGY4qG?usp=share_link"
+            },
+            "name": "Dataset 1"
+        },
+        {
+            "workExample": [
+                {
+                    "@type": "Demo",
+                    "description": "Find the docs and demos in the github repository.",
+                    "link": "https://github.com/dan415/openscience-grupo",
+                    "name": "Git Repository"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-preview.html",
+            "@type": "WebPage",
+            "name": "HTML representation of this data."
+        }
+    ]
+}
