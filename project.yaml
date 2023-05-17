@@ -10,7 +10,7 @@ social_motivation: "In the field of healthcare and medical research, clinical tr
 #sketch: "images/sketch_ya2ro.jpg"
 
 areas:
-  - "Area 1: Use information on clinical trials associated with the publications to identify trends in clinical research. Enriching PubMed with wikidata"
+  - "Area 1: Use information on given papers to build a Knowledge Graph, enriching papers with wikidata and openalex"
 
 activities:
   - "Subtask 1: Papers selection. There are papers from 2 distinct research fields, and the main reason for selecting them is their complete metadata: Acknowledgments, authors, affiliations, etc."
